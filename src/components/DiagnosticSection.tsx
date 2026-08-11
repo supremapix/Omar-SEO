@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { CheckCircle2, Zap, ArrowRight, ShieldAlert } from 'lucide-react';
+import { BackgroundVideo } from './BackgroundVideo';
 
 export function DiagnosticSection() {
   const diagnosticItems = [
@@ -27,6 +28,11 @@ export function DiagnosticSection() {
 
   return (
     <section className="py-20 relative overflow-hidden bg-gradient-to-b from-[#0a0a0f] via-[#0f1219] to-[#0a0a0f]">
+      <BackgroundVideo
+        src="https://img.supremasite.com.br/omar-seo.mp4"
+        opacity={0.18}
+        overlayClassName="bg-gradient-to-b from-[#0a0a0f]/85 via-[#0f1219]/80 to-[#0a0a0f]/90"
+      />
       {/* Background ambient lighting */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-blue-600/10 rounded-full blur-[140px] pointer-events-none" />
 

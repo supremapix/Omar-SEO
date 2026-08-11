@@ -6,6 +6,7 @@ import { DiagnosticSection } from '../components/DiagnosticSection';
 import { SectionDivider } from '../components/SectionDivider';
 import { InternalLinkCluster } from '../components/InternalLinkCluster';
 import ConstellationGrid from '../components/ui/constellation-grid';
+import { BackgroundVideo } from '../components/BackgroundVideo';
 import {
   Search,
   MapPin,
@@ -98,7 +99,12 @@ export default function Home() {
 
       {/* HERO SECTION */}
       <section className="relative px-4 sm:px-6 lg:px-8 py-12 lg:py-20 overflow-hidden">
-        <ConstellationGrid className="absolute inset-0 z-0 opacity-40 pointer-events-none" />
+        <BackgroundVideo
+          src="https://img.supremasite.com.br/seo-omar.mp4"
+          opacity={0.25}
+          overlayClassName="bg-gradient-to-b from-[#0a0a0f]/80 via-[#0a0a0f]/60 to-[#0a0a0f]/90"
+        />
+        <ConstellationGrid className="absolute inset-0 z-0 opacity-30 pointer-events-none" />
         {/* Glow ambient background circles */}
         <div className="absolute top-10 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-blue-600/10 rounded-full blur-[140px] pointer-events-none" />
 
@@ -209,6 +215,11 @@ export default function Home() {
 
       {/* AUTHORITY & ABOUT OMAR SECTION */}
       <section className="py-20 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
+        <BackgroundVideo
+          src="https://img.supremasite.com.br/omar-seo.mp4"
+          opacity={0.18}
+          overlayClassName="bg-gradient-to-b from-[#0a0a0f]/90 via-[#0a0a0f]/80 to-[#0a0a0f]/95"
+        />
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           <div className="lg:col-span-6 space-y-6">
             <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-950/80 border border-blue-800 text-blue-300 font-bold text-xs uppercase tracking-wider">

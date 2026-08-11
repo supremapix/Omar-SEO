@@ -4,6 +4,7 @@ import { EnhancedSEO } from '../components/EnhancedSEO';
 import { SectionDivider } from '../components/SectionDivider';
 import { InternalLinkCluster } from '../components/InternalLinkCluster';
 import ConstellationGrid from '../components/ui/constellation-grid';
+import { BackgroundVideo } from '../components/BackgroundVideo';
 import { Search, CheckCircle2, ArrowRight, Zap, Target, Layers } from 'lucide-react';
 
 export default function SeoCompleto() {
@@ -41,6 +42,11 @@ export default function SeoCompleto() {
 
       {/* Hero Header */}
       <div className="relative p-8 sm:p-12 rounded-3xl bg-slate-950/80 border border-blue-500/30 shadow-[0_0_40px_rgba(59,130,246,0.15)] overflow-hidden">
+        <BackgroundVideo
+          src="https://img.supremasite.com.br/seo-omar.mp4"
+          opacity={0.25}
+          overlayClassName="bg-gradient-to-b from-[#0a0a0f]/80 via-[#0a0a0f]/60 to-[#0a0a0f]/90"
+        />
         <ConstellationGrid className="absolute inset-0 z-0 opacity-40 pointer-events-none" />
         <div className="relative z-10 text-center max-w-3xl mx-auto space-y-4">
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-950/80 border border-blue-800 text-blue-300 font-bold text-xs uppercase tracking-wider">

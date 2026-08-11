@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { BackgroundVideo } from './BackgroundVideo';
 import {
   MapPin,
   Phone,
@@ -51,6 +52,12 @@ export function Footer() {
 
   return (
     <footer className="bg-[#07080b] text-slate-300 border-t border-blue-500/30 pt-16 pb-12 relative overflow-hidden">
+      <BackgroundVideo
+        src="https://img.supremasite.com.br/omar-seo.mp4"
+        opacity={0.2}
+        overlayClassName="bg-gradient-to-b from-[#07080b]/90 via-[#07080b]/85 to-[#07080b]/95"
+      />
+
       {/* Top Neon Light Line Sweep */}
       <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-cyan-400 to-transparent opacity-80 animate-pulse shadow-[0_0_15px_rgba(34,211,238,0.8)]" />
 

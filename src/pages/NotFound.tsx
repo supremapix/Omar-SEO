@@ -1,11 +1,18 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { EnhancedSEO } from '../components/EnhancedSEO';
+import { BackgroundVideo } from '../components/BackgroundVideo';
 import { Home, ArrowLeft, Search } from 'lucide-react';
 
 export function NotFoundView() {
   return (
-    <div className="pt-32 pb-20 px-4 max-w-xl mx-auto text-center space-y-6">
+    <div className="pt-32 pb-20 px-4 max-w-xl mx-auto text-center space-y-6 relative overflow-hidden">
+      <BackgroundVideo
+        src="https://img.supremasite.com.br/seo-omar.mp4"
+        opacity={0.2}
+        overlayClassName="bg-gradient-to-b from-[#0a0a0f]/85 via-[#0a0a0f]/75 to-[#0a0a0f]/90"
+      />
+      <div className="relative z-10 space-y-6">
       <EnhancedSEO
         title="Página Não Encontrada (404) | Omar SEO"
         description="A página que você procura não foi encontrada. Volte para a página inicial da Omar SEO."
@@ -38,6 +45,7 @@ export function NotFoundView() {
           <ArrowLeft size={16} />
           <span>Ver SEO Local</span>
         </Link>
+      </div>
       </div>
     </div>
   );

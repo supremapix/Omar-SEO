@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { EnhancedSEO } from '../components/EnhancedSEO';
 import ConstellationGrid from '../components/ui/constellation-grid';
+import { BackgroundVideo } from '../components/BackgroundVideo';
 import { FileSearch, Zap, CheckCircle2, ArrowRight, ShieldCheck, Send, MessageCircle } from 'lucide-react';
 
 export default function AuditoriaSeo() {
@@ -47,6 +48,11 @@ export default function AuditoriaSeo() {
 
       {/* Header */}
       <div className="relative p-8 sm:p-12 rounded-3xl bg-slate-950/80 border border-yellow-500/30 shadow-[0_0_40px_rgba(250,204,21,0.15)] overflow-hidden">
+        <BackgroundVideo
+          src="https://img.supremasite.com.br/seo-omar.mp4"
+          opacity={0.25}
+          overlayClassName="bg-gradient-to-b from-[#0a0a0f]/80 via-[#0a0a0f]/60 to-[#0a0a0f]/90"
+        />
         <ConstellationGrid className="absolute inset-0 z-0 opacity-40 pointer-events-none" />
         <div className="relative z-10 text-center max-w-3xl mx-auto space-y-4">
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-yellow-500/10 border border-yellow-500/30 text-yellow-400 font-bold text-xs uppercase tracking-wider">
