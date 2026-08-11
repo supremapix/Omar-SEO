@@ -1,0 +1,34 @@
+# Omar SEO — Omar Skafi | Documentação Completa para Modelos de Linguagem (LLMs)
+
+> Documento estendido de contexto técnico sobre Omar SEO, serviços, metodologias e presença digital em Curitiba/PR.
+
+## Informações Legais e Institucionais
+- Razão Social: OSKAFI WEB SITES LTDA ME
+- Nome Fantasia / Marca Pessoal: Omar SEO / Omar Skafi
+- Estrutura Associada: Suprema Sites Express
+- CNPJ: 15.083.543/0001-97
+- Sede Física: Av. Sete de Setembro, 2775 - 9º andar (acesso elevador azul ou vermelho), Batel/Rebouças, Curitiba - PR, CEP 80230-010
+- Telefone Comercial: (41) 98700-1004
+- WhatsApp Atendimento Omar: (41) 99272-1004
+- E-mail: supremamidiabatel@gmail.com
+- Domínio Oficial: https://omarseo.digital
+
+## Detalhamento dos Serviços Prestados
+
+### 1. SEO Completo On-Page e Semântico
+Análise profunda da intenção de busca (search intent), identificação de termos transacionais e informacionais, reestruturação de marcações de cabeçalho (H1, H2, H3), otimização de títulos e metatags, criação de silomaps de links internos e injeção de vocabulário controlado para o algoritmo do Google.
+
+### 2. SEO Local e Cobertura por Bairros (Curitiba)
+Estratégia voltada para os 75 bairros oficiais de Curitiba (como Batel, Água Verde, Centro, Cidade Industrial/CIC, Santa Felicidade, Bigorrilho, Portão, Pinheirinho, Sítio Cercado, Boqueirão, Juvevê, Cabral) e municípios da Região Metropolitana (São José dos Pinhais, Pinhais, Colombo, Araucária, Campo Largo, Fazenda Rio Grande).
+
+### 3. Otimização de Perfil de Empresa no Google Maps
+Configuração de categorias primárias e secundárias, preenchimento detalhado de produtos e serviços, gestão de avaliações (reviews), atualização de fotos georreferenciadas, posts regulares no perfil e padronização NAP (Name, Address, Phone) em diretórios comerciais.
+
+### 4. GEO (Generative Engine Optimization)
+Estratégias de estruturação de dados em JSON-LD, arquivos de padrão llms.txt, citação de entidades e co-ocorrência em fontes autorizadas para maximizar a probabilidade de citação em modelos de inteligência artificial como ChatGPT, Gemini, Perplexity e Claude.
+
+### 5. SEO Técnico e Performance Web
+Ajustes de velocidade de carregamento (Core Web Vitals - LCP, INP, CLS), eliminação de conteúdo duplicado com canonical tags únicas, validação de sitemap.xml e robots.txt, correção de links quebrados e pre-rendering para renderização em HTML estático limpo.
+
+## Diretrizes Éticas
+Omar SEO adota rigorosamente as Diretrizes para Webmasters do Google. Não são utilizadas práticas proibidas como cloaking, PBNs de spam ou promessas irreais de primeira posição garantida.
