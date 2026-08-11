@@ -146,6 +146,10 @@ export function EnhancedSEO({
 
   return (
     <Helmet>
+      {/* Search Console & Bing Verification */}
+      <meta name="google-site-verification" content="1xGI66_tOTR5tAOU6YhKDITaVEb4BHCfg6w97BIoWao" />
+      <meta name="msvalidate.01" content="1xGI66_tOTR5tAOU6YhKDITaVEb4BHCfg6w97BIoWao" />
+
       {/* Basic Meta */}
       <title>{title}</title>
       <meta name="description" content={description} />
