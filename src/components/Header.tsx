@@ -159,10 +159,10 @@ export function Header() {
 
           <Link
             to="/auditoria-seo"
-            className="inline-flex items-center gap-2 px-4 py-2.5 rounded-full bg-gradient-to-r from-yellow-500 via-amber-500 to-yellow-400 hover:from-yellow-400 hover:to-amber-300 text-slate-950 font-black text-xs uppercase tracking-wider shadow-[0_0_20px_rgba(250,204,21,0.4)] transition-all transform hover:-translate-y-0.5"
+            className="btn-primary-gold btn-shimmer px-4 py-2"
           >
-            <Zap size={15} className="fill-slate-950" />
-            <span>ANALISAR MINHA EMPRESA</span>
+            <Zap size={14} className="fill-slate-950" />
+            <span>Auditar Empresa</span>
           </Link>
         </div>
 
@@ -237,10 +237,10 @@ export function Header() {
             {/* Neon Border CTA Button */}
             <Link
               to="/auditoria-seo"
-              className="w-full flex items-center justify-center gap-2 py-3 px-4 rounded-xl bg-gradient-to-r from-yellow-500 via-amber-400 to-yellow-500 text-slate-950 font-black text-xs uppercase tracking-wider shadow-[0_0_20px_rgba(250,204,21,0.5)] active:scale-[0.98]"
+              className="btn-primary-gold btn-shimmer w-full py-2.5 px-4"
             >
-              <Zap size={16} className="fill-slate-950" />
-              <span>QUERO ANALISAR MINHA EMPRESA</span>
+              <Zap size={15} className="fill-slate-950" />
+              <span>Auditar Empresa</span>
             </Link>
           </div>
 

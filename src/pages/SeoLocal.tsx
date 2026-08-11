@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { EnhancedSEO } from '../components/EnhancedSEO';
+import ConstellationGrid from '../components/ui/constellation-grid';
 import { MapPin, CheckCircle2, ArrowRight, Zap, Building2, Compass } from 'lucide-react';
 import { CURITIBA_OFFICIAL_NEIGHBORHOODS, RMC_CITIES, slugify } from '../data/locations';
 
@@ -20,19 +21,22 @@ export default function SeoLocal() {
       />
 
       {/* Hero Header */}
-      <div className="text-center max-w-3xl mx-auto space-y-4">
-        <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-950/80 border border-emerald-800 text-emerald-300 font-bold text-xs uppercase tracking-wider">
-          <MapPin size={14} />
-          <span>Visibilidade Geolocalizada Hiperfocada</span>
+      <div className="relative p-8 sm:p-12 rounded-3xl bg-slate-950/80 border border-emerald-500/30 shadow-[0_0_40px_rgba(16,185,129,0.15)] overflow-hidden">
+        <ConstellationGrid className="absolute inset-0 z-0 opacity-40 pointer-events-none" />
+        <div className="relative z-10 text-center max-w-3xl mx-auto space-y-4">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-950/80 border border-emerald-800 text-emerald-300 font-bold text-xs uppercase tracking-wider">
+            <MapPin size={14} />
+            <span>Visibilidade Geolocalizada Hiperfocada</span>
+          </div>
+
+          <h1 className="text-3xl sm:text-5xl font-black font-display text-white tracking-tight">
+            SEO Local para Conectar Sua Empresa aos Clientes do Seu Bairro
+          </h1>
+
+          <p className="text-slate-300 text-sm sm:text-base leading-relaxed">
+            Atraia moradores e empresas localizadas no Batel, Água Verde, Centro, CIC, Santa Felicidade e em todas as regiões de Curitiba e municípios da Região Metropolitana.
+          </p>
         </div>
-
-        <h1 className="text-3xl sm:text-5xl font-black font-display text-white tracking-tight">
-          SEO Local para Conectar Sua Empresa aos Clientes do Seu Bairro
-        </h1>
-
-        <p className="text-slate-300 text-sm sm:text-base leading-relaxed">
-          Atraia moradores e empresas localizadas no Batel, Água Verde, Centro, CIC, Santa Felicidade e em todas as regiões de Curitiba e municípios da Região Metropolitana.
-        </p>
       </div>
 
       {/* Content Grid */}
@@ -77,10 +81,10 @@ export default function SeoLocal() {
 
           <Link
             to="/auditoria-seo"
-            className="w-full flex items-center justify-center gap-2 py-4 rounded-full bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-black text-xs sm:text-sm uppercase tracking-wider shadow-lg transition-all"
+            className="btn-emerald-wa btn-shimmer w-full py-3.5 px-4"
           >
-            <span>ANALISAR MEU RAIO DE ATENDIMENTO</span>
-            <ArrowRight size={16} />
+            <span>Auditar Raio Local</span>
+            <ArrowRight size={15} />
           </Link>
         </div>
       </div>

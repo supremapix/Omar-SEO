@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { EnhancedSEO } from '../components/EnhancedSEO';
+import ConstellationGrid from '../components/ui/constellation-grid';
 import { Award, TrendingUp, MapPin, Eye, ArrowRight, Zap, CheckCircle2 } from 'lucide-react';
 
 export default function Resultados() {
@@ -50,19 +51,22 @@ export default function Resultados() {
       />
 
       {/* Header */}
-      <div className="text-center max-w-3xl mx-auto space-y-4">
-        <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-yellow-500/10 border border-yellow-500/30 text-yellow-400 font-bold text-xs uppercase tracking-wider">
-          <Award size={14} />
-          <span>Métricas e Projetos Reais</span>
+      <div className="relative p-8 sm:p-12 rounded-3xl bg-slate-950/80 border border-yellow-500/30 shadow-[0_0_40px_rgba(250,204,21,0.15)] overflow-hidden">
+        <ConstellationGrid className="absolute inset-0 z-0 opacity-40 pointer-events-none" />
+        <div className="relative z-10 text-center max-w-3xl mx-auto space-y-4">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-yellow-500/10 border border-yellow-500/30 text-yellow-400 font-bold text-xs uppercase tracking-wider">
+            <Award size={14} />
+            <span>Métricas e Projetos Reais</span>
+          </div>
+
+          <h1 className="text-3xl sm:text-5xl font-black font-display text-white tracking-tight">
+            Resultados Reais Obtidos com Engenharia de SEO
+          </h1>
+
+          <p className="text-slate-300 text-sm sm:text-base leading-relaxed">
+            Confira o impacto comercial gerado por nossas otimizações em empresas situadas no Batel, Centro, CIC e demais regiões de Curitiba.
+          </p>
         </div>
-
-        <h1 className="text-3xl sm:text-5xl font-black font-display text-white tracking-tight">
-          Resultados Reais Obtidos com Engenharia de SEO
-        </h1>
-
-        <p className="text-slate-300 text-sm sm:text-base leading-relaxed">
-          Confira o impacto comercial gerado por nossas otimizações em empresas situadas no Batel, Centro, CIC e demais regiões de Curitiba.
-        </p>
       </div>
 
       {/* Cases Grid */}
@@ -99,10 +103,10 @@ export default function Resultados() {
         </p>
         <Link
           to="/auditoria-seo"
-          className="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-yellow-400 hover:bg-yellow-300 text-slate-950 font-black text-xs sm:text-sm uppercase tracking-wider shadow-lg transition-all"
+          className="btn-primary-gold btn-shimmer px-6 py-3.5"
         >
-          <Zap size={18} />
-          <span>SOLICITAR MEU DIAGNÓSTICO</span>
+          <Zap size={16} className="fill-slate-950" />
+          <span>Diagnóstico Gratuito</span>
         </Link>
       </div>
     </div>

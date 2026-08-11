@@ -5,6 +5,7 @@ import { HeroAnimation } from '../components/HeroAnimation';
 import { DiagnosticSection } from '../components/DiagnosticSection';
 import { SectionDivider } from '../components/SectionDivider';
 import { InternalLinkCluster } from '../components/InternalLinkCluster';
+import ConstellationGrid from '../components/ui/constellation-grid';
 import {
   Search,
   MapPin,
@@ -19,6 +20,7 @@ import {
   ShieldCheck,
   ChevronRight,
   HelpCircle,
+  MessageCircle,
 } from 'lucide-react';
 
 export default function Home() {
@@ -96,6 +98,7 @@ export default function Home() {
 
       {/* HERO SECTION */}
       <section className="relative px-4 sm:px-6 lg:px-8 py-12 lg:py-20 overflow-hidden">
+        <ConstellationGrid className="absolute inset-0 z-0 opacity-40 pointer-events-none" />
         {/* Glow ambient background circles */}
         <div className="absolute top-10 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-blue-600/10 rounded-full blur-[140px] pointer-events-none" />
 
@@ -117,23 +120,24 @@ export default function Home() {
               Estratégias de SEO, SEO Local, Google Maps, GEO e estruturação de dados para aumentar a presença da sua empresa no Google, ChatGPT, Gemini, Bing e outros mecanismos de descoberta.
             </p>
 
-            <div className="pt-4 flex flex-col sm:flex-row items-center justify-center gap-4">
+            <div className="pt-4 flex flex-col sm:flex-row items-center justify-center gap-3">
               <Link
                 to="/auditoria-seo"
-                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full bg-gradient-to-r from-yellow-500 via-amber-500 to-yellow-400 hover:from-yellow-400 hover:to-amber-300 text-slate-950 font-black text-sm uppercase tracking-wider shadow-xl hover:shadow-[0_0_25px_rgba(250,204,21,0.5)] transition-all transform hover:-translate-y-0.5"
+                className="btn-primary-gold btn-shimmer w-full sm:w-auto px-6 py-3.5 text-xs sm:text-sm"
               >
-                <Zap size={18} className="fill-slate-950" />
-                <span>QUERO ANALISAR MINHA EMPRESA</span>
+                <Zap size={16} className="fill-slate-950" />
+                <span>Auditar Empresa</span>
               </Link>
 
               <a
                 href="https://wa.me/5541992721004"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-4 rounded-full bg-slate-900 hover:bg-slate-800 border border-slate-700 text-slate-200 font-bold text-sm transition-all"
+                className="btn-emerald-wa btn-shimmer w-full sm:w-auto px-5 py-3.5 text-xs sm:text-sm"
               >
-                <span>Falar com Omar Skafi</span>
-                <ArrowRight size={16} />
+                <MessageCircle size={16} />
+                <span>Falar no WhatsApp</span>
+                <ArrowRight size={15} />
               </a>
             </div>
           </div>

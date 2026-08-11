@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { EnhancedSEO } from '../components/EnhancedSEO';
+import ConstellationGrid from '../components/ui/constellation-grid';
 import { User, ShieldCheck, MapPin, Building, Globe, ExternalLink, Zap, CheckCircle2 } from 'lucide-react';
 
 export default function SobreOmar() {
@@ -17,19 +18,22 @@ export default function SobreOmar() {
       />
 
       {/* Header */}
-      <div className="text-center max-w-3xl mx-auto space-y-4">
-        <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-950/80 border border-blue-800 text-blue-300 font-bold text-xs uppercase tracking-wider">
-          <User size={14} />
-          <span>Trajetória & Autoridade</span>
+      <div className="relative p-8 sm:p-12 rounded-3xl bg-slate-950/80 border border-blue-500/30 shadow-[0_0_40px_rgba(59,130,246,0.15)] overflow-hidden">
+        <ConstellationGrid className="absolute inset-0 z-0 opacity-40 pointer-events-none" />
+        <div className="relative z-10 text-center max-w-3xl mx-auto space-y-4">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-950/80 border border-blue-800 text-blue-300 font-bold text-xs uppercase tracking-wider">
+            <User size={14} />
+            <span>Trajetória & Autoridade</span>
+          </div>
+
+          <h1 className="text-3xl sm:text-5xl font-black font-display text-white tracking-tight">
+            Omar Skafi — Engenharia de Visibilidade Digital
+          </h1>
+
+          <p className="text-slate-300 text-sm sm:text-base leading-relaxed">
+            Especialista técnico em SEO, SEO Local, Google Maps e estruturação de dados Schema.org para posicionar empresas nos maiores ecossistemas de busca da web.
+          </p>
         </div>
-
-        <h1 className="text-3xl sm:text-5xl font-black font-display text-white tracking-tight">
-          Omar Skafi — Engenharia de Visibilidade Digital
-        </h1>
-
-        <p className="text-slate-300 text-sm sm:text-base leading-relaxed">
-          Especialista técnico em SEO, SEO Local, Google Maps e estruturação de dados Schema.org para posicionar empresas nos maiores ecossistemas de busca da web.
-        </p>
       </div>
 
       {/* Bio Grid */}

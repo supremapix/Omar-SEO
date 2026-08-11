@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { EnhancedSEO } from '../components/EnhancedSEO';
 import { SectionDivider } from '../components/SectionDivider';
 import { InternalLinkCluster } from '../components/InternalLinkCluster';
+import ConstellationGrid from '../components/ui/constellation-grid';
 import { Search, CheckCircle2, ArrowRight, Zap, Target, Layers } from 'lucide-react';
 
 export default function SeoCompleto() {
@@ -39,19 +40,22 @@ export default function SeoCompleto() {
       />
 
       {/* Hero Header */}
-      <div className="text-center max-w-3xl mx-auto space-y-4">
-        <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-950/80 border border-blue-800 text-blue-300 font-bold text-xs uppercase tracking-wider">
-          <Search size={14} />
-          <span>Estratégia Holística de Ranqueamento</span>
+      <div className="relative p-8 sm:p-12 rounded-3xl bg-slate-950/80 border border-blue-500/30 shadow-[0_0_40px_rgba(59,130,246,0.15)] overflow-hidden">
+        <ConstellationGrid className="absolute inset-0 z-0 opacity-40 pointer-events-none" />
+        <div className="relative z-10 text-center max-w-3xl mx-auto space-y-4">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-950/80 border border-blue-800 text-blue-300 font-bold text-xs uppercase tracking-wider">
+            <Search size={14} />
+            <span>Estratégia Holística de Ranqueamento</span>
+          </div>
+
+          <h1 className="text-3xl sm:text-5xl font-black font-display text-white tracking-tight">
+            SEO Completo para Sua Empresa Dominar as Pesquisas no Google
+          </h1>
+
+          <p className="text-slate-300 text-sm sm:text-base leading-relaxed">
+            Transformamos o seu site em uma estrutura altamente legível e relevante para os motores de busca, garantindo que potenciais clientes te encontrem no momento exato em que pesquisarem pelos seus produtos e serviços.
+          </p>
         </div>
-
-        <h1 className="text-3xl sm:text-5xl font-black font-display text-white tracking-tight">
-          SEO Completo para Sua Empresa Dominar as Pesquisas no Google
-        </h1>
-
-        <p className="text-slate-300 text-sm sm:text-base leading-relaxed">
-          Transformamos o seu site em uma estrutura altamente legível e relevante para os motores de busca, garantindo que potenciais clientes te encontrem no momento exato em que pesquisarem pelos seus produtos e serviços.
-        </p>
       </div>
 
       {/* Main Content Grid */}
@@ -101,10 +105,11 @@ export default function SeoCompleto() {
 
           <Link
             to="/auditoria-seo"
-            className="w-full flex items-center justify-center gap-2 py-4 rounded-full bg-yellow-400 hover:bg-yellow-300 text-slate-950 font-black text-xs sm:text-sm uppercase tracking-wider shadow-lg transition-all"
+            className="btn-primary-gold btn-shimmer w-full py-3.5 px-4"
           >
-            <span>ANALISAR MEU SITE AGORA</span>
-            <ArrowRight size={16} />
+            <Zap size={15} className="fill-slate-950" />
+            <span>Auditar Site</span>
+            <ArrowRight size={15} />
           </Link>
         </div>
       </div>

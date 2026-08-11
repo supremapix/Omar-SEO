@@ -5,6 +5,7 @@ import { COMMERCIAL_INTENTS_DATA } from '../data/commercialIntents';
 import { NotFoundView } from './NotFound';
 import { SectionDivider } from '../components/SectionDivider';
 import { InternalLinkCluster } from '../components/InternalLinkCluster';
+import ConstellationGrid from '../components/ui/constellation-grid';
 import { CheckCircle2, ArrowRight, Zap, HelpCircle } from 'lucide-react';
 
 export default function CommercialIntentPage() {
@@ -60,18 +61,21 @@ export default function CommercialIntentPage() {
       />
 
       {/* Hero */}
-      <div className="text-center max-w-3xl mx-auto space-y-4">
-        <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-950/80 border border-blue-800 text-blue-300 font-bold text-xs uppercase tracking-wider">
-          <span>Intenção Comercial • Curitiba / PR</span>
+      <div className="relative p-8 sm:p-12 rounded-3xl bg-slate-950/80 border border-blue-500/30 shadow-[0_0_40px_rgba(59,130,246,0.15)] overflow-hidden">
+        <ConstellationGrid className="absolute inset-0 z-0 opacity-40 pointer-events-none" />
+        <div className="relative z-10 text-center max-w-3xl mx-auto space-y-4">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-950/80 border border-blue-800 text-blue-300 font-bold text-xs uppercase tracking-wider">
+            <span>Intenção Comercial • Curitiba / PR</span>
+          </div>
+
+          <h1 className="text-3xl sm:text-5xl font-black font-display text-white tracking-tight">
+            {data.h1}
+          </h1>
+
+          <p className="text-slate-300 text-sm sm:text-base leading-relaxed">
+            {data.subtitle}
+          </p>
         </div>
-
-        <h1 className="text-3xl sm:text-5xl font-black font-display text-white tracking-tight">
-          {data.h1}
-        </h1>
-
-        <p className="text-slate-300 text-sm sm:text-base leading-relaxed">
-          {data.subtitle}
-        </p>
       </div>
 
       {/* Main Content */}
@@ -119,10 +123,10 @@ export default function CommercialIntentPage() {
             href="https://wa.me/5541992721004"
             target="_blank"
             rel="noopener noreferrer"
-            className="w-full flex items-center justify-center gap-2 py-4 rounded-full bg-yellow-400 hover:bg-yellow-300 text-slate-950 font-black text-xs sm:text-sm uppercase tracking-wider shadow-lg transition-all"
+            className="btn-emerald-wa btn-shimmer w-full py-3.5 px-4"
           >
-            <span>FALAR NO WHATSAPP AGORA</span>
-            <ArrowRight size={16} />
+            <span>Falar no WhatsApp</span>
+            <ArrowRight size={15} />
           </a>
         </div>
       </div>

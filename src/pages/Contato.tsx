@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { EnhancedSEO } from '../components/EnhancedSEO';
+import ConstellationGrid from '../components/ui/constellation-grid';
 import { MapPin, Phone, MessageCircle, Mail, ExternalLink, Clock, Send, Building } from 'lucide-react';
 
 export default function Contato() {
@@ -29,13 +30,16 @@ export default function Contato() {
       />
 
       {/* Header */}
-      <div className="text-center max-w-3xl mx-auto space-y-4">
-        <h1 className="text-3xl sm:text-5xl font-black font-display text-white tracking-tight">
-          Fale Conosco — Omar SEO
-        </h1>
-        <p className="text-slate-300 text-sm sm:text-base leading-relaxed">
-          Atendimento consultivo e direto para empresários em Curitiba, Região Metropolitana e todo o Brasil.
-        </p>
+      <div className="relative p-8 sm:p-12 rounded-3xl bg-slate-950/80 border border-blue-500/30 shadow-[0_0_40px_rgba(59,130,246,0.15)] overflow-hidden">
+        <ConstellationGrid className="absolute inset-0 z-0 opacity-40 pointer-events-none" />
+        <div className="relative z-10 text-center max-w-3xl mx-auto space-y-4">
+          <h1 className="text-3xl sm:text-5xl font-black font-display text-white tracking-tight">
+            Fale Conosco — Omar SEO
+          </h1>
+          <p className="text-slate-300 text-sm sm:text-base leading-relaxed">
+            Atendimento consultivo e direto para empresários em Curitiba, Região Metropolitana e todo o Brasil.
+          </p>
+        </div>
       </div>
 
       {/* Grid */}
@@ -174,10 +178,10 @@ export default function Contato() {
 
             <button
               type="submit"
-              className="w-full flex items-center justify-center gap-2 py-4 rounded-full bg-blue-600 hover:bg-blue-500 text-white font-black text-sm uppercase tracking-wider shadow-lg transition-all cursor-pointer"
+              className="btn-emerald-wa btn-shimmer w-full py-3.5 px-4 text-xs sm:text-sm"
             >
-              <Send size={18} />
-              <span>ENVIAR MENSAGEM VIA WHATSAPP</span>
+              <Send size={15} />
+              <span>Enviar no WhatsApp</span>
             </button>
           </form>
         </div>

@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { EnhancedSEO } from '../components/EnhancedSEO';
+import ConstellationGrid from '../components/ui/constellation-grid';
 import { Map, CheckCircle2, ArrowRight, Zap, Star, PhoneCall } from 'lucide-react';
 
 export default function GoogleMaps() {
@@ -26,19 +27,22 @@ export default function GoogleMaps() {
       />
 
       {/* Header */}
-      <div className="text-center max-w-3xl mx-auto space-y-4">
-        <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-yellow-500/10 border border-yellow-500/30 text-yellow-400 font-bold text-xs uppercase tracking-wider">
-          <Map size={14} />
-          <span>Pacote Local & Perfil da Empresa</span>
+      <div className="relative p-8 sm:p-12 rounded-3xl bg-slate-950/80 border border-yellow-500/30 shadow-[0_0_40px_rgba(250,204,21,0.15)] overflow-hidden">
+        <ConstellationGrid className="absolute inset-0 z-0 opacity-40 pointer-events-none" />
+        <div className="relative z-10 text-center max-w-3xl mx-auto space-y-4">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-yellow-500/10 border border-yellow-500/30 text-yellow-400 font-bold text-xs uppercase tracking-wider">
+            <Map size={14} />
+            <span>Pacote Local & Perfil da Empresa</span>
+          </div>
+
+          <h1 className="text-3xl sm:text-5xl font-black font-display text-white tracking-tight">
+            Otimização do Perfil da Empresa no Google Maps em Curitiba
+          </h1>
+
+          <p className="text-slate-300 text-sm sm:text-base leading-relaxed">
+            Apareça no cobiçado Top 3 do Google Maps quando clientes locais buscarem pelo seu serviço no smartphone ou computador.
+          </p>
         </div>
-
-        <h1 className="text-3xl sm:text-5xl font-black font-display text-white tracking-tight">
-          Otimização do Perfil da Empresa no Google Maps em Curitiba
-        </h1>
-
-        <p className="text-slate-300 text-sm sm:text-base leading-relaxed">
-          Apareça no cobiçado Top 3 do Google Maps quando clientes locais buscarem pelo seu serviço no smartphone ou computador.
-        </p>
       </div>
 
       {/* Grid */}
@@ -88,10 +92,10 @@ export default function GoogleMaps() {
 
           <Link
             to="/auditoria-seo"
-            className="w-full flex items-center justify-center gap-2 py-4 rounded-full bg-yellow-400 hover:bg-yellow-300 text-slate-950 font-black text-xs sm:text-sm uppercase tracking-wider shadow-lg transition-all"
+            className="btn-primary-gold btn-shimmer w-full py-3.5 px-4"
           >
-            <span>ANALISAR MEU GOOGLE MAPS</span>
-            <ArrowRight size={16} />
+            <span>Auditar Ficha Maps</span>
+            <ArrowRight size={15} />
           </Link>
         </div>
       </div>

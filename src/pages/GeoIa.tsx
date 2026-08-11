@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { EnhancedSEO } from '../components/EnhancedSEO';
+import ConstellationGrid from '../components/ui/constellation-grid';
 import { Cpu, CheckCircle2, ArrowRight, Zap, ShieldAlert, FileText, Sparkles } from 'lucide-react';
 
 export default function GeoIa() {
@@ -26,19 +27,22 @@ export default function GeoIa() {
       />
 
       {/* Header */}
-      <div className="text-center max-w-3xl mx-auto space-y-4">
-        <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-purple-950/80 border border-purple-800 text-purple-300 font-bold text-xs uppercase tracking-wider">
-          <Cpu size={14} />
-          <span>Generative Engine Optimization</span>
+      <div className="relative p-8 sm:p-12 rounded-3xl bg-slate-950/80 border border-purple-500/30 shadow-[0_0_40px_rgba(168,85,247,0.15)] overflow-hidden">
+        <ConstellationGrid className="absolute inset-0 z-0 opacity-40 pointer-events-none" />
+        <div className="relative z-10 text-center max-w-3xl mx-auto space-y-4">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-purple-950/80 border border-purple-800 text-purple-300 font-bold text-xs uppercase tracking-wider">
+            <Cpu size={14} />
+            <span>Generative Engine Optimization</span>
+          </div>
+
+          <h1 className="text-3xl sm:text-5xl font-black font-display text-white tracking-tight">
+            GEO: Prepare Sua Empresa para Ser Recomendada por Assistentes de IA
+          </h1>
+
+          <p className="text-slate-300 text-sm sm:text-base leading-relaxed">
+            Estruturação de dados avançada e citações digitais para alinhar a presença da sua marca com o funcionamento dos modelos de inteligência artificial como ChatGPT, Gemini, Perplexity e Claude.
+          </p>
         </div>
-
-        <h1 className="text-3xl sm:text-5xl font-black font-display text-white tracking-tight">
-          GEO: Prepare Sua Empresa para Ser Recomendada por Assistentes de IA
-        </h1>
-
-        <p className="text-slate-300 text-sm sm:text-base leading-relaxed">
-          Estruturação de dados avançada e citações digitais para alinhar a presença da sua marca com o funcionamento dos modelos de inteligência artificial como ChatGPT, Gemini, Perplexity e Claude.
-        </p>
       </div>
 
       {/* Honesty Banner */}
@@ -101,10 +105,10 @@ export default function GeoIa() {
 
           <Link
             to="/auditoria-seo"
-            className="w-full flex items-center justify-center gap-2 py-4 rounded-full bg-purple-600 hover:bg-purple-500 text-white font-black text-xs sm:text-sm uppercase tracking-wider shadow-lg transition-all"
+            className="btn-primary-gold btn-shimmer w-full py-3.5 px-4"
           >
-            <span>SOLICITAR DIAGNÓSTICO GEO</span>
-            <ArrowRight size={16} />
+            <span>Diagnóstico GEO</span>
+            <ArrowRight size={15} />
           </Link>
         </div>
       </div>

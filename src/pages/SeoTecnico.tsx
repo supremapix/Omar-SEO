@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { EnhancedSEO } from '../components/EnhancedSEO';
+import ConstellationGrid from '../components/ui/constellation-grid';
 import { Code, CheckCircle2, ArrowRight, Zap, Terminal, Server } from 'lucide-react';
 
 export default function SeoTecnico() {
@@ -26,19 +27,22 @@ export default function SeoTecnico() {
       />
 
       {/* Header */}
-      <div className="text-center max-w-3xl mx-auto space-y-4">
-        <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-cyan-950/80 border border-cyan-800 text-cyan-300 font-bold text-xs uppercase tracking-wider">
-          <Code size={14} />
-          <span>Engenharia e Arquitetura Web</span>
+      <div className="relative p-8 sm:p-12 rounded-3xl bg-slate-950/80 border border-cyan-500/30 shadow-[0_0_40px_rgba(34,211,238,0.15)] overflow-hidden">
+        <ConstellationGrid className="absolute inset-0 z-0 opacity-40 pointer-events-none" />
+        <div className="relative z-10 text-center max-w-3xl mx-auto space-y-4">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-cyan-950/80 border border-cyan-800 text-cyan-300 font-bold text-xs uppercase tracking-wider">
+            <Code size={14} />
+            <span>Engenharia e Arquitetura Web</span>
+          </div>
+
+          <h1 className="text-3xl sm:text-5xl font-black font-display text-white tracking-tight">
+            SEO Técnico: Código Limpo e Rastreabilidade Perfeita
+          </h1>
+
+          <p className="text-slate-300 text-sm sm:text-base leading-relaxed">
+            Sem uma base técnica sólida, o melhor conteúdo do mundo não consegue ranquear. Garantimos velocidade, renderização impecável e marcação de dados Schema.org.
+          </p>
         </div>
-
-        <h1 className="text-3xl sm:text-5xl font-black font-display text-white tracking-tight">
-          SEO Técnico: Código Limpo e Rastreabilidade Perfeita
-        </h1>
-
-        <p className="text-slate-300 text-sm sm:text-base leading-relaxed">
-          Sem uma base técnica sólida, o melhor conteúdo do mundo não consegue ranquear. Garantimos velocidade, renderização impecável e marcação de dados Schema.org.
-        </p>
       </div>
 
       {/* Content Grid */}
@@ -88,10 +92,10 @@ export default function SeoTecnico() {
 
           <Link
             to="/auditoria-seo"
-            className="w-full flex items-center justify-center gap-2 py-4 rounded-full bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-black text-xs sm:text-sm uppercase tracking-wider shadow-lg transition-all"
+            className="btn-secondary-glass btn-shimmer w-full py-3.5 px-4"
           >
-            <span>ANALISAR CÓDIGO TÉCNICO</span>
-            <ArrowRight size={16} />
+            <span>Auditar Código</span>
+            <ArrowRight size={15} />
           </Link>
         </div>
       </div>

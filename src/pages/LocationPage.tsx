@@ -6,6 +6,7 @@ import { MapPin, Building2, Search, ArrowRight, Zap, CheckCircle2, HelpCircle } 
 import { NotFoundView } from './NotFound';
 import { SectionDivider } from '../components/SectionDivider';
 import { InternalLinkCluster } from '../components/InternalLinkCluster';
+import ConstellationGrid from '../components/ui/constellation-grid';
 
 export default function LocationPage() {
   const location = useLocation();
@@ -62,19 +63,22 @@ export default function LocationPage() {
       />
 
       {/* Hero */}
-      <div className="text-center max-w-3xl mx-auto space-y-4">
-        <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-950/80 border border-emerald-800 text-emerald-300 font-bold text-xs uppercase tracking-wider">
-          <MapPin size={14} />
-          <span>{locData.regionName}</span>
+      <div className="relative p-8 sm:p-12 rounded-3xl bg-slate-950/80 border border-emerald-500/30 shadow-[0_0_40px_rgba(16,185,129,0.15)] overflow-hidden">
+        <ConstellationGrid className="absolute inset-0 z-0 opacity-40 pointer-events-none" />
+        <div className="relative z-10 text-center max-w-3xl mx-auto space-y-4">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-950/80 border border-emerald-800 text-emerald-300 font-bold text-xs uppercase tracking-wider">
+            <MapPin size={14} />
+            <span>{locData.regionName}</span>
+          </div>
+
+          <h1 className="text-3xl sm:text-5xl font-black font-display text-white tracking-tight">
+            SEO e Posicionamento no Google em {locData.name}
+          </h1>
+
+          <p className="text-slate-300 text-sm sm:text-base leading-relaxed">
+            {locData.shortDesc}
+          </p>
         </div>
-
-        <h1 className="text-3xl sm:text-5xl font-black font-display text-white tracking-tight">
-          SEO e Posicionamento no Google em {locData.name}
-        </h1>
-
-        <p className="text-slate-300 text-sm sm:text-base leading-relaxed">
-          {locData.shortDesc}
-        </p>
       </div>
 
       {/* Content Grid */}
@@ -129,10 +133,10 @@ export default function LocationPage() {
             href="https://wa.me/5541992721004"
             target="_blank"
             rel="noopener noreferrer"
-            className="w-full flex items-center justify-center gap-2 py-4 rounded-full bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-black text-xs sm:text-sm uppercase tracking-wider shadow-lg transition-all"
+            className="btn-emerald-wa btn-shimmer w-full py-3.5 px-4"
           >
-            <span>FALAR COM OMAR SAKFI</span>
-            <ArrowRight size={16} />
+            <span>Falar no WhatsApp</span>
+            <ArrowRight size={15} />
           </a>
         </div>
       </div>

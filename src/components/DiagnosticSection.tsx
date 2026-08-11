@@ -99,11 +99,11 @@ export function DiagnosticSection() {
 
           <Link
             to="/auditoria-seo"
-            className="shrink-0 inline-flex items-center gap-2 px-6 py-3.5 rounded-full bg-yellow-400 hover:bg-yellow-300 text-slate-950 font-black text-xs sm:text-sm uppercase tracking-wider shadow-lg hover:shadow-[0_0_20px_rgba(250,204,21,0.5)] transition-all transform hover:scale-105"
+            className="btn-primary-gold btn-shimmer shrink-0 px-5 py-3"
           >
-            <Zap size={18} />
-            <span>SOLICITAR DIAGNÓSTICO GRATUITO</span>
-            <ArrowRight size={16} />
+            <Zap size={16} className="fill-slate-950" />
+            <span>Diagnóstico Gratuito</span>
+            <ArrowRight size={15} />
           </Link>
         </div>
       </div>

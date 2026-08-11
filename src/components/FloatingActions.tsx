@@ -77,11 +77,11 @@ export function FloatingActions() {
       <div className="fixed bottom-3 left-3 sm:bottom-5 sm:left-5 z-40">
         <button
           onClick={() => setIsShareModalOpen(true)}
-          className="relative group flex items-center gap-1.5 px-2.5 py-2 sm:px-4 sm:py-2.5 rounded-full bg-[#0d0f17]/90 text-blue-400 border border-blue-500/40 shadow-[0_0_15px_rgba(59,130,246,0.3)] hover:border-blue-400 hover:bg-blue-950/90 hover:text-white transition-all transform hover:scale-105 cursor-pointer backdrop-blur-md"
+          className="btn-secondary-glass btn-shimmer px-3 py-1.5 sm:px-3.5 sm:py-2 shadow-[0_0_15px_rgba(59,130,246,0.25)]"
           title="Compartilhar esta página"
         >
-          <Share2 size={15} className="animate-pulse text-blue-400 group-hover:text-white" />
-          <span className="text-[10px] sm:text-xs font-bold uppercase tracking-wider text-slate-200 group-hover:text-white">
+          <Share2 size={13} className="animate-pulse text-cyan-400 group-hover:text-white" />
+          <span className="text-[10px] sm:text-[11px] font-bold uppercase tracking-wider">
             Indicar
           </span>
         </button>
@@ -167,27 +167,27 @@ export function FloatingActions() {
         {/* Ligar Agora Button */}
         <a
           href="tel:+5541987001004"
-          className="hidden md:flex items-center gap-2 px-3.5 py-2 rounded-full bg-gradient-to-r from-blue-600 to-indigo-600 text-white font-bold text-xs uppercase tracking-wider shadow-[0_0_15px_rgba(37,99,235,0.4)] hover:shadow-[0_0_20px_rgba(37,99,235,0.6)] transition-all hover:scale-105"
+          className="hidden md:inline-flex btn-secondary-glass btn-shimmer px-3 py-1.5 text-[11px]"
         >
-          <Phone size={14} className="animate-bounce" />
+          <Phone size={13} className="animate-bounce text-cyan-400" />
           <span>Ligar (41) 98700-1004</span>
         </a>
 
-        {/* WhatsApp Main Floating Action - Ultra Compact on Mobile */}
+        {/* WhatsApp Main Floating Action */}
         <a
           href="https://wa.me/5541987001004"
           target="_blank"
           rel="noopener noreferrer"
-          className="relative group flex items-center gap-2 px-3 py-2 sm:px-4 sm:py-2.5 rounded-full bg-gradient-to-r from-emerald-600 via-teal-600 to-emerald-500 text-white font-black text-[11px] sm:text-xs uppercase tracking-wider shadow-[0_0_20px_rgba(16,185,129,0.5)] hover:shadow-[0_0_25px_rgba(16,185,129,0.7)] transition-all transform hover:scale-105 border border-emerald-400/40"
+          className="btn-emerald-wa btn-shimmer px-3 py-1.5 sm:px-3.5 sm:py-2 text-[11px] sm:text-xs"
         >
           {/* Pulsing Green Indicator */}
-          <span className="relative flex h-2.5 w-2.5 shrink-0">
+          <span className="relative flex h-2 w-2 shrink-0">
             <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-300 opacity-75"></span>
-            <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-200"></span>
+            <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-200"></span>
           </span>
 
-          <MessageSquare size={15} className="animate-pulse text-white shrink-0" />
-          <span className="font-extrabold tracking-tight whitespace-nowrap">WhatsApp</span>
+          <MessageSquare size={14} className="animate-pulse text-white shrink-0" />
+          <span>WhatsApp</span>
         </a>
       </div>
     </>
