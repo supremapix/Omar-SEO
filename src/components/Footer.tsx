@@ -54,8 +54,8 @@ export function Footer() {
     <footer className="bg-[#07080b] text-slate-300 border-t border-blue-500/30 pt-16 pb-12 relative overflow-hidden">
       <BackgroundVideo
         src="https://img.supremasite.com.br/omar-seo.mp4"
-        opacity={0.2}
-        overlayClassName="bg-gradient-to-b from-[#07080b]/90 via-[#07080b]/85 to-[#07080b]/95"
+        opacity={0.35}
+        overlayClassName="bg-gradient-to-b from-[#07080b]/80 via-[#07080b]/70 to-[#07080b]/85"
       />
 
       {/* Top Neon Light Line Sweep */}

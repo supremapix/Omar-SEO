@@ -9,8 +9,8 @@ interface BackgroundVideoProps {
 
 export function BackgroundVideo({
   src,
-  opacity = 0.25,
-  overlayClassName = 'bg-gradient-to-b from-[#0a0a0f]/80 via-[#0a0a0f]/60 to-[#0a0a0f]/90',
+  opacity = 0.40,
+  overlayClassName = 'bg-gradient-to-b from-[#0a0a0f]/70 via-[#0a0a0f]/50 to-[#0a0a0f]/80',
   className = '',
 }: BackgroundVideoProps) {
   return (

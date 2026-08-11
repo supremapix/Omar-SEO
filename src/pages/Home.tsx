@@ -101,8 +101,8 @@ export default function Home() {
       <section className="relative px-4 sm:px-6 lg:px-8 py-12 lg:py-20 overflow-hidden">
         <BackgroundVideo
           src="https://img.supremasite.com.br/seo-omar.mp4"
-          opacity={0.25}
-          overlayClassName="bg-gradient-to-b from-[#0a0a0f]/80 via-[#0a0a0f]/60 to-[#0a0a0f]/90"
+          opacity={0.40}
+          overlayClassName="bg-gradient-to-b from-[#0a0a0f]/70 via-[#0a0a0f]/50 to-[#0a0a0f]/80"
         />
         <ConstellationGrid className="absolute inset-0 z-0 opacity-30 pointer-events-none" />
         {/* Glow ambient background circles */}
@@ -214,84 +214,84 @@ export default function Home() {
       </section>
 
       {/* AUTHORITY & ABOUT OMAR SECTION */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
+      <section className="py-16 sm:py-20 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
         <BackgroundVideo
           src="https://img.supremasite.com.br/omar-seo.mp4"
-          opacity={0.18}
-          overlayClassName="bg-gradient-to-b from-[#0a0a0f]/90 via-[#0a0a0f]/80 to-[#0a0a0f]/95"
+          opacity={0.35}
+          overlayClassName="bg-gradient-to-b from-[#0a0a0f]/80 via-[#0a0a0f]/65 to-[#0a0a0f]/85"
         />
-        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center relative z-10">
           <div className="lg:col-span-6 space-y-6">
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-950/80 border border-blue-800 text-blue-300 font-bold text-xs uppercase tracking-wider">
-              <Award size={14} className="text-yellow-400" />
-              <span>Autoridade em SEO em Curitiba</span>
+            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-950/90 border border-cyan-400/50 text-cyan-300 font-extrabold text-xs sm:text-sm uppercase tracking-wider shadow-[0_0_15px_rgba(34,211,238,0.3)] backdrop-blur-md">
+              <Award size={16} className="text-yellow-400 shrink-0" />
+              <span className="font-bold text-cyan-200">Autoridade em SEO em Curitiba</span>
             </div>
 
-            <h2 className="text-3xl sm:text-4xl font-black font-display text-white leading-tight">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-4xl font-extrabold font-display leading-tight sm:leading-snug tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-white via-cyan-100 to-blue-300 drop-shadow-[0_2px_12px_rgba(0,0,0,0.8)]">
               A Ciência de Fazer Sua Empresa Ser Encontrada na Primeira Página
             </h2>
 
-            <p className="text-slate-300 text-sm sm:text-base leading-relaxed">
+            <p className="text-slate-200 text-sm sm:text-base leading-relaxed">
               Com sede no Batel/Rebouças em Curitiba, Omar Skafi atua há mais de uma década na interseção entre tecnologia, arquitetura web e marketing de performance.
             </p>
 
             <p className="text-slate-300 text-sm sm:text-base leading-relaxed">
-              Com o respaldo estrutural da <strong className="text-white">Suprema Sites Express (OSKAFI WEB SITES LTDA ME)</strong>, oferecemos um atendimento consultivo direto e sem intermediários, focado no faturamento real do seu negócio.
+              Com o respaldo estrutural da <strong className="text-white font-bold underline decoration-cyan-400 decoration-2">Suprema Sites Express (OSKAFI WEB SITES LTDA ME)</strong>, oferecemos um atendimento consultivo direto e sem intermediários, focado no faturamento real do seu negócio.
             </p>
 
-            <div className="grid grid-cols-2 gap-4 pt-2">
-              <div className="p-4 rounded-xl bg-slate-900/80 border border-slate-800">
-                <div className="text-2xl font-black font-display text-yellow-400">100%</div>
-                <div className="text-xs text-slate-400 mt-1">SEO Técnico e Semântico Verdadeiro</div>
+            <div className="grid grid-cols-2 gap-3 sm:gap-4 pt-2">
+              <div className="p-4 sm:p-5 rounded-2xl bg-slate-900/90 border border-slate-700/80 shadow-xl backdrop-blur-md hover:border-cyan-500/50 transition-colors">
+                <div className="text-2xl sm:text-3xl font-black font-display text-yellow-400 drop-shadow-sm">100%</div>
+                <div className="text-xs sm:text-sm font-semibold text-slate-200 mt-1">SEO Técnico e Semântico Verdadeiro</div>
               </div>
-              <div className="p-4 rounded-xl bg-slate-900/80 border border-slate-800">
-                <div className="text-2xl font-black font-display text-blue-400">75+</div>
-                <div className="text-xs text-slate-400 mt-1">Bairros de Curitiba Cobertos</div>
+              <div className="p-4 sm:p-5 rounded-2xl bg-slate-900/90 border border-slate-700/80 shadow-xl backdrop-blur-md hover:border-cyan-500/50 transition-colors">
+                <div className="text-2xl sm:text-3xl font-black font-display text-cyan-400 drop-shadow-sm">75+</div>
+                <div className="text-xs sm:text-sm font-semibold text-slate-200 mt-1">Bairros de Curitiba Cobertos</div>
               </div>
             </div>
 
             <div className="pt-2">
               <Link
                 to="/omar-skafi"
-                className="inline-flex items-center gap-2 text-sm font-bold text-yellow-400 hover:text-yellow-300 border-b-2 border-yellow-400/50 pb-1"
+                className="inline-flex items-center gap-2 text-sm sm:text-base font-bold text-yellow-400 hover:text-yellow-300 border-b-2 border-yellow-400/60 pb-1 transition-colors"
               >
                 <span>Conheça a história e metodologia de Omar Skafi →</span>
               </Link>
             </div>
           </div>
 
-          <div className="lg:col-span-6 bg-[#0e1017] border border-slate-800 rounded-3xl p-8 shadow-2xl relative">
-            <h3 className="text-xl font-bold font-display text-white mb-6 flex items-center gap-2">
-              <ShieldCheck className="text-blue-400" />
+          <div className="lg:col-span-6 bg-slate-900/95 border border-blue-500/40 rounded-3xl p-8 sm:p-10 shadow-2xl backdrop-blur-md relative z-10">
+            <h3 className="text-xl sm:text-2xl font-bold font-display text-white mb-6 flex items-center gap-2.5">
+              <ShieldCheck className="text-blue-400 shrink-0" size={24} />
               <span>Garantias da Nossa Consultoria</span>
             </h3>
 
-            <div className="space-y-4 text-xs sm:text-sm">
+            <div className="space-y-4 text-sm sm:text-base">
               <div className="flex items-start gap-3">
-                <CheckCircle size={18} className="text-emerald-400 shrink-0 mt-0.5" />
-                <p className="text-slate-300">
-                  <strong className="text-white">Sem Promessas Ilusórias:</strong> Não prometemos "posição nº 1 em 24h" porque o Google pune manipuladores. Prometemos trabalho técnico sério e contínuo.
+                <CheckCircle size={20} className="text-emerald-400 shrink-0 mt-0.5" />
+                <p className="text-slate-200 leading-relaxed">
+                  <strong className="text-white font-bold">Sem Promessas Ilusórias:</strong> Não prometemos "posição nº 1 em 24h" porque o Google pune manipuladores. Prometemos trabalho técnico sério e contínuo.
                 </p>
               </div>
 
               <div className="flex items-start gap-3">
-                <CheckCircle size={18} className="text-emerald-400 shrink-0 mt-0.5" />
-                <p className="text-slate-300">
-                  <strong className="text-white">Atendimento Direto:</strong> Reuniões de alinhamento diretamente com Omar Skafi para análise de relatórios.
+                <CheckCircle size={20} className="text-emerald-400 shrink-0 mt-0.5" />
+                <p className="text-slate-200 leading-relaxed">
+                  <strong className="text-white font-bold">Atendimento Direto:</strong> Reuniões de alinhamento diretamente com Omar Skafi para análise de relatórios.
                 </p>
               </div>
 
               <div className="flex items-start gap-3">
-                <CheckCircle size={18} className="text-emerald-400 shrink-0 mt-0.5" />
-                <p className="text-slate-300">
-                  <strong className="text-white">Código Limpo e Válido:</strong> Respeitamos rigorosamente as diretrizes para webmasters do Google e os padrões Schema.org.
+                <CheckCircle size={20} className="text-emerald-400 shrink-0 mt-0.5" />
+                <p className="text-slate-200 leading-relaxed">
+                  <strong className="text-white font-bold">Código Limpo e Válido:</strong> Respeitamos rigorosamente as diretrizes para webmasters do Google e os padrões Schema.org.
                 </p>
               </div>
 
               <div className="flex items-start gap-3">
-                <CheckCircle size={18} className="text-emerald-400 shrink-0 mt-0.5" />
-                <p className="text-slate-300">
-                  <strong className="text-white">Relatórios Sem Jargões:</strong> Métricas focadas em chamadas telefônicas, cliques no WhatsApp, acessos orgânicos e leads.
+                <CheckCircle size={20} className="text-emerald-400 shrink-0 mt-0.5" />
+                <p className="text-slate-200 leading-relaxed">
+                  <strong className="text-white font-bold">Relatórios Sem Jargões:</strong> Métricas focadas em chamadas telefônicas, cliques no WhatsApp, acessos orgânicos e leads.
                 </p>
               </div>
             </div>

@@ -44,8 +44,8 @@ export default function SeoCompleto() {
       <div className="relative p-8 sm:p-12 rounded-3xl bg-slate-950/80 border border-blue-500/30 shadow-[0_0_40px_rgba(59,130,246,0.15)] overflow-hidden">
         <BackgroundVideo
           src="https://img.supremasite.com.br/seo-omar.mp4"
-          opacity={0.25}
-          overlayClassName="bg-gradient-to-b from-[#0a0a0f]/80 via-[#0a0a0f]/60 to-[#0a0a0f]/90"
+          opacity={0.40}
+          overlayClassName="bg-gradient-to-b from-[#0a0a0f]/70 via-[#0a0a0f]/50 to-[#0a0a0f]/80"
         />
         <ConstellationGrid className="absolute inset-0 z-0 opacity-40 pointer-events-none" />
         <div className="relative z-10 text-center max-w-3xl mx-auto space-y-4">

@@ -9,8 +9,8 @@ export function NotFoundView() {
     <div className="pt-32 pb-20 px-4 max-w-xl mx-auto text-center space-y-6 relative overflow-hidden">
       <BackgroundVideo
         src="https://img.supremasite.com.br/seo-omar.mp4"
-        opacity={0.2}
-        overlayClassName="bg-gradient-to-b from-[#0a0a0f]/85 via-[#0a0a0f]/75 to-[#0a0a0f]/90"
+        opacity={0.35}
+        overlayClassName="bg-gradient-to-b from-[#0a0a0f]/80 via-[#0a0a0f]/65 to-[#0a0a0f]/85"
       />
       <div className="relative z-10 space-y-6">
       <EnhancedSEO
