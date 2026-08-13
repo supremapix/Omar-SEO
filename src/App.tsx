@@ -7,6 +7,7 @@ import { Footer } from './components/Footer';
 import { FloatingActions } from './components/FloatingActions';
 import { COMMERCIAL_INTENTS_DATA } from './data/commercialIntents';
 import { getAllLocationSlugs } from './data/locations';
+import { SERVICES_DATA } from './data/servicesData';
 
 // Lazy Loaded Main Pages
 const Home = lazy(() => import('./pages/Home'));
@@ -17,13 +18,18 @@ const GeoIa = lazy(() => import('./pages/GeoIa'));
 const SeoTecnico = lazy(() => import('./pages/SeoTecnico'));
 const Resultados = lazy(() => import('./pages/Resultados'));
 const SobreOmar = lazy(() => import('./pages/SobreOmar'));
+const Sobre = lazy(() => import('./pages/Sobre'));
+const Metodo = lazy(() => import('./pages/Metodo'));
+const Blog = lazy(() => import('./pages/Blog'));
+const ServicesIndex = lazy(() => import('./pages/ServicesIndex'));
+const ServicePage = lazy(() => import('./pages/ServicePage'));
 const AuditoriaSeo = lazy(() => import('./pages/AuditoriaSeo'));
 const Contato = lazy(() => import('./pages/Contato'));
 const CommercialIntentPage = lazy(() => import('./pages/CommercialIntentPage'));
 const LocationPage = lazy(() => import('./pages/LocationPage'));
 const NotFoundView = lazy(() => import('./pages/NotFound').then(m => ({ default: m.NotFoundView })));
 
-// Scroll To Top component that triggers on route change to always show Hero first
+// Scroll To Top component that triggers on route change
 function ScrollToTop() {
   const { pathname } = useLocation();
 
@@ -60,8 +66,15 @@ function AnimatedRoutes() {
         transition={{ duration: 0.25, ease: 'easeOut' }}
       >
         <Routes location={location}>
-          {/* Fixed Main Routes */}
+          {/* Main Routes */}
           <Route path="/" element={<Home />} />
+          <Route path="/servicos" element={<ServicesIndex />} />
+          <Route path="/servicos/:slug" element={<ServicePage />} />
+          <Route path="/sobre" element={<Sobre />} />
+          <Route path="/metodo" element={<Metodo />} />
+          <Route path="/blog" element={<Blog />} />
+
+          {/* Core Service Pages */}
           <Route path="/seo" element={<SeoCompleto />} />
           <Route path="/seo-local" element={<SeoLocal />} />
           <Route path="/google-maps" element={<GoogleMaps />} />
@@ -82,7 +95,7 @@ function AnimatedRoutes() {
           <Route path="/consultoria-seo" element={<CommercialIntentPage />} />
           <Route path="/seo-local-curitiba" element={<CommercialIntentPage />} />
 
-          {/* Critical Catch-All Route with manual pathname verification */}
+          {/* Catch-All Route with fallback verification */}
           <Route path="*" element={<CatchAllRouteHandler />} />
         </Routes>
       </motion.div>
@@ -90,22 +103,29 @@ function AnimatedRoutes() {
   );
 }
 
-// Fallback Route Handler enforcing the critical routing rule
+// Fallback Route Handler enforcing dynamic route matching
 function CatchAllRouteHandler() {
   const location = useLocation();
   const path = location.pathname.toLowerCase().replace(/\/$/, '') || '/';
   const cleanSlug = path.replace(/^\//, '');
+
+  // Check /servicos/:slug
+  if (cleanSlug.startsWith('servicos/')) {
+    const serviceSlug = cleanSlug.replace(/^servicos\//, '');
+    if (SERVICES_DATA[serviceSlug]) {
+      return <ServicePage slug={serviceSlug} />;
+    }
+  }
 
   // Check Commercial Intent routes (e.g. /especialista-seo-curitiba)
   if (COMMERCIAL_INTENTS_DATA[cleanSlug]) {
     return <CommercialIntentPage />;
   }
 
-  // Check Location routes (e.g. /seo-batel, /seo-sao-jose-dos-pinhais)
+  // Check Location routes (e.g. /seo-batel)
   if (cleanSlug.startsWith('seo-')) {
     const locSlug = cleanSlug.replace(/^seo-/, '');
     const allSlugs = getAllLocationSlugs();
-    // Match against known location slugs or render template for any valid neighborhood
     if (allSlugs.includes(locSlug) || locSlug.length > 2) {
       return <LocationPage />;
     }

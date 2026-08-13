@@ -61,10 +61,6 @@ export function Footer() {
       {/* Top Neon Light Line Sweep */}
       <div className="absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-cyan-400 to-transparent opacity-80 animate-pulse shadow-[0_0_15px_rgba(34,211,238,0.8)]" />
 
-      {/* Background ambient neon lights */}
-      <div className="absolute top-0 left-1/4 w-96 h-96 bg-blue-600/10 rounded-full blur-3xl pointer-events-none" />
-      <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-cyan-600/10 rounded-full blur-3xl pointer-events-none" />
-
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 pb-12 border-b border-slate-800/80">
           
@@ -91,7 +87,7 @@ export function Footer() {
                 className="inline-flex items-center gap-1.5 text-yellow-400 hover:text-yellow-300 font-bold border-b border-yellow-400/40 pb-0.5 transition-colors"
               >
                 <Globe size={14} />
-                <span>Link da Bio & Bio Oficial</span>
+                <span>Link da Bio Oficial</span>
                 <ExternalLink size={12} />
               </a>
               <div className="text-[11px] text-slate-400 flex items-center gap-1.5 pt-1">
@@ -101,71 +97,88 @@ export function Footer() {
             </div>
           </div>
 
-          {/* Column 2: Core Services */}
+          {/* Column 2: 8 Specialized Service Pages */}
           <div className="space-y-4">
             <h3 className="text-sm font-bold text-white uppercase tracking-wider font-display border-b border-slate-800 pb-2">
-              Serviços de Visibilidade
+              Nossos Serviços de SEO & GEO
             </h3>
             <ul className="space-y-2 text-xs">
               <li>
-                <Link to="/seo" className="hover:text-blue-400 transition-colors">
-                  SEO Completo On-Page & Off-Page
+                <Link to="/servicos/consultoria-seo" className="hover:text-blue-400 transition-colors">
+                  Consultoria SEO Estratégica
                 </Link>
               </li>
               <li>
-                <Link to="/seo-local" className="hover:text-blue-400 transition-colors">
-                  SEO Local por Cidade e Bairro
+                <Link to="/servicos/auditoria-seo" className="hover:text-blue-400 transition-colors">
+                  Auditoria SEO Técnica Completa
                 </Link>
               </li>
               <li>
-                <Link to="/google-maps" className="hover:text-blue-400 transition-colors">
-                  Otimização de Google Maps & Perfil
+                <Link to="/servicos/setup-seo-tecnico" className="hover:text-blue-400 transition-colors">
+                  Setup de SEO Técnico & Código
                 </Link>
               </li>
               <li>
-                <Link to="/geo-ia" className="hover:text-blue-400 transition-colors">
-                  GEO para Motores de IA (ChatGPT/Gemini)
+                <Link to="/servicos/seo-local" className="hover:text-blue-400 transition-colors">
+                  SEO Local & Google Maps
                 </Link>
               </li>
               <li>
-                <Link to="/seo-tecnico" className="hover:text-blue-400 transition-colors">
-                  SEO Técnico, Schema.org & Performance
+                <Link to="/servicos/seo-ecommerce" className="hover:text-blue-400 transition-colors">
+                  SEO para E-commerce
                 </Link>
               </li>
               <li>
-                <Link to="/auditoria-seo" className="hover:text-blue-400 transition-colors">
-                  Auditoria SEO e Diagnóstico Gratuito
+                <Link to="/servicos/link-building" className="hover:text-blue-400 transition-colors">
+                  Link Building & Digital PR
                 </Link>
               </li>
               <li>
-                <Link to="/resultados" className="hover:text-blue-400 transition-colors">
-                  Cases de Sucesso & Relatórios
+                <Link to="/servicos/cro-otimizacao-conversao" className="hover:text-blue-400 transition-colors">
+                  CRO & Otimização de Conversão
+                </Link>
+              </li>
+              <li>
+                <Link to="/servicos/geo-otimizacao-ia" className="hover:text-blue-400 transition-colors text-cyan-300 font-bold">
+                  GEO — Otimização para IAs (ChatGPT/Gemini)
                 </Link>
               </li>
             </ul>
           </div>
 
-          {/* Column 3: Regions & Clusters */}
+          {/* Column 3: Institutional Pages & Bairros */}
           <div className="space-y-4">
             <h3 className="text-sm font-bold text-white uppercase tracking-wider font-display border-b border-slate-800 pb-2">
-              Bairros e Regiões
+              Institucional & Regiões
             </h3>
-            <ul className="grid grid-cols-2 gap-x-2 gap-y-1.5 text-[11px] text-slate-400">
-              {topLocations.map((loc) => (
-                <li key={loc.href}>
-                  <Link to={loc.href} className="hover:text-blue-400 transition-colors">
-                    {loc.name}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-            <div className="pt-1">
-              <Link
-                to="/seo-local-curitiba"
-                className="text-xs text-blue-400 hover:text-blue-300 font-semibold inline-flex items-center gap-1"
-              >
-                <span>Ver guia completo de todas as localidades →</span>
-              </Link>
+            <div className="space-y-3">
+              <div className="flex flex-wrap gap-2 text-xs font-semibold">
+                <Link to="/sobre" className="px-2.5 py-1 rounded-lg bg-slate-900 border border-slate-800 text-slate-200 hover:text-white">
+                  Sobre
+                </Link>
+                <Link to="/metodo" className="px-2.5 py-1 rounded-lg bg-slate-900 border border-slate-800 text-slate-200 hover:text-white">
+                  Método
+                </Link>
+                <Link to="/blog" className="px-2.5 py-1 rounded-lg bg-slate-900 border border-slate-800 text-slate-200 hover:text-white">
+                  Blog
+                </Link>
+                <Link to="/contato" className="px-2.5 py-1 rounded-lg bg-slate-900 border border-slate-800 text-slate-200 hover:text-white">
+                  Contato
+                </Link>
+              </div>
+
+              <div className="text-[11px] uppercase tracking-wider text-slate-400 font-bold pt-1">
+                Bairros em Curitiba & RMC
+              </div>
+              <ul className="grid grid-cols-2 gap-x-2 gap-y-1 text-[11px] text-slate-400">
+                {topLocations.slice(0, 8).map((loc) => (
+                  <li key={loc.href}>
+                    <Link to={loc.href} className="hover:text-blue-400 transition-colors">
+                      {loc.name}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
             </div>
           </div>
 

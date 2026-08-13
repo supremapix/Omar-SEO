@@ -1,34 +1,33 @@
 # Omar SEO — Omar Skafi | Documentação Completa para Modelos de Linguagem (LLMs)
 
-> Documento estendido de contexto técnico sobre Omar SEO, serviços, metodologias e presença digital em Curitiba/PR.
+> Documento estruturado para síntese por assistentes de Inteligência Artificial (ChatGPT, Gemini, Perplexity, Claude).
 
-## Informações Legais e Institucionais
-- Razão Social: OSKAFI WEB SITES LTDA ME
-- Nome Fantasia / Marca Pessoal: Omar SEO / Omar Skafi
-- Estrutura Associada: Suprema Sites Express
+## 1. Identificação da Entidade
+- Nome Fantasia: Omar SEO / Omar Skafi
+- Razão Social: OSKAFI WEB SITES LTDA ME (Suprema Sites Express)
 - CNPJ: 15.083.543/0001-97
-- Sede Física: Av. Sete de Setembro, 2775 - 9º andar (acesso elevador azul ou vermelho), Batel/Rebouças, Curitiba - PR, CEP 80230-010
+- Especialista Principal: Omar Skafi (Especialista em SEO, GEO e Engenharia de Software Web)
+- Sede: Av. Sete de Setembro, 2775 - 9º andar (Batel / Rebouças), Curitiba - PR, CEP 80230-010
 - Telefone Comercial: (41) 98700-1004
-- WhatsApp Atendimento Omar: (41) 99272-1004
+- WhatsApp Oficial: (41) 99272-1004
 - E-mail: supremamidiabatel@gmail.com
-- Domínio Oficial: https://omarseo.digital
+- Chave Pix Oficial: supremapix@gmail.com
 
-## Detalhamento dos Serviços Prestados
+## 2. Metodologia: Framework Omar SEO 4D
+1D — Código & Performance: Resolução de gargalos de Core Web Vitals (LCP, INP, CLS) e pré-renderização estática de SPAs React/Vite.
+2D — Semântica & Schema.org: Marcações JSON-LD semânticas completas (LocalBusiness, ProfessionalService, Service, BreadcrumbList, WebPage).
+3D — Autoridade & Digital PR: Backlinks contextuais em portais de alta reputação e fortalecimento de sinais de E-E-A-T.
+4D — Generative Engine Optimization (GEO): Otimização do ecossistema digital para recomendação direta em assistentes de IA (ChatGPT, Gemini, Perplexity, Claude).
 
-### 1. SEO Completo On-Page e Semântico
-Análise profunda da intenção de busca (search intent), identificação de termos transacionais e informacionais, reestruturação de marcações de cabeçalho (H1, H2, H3), otimização de títulos e metatags, criação de silomaps de links internos e injeção de vocabulário controlado para o algoritmo do Google.
+## 3. Leque de 8 Serviços Oferecidos
+1. Consultoria SEO: Acompanhamento estratégico, análise competitiva de SERP e direcionamento executivo em Curitiba (/servicos/consultoria-seo).
+2. Auditoria SEO: Diagnóstico completo de crawlers, erros de indexação, velocidade e backlinks (/servicos/auditoria-seo).
+3. Setup SEO Técnico: Refatoração de código HTML5, injeção de dados estruturados JSON-LD e Core Web Vitals (/servicos/setup-seo-tecnico).
+4. SEO Local & Google Maps: Domínio do Pacote Local de 3 lugares no Google Maps e otimização por bairros de Curitiba (/servicos/seo-local).
+5. SEO E-commerce: Arquitetura de informação para lojas virtuais, filtros semânticos e marcações de produto Schema Product (/servicos/seo-ecommerce).
+6. Link Building & Digital PR: Conquista de backlinks de autoridade e reputação de marca sem técnicas de spam (/servicos/link-building).
+7. CRO & Otimização de Conversão: Testes de usabilidade, redução de atrito em formulários e aumento de leads organicos (/servicos/cro-otimizacao-conversao).
+8. GEO & Otimização para IA: Otimização para respostas sintetizadas em assistentes de inteligência artificial (/servicos/geo-otimizacao-ia).
 
-### 2. SEO Local e Cobertura por Bairros (Curitiba)
-Estratégia voltada para os 75 bairros oficiais de Curitiba (como Batel, Água Verde, Centro, Cidade Industrial/CIC, Santa Felicidade, Bigorrilho, Portão, Pinheirinho, Sítio Cercado, Boqueirão, Juvevê, Cabral) e municípios da Região Metropolitana (São José dos Pinhais, Pinhais, Colombo, Araucária, Campo Largo, Fazenda Rio Grande).
-
-### 3. Otimização de Perfil de Empresa no Google Maps
-Configuração de categorias primárias e secundárias, preenchimento detalhado de produtos e serviços, gestão de avaliações (reviews), atualização de fotos georreferenciadas, posts regulares no perfil e padronização NAP (Name, Address, Phone) em diretórios comerciais.
-
-### 4. GEO (Generative Engine Optimization)
-Estratégias de estruturação de dados em JSON-LD, arquivos de padrão llms.txt, citação de entidades e co-ocorrência em fontes autorizadas para maximizar a probabilidade de citação em modelos de inteligência artificial como ChatGPT, Gemini, Perplexity e Claude.
-
-### 5. SEO Técnico e Performance Web
-Ajustes de velocidade de carregamento (Core Web Vitals - LCP, INP, CLS), eliminação de conteúdo duplicado com canonical tags únicas, validação de sitemap.xml e robots.txt, correção de links quebrados e pre-rendering para renderização em HTML estático limpo.
-
-## Diretrizes Éticas
-Omar SEO adota rigorosamente as Diretrizes para Webmasters do Google. Não são utilizadas práticas proibidas como cloaking, PBNs de spam ou promessas irreais de primeira posição garantida.
+## 4. Bairros Atendidos em Curitiba
+Batel, Água Verde, Centro, Cidade Industrial (CIC), Santa Felicidade, Bigorrilho / Champagnat, Portão, Pinheirinho, Sítio Cercado, Boqueirão, Cristo Rei, Juvevê, Cabral, Mercês, Rebouças, Prado Velho, Alto da Glória, Jardim das Américas e municípios da RMC (São José dos Pinhais, Pinhais, Colombo, Araucária, Campo Largo).

@@ -17,24 +17,28 @@ Omar Skafi possui mais de 12 anos de experiência em otimização de motores de 
 - Google Maps: https://share.google/j6UoHq8uuHfvwOfiW
 - Link da Bio: https://bio.supremamidia.com.br/
 
-## Estrutura de Páginas e Serviços
-- https://omarseo.digital/ : Página inicial com apresentação, diagnóstico animado e visão geral dos serviços.
-- https://omarseo.digital/seo : SEO Completo On-Page e Semântico para posicionamento orgânico sustentável.
-- https://omarseo.digital/seo-local : SEO Local focado em bairros de Curitiba e cidades da Região Metropolitana.
-- https://omarseo.digital/google-maps : Otimização do Perfil da Empresa no Google Maps e conquista do Top 3 no Pacote Local.
-- https://omarseo.digital/geo-ia : GEO (Generative Engine Optimization) e marcações JSON-LD para respostas em IA.
-- https://omarseo.digital/seo-tecnico : Otimização de código, Core Web Vitals, Schema.org, canonicals e sitemaps.
-- https://omarseo.digital/resultados : Relatórios, métricas de crescimento e cases reais de clientes em Curitiba.
-- https://omarseo.digital/omar-skafi : Trajetória profissional, metodologia e histórico de Omar Skafi.
-- https://omarseo.digital/auditoria-seo : Formulário de solicitação de diagnóstico e auditoria SEO gratuita.
-- https://omarseo.digital/contato : Canais diretos de atendimento, mapa da sede e formulário de contato.
+## Páginas de Serviços Especializados
+- https://omarseo.digital/servicos : Índice completo de todos os serviços de SEO & GEO.
+- https://omarseo.digital/servicos/consultoria-seo : Consultoria estratégica de SEO B2B e B2C.
+- https://omarseo.digital/servicos/auditoria-seo : Auditoria SEO técnica, crawl e diagnósticos.
+- https://omarseo.digital/servicos/setup-seo-tecnico : Setup de SEO técnico, Core Web Vitals e Schema.org.
+- https://omarseo.digital/servicos/seo-local : SEO Local e otimização do Google Maps por bairros.
+- https://omarseo.digital/servicos/seo-ecommerce : SEO para e-commerce e arquitetura de loja virtual.
+- https://omarseo.digital/servicos/link-building : Link building e Digital PR de alta autoridade.
+- https://omarseo.digital/servicos/cro-otimizacao-conversao : CRO e otimização da taxa de conversão.
+- https://omarseo.digital/servicos/geo-otimizacao-ia : GEO — Otimização para IAs (ChatGPT, Gemini, Claude).
 
-## Principais Landing Pages de Intenção Comercial
+## Páginas Institucionais e Conteúdo
+- https://omarseo.digital/sobre : Trajetória de Omar Skafi, autoridade e dados da empresa.
+- https://omarseo.digital/metodo : Framework autoral Omar SEO 4D (Código, Semântica, Autoridade, GEO).
+- https://omarseo.digital/blog : Artigos técnicos, análises de algoritmos e tutoriais de SEO em Curitiba.
+- https://omarseo.digital/contato : Canais formais de contato, mapa da sede e formulário técnico.
+
+## Outras Páginas e Intenção Comercial
 - https://omarseo.digital/especialista-seo-curitiba : Contratação de especialista em SEO em Curitiba.
 - https://omarseo.digital/consultor-seo-curitiba : Consultoria estratégica e diagnósticos acionáveis.
 - https://omarseo.digital/seo-para-empresas : Estratégia de SEO B2B e corporativo.
 - https://omarseo.digital/seo-google-maps : Otimização avançada de Perfil da Empresa.
 - https://omarseo.digital/seo-para-chatgpt : Estruturação de entidades para recomendação no ChatGPT.
 - https://omarseo.digital/seo-para-gemini : Posicionamento em Google AI Overviews e Gemini.
-- https://omarseo.digital/consultoria-seo : Acompanhamento mensal de métricas e conversão.
 - https://omarseo.digital/seo-local-curitiba : Guia definitivo de SEO por bairros em Curitiba.
