@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { EnhancedSEO } from '../components/EnhancedSEO';
 import ConstellationGrid from '../components/ui/constellation-grid';
 import { BackgroundVideo } from '../components/BackgroundVideo';
+import { SeoGeoAioExplainer } from '../components/SeoGeoAioExplainer';
 import {
   Code2,
   Cpu,
@@ -53,6 +54,25 @@ export default function Metodo() {
           <p className="text-slate-300 text-sm sm:text-base leading-relaxed">
             Uma abordagem de engenharia em 4 dimensões que integra velocidade de código, semântica avançada, autoridade de mercado e preparação para Inteligência Artificial.
           </p>
+        </div>
+      </section>
+
+      {/* Interactive Motion Graphic Explainer (SEO + GEO + AIO) */}
+      <section className="space-y-6">
+        <div className="text-center max-w-2xl mx-auto space-y-2">
+          <span className="text-xs font-bold uppercase tracking-widest text-blue-400 bg-blue-950/80 px-3 py-1 rounded border border-blue-800">
+            Simulação Dinâmica em Movimento
+          </span>
+          <h2 className="text-2xl sm:text-3xl font-bold font-display text-white">
+            Como os Pilares Operam em Sinergia
+          </h2>
+          <p className="text-xs sm:text-sm text-slate-400">
+            Acompanhe na animação abaixo como a convergência de SEO, GEO e AIO multiplica o alcance e o market share orgânico.
+          </p>
+        </div>
+
+        <div className="max-w-5xl mx-auto">
+          <SeoGeoAioExplainer />
         </div>
       </section>
 

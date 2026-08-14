@@ -8,6 +8,7 @@ import { FloatingActions } from './components/FloatingActions';
 import { COMMERCIAL_INTENTS_DATA } from './data/commercialIntents';
 import { getAllLocationSlugs } from './data/locations';
 import { SERVICES_DATA } from './data/servicesData';
+import { BLOG_POSTS } from './data/blogData';
 
 // Lazy Loaded Main Pages
 const Home = lazy(() => import('./pages/Home'));
@@ -21,6 +22,7 @@ const SobreOmar = lazy(() => import('./pages/SobreOmar'));
 const Sobre = lazy(() => import('./pages/Sobre'));
 const Metodo = lazy(() => import('./pages/Metodo'));
 const Blog = lazy(() => import('./pages/Blog'));
+const BlogPostPage = lazy(() => import('./pages/BlogPostPage'));
 const ServicesIndex = lazy(() => import('./pages/ServicesIndex'));
 const ServicePage = lazy(() => import('./pages/ServicePage'));
 const AuditoriaSeo = lazy(() => import('./pages/AuditoriaSeo'));
@@ -73,6 +75,7 @@ function AnimatedRoutes() {
           <Route path="/sobre" element={<Sobre />} />
           <Route path="/metodo" element={<Metodo />} />
           <Route path="/blog" element={<Blog />} />
+          <Route path="/blog/:slug" element={<BlogPostPage />} />
 
           {/* Core Service Pages */}
           <Route path="/seo" element={<SeoCompleto />} />
@@ -114,6 +117,14 @@ function CatchAllRouteHandler() {
     const serviceSlug = cleanSlug.replace(/^servicos\//, '');
     if (SERVICES_DATA[serviceSlug]) {
       return <ServicePage slug={serviceSlug} />;
+    }
+  }
+
+  // Check /blog/:slug
+  if (cleanSlug.startsWith('blog/')) {
+    const blogSlug = cleanSlug.replace(/^blog\//, '');
+    if (BLOG_POSTS.some((p) => p.slug === blogSlug)) {
+      return <BlogPostPage slug={blogSlug} />;
     }
   }
 

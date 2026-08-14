@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { EnhancedSEO } from '../components/EnhancedSEO';
 import { HeroAnimation } from '../components/HeroAnimation';
+import { SeoGeoAioExplainer } from '../components/SeoGeoAioExplainer';
 import { DiagnosticSection } from '../components/DiagnosticSection';
 import { SectionDivider } from '../components/SectionDivider';
 import { InternalLinkCluster } from '../components/InternalLinkCluster';
@@ -22,6 +23,7 @@ import {
   ChevronRight,
   HelpCircle,
   MessageCircle,
+  Sparkles,
 } from 'lucide-react';
 
 export default function Home() {
@@ -157,6 +159,37 @@ export default function Home() {
 
       {/* DIAGNOSTIC SECTION (High Conversion) */}
       <DiagnosticSection />
+
+      <SectionDivider color="cyan" />
+
+      {/* SEO + GEO + AIO INTERACTIVE MOTION GRAPHICS SECTION */}
+      <section className="py-16 sm:py-20 relative overflow-hidden">
+        {/* Ambient Glow */}
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[300px] bg-blue-600/10 rounded-full blur-[140px] pointer-events-none" />
+
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 space-y-10">
+          <div className="text-center max-w-3xl mx-auto space-y-3">
+            <span className="text-xs font-bold uppercase tracking-widest text-cyan-300 bg-blue-950/80 px-3.5 py-1.5 rounded-full border border-cyan-500/30 inline-flex items-center gap-1.5 shadow-[0_0_15px_rgba(34,211,238,0.2)]">
+              <Sparkles size={13} className="text-cyan-400" />
+              <span>A Nova Era da Visibilidade Digital</span>
+            </span>
+            <h2 className="text-3xl sm:text-4xl font-black font-display text-white tracking-tight">
+              Como Ganhar Mercado:{' '}
+              <span className="bg-gradient-to-r from-blue-400 via-cyan-300 to-yellow-400 bg-clip-text text-transparent">
+                SEO + GEO + AIO
+              </span>
+            </h2>
+            <p className="text-slate-300 text-sm sm:text-base leading-relaxed">
+              Descubra em 30 segundos como a combinação de busca tradicional, modelos generativos e otimização semântica expande a participação de mercado da sua empresa com previsibilidade.
+            </p>
+          </div>
+
+          {/* Interactive Motion Graphic Box */}
+          <div className="max-w-5xl mx-auto">
+            <SeoGeoAioExplainer />
+          </div>
+        </div>
+      </section>
 
       <SectionDivider color="blue" />
 
