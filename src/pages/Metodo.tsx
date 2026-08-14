@@ -71,8 +71,17 @@ export default function Metodo() {
           </p>
         </div>
 
-        <div className="max-w-5xl mx-auto">
+        <div className="max-w-5xl mx-auto space-y-4">
           <SeoGeoAioExplainer />
+          <div className="text-center pt-2">
+            <Link
+              to="/seo-geo-aio"
+              className="inline-flex items-center gap-2 text-xs font-bold text-cyan-300 hover:text-white px-4 py-2 rounded-full bg-blue-950/80 border border-cyan-500/40 hover:bg-blue-900 transition-all shadow-[0_0_15px_rgba(34,211,238,0.2)]"
+            >
+              <span>Assistir apresentação imersiva com 4 vídeos narrados</span>
+              <ArrowRight size={14} />
+            </Link>
+          </div>
         </div>
       </section>
 

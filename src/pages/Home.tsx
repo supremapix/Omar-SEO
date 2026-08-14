@@ -185,8 +185,42 @@ export default function Home() {
           </div>
 
           {/* Interactive Motion Graphic Box */}
-          <div className="max-w-5xl mx-auto">
+          <div className="max-w-5xl mx-auto space-y-6">
             <SeoGeoAioExplainer />
+
+            {/* Direct Trigger to Dedicated Video Landing Page */}
+            <div className="bg-gradient-to-r from-blue-950/80 via-slate-900/90 to-cyan-950/80 border border-cyan-500/40 rounded-2xl p-6 sm:p-8 flex flex-col sm:flex-row items-center justify-between gap-6 shadow-[0_0_30px_rgba(34,211,238,0.15)]">
+              <div className="space-y-2 text-center sm:text-left">
+                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-950 border border-cyan-500/40 text-cyan-300 text-xs font-bold uppercase tracking-wider">
+                  <Sparkles size={13} className="text-cyan-400" />
+                  <span>Landing Page Dedicada com 4 Capítulos em Vídeo</span>
+                </div>
+                <h3 className="text-xl sm:text-2xl font-black font-display text-white">
+                  Quer assistir à apresentação completa em vídeo?
+                </h3>
+                <p className="text-xs sm:text-sm text-slate-300 max-w-xl">
+                  Acesse nossa página imersiva com 4 capítulos em vídeo, áudio explicativo e roteiro estratégico detalhado sobre SEO, GEO e AIO.
+                </p>
+              </div>
+
+              <div className="flex flex-col sm:flex-row items-center gap-3 w-full sm:w-auto shrink-0">
+                <Link
+                  to="/seo-geo-aio"
+                  className="btn-primary-gold btn-shimmer w-full sm:w-auto px-6 py-3.5 text-xs sm:text-sm font-bold flex items-center justify-center gap-2"
+                >
+                  <span>Assistir Apresentação (4 Vídeos)</span>
+                  <ArrowRight size={16} />
+                </Link>
+                <a
+                  href="/seo-geo-aio.html"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-xs text-slate-400 hover:text-cyan-300 underline underline-offset-4 py-1"
+                >
+                  Abrir versão standalone .html ↗
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </section>

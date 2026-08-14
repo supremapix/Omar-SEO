@@ -143,6 +143,11 @@ export function Footer() {
                   GEO — Otimização para IAs (ChatGPT/Gemini)
                 </Link>
               </li>
+              <li>
+                <Link to="/seo-geo-aio" className="inline-flex items-center gap-1.5 text-yellow-400 hover:text-yellow-300 transition-colors font-bold">
+                  <span>🎬 SEO + GEO + AIO (4 Vídeos Explicativos)</span>
+                </Link>
+              </li>
             </ul>
           </div>
 
@@ -158,6 +163,9 @@ export function Footer() {
                 </Link>
                 <Link to="/metodo" className="px-2.5 py-1 rounded-lg bg-slate-900 border border-slate-800 text-slate-200 hover:text-white">
                   Método
+                </Link>
+                <Link to="/seo-geo-aio" className="px-2.5 py-1 rounded-lg bg-blue-950 border border-cyan-500/40 text-cyan-300 hover:text-white">
+                  SEO+GEO+AIO
                 </Link>
                 <Link to="/blog" className="px-2.5 py-1 rounded-lg bg-slate-900 border border-slate-800 text-slate-200 hover:text-white">
                   Blog

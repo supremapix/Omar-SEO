@@ -71,6 +71,41 @@ export default function ServicesIndex() {
         </div>
       </section>
 
+      {/* Special Feature: SEO + GEO + AIO Presentation */}
+      <section className="relative p-6 sm:p-8 rounded-3xl bg-gradient-to-r from-blue-950/90 via-slate-900/90 to-cyan-950/90 border border-cyan-500/40 shadow-[0_0_30px_rgba(34,211,238,0.2)] overflow-hidden">
+        <div className="flex flex-col lg:flex-row items-center justify-between gap-6">
+          <div className="space-y-2 text-center lg:text-left">
+            <span className="px-3 py-1 rounded-full bg-cyan-400 text-slate-950 text-[10px] font-extrabold uppercase tracking-widest inline-block">
+              🎬 4 Vídeos Explicativos
+            </span>
+            <h2 className="text-2xl sm:text-3xl font-black font-display text-white">
+              Como Ganhar Mercado: SEO + GEO + AIO
+            </h2>
+            <p className="text-slate-300 text-xs sm:text-sm max-w-2xl leading-relaxed">
+              Entenda como unificamos o SEO tradicional, a otimização generativa para ChatGPT/Gemini e a arquitetura semântica para expandir seu market share com previsibilidade.
+            </p>
+          </div>
+
+          <div className="flex flex-col sm:flex-row items-center gap-3 shrink-0 w-full sm:w-auto">
+            <Link
+              to="/seo-geo-aio"
+              className="btn-primary-gold btn-shimmer w-full sm:w-auto px-6 py-3.5 text-xs sm:text-sm font-bold flex items-center justify-center gap-2"
+            >
+              <span>Assistir Apresentação</span>
+              <ArrowRight size={16} />
+            </Link>
+            <a
+              href="/seo-geo-aio.html"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-xs text-cyan-300 hover:text-white underline underline-offset-4 px-2 py-1"
+            >
+              Arquivo .html ↗
+            </a>
+          </div>
+        </div>
+      </section>
+
       {/* Services Grid (8 Services) */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
         {servicesList.map((service) => {

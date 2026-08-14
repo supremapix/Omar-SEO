@@ -23,6 +23,7 @@ const Sobre = lazy(() => import('./pages/Sobre'));
 const Metodo = lazy(() => import('./pages/Metodo'));
 const Blog = lazy(() => import('./pages/Blog'));
 const BlogPostPage = lazy(() => import('./pages/BlogPostPage'));
+const SeoGeoAio = lazy(() => import('./pages/SeoGeoAio'));
 const ServicesIndex = lazy(() => import('./pages/ServicesIndex'));
 const ServicePage = lazy(() => import('./pages/ServicePage'));
 const AuditoriaSeo = lazy(() => import('./pages/AuditoriaSeo'));
@@ -76,6 +77,8 @@ function AnimatedRoutes() {
           <Route path="/metodo" element={<Metodo />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/blog/:slug" element={<BlogPostPage />} />
+          <Route path="/seo-geo-aio" element={<SeoGeoAio />} />
+          <Route path="/como-ganhar-mercado" element={<SeoGeoAio />} />
 
           {/* Core Service Pages */}
           <Route path="/seo" element={<SeoCompleto />} />

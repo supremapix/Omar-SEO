@@ -113,6 +113,14 @@ export const MAIN_ROUTES: RouteConfig[] = [
     type: 'main',
   },
   {
+    path: '/seo-geo-aio',
+    title: 'SEO + GEO + AIO: Como Ganhar Market Share com Previsibilidade | Suprema',
+    description: 'Descubra em 30 segundos como a combinação de busca tradicional, modelos generativos e otimização semântica expande o market share com previsibilidade.',
+    priority: 0.9,
+    changefreq: 'weekly',
+    type: 'main',
+  },
+  {
     path: '/blog/por-que-site-nao-aparece-no-google',
     title: 'Por Que Meu Site Não Aparece no Google? Rastreamento e Indexação | Omar SEO',
     description: 'Descubra a diferença crucial entre rastreamento, indexação e posicionamento. Entenda por que sites no ar continuam invisíveis no Google e como resolver.',

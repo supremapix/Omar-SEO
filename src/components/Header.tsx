@@ -17,9 +17,9 @@ import {
   Cpu,
   Award,
   User,
-  Zap,
   BookOpen,
   Layers,
+  Sparkles,
 } from 'lucide-react';
 
 export function Header() {
@@ -105,6 +105,18 @@ export function Header() {
             <span>Método</span>
           </Link>
 
+          {/* Link para SEO + GEO + AIO Explanatory Videos */}
+          <Link
+            to="/seo-geo-aio"
+            className="text-sm font-bold text-cyan-300 hover:text-cyan-200 transition-colors flex items-center gap-1.5 px-3 py-1 rounded-full bg-blue-950/80 border border-cyan-500/40 shadow-[0_0_12px_rgba(34,211,238,0.25)] group"
+          >
+            <Sparkles size={14} className="text-cyan-400 group-hover:rotate-12 transition-transform" />
+            <span>SEO + GEO + AIO</span>
+            <span className="text-[10px] uppercase font-extrabold px-1.5 py-0.2 rounded bg-cyan-400 text-slate-950">
+              Vídeos
+            </span>
+          </Link>
+
           {/* Services Dropdown */}
           <div
             className="relative"
@@ -149,10 +161,22 @@ export function Header() {
                       </Link>
                     );
                   })}
-                  <div className="pt-2 mt-1 border-t border-slate-800">
+                  <div className="pt-2 mt-1 border-t border-slate-800 space-y-1.5">
+                    <Link
+                      to="/seo-geo-aio"
+                      className="flex items-center justify-between p-2 rounded-xl bg-blue-950/60 border border-cyan-500/30 text-xs font-bold text-cyan-300 hover:text-white hover:bg-blue-900/60 transition-colors"
+                    >
+                      <div className="flex items-center gap-2">
+                        <Sparkles size={14} className="text-cyan-400" />
+                        <span>Como Ganhar Mercado (SEO+GEO+AIO)</span>
+                      </div>
+                      <span className="text-[9px] uppercase px-1.5 py-0.5 rounded bg-cyan-400 text-slate-950 font-black">
+                        4 Vídeos
+                      </span>
+                    </Link>
                     <Link
                       to="/servicos"
-                      className="text-center block text-xs font-bold text-cyan-400 hover:text-cyan-300 py-1"
+                      className="text-center block text-xs font-bold text-slate-400 hover:text-cyan-300 py-1"
                     >
                       Ver Índice Completo de Serviços →
                     </Link>
@@ -189,14 +213,6 @@ export function Header() {
           >
             <MessageCircle size={18} />
           </a>
-
-          <Link
-            to="/auditoria-seo"
-            className="btn-primary-gold btn-shimmer px-4 py-2 text-xs"
-          >
-            <Zap size={14} className="fill-slate-950" />
-            <span>Falar com Especialista</span>
-          </Link>
         </div>
 
         {/* Mobile Hamburger Toggle */}
@@ -256,6 +272,27 @@ export function Header() {
                   Contato
                 </Link>
               </div>
+
+              {/* Special SEO + GEO + AIO Mobile Highlight */}
+              <div className="mt-2">
+                <Link
+                  to="/seo-geo-aio"
+                  className="min-h-[56px] flex items-center justify-between p-3.5 rounded-xl bg-gradient-to-r from-blue-950 via-slate-900 to-cyan-950 border border-cyan-500/50 shadow-[0_0_15px_rgba(34,211,238,0.2)] text-white font-bold text-xs group"
+                >
+                  <div className="flex items-center gap-2.5">
+                    <div className="p-1.5 rounded-lg bg-cyan-400 text-slate-950">
+                      <Sparkles size={16} />
+                    </div>
+                    <div className="text-left">
+                      <div className="text-cyan-300 font-extrabold">SEO + GEO + AIO</div>
+                      <div className="text-[10px] text-slate-300 font-normal">Como Ganhar Mercado (4 Vídeos)</div>
+                    </div>
+                  </div>
+                  <span className="text-[10px] uppercase font-black px-2 py-1 rounded bg-cyan-400 text-slate-950">
+                    Assistir →
+                  </span>
+                </Link>
+              </div>
             </div>
 
             <div>
@@ -280,14 +317,6 @@ export function Header() {
                 })}
               </div>
             </div>
-
-            <Link
-              to="/auditoria-seo"
-              className="btn-primary-gold btn-shimmer w-full min-h-[56px] py-3 px-4 flex items-center justify-center gap-2 font-bold"
-            >
-              <Zap size={16} className="fill-slate-950" />
-              <span>Falar com Especialista</span>
-            </Link>
           </div>
 
           {/* Contact Details */}
