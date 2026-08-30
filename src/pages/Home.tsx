@@ -682,6 +682,36 @@ export default function Home() {
                 </Link>
               </div>
             </div>
+
+            {/* Case 12 - Consultora Loovi (Curitiba / PR) */}
+            <div className="bg-slate-950 p-5 rounded-2xl border border-slate-800 hover:border-cyan-500/50 transition-all space-y-3 flex flex-col justify-between group">
+              <div className="space-y-2">
+                <div className="flex items-center justify-between">
+                  <span className="text-[10px] font-extrabold uppercase tracking-wider text-cyan-400 bg-cyan-950/80 px-2 py-0.5 rounded border border-cyan-800/60 inline-block">
+                    Case #12 — SEO Orgânico + Entidade
+                  </span>
+                  <span className="text-[10px] font-bold uppercase tracking-wider text-amber-400">
+                    Curitiba / PR
+                  </span>
+                </div>
+                <h4 className="text-base font-bold text-white group-hover:text-cyan-300 transition-colors">
+                  Consultora Loovi (Barbara Duraes)
+                </h4>
+                <p className="text-xs text-slate-300 leading-relaxed font-mono">
+                  “consultora loovi” — presença orgânica para atividade profissional.
+                </p>
+              </div>
+
+              <div className="pt-2 border-t border-slate-800/80">
+                <Link
+                  to="/resultados/consultora-loovi-google-seo"
+                  className="text-xs font-bold text-cyan-400 hover:text-cyan-300 inline-flex items-center gap-1 group-hover:translate-x-1 transition-transform"
+                >
+                  <span>Ver Case Consultora Loovi</span>
+                  <ChevronRight size={14} />
+                </Link>
+              </div>
+            </div>
           </div>
 
           {/* Consolidated Section: Seu cliente já não pesquisa apenas palavras. Ele pergunta. */}

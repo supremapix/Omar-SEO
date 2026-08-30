@@ -289,6 +289,14 @@ export const MAIN_ROUTES: RouteConfig[] = [
     type: 'main',
   },
   {
+    path: '/resultados/consultora-loovi-google-seo',
+    title: 'Case SEO: Consultora Loovi no Google | Omar SEO',
+    description: 'Evidência real de presença orgânica para uma consulta diretamente relacionada à atividade profissional e à marca pesquisada.',
+    priority: 0.85,
+    changefreq: 'monthly',
+    type: 'main',
+  },
+  {
     path: '/omar-skafi',
     title: 'Sobre Omar Skafi - Especialista em SEO e GEO | Omar SEO',
     description: 'Conheça Omar Skafi, especialista com sólida trajetória em SEO técnico, SEO local, Google Maps e GEO em Curitiba/PR.',

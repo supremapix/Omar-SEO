@@ -31,6 +31,8 @@ import {
   Cpu,
   Clock,
   ChevronRight,
+  Shield,
+  UserCheck,
 } from 'lucide-react';
 
 export default function Resultados() {
@@ -1192,6 +1194,93 @@ export default function Resultados() {
                         className="text-emerald-400 hover:text-emerald-300 font-bold inline-flex items-center gap-1.5 text-xs"
                       >
                         <span>Acessar documentação completa do Case #11</span>
+                        <ArrowRight size={14} />
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Featured Case #12 Block - Consultora Loovi (Curitiba / PR) */}
+            <div className="pt-6 border-t border-slate-800/80">
+              <div className="bg-[#0b0c10] border border-cyan-500/40 rounded-3xl p-6 sm:p-8 space-y-6 hover:border-cyan-500/70 transition-all shadow-[0_0_30px_rgba(6,182,212,0.1)]">
+                <div className="flex flex-wrap items-center justify-between gap-3 pb-4 border-b border-slate-800">
+                  <div className="flex items-center gap-3">
+                    <div className="p-3 rounded-2xl bg-cyan-950/80 text-cyan-400 border border-cyan-800/80">
+                      <Shield size={24} />
+                    </div>
+                    <div>
+                      <span className="text-[10px] font-extrabold uppercase tracking-widest text-cyan-400 bg-cyan-950/90 px-2.5 py-0.5 rounded border border-cyan-800">
+                        Case #12 — Seguro Auto / Profissional (Curitiba)
+                      </span>
+                      <h3 className="text-xl sm:text-2xl font-bold font-display text-white mt-1">
+                        Consultora Loovi (Barbara Duraes)
+                      </h3>
+                    </div>
+                  </div>
+                  <Link
+                    to="/resultados/consultora-loovi-google-seo"
+                    className="px-4 py-2 rounded-full bg-cyan-950 hover:bg-cyan-900 text-cyan-400 border border-cyan-800 text-xs font-bold inline-flex items-center gap-2 transition-colors"
+                  >
+                    <span>Ver Evidência</span>
+                    <ArrowRight size={14} />
+                  </Link>
+                </div>
+
+                <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-center">
+                  {/* Visual Evidence Image */}
+                  <div className="lg:col-span-6 bg-white p-2 rounded-2xl border border-slate-800 overflow-hidden group relative">
+                    <Link to="/resultados/consultora-loovi-google-seo" className="block">
+                      <img
+                        src="/images/cases/case-consultora-loovi-google-organico.png"
+                        alt="Consultora Loovi presente no Google para a pesquisa consultora loovi"
+                        width={1000}
+                        height={580}
+                        loading="lazy"
+                        className="w-full h-auto object-contain rounded-xl transition-transform duration-300 group-hover:scale-[1.02]"
+                      />
+                    </Link>
+                    <span className="text-[9px] text-cyan-600 block text-center font-bold mt-1">
+                      Comprovação Real no Google — “consultora loovi” (consultoraloovi.com.br)
+                    </span>
+                  </div>
+
+                  {/* Details */}
+                  <div className="lg:col-span-6 space-y-4">
+                    <div className="p-3.5 rounded-xl bg-[#0f1118] border border-slate-800 space-y-1">
+                      <span className="text-[10px] font-bold uppercase tracking-wider text-slate-400 block">
+                        Pesquisa Comprovada
+                      </span>
+                      <span className="text-xs font-bold text-yellow-300 font-mono">
+                        "consultora loovi"
+                      </span>
+                    </div>
+
+                    <div className="p-3.5 rounded-xl bg-[#0f1118] border border-slate-800 space-y-1">
+                      <span className="text-[10px] font-bold uppercase tracking-wider text-slate-400 block">
+                        Entidade &amp; Profissional Apresentada
+                      </span>
+                      <span className="text-xs font-bold text-emerald-400">
+                        Consultora Barbara Duraes (Curitiba / PR)
+                      </span>
+                    </div>
+
+                    <div className="p-3.5 rounded-xl bg-[#0f1118] border border-slate-800 space-y-1">
+                      <span className="text-[10px] font-bold uppercase tracking-wider text-slate-400 block">
+                        Destaque
+                      </span>
+                      <span className="text-xs font-bold text-cyan-400">
+                        Presença orgânica documentada para uma intenção diretamente relacionada à atividade profissional.
+                      </span>
+                    </div>
+
+                    <div className="pt-2">
+                      <Link
+                        to="/resultados/consultora-loovi-google-seo"
+                        className="text-cyan-400 hover:text-cyan-300 font-bold inline-flex items-center gap-1.5 text-xs"
+                      >
+                        <span>Acessar documentação completa do Case #12</span>
                         <ArrowRight size={14} />
                       </Link>
                     </div>
