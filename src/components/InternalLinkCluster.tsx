@@ -26,7 +26,7 @@ export function InternalLinkCluster({
   subtitle = 'Conectamos estratégias de SEO Técnico, SEO Local por Bairros de Curitiba e Inteligência Artificial para alavancar seu posicionamento.',
   category = 'all',
 }: InternalLinkClusterProps) {
-  const topNeighborhoods = CURITIBA_OFFICIAL_NEIGHBORHOODS.slice(0, 16);
+  const topNeighborhoods = CURITIBA_OFFICIAL_NEIGHBORHOODS.slice(0, 12);
 
   const mainServices = [
     { name: 'SEO Completo', href: '/seo', icon: Search, badge: 'Estratégico' },
@@ -40,12 +40,14 @@ export function InternalLinkCluster({
   const commercialIntents = [
     { name: 'Especialista SEO Curitiba', href: '/especialista-seo-curitiba' },
     { name: 'Consultor SEO Curitiba', href: '/consultor-seo-curitiba' },
-    { name: 'SEO para Empresas', href: '/seo-para-empresas' },
-    { name: 'SEO Google Maps', href: '/seo-google-maps' },
-    { name: 'SEO para ChatGPT', href: '/seo-para-chatgpt' },
-    { name: 'SEO para Gemini', href: '/seo-para-gemini' },
-    { name: 'Consultoria SEO', href: '/consultoria-seo' },
-    { name: 'SEO Local Curitiba', href: '/seo-local-curitiba' },
+    { name: 'Consultoria SEO Brasil', href: '/consultoria-seo-brasil' },
+    { name: 'Especialista SEO Brasil', href: '/especialista-seo-brasil' },
+    { name: 'SEO Curitiba e Região (Hub)', href: '/seo-curitiba-e-regiao' },
+    { name: 'SEO vs GEO', href: '/seo-vs-geo' },
+    { name: 'GEO vs AIO', href: '/geo-vs-aio' },
+    { name: 'SEO para IA', href: '/seo-para-ia' },
+    { name: 'Consultor ou Agência?', href: '/consultor-seo-ou-agencia' },
+    { name: 'Dados Estruturados Schema', href: '/dados-estruturados-schema' },
   ];
 
   return (

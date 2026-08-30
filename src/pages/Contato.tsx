@@ -74,7 +74,7 @@ export default function Contato() {
                 <strong className="text-white block font-bold">Endereço da Sede em Curitiba:</strong>
                 <span>Av. Sete de Setembro, 2775 - 9º andar</span> <br />
                 <span className="text-slate-400 text-xs">(acesso pelo elevador azul ou vermelho)</span> <br />
-                <span>Batel / Rebouças, Curitiba - PR, CEP 80230-010</span> <br />
+                <span>Bairro Rebouças, Curitiba - PR, CEP 80230-010</span> <br />
                 <a
                   href="https://share.google/j6UoHq8uuHfvwOfiW"
                   target="_blank"

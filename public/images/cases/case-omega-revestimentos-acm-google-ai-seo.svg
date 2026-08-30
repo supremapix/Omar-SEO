@@ -1,0 +1,152 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1100" width="1000" height="1100" style="background:#ffffff;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;">
+  <defs>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="1" stdDeviation="3" flood-color="#000" flood-opacity="0.1"/>
+    </filter>
+    <filter id="cardShadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="1" stdDeviation="2" flood-color="#000" flood-opacity="0.08"/>
+    </filter>
+    <marker id="arrow" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#d93025" />
+    </marker>
+  </defs>
+
+  <!-- Google Search Header -->
+  <g transform="translate(30, 25)">
+    <!-- Google Logo -->
+    <path d="M22.5 10.8c0-.8-.1-1.5-.2-2.2H11.5v4.2h6.2c-.3 1.4-1.1 2.6-2.3 3.4v2.8h3.7c2.2-2 3.4-5 3.4-8.2z" fill="#4285F4"/>
+    <path d="M11.5 22c3.1 0 5.7-1 7.6-2.8l-3.7-2.8c-1 1-2.4 1.5-3.9 1.5-3 0-5.5-2-6.4-4.8H1.2v3c1.9 3.8 5.8 6.1 10.3 6.1z" fill="#34A853"/>
+    <path d="M5.1 13.1c-.2-.7-.3-1.4-.3-2.1s.1-1.4.3-2.1V5.9H1.2C.4 7.5 0 9.2 0 11s.4 3.5 1.2 5.1l3.9-3z" fill="#FBBC05"/>
+    <path d="M11.5 4.4c1.7 0 3.2.6 4.4 1.7l3.3-3.3C17.2 1 14.6 0 11.5 0 7 0 3.1 2.3 1.2 6.1l3.9 3c.9-2.8 3.4-4.7 6.4-4.7z" fill="#EA4335"/>
+
+    <!-- Search Input Box -->
+    <rect x="110" y="-12" width="670" height="46" rx="23" fill="#ffffff" stroke="#e0e0e0" stroke-width="1" filter="url(#shadow)"/>
+    <text x="140" y="17" font-size="16" fill="#202124" font-weight="400">qual empresa instala acm em curitiba</text>
+
+    <!-- Search Controls -->
+    <g transform="translate(670, 0)" fill="#70757a">
+      <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z" transform="scale(0.8) translate(-10,-5)"/>
+      <path d="M20 5H4c-1.1 0-1.99.9-1.99 2L2 17c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm-9 3h2v2h-2V8zm0 3h2v2h-2v-2zM8 8h2v2H8V8zm0 3h2v2H8v-2zm-1 5H5v-2h2v2zm0-3H5v-2h2v2zm0-3H5V8h2v2zm9 7H8v-2h8v2zm0-3h-2v-2h2v2zm0-3h-2V8h2v2zm3 6h-2v-2h2v2zm0-3h-2v-2h2v2zm0-3h-2V8h2v2z" transform="scale(0.7) translate(30,-5)" fill="#70757a"/>
+      <path d="M12 14c1.66 0 3-1.34 3-3V5c0-1.66-1.34-3-3-3S9 3.34 9 5v6c0 1.66 1.34 3 3 3z" transform="scale(0.7) translate(70,-5)" fill="#4285F4"/>
+      <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z" transform="scale(0.7) translate(110,-5)" fill="#4285F4"/>
+    </g>
+  </g>
+  <line x1="0" y1="80" x2="1000" y2="80" stroke="#ebebeb" stroke-width="1"/>
+
+  <!-- MAIN CONTENT AREA -->
+  <g transform="translate(140, 95)">
+
+    <!-- AI OVERVIEW / RESPONSE SECTION -->
+    <g transform="translate(0, 0)">
+      <!-- Bullet 1: Ômega Revestimentos -->
+      <g transform="translate(0, 0)">
+        <circle cx="2" cy="8" r="3" fill="#202124"/>
+        <text x="16" y="12" font-size="16" font-weight="700" fill="#1a0dab" text-decoration="underline">Ômega Revestimentos</text>
+        <text x="180" y="12" font-size="16" font-weight="400" fill="#202124">: Focada em fachadas em ACM e estruturas metálicas (com</text>
+        <text x="16" y="34" font-size="16" font-weight="400" fill="#202124">sede em Pinhais).</text>
+      </g>
+
+      <!-- Bullet 2: Kiir Fachadas (faded) -->
+      <g transform="translate(0, 52)" opacity="0.35">
+        <circle cx="2" cy="8" r="3" fill="#202124"/>
+        <text x="16" y="12" font-size="16" font-weight="500" fill="#1a0dab">Kiir Fachadas Prediais</text>
+        <text x="180" y="12" font-size="16" font-weight="400" fill="#202124">: Especialista em instalação de fachadas comerciais e...</text>
+      </g>
+
+      <!-- Button: Mostrar mais -->
+      <g transform="translate(0, 95)">
+        <rect x="0" y="0" width="650" height="48" rx="24" fill="#ffffff" stroke="#1a73e8" stroke-width="1"/>
+        <text x="270" y="29" font-size="15" font-weight="600" fill="#1a73e8">Mostrar mais ∨</text>
+      </g>
+    </g>
+
+    <line x1="0" y1="175" x2="700" y2="175" stroke="#ebebeb" stroke-width="1"/>
+
+    <!-- ORGANIC RESULT 1: mayan.ind.br -->
+    <g transform="translate(0, 200)">
+      <circle cx="12" cy="12" r="12" fill="#1a73e8"/>
+      <!-- Globe icon inside favicon -->
+      <circle cx="12" cy="12" r="8" fill="none" stroke="#ffffff" stroke-width="1.5"/>
+      <line x1="4" y1="12" x2="20" y2="12" stroke="#ffffff" stroke-width="1.5"/>
+      
+      <text x="32" y="10" font-size="13" font-weight="500" fill="#202124">mayan.ind.br</text>
+      <text x="32" y="24" font-size="12" fill="#4d5156">https://mayan.ind.br</text>
+      <circle cx="670" cy="18" r="2" fill="#70757a"/>
+      <circle cx="670" cy="12" r="2" fill="#70757a"/>
+      <circle cx="670" cy="24" r="2" fill="#70757a"/>
+
+      <text x="0" y="52" font-size="20" font-weight="500" fill="#1a0dab">MAYAN - Revestimento em ACM em Curitiba e Fachada em ...</text>
+      
+      <text x="0" y="76" font-size="13.5" fill="#4d5156"><tspan font-weight="700" fill="#202124">A MAYAN é uma empresa de fachadas e revestimentos em ACM</tspan>, muxarabis, produtos para</text>
+      <text x="0" y="96" font-size="13.5" fill="#4d5156">comunicação visual e sinalização corporativa na cidade de Curitiba. Prezamos ...</text>
+    </g>
+
+    <!-- AS PESSOAS TAMBÉM PERGUNTAM (PAA) -->
+    <g transform="translate(0, 335)">
+      <text x="0" y="20" font-size="18" font-weight="600" fill="#202124">As pessoas também perguntam</text>
+      
+      <g transform="translate(0, 35)">
+        <line x1="0" y1="0" x2="670" y2="0" stroke="#ebebeb"/>
+        <text x="0" y="25" font-size="14.5" fill="#202124">Qual o valor do ACM instalado?</text>
+        <path d="M650 18 l5 5 l5 -5" stroke="#70757a" stroke-width="2" fill="none"/>
+        
+        <line x1="0" y1="42" x2="670" y2="42" stroke="#ebebeb"/>
+        <text x="0" y="67" font-size="14.5" fill="#202124">Como instalar ACM em fachada?</text>
+        <path d="M650 60 l5 5 l5 -5" stroke="#70757a" stroke-width="2" fill="none"/>
+
+        <line x1="0" y1="84" x2="670" y2="84" stroke="#ebebeb"/>
+        <text x="0" y="109" font-size="14.5" fill="#202124">Quanto custa um painel em ACM?</text>
+        <path d="M650 102 l5 5 l5 -5" stroke="#70757a" stroke-width="2" fill="none"/>
+
+        <line x1="0" y1="126" x2="670" y2="126" stroke="#ebebeb"/>
+        <text x="0" y="151" font-size="14.5" fill="#202124">Quem vende ACM?</text>
+        <path d="M650 144 l5 5 l5 -5" stroke="#70757a" stroke-width="2" fill="none"/>
+        <line x1="0" y1="168" x2="670" y2="168" stroke="#ebebeb"/>
+      </g>
+    </g>
+
+    <!-- ORGANIC RESULT 2: Fachadas Curitiba -->
+    <g transform="translate(0, 565)">
+      <circle cx="12" cy="12" r="12" fill="#d93025"/>
+      <text x="7" y="17" font-size="13" font-weight="900" fill="#ffffff">i9</text>
+
+      <text x="32" y="10" font-size="13" font-weight="500" fill="#202124">Fachadas Curitiba</text>
+      <text x="32" y="24" font-size="12" fill="#4d5156">https://fachadacuritiba.com.br</text>
+      <circle cx="670" cy="18" r="2" fill="#70757a"/>
+      <circle cx="670" cy="12" r="2" fill="#70757a"/>
+      <circle cx="670" cy="24" r="2" fill="#70757a"/>
+
+      <text x="0" y="52" font-size="20" font-weight="500" fill="#1a0dab">Fachadas Curitiba » i9 Comunicação Visual</text>
+      
+      <text x="0" y="76" font-size="13.5" fill="#4d5156">A Fachada Curitiba é um serviço prestado pela <tspan font-weight="700" fill="#202124">i9 Comunicação Visual</tspan>. A i9 é especialista em produção</text>
+      <text x="0" y="96" font-size="13.5" fill="#4d5156">de Fachadas Comerciais e Institucionais. Já atendeu ...</text>
+    </g>
+
+    <!-- ORGANIC RESULT 3: Ômega Revestimentos (TARGET RESULT) -->
+    <g transform="translate(0, 700)">
+      <!-- Favicon: Square black icon with stylized logo -->
+      <rect x="0" y="0" width="24" height="24" rx="4" fill="#202124"/>
+      <text x="5" y="17" font-size="13" font-weight="900" fill="#ffffff" font-family="sans-serif">Ω</text>
+
+      <text x="32" y="10" font-size="13" font-weight="500" fill="#202124">Ômega Revestimentos</text>
+      <text x="32" y="24" font-size="12" fill="#4d5156">https://omegarevestimentos.com.br</text>
+      <circle cx="670" cy="18" r="2" fill="#70757a"/>
+      <circle cx="670" cy="12" r="2" fill="#70757a"/>
+      <circle cx="670" cy="24" r="2" fill="#70757a"/>
+
+      <text x="0" y="52" font-size="20" font-weight="500" fill="#1a0dab" text-decoration="underline">Ômega Revestimentos | Fachadas ACM, Estruturas e ...</text>
+      
+      <text x="0" y="76" font-size="13.5" fill="#4d5156"><tspan font-weight="700" fill="#202124">Especialistas em revestimento ACM, estruturas metálicas</tspan> e comunicação visual em Curitiba ...</text>
+    </g>
+
+  </g>
+
+  <!-- RED ARROWS OVERLAY (Matching exact arrows from uploaded screenshot) -->
+  <g stroke="#d93025" stroke-width="4.5" fill="none">
+    <!-- Arrow 1: Upper left pointing to bullet 1 -->
+    <path d="M 50 250 L 130 115" marker-end="url(#arrow)"/>
+
+    <!-- Arrow 2: Lower left pointing to Ômega Revestimentos organic snippet -->
+    <path d="M 80 820 L 130 915" marker-end="url(#arrow)"/>
+  </g>
+</svg>

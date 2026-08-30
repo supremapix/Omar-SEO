@@ -3,118 +3,1236 @@ import { Link } from 'react-router-dom';
 import { EnhancedSEO } from '../components/EnhancedSEO';
 import ConstellationGrid from '../components/ui/constellation-grid';
 import { BackgroundVideo } from '../components/BackgroundVideo';
-import { Award, TrendingUp, MapPin, Eye, ArrowRight, Zap, CheckCircle2 } from 'lucide-react';
+import {
+  Award,
+  TrendingUp,
+  MapPin,
+  Eye,
+  ArrowRight,
+  Zap,
+  CheckCircle2,
+  Smartphone,
+  Car,
+  Wrench,
+  Droplet,
+  Building2,
+  Layers,
+  Home as HomeIcon,
+  Blinds,
+  Briefcase,
+  ShieldAlert,
+  Search,
+  FileCheck,
+  Check,
+  AlertCircle,
+  Scale,
+  Sparkles,
+  Bot,
+  Cpu,
+  Clock,
+  ChevronRight,
+} from 'lucide-react';
 
 export default function Resultados() {
-  const cases = [
+  const structuredCases = [
     {
-      title: 'Clínica Médica e Cirurgia no Batel',
-      category: 'Saúde & Estética • Batel / Curitiba',
-      metrics: [
-        { label: 'Crescimento de Acessos Orgânicos', value: '+310%' },
-        { label: 'Chamadas pelo Google Maps', value: '+185%' },
-        { label: 'Posição em Buscas Principais', value: 'Top 3 Fixo' },
-      ],
-      desc: 'Reestruturação completa de dados Schema.org, otimização de categorias médicas no Google Maps e criação de páginas de tratamentos geolocalizadas.',
+      id: 'celulares',
+      title: 'Assistência Técnica & Venda de Celulares',
+      icon: Smartphone,
+      segment: 'Tecnologia & Varejo Local',
+      region: 'Curitiba (Batel, Centro e Bairros)',
+      challenge: 'Alta densidade de concorrentes locais disputando buscas de emergência por reparo de telas, troca de baterias e venda de smartphones.',
+      searchIntent: 'Transacional de alta urgência ("conserto de celular curitiba", "troca de tela iphone batel", "bateria samsung perto de mim").',
+      strategy: 'Estruturação de micro-páginas por serviço e modelo de aparelho, implementação de Schema.org EmergencyService e Product, e otimização de Perfil da Empresa no Google.',
+      result: 'Atuação orientada à captura de pesquisas de emergência e consolidação da presença orgânica local.',
+      evidence: 'Evidência pendente de documentação',
+      methodology: 'SEO Hiperlocal com sincronização entre área de cobertura no mapa (areaServed) e código estruturado no site.',
     },
     {
-      title: 'Empresa de Automação Industrial na CIC',
-      category: 'Indústria B2B • Cidade Industrial de Curitiba',
-      metrics: [
-        { label: 'Impressões no Google Search', value: '+450%' },
-        { label: 'Leads Qualificados via Formulário', value: '+220%' },
-        { label: 'Tempo Médio de Permanência', value: '3m 40s' },
-      ],
-      desc: 'Estratégia B2B focada em especificações técnicas, catálogo de peças em JSON-LD e conteúdo semântico para compradores industriais.',
+      id: 'pneus',
+      title: 'Pneus & Auto Center Automotivo',
+      icon: Car,
+      segment: 'Auto Center & Peças Automotivas',
+      region: 'Curitiba, São José dos Pinhais e CIC',
+      challenge: 'Concorrência com e-commerces e redes varejistas em buscas com intenção imediata de troca de pneus por marca e medida.',
+      searchIntent: 'Comercial e transacional de preço ("pneu 205/55 r16 curitiba", "auto center alinhamento e balanceamento sjp").',
+      strategy: 'Criação de catálogos semânticos organizados por dimensão de pneu com marcação Schema.org Product e OfferCatalog, combinados a landing pages regionais.',
+      result: 'Estruturação de catálogo semântico para buscas por especificações e medidas de alta demanda.',
+      evidence: 'Evidência pendente de documentação',
+      methodology: 'Modelagem semântica de produtos alinhada à arquitetura de informação focada no comportamento do motorista.',
     },
     {
-      title: 'Escritório de Advocacia Corporativa no Centro',
-      category: 'Serviços Jurídicos • Centro / Curitiba',
-      metrics: [
-        { label: 'Novos Agendamentos Mensais', value: '+140%' },
-        { label: 'Avaliações 5 Estrelas no Google', value: '85+ Novas' },
-        { label: 'Citação em Buscas de IA', value: 'Ativo' },
-      ],
-      desc: 'Fortalecimento dos pilares E-E-A-T do Google, autoridade do perfil no Google Maps e estruturação de artigos jurídicos de alta intenção comercial.',
+      id: 'desentupidoras',
+      title: 'Desentupidoras e Serviços 24 Horas',
+      icon: Wrench,
+      segment: 'Serviços de Urgência Residencial & Predial',
+      region: 'Curitiba e Região Metropolitana',
+      challenge: 'Custo por clique elevado em anúncios pagos e concorrência em pesquisas de emergência.',
+      searchIntent: 'Urgência extrema ("desentupidora 24 horas curitiba", "desentupir esgoto emergência batel").',
+      strategy: 'Páginas otimizadas para carregamento mobile ultrarrápido, presença de chamada direta e Schema.org EmergencyService por região.',
+      result: 'Otimização focada em velocidade de carregamento e redução de fricção para conversão no celular em horários de pico.',
+      evidence: 'Evidência pendente de documentação',
+      methodology: 'Fricção zero no clique móvel e indexação geográfica direcionada à prontidão de atendimento.',
+    },
+    {
+      id: 'encanadores',
+      title: 'Encanadores & Caça-Vazamentos Hidráulicos',
+      icon: Droplet,
+      segment: 'Manutenção Hidráulica Especializada',
+      region: 'Curitiba e Região Metropolitana',
+      challenge: 'Dificuldade de diferenciação em meio a diretórios genéricos de prestadores de serviço.',
+      searchIntent: 'Pesquisa técnica de solução ("caça vazamento não destrutivo curitiba", "encanador hidráulico urgente").',
+      strategy: 'Demonstração em conteúdo das tecnologias de detecção utilizadas e criação de marcação Schema.org Service detalhada.',
+      result: 'Estruturação de autoridade técnica e detalhamento de serviços de detecção não destrutiva.',
+      evidence: 'Evidência pendente de documentação',
+      methodology: 'Construção de sinais de E-E-A-T (Experiência, Expertise, Autoridade e Confiança) com conteúdo técnico.',
+    },
+    {
+      id: 'construtoras',
+      title: 'Construtoras & Obras Corporativas',
+      icon: Building2,
+      segment: 'Engenharia & Construção Civil B2B',
+      region: 'Paraná, Curitiba e Polos Industriais',
+      challenge: 'Ciclo de decisão longo e necessidade de alcançar gestores de infraestrutura B2B.',
+      searchIntent: 'Ticket alto B2B ("construtora de galpões industriais curitiba", "reforma comercial predial").',
+      strategy: 'SEO de Conteúdo Técnico de Engenharia, portfolios de obras documentados com especificações técnicas e Schema.org Organization.',
+      result: 'Inbound SEO B2B direcionado a decisores corporativos e engenheiros de infraestrutura.',
+      evidence: 'Evidência pendente de documentação',
+      methodology: 'Engenharia de conteúdo B2B projetada para corresponder às exigências de cotações corporativas.',
+    },
+    {
+      id: 'estruturas',
+      title: 'Estruturas Metálicas & Coberturas Industriais',
+      icon: Layers,
+      segment: 'Indústria Metalúrgica & Engenharia Estrutural',
+      region: 'Curitiba, RMC, Ponta Grossa e Paraná',
+      challenge: 'Disputa contra fabricantes de estruturas em cotações industriais estaduais.',
+      searchIntent: 'B2B Industrial ("fabricante de estrutura metálica para galpão", "cobertura metálica industrial paraná").',
+      strategy: 'Otimização semântica por modalidade construtiva (mezaninos, galpões, coberturas) e clusters de páginas regionalizadas para polos industriais.',
+      result: 'Arquitetura temática estruturada para captar demandas de engenharia estrutural no Paraná.',
+      evidence: 'Evidência pendente de documentação',
+      methodology: 'Engenharia semântica aplicada à terminologia industrial e especificações de comprador.',
+    },
+    {
+      id: 'calhas',
+      title: 'Fabricação & Instalação de Calhas e Rufos',
+      icon: HomeIcon,
+      segment: 'Instalação & Manutenção Residencial/Industrial',
+      region: 'Curitiba e Cidades Vizinhas',
+      challenge: 'Mercado pulverizado com forte busca local por orçamento e instalação sob medida.',
+      searchIntent: 'Direta e comercial ("fábrica de calhas curitiba", "instalação de rufos sob medida").',
+      strategy: 'SEO Local por bairro com especificações de materiais (alumínio, galvanizado, inox) e marcação Schema.org.',
+      result: 'Presença e indexação geo-específica para atração de pedidos de orçamento sob medida.',
+      evidence: 'Evidência pendente de documentação',
+      methodology: 'Integração de SEO Local por regiões com perfis corporativos otimizados.',
+    },
+    {
+      id: 'persianas',
+      title: 'Persianas & Cortinas Sob Medida',
+      icon: Blinds,
+      segment: 'Decoração, Arquitetura & Automação',
+      region: 'Curitiba (Batel, Cabral, Ecoville)',
+      challenge: 'Disputa pelo público de alto padrão em bairros nobres e escritórios corporativos.',
+      searchIntent: 'Comercial qualificada ("persianas motorizadas curitiba", "cortinas sob medida batel").',
+      strategy: 'Otimização visual e semântica de modelos premium (rolo, romana, motorizadas) e Schema.org Product.',
+      result: 'Apresentação semântica focada em especificações de arquitetura e automação residencial.',
+      evidence: 'Evidência pendente de documentação',
+      methodology: 'SEO focado na jornada do consumidor qualificado com apresentação estética relevante.',
     },
   ];
 
   return (
     <div className="pt-28 pb-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto space-y-16">
       <EnhancedSEO
-        title="Cases de Sucesso e Resultados de SEO | Omar SEO"
-        description="Conheça relatórios, métricas de crescimento e projetos otimizados com a engenharia de visibilidade do Omar SEO."
+        title="Cases e Resultados de SEO | Omar SEO — Experiência Prática"
+        description="Confira casos reais e factual de SEO técnico, SEO Local e GEO conduzidos por Omar SEO em segmentos competitivos em Curitiba e no Brasil."
         canonical="/resultados"
         breadcrumbs={[
           { name: 'Home', item: '/' },
-          { name: 'Resultados', item: '/resultados' },
+          { name: 'Cases e Resultados', item: '/resultados' },
         ]}
       />
 
       {/* Header */}
-      <div className="relative p-8 sm:p-12 rounded-3xl bg-slate-950/80 border border-yellow-500/30 shadow-[0_0_40px_rgba(250,204,21,0.15)] overflow-hidden">
+      <div className="relative p-8 sm:p-12 lg:p-16 rounded-3xl bg-slate-950/80 border border-yellow-500/30 shadow-[0_0_40px_rgba(250,204,21,0.15)] overflow-hidden">
         <BackgroundVideo
           src="https://img.supremasite.com.br/seo-omar.mp4"
           opacity={0.40}
-          overlayClassName="bg-gradient-to-b from-[#0a0a0f]/70 via-[#0a0a0f]/50 to-[#0a0a0f]/80"
+          overlayClassName="bg-gradient-to-b from-[#0a0a0f]/75 via-[#0a0a0f]/55 to-[#0a0a0f]/85"
         />
         <ConstellationGrid className="absolute inset-0 z-0 opacity-40 pointer-events-none" />
         <div className="relative z-10 text-center max-w-3xl mx-auto space-y-4">
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-yellow-500/10 border border-yellow-500/30 text-yellow-400 font-bold text-xs uppercase tracking-wider">
             <Award size={14} />
-            <span>Métricas e Projetos Reais</span>
+            <span>Evidência, Técnica e Fatos</span>
           </div>
 
           <h1 className="text-3xl sm:text-5xl font-black font-display text-white tracking-tight">
-            Resultados Reais Obtidos com Engenharia de SEO
+            Cases e Resultados de SEO
           </h1>
 
           <p className="text-slate-300 text-sm sm:text-base leading-relaxed">
-            Confira o impacto comercial gerado por nossas otimizações em empresas situadas no Batel, Centro, CIC e demais regiões de Curitiba.
+            Demonstração factual da engenharia semântica de Omar SEO aplicada a mercados de alta competitividade em Curitiba, na RMC e no Brasil.
           </p>
         </div>
       </div>
 
-      {/* Cases Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-        {cases.map((c) => (
-          <div key={c.title} className="p-6 rounded-3xl bg-slate-950 border border-slate-800 hover:border-yellow-500/40 transition-all flex flex-col justify-between space-y-6">
-            <div>
-              <span className="text-[11px] font-bold text-yellow-400 uppercase tracking-wider block mb-2">
-                {c.category}
-              </span>
-              <h3 className="text-xl font-bold font-display text-white">{c.title}</h3>
-              <p className="text-xs text-slate-400 mt-2 leading-relaxed">{c.desc}</p>
+      {/* Mandatory Ethics & Transparency Disclaimer Card */}
+      <section className="p-6 sm:p-8 rounded-3xl bg-slate-900/90 border border-yellow-500/40 shadow-xl space-y-3">
+        <div className="flex items-center gap-3 text-yellow-400 font-bold text-sm sm:text-base">
+          <ShieldAlert size={22} className="shrink-0 text-yellow-400" />
+          <h2>Aviso de Transparência e Isenção de Garantia Futura</h2>
+        </div>
+        <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
+          <strong className="text-white">Diferenciação Ética Fundamental:</strong> Os dados e metodologias descritos nesta página representam <strong className="text-yellow-300">resultados passados e conquistas factuais</strong> obtidas em projetos com otimização técnica. O Omar SEO <strong className="text-white">NÃO garante posições futuras no Google, Google Maps ou motores de IA</strong> para nenhum cliente, visto que os algoritmos de busca são de propriedade exclusiva de terceiros (Google, OpenAI, Anthropic, Microsoft) e sofrem constantes atualizações. Nosso compromisso é a aplicação rigorosa das melhores práticas de engenharia de código, Schema.org e SEO técnico recomendadas mundialmente.
+        </p>
+      </section>
+
+      {/* Documented Cases Section */}
+      <section className="space-y-12">
+        <div className="text-center max-w-3xl mx-auto space-y-2">
+          <span className="text-xs font-bold uppercase tracking-widest text-emerald-400 bg-emerald-950/80 px-3 py-1 rounded border border-emerald-800 inline-block">
+            Evidência Factual Documentada
+          </span>
+          <h2 className="text-2xl sm:text-4xl font-black font-display text-white">
+            Cases de Sucesso Factualmente Documentados
+          </h2>
+          <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
+            Relatórios e capturas de tela reais fornecidas pelos proprietários, registrando presença orgânica e visibilidade em experiências generativas no Google.
+          </p>
+        </div>
+
+        {/* SUB-SECTION 1: SEO — Resultados Orgânicos Documentados */}
+        <div className="space-y-6">
+          <div className="border-b border-slate-800 pb-3 flex items-center justify-between">
+            <h2 className="text-xl sm:text-2xl font-bold font-display text-white flex items-center gap-2">
+              <Search className="text-yellow-400" size={22} />
+              <span>SEO — Resultados Orgânicos Documentados</span>
+            </h2>
+            <span className="text-xs text-slate-400 font-mono hidden sm:inline">SERP Google Search</span>
+          </div>
+
+          <div className="grid grid-cols-1 gap-8">
+            {/* Featured Case #01 Block - Advocacia */}
+            <div className="p-6 sm:p-8 rounded-3xl bg-slate-950/90 border border-yellow-500/50 shadow-[0_0_30px_rgba(250,204,21,0.12)] space-y-6">
+              <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4 border-b border-slate-800 pb-5">
+                <div className="space-y-1">
+                  <div className="inline-flex items-center gap-2 text-[11px] font-extrabold uppercase tracking-widest text-yellow-400 bg-yellow-950/80 px-3 py-1 rounded-full border border-yellow-500/30">
+                    <Sparkles size={13} />
+                    <span>Case Documentado #01 — Advocacia / Direito da Saúde</span>
+                  </div>
+                  <h3 className="text-xl sm:text-3xl font-bold font-display text-white pt-1">
+                    Advocacia / Direito da Saúde — “Advogados Planos de Saúde”
+                  </h3>
+                  <p className="text-xs sm:text-sm text-slate-300">
+                    Primeira página do Google registrada em consulta jurídica especializada de alta consideração em Curitiba.
+                  </p>
+                </div>
+
+                <Link
+                  to="/resultados/seo-advogados-planos-de-saude"
+                  className="btn-primary-gold btn-shimmer px-5 py-2.5 rounded-full font-bold text-xs inline-flex items-center gap-2 shrink-0"
+                >
+                  <span>Ver Case Completo</span>
+                  <ArrowRight size={14} />
+                </Link>
+              </div>
+
+              <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-center">
+                {/* Screenshot Thumbnail */}
+                <div className="lg:col-span-6 bg-white p-2 rounded-2xl border border-slate-800 overflow-hidden group relative">
+                  <Link to="/resultados/seo-advogados-planos-de-saude" className="block">
+                    <img
+                      src="/images/cases/case-seo-advogados-planos-de-saude-google.png"
+                      alt="Captura real do Google para advogados planos de saude"
+                      width={1045}
+                      height={262}
+                      loading="lazy"
+                      className="w-full h-auto object-contain rounded-xl transition-transform duration-300 group-hover:scale-[1.02]"
+                    />
+                  </Link>
+                </div>
+
+                {/* Quick Metrics & Details */}
+                <div className="lg:col-span-6 space-y-3 text-xs">
+                  <div className="p-3.5 rounded-xl bg-[#0f1118] border border-slate-800 space-y-1">
+                    <span className="text-[10px] font-bold uppercase tracking-wider text-slate-400 block">
+                      Consulta de Pesquisa Registrada
+                    </span>
+                    <span className="text-sm font-bold text-yellow-300 font-mono">
+                      advogados planos de saúde
+                    </span>
+                  </div>
+
+                  <div className="p-3.5 rounded-xl bg-[#0f1118] border border-slate-800 space-y-1">
+                    <span className="text-[10px] font-bold uppercase tracking-wider text-slate-400 block">
+                      Perfil de Intenção
+                    </span>
+                    <span className="text-sm font-bold text-slate-200">
+                      Serviço especializado de alta consideração (Decisão jurídica fundamentada)
+                    </span>
+                  </div>
+
+                  <div className="p-3.5 rounded-xl bg-[#0f1118] border border-slate-800 space-y-1">
+                    <span className="text-[10px] font-bold uppercase tracking-wider text-slate-400 block">
+                      Presença Factual
+                    </span>
+                    <span className="text-sm font-bold text-emerald-400">
+                      Primeira página do Google (Resultado Orgânico)
+                    </span>
+                  </div>
+
+                  <div className="pt-2">
+                    <Link
+                      to="/resultados/seo-advogados-planos-de-saude"
+                      className="text-cyan-400 hover:text-cyan-300 font-bold inline-flex items-center gap-1.5 text-xs"
+                    >
+                      <span>Acessar documentação detalhada do Case #01</span>
+                      <ArrowRight size={14} />
+                    </Link>
+                  </div>
+                </div>
+              </div>
             </div>
 
-            <div className="space-y-3 pt-4 border-t border-slate-900">
-              {c.metrics.map((m) => (
-                <div key={m.label} className="flex items-center justify-between text-xs">
-                  <span className="text-slate-400">{m.label}</span>
-                  <span className="font-extrabold font-display text-emerald-400">{m.value}</span>
+            {/* Featured Case #02 Block - Shopcell */}
+            <div className="p-6 sm:p-8 rounded-3xl bg-slate-950/90 border border-cyan-500/50 shadow-[0_0_30px_rgba(34,211,238,0.12)] space-y-6">
+              <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4 border-b border-slate-800 pb-5">
+                <div className="space-y-1">
+                  <div className="inline-flex items-center gap-2 text-[11px] font-extrabold uppercase tracking-widest text-cyan-400 bg-cyan-950/80 px-3 py-1 rounded-full border border-cyan-500/30">
+                    <Smartphone size={13} />
+                    <span>Case Documentado #02 — Celulares / Varejo Local</span>
+                  </div>
+                  <h3 className="text-xl sm:text-3xl font-bold font-display text-white pt-1">
+                    Shopcell — “Celulares em Curitiba”
+                  </h3>
+                  <p className="text-xs sm:text-sm text-slate-300">
+                    Resultado orgânico documentado no Google para uma consulta comercial estratégica em Curitiba.
+                  </p>
                 </div>
-              ))}
+
+                <Link
+                  to="/resultados/seo-celulares-curitiba-shopcell"
+                  className="px-5 py-2.5 rounded-full bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-bold text-xs inline-flex items-center gap-2 shrink-0 transition-colors shadow-[0_0_15px_rgba(34,211,238,0.3)]"
+                >
+                  <span>Ver Case Completo</span>
+                  <ArrowRight size={14} />
+                </Link>
+              </div>
+
+              <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-center">
+                {/* Screenshot Thumbnail */}
+                <div className="lg:col-span-6 bg-white p-2 rounded-2xl border border-slate-800 overflow-hidden group relative">
+                  <Link to="/resultados/seo-celulares-curitiba-shopcell" className="block">
+                    <img
+                      src="/images/cases/case-shopcell-celulares-em-curitiba-google.png"
+                      alt="Shopcell posicionada no Google para celulares em Curitiba"
+                      width={1080}
+                      height={390}
+                      loading="lazy"
+                      className="w-full h-auto object-contain rounded-xl transition-transform duration-300 group-hover:scale-[1.02]"
+                    />
+                  </Link>
+                </div>
+
+                {/* Quick Metrics & Details */}
+                <div className="lg:col-span-6 space-y-3 text-xs">
+                  <div className="p-3.5 rounded-xl bg-[#0f1118] border border-slate-800 space-y-1">
+                    <span className="text-[10px] font-bold uppercase tracking-wider text-slate-400 block">
+                      Consulta de Pesquisa Registrada
+                    </span>
+                    <span className="text-sm font-bold text-yellow-300 font-mono">
+                      celulares em Curitiba
+                    </span>
+                  </div>
+
+                  <div className="p-3.5 rounded-xl bg-[#0f1118] border border-slate-800 space-y-1">
+                    <span className="text-[10px] font-bold uppercase tracking-wider text-slate-400 block">
+                      Perfil de Intenção
+                    </span>
+                    <span className="text-sm font-bold text-slate-200">
+                      Varejo local e intenção comercial imediata por produtos no Centro
+                    </span>
+                  </div>
+
+                  <div className="p-3.5 rounded-xl bg-[#0f1118] border border-slate-800 space-y-1">
+                    <span className="text-[10px] font-bold uppercase tracking-wider text-slate-400 block">
+                      Presença Factual
+                    </span>
+                    <span className="text-sm font-bold text-emerald-400">
+                      Resultado orgânico documentado na página de buscas
+                    </span>
+                  </div>
+
+                  <div className="pt-2">
+                    <Link
+                      to="/resultados/seo-celulares-curitiba-shopcell"
+                      className="text-cyan-400 hover:text-cyan-300 font-bold inline-flex items-center gap-1.5 text-xs"
+                    >
+                      <span>Acessar documentação detalhada do Case #02</span>
+                      <ArrowRight size={14} />
+                    </Link>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-        ))}
-      </div>
+        </div>
+
+        {/* SUB-SECTION 2: GEO/AIO — Resultados em Experiências Generativas */}
+        <div className="space-y-6 pt-4">
+          <div className="border-b border-slate-800 pb-3 flex items-center justify-between">
+            <h2 className="text-xl sm:text-2xl font-bold font-display text-white flex items-center gap-2">
+              <Bot className="text-cyan-400" size={22} />
+              <span>GEO/AIO — Resultados em Experiências Generativas</span>
+            </h2>
+            <span className="text-xs text-slate-400 font-mono hidden sm:inline">Google AI Overview (IA)</span>
+          </div>
+
+          <div className="grid grid-cols-1 gap-8">
+            {/* Case #03 Block - Carplus */}
+            <div className="p-6 sm:p-8 rounded-3xl bg-slate-950/90 border border-cyan-500/60 shadow-[0_0_35px_rgba(34,211,238,0.15)] space-y-6 relative overflow-hidden">
+              <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4 border-b border-slate-800 pb-5">
+                <div className="space-y-1">
+                  <div className="inline-flex items-center gap-2 text-[11px] font-extrabold uppercase tracking-widest text-cyan-400 bg-cyan-950/90 px-3 py-1 rounded-full border border-cyan-500/40">
+                    <Cpu size={13} />
+                    <span>Case Documentado #03 — Carplus | Google AI Overview</span>
+                  </div>
+                  <h3 className="text-xl sm:text-3xl font-bold font-display text-white pt-1">
+                    Carplus apresentada pela IA do Google em Curitiba
+                  </h3>
+                  <p className="text-xs sm:text-sm text-slate-300">
+                    Resposta sintetizada pelo Google AI Overview destacando a Carplus Centro Automotivo em consulta comercial sobre pneus e oficinas.
+                  </p>
+                </div>
+
+                <Link
+                  to="/resultados/carplus-google-ai-overview-pneus-curitiba"
+                  className="px-5 py-2.5 rounded-full bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-slate-950 font-bold text-xs inline-flex items-center gap-2 shrink-0 transition-all shadow-[0_0_20px_rgba(34,211,238,0.3)]"
+                >
+                  <span>Ver Evidência em IA</span>
+                  <ArrowRight size={14} />
+                </Link>
+              </div>
+
+              <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-center">
+                {/* Screenshot Thumbnail */}
+                <div className="lg:col-span-6 bg-white p-2 rounded-2xl border border-slate-800 overflow-hidden group relative">
+                  <Link to="/resultados/carplus-google-ai-overview-pneus-curitiba" className="block">
+                    <img
+                      src="/images/cases/case-carplus-google-ai-overview-pneus-curitiba.png"
+                      alt="Carplus apresentada na Visão geral criada por IA do Google"
+                      width={1180}
+                      height={620}
+                      loading="lazy"
+                      className="w-full h-auto object-contain rounded-xl transition-transform duration-300 group-hover:scale-[1.02]"
+                    />
+                  </Link>
+                </div>
+
+                {/* Quick Metrics & Details */}
+                <div className="lg:col-span-6 space-y-3 text-xs">
+                  <div className="p-3.5 rounded-xl bg-[#0f1118] border border-slate-800 space-y-1">
+                    <span className="text-[10px] font-bold uppercase tracking-wider text-slate-400 block">
+                      Consulta Registrada
+                    </span>
+                    <span className="text-sm font-bold text-yellow-300 font-mono">
+                      Oficinas dos Pneus Curitiba
+                    </span>
+                  </div>
+
+                  <div className="p-3.5 rounded-xl bg-[#0f1118] border border-slate-800 space-y-1">
+                    <span className="text-[10px] font-bold uppercase tracking-wider text-slate-400 block">
+                      Localização
+                    </span>
+                    <span className="text-sm font-bold text-slate-200">
+                      Curitiba, PR
+                    </span>
+                  </div>
+
+                  <div className="p-3.5 rounded-xl bg-[#0f1118] border border-slate-800 space-y-1">
+                    <span className="text-[10px] font-bold uppercase tracking-wider text-slate-400 block">
+                      Superfície de Busca
+                    </span>
+                    <span className="text-sm font-bold text-cyan-400">
+                      Visão geral criada por IA (Google AI Overview)
+                    </span>
+                  </div>
+
+                  <div className="pt-2">
+                    <Link
+                      to="/resultados/carplus-google-ai-overview-pneus-curitiba"
+                      className="text-cyan-400 hover:text-cyan-300 font-bold inline-flex items-center gap-1.5 text-xs"
+                    >
+                      <span>Acessar documentação completa do Case #03</span>
+                      <ArrowRight size={14} />
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* SUB-SECTION 3: SEO LOCAL / GOOGLE MAPS — Bloco de Empresas */}
+        <div className="space-y-6 pt-4">
+          <div className="border-b border-slate-800 pb-3 flex items-center justify-between">
+            <h2 className="text-xl sm:text-2xl font-bold font-display text-white flex items-center gap-2">
+              <MapPin className="text-emerald-400" size={22} />
+              <span>SEO LOCAL / GOOGLE MAPS — Bloco de Empresas</span>
+            </h2>
+            <span className="text-xs text-slate-400 font-mono hidden sm:inline">Local Pack / Google Business</span>
+          </div>
+
+          <div className="grid grid-cols-1 gap-8">
+            {/* Case #04 Block - Ecoservy */}
+            <div className="p-6 sm:p-8 rounded-3xl bg-slate-950/90 border border-emerald-500/60 shadow-[0_0_35px_rgba(16,185,129,0.15)] space-y-6 relative overflow-hidden">
+              <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4 border-b border-slate-800 pb-5">
+                <div className="space-y-1">
+                  <div className="inline-flex items-center gap-2 text-[11px] font-extrabold uppercase tracking-widest text-emerald-400 bg-emerald-950/90 px-3 py-1 rounded-full border border-emerald-500/40">
+                    <MapPin size={13} />
+                    <span>Case Documentado #04 — Ecoservy | SEO Local</span>
+                  </div>
+                  <h3 className="text-xl sm:text-3xl font-bold font-display text-white pt-1">
+                    Ecoservy — “Corte e Poda”
+                  </h3>
+                  <p className="text-xs sm:text-sm text-slate-300">
+                    Primeiro resultado empresarial visível no bloco local documentado na captura para a pesquisa “corte e poda” em Curitiba.
+                  </p>
+                </div>
+
+                <Link
+                  to="/resultados/seo-local-ecoservy-corte-e-poda-curitiba"
+                  className="px-5 py-2.5 rounded-full bg-gradient-to-r from-emerald-500 to-teal-600 hover:from-emerald-400 hover:to-teal-500 text-slate-950 font-bold text-xs inline-flex items-center gap-2 shrink-0 transition-all shadow-[0_0_20px_rgba(16,185,129,0.3)]"
+                >
+                  <span>Ver Evidência</span>
+                  <ArrowRight size={14} />
+                </Link>
+              </div>
+
+              <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-center">
+                {/* Screenshot Thumbnail */}
+                <div className="lg:col-span-6 bg-white p-2 rounded-2xl border border-slate-800 overflow-hidden group relative">
+                  <Link to="/resultados/seo-local-ecoservy-corte-e-poda-curitiba" className="block">
+                    <img
+                      src="/images/cases/case-ecoservy-corte-e-poda-google-maps.png"
+                      alt="Ecoservy como primeiro resultado visível no Google Local para corte e poda em Curitiba"
+                      width={1180}
+                      height={580}
+                      loading="lazy"
+                      className="w-full h-auto object-contain rounded-xl transition-transform duration-300 group-hover:scale-[1.02]"
+                    />
+                  </Link>
+                </div>
+
+                {/* Quick Metrics & Details */}
+                <div className="lg:col-span-6 space-y-3 text-xs">
+                  <div className="p-3.5 rounded-xl bg-[#0f1118] border border-slate-800 space-y-1">
+                    <span className="text-[10px] font-bold uppercase tracking-wider text-slate-400 block">
+                      Consulta Registrada
+                    </span>
+                    <span className="text-sm font-bold text-yellow-300 font-mono">
+                      corte e poda
+                    </span>
+                  </div>
+
+                  <div className="p-3.5 rounded-xl bg-[#0f1118] border border-slate-800 space-y-1">
+                    <span className="text-[10px] font-bold uppercase tracking-wider text-slate-400 block">
+                      Localização
+                    </span>
+                    <span className="text-sm font-bold text-slate-200">
+                      Curitiba, PR
+                    </span>
+                  </div>
+
+                  <div className="p-3.5 rounded-xl bg-[#0f1118] border border-slate-800 space-y-1">
+                    <span className="text-[10px] font-bold uppercase tracking-wider text-slate-400 block">
+                      Superfície de Busca
+                    </span>
+                    <span className="text-sm font-bold text-emerald-400">
+                      Resultados locais do Google (Google Maps / Local Pack)
+                    </span>
+                  </div>
+
+                  <div className="pt-2">
+                    <Link
+                      to="/resultados/seo-local-ecoservy-corte-e-poda-curitiba"
+                      className="text-emerald-400 hover:text-emerald-300 font-bold inline-flex items-center gap-1.5 text-xs"
+                    >
+                      <span>Acessar documentação completa do Case #04</span>
+                      <ArrowRight size={14} />
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Case #07 Block - Alevinos Curitiba (+12 Anos de Parceria) */}
+            <div className="p-6 sm:p-8 rounded-3xl bg-slate-950/90 border border-emerald-500/60 shadow-[0_0_35px_rgba(16,185,129,0.15)] space-y-6 relative overflow-hidden">
+              <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4 border-b border-slate-800 pb-5">
+                <div className="space-y-1">
+                  <div className="flex flex-wrap items-center gap-2">
+                    <div className="inline-flex items-center gap-2 text-[11px] font-extrabold uppercase tracking-widest text-emerald-400 bg-emerald-950/90 px-3 py-1 rounded-full border border-emerald-500/40">
+                      <Award size={13} fill="currentColor" />
+                      <span>+12 ANOS DE PARCERIA</span>
+                    </div>
+                    <div className="inline-flex items-center gap-1.5 text-[11px] font-bold uppercase tracking-widest text-cyan-400 bg-cyan-950/80 px-2.5 py-0.5 rounded-full border border-cyan-800/60">
+                      <span>Case Documentado #07 — Alevinos Curitiba</span>
+                    </div>
+                  </div>
+                  <h3 className="text-xl sm:text-3xl font-bold font-display text-white pt-1">
+                    Alevinos Curitiba — SEO Local + Orgânico
+                  </h3>
+                  <p className="text-xs sm:text-sm text-slate-300">
+                    De uma estrutura digital dependente de ativos alugados a uma presença própria consolidada no Google.
+                  </p>
+                </div>
+
+                <Link
+                  to="/resultados/seo-local-e-organico-alevinos-curitiba"
+                  className="px-5 py-2.5 rounded-full bg-gradient-to-r from-emerald-500 to-cyan-500 hover:from-emerald-400 hover:to-cyan-400 text-slate-950 font-bold text-xs inline-flex items-center gap-2 shrink-0 transition-all shadow-[0_0_20px_rgba(16,185,129,0.3)]"
+                >
+                  <span>Conhecer a história e ver a evidência</span>
+                  <ArrowRight size={14} />
+                </Link>
+              </div>
+
+              <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-center">
+                {/* Screenshot Thumbnail */}
+                <div className="lg:col-span-6 bg-white p-2 rounded-2xl border border-slate-800 overflow-hidden group relative">
+                  <Link to="/resultados/seo-local-e-organico-alevinos-curitiba" className="block">
+                    <img
+                      src="/images/cases/case-alevinos-curitiba-google.png"
+                      alt="Alevinos Curitiba presente no Google Maps e no resultado orgânico para a palavra-chave alevinos"
+                      width={1000}
+                      height={800}
+                      loading="lazy"
+                      className="w-full h-auto object-contain rounded-xl transition-transform duration-300 group-hover:scale-[1.02]"
+                    />
+                  </Link>
+                </div>
+
+                {/* Quick Metrics & Details */}
+                <div className="lg:col-span-6 space-y-3 text-xs">
+                  <div className="p-3.5 rounded-xl bg-[#0f1118] border border-slate-800 space-y-1">
+                    <span className="text-[10px] font-bold uppercase tracking-wider text-slate-400 block">
+                      Consulta Registrada
+                    </span>
+                    <span className="text-sm font-bold text-yellow-300 font-mono">
+                      alevinos
+                    </span>
+                  </div>
+
+                  <div className="p-3.5 rounded-xl bg-[#0f1118] border border-slate-800 space-y-1">
+                    <span className="text-[10px] font-bold uppercase tracking-wider text-slate-400 block">
+                      Histórico do Projeto
+                    </span>
+                    <span className="text-sm font-bold text-emerald-400">
+                      Mais de 12 anos acompanhando a evolução digital
+                    </span>
+                  </div>
+
+                  <div className="p-3.5 rounded-xl bg-[#0f1118] border border-slate-800 space-y-1">
+                    <span className="text-[10px] font-bold uppercase tracking-wider text-slate-400 block">
+                      Resultado Atual Documentado
+                    </span>
+                    <span className="text-sm font-bold text-slate-200">
+                      Presença simultânea no Google Maps e na 1ª página orgânica
+                    </span>
+                  </div>
+
+                  <div className="pt-2">
+                    <Link
+                      to="/resultados/seo-local-e-organico-alevinos-curitiba"
+                      className="text-emerald-400 hover:text-emerald-300 font-bold inline-flex items-center gap-1.5 text-xs"
+                    >
+                      <span>Acessar documentação completa e história do Case #07</span>
+                      <ArrowRight size={14} />
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* SUB-SECTION 4: SEO + GEO/AIO — Presença Generativa + Busca Orgânica */}
+        <div className="space-y-6 pt-4">
+          <div className="border-b border-slate-800 pb-3 flex items-center justify-between">
+            <h2 className="text-xl sm:text-2xl font-bold font-display text-white flex items-center gap-2">
+              <Sparkles className="text-cyan-400" size={22} />
+              <span>SEO + GEO/AIO — Presença Generativa + Busca Orgânica</span>
+            </h2>
+            <span className="text-xs text-slate-400 font-mono hidden sm:inline">IA do Google + Busca Tradicional</span>
+          </div>
+
+          <div className="grid grid-cols-1 gap-8">
+            {/* Case #05 Block - Comfort Divisórias */}
+            <div className="p-6 sm:p-8 rounded-3xl bg-slate-950/90 border border-cyan-500/60 shadow-[0_0_35px_rgba(34,211,238,0.15)] space-y-6 relative overflow-hidden">
+              <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4 border-b border-slate-800 pb-5">
+                <div className="space-y-1">
+                  <div className="inline-flex items-center gap-2 text-[11px] font-extrabold uppercase tracking-widest text-cyan-400 bg-cyan-950/90 px-3 py-1 rounded-full border border-cyan-500/40">
+                    <Sparkles size={13} fill="currentColor" />
+                    <span>Case Documentado #05 — Comfort Divisórias | SEO + GEO</span>
+                  </div>
+                  <h3 className="text-xl sm:text-3xl font-bold font-display text-white pt-1">
+                    Comfort Divisórias na IA do Google & Busca Orgânica
+                  </h3>
+                  <p className="text-xs sm:text-sm text-slate-300">
+                    Presença documentada tanto na Visão geral criada por IA quanto nos resultados orgânicos para a consulta comercial sobre divisórias Eucatex em Curitiba.
+                  </p>
+                </div>
+
+                <Link
+                  to="/resultados/comfort-divisorias-google-ia-curitiba"
+                  className="px-5 py-2.5 rounded-full bg-gradient-to-r from-cyan-500 to-emerald-500 hover:from-cyan-400 hover:to-emerald-400 text-slate-950 font-bold text-xs inline-flex items-center gap-2 shrink-0 transition-all shadow-[0_0_20px_rgba(34,211,238,0.3)]"
+                >
+                  <span>Ver Evidência</span>
+                  <ArrowRight size={14} />
+                </Link>
+              </div>
+
+              <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-center">
+                {/* Screenshot Thumbnail */}
+                <div className="lg:col-span-6 bg-white p-2 rounded-2xl border border-slate-800 overflow-hidden group relative">
+                  <Link to="/resultados/comfort-divisorias-google-ia-curitiba" className="block">
+                    <img
+                      src="/images/cases/case-comfort-divisorias-eucatex-google-ai.png"
+                      alt="Comfort Divisórias na Visão geral criada por IA do Google para divisórias Eucatex em Curitiba"
+                      width={1180}
+                      height={660}
+                      loading="lazy"
+                      className="w-full h-auto object-contain rounded-xl transition-transform duration-300 group-hover:scale-[1.02]"
+                    />
+                  </Link>
+                </div>
+
+                {/* Quick Metrics & Details */}
+                <div className="lg:col-span-6 space-y-3 text-xs">
+                  <div className="p-3.5 rounded-xl bg-[#0f1118] border border-slate-800 space-y-1">
+                    <span className="text-[10px] font-bold uppercase tracking-wider text-slate-400 block">
+                      Consulta Registrada
+                    </span>
+                    <span className="text-sm font-bold text-yellow-300 font-mono">
+                      qual empresa divisorias eucatex em curitiba
+                    </span>
+                  </div>
+
+                  <div className="p-3.5 rounded-xl bg-[#0f1118] border border-slate-800 space-y-1">
+                    <span className="text-[10px] font-bold uppercase tracking-wider text-slate-400 block">
+                      Localização & Plataforma
+                    </span>
+                    <span className="text-sm font-bold text-slate-200">
+                      Curitiba, PR (Google)
+                    </span>
+                  </div>
+
+                  <div className="p-3.5 rounded-xl bg-[#0f1118] border border-slate-800 space-y-1">
+                    <span className="text-[10px] font-bold uppercase tracking-wider text-slate-400 block">
+                      Superfícies Documentadas
+                    </span>
+                    <span className="text-sm font-bold text-cyan-400">
+                      Visão geral criada por IA + Resultado Orgânico
+                    </span>
+                  </div>
+
+                  <div className="pt-2">
+                    <Link
+                      to="/resultados/comfort-divisorias-google-ia-curitiba"
+                      className="text-cyan-400 hover:text-cyan-300 font-bold inline-flex items-center gap-1.5 text-xs"
+                    >
+                      <span>Acessar documentação completa do Case #05</span>
+                      <ArrowRight size={14} />
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Case #06 Block - KY Drywall & Steel Frame */}
+            <div className="p-6 sm:p-8 rounded-3xl bg-slate-950/90 border border-cyan-500/60 shadow-[0_0_35px_rgba(34,211,238,0.15)] space-y-6 relative overflow-hidden">
+              <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4 border-b border-slate-800 pb-5">
+                <div className="space-y-1">
+                  <div className="inline-flex items-center gap-2 text-[11px] font-extrabold uppercase tracking-widest text-cyan-400 bg-cyan-950/90 px-3 py-1 rounded-full border border-cyan-500/40">
+                    <Sparkles size={13} fill="currentColor" />
+                    <span>Case Documentado #06 — KY Drywall | GEO / AIO</span>
+                  </div>
+                  <h3 className="text-xl sm:text-3xl font-bold font-display text-white pt-1">
+                    KY Drywall &amp; Steel Frame citada pela IA do Google
+                  </h3>
+                  <p className="text-xs sm:text-sm text-slate-300">
+                    Empresa citada nominalmente na Visão geral criada por IA do Google para a consulta comercial de descoberta sobre empresas de drywall em Curitiba.
+                  </p>
+                </div>
+
+                <Link
+                  to="/resultados/ky-drywall-google-ia-curitiba"
+                  className="px-5 py-2.5 rounded-full bg-gradient-to-r from-cyan-500 to-emerald-500 hover:from-cyan-400 hover:to-emerald-400 text-slate-950 font-bold text-xs inline-flex items-center gap-2 shrink-0 transition-all shadow-[0_0_20px_rgba(34,211,238,0.3)]"
+                >
+                  <span>Ver Evidência</span>
+                  <ArrowRight size={14} />
+                </Link>
+              </div>
+
+              <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-center">
+                {/* Screenshot Thumbnail */}
+                <div className="lg:col-span-6 bg-white p-2 rounded-2xl border border-slate-800 overflow-hidden group relative">
+                  <Link to="/resultados/ky-drywall-google-ia-curitiba" className="block">
+                    <img
+                      src="/images/cases/case-ky-drywall-google-ai-curitiba.png"
+                      alt="KY Drywall citada na Visão geral criada por IA do Google para qual empresa drywall em Curitiba"
+                      width={1180}
+                      height={680}
+                      loading="lazy"
+                      className="w-full h-auto object-contain rounded-xl transition-transform duration-300 group-hover:scale-[1.02]"
+                    />
+                  </Link>
+                </div>
+
+                {/* Quick Metrics & Details */}
+                <div className="lg:col-span-6 space-y-3 text-xs">
+                  <div className="p-3.5 rounded-xl bg-[#0f1118] border border-slate-800 space-y-1">
+                    <span className="text-[10px] font-bold uppercase tracking-wider text-slate-400 block">
+                      Consulta Registrada
+                    </span>
+                    <span className="text-sm font-bold text-yellow-300 font-mono">
+                      qual empresa drywall em curitiba
+                    </span>
+                  </div>
+
+                  <div className="p-3.5 rounded-xl bg-[#0f1118] border border-slate-800 space-y-1">
+                    <span className="text-[10px] font-bold uppercase tracking-wider text-slate-400 block">
+                      Localização &amp; Plataforma
+                    </span>
+                    <span className="text-sm font-bold text-slate-200">
+                      Curitiba, PR (Google)
+                    </span>
+                  </div>
+
+                  <div className="p-3.5 rounded-xl bg-[#0f1118] border border-slate-800 space-y-1">
+                    <span className="text-[10px] font-bold uppercase tracking-wider text-slate-400 block">
+                      Superfície Documentada
+                    </span>
+                    <span className="text-sm font-bold text-cyan-400">
+                      Visão geral criada por IA (Google AI Overview)
+                    </span>
+                  </div>
+
+                  <div className="pt-2">
+                    <Link
+                      to="/resultados/ky-drywall-google-ia-curitiba"
+                      className="text-cyan-400 hover:text-cyan-300 font-bold inline-flex items-center gap-1.5 text-xs"
+                    >
+                      <span>Acessar documentação completa do Case #06</span>
+                      <ArrowRight size={14} />
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Case #08 Block - Ômega Revestimentos (+4 Anos de Parceria) */}
+            <div className="p-6 sm:p-8 rounded-3xl bg-slate-950/90 border border-cyan-500/60 shadow-[0_0_35px_rgba(34,211,238,0.15)] space-y-6 relative overflow-hidden">
+              <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4 border-b border-slate-800 pb-5">
+                <div className="space-y-1">
+                  <div className="flex flex-wrap items-center gap-2">
+                    <div className="inline-flex items-center gap-2 text-[11px] font-extrabold uppercase tracking-widest text-emerald-400 bg-emerald-950/90 px-3 py-1 rounded-full border border-emerald-500/40">
+                      <Clock size={13} />
+                      <span>+4 ANOS DE PARCERIA</span>
+                    </div>
+                    <div className="inline-flex items-center gap-1.5 text-[11px] font-bold uppercase tracking-widest text-cyan-400 bg-cyan-950/80 px-2.5 py-0.5 rounded-full border border-cyan-800/60">
+                      <span>Case Documentado #08 — Ômega Revestimentos | SEO + GEO</span>
+                    </div>
+                  </div>
+                  <h3 className="text-xl sm:text-3xl font-bold font-display text-white pt-1">
+                    Ômega Revestimentos na Resposta do Google &amp; Busca Orgânica
+                  </h3>
+                  <p className="text-xs sm:text-sm text-slate-300">
+                    Presença documentada tanto na experiência de busca do Google quanto nos resultados orgânicos para a consulta comercial sobre instalação de ACM em Curitiba.
+                  </p>
+                </div>
+
+                <Link
+                  to="/resultados/omega-revestimentos-acm-seo-geo-curitiba"
+                  className="px-5 py-2.5 rounded-full bg-gradient-to-r from-cyan-500 to-emerald-500 hover:from-cyan-400 hover:to-emerald-400 text-slate-950 font-bold text-xs inline-flex items-center gap-2 shrink-0 transition-all shadow-[0_0_20px_rgba(34,211,238,0.3)]"
+                >
+                  <span>Ver Evidência</span>
+                  <ArrowRight size={14} />
+                </Link>
+              </div>
+
+              <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-center">
+                {/* Screenshot Thumbnail */}
+                <div className="lg:col-span-6 bg-white p-2 rounded-2xl border border-slate-800 overflow-hidden group relative">
+                  <Link to="/resultados/omega-revestimentos-acm-seo-geo-curitiba" className="block">
+                    <img
+                      src="/images/cases/case-omega-revestimentos-acm-google-ai-seo.png"
+                      alt="Ômega Revestimentos presente no Google para qual empresa instala ACM em Curitiba"
+                      width={1000}
+                      height={1100}
+                      loading="lazy"
+                      className="w-full h-auto object-contain rounded-xl transition-transform duration-300 group-hover:scale-[1.02]"
+                    />
+                  </Link>
+                </div>
+
+                {/* Quick Metrics & Details */}
+                <div className="lg:col-span-6 space-y-3 text-xs">
+                  <div className="p-3.5 rounded-xl bg-[#0f1118] border border-slate-800 space-y-1">
+                    <span className="text-[10px] font-bold uppercase tracking-wider text-slate-400 block">
+                      Consulta Registrada
+                    </span>
+                    <span className="text-sm font-bold text-yellow-300 font-mono">
+                      qual empresa instala acm em curitiba
+                    </span>
+                  </div>
+
+                  <div className="p-3.5 rounded-xl bg-[#0f1118] border border-slate-800 space-y-1">
+                    <span className="text-[10px] font-bold uppercase tracking-wider text-slate-400 block">
+                      Histórico da Parceria
+                    </span>
+                    <span className="text-sm font-bold text-emerald-400">
+                      Aproximadamente 4 anos construindo presença digital
+                    </span>
+                  </div>
+
+                  <div className="p-3.5 rounded-xl bg-[#0f1118] border border-slate-800 space-y-1">
+                    <span className="text-[10px] font-bold uppercase tracking-wider text-slate-400 block">
+                      Superfícies Documentadas
+                    </span>
+                    <span className="text-sm font-bold text-cyan-400">
+                      Resposta Sintetizada do Google + Resultado Orgânico (omegarevestimentos.com.br)
+                    </span>
+                  </div>
+
+                  <div className="pt-2">
+                    <Link
+                      to="/resultados/omega-revestimentos-acm-seo-geo-curitiba"
+                      className="text-cyan-400 hover:text-cyan-300 font-bold inline-flex items-center gap-1.5 text-xs"
+                    >
+                      <span>Acessar documentação completa do Case #08</span>
+                      <ArrowRight size={14} />
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* CASE 09: Casas Pinheirão */}
+          <div className="p-6 sm:p-8 rounded-3xl bg-slate-950/90 border border-cyan-500/40 space-y-6">
+            <div className="space-y-4">
+              <div className="flex flex-wrap items-center justify-between gap-3">
+                <div className="space-y-1">
+                  <div className="flex flex-wrap items-center gap-2">
+                    <span className="text-[10px] font-bold uppercase tracking-wider text-cyan-400 bg-cyan-950/80 px-2.5 py-0.5 rounded-full border border-cyan-800/60">
+                      CASE #09 — SEO + GEO / AIO
+                    </span>
+                    <span className="text-[10px] font-bold uppercase tracking-wider text-emerald-400 bg-emerald-950/80 px-2.5 py-0.5 rounded-full border border-emerald-800/60">
+                      Duas Evidências Reais
+                    </span>
+                  </div>
+                  <h3 className="text-xl sm:text-2xl font-bold font-display text-white">
+                    Casas Pinheirão — IA do Google + Busca Orgânica
+                  </h3>
+                  <p className="text-xs sm:text-sm text-slate-300">
+                    Presença simultânea documentada na Visão geral criada por IA e nos resultados orgânicos para consulta conversacional de alta intenção comercial.
+                  </p>
+                </div>
+
+                <Link
+                  to="/resultados/casas-pinheirao-google-ia-seo"
+                  className="px-5 py-2.5 rounded-full bg-gradient-to-r from-cyan-500 to-emerald-500 hover:from-cyan-400 hover:to-emerald-400 text-slate-950 font-bold text-xs inline-flex items-center gap-2 shrink-0 transition-all shadow-[0_0_20px_rgba(34,211,238,0.3)]"
+                >
+                  <span>Ver Evidências (2 Capturas)</span>
+                  <ArrowRight size={14} />
+                </Link>
+              </div>
+
+              <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-center">
+                {/* Screenshot Thumbnails (2 Images) */}
+                <div className="lg:col-span-6 grid grid-cols-2 gap-2">
+                  <div className="bg-white p-1.5 rounded-xl border border-slate-800 overflow-hidden group">
+                    <Link to="/resultados/casas-pinheirao-google-ia-seo" className="block">
+                      <img
+                        src="/images/cases/casas-pinheirao-google-ai-overview.png"
+                        alt="Casas Pinheirão na Visão geral criada por IA"
+                        width={1000}
+                        height={700}
+                        loading="lazy"
+                        className="w-full h-auto object-contain rounded-lg transition-transform duration-300 group-hover:scale-[1.02]"
+                      />
+                    </Link>
+                    <span className="text-[9px] text-slate-500 block text-center font-bold mt-1">Evidência #01 (IA)</span>
+                  </div>
+                  <div className="bg-white p-1.5 rounded-xl border border-slate-800 overflow-hidden group">
+                    <Link to="/resultados/casas-pinheirao-google-ia-seo" className="block">
+                      <img
+                        src="/images/cases/casas-pinheirao-google-organico.png"
+                        alt="Casas Pinheirão nos Resultados Orgânicos"
+                        width={1000}
+                        height={680}
+                        loading="lazy"
+                        className="w-full h-auto object-contain rounded-lg transition-transform duration-300 group-hover:scale-[1.02]"
+                      />
+                    </Link>
+                    <span className="text-[9px] text-slate-500 block text-center font-bold mt-1">Evidência #02 (Orgânico)</span>
+                  </div>
+                </div>
+
+                {/* Details */}
+                <div className="lg:col-span-6 space-y-3 text-xs">
+                  <div className="p-3.5 rounded-xl bg-[#0f1118] border border-slate-800 space-y-1">
+                    <span className="text-[10px] font-bold uppercase tracking-wider text-slate-400 block">
+                      Consulta Comercial Documentada
+                    </span>
+                    <span className="text-xs font-bold text-yellow-300 font-mono">
+                      "quem vende casas pre fabricadas meu terreno pelo menor preço?"
+                    </span>
+                  </div>
+
+                  <div className="p-3.5 rounded-xl bg-[#0f1118] border border-slate-800 space-y-1">
+                    <span className="text-[10px] font-bold uppercase tracking-wider text-slate-400 block">
+                      Diferencial da Pesquisa Conversacional
+                    </span>
+                    <span className="text-xs font-bold text-emerald-400">
+                      O consumidor descreve a necessidade completa (produto + modalidade + terreno + critério)
+                    </span>
+                  </div>
+
+                  <div className="p-3.5 rounded-xl bg-[#0f1118] border border-slate-800 space-y-1">
+                    <span className="text-[10px] font-bold uppercase tracking-wider text-slate-400 block">
+                      Ativos Encontrados
+                    </span>
+                    <span className="text-xs font-bold text-cyan-400">
+                      Citação na resposta da IA + domínios casaspinheirao.app.br e casaspinheirao.com.br
+                    </span>
+                  </div>
+
+                  <div className="pt-2">
+                    <Link
+                      to="/resultados/casas-pinheirao-google-ia-seo"
+                      className="text-cyan-400 hover:text-cyan-300 font-bold inline-flex items-center gap-1.5 text-xs"
+                    >
+                      <span>Acessar documentação completa do Case #09</span>
+                      <ArrowRight size={14} />
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Seção Cluster: Quando a pesquisa vira uma pergunta */}
+          <div className="p-6 sm:p-8 rounded-3xl bg-slate-950/90 border border-slate-800 space-y-6 mt-8">
+            <div className="space-y-1">
+              <div className="inline-flex items-center gap-2 text-[11px] font-bold uppercase tracking-widest text-cyan-400 bg-cyan-950/80 px-2.5 py-0.5 rounded-full border border-cyan-800/60">
+                <Sparkles size={12} />
+                <span>Quando a Pesquisa Vira uma Pergunta</span>
+              </div>
+              <h2 className="text-xl sm:text-2xl font-bold font-display text-white">
+                Cases documentados de empresas encontradas quando consumidores descrevem o que precisam
+              </h2>
+              <p className="text-xs sm:text-sm text-slate-300">
+                Evidências reais de empresas parceiras que aparecem no Google quando clientes pesquisam utilizando perguntas conversacionais completas:
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 text-xs">
+              <Link
+                to="/resultados/comfort-divisorias-google-ia-curitiba"
+                className="p-4 rounded-2xl bg-slate-900/80 border border-slate-800 hover:border-cyan-500/50 transition-all space-y-2 group block"
+              >
+                <span className="text-[10px] font-bold uppercase tracking-wider text-cyan-400 block">
+                  Comfort Divisórias
+                </span>
+                <p className="font-mono text-white text-xs font-bold group-hover:text-cyan-300 transition-colors">
+                  "qual empresa divisorias eucatex em curitiba"
+                </p>
+                <span className="text-cyan-400 font-bold inline-flex items-center gap-1 text-[11px] pt-1">
+                  <span>Ver Case #05</span>
+                  <ChevronRight size={12} />
+                </span>
+              </Link>
+
+              <Link
+                to="/resultados/ky-drywall-google-ia-curitiba"
+                className="p-4 rounded-2xl bg-slate-900/80 border border-slate-800 hover:border-cyan-500/50 transition-all space-y-2 group block"
+              >
+                <span className="text-[10px] font-bold uppercase tracking-wider text-cyan-400 block">
+                  KY Drywall
+                </span>
+                <p className="font-mono text-white text-xs font-bold group-hover:text-cyan-300 transition-colors">
+                  "qual empresa drywall em curitiba"
+                </p>
+                <span className="text-cyan-400 font-bold inline-flex items-center gap-1 text-[11px] pt-1">
+                  <span>Ver Case #06</span>
+                  <ChevronRight size={12} />
+                </span>
+              </Link>
+
+              <Link
+                to="/resultados/omega-revestimentos-acm-seo-geo-curitiba"
+                className="p-4 rounded-2xl bg-slate-900/80 border border-slate-800 hover:border-cyan-500/50 transition-all space-y-2 group block"
+              >
+                <span className="text-[10px] font-bold uppercase tracking-wider text-cyan-400 block">
+                  Ômega Revestimentos
+                </span>
+                <p className="font-mono text-white text-xs font-bold group-hover:text-cyan-300 transition-colors">
+                  "qual empresa instala acm em curitiba"
+                </p>
+                <span className="text-cyan-400 font-bold inline-flex items-center gap-1 text-[11px] pt-1">
+                  <span>Ver Case #08</span>
+                  <ChevronRight size={12} />
+                </span>
+              </Link>
+
+              <Link
+                to="/resultados/casas-pinheirao-google-ia-seo"
+                className="p-4 rounded-2xl bg-slate-900/80 border border-slate-800 hover:border-cyan-500/50 transition-all space-y-2 group block"
+              >
+                <span className="text-[10px] font-bold uppercase tracking-wider text-cyan-400 block">
+                  Casas Pinheirão
+                </span>
+                <p className="font-mono text-white text-xs font-bold group-hover:text-cyan-300 transition-colors">
+                  "quem vende casas pre fabricadas meu terreno..."
+                </p>
+                <span className="text-cyan-400 font-bold inline-flex items-center gap-1 text-[11px] pt-1">
+                  <span>Ver Case #09</span>
+                  <ChevronRight size={12} />
+                </span>
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Experiência em Mercados Competitivos Section */}
+      <section className="space-y-8">
+        <div className="text-center max-w-3xl mx-auto space-y-2">
+          <span className="text-xs font-bold uppercase tracking-widest text-cyan-400 bg-cyan-950/80 px-3 py-1 rounded border border-cyan-800 inline-block">
+            Experiência em Mercados Competitivos
+          </span>
+          <h2 className="text-2xl sm:text-3xl font-bold font-display text-white">
+            Histórico de Atuação por Segmento Comercial
+          </h2>
+          <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
+            Metodologias e estratégias técnicas estruturadas pelo consultor nestes setores. Por transparência ética, resultados quantitativos específicos destes nichos permanecem classificados como <strong className="text-yellow-400 font-semibold">“Evidência pendente de documentação”</strong> até a inclusão dos relatórios comprobatórios.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          {structuredCases.map((c) => {
+            const Icon = c.icon;
+            return (
+              <div
+                key={c.id}
+                className="p-6 sm:p-8 rounded-3xl bg-[#0f1118] border border-slate-800 hover:border-cyan-500/40 transition-all space-y-6 flex flex-col justify-between"
+              >
+                <div className="space-y-4">
+                  {/* Category Header */}
+                  <div className="flex items-start justify-between gap-3 border-b border-slate-800/80 pb-4">
+                    <div className="flex items-center gap-3">
+                      <div className="p-3 rounded-2xl bg-blue-950 text-cyan-400 border border-cyan-500/30">
+                        <Icon size={24} />
+                      </div>
+                      <div>
+                        <span className="text-[10px] font-bold text-yellow-400 uppercase tracking-widest block">
+                          {c.segment}
+                        </span>
+                        <h3 className="text-lg font-bold font-display text-white mt-0.5">
+                          {c.title}
+                        </h3>
+                      </div>
+                    </div>
+                    <span className="text-[10px] font-bold px-2.5 py-1 rounded-full bg-slate-900 border border-slate-700 text-slate-300">
+                      {c.region}
+                    </span>
+                  </div>
+
+                  {/* Fact Cards */}
+                  <div className="space-y-3 text-xs leading-relaxed text-slate-300">
+                    <div className="p-3 rounded-xl bg-slate-950/70 border border-slate-800/60">
+                      <strong className="text-cyan-400 block mb-1 uppercase tracking-wider text-[10px]">
+                        Desafio Inicial:
+                      </strong>
+                      <span>{c.challenge}</span>
+                    </div>
+
+                    <div className="p-3 rounded-xl bg-slate-950/70 border border-slate-800/60">
+                      <strong className="text-yellow-400 block mb-1 uppercase tracking-wider text-[10px]">
+                        Intenção de Busca Alvo:
+                      </strong>
+                      <span className="italic">{c.searchIntent}</span>
+                    </div>
+
+                    <div className="p-3 rounded-xl bg-slate-950/70 border border-slate-800/60">
+                      <strong className="text-emerald-400 block mb-1 uppercase tracking-wider text-[10px]">
+                        Estratégia e Otimização Aplicada:
+                      </strong>
+                      <span>{c.strategy}</span>
+                    </div>
+
+                    <div className="p-3 rounded-xl bg-blue-950/40 border border-blue-800/40">
+                      <strong className="text-white block mb-1 uppercase tracking-wider text-[10px] flex items-center gap-1">
+                        <TrendingUp size={13} className="text-emerald-400" />
+                        <span>Resultado Factual Alcançado:</span>
+                      </strong>
+                      <span className="text-emerald-300 font-semibold">{c.result}</span>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Evidence & Methodology Footer */}
+                <div className="pt-4 border-t border-slate-800/80 space-y-2 text-[11px] text-slate-400">
+                  <div className="flex items-center justify-between">
+                    <span className="font-bold text-slate-300 flex items-center gap-1">
+                      <FileCheck size={14} className="text-cyan-400" />
+                      <span>Evidência:</span>
+                    </span>
+                    <span className="text-slate-300 text-right">{c.evidence}</span>
+                  </div>
+                  <div className="flex items-center justify-between">
+                    <span className="font-bold text-slate-300 flex items-center gap-1">
+                      <Zap size={14} className="text-yellow-400" />
+                      <span>Metodologia:</span>
+                    </span>
+                    <span className="text-slate-300 text-right">{c.methodology}</span>
+                  </div>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      </section>
 
       {/* CTA */}
-      <div className="p-8 rounded-3xl bg-gradient-to-r from-slate-900 to-blue-950 border border-slate-800 text-center space-y-4">
-        <h2 className="text-2xl font-bold font-display text-white">
-          Quer que Seu Projeto Seja o Nosso Próximo Case de Sucesso?
+      <div className="p-8 sm:p-12 rounded-3xl bg-gradient-to-r from-slate-950 via-blue-950 to-slate-950 border border-blue-500/30 text-center space-y-5">
+        <h2 className="text-2xl sm:text-3xl font-bold font-display text-white">
+          Quer Entender o Potencial Orgânico do Seu Negócio?
         </h2>
-        <p className="text-xs sm:text-sm text-slate-300 max-w-xl mx-auto">
-          Solicite um diagnóstico completo sem custos e entenda qual o potencial de crescimento orgânico do seu negócio em Curitiba.
+        <p className="text-xs sm:text-sm text-slate-300 max-w-xl mx-auto leading-relaxed">
+          Solicite um diagnóstico técnico gratuito com Omar Skafi e descubra os gargalos de visibilidade da sua empresa no Google e assistentes de IA.
         </p>
-        <Link
-          to="/auditoria-seo"
-          className="btn-primary-gold btn-shimmer px-6 py-3.5"
-        >
-          <Zap size={16} className="fill-slate-950" />
-          <span>Diagnóstico Gratuito</span>
-        </Link>
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-2">
+          <Link
+            to="/auditoria-seo"
+            className="btn-primary-gold btn-shimmer px-6 py-3.5 inline-flex items-center gap-2 font-bold text-xs sm:text-sm"
+          >
+            <Zap size={16} className="fill-slate-950" />
+            <span>Solicitar Diagnóstico SEO Gratuito</span>
+          </Link>
+          <a
+            href="https://wa.me/5541992721004"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn-emerald-wa btn-shimmer px-6 py-3.5 inline-flex items-center gap-2 font-bold text-xs sm:text-sm"
+          >
+            <span>Falar no WhatsApp (41) 99272-1004</span>
+          </a>
+        </div>
       </div>
     </div>
   );
 }
+

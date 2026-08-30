@@ -106,18 +106,16 @@ async function prerender() {
     ${schemaTags}
   `;
 
-    // Inject head tags into template
+    // Inject head tags cleanly into template
     let pageHtml = baseHtmlTemplate;
 
-    // Replace title & description if present or inject into head
-    if (pageHtml.includes('<title>')) {
-      pageHtml = pageHtml.replace(/<title>.*?<\/title>/s, `<title>${escapeXml(pageTitle)}</title>`);
-    }
-    if (pageHtml.includes('<meta name="description"')) {
-      pageHtml = pageHtml.replace(/<meta name="description".*?\/>/s, `<meta name="description" content="${escapeXml(pageDesc)}" />`);
-    }
+    // Strip default fallback meta/title tags from base template before inserting page-specific meta
+    pageHtml = pageHtml
+      .replace(/<title>.*?<\/title>/gi, '')
+      .replace(/<meta name="description".*?\/>/gi, '')
+      .replace(/<link rel="canonical".*?\/>/gi, '');
 
-    // Append remaining meta tags before </head>
+    // Insert exact page-specific title, description, canonical, and schemas before </head>
     pageHtml = pageHtml.replace('</head>', `${metaHead}\n  </head>`);
 
     // Output target path

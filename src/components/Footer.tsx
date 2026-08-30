@@ -206,7 +206,7 @@ export function Footer() {
                   <p className="text-slate-400 text-[11px]">
                     (acesso pelo elevador azul ou vermelho)
                   </p>
-                  <p className="text-slate-400 text-[11px]">Batel/Rebouças, CEP 80230-010</p>
+                  <p className="text-slate-400 text-[11px]">Bairro Rebouças, Curitiba - PR, CEP 80230-010</p>
                   <a
                     href="https://share.google/j6UoHq8uuHfvwOfiW"
                     target="_blank"

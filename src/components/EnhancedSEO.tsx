@@ -53,30 +53,25 @@ export function EnhancedSEO({
     url: DOMAIN,
     logo: `${DOMAIN}/logo.png`,
     image: ogImage,
-    description: 'Especialista em SEO técnico, SEO local, Google Maps, GEO e dados estruturados para empresas em Curitiba e região.',
+    description: 'Especialista em SEO técnico, SEO local, Google Maps, GEO e dados estruturados para empresas em Curitiba e todo o Brasil.',
     telephone: '+5541987001004',
     email: 'supremamidiabatel@gmail.com',
     priceRange: '$$$',
     address: {
       '@type': 'PostalAddress',
-      streetAddress: 'Av. Sete de Setembro, 2775 - 9º andar (elevador azul ou vermelho), Batel/Rebouças',
+      streetAddress: 'Av. Sete de Setembro, 2775 - 9º andar',
       addressLocality: 'Curitiba',
       addressRegion: 'PR',
       postalCode: '80230-010',
       addressCountry: 'BR',
     },
-    geo: {
-      '@type': 'GeoCoordinates',
-      latitude: geo.lat,
-      longitude: geo.lng,
-    },
     hasMap: 'https://share.google/j6UoHq8uuHfvwOfiW',
+    founder: { '@id': `${DOMAIN}/#person` },
     areaServed: [
       { '@type': 'AdministrativeArea', name: 'Curitiba' },
       { '@type': 'AdministrativeArea', name: 'Região Metropolitana de Curitiba' },
       { '@type': 'AdministrativeArea', name: 'Paraná' },
-      { '@type': 'AdministrativeArea', name: 'Santa Catarina' },
-      { '@type': 'AdministrativeArea', name: 'Rio Grande do Sul' },
+      { '@type': 'AdministrativeArea', name: 'Brasil' },
     ],
     openingHoursSpecification: [
       {
@@ -89,6 +84,7 @@ export function EnhancedSEO({
     sameAs: [
       'https://bio.supremamidia.com.br/',
       'https://supremasite.com.br',
+      'https://share.google/j6UoHq8uuHfvwOfiW',
     ],
   };
 
@@ -99,13 +95,22 @@ export function EnhancedSEO({
     name: 'Omar Skafi',
     jobTitle: 'Especialista em SEO, GEO e Visibilidade Digital',
     image: 'https://bio.supremamidia.com.br/imagens/gestor-de-trafego-organico-em-curitiba.png',
-    worksFor: {
-      '@type': 'Organization',
-      name: 'Suprema Sites Express / OSKAFI WEB SITES LTDA ME',
-      url: 'https://supremasite.com.br',
-    },
-    url: `${DOMAIN}/omar-skafi`,
-    sameAs: ['https://bio.supremamidia.com.br/'],
+    worksFor: { '@id': `${DOMAIN}/#localbusiness` },
+    knowsAbout: [
+      'Search Engine Optimization (SEO)',
+      'Generative Engine Optimization (GEO)',
+      'AI Optimization (AIO)',
+      'SEO Local',
+      'Google Maps Marketing',
+      'SEO Técnico',
+      'Schema.org e JSON-LD',
+    ],
+    url: `${DOMAIN}/sobre`,
+    sameAs: [
+      'https://bio.supremamidia.com.br/',
+      'https://supremasite.com.br',
+      'https://share.google/j6UoHq8uuHfvwOfiW',
+    ],
   };
 
   const websiteSchema = {
@@ -163,9 +168,7 @@ export function EnhancedSEO({
 
       {/* Geolocation */}
       <meta name="geo.region" content="BR-PR" />
-      <meta name="geo.placename" content={`${geo.placeName || 'Curitiba'}, Curitiba - PR`} />
-      <meta name="geo.position" content={`${geo.lat};${geo.lng}`} />
-      <meta name="ICBM" content={`${geo.lat}, ${geo.lng}`} />
+      <meta name="geo.placename" content="Curitiba - PR" />
 
       {/* Open Graph */}
       <meta property="og:title" content={title} />

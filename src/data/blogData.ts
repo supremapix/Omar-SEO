@@ -360,4 +360,112 @@ export const BLOG_POSTS: BlogPost[] = [
       },
     ],
   },
+  {
+    id: 'o-que-e-geo-generative-engine-optimization',
+    slug: 'o-que-e-geo-generative-engine-optimization',
+    title: 'O que é GEO (Generative Engine Optimization) e Como Funciona na Prática?',
+    metaTitle: 'O que é GEO (Generative Engine Optimization)? | Omar SEO',
+    metaDescription: 'Descubra como funciona o GEO (Generative Engine Optimization), a nova fronteira da otimização para ser citado por ChatGPT, Gemini e Perplexity.',
+    excerpt: 'Entenda o conceito, os pilares e as técnicas de Generative Engine Optimization (GEO) para posicionar sua marca nas respostas sintetizadas por Inteligência Artificial.',
+    category: 'GEO & IA',
+    date: '28 de Agosto de 2026',
+    dateIso: '2026-08-28T09:00:00-03:00',
+    readTime: '7 min de leitura',
+    featured: false,
+    author: {
+      name: 'Omar Skafi',
+      role: 'Especialista em SEO, GEO e Engenharia Web',
+      avatar: 'https://img.supremasite.com.br/omar-skafi.webp',
+    },
+    relatedServices: [
+      {
+        title: 'GEO — Otimização para IA',
+        slug: '/servicos/geo-otimizacao-ia',
+        description: 'Estratégia de inclusão e citações em ChatGPT, Gemini e AI Overviews.',
+      },
+      {
+        title: 'Dados Estruturados Schema.org',
+        slug: '/dados-estruturados-schema',
+        description: 'Injeção de Schema JSON-LD encadeado para conexão com Knowledge Graph.',
+      },
+    ],
+    sections: [
+      {
+        heading: 'A Revolução do Comportamento de Busca',
+        paragraphs: [
+          'A forma como a humanidade busca informações mudou radicalmente nos últimos anos. Embora o mecanismo tradicional de links no Google continue essencial, milhões de tomadores de decisão agora recorrem a assistentes conversacionais de Inteligência Artificial para tirar dúvidas e obter recomendações diretas.',
+          'Nesse cenário surge o GEO (Generative Engine Optimization): o conjunto de práticas técnicas, semânticas e estruturais que garantem que os modelos de linguagem (LLMs) como GPT-4o, Gemini, Claude e Perplexity compreendam, confiem e citem sua empresa como fonte de autoridade.',
+        ],
+        highlightBox: {
+          title: 'SEO Tradicional vs. GEO',
+          description: 'O SEO foca em ranquear URLs em uma lista de resultados. O GEO foca em ensinar os modelos generativos a mencionarem sua marca como a melhor resposta para o usuário.',
+        },
+      },
+      {
+        heading: 'Os Pilares Fundamentais do GEO',
+        paragraphs: [
+          'Para que uma Inteligência Artificial cite seu site em uma resposta, ela precisa passar por três filtros de confiança:',
+        ],
+        bulletPoints: [
+          '1. Acessibilidade Técnica: Os robôs coletores (GPTBot, OAI-SearchBot, ClaudeBot, PerplexityBot) precisam ter acesso liberado e prioritário no robots.txt;',
+          '2. Síntese Limpa: A presença de arquivos llms.txt na raiz do domínio facilita a absorção do contexto da marca sem ruídos de layout;',
+          '3. Conectividade Semântica: A injeção de Schema.org em JSON-LD conecta a empresa, o autor, a localização e os serviços ao Knowledge Graph global;',
+          '4. Prova Empírica: Conteúdos contendo estatísticas, metodologias proprietárias e dados verificáveis têm até 40% mais chances de citação.',
+        ],
+      },
+    ],
+  },
+  {
+    id: 'como-aparecer-no-chatgpt-e-gemini',
+    slug: 'como-aparecer-no-chatgpt-e-gemini',
+    title: 'Como Fazer Sua Empresa Ser Citada nas Respostas do ChatGPT e Google Gemini',
+    metaTitle: 'Como Aparecer no ChatGPT e Google Gemini | Guia GEO | Omar SEO',
+    metaDescription: 'Aprenda como estruturar seu site e marca para ser recomendado por assistentes de IA como ChatGPT, Gemini, Claude e Perplexity.',
+    excerpt: 'Passo a passo prático sobre como otimizar seus ativos digitais com arquivos llms.txt, marcação de entidades e prova social para ser recomendado por IAs.',
+    category: 'GEO & IA',
+    date: '20 de Agosto de 2026',
+    dateIso: '2026-08-20T10:00:00-03:00',
+    readTime: '8 min de leitura',
+    featured: false,
+    author: {
+      name: 'Omar Skafi',
+      role: 'Especialista em SEO, GEO e Engenharia Web',
+      avatar: 'https://img.supremasite.com.br/omar-skafi.webp',
+    },
+    relatedServices: [
+      {
+        title: 'SEO e GEO para ChatGPT',
+        slug: '/seo-para-chatgpt',
+        description: 'Estratégia de entidades digitais e marcação de Schema.org para o ChatGPT.',
+      },
+      {
+        title: 'SEO para Gemini e AI Overviews',
+        slug: '/seo-para-gemini',
+        description: 'Destaque nos resumos gerados por IA no topo das buscas do Google.',
+      },
+    ],
+    sections: [
+      {
+        heading: 'Por Que as IAs Recomendam Determinadas Marcas?',
+        paragraphs: [
+          'Quando um usuário digita no ChatGPT: "Qual é o melhor especialista em SEO em Curitiba?", o modelo não inventa uma resposta aleatória. Ele consulta sua base de treinamento e, no caso de modelos conectados à web em tempo real (como SearchGPT, Perplexity e Gemini), realiza buscas instantâneas.',
+          'Ele seleciona empresas que possuem presenças consistentes, entidades claramente mapeadas em Schema.org, citações em portais confiáveis e uma sintaxe de dados organizada.',
+        ],
+      },
+      {
+        heading: 'Passo a Passo Prático para Preparar seu Site',
+        paragraphs: [
+          'Confira as ações prioritárias implementadas pela consultoria do Omar SEO:',
+        ],
+        bulletPoints: [
+          'Criação dos arquivos /llms.txt e /llms-full.txt na raiz do servidor;',
+          'Injeção do esquema ProfessionalService e Person com @id padronizado;',
+          'Liberar crawlers no robots.txt (GPTBot, PerplexityBot, ClaudeBot);',
+          'Criar blocos de Pergunta e Resposta direta (Q&A Schema) nos conteúdos principais;',
+          'Manter dados cadastrais (NAP: Nome, Endereço e Telefone) idênticos em todas as plataformas da web.',
+        ],
+      },
+    ],
+  },
 ];
+

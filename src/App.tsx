@@ -18,6 +18,15 @@ const GoogleMaps = lazy(() => import('./pages/GoogleMaps'));
 const GeoIa = lazy(() => import('./pages/GeoIa'));
 const SeoTecnico = lazy(() => import('./pages/SeoTecnico'));
 const Resultados = lazy(() => import('./pages/Resultados'));
+const CaseAdvogadosPlanosSaude = lazy(() => import('./pages/CaseAdvogadosPlanosSaude'));
+const CaseShopcellCelulares = lazy(() => import('./pages/CaseShopcellCelulares'));
+const CaseCarplusAiOverview = lazy(() => import('./pages/CaseCarplusAiOverview'));
+const CaseEcoservyCortePoda = lazy(() => import('./pages/CaseEcoservyCortePoda'));
+const CaseComfortDivisorasAiOverview = lazy(() => import('./pages/CaseComfortDivisorasAiOverview'));
+const CaseKyDrywallAiOverview = lazy(() => import('./pages/CaseKyDrywallAiOverview'));
+const CaseAlevinosCuritibaSeo = lazy(() => import('./pages/CaseAlevinosCuritibaSeo'));
+const CaseOmegaRevestimentosSeoGeo = lazy(() => import('./pages/CaseOmegaRevestimentosSeoGeo'));
+const CaseCasasPinheiraoAiSeo = lazy(() => import('./pages/CaseCasasPinheiraoAiSeo'));
 const SobreOmar = lazy(() => import('./pages/SobreOmar'));
 const Sobre = lazy(() => import('./pages/Sobre'));
 const Metodo = lazy(() => import('./pages/Metodo'));
@@ -87,6 +96,15 @@ function AnimatedRoutes() {
           <Route path="/geo-ia" element={<GeoIa />} />
           <Route path="/seo-tecnico" element={<SeoTecnico />} />
           <Route path="/resultados" element={<Resultados />} />
+          <Route path="/resultados/seo-advogados-planos-de-saude" element={<CaseAdvogadosPlanosSaude />} />
+          <Route path="/resultados/seo-celulares-curitiba-shopcell" element={<CaseShopcellCelulares />} />
+          <Route path="/resultados/carplus-google-ai-overview-pneus-curitiba" element={<CaseCarplusAiOverview />} />
+          <Route path="/resultados/seo-local-ecoservy-corte-e-poda-curitiba" element={<CaseEcoservyCortePoda />} />
+          <Route path="/resultados/comfort-divisorias-google-ia-curitiba" element={<CaseComfortDivisorasAiOverview />} />
+          <Route path="/resultados/ky-drywall-google-ia-curitiba" element={<CaseKyDrywallAiOverview />} />
+          <Route path="/resultados/seo-local-e-organico-alevinos-curitiba" element={<CaseAlevinosCuritibaSeo />} />
+          <Route path="/resultados/omega-revestimentos-acm-seo-geo-curitiba" element={<CaseOmegaRevestimentosSeoGeo />} />
+          <Route path="/resultados/casas-pinheirao-google-ia-seo" element={<CaseCasasPinheiraoAiSeo />} />
           <Route path="/omar-skafi" element={<SobreOmar />} />
           <Route path="/auditoria-seo" element={<AuditoriaSeo />} />
           <Route path="/contato" element={<Contato />} />
@@ -100,6 +118,14 @@ function AnimatedRoutes() {
           <Route path="/seo-para-gemini" element={<CommercialIntentPage />} />
           <Route path="/consultoria-seo" element={<CommercialIntentPage />} />
           <Route path="/seo-local-curitiba" element={<CommercialIntentPage />} />
+          <Route path="/consultoria-seo-brasil" element={<CommercialIntentPage />} />
+          <Route path="/especialista-seo-brasil" element={<CommercialIntentPage />} />
+          <Route path="/seo-curitiba-e-regiao" element={<CommercialIntentPage />} />
+          <Route path="/seo-vs-geo" element={<CommercialIntentPage />} />
+          <Route path="/geo-vs-aio" element={<CommercialIntentPage />} />
+          <Route path="/seo-para-ia" element={<CommercialIntentPage />} />
+          <Route path="/consultor-seo-ou-agencia" element={<CommercialIntentPage />} />
+          <Route path="/dados-estruturados-schema" element={<CommercialIntentPage />} />
 
           {/* Catch-All Route with fallback verification */}
           <Route path="*" element={<CatchAllRouteHandler />} />

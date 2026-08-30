@@ -11,6 +11,7 @@ import {
   DollarSign,
   ChevronDown,
   Sparkles,
+  Bot,
 } from 'lucide-react';
 
 export default function SeoGeoAio() {
@@ -447,6 +448,114 @@ export default function SeoGeoAio() {
               Crescimento contínuo com custo marginal decrescente, reduzindo o CAC e blindando sua marca das altas dos leilões de anúncios.
             </p>
           </div>
+        </div>
+      </section>
+
+      {/* EXEMPLOS DOCUMENTADOS DE PRESENÇA EM BUSCA GENERATIVA */}
+      <section className="max-w-5xl mx-auto px-4 sm:px-6 my-12 space-y-6">
+        <div className="text-center space-y-2">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-cyan-950 text-cyan-400 text-xs font-bold border border-cyan-500/30">
+            <Sparkles size={14} />
+            <span>EVIDÊNCIAS DE MERCADO EM CURITIBA</span>
+          </div>
+          <h2 className="text-2xl sm:text-3xl font-black text-white font-display">
+            Da busca por palavras-chave à descoberta de empresas por perguntas
+          </h2>
+          <p className="text-xs sm:text-sm text-slate-300 max-w-2xl mx-auto leading-relaxed">
+            Estruturamos a presença digital para mecanismos de busca tradicionais e novas experiências de descoberta baseadas em IA. Confira exemplos reais documentados no Google para buscas comerciais formuladas como perguntas por clientes:
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          {/* Card 1: Comfort Divisórias */}
+          <div className="bg-slate-950 rounded-2xl p-6 border border-cyan-500/40 space-y-4 flex flex-col justify-between hover:border-cyan-400 transition-colors">
+            <div className="space-y-2">
+              <span className="text-[10px] font-bold text-cyan-400 uppercase tracking-wider bg-cyan-950/80 px-2.5 py-0.5 rounded border border-cyan-800">
+                Divisórias Eucatex
+              </span>
+              <h3 className="text-lg font-bold text-white">Comfort Divisórias</h3>
+              <p className="text-xs text-slate-300 font-mono">
+                “qual empresa divisorias eucatex em curitiba”
+              </p>
+            </div>
+            <Link
+              to="/resultados/comfort-divisorias-google-ia-curitiba"
+              className="text-xs font-bold text-cyan-400 hover:text-cyan-300 inline-flex items-center gap-1 pt-2 border-t border-slate-800"
+            >
+              <span>Ver Case Comfort (#05)</span>
+              <ArrowRight size={14} />
+            </Link>
+          </div>
+
+          {/* Card 2: KY Drywall */}
+          <div className="bg-slate-950 rounded-2xl p-6 border border-cyan-500/40 space-y-4 flex flex-col justify-between hover:border-cyan-400 transition-colors">
+            <div className="space-y-2">
+              <span className="text-[10px] font-bold text-cyan-400 uppercase tracking-wider bg-cyan-950/80 px-2.5 py-0.5 rounded border border-cyan-800">
+                Drywall &amp; Steel Frame
+              </span>
+              <h3 className="text-lg font-bold text-white">KY Drywall &amp; Steel Frame</h3>
+              <p className="text-xs text-slate-300 font-mono">
+                “qual empresa drywall em curitiba”
+              </p>
+            </div>
+            <Link
+              to="/resultados/ky-drywall-google-ia-curitiba"
+              className="text-xs font-bold text-cyan-400 hover:text-cyan-300 inline-flex items-center gap-1 pt-2 border-t border-slate-800"
+            >
+              <span>Ver Case KY Drywall (#06)</span>
+              <ArrowRight size={14} />
+            </Link>
+          </div>
+
+          {/* Card 3: Ômega Revestimentos */}
+          <div className="bg-slate-950 rounded-2xl p-6 border border-cyan-500/40 space-y-4 flex flex-col justify-between hover:border-cyan-400 transition-colors">
+            <div className="space-y-2">
+              <span className="text-[10px] font-bold text-cyan-400 uppercase tracking-wider bg-cyan-950/80 px-2.5 py-0.5 rounded border border-cyan-800">
+                ACM &amp; Fachadas (+4 Anos)
+              </span>
+              <h3 className="text-lg font-bold text-white">Ômega Revestimentos</h3>
+              <p className="text-xs text-slate-300 font-mono">
+                “qual empresa instala acm em curitiba”
+              </p>
+            </div>
+            <Link
+              to="/resultados/omega-revestimentos-acm-seo-geo-curitiba"
+              className="text-xs font-bold text-cyan-400 hover:text-cyan-300 inline-flex items-center gap-1 pt-2 border-t border-slate-800"
+            >
+              <span>Ver Case Ômega (#08)</span>
+              <ArrowRight size={14} />
+            </Link>
+          </div>
+
+          {/* Card 4: Casas Pinheirão */}
+          <div className="bg-slate-950 rounded-2xl p-6 border border-cyan-500/40 space-y-4 flex flex-col justify-between hover:border-cyan-400 transition-colors">
+            <div className="space-y-2">
+              <span className="text-[10px] font-bold text-cyan-400 uppercase tracking-wider bg-cyan-950/80 px-2.5 py-0.5 rounded border border-cyan-800">
+                Casas Pré-Fabricadas (IA + Org)
+              </span>
+              <h3 className="text-lg font-bold text-white">Casas Pinheirão</h3>
+              <p className="text-xs text-slate-300 font-mono">
+                “quem vende casas pre fabricadas meu terreno...”
+              </p>
+            </div>
+            <Link
+              to="/resultados/casas-pinheirao-google-ia-seo"
+              className="text-xs font-bold text-cyan-400 hover:text-cyan-300 inline-flex items-center gap-1 pt-2 border-t border-slate-800"
+            >
+              <span>Ver Case Casas Pinheirão (#09)</span>
+              <ArrowRight size={14} />
+            </Link>
+          </div>
+        </div>
+
+        <div className="text-center pt-2">
+          <Link
+            to="/resultados"
+            className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-slate-900 hover:bg-slate-800 text-cyan-400 hover:text-cyan-300 text-xs font-bold border border-cyan-500/30 transition-all"
+          >
+            <span>Ver todos os cases e evidências documentadas</span>
+            <ArrowRight size={14} />
+          </Link>
         </div>
       </section>
 

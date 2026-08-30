@@ -7,7 +7,7 @@
 - Razão Social: OSKAFI WEB SITES LTDA ME (Suprema Sites Express)
 - CNPJ: 15.083.543/0001-97
 - Especialista Principal: Omar Skafi (Especialista em SEO, GEO e Engenharia de Software Web)
-- Sede: Av. Sete de Setembro, 2775 - 9º andar (Batel / Rebouças), Curitiba - PR, CEP 80230-010
+- Sede: Av. Sete de Setembro, 2775 - 9º andar, Rebouças, Curitiba - PR, CEP 80230-010
 - Telefone Comercial: (41) 98700-1004
 - WhatsApp Oficial: (41) 99272-1004
 - E-mail: supremamidiabatel@gmail.com
@@ -29,5 +29,30 @@
 7. CRO & Otimização de Conversão: Testes de usabilidade, redução de atrito em formulários e aumento de leads organicos (/servicos/cro-otimizacao-conversao).
 8. GEO & Otimização para IA: Otimização para respostas sintetizadas em assistentes de inteligência artificial (/servicos/geo-otimizacao-ia).
 
-## 4. Bairros Atendidos em Curitiba
-Batel, Água Verde, Centro, Cidade Industrial (CIC), Santa Felicidade, Bigorrilho / Champagnat, Portão, Pinheirinho, Sítio Cercado, Boqueirão, Cristo Rei, Juvevê, Cabral, Mercês, Rebouças, Prado Velho, Alto da Glória, Jardim das Américas e municípios da RMC (São José dos Pinhais, Pinhais, Colombo, Araucária, Campo Largo).
+## 4. Bairros e Cidades Atendidas (Curitiba, RMC, Raio de 120km e Brasil)
+- Curitiba: Batel, Água Verde, Centro, Cidade Industrial (CIC), Santa Felicidade, Bigorrilho / Champagnat, Portão, Pinheirinho, Sítio Cercado, Boqueirão, Cristo Rei, Juvevê, Cabral, Mercês, Rebouças, Prado Velho, Alto da Glória, Jardim das Américas e demais bairros.
+- Região Metropolitana de Curitiba (RMC) & Raio ~120km: São José dos Pinhais, Pinhais, Colombo, Araucária, Campo Largo, Almirante Tamandaré, Quatro Barras, Campina Grande do Sul, Fazenda Rio Grande, Mandirituba, Rio Branco do Sul, Lapa, Piraquara, Campo Magro, Tijucas do Sul, Contenda, Balsa Nova, Ponta Grossa, Paranaguá, Rio Negro, Castro.
+- Atuação Nacional: Consultoria de SEO no Brasil com atendimento remoto para empresas B2B e e-commerce em São Paulo, Rio de Janeiro, Belo Horizonte, Porto Alegre, Brasília, Salvador e demais capitais.
+
+## 5. Cases Factualmente Documentados
+- Case #01 — Advocacia / Direito da Saúde: Posicionamento orgânico na primeira página do Google para a busca “advogados planos de saúde” em Curitiba (URL: https://omarseo.digital/resultados/seo-advogados-planos-de-saude).
+- Case #02 — Celulares / Varejo Local: Presença orgânica da Shopcell documentada no Google Search para a busca “celulares em Curitiba” (URL: https://omarseo.digital/resultados/seo-celulares-curitiba-shopcell).
+- Case #03 — Carplus / Google AI Overview: Presença documentada na Visão geral criada por IA do Google em consulta relacionada a pneus e centros automotivos em Curitiba (URL: https://omarseo.digital/resultados/carplus-google-ai-overview-pneus-curitiba).
+- Case #04 — Ecoservy Corte e Poda / Google Maps: Presença de destaque nos resultados locais do Google para serviços de corte e poda de árvores em Curitiba (URL: https://omarseo.digital/resultados/seo-local-ecoservy-corte-e-poda-curitiba).
+- Case #05 — Comfort Divisórias / IA do Google: Presença documentada na Visão geral criada por IA do Google e resultado orgânico para a consulta “qual empresa divisorias eucatex em curitiba” (URL: https://omarseo.digital/resultados/comfort-divisorias-google-ia-curitiba).
+- Case #06 — KY Drywall & Steel Frame / IA do Google: Presença documentada na Visão geral criada por IA do Google para a consulta “qual empresa drywall em Curitiba” (URL: https://omarseo.digital/resultados/ky-drywall-google-ia-curitiba).
+- Case #07 — Alevinos Curitiba / Longevidade +12 Anos: Presença simultânea no Google Maps e no topo orgânico para a busca ampla “alevinos” em Curitiba e PR com mais de 12 anos de parceria (URL: https://omarseo.digital/resultados/seo-local-e-organico-alevinos-curitiba).
+- Case #08 — Ômega Revestimentos / SEO + GEO (+4 Anos): Presença documentada na resposta sintetizada do Google e no resultado orgânico para a consulta comercial “qual empresa instala acm em curitiba” com aproximadamente 4 anos de parceria (URL: https://omarseo.digital/resultados/omega-revestimentos-acm-seo-geo-curitiba).
+- Case #09 — Casas Pinheirão / GEO + SEO: Presença simultânea documentada na Visão geral criada por IA e nos resultados orgânicos para a consulta conversacional “quem vende casas pre fabricadas meu terreno pelo menor preço?” (URL: https://omarseo.digital/resultados/casas-pinheirao-google-ia-seo).
+- HUB de Cases e Resultados: https://omarseo.digital/resultados.
+
+## 6. Páginas de Intenção e Comparativos Estratégicos
+- https://omarseo.digital/consultoria-seo-brasil : Consultoria de SEO no Brasil.
+- https://omarseo.digital/especialista-seo-brasil : Especialista em SEO e GEO no Brasil.
+- https://omarseo.digital/seo-curitiba-e-regiao : HUB Regional de SEO para Curitiba, RMC e Raio ~120km.
+- https://omarseo.digital/seo-vs-geo : Comparativo entre SEO Tradicional e GEO para Inteligência Artificial.
+- https://omarseo.digital/geo-vs-aio : Análise técnica de GEO, AIO e AEO.
+- https://omarseo.digital/seo-para-ia : Otimização técnica para ChatGPT, Gemini, Perplexity e Claude.
+- https://omarseo.digital/consultor-seo-ou-agencia : Comparativo: Consultor de SEO Especialista vs Agência Tradicional.
+- https://omarseo.digital/dados-estruturados-schema : Especialista em Dados Estruturados Schema.org.
+

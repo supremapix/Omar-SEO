@@ -24,6 +24,7 @@ import {
   HelpCircle,
   MessageCircle,
   Sparkles,
+  Bot,
 } from 'lucide-react';
 
 export default function Home() {
@@ -362,6 +363,322 @@ export default function Home() {
                 </p>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* COMPETITIVE INDUSTRIES EXPERIENCE & DOCUMENTED CASES SECTION */}
+      <section className="py-12 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+        <div className="p-8 sm:p-10 rounded-3xl bg-gradient-to-r from-blue-950/90 via-slate-900 to-cyan-950/90 border border-yellow-500/40 shadow-[0_0_30px_rgba(250,204,21,0.12)] space-y-6">
+          <div className="space-y-2 text-center md:text-left">
+            <span className="px-3 py-1 rounded-full bg-yellow-400 text-slate-950 text-[10px] font-black uppercase tracking-widest inline-block">
+              Evidências Reais & Cases Documentados
+            </span>
+            <h3 className="text-2xl sm:text-3xl font-black font-display text-white">
+              Resultados Reais Documentados no Google (SEO & GEO/IA)
+            </h3>
+            <p className="text-slate-200 text-xs sm:text-sm max-w-3xl leading-relaxed">
+              Demonstração factual da engenharia semântica, SEO Local e visibilidade em inteligência artificial do Google em Curitiba.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4 pt-2">
+            {/* Case 01 Card */}
+            <div className="p-5 rounded-2xl bg-slate-950/90 border border-yellow-500/40 hover:border-yellow-400 transition-colors space-y-3 flex flex-col justify-between group">
+              <div className="space-y-2">
+                <span className="text-[10px] font-extrabold uppercase tracking-wider text-yellow-400 bg-yellow-950/80 px-2.5 py-0.5 rounded border border-yellow-800/60 inline-block">
+                  Advocacia / SEO Orgânico
+                </span>
+                <h4 className="text-base font-bold text-white group-hover:text-yellow-300 transition-colors">
+                  “advogados planos de saúde”
+                </h4>
+                <p className="text-xs text-slate-300 leading-relaxed">
+                  Primeira página documentada no Google em consulta jurídica especializada de alta consideração.
+                </p>
+              </div>
+
+              <div className="pt-2 border-t border-slate-800/80">
+                <Link
+                  to="/resultados/seo-advogados-planos-de-saude"
+                  className="text-xs font-bold text-yellow-400 hover:text-yellow-300 inline-flex items-center gap-1 group-hover:translate-x-1 transition-transform"
+                >
+                  <span>Ver Case Advocacia</span>
+                  <ChevronRight size={14} />
+                </Link>
+              </div>
+            </div>
+
+            {/* Case 02 Card */}
+            <div className="p-5 rounded-2xl bg-slate-950/90 border border-cyan-500/40 hover:border-cyan-400 transition-colors space-y-3 flex flex-col justify-between group">
+              <div className="space-y-2">
+                <span className="text-[10px] font-extrabold uppercase tracking-wider text-cyan-400 bg-cyan-950/80 px-2.5 py-0.5 rounded border border-cyan-800/60 inline-block">
+                  Celulares / Varejo Local
+                </span>
+                <h4 className="text-base font-bold text-white group-hover:text-cyan-300 transition-colors">
+                  “celulares em Curitiba”
+                </h4>
+                <p className="text-xs text-slate-300 leading-relaxed">
+                  Shopcell posicionada organicamente no Google para a consulta comercial estratégica no Centro.
+                </p>
+              </div>
+
+              <div className="pt-2 border-t border-slate-800/80">
+                <Link
+                  to="/resultados/seo-celulares-curitiba-shopcell"
+                  className="text-xs font-bold text-cyan-400 hover:text-cyan-300 inline-flex items-center gap-1 group-hover:translate-x-1 transition-transform"
+                >
+                  <span>Ver Case Shopcell</span>
+                  <ChevronRight size={14} />
+                </Link>
+              </div>
+            </div>
+
+            {/* Case 03 Compact Card - Carplus AI Overview */}
+            <div className="p-5 rounded-2xl bg-slate-950/90 border border-cyan-500/60 hover:border-cyan-300 transition-colors space-y-3 flex flex-col justify-between group shadow-[0_0_15px_rgba(34,211,238,0.15)]">
+              <div className="space-y-2">
+                <span className="text-[10px] font-extrabold uppercase tracking-wider text-cyan-400 bg-cyan-950/80 px-2.5 py-0.5 rounded border border-cyan-800/60 inline-block">
+                  GEO / Google AI Overview
+                </span>
+                <h4 className="text-base font-bold text-white group-hover:text-cyan-300 transition-colors">
+                  Carplus na IA do Google
+                </h4>
+                <p className="text-xs text-slate-300 leading-relaxed">
+                  Apresentada na Visão geral criada por IA do Google em pesquisa sobre pneus e oficinas.
+                </p>
+              </div>
+
+              <div className="pt-2 border-t border-slate-800/80">
+                <Link
+                  to="/resultados/carplus-google-ai-overview-pneus-curitiba"
+                  className="text-xs font-bold text-cyan-400 hover:text-cyan-300 inline-flex items-center gap-1 group-hover:translate-x-1 transition-transform"
+                >
+                  <span>Ver Case Carplus</span>
+                  <ChevronRight size={14} />
+                </Link>
+              </div>
+            </div>
+
+            {/* Case 04 Compact Card - Ecoservy SEO Local */}
+            <div className="p-5 rounded-2xl bg-slate-950/90 border border-emerald-500/60 hover:border-emerald-300 transition-colors space-y-3 flex flex-col justify-between group shadow-[0_0_15px_rgba(16,185,129,0.15)]">
+              <div className="space-y-2">
+                <span className="text-[10px] font-extrabold uppercase tracking-wider text-emerald-400 bg-emerald-950/80 px-2.5 py-0.5 rounded border border-emerald-800/60 inline-block">
+                  SEO Local / Google Maps
+                </span>
+                <h4 className="text-base font-bold text-white group-hover:text-emerald-300 transition-colors">
+                  Ecoservy — “corte e poda”
+                </h4>
+                <p className="text-xs text-slate-300 leading-relaxed">
+                  Primeiro resultado empresarial visível no bloco local documentado na captura em Curitiba.
+                </p>
+              </div>
+
+              <div className="pt-2 border-t border-slate-800/80">
+                <Link
+                  to="/resultados/seo-local-ecoservy-corte-e-poda-curitiba"
+                  className="text-xs font-bold text-emerald-400 hover:text-emerald-300 inline-flex items-center gap-1 group-hover:translate-x-1 transition-transform"
+                >
+                  <span>Ver Case Ecoservy</span>
+                  <ChevronRight size={14} />
+                </Link>
+              </div>
+            </div>
+
+            {/* Case 05 Compact Card - Comfort Divisórias SEO + GEO */}
+            <div className="p-5 rounded-2xl bg-slate-950/90 border border-cyan-500/60 hover:border-cyan-300 transition-colors space-y-3 flex flex-col justify-between group shadow-[0_0_15px_rgba(34,211,238,0.15)]">
+              <div className="space-y-2">
+                <span className="text-[10px] font-extrabold uppercase tracking-wider text-cyan-400 bg-cyan-950/80 px-2.5 py-0.5 rounded border border-cyan-800/60 inline-block">
+                  SEO + GEO / IA do Google
+                </span>
+                <h4 className="text-base font-bold text-white group-hover:text-cyan-300 transition-colors">
+                  Comfort Divisórias na IA
+                </h4>
+                <p className="text-xs text-slate-300 leading-relaxed">
+                  Presente na resposta gerada pela IA e resultado orgânico para divisórias Eucatex em Curitiba.
+                </p>
+              </div>
+
+              <div className="pt-2 border-t border-slate-800/80">
+                <Link
+                  to="/resultados/comfort-divisorias-google-ia-curitiba"
+                  className="text-xs font-bold text-cyan-400 hover:text-cyan-300 inline-flex items-center gap-1 group-hover:translate-x-1 transition-transform"
+                >
+                  <span>Ver Case Comfort</span>
+                  <ChevronRight size={14} />
+                </Link>
+              </div>
+            </div>
+
+            {/* Case 06 Compact Card - KY Drywall GEO / AIO */}
+            <div className="p-5 rounded-2xl bg-slate-950/90 border border-cyan-500/60 hover:border-cyan-300 transition-colors space-y-3 flex flex-col justify-between group shadow-[0_0_15px_rgba(34,211,238,0.15)] sm:col-span-2 lg:col-span-1">
+              <div className="space-y-2">
+                <span className="text-[10px] font-extrabold uppercase tracking-wider text-cyan-400 bg-cyan-950/80 px-2.5 py-0.5 rounded border border-cyan-800/60 inline-block">
+                  GEO / AIO Busca Generativa
+                </span>
+                <h4 className="text-base font-bold text-white group-hover:text-cyan-300 transition-colors">
+                  KY Drywall na IA do Google
+                </h4>
+                <p className="text-xs text-slate-300 leading-relaxed font-mono">
+                  “qual empresa drywall em curitiba” — citada na resposta generativa.
+                </p>
+              </div>
+
+              <div className="pt-2 border-t border-slate-800/80">
+                <Link
+                  to="/resultados/ky-drywall-google-ia-curitiba"
+                  className="text-xs font-bold text-cyan-400 hover:text-cyan-300 inline-flex items-center gap-1 group-hover:translate-x-1 transition-transform"
+                >
+                  <span>Ver Case KY Drywall</span>
+                  <ChevronRight size={14} />
+                </Link>
+              </div>
+            </div>
+
+            {/* Case 07 Compact Card - Alevinos Curitiba (+12 Anos de Parceria) */}
+            <div className="p-5 rounded-2xl bg-slate-950/90 border border-emerald-500/60 hover:border-emerald-300 transition-colors space-y-3 flex flex-col justify-between group shadow-[0_0_15px_rgba(16,185,129,0.15)]">
+              <div className="space-y-2">
+                <div className="flex items-center gap-1.5">
+                  <span className="text-[10px] font-extrabold uppercase tracking-wider text-emerald-400 bg-emerald-950/80 px-2 py-0.5 rounded border border-emerald-800/60 inline-block">
+                    +12 Anos de Parceria
+                  </span>
+                  <span className="text-[10px] font-bold uppercase tracking-wider text-cyan-400">
+                    SEO Local + Orgânico
+                  </span>
+                </div>
+                <h4 className="text-base font-bold text-white group-hover:text-emerald-300 transition-colors">
+                  Alevinos Curitiba no Google
+                </h4>
+                <p className="text-xs text-slate-300 leading-relaxed font-mono">
+                  “alevinos” — presente no Google Maps e na 1ª página orgânica.
+                </p>
+              </div>
+
+              <div className="pt-2 border-t border-slate-800/80">
+                <Link
+                  to="/resultados/seo-local-e-organico-alevinos-curitiba"
+                  className="text-xs font-bold text-emerald-400 hover:text-emerald-300 inline-flex items-center gap-1 group-hover:translate-x-1 transition-transform"
+                >
+                  <span>Ver Case Alevinos Curitiba</span>
+                  <ChevronRight size={14} />
+                </Link>
+              </div>
+            </div>
+
+            {/* Case 08 Compact Card - Ômega Revestimentos (+4 Anos) */}
+            <div className="p-5 rounded-2xl bg-slate-950/90 border border-cyan-500/60 hover:border-cyan-300 transition-colors space-y-3 flex flex-col justify-between group shadow-[0_0_15px_rgba(34,211,238,0.15)]">
+              <div className="space-y-2">
+                <div className="flex items-center gap-1.5">
+                  <span className="text-[10px] font-extrabold uppercase tracking-wider text-emerald-400 bg-emerald-950/80 px-2 py-0.5 rounded border border-emerald-800/60 inline-block">
+                    +4 Anos de Parceria
+                  </span>
+                  <span className="text-[10px] font-bold uppercase tracking-wider text-cyan-400">
+                    SEO + GEO/AIO
+                  </span>
+                </div>
+                <h4 className="text-base font-bold text-white group-hover:text-cyan-300 transition-colors">
+                  Ômega Revestimentos em ACM
+                </h4>
+                <p className="text-xs text-slate-300 leading-relaxed font-mono">
+                  “qual empresa instala acm em curitiba” — resposta do Google + orgânico.
+                </p>
+              </div>
+
+              <div className="pt-2 border-t border-slate-800/80">
+                <Link
+                  to="/resultados/omega-revestimentos-acm-seo-geo-curitiba"
+                  className="text-xs font-bold text-cyan-400 hover:text-cyan-300 inline-flex items-center gap-1 group-hover:translate-x-1 transition-transform"
+                >
+                  <span>Ver Case Ômega</span>
+                  <ChevronRight size={14} />
+                </Link>
+              </div>
+            </div>
+
+            {/* Case 09 Compact Card - Casas Pinheirão (IA + Orgânico) */}
+            <div className="p-5 rounded-2xl bg-slate-950/90 border border-cyan-500/60 hover:border-cyan-300 transition-colors space-y-3 flex flex-col justify-between group shadow-[0_0_15px_rgba(34,211,238,0.15)] sm:col-span-2 lg:col-span-1">
+              <div className="space-y-2">
+                <div className="flex items-center gap-1.5">
+                  <span className="text-[10px] font-extrabold uppercase tracking-wider text-cyan-400 bg-cyan-950/80 px-2 py-0.5 rounded border border-cyan-800/60 inline-block">
+                    Case #09 — GEO + SEO
+                  </span>
+                  <span className="text-[10px] font-bold uppercase tracking-wider text-emerald-400">
+                    IA + Orgânico
+                  </span>
+                </div>
+                <h4 className="text-base font-bold text-white group-hover:text-cyan-300 transition-colors">
+                  Casas Pinheirão na IA do Google
+                </h4>
+                <p className="text-xs text-slate-300 leading-relaxed font-mono">
+                  “quem vende casas pre fabricadas meu terreno...” — citada na IA e no orgânico.
+                </p>
+              </div>
+
+              <div className="pt-2 border-t border-slate-800/80">
+                <Link
+                  to="/resultados/casas-pinheirao-google-ia-seo"
+                  className="text-xs font-bold text-cyan-400 hover:text-cyan-300 inline-flex items-center gap-1 group-hover:translate-x-1 transition-transform"
+                >
+                  <span>Ver Case Casas Pinheirão</span>
+                  <ChevronRight size={14} />
+                </Link>
+              </div>
+            </div>
+          </div>
+
+          {/* Consolidated Section: Seu cliente já não pesquisa apenas palavras. Ele pergunta. */}
+          <div className="p-6 sm:p-8 rounded-3xl bg-slate-950/90 border border-cyan-500/40 space-y-4 text-left">
+            <div className="space-y-1">
+              <span className="text-[10px] font-bold uppercase tracking-widest text-cyan-400 bg-cyan-950/80 px-2.5 py-0.5 rounded border border-cyan-800/60 inline-block">
+                Padrão em Buscas Comerciais Conversacionais
+              </span>
+              <h3 className="text-xl sm:text-2xl font-bold font-display text-white">
+                Seu cliente já não pesquisa apenas palavras. Ele pergunta.
+              </h3>
+              <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
+                Veja empresas encontradas em consultas comerciais e experiências de busca com IA quando consumidores descrevem exatamente o que procuram:
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 text-xs pt-2">
+              <div className="p-3.5 rounded-xl bg-slate-900/80 border border-slate-800 space-y-1">
+                <span className="text-cyan-400 font-bold block">Comfort Divisórias</span>
+                <p className="text-slate-300 font-mono text-[11px]">“qual empresa divisorias eucatex em curitiba”</p>
+              </div>
+
+              <div className="p-3.5 rounded-xl bg-slate-900/80 border border-slate-800 space-y-1">
+                <span className="text-cyan-400 font-bold block">KY Drywall</span>
+                <p className="text-slate-300 font-mono text-[11px]">“qual empresa drywall em curitiba”</p>
+              </div>
+
+              <div className="p-3.5 rounded-xl bg-slate-900/80 border border-slate-800 space-y-1">
+                <span className="text-cyan-400 font-bold block">Ômega Revestimentos</span>
+                <p className="text-slate-300 font-mono text-[11px]">“qual empresa instala acm em curitiba”</p>
+              </div>
+
+              <div className="p-3.5 rounded-xl bg-slate-900/80 border border-slate-800 space-y-1">
+                <span className="text-cyan-400 font-bold block">Casas Pinheirão</span>
+                <p className="text-slate-300 font-mono text-[11px]">“quem vende casas pre fabricadas meu terreno...”</p>
+              </div>
+            </div>
+
+            <div className="pt-2 text-center md:text-right">
+              <Link
+                to="/resultados"
+                className="px-5 py-2.5 rounded-full bg-cyan-400 hover:bg-cyan-300 text-slate-950 font-bold text-xs inline-flex items-center gap-1.5 transition-colors"
+              >
+                <span>Ver resultados documentados</span>
+                <ChevronRight size={14} />
+              </Link>
+            </div>
+          </div>
+
+          <div className="pt-2 text-center md:text-right">
+            <Link
+              to="/resultados"
+              className="px-5 py-2.5 rounded-full bg-slate-900 hover:bg-slate-800 text-slate-200 hover:text-white border border-slate-700 text-xs font-bold inline-flex items-center gap-1.5 transition-colors"
+            >
+              <span>Ver Todos os Cases & Métricas em /resultados</span>
+              <ChevronRight size={14} />
+            </Link>
           </div>
         </div>
       </section>

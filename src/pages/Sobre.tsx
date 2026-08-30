@@ -103,7 +103,7 @@ export default function Sobre() {
               </p>
               <p className="text-xs text-slate-400 mt-2 flex items-center justify-center gap-1">
                 <MapPin size={13} className="text-blue-400 shrink-0" />
-                <span>Batel / Rebouças, Curitiba - PR</span>
+                <span>Rebouças, Curitiba - PR</span>
               </p>
             </div>
 
@@ -168,7 +168,7 @@ export default function Sobre() {
                 <span>Atendimento Presencial</span>
               </div>
               <p className="text-xs text-slate-400">
-                Sede própria na Av. Sete de Setembro, 2775 - 9º andar no Batel/Rebouças em Curitiba.
+                Sede própria na Av. Sete de Setembro, 2775 - 9º andar no Rebouças em Curitiba.
               </p>
             </div>
           </div>

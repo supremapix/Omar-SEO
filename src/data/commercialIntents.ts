@@ -173,5 +173,172 @@ export const COMMERCIAL_INTENTS_DATA: Record<string, CommercialIntentData> = {
     faqs: [
       { question: 'Minha empresa atende em toda Curitiba, preciso de SEO local?', answer: 'Com certeza! O SEO local ajuda a posicionar sua marca para buscas em bairros estratégicos onde há maior concentração dos seus clientes ideais.' }
     ]
+  },
+  'consultoria-seo-brasil': {
+    slug: 'consultoria-seo-brasil',
+    h1: 'Consultoria de SEO no Brasil: Alcance Nacional para Sua Empresa',
+    subtitle: 'Estratégias de Visibilidade Orgânica, SEO Técnico e Preparação para IAs com Atuação em Todo o Território Nacional.',
+    metaTitle: 'Consultoria de SEO no Brasil | Alcance Nacional | Omar SEO',
+    metaDescription: 'Consultoria de SEO com abrangência nacional no Brasil. Omar Skafi desenvolve projetos de alta performance para empresas B2B, e-commerce e serviços em todo o país.',
+    contentParagraphs: [
+      'Expandir a participação de mercado no Brasil exige uma estratégia de SEO robusta, capaz de competir em palavras-chave de alto volume nacional mantendo a precisão das intenções de busca regionais.',
+      'A consultoria de SEO no Brasil ministrada por Omar Skafi atende empresas de médio e grande porte em São Paulo, Rio de Janeiro, Curitiba, Belo Horizonte, Porto Alegre, Brasília e demais polos econômicos.',
+      'Nossa metodologia nacional abrange arquitetura da informação em larga escala, otimização de E-E-A-T (Experiência, Especialidade, Autoridade e Confiabilidade), marcação Schema.org avançada e otimização para assistentes de Inteligência Artificial como ChatGPT, Gemini e Perplexity.'
+    ],
+    keyBenefits: [
+      { title: 'Posicionamento Nacional de Marca', desc: 'Conquiste autoridade orgânica nas maiores praças consumidoras do país.' },
+      { title: 'Auditoria de Escala', desc: 'Ajustes de arquitetura para sites corporativos com milhares de URLs e e-commerces.' },
+      { title: 'Sinergia GEO e AIO Nacional', desc: 'Sua marca citada pelas IAs em buscas realizadas por tomadores de decisão em todo o Brasil.' }
+    ],
+    faqs: [
+      { question: 'Como funciona a consultoria de SEO nacional remota?', answer: 'Realizamos diagnósticos técnicos contínuos com relatórios executivos em vídeo e reuniões quinzenais/mensais via Google Meet com diretores e equipes de tecnologia.' },
+      { question: 'Atendem empresas B2B com atuação em múltiplos estados?', answer: 'Sim. Projetos B2B nacionais exigem clusters semânticos específicos para capturar compradores corporativos em diversas regiões do país.' }
+    ]
+  },
+  'especialista-seo-brasil': {
+    slug: 'especialista-seo-brasil',
+    h1: 'Especialista em SEO e GEO no Brasil',
+    subtitle: 'Omar Skafi: Referência em Engenharia de Visibilidade Orgânica, Dados Estruturados e Otimização para Inteligência Artificial.',
+    metaTitle: 'Especialista em SEO e GEO no Brasil | Omar Skafi',
+    metaDescription: 'Especialista em SEO e GEO com atuação nacional. Omar Skafi desenvolve estratégias avançadas de SEO técnico, Schema.org e posicionamento no Google e IAs.',
+    contentParagraphs: [
+      'Contratar um especialista em SEO no Brasil com visão focada no novo ecossistema de busca é o passo definitivo para empresas que desejam liderar seus segmentos.',
+      'Com o avanço dos resumos de IA do Google (AI Overviews) e das respostas conversacionais no ChatGPT e Perplexity, a atuação de um especialista vai além do ranqueamento tradicional: envolve estruturação de entidade digital e autoridade de conhecimento.',
+      'Omar Skafi atua no desenvolvimento de arquiteturas web preparadas para o Googlebot e para os novos robôs coletadores de IA, combinando código limpo, velocidade e autoridade de marca.'
+    ],
+    keyBenefits: [
+      { title: 'Atuação Direta do Especialista', desc: 'Atendimento feito diretamente por Omar Skafi, sem delegação para estagiários ou atendentes.' },
+      { title: 'Engenharia Semântica Avançada', desc: 'Injeção de Schema.org encadeado (@id) para conectar marca, autor e serviços ao Knowledge Graph.' },
+      { title: 'Metodologia Comprovada', desc: 'Projetos focados em conversão e crescimento sustentável de receita orgânica.' }
+    ],
+    faqs: [
+      { question: 'Qual a diferença de contratar um especialista versus uma agência genérica?', answer: 'O especialista atua com foco cirúrgico na engenharia do seu site e na estratégia de negócio, entregando soluções customizadas sem aplicar pacotes genéricos.' }
+    ]
+  },
+  'seo-curitiba-e-regiao': {
+    slug: 'seo-curitiba-e-regiao',
+    h1: 'SEO em Curitiba, Região Metropolitana e Cidades Estratégicas do Entorno',
+    subtitle: 'HUB de Visibilidade Orgânica: Curitiba, RMC e Principais Pólos Econômicos no Paraná e Santa Catarina.',
+    metaTitle: 'SEO em Curitiba, RMC e Cidades Estratégicas | HUB Regional | Omar SEO',
+    metaDescription: 'HUB Regional de SEO para Curitiba, Região Metropolitana e cidades do entorno (Ponta Grossa, Lapa, Campo Largo, SJP, Paranaguá, Rio Negro). Consultoria especializada.',
+    contentParagraphs: [
+      'Para empresas sediadas em Curitiba ou em municípios vizinhos, a dinâmica econômica funciona de forma profundamente integrada. Consumidores e compradores corporativos transitam diariamente entre a capital e polos industriais e comerciais como São José dos Pinhais, Pinhais, Colombo, Araucária, Campo Largo, Ponta Grossa, Lapa, Paranaguá e Rio Negro.',
+      'O HUB de SEO Regional do Omar SEO foi desenvolvido para estruturar a relevância geográfica da sua marca em toda essa malha regional, evitando a criação de conteúdos artificiais ou repetitivos ("doorway pages").',
+      'Integrando contexto local autêntico, dados de atendimento reais e sincronização avançada com o Perfil de Empresa no Google Maps, asseguramos que seu negócio se destaque em pesquisas realizadas na capital, na Região Metropolitana e em cidades estratégicas do entorno.'
+    ],
+    keyBenefits: [
+      { title: 'Atuação na RMC e Entorno', desc: 'Estruturação geográfica cobrindo Curitiba, São José dos Pinhais, Pinhais, Colombo, Araucária, Campo Largo, Ponta Grossa, Lapa e Paranaguá.' },
+      { title: 'Conformidade com Diretrizes do Google', desc: 'Conteúdos regionais estruturados com dados de localização autênticos, sem abuso de palavras-chave ou doorway pages.' },
+      { title: 'Sincronização com Google Maps', desc: 'Alinhamento completo entre as áreas de cobertura no mapa e as informações técnicas apresentadas no site.' }
+    ],
+    faqs: [
+      { question: 'Quais municípios e regiões são contemplados na consultoria regional?', answer: 'Atendemos Curitiba (todos os 75 bairros), São José dos Pinhais, Pinhais, Colombo, Araucária, Campo Largo, Almirante Tamandaré, Quatro Barras, Campina Grande do Sul, Fazenda Rio Grande, Mandirituba, Rio Branco do Sul, Lapa, Piraquara, Campo Magro, Tijucas do Sul, Contenda, Balsa Nova, Ponta Grossa, Paranaguá, Rio Negro e Castro.' },
+      { question: 'Como garantir autoridade geográfica sem criar conteúdo duplicado?', answer: 'Trabalhamos com marcação de Schema.org especificada para áreas de serviço (areaServed), dados reais de rotas, depoimentos locais e contextualização econômica verdadeira para cada praça.' }
+    ]
+  },
+  'seo-vs-geo': {
+    slug: 'seo-vs-geo',
+    h1: 'SEO x GEO: Qual a Diferença e Como Combinar as Estratégias?',
+    subtitle: 'Compreenda a Evolução entre Search Engine Optimization e Generative Engine Optimization para Maximizar seu Market Share.',
+    metaTitle: 'SEO vs GEO: Qual a Diferença e Como Integrar? | Omar SEO',
+    metaDescription: 'Entenda a diferença técnica entre SEO (Search Engine Optimization) e GEO (Generative Engine Optimization) e como combinar ambas as estratégias.',
+    contentParagraphs: [
+      'O SEO (Search Engine Optimization) foca em otimizar websites para que mecanismos tradicionais como o Google e o Bing organizem e classifiquem suas URLs em listas de resultados (SERPs) com base em palavras-chave, backlinks e experiência do usuário.',
+      'O GEO (Generative Engine Optimization), por outro lado, foca em estruturar o conhecimento da sua empresa para que modelos de linguagem (LLMs) como ChatGPT, Gemini, Perplexity e Claude compreendam sua marca como uma entidade de autoridade e a citem como resposta sintetizada durante conversas com usuários.',
+      'Essas duas disciplinas não são concorrentes, mas sim complementares. O trabalho do Omar SEO integra SEO e GEO em um ecossistema único: seu site ganha posições nos links tradicionais e, ao mesmo tempo, passa a ser a fonte de recomendação oficial nas respostas geradas por inteligência artificial.'
+    ],
+    keyBenefits: [
+      { title: 'SEO Tradicional', desc: 'Conquista de posições no Google Search, tráfego orgânico direto e dominância no Google Maps.' },
+      { title: 'GEO para IA', desc: 'Citação da sua marca em ChatGPT, Perplexity, Gemini e Google AI Overviews.' },
+      { title: 'Estratégia Híbrida 360°', desc: 'Aproveitamento máximo da audiência, independente de onde o consumidor inicia a pesquisa.' }
+    ],
+    faqs: [
+      { question: 'O GEO substitui o SEO tradicional?', answer: 'Não. O GEO depende fortemente dos fundamentos de SEO (indexação, autoridade de marca e dados estruturados) para que as IAs encontrem e confiem nas suas informações.' },
+      { question: 'O que preciso alterar no meu site para incluir GEO?', answer: 'Incluímos arquivos llms.txt, marcação Schema JSON-LD de entidade, blocos de perguntas e respostas diretas e liberação de crawlers no robots.txt.' }
+    ]
+  },
+  'geo-vs-aio': {
+    slug: 'geo-vs-aio',
+    h1: 'GEO x AIO: Entendendo Otimização para Motores Generativos e IA',
+    subtitle: 'Desmistificando os Conceitos de Generative Engine Optimization (GEO) e Artificial Intelligence Optimization (AIO).',
+    metaTitle: 'GEO vs AIO: Otimização para IAs Explicada | Omar SEO',
+    metaDescription: 'Saiba o que é GEO (Generative Engine Optimization) e AIO (AI Optimization / Otimização para IA). Entenda as diferenças e como posicionar sua empresa.',
+    contentParagraphs: [
+      'À medida que a Inteligência Artificial revoluciona a forma como buscamos informações, novos termos surgiram no mercado de marketing digital: GEO, AIO e AEO.',
+      'GEO (Generative Engine Optimization) refere-se às técnicas específicas para fazer com que modelos generativos (como GPT-4o, Gemini 1.5, Claude 3.5 e Perplexity) extraiam e citem dados do seu site em suas respostas sintetizadas.',
+      'AIO (AI Optimization) e AEO (Answer Engine Optimization) englobam um conceito mais amplo de otimização de ativos digitais para qualquer interface orientada por voz, assistentes virtuais, agentes inteligentes e motores de resposta direta.',
+      'Omar SEO é especialista no alinhamento completo dessas camadas, garantindo que a linguagem, a sintaxe HTML e os metadados do seu site sirvam tanto ao consumidor humano quanto aos algoritmos de IA.'
+    ],
+    keyBenefits: [
+      { title: 'Clareza Semântica', desc: 'Textos e códigos organizados para leitura fluida por qualquer agente inteligente.' },
+      { title: 'Respostas Diretas', desc: 'Formatos de síntese ideais para captura em AI Overviews e assistentes de voz.' },
+      { title: 'Proteção do Futuro da Busca', desc: 'Seu site preparado para as constantes evoluções dos motores de resposta.' }
+    ],
+    faqs: [
+      { question: 'Qual a diferença entre AEO, GEO e AIO?', answer: 'AEO (Answer Engine) foca em responder perguntas diretas; GEO (Generative Engine) foca na citação em modelos generativos de linguagem; e AIO (AI Optimization) é o termo guarda-chuva para toda otimização voltada a inteligências artificiais.' }
+    ]
+  },
+  'seo-para-ia': {
+    slug: 'seo-para-ia',
+    h1: 'SEO para Inteligência Artificial: O Guia Definitivo',
+    subtitle: 'Como Preparar a Arquitetura do seu Site para Ser Lido, Indexado e Recomendado por Agentes e Modelos de IA.',
+    metaTitle: 'SEO para Inteligência Artificial & LLMs | Omar SEO',
+    metaDescription: 'Descubra como aplicar SEO para Inteligência Artificial. Prepare seu site com dados estruturados, llms.txt e autoridade de entidade para ChatGPT e Gemini.',
+    contentParagraphs: [
+      'Muitos empresários se perguntam: "Como faço para a inteligência artificial recomendar os meus serviços?" A resposta está na aplicação rigorosa do SEO para IA.',
+      'Os modelos de linguagem não navegam em sites como humanos; eles consomem dados através de crawlers específicos (como GPTBot, ClaudeBot, OAI-SearchBot e PerplexityBot) e interpretam estruturas semânticas rígidas.',
+      'A metodologia do Omar SEO implementa arquivos de contexto na raiz do domínio (llms.txt e llms-full.txt), libera e otimiza as permissões no robots.txt, aplica Schema.org encadeado em JSON-LD e cria blocos de conhecimento empírico inquestionável que aumentam vertiginosamente as chances de citação da sua empresa.'
+    ],
+    keyBenefits: [
+      { title: 'Acesso Livre para Robôs de IA', desc: 'Configuração adequada de robots.txt para liberar crawlers de IA sem comprometer a segurança.' },
+      { title: 'Implementação de llms.txt', desc: 'Arquivo de resumo técnico na raiz do site com contatos, serviços e diferenciais limpos.' },
+      { title: 'Construção de Entidades Conectadas', desc: 'Vinculação da sua marca ao Knowledge Graph através de marcações JSON-LD.' }
+    ],
+    faqs: [
+      { question: 'O que é o arquivo llms.txt?', answer: 'É um padrão emergente na web onde um arquivo de texto simples situado no endereço /llms.txt fornece uma síntese direta dos produtos, serviços e contatos da empresa para facilitar a leitura por robôs de IA.' }
+    ]
+  },
+  'consultor-seo-ou-agencia': {
+    slug: 'consultor-seo-ou-agencia',
+    h1: 'Consultor de SEO ou Agência: Como Escolher o Parceiro Ideal?',
+    subtitle: 'Análise Comparativa Transparente para Ajudar sua Empresa a Tomar a Melhor Decisão de Investimento.',
+    metaTitle: 'Consultor de SEO ou Agência: Qual Escolher? | Omar SEO',
+    metaDescription: 'Entenda os prós e contras de contratar um Consultor de SEO Especialista em comparação a uma Agência de Marketing Tradicional.',
+    contentParagraphs: [
+      'Na hora de investir em visibilidade no Google, muitas empresas ficam em dúvida: contratar um consultor especialista em SEO ou fechar contrato com uma agência de marketing digital full-service?',
+      'Agências tradicionais costumam oferecer pacotes amplos que dividem atenção em redes sociais, artes gráficas e anúncios, muitas vezes delegando o trabalho técnico de SEO para profissionais júniores.',
+      'Já a consultoria com um Especialista Sênior (como Omar Skafi) oferece foco 100% dedicado à engenharia do seu site, atendimento direto com quem executa a estratégia, profundidade técnica em SEO/GEO e acompanhamento executivo voltado para faturamento real.'
+    ],
+    keyBenefits: [
+      { title: 'Atendimento Direto e Especializado', desc: 'Você conversa diretamente com o especialista responsável pelas decisões técnicas.' },
+      { title: 'Foco Exclusivo em Visibilidade Orgânica', desc: '100% da energia dedicada ao Google, Google Maps, SEO Técnico e IA, sem distrações com posts sociais.' },
+      { title: 'Agilidade e Resolução Rápida', desc: 'Sem intermediários ou burocracia comercial para implementar correções no site.' }
+    ],
+    faqs: [
+      { question: 'Quando uma agência é mais indicada?', answer: 'Quando sua empresa precisa terceirizar a produção em massa de artes de redes sociais ou gerenciamento simples de anúncios pagos sem demanda técnica profunda.' },
+      { question: 'Quando o consultor especialista é mais indicado?', answer: 'Quando sua empresa precisa resolver problemas graves de indexação, subir posições em mercados concorridos, otimizar para IAs e aumentar o faturamento orgânico com acompanhamento sênior.' }
+    ]
+  },
+  'dados-estruturados-schema': {
+    slug: 'dados-estruturados-schema',
+    h1: 'Especialista em Dados Estruturados e Schema.org',
+    subtitle: 'Injeção Semântica de Código JSON-LD para Fortalecer a Entidade da sua Empresa no Google e IAs.',
+    metaTitle: 'Especialista em Dados Estruturados Schema.org | Omar SEO',
+    metaDescription: 'Otimização com dados estruturados Schema.org e JSON-LD. Garanta Rich Snippets e conectividade de entidade para Google e assistentes de IA.',
+    contentParagraphs: [
+      'Os dados estruturados Schema.org são uma linguagem padronizada internacionalmente pelas grandes Big Techs (Google, Microsoft, Yahoo) para explicar o significado das informações contidas em uma página web.',
+      'Sem dados estruturados, o robô precisa "adivinhar" se um número de telefone pertence a um médico, a um restaurante ou a uma notícia. Com o Schema.org em JSON-LD, declaramos categoricamente quem é a empresa, quem é o proprietário, onde fica o endereço legal, quais os horários de funcionamento e quais serviços são prestados.',
+      'Omar Skafi é especialista na criação de arquiteturas de Schema.org encadeadas com IDs únicos (@id), permitindo que o Google e os modelos de IA entendam sua marca como uma entidade nobre e confiável do Knowledge Graph.'
+    ],
+    keyBenefits: [
+      { title: 'Conquista de Rich Snippets', desc: 'Destaque visual nos resultados de busca com estrelas de avaliação, FAQs e preços.' },
+      { title: 'Conexão com Knowledge Graph', desc: 'Vinculação categórica da sua empresa, logotipo e fundador aos registros globais.' },
+      { title: 'Leitura Perfeita por IAs', desc: 'Garantia de que os algoritmos de inteligência artificial compreendam seus diferenciais sem erros de interpretação.' }
+    ],
+    faqs: [
+      { question: 'O que é JSON-LD?', answer: 'JSON-LD (JavaScript Object Notation for Linked Data) é o formato recomendado pelo Google para declarar dados estruturados no código da página sem afetar a velocidade visual do site.' },
+      { question: 'Quais Schemas são essenciais para um negócio local?', answer: 'ProfessionalService/LocalBusiness, PostalAddress, GeoCoordinates, Person (fundador), WebSite, WebPage, Service, FAQPage e BreadcrumbList.' }
+    ]
   }
+
 };

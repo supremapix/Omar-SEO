@@ -1,0 +1,147 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 390" width="1080" height="390">
+  <defs>
+    <style>
+      .txt-search { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; font-size: 16px; fill: #202124; }
+      .txt-domain { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; font-size: 14px; fill: #202124; font-weight: 400; }
+      .txt-url { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; font-size: 12px; fill: #4d5156; }
+      .txt-title { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; font-size: 20px; fill: #6001d2; font-weight: 400; cursor: pointer; }
+      .txt-snippet { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; font-size: 14px; fill: #4d5156; line-height: 1.58; }
+      .txt-bold { font-weight: 700; fill: #3c4043; }
+      .txt-sub { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; font-size: 13px; fill: #70757a; }
+      .txt-review { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; font-size: 13px; fill: #4d5156; }
+    </style>
+  </defs>
+
+  <!-- Background Canvas -->
+  <rect width="1080" height="390" fill="#ffffff"/>
+
+  <!-- Google Logo -->
+  <g transform="translate(24, 16)">
+    <text font-family="Arial, sans-serif" font-size="28" font-weight="bold" letter-spacing="-0.5">
+      <tspan fill="#4285F4">G</tspan><tspan fill="#EA4335">o</tspan><tspan fill="#FBBC05">o</tspan><tspan fill="#4285F4">g</tspan><tspan fill="#34A853">l</tspan><tspan fill="#EA4335">e</tspan>
+    </text>
+  </g>
+
+  <!-- Search Input Pill -->
+  <rect x="148" y="12" width="700" height="46" rx="23" fill="#ffffff" stroke="#dadce0" stroke-width="1"/>
+  <text x="168" y="41" class="txt-search">celulares em curitiba</text>
+
+  <!-- Search Pill Right Controls -->
+  <!-- X button -->
+  <g transform="translate(685, 26)" stroke="#70757a" stroke-width="2" stroke-linecap="round">
+    <line x1="0" y1="0" x2="14" y2="14"/>
+    <line x1="14" y1="0" x2="0" y2="14"/>
+  </g>
+
+  <!-- Keyboard Icon -->
+  <g transform="translate(712, 26)">
+    <rect x="0" y="2" width="18" height="12" rx="2" fill="none" stroke="#70757a" stroke-width="1.2"/>
+    <rect x="3" y="5" width="2" height="2" fill="#70757a"/>
+    <rect x="8" y="5" width="2" height="2" fill="#70757a"/>
+    <rect x="13" y="5" width="2" height="2" fill="#70757a"/>
+    <rect x="5" y="9" width="8" height="2" fill="#70757a"/>
+  </g>
+
+  <!-- Microphone Icon -->
+  <g transform="translate(750, 25)">
+    <path d="M6 10c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2s-2 .9-2 2v4c0 1.1.9 2 2 2z" fill="#4285f4"/>
+    <path d="M10 8c0 2.2-1.8 4-4 4s-4-1.8-4-4H0c0 3 2.2 5.4 5 5.9V17h2v-3.1c2.8-.5 5-2.9 5-5.9h-2z" fill="#34a853"/>
+  </g>
+
+  <!-- Lens Icon -->
+  <g transform="translate(784, 25)">
+    <circle cx="7" cy="7" r="5" fill="none" stroke="#4285f4" stroke-width="2"/>
+    <circle cx="10" cy="4" r="1.5" fill="#ea4335"/>
+  </g>
+
+  <!-- Magnifying Glass -->
+  <g transform="translate(818, 24)">
+    <circle cx="7" cy="7" r="5" fill="none" stroke="#4285f4" stroke-width="2"/>
+    <line x1="11" y1="11" x2="16" y2="16" stroke="#4285f4" stroke-width="2.5" stroke-linecap="round"/>
+  </g>
+
+  <!-- Top Map Section Preview (cut off) -->
+  <g transform="translate(230, 68)">
+    <circle cx="12" cy="12" r="10" fill="#4285f4"/>
+    <path d="M12 7c1.7 0 3 1.3 3 3s-1.3 3-3 3-3-1.3-3-3 1.3-3 3-3zm0 7c2.3 0 7 1.2 7 3.5V19H5v-1.5C5 15.2 9.7 14 12 14z" fill="#ffffff"/>
+    <text x="30" y="16" class="txt-review">&quot;Atendimento muito bom,super rápido,super recomendo vendedor lucas&quot;</text>
+  </g>
+
+  <!-- Mais Lugares Pill -->
+  <rect x="230" y="118" width="304" height="40" rx="20" fill="#f1f3f4"/>
+  <text x="340" y="143" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="14" font-weight="bold" fill="#3c4043">Mais lugares  ›</text>
+
+  <!-- Map Graphic Widget Cutoff on Right -->
+  <g transform="translate(615, 68)">
+    <rect width="440" height="90" fill="#e8eaed" rx="8"/>
+    <!-- Mock Streets -->
+    <line x1="120" y1="0" x2="120" y2="90" stroke="#ffffff" stroke-width="6"/>
+    <line x1="220" y1="0" x2="220" y2="90" stroke="#ffffff" stroke-width="6"/>
+    <line x1="0" y1="45" x2="440" y2="45" stroke="#ffffff" stroke-width="8"/>
+    <!-- Map Labels -->
+    <rect x="110" y="16" width="30" height="14" rx="3" fill="#ffffff" stroke="#9aa0a6" stroke-width="1"/>
+    <text x="125" y="27" font-family="sans-serif" font-size="9" fill="#3c4043" text-anchor="middle">376</text>
+    <rect x="36" y="55" width="32" height="14" rx="3" fill="#ffffff" stroke="#9aa0a6" stroke-width="1"/>
+    <text x="52" y="66" font-family="sans-serif" font-size="9" fill="#3c4043" text-anchor="middle">PR-421</text>
+
+    <!-- Map Pin -->
+    <path d="M250 15 C244 15 240 19 240 25 C240 33 250 42 250 42 C250 42 260 33 260 25 C260 19 256 15 250 15 Z" fill="#ea4335"/>
+    <circle cx="250" cy="24" r="3.5" fill="#ffffff"/>
+    <text x="265" y="27" font-family="sans-serif" font-size="11" font-weight="bold" fill="#202124">Mercadão dos Celulares Izaac</text>
+
+    <text x="350" y="58" font-family="sans-serif" font-size="13" font-weight="bold" fill="#202124">São José dos Pinhais</text>
+
+    <!-- Zoom widget -->
+    <rect x="405" y="15" width="24" height="48" rx="4" fill="#3c4043" opacity="0.8"/>
+    <text x="417" y="32" font-family="sans-serif" font-size="16" fill="#ffffff" text-anchor="middle">+</text>
+    <line x1="409" y1="38" x2="425" y2="38" stroke="#5f6368" stroke-width="1"/>
+    <text x="417" y="54" font-family="sans-serif" font-size="18" fill="#ffffff" text-anchor="middle">-</text>
+  </g>
+
+  <!-- Separator Line -->
+  <line x1="165" y1="178" x2="880" y2="178" stroke="#dadce0" stroke-width="1"/>
+
+  <!-- Organic Result Row -->
+  <!-- Favicon Badge (Orange circle with white S) -->
+  <circle cx="178" cy="216" r="14" fill="#ff5722"/>
+  <text x="178" y="222" font-family="Arial, sans-serif" font-size="16" fill="#ffffff" text-anchor="middle" font-weight="bold">S</text>
+
+  <!-- Domain & Breadcrumb -->
+  <text x="202" y="212" class="txt-domain">celularescuritibashopcell.com.br</text>
+  <text x="202" y="229" class="txt-url">https://www.celularescuritibashopcell.com.br</text>
+
+  <!-- Three-Dots Menu -->
+  <g transform="translate(685, 214)" fill="#70757a">
+    <circle cx="0" cy="0" r="1.8"/>
+    <circle cx="0" cy="6" r="1.8"/>
+    <circle cx="0" cy="12" r="1.8"/>
+  </g>
+
+  <!-- Title Link (Purple) -->
+  <text x="165" y="258" class="txt-title">Loja de Celulares em Curitiba | Shopcell Centro</text>
+
+  <!-- Snippet Text -->
+  <text x="165" y="284" class="txt-snippet">
+    <tspan class="txt-bold">Loja de celular em Curitiba, no Centro.</tspan> Aparelhos novos e lacrados, acessórios, 1 ano de garantia, até
+  </text>
+  <text x="165" y="304" class="txt-snippet">
+    12x e caixa aberta na sua frente. (41) 3798-9918.
+  </text>
+
+  <!-- Location Pin Sub-line -->
+  <path d="M 169 324 C 166.8 324 165 325.8 165 328 C 165 331.2 169 336 169 336 C 169 336 173 331.2 173 328 C 173 325.8 171.2 324 169 324 Z" fill="#1a73e8"/>
+  <circle cx="169" cy="328" r="1.5" fill="#ffffff"/>
+  <text x="180" y="332" class="txt-sub">Centro · Fechado</text>
+
+  <!-- Red Arrow Left (pointing to Favicon/URL) -->
+  <g>
+    <path d="M 80 140 Q 110 210 162 216" fill="none" stroke="#d9534f" stroke-width="8" stroke-linecap="round"/>
+    <polygon points="166,224 148,206 142,226" fill="#d9534f"/>
+  </g>
+
+  <!-- Red Arrow Right (pointing to Snippet) -->
+  <g>
+    <path d="M 1030 360 Q 900 340 720 286" fill="none" stroke="#d9534f" stroke-width="8" stroke-linecap="round"/>
+    <polygon points="708,283 732,275 730,298" fill="#d9534f"/>
+  </g>
+</svg>
