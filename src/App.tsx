@@ -27,6 +27,8 @@ const CaseKyDrywallAiOverview = lazy(() => import('./pages/CaseKyDrywallAiOvervi
 const CaseAlevinosCuritibaSeo = lazy(() => import('./pages/CaseAlevinosCuritibaSeo'));
 const CaseOmegaRevestimentosSeoGeo = lazy(() => import('./pages/CaseOmegaRevestimentosSeoGeo'));
 const CaseCasasPinheiraoAiSeo = lazy(() => import('./pages/CaseCasasPinheiraoAiSeo'));
+const CaseMotofreteCentroSaoPauloSeo = lazy(() => import('./pages/CaseMotofreteCentroSaoPauloSeo'));
+const CaseRvmPersianasFlorianopolisSeo = lazy(() => import('./pages/CaseRvmPersianasFlorianopolisSeo'));
 const SobreOmar = lazy(() => import('./pages/SobreOmar'));
 const Sobre = lazy(() => import('./pages/Sobre'));
 const Metodo = lazy(() => import('./pages/Metodo'));
@@ -105,6 +107,8 @@ function AnimatedRoutes() {
           <Route path="/resultados/seo-local-e-organico-alevinos-curitiba" element={<CaseAlevinosCuritibaSeo />} />
           <Route path="/resultados/omega-revestimentos-acm-seo-geo-curitiba" element={<CaseOmegaRevestimentosSeoGeo />} />
           <Route path="/resultados/casas-pinheirao-google-ia-seo" element={<CaseCasasPinheiraoAiSeo />} />
+          <Route path="/resultados/motofrete-centro-sao-paulo-seo" element={<CaseMotofreteCentroSaoPauloSeo />} />
+          <Route path="/resultados/rvm-persianas-florianopolis-seo" element={<CaseRvmPersianasFlorianopolisSeo />} />
           <Route path="/omar-skafi" element={<SobreOmar />} />
           <Route path="/auditoria-seo" element={<AuditoriaSeo />} />
           <Route path="/contato" element={<Contato />} />

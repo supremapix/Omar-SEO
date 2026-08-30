@@ -546,6 +546,26 @@ export default function SeoGeoAio() {
               <ArrowRight size={14} />
             </Link>
           </div>
+
+          {/* Card 5: Motofrete Centro SP */}
+          <div className="bg-slate-950 rounded-2xl p-6 border border-emerald-500/40 space-y-4 flex flex-col justify-between hover:border-emerald-400 transition-colors">
+            <div className="space-y-2">
+              <span className="text-[10px] font-bold text-emerald-400 uppercase tracking-wider bg-emerald-950/80 px-2.5 py-0.5 rounded border border-emerald-800">
+                SEO Local (São Paulo / SP)
+              </span>
+              <h3 className="text-lg font-bold text-white">Motofrete Centro SP</h3>
+              <p className="text-xs text-slate-300 font-mono">
+                “Motofrete centro São Paulo”
+              </p>
+            </div>
+            <Link
+              to="/resultados/motofrete-centro-sao-paulo-seo"
+              className="text-xs font-bold text-emerald-400 hover:text-emerald-300 inline-flex items-center gap-1 pt-2 border-t border-slate-800"
+            >
+              <span>Ver Case Motofrete (#10)</span>
+              <ArrowRight size={14} />
+            </Link>
+          </div>
         </div>
 
         <div className="text-center pt-2">

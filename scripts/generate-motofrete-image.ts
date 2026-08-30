@@ -1,0 +1,125 @@
+import fs from 'fs';
+import path from 'path';
+import sharp from 'sharp';
+
+const outputDir = path.join(process.cwd(), 'public', 'images', 'cases');
+if (!fs.existsSync(outputDir)) {
+  fs.mkdirSync(outputDir, { recursive: true });
+}
+
+// Organic Search SVG for Motofrete Centro São Paulo
+const svgContent = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 380" width="1000" height="380" style="background:#ffffff;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;">
+  <defs>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="1" stdDeviation="3" flood-color="#000" flood-opacity="0.1"/>
+    </filter>
+  </defs>
+
+  <!-- Google Search Bar -->
+  <g transform="translate(30, 30)">
+    <!-- Google Logo -->
+    <g transform="translate(0, 4)">
+      <path d="M22.5 10.8c0-.8-.1-1.5-.2-2.2H11.5v4.2h6.2c-.3 1.4-1.1 2.6-2.3 3.4v2.8h3.7c2.2-2 3.4-5 3.4-8.2z" fill="#4285F4"/>
+      <path d="M11.5 22c3.1 0 5.7-1 7.6-2.8l-3.7-2.8c-1 1-2.4 1.5-3.9 1.5-3 0-5.5-2-6.4-4.8H1.2v3c1.9 3.8 5.8 6.1 10.3 6.1z" fill="#34A853"/>
+      <path d="M5.1 13.1c-.2-.7-.3-1.4-.3-2.1s.1-1.4.3-2.1V5.9H1.2C.4 7.5 0 9.2 0 11s.4 3.5 1.2 5.1l3.9-3z" fill="#FBBC05"/>
+      <path d="M11.5 4.4c1.7 0 3.2.6 4.4 1.7l3.3-3.3C17.2 1 14.6 0 11.5 0 7 0 3.1 2.3 1.2 6.1l3.9 3c.9-2.8 3.4-4.7 6.4-4.7z" fill="#EA4335"/>
+    </g>
+
+    <!-- Search Input Box -->
+    <rect x="110" y="-12" width="810" height="48" rx="24" fill="#ffffff" stroke="#dfe1e5" stroke-width="1" filter="url(#shadow)"/>
+    <text x="140" y="19" font-size="16" fill="#202124" font-weight="400">Motofrete centro São Paulo</text>
+
+    <!-- Controls inside search box -->
+    <g transform="translate(760, 2)">
+      <!-- X Clear -->
+      <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z" fill="#70757a" transform="translate(0, -3) scale(0.9)"/>
+      <!-- Vertical Divider -->
+      <line x1="32" y1="-2" x2="32" y2="24" stroke="#dadce0" stroke-width="1"/>
+      <!-- Keyboard -->
+      <rect x="44" y="2" width="18" height="12" rx="2" fill="none" stroke="#70757a" stroke-width="1.3"/>
+      <line x1="47" y1="6" x2="49" y2="6" stroke="#70757a" stroke-width="1"/>
+      <line x1="51" y1="6" x2="53" y2="6" stroke="#70757a" stroke-width="1"/>
+      <line x1="55" y1="6" x2="57" y2="6" stroke="#70757a" stroke-width="1"/>
+      <!-- Mic -->
+      <path d="M12 14c1.66 0 3-1.34 3-3V5c0-1.66-1.34-3-3-3S9 3.34 9 5v6c0 1.66 1.34 3 3 3z" fill="#4285F4" transform="translate(68, -4) scale(0.9)"/>
+      <path d="M17 11c0 2.76-2.24 5-5 5s-5-2.24-5-5H5c0 3.53 2.61 6.43 6 6.92V21h2v-3.08c3.39-.49 6-3.39 6-6.92h-2z" fill="#34A853" transform="translate(68, -4) scale(0.9)"/>
+      <!-- Lens -->
+      <circle cx="106" cy="10" r="6" fill="none" stroke="#4285F4" stroke-width="2"/>
+      <circle cx="106" cy="10" r="3" fill="#FBBC05"/>
+      <!-- Search Magnifier -->
+      <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z" fill="#4285F4" transform="translate(126, -3) scale(0.9)"/>
+    </g>
+  </g>
+
+  <!-- Divider line below search bar -->
+  <line x1="0" y1="100" x2="1000" y2="100" stroke="#ebebeb" stroke-width="1"/>
+
+  <!-- Organic Result Container -->
+  <g transform="translate(170, 135)">
+    <!-- Favicon & Domain Header -->
+    <g transform="translate(0, 0)">
+      <!-- Favicon Circle (Yellow with 'M') -->
+      <circle cx="14" cy="14" r="14" fill="#FFCC00"/>
+      <text x="14" y="20" font-size="14" font-weight="900" fill="#000000" text-anchor="middle">M</text>
+
+      <!-- Domain Title & Subdomain Breadcrumb -->
+      <text x="40" y="12" font-size="14" fill="#202124" font-weight="400">servicosnobairro.com.br</text>
+      <text x="40" y="28" font-size="12" fill="#4d5156" font-weight="400">https://motofrete.servicosnobairro.com.br › motoboy-cen...</text>
+    </g>
+
+    <!-- Result Title -->
+    <g transform="translate(0, 52)">
+      <text x="0" y="0" font-size="20" fill="#681da8" font-weight="400">Motoboy no Centro, São Paulo | Motofrete e Coletas</text>
+      <!-- Three Dots Options Icon -->
+      <circle cx="490" cy="-6" r="1.5" fill="#70757a"/>
+      <circle cx="490" cy="-1" r="1.5" fill="#70757a"/>
+      <circle cx="490" cy="4" r="1.5" fill="#70757a"/>
+    </g>
+
+    <!-- Snippet Text -->
+    <g transform="translate(0, 78)">
+      <text x="0" y="0" font-size="14" fill="#4d5156" line-height="1.5">
+        <tspan font-weight="700">Motoboy e motofrete no Centro, São Paulo</tspan>, para documentos, peças, coletas e
+      </text>
+      <text x="0" y="22" font-size="14" fill="#4d5156">
+        entregas. Consulte disponibilidade e cotação.
+      </text>
+    </g>
+
+    <!-- Right Side Thumbnail Card (Courier delivering package) -->
+    <g transform="translate(530, -5)">
+      <rect x="0" y="0" width="110" height="110" rx="14" fill="#222b35" />
+      <!-- Stylized Courier & Customer Illustration matching real photo -->
+      <g transform="translate(10, 10)">
+        <!-- Doorway background -->
+        <rect x="0" y="0" width="90" height="90" rx="8" fill="#1b222a"/>
+        <!-- Doorframe lines -->
+        <line x1="20" y1="0" x2="20" y2="90" stroke="#334155" stroke-width="2"/>
+        <!-- Delivery Guy (Green jacket + backpack) -->
+        <circle cx="30" cy="30" r="7" fill="#10b981"/>
+        <path d="M 22 40 L 38 40 L 36 75 L 24 75 Z" fill="#047857"/>
+        <rect x="12" y="38" width="12" height="24" rx="3" fill="#065f46"/> <!-- Backpack -->
+        <path d="M 35 48 L 52 46" stroke="#10b981" stroke-width="4" stroke-linecap="round"/> <!-- Arm handing package -->
+        <!-- Package Box (Brown/Yellow) -->
+        <rect x="48" y="40" width="14" height="10" rx="1" fill="#d97706" stroke="#f59e0b" stroke-width="1"/>
+        <!-- Customer receiving package -->
+        <circle cx="68" cy="30" r="6" fill="#f43f5e"/>
+        <path d="M 62 40 L 74 40 L 72 75 L 64 75 Z" fill="#3b82f6"/>
+        <path d="M 64 48 L 54 46" stroke="#f43f5e" stroke-width="3.5" stroke-linecap="round"/>
+      </g>
+    </g>
+  </g>
+</svg>`;
+
+// Write SVG file
+const svgPath = path.join(outputDir, 'case-motofrete-centro-sao-paulo-google.svg');
+fs.writeFileSync(svgPath, svgContent);
+console.log('Generated SVG:', svgPath);
+
+// Convert to PNG using sharp
+const pngPath = path.join(outputDir, 'case-motofrete-centro-sao-paulo-google.png');
+sharp(Buffer.from(svgContent))
+  .png()
+  .toFile(pngPath)
+  .then(() => console.log('Generated PNG:', pngPath))
+  .catch((err) => console.error('Error generating PNG:', err));

@@ -1,0 +1,271 @@
+import fs from 'fs';
+import path from 'path';
+import sharp from 'sharp';
+
+const outputDir = path.join(process.cwd(), 'public', 'images', 'cases');
+if (!fs.existsSync(outputDir)) {
+  fs.mkdirSync(outputDir, { recursive: true });
+}
+
+// -------------------------------------------------------------
+// IMAGE 1: rvmsc.png -> case-rvm-persianas-lagoa-sc-google (SVG & PNG)
+// -------------------------------------------------------------
+const svg1Content = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 700" width="1000" height="700" style="background:#ffffff;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;">
+  <defs>
+    <filter id="shadow1" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="1" stdDeviation="3" flood-color="#000" flood-opacity="0.1"/>
+    </filter>
+    <marker id="redArrow1" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#c0392b" />
+    </marker>
+  </defs>
+
+  <!-- Google Header -->
+  <g transform="translate(40, 25)">
+    <!-- Google Logo -->
+    <g transform="translate(0, 4)">
+      <path d="M22.5 10.8c0-.8-.1-1.5-.2-2.2H11.5v4.2h6.2c-.3 1.4-1.1 2.6-2.3 3.4v2.8h3.7c2.2-2 3.4-5 3.4-8.2z" fill="#4285F4"/>
+      <path d="M11.5 22c3.1 0 5.7-1 7.6-2.8l-3.7-2.8c-1 1-2.4 1.5-3.9 1.5-3 0-5.5-2-6.4-4.8H1.2v3c1.9 3.8 5.8 6.1 10.3 6.1z" fill="#34A853"/>
+      <path d="M5.1 13.1c-.2-.7-.3-1.4-.3-2.1s.1-1.4.3-2.1V5.9H1.2C.4 7.5 0 9.2 0 11s.4 3.5 1.2 5.1l3.9-3z" fill="#FBBC05"/>
+      <path d="M11.5 4.4c1.7 0 3.2.6 4.4 1.7l3.3-3.3C17.2 1 14.6 0 11.5 0 7 0 3.1 2.3 1.2 6.1l3.9 3c.9-2.8 3.4-4.7 6.4-4.7z" fill="#EA4335"/>
+    </g>
+
+    <!-- Search Input Box -->
+    <rect x="100" y="-12" width="640" height="46" rx="23" fill="#ffffff" stroke="#dfe1e5" stroke-width="1" filter="url(#shadow1)"/>
+    <text x="125" y="17" font-size="16" fill="#202124">persianas na lagoa sc</text>
+
+    <!-- Search Box Right Controls -->
+    <g transform="translate(620, 0)">
+      <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z" fill="#70757a" transform="translate(0, -3) scale(0.8)"/>
+      <line x1="28" y1="-2" x2="28" y2="22" stroke="#dadce0" stroke-width="1"/>
+      <!-- Mic & Lens & Search -->
+      <circle cx="70" cy="9" r="5" fill="none" stroke="#4285F4" stroke-width="2"/>
+      <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z" fill="#4285F4" transform="translate(90, -4) scale(0.9)"/>
+    </g>
+  </g>
+
+  <!-- Search Mode Bar -->
+  <g transform="translate(140, 85)">
+    <text x="0" y="0" font-size="13" fill="#70757a">Modo IA</text>
+    <text x="65" y="0" font-size="13" fill="#1a73e8" font-weight="700">Tudo</text>
+    <line x1="65" y1="8" x2="95" y2="8" stroke="#1a73e8" stroke-width="3"/>
+    <text x="110" y="0" font-size="13" fill="#70757a">Shopping</text>
+    <text x="185" y="0" font-size="13" fill="#70757a">Imagens</text>
+    <text x="250" y="0" font-size="13" fill="#70757a">Vídeos curtos</text>
+    <text x="345" y="0" font-size="13" fill="#70757a">Vídeos</text>
+    <text x="400" y="0" font-size="13" fill="#70757a">Maps</text>
+    <text x="450" y="0" font-size="13" fill="#70757a">Mais ▾</text>
+    <text x="505" y="0" font-size="13" fill="#70757a">Ferramentas</text>
+  </g>
+
+  <!-- Region pin -->
+  <g transform="translate(140, 120)">
+    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" fill="#70757a" transform="scale(0.7)"/>
+    <text x="18" y="11" font-size="13" fill="#202124" font-weight="700">Santa Catarina</text>
+    <text x="120" y="11" font-size="13" fill="#1a73e8">· Escolher região</text>
+  </g>
+
+  <!-- SECTION: Locais (Google Maps 3-Pack) -->
+  <g transform="translate(140, 155)">
+    <text x="0" y="20" font-size="22" fill="#202124" font-weight="400">Locais</text>
+
+    <!-- Map on right side -->
+    <g transform="translate(410, 35)">
+      <rect x="0" y="0" width="410" height="280" rx="16" fill="#e5e3df" stroke="#dadce0" stroke-width="1"/>
+      <!-- Water bodies / Bay -->
+      <path d="M 0 40 Q 150 70 120 180 Q 90 280 0 280 Z" fill="#aad3df"/>
+      <text x="110" y="150" font-size="11" fill="#4d7285" font-style="italic">Baía Norte</text>
+      <text x="180" y="260" font-size="11" fill="#4d7285" font-style="italic">Baía Sul</text>
+
+      <!-- Roads -->
+      <path d="M 0 160 L 410 180" stroke="#ffffff" stroke-width="4"/>
+      <path d="M 280 0 L 320 280" stroke="#fcd6a4" stroke-width="5"/>
+
+      <rect x="300" y="10" width="100" height="24" rx="12" fill="#2d5843"/>
+      <text x="350" y="26" font-size="11" fill="#ffffff" font-weight="700" text-anchor="middle">Abrir no Maps</text>
+
+      <!-- Pin Card Overlay -->
+      <g transform="translate(200, 70)">
+        <rect x="0" y="0" width="190" height="85" rx="8" fill="#ffffff" filter="url(#shadow1)"/>
+        <rect x="5" y="5" width="85" height="50" rx="4" fill="#334155"/>
+        <rect x="95" y="5" width="85" height="50" rx="4" fill="#64748b"/>
+        <text x="10" y="68" font-size="10" font-weight="700" fill="#202124">Persianas em Florianópolis</text>
+        <text x="10" y="79" font-size="9" fill="#d97706">5,0 ★★★★ (4)</text>
+      </g>
+    </g>
+
+    <!-- Card 1: Persianas em Florianópolis -->
+    <g transform="translate(0, 35)">
+      <rect x="0" y="0" width="70" height="70" rx="8" fill="#475569"/>
+      <text x="35" y="40" font-size="10" fill="#ffffff" text-anchor="middle">Persianas</text>
+
+      <text x="80" y="16" font-size="16" fill="#1a0dab" font-weight="500">Persianas em Florianópolis</text>
+      <text x="80" y="32" font-size="13" fill="#202124">5,0 <tspan fill="#f59e0b">★★★★★</tspan> (4) · Loja de cortinas e persianas</text>
+      <text x="80" y="48" font-size="13" fill="#4d5156">Florianópolis - SC · (48) 99846-1100</text>
+      <text x="80" y="64" font-size="13" fill="#d97706" font-weight="700">Fechado <tspan font-weight="400" fill="#4d5156">· Abre seg. às 09:00</tspan></text>
+      <text x="80" y="80" font-size="12" fill="#5f6368" font-style="italic">"As <tspan font-weight="700">persianas</tspan> têm ótimo acabamento e funcionam perfeitamente."</text>
+    </g>
+
+    <!-- Card 2: Jurema Persianas -->
+    <g transform="translate(0, 140)">
+      <rect x="0" y="0" width="70" height="70" rx="8" fill="#334155"/>
+      <text x="35" y="40" font-size="10" fill="#ffffff" text-anchor="middle">Jurema</text>
+
+      <text x="80" y="16" font-size="16" fill="#1a0dab" font-weight="500">Jurema Persianas E Cortinas Em Florianópolis</text>
+      <text x="80" y="32" font-size="13" fill="#202124">5,0 <tspan fill="#f59e0b">★★★★★</tspan> (70) · Loja de persianas</text>
+      <text x="80" y="48" font-size="13" fill="#4d5156">(48) 99999-7400</text>
+      <text x="80" y="64" font-size="13" fill="#d97706" font-weight="700">Fechado <tspan font-weight="400" fill="#4d5156">· Abre seg. às 08:00</tspan></text>
+      <text x="80" y="80" font-size="12" fill="#5f6368" font-style="italic">"<tspan font-weight="700">Persianas</tspan> de qualidade, excelente atendimento."</text>
+    </g>
+
+    <!-- Card 3: Persianas em Lagoa da Conceição -->
+    <g transform="translate(0, 245)">
+      <rect x="0" y="0" width="70" height="60" rx="8" fill="#e2e8f0"/>
+      <circle cx="35" cy="30" r="8" fill="#ef4444"/>
+
+      <text x="80" y="16" font-size="16" fill="#1a0dab" font-weight="500">Persianas em Lagoa da Conceição | Elétrica Ro...</text>
+      <text x="80" y="32" font-size="13" fill="#5f6368">Nenhum comentário · Loja de persianas</text>
+      <text x="80" y="48" font-size="13" fill="#4d5156">Florianópolis - SC</text>
+    </g>
+
+    <!-- Mais lugares Button -->
+    <g transform="translate(50, 325)">
+      <rect x="0" y="0" width="280" height="36" rx="18" fill="#f1f3f4"/>
+      <text x="140" y="23" font-size="13" fill="#202124" font-weight="500" text-anchor="middle">Mais lugares ›</text>
+    </g>
+
+    <!-- ORGANIC RESULT BELOW LOCAL PACK (RVM PERSIANAS) -->
+    <g transform="translate(0, 385)">
+      <!-- Favicon (Black circle with stylized S / RVM logo) -->
+      <circle cx="16" cy="16" r="14" fill="#18181b"/>
+      <path d="M 10 10 C 14 6, 20 6, 22 11 C 24 16, 10 16, 10 21 C 10 26, 20 26, 22 22" stroke="#ffffff" stroke-width="3" fill="none" stroke-linecap="round"/>
+
+      <text x="42" y="14" font-size="14" fill="#202124" font-weight="500">RVM Persianas</text>
+      <text x="42" y="30" font-size="12" fill="#4d5156">https://rvmpersianas.com.br › bairro › barra-da-lagoa</text>
+
+      <text x="0" y="58" font-size="20" fill="#1a0dab" font-weight="400">Persianas Sob Medida em Barra da Lagoa</text>
+      <text x="0" y="82" font-size="14" fill="#4d5156">
+        A <tspan font-weight="700">RVM Persianas</tspan> é especializada na fabricação e instalação de <tspan font-weight="700">persianas sob medida</tspan> no bairro
+      </text>
+      <text x="0" y="102" font-size="14" fill="#4d5156">
+        Barra da Lagoa em Florianópolis. Com mais de 10 anos de experiência ...
+      </text>
+    </g>
+  </g>
+
+  <!-- RED ANNOTATION ARROWS (Matching user's rvmsc.png screenshot) -->
+  <!-- Arrow 1: Top left pointing to RVM organic result favicon -->
+  <path d="M 50 70 L 130 540" stroke="#c0392b" stroke-width="4" fill="none" stroke-linecap="round" marker-end="url(#redArrow1)" />
+
+  <!-- Arrow 2: Top middle pointing across to Map pin -->
+  <path d="M 280 80 L 680 290" stroke="#c0392b" stroke-width="5" fill="none" stroke-linecap="round" marker-end="url(#redArrow1)" />
+
+  <!-- Arrow 3: Middle left pointing to Maps Card 1 -->
+  <path d="M 640 280 L 460 260" stroke="#c0392b" stroke-width="5" fill="none" stroke-linecap="round" marker-end="url(#redArrow1)" />
+
+</svg>`;
+
+// Save SVG 1
+const svg1Path = path.join(outputDir, 'case-rvm-persianas-lagoa-sc-google.svg');
+fs.writeFileSync(svg1Path, svg1Content);
+console.log('Saved SVG 1:', svg1Path);
+
+// Render PNG 1
+const png1Path = path.join(outputDir, 'case-rvm-persianas-lagoa-sc-google.png');
+sharp(Buffer.from(svg1Content))
+  .png()
+  .toFile(png1Path)
+  .then(() => console.log('Saved PNG 1:', png1Path))
+  .catch((err) => console.error('Error PNG 1:', err));
+
+
+// -------------------------------------------------------------
+// IMAGE 2: rvm.png -> case-rvm-persianas-florianopolis-google (SVG & PNG)
+// -------------------------------------------------------------
+const svg2Content = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 450" width="1000" height="450" style="background:#ffffff;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;">
+  <defs>
+    <filter id="shadow2" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="1" stdDeviation="3" flood-color="#000" flood-opacity="0.1"/>
+    </filter>
+  </defs>
+
+  <!-- Google Header -->
+  <g transform="translate(40, 25)">
+    <!-- Google Logo -->
+    <g transform="translate(0, 4)">
+      <path d="M22.5 10.8c0-.8-.1-1.5-.2-2.2H11.5v4.2h6.2c-.3 1.4-1.1 2.6-2.3 3.4v2.8h3.7c2.2-2 3.4-5 3.4-8.2z" fill="#4285F4"/>
+      <path d="M11.5 22c3.1 0 5.7-1 7.6-2.8l-3.7-2.8c-1 1-2.4 1.5-3.9 1.5-3 0-5.5-2-6.4-4.8H1.2v3c1.9 3.8 5.8 6.1 10.3 6.1z" fill="#34A853"/>
+      <path d="M5.1 13.1c-.2-.7-.3-1.4-.3-2.1s.1-1.4.3-2.1V5.9H1.2C.4 7.5 0 9.2 0 11s.4 3.5 1.2 5.1l3.9-3z" fill="#FBBC05"/>
+      <path d="M11.5 4.4c1.7 0 3.2.6 4.4 1.7l3.3-3.3C17.2 1 14.6 0 11.5 0 7 0 3.1 2.3 1.2 6.1l3.9 3c.9-2.8 3.4-4.7 6.4-4.7z" fill="#EA4335"/>
+    </g>
+
+    <!-- Search Input Box -->
+    <rect x="100" y="-12" width="750" height="46" rx="23" fill="#ffffff" stroke="#dfe1e5" stroke-width="1" filter="url(#shadow2)"/>
+    <text x="125" y="17" font-size="16" fill="#202124">persianas em florianópolis</text>
+
+    <!-- Controls -->
+    <g transform="translate(730, 0)">
+      <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z" fill="#70757a" transform="translate(0, -3) scale(0.8)"/>
+      <line x1="28" y1="-2" x2="28" y2="22" stroke="#dadce0" stroke-width="1"/>
+      <!-- Mic & Lens -->
+      <circle cx="70" cy="9" r="5" fill="none" stroke="#4285F4" stroke-width="2"/>
+      <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z" fill="#4285F4" transform="translate(90, -4) scale(0.9)"/>
+    </g>
+  </g>
+
+  <!-- Divider Line & "Mais lugares" top -->
+  <g transform="translate(140, 95)">
+    <line x1="0" y1="15" x2="400" y2="15" stroke="#dadce0" stroke-width="1"/>
+    <rect x="70" y="0" width="260" height="30" rx="15" fill="#f1f3f4"/>
+    <text x="200" y="20" font-size="13" fill="#202124" font-weight="500" text-anchor="middle">Mais lugares ›</text>
+  </g>
+
+  <!-- Map slice right -->
+  <g transform="translate(620, 95)">
+    <rect x="0" y="0" width="380" height="90" fill="#aad3df"/>
+    <text x="140" y="40" font-size="12" fill="#4d7285">Baía Sul</text>
+  </g>
+
+  <!-- ORGANIC RESULT: RVM PERSIANAS -->
+  <g transform="translate(140, 180)">
+    <!-- Favicon (Black circle with stylized S / RVM logo) -->
+    <circle cx="16" cy="16" r="14" fill="#18181b"/>
+    <path d="M 10 10 C 14 6, 20 6, 22 11 C 24 16, 10 16, 10 21 C 10 26, 20 26, 22 22" stroke="#ffffff" stroke-width="3" fill="none" stroke-linecap="round"/>
+
+    <text x="42" y="14" font-size="14" fill="#202124" font-weight="500">RVM Persianas</text>
+    <text x="42" y="30" font-size="12" fill="#4d5156">https://rvmpersianas.com.br</text>
+
+    <!-- Three dots -->
+    <circle cx="550" cy="14" r="1.5" fill="#70757a"/>
+    <circle cx="550" cy="19" r="1.5" fill="#70757a"/>
+    <circle cx="550" cy="24" r="1.5" fill="#70757a"/>
+
+    <text x="0" y="58" font-size="20" fill="#1a0dab" font-weight="400">RVM Persianas | Persianas Sob Medida em Florianópolis e ...</text>
+
+    <text x="0" y="82" font-size="14" fill="#4d5156">
+      Os valores por modelo são: <tspan font-weight="700">Persiana</tspan> Rolô a partir de R$120/m², <tspan font-weight="700">Persiana</tspan> Horizontal 50mm a partir de
+    </text>
+    <text x="0" y="102" font-size="14" fill="#4d5156">
+      R$140/m², <tspan font-weight="700">Persiana</tspan> Romana a partir de R$150/m², <tspan font-weight="700">Persiana</tspan> ...
+    </text>
+
+    <!-- Location badge -->
+    <g transform="translate(0, 120)">
+      <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" fill="#1a73e8" transform="scale(0.7)"/>
+      <text x="18" y="11" font-size="13" fill="#4d5156" font-weight="500">Palhoça</text>
+    </g>
+  </g>
+</svg>`;
+
+// Save SVG 2
+const svg2Path = path.join(outputDir, 'case-rvm-persianas-florianopolis-google.svg');
+fs.writeFileSync(svg2Path, svg2Content);
+console.log('Saved SVG 2:', svg2Path);
+
+// Render PNG 2
+const png2Path = path.join(outputDir, 'case-rvm-persianas-florianopolis-google.png');
+sharp(Buffer.from(svg2Content))
+  .png()
+  .toFile(png2Path)
+  .then(() => console.log('Saved PNG 2:', png2Path))
+  .catch((err) => console.error('Error PNG 2:', err));

@@ -273,6 +273,22 @@ export const MAIN_ROUTES: RouteConfig[] = [
     type: 'main',
   },
   {
+    path: '/resultados/motofrete-centro-sao-paulo-seo',
+    title: 'Case SEO: Motofrete no Centro de São Paulo | Omar SEO',
+    description: 'Resultado orgânico documentado para uma pesquisa local diretamente relacionada ao serviço de motofrete/motoboy no Centro de São Paulo.',
+    priority: 0.85,
+    changefreq: 'monthly',
+    type: 'main',
+  },
+  {
+    path: '/resultados/rvm-persianas-florianopolis-seo',
+    title: 'Case SEO: RVM Persianas em Florianópolis e Lagoa (SC) | Omar SEO',
+    description: 'Presença orgânica e local documentada no Google para RVM Persianas em Florianópolis e Barra da Lagoa / Lagoa da Conceição (SC).',
+    priority: 0.85,
+    changefreq: 'monthly',
+    type: 'main',
+  },
+  {
     path: '/omar-skafi',
     title: 'Sobre Omar Skafi - Especialista em SEO e GEO | Omar SEO',
     description: 'Conheça Omar Skafi, especialista com sólida trajetória em SEO técnico, SEO local, Google Maps e GEO em Curitiba/PR.',

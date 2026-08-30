@@ -1021,6 +1021,184 @@ export default function Resultados() {
                 </div>
               </div>
             </div>
+
+            {/* CASE 10: Motofrete / Logística - Centro de São Paulo */}
+            <div className="p-6 sm:p-8 rounded-3xl bg-slate-950/90 border border-emerald-500/50 shadow-[0_0_35px_rgba(16,185,129,0.15)] space-y-6">
+              <div className="space-y-4">
+                <div className="flex flex-wrap items-center justify-between gap-3">
+                  <div className="space-y-1">
+                    <div className="flex flex-wrap items-center gap-2">
+                      <span className="text-[10px] font-bold uppercase tracking-wider text-emerald-400 bg-emerald-950/80 px-2.5 py-0.5 rounded-full border border-emerald-800/60">
+                        CASE #10 — SEO ORGÂNICO + LOCAL
+                      </span>
+                      <span className="text-[10px] font-bold uppercase tracking-wider text-amber-400 bg-amber-950/80 px-2.5 py-0.5 rounded-full border border-amber-800/60">
+                        São Paulo / SP (Fora de Curitiba)
+                      </span>
+                    </div>
+                    <h3 className="text-xl sm:text-2xl font-bold font-display text-white">
+                      Motofrete — Centro de São Paulo
+                    </h3>
+                    <p className="text-xs sm:text-sm text-slate-300">
+                      Presença orgânica documentada para uma intenção local de serviço de motofrete/motoboy no Centro de São Paulo.
+                    </p>
+                  </div>
+
+                  <Link
+                    to="/resultados/motofrete-centro-sao-paulo-seo"
+                    className="px-5 py-2.5 rounded-full bg-gradient-to-r from-emerald-500 to-cyan-500 hover:from-emerald-400 hover:to-cyan-400 text-slate-950 font-bold text-xs inline-flex items-center gap-2 shrink-0 transition-all shadow-[0_0_20px_rgba(16,185,129,0.3)]"
+                  >
+                    <span>Ver Evidência</span>
+                    <ArrowRight size={14} />
+                  </Link>
+                </div>
+
+                <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-center">
+                  {/* Screenshot Thumbnail */}
+                  <div className="lg:col-span-6 bg-white p-2 rounded-2xl border border-slate-800 overflow-hidden group relative">
+                    <Link to="/resultados/motofrete-centro-sao-paulo-seo" className="block">
+                      <img
+                        src="/images/cases/case-motofrete-sp-para-parana-google.png"
+                        alt="Comprovação de busca orgânica #1 no Google para Frete moto de são paulo para o paraná"
+                        width={1000}
+                        height={700}
+                        loading="lazy"
+                        className="w-full h-auto object-contain rounded-xl transition-transform duration-300 group-hover:scale-[1.02]"
+                      />
+                    </Link>
+                    <span className="text-[9px] text-emerald-600 block text-center font-bold mt-1">
+                      Comprovação Real #1 no Google — “Frete moto de são paulo para o paraná”
+                    </span>
+                  </div>
+
+                  {/* Details */}
+                  <div className="lg:col-span-6 space-y-3 text-xs">
+                    <div className="p-3.5 rounded-xl bg-[#0f1118] border border-slate-800 space-y-1">
+                      <span className="text-[10px] font-bold uppercase tracking-wider text-slate-400 block">
+                        Pesquisa Comprovada (#1 no Google)
+                      </span>
+                      <span className="text-xs font-bold text-yellow-300 font-mono">
+                        "Frete moto de são paulo para o paraná"
+                      </span>
+                    </div>
+
+                    <div className="p-3.5 rounded-xl bg-[#0f1118] border border-slate-800 space-y-1">
+                      <span className="text-[10px] font-bold uppercase tracking-wider text-slate-400 block">
+                        Intenção & Região Geográfica
+                      </span>
+                      <span className="text-xs font-bold text-emerald-400">
+                        Serviço Logístico Interestadual (SP → PR e Centro de SP)
+                      </span>
+                    </div>
+
+                    <div className="p-3.5 rounded-xl bg-[#0f1118] border border-slate-800 space-y-1">
+                      <span className="text-[10px] font-bold uppercase tracking-wider text-slate-400 block">
+                        Posição Registrada
+                      </span>
+                      <span className="text-xs font-bold text-cyan-400">
+                        1º Lugar Absoluto no Google desbancando grandes portais nacionais de frete
+                      </span>
+                    </div>
+
+                    <div className="pt-2">
+                      <Link
+                        to="/resultados/motofrete-centro-sao-paulo-seo"
+                        className="text-emerald-400 hover:text-emerald-300 font-bold inline-flex items-center gap-1.5 text-xs"
+                      >
+                        <span>Acessar documentação completa do Case #10</span>
+                        <ArrowRight size={14} />
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Featured Case #11 Block - RVM Persianas (Florianópolis / SC) */}
+            <div className="pt-6 border-t border-slate-800/80">
+              <div className="bg-[#0b0c10] border border-emerald-500/40 rounded-3xl p-6 sm:p-8 space-y-6 hover:border-emerald-500/70 transition-all shadow-[0_0_30px_rgba(16,185,129,0.1)]">
+                <div className="flex flex-wrap items-center justify-between gap-3 pb-4 border-b border-slate-800">
+                  <div className="flex items-center gap-3">
+                    <div className="p-3 rounded-2xl bg-emerald-950/80 text-emerald-400 border border-emerald-800/80">
+                      <Blinds size={24} />
+                    </div>
+                    <div>
+                      <span className="text-[10px] font-extrabold uppercase tracking-widest text-emerald-400 bg-emerald-950/90 px-2.5 py-0.5 rounded border border-emerald-800">
+                        Case #11 — SEO Local + Orgânico (Santa Catarina)
+                      </span>
+                      <h3 className="text-xl sm:text-2xl font-bold font-display text-white mt-1">
+                        RVM Persianas: Persianas Sob Medida em Florianópolis &amp; Lagoa
+                      </h3>
+                    </div>
+                  </div>
+                  <Link
+                    to="/resultados/rvm-persianas-florianopolis-seo"
+                    className="px-4 py-2 rounded-full bg-emerald-950 hover:bg-emerald-900 text-emerald-400 border border-emerald-800 text-xs font-bold inline-flex items-center gap-2 transition-colors"
+                  >
+                    <span>Ver Case #11 Completo</span>
+                    <ArrowRight size={14} />
+                  </Link>
+                </div>
+
+                <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-center">
+                  {/* Visual Evidence Image */}
+                  <div className="lg:col-span-6 bg-white p-2 rounded-2xl border border-slate-800 overflow-hidden group relative">
+                    <Link to="/resultados/rvm-persianas-florianopolis-seo" className="block">
+                      <img
+                        src="/images/cases/case-rvm-persianas-lagoa-sc-google.png"
+                        alt="Comprovação de busca orgânica no Google para persianas na lagoa sc (RVM Persianas)"
+                        width={1000}
+                        height={700}
+                        loading="lazy"
+                        className="w-full h-auto object-contain rounded-xl transition-transform duration-300 group-hover:scale-[1.02]"
+                      />
+                    </Link>
+                    <span className="text-[9px] text-emerald-600 block text-center font-bold mt-1">
+                      Comprovação Real no Google — “persianas na lagoa sc” (Barra da Lagoa / Florianópolis)
+                    </span>
+                  </div>
+
+                  {/* Details */}
+                  <div className="lg:col-span-6 space-y-4">
+                    <div className="p-3.5 rounded-xl bg-[#0f1118] border border-slate-800 space-y-1">
+                      <span className="text-[10px] font-bold uppercase tracking-wider text-slate-400 block">
+                        Pesquisa Comprovada (SC)
+                      </span>
+                      <span className="text-xs font-bold text-yellow-300 font-mono">
+                        "persianas na lagoa sc" &amp; "persianas em florianópolis"
+                      </span>
+                    </div>
+
+                    <div className="p-3.5 rounded-xl bg-[#0f1118] border border-slate-800 space-y-1">
+                      <span className="text-[10px] font-bold uppercase tracking-wider text-slate-400 block">
+                        Intenção &amp; Região Geográfica
+                      </span>
+                      <span className="text-xs font-bold text-emerald-400">
+                        Persianas Sob Medida (Florianópolis, Barra da Lagoa, Palhoça / SC)
+                      </span>
+                    </div>
+
+                    <div className="p-3.5 rounded-xl bg-[#0f1118] border border-slate-800 space-y-1">
+                      <span className="text-[10px] font-bold uppercase tracking-wider text-slate-400 block">
+                        Posição Registrada
+                      </span>
+                      <span className="text-xs font-bold text-cyan-400">
+                        Destaque orgânico de bairro e presença no pacote local do Google
+                      </span>
+                    </div>
+
+                    <div className="pt-2">
+                      <Link
+                        to="/resultados/rvm-persianas-florianopolis-seo"
+                        className="text-emerald-400 hover:text-emerald-300 font-bold inline-flex items-center gap-1.5 text-xs"
+                      >
+                        <span>Acessar documentação completa do Case #11</span>
+                        <ArrowRight size={14} />
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
 
           {/* Seção Cluster: Quando a pesquisa vira uma pergunta */}

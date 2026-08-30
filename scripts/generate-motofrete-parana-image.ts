@@ -1,0 +1,175 @@
+import fs from 'fs';
+import path from 'path';
+import sharp from 'sharp';
+
+const outputDir = path.join(process.cwd(), 'public', 'images', 'cases');
+if (!fs.existsSync(outputDir)) {
+  fs.mkdirSync(outputDir, { recursive: true });
+}
+
+// Pixel-perfect SVG matching user uploaded screenshot 2026-08-30_13-09-47.png
+const svgContent = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 700" width="1000" height="700" style="background:#ffffff;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;">
+  <defs>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="1" stdDeviation="3" flood-color="#000" flood-opacity="0.1"/>
+    </filter>
+    <marker id="arrow" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#c0392b" />
+    </marker>
+  </defs>
+
+  <!-- Google Search Header -->
+  <g transform="translate(60, 30)">
+    <!-- Google Logo -->
+    <g transform="translate(0, 4)">
+      <path d="M22.5 10.8c0-.8-.1-1.5-.2-2.2H11.5v4.2h6.2c-.3 1.4-1.1 2.6-2.3 3.4v2.8h3.7c2.2-2 3.4-5 3.4-8.2z" fill="#4285F4"/>
+      <path d="M11.5 22c3.1 0 5.7-1 7.6-2.8l-3.7-2.8c-1 1-2.4 1.5-3.9 1.5-3 0-5.5-2-6.4-4.8H1.2v3c1.9 3.8 5.8 6.1 10.3 6.1z" fill="#34A853"/>
+      <path d="M5.1 13.1c-.2-.7-.3-1.4-.3-2.1s.1-1.4.3-2.1V5.9H1.2C.4 7.5 0 9.2 0 11s.4 3.5 1.2 5.1l3.9-3z" fill="#FBBC05"/>
+      <path d="M11.5 4.4c1.7 0 3.2.6 4.4 1.7l3.3-3.3C17.2 1 14.6 0 11.5 0 7 0 3.1 2.3 1.2 6.1l3.9 3c.9-2.8 3.4-4.7 6.4-4.7z" fill="#EA4335"/>
+    </g>
+
+    <!-- Search Input Box -->
+    <rect x="110" y="-12" width="750" height="48" rx="24" fill="#ffffff" stroke="#dfe1e5" stroke-width="1" filter="url(#shadow)"/>
+    <text x="140" y="19" font-size="16" fill="#202124" font-weight="400">Frete moto de são paulo para o paraná</text>
+
+    <!-- Controls inside search box -->
+    <g transform="translate(710, 2)">
+      <!-- X Clear -->
+      <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z" fill="#70757a" transform="translate(0, -3) scale(0.9)"/>
+      <!-- Vertical Divider -->
+      <line x1="32" y1="-2" x2="32" y2="24" stroke="#dadce0" stroke-width="1"/>
+      <!-- Keyboard -->
+      <rect x="44" y="2" width="18" height="12" rx="2" fill="none" stroke="#70757a" stroke-width="1.3"/>
+      <line x1="47" y1="6" x2="49" y2="6" stroke="#70757a" stroke-width="1"/>
+      <line x1="51" y1="6" x2="53" y2="6" stroke="#70757a" stroke-width="1"/>
+      <!-- Mic -->
+      <path d="M12 14c1.66 0 3-1.34 3-3V5c0-1.66-1.34-3-3-3S9 3.34 9 5v6c0 1.66 1.34 3 3 3z" fill="#4285F4" transform="translate(68, -4) scale(0.9)"/>
+      <path d="M17 11c0 2.76-2.24 5-5 5s-5-2.24-5-5H5c0 3.53 2.61 6.43 6 6.92V21h2v-3.08c3.39-.49 6-3.39 6-6.92h-2z" fill="#34A853" transform="translate(68, -4) scale(0.9)"/>
+      <!-- Lens -->
+      <circle cx="106" cy="10" r="6" fill="none" stroke="#4285F4" stroke-width="2"/>
+      <circle cx="106" cy="10" r="3" fill="#FBBC05"/>
+      <!-- Search Magnifier -->
+      <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z" fill="#4285F4" transform="translate(126, -3) scale(0.9)"/>
+    </g>
+  </g>
+
+  <!-- Divider line -->
+  <line x1="0" y1="95" x2="1000" y2="95" stroke="#ebebeb" stroke-width="1"/>
+
+  <!-- SERP RESULTS AREA -->
+  <g transform="translate(100, 115)">
+
+    <!-- RESULT #1: MotoFrete Curitiba (TARGET #1) -->
+    <g transform="translate(0, 0)">
+      <!-- Favicon Circle Green with MF -->
+      <circle cx="14" cy="14" r="14" fill="#00b050"/>
+      <text x="14" y="19" font-size="11" font-weight="900" fill="#ffffff" text-anchor="middle">MF</text>
+
+      <!-- Domain Title & Subdomain Breadcrumb -->
+      <text x="42" y="12" font-size="14" fill="#202124" font-weight="500">MotoFrete Curitiba</text>
+      <text x="42" y="29" font-size="12" fill="#4d5156" font-weight="400">https://motofretecuritiba.com.br › servicos</text>
+
+      <!-- Options 3 Dots -->
+      <circle cx="640" cy="14" r="1.5" fill="#70757a"/>
+      <circle cx="640" cy="19" r="1.5" fill="#70757a"/>
+      <circle cx="640" cy="24" r="1.5" fill="#70757a"/>
+
+      <!-- Result Title Link -->
+      <text x="0" y="56" font-size="20" fill="#1a0dab" font-weight="400">Serviços Moto Frete Curitiba - Moto Boy, HR, Van e Utilitários</text>
+
+      <!-- Snippet -->
+      <text x="0" y="80" font-size="14" fill="#4d5156" line-height="1.5">
+        Serviços completos: <tspan font-weight="700">Moto</tspan> Boy Curitiba, Entregas HR, Van e Utilitários. Entregas 24h, taxa a partir de R$
+      </text>
+      <text x="0" y="100" font-size="14" fill="#4d5156">
+        25, rastreamento incluso. WhatsApp (41) 98854-5444.
+      </text>
+    </g>
+
+    <!-- RESULT #2: Zurcad Transportes -->
+    <g transform="translate(0, 145)">
+      <!-- Favicon -->
+      <circle cx="14" cy="14" r="14" fill="#f5f5f5" stroke="#dadce0" stroke-width="1"/>
+      <text x="14" y="14" font-size="8" font-weight="900" fill="#d32f2f" text-anchor="middle">ZUR</text>
+      <text x="14" y="21" font-size="7" font-weight="700" fill="#1976d2" text-anchor="middle">CAD</text>
+
+      <text x="42" y="12" font-size="14" fill="#202124" font-weight="500">Zurcad Transportes</text>
+      <text x="42" y="29" font-size="12" fill="#4d5156" font-weight="400">https://zurcad.com.br › Rotas</text>
+
+      <text x="0" y="56" font-size="20" fill="#1a0dab" font-weight="400">Frete São Paulo → Curitiba | Cotação grátis em 2h (horári...</text>
+
+      <text x="0" y="80" font-size="14" fill="#4d5156">
+        A Zurcad Transportes realiza frete de São Paulo para Curitiba com distância de referência de 538
+      </text>
+      <text x="0" y="100" font-size="14" fill="#4d5156">
+        km e prazo médio de 1 a 3 dias úteis. Atendemos carga ...
+      </text>
+    </g>
+
+    <!-- RESULT #3: camion.com.br -->
+    <g transform="translate(0, 290)">
+      <circle cx="14" cy="14" r="14" fill="#d32f2f"/>
+      <path d="M 7 14 L 21 14 L 18 10 L 10 10 Z" fill="#ffffff"/>
+      <circle cx="10" cy="17" r="2" fill="#ffffff"/>
+      <circle cx="18" cy="17" r="2" fill="#ffffff"/>
+
+      <text x="42" y="12" font-size="14" fill="#202124" font-weight="500">camion.com.br</text>
+      <text x="42" y="29" font-size="12" fill="#4d5156" font-weight="400">https://camion.com.br › Home</text>
+
+      <text x="0" y="56" font-size="20" fill="#1a0dab" font-weight="400">Transporte de Moto para Outro Estado a partir de R$ 900</text>
+
+      <text x="0" y="80" font-size="14" fill="#4d5156">
+        Transporte de <tspan font-weight="700">moto</tspan> para outro estado na cegonha a partir de R$900, com seguro incluso. Compare em
+      </text>
+      <text x="0" y="100" font-size="14" fill="#4d5156">
+        mais de 30 transportadoras verificadas.
+      </text>
+    </g>
+
+    <!-- RESULT #4: Fretebras -->
+    <g transform="translate(0, 435)">
+      <circle cx="14" cy="14" r="14" fill="#e0f7fa"/>
+      <text x="14" y="17" font-size="8" font-weight="700" fill="#00838f" text-anchor="middle">frete</text>
+
+      <text x="42" y="12" font-size="14" fill="#202124" font-weight="500">Fretebras</text>
+      <text x="42" y="29" font-size="12" fill="#4d5156" font-weight="400">https://www.fretebras.com.br › carga-de-sp › carga-para-pr</text>
+
+      <text x="0" y="56" font-size="20" fill="#1a0dab" font-weight="400">Fretes de São Paulo para Paraná</text>
+
+      <text x="0" y="80" font-size="14" fill="#4d5156">
+        Encontre os melhores fretes de São Paulo para Paraná na Fretebras, com variedade de cargas da
+      </text>
+      <text x="0" y="100" font-size="14" fill="#4d5156">
+        indústria, construção e agronegócio, para você que é motorista ...
+      </text>
+      <text x="0" y="120" font-size="13" fill="#70757a">
+        Não inclui: <tspan text-decoration="line-through">moto</tspan> | Precisa incluir: <tspan font-weight="700" fill="#1a0dab">moto</tspan>
+      </text>
+    </g>
+
+  </g>
+
+  <!-- RED ARROWS (REPRODUCING USER'S RED ANNOTATIONS IN SCREENSHOT) -->
+  <!-- Top Left Arrow pointing to MF favicon -->
+  <path d="M 40 100 L 90 125" stroke="#c0392b" stroke-width="5" fill="none" stroke-linecap="round" marker-end="url(#arrow)" />
+
+  <!-- Top Center Arrow pointing to Domain Title -->
+  <path d="M 470 95 L 390 115" stroke="#c0392b" stroke-width="5" fill="none" stroke-linecap="round" marker-end="url(#arrow)" />
+
+  <!-- Big Long Arrow from Bottom Right pointing up-left to #1 Title -->
+  <path d="M 850 540 L 640 200" stroke="#c0392b" stroke-width="6" fill="none" stroke-linecap="round" marker-end="url(#arrow)" />
+
+</svg>`;
+
+// Save SVG
+const svgPath = path.join(outputDir, 'case-motofrete-sp-para-parana-google.svg');
+fs.writeFileSync(svgPath, svgContent);
+console.log('Saved SVG:', svgPath);
+
+// Convert to PNG with sharp
+const pngPath = path.join(outputDir, 'case-motofrete-sp-para-parana-google.png');
+sharp(Buffer.from(svgContent))
+  .png()
+  .toFile(pngPath)
+  .then(() => console.log('Saved PNG:', pngPath))
+  .catch((err) => console.error('Error rendering PNG:', err));

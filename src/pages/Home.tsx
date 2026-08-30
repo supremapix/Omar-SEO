@@ -594,7 +594,7 @@ export default function Home() {
             </div>
 
             {/* Case 09 Compact Card - Casas Pinheirão (IA + Orgânico) */}
-            <div className="p-5 rounded-2xl bg-slate-950/90 border border-cyan-500/60 hover:border-cyan-300 transition-colors space-y-3 flex flex-col justify-between group shadow-[0_0_15px_rgba(34,211,238,0.15)] sm:col-span-2 lg:col-span-1">
+            <div className="p-5 rounded-2xl bg-slate-950/90 border border-cyan-500/60 hover:border-cyan-300 transition-colors space-y-3 flex flex-col justify-between group shadow-[0_0_15px_rgba(34,211,238,0.15)]">
               <div className="space-y-2">
                 <div className="flex items-center gap-1.5">
                   <span className="text-[10px] font-extrabold uppercase tracking-wider text-cyan-400 bg-cyan-950/80 px-2 py-0.5 rounded border border-cyan-800/60 inline-block">
@@ -622,13 +622,73 @@ export default function Home() {
                 </Link>
               </div>
             </div>
+
+            {/* Case 10 Compact Card - Motofrete (Centro de São Paulo / SP) */}
+            <div className="p-5 rounded-2xl bg-slate-950/90 border border-emerald-500/60 hover:border-emerald-300 transition-colors space-y-3 flex flex-col justify-between group shadow-[0_0_15px_rgba(16,185,129,0.15)] sm:col-span-2 lg:col-span-1">
+              <div className="space-y-2">
+                <div className="flex items-center gap-1.5">
+                  <span className="text-[10px] font-extrabold uppercase tracking-wider text-emerald-400 bg-emerald-950/80 px-2 py-0.5 rounded border border-emerald-800/60 inline-block">
+                    Case #10 — SEO Local
+                  </span>
+                  <span className="text-[10px] font-bold uppercase tracking-wider text-amber-400">
+                    São Paulo / SP
+                  </span>
+                </div>
+                <h4 className="text-base font-bold text-white group-hover:text-emerald-300 transition-colors">
+                  Motofrete (#1 no Google)
+                </h4>
+                <p className="text-xs text-slate-300 leading-relaxed font-mono">
+                  “Frete moto de são paulo para o paraná” — 1º lugar orgânico.
+                </p>
+              </div>
+
+              <div className="pt-2 border-t border-slate-800/80">
+                <Link
+                  to="/resultados/motofrete-centro-sao-paulo-seo"
+                  className="text-xs font-bold text-emerald-400 hover:text-emerald-300 inline-flex items-center gap-1 group-hover:translate-x-1 transition-transform"
+                >
+                  <span>Ver Case Motofrete SP</span>
+                  <ChevronRight size={14} />
+                </Link>
+              </div>
+            </div>
+
+            {/* Case 11 - RVM Persianas (Florianópolis / SC) */}
+            <div className="bg-slate-950 p-5 rounded-2xl border border-slate-800 hover:border-emerald-500/50 transition-all space-y-3 flex flex-col justify-between group">
+              <div className="space-y-2">
+                <div className="flex items-center justify-between">
+                  <span className="text-[10px] font-extrabold uppercase tracking-wider text-emerald-400 bg-emerald-950/80 px-2 py-0.5 rounded border border-emerald-800/60 inline-block">
+                    Case #11 — SEO Local + Orgânico
+                  </span>
+                  <span className="text-[10px] font-bold uppercase tracking-wider text-amber-400">
+                    Florianópolis / SC
+                  </span>
+                </div>
+                <h4 className="text-base font-bold text-white group-hover:text-emerald-300 transition-colors">
+                  RVM Persianas (Florianópolis &amp; Lagoa)
+                </h4>
+                <p className="text-xs text-slate-300 leading-relaxed font-mono">
+                  “persianas na lagoa sc” — destaque orgânico em Barra da Lagoa.
+                </p>
+              </div>
+
+              <div className="pt-2 border-t border-slate-800/80">
+                <Link
+                  to="/resultados/rvm-persianas-florianopolis-seo"
+                  className="text-xs font-bold text-emerald-400 hover:text-emerald-300 inline-flex items-center gap-1 group-hover:translate-x-1 transition-transform"
+                >
+                  <span>Ver Case RVM Persianas</span>
+                  <ChevronRight size={14} />
+                </Link>
+              </div>
+            </div>
           </div>
 
           {/* Consolidated Section: Seu cliente já não pesquisa apenas palavras. Ele pergunta. */}
           <div className="p-6 sm:p-8 rounded-3xl bg-slate-950/90 border border-cyan-500/40 space-y-4 text-left">
             <div className="space-y-1">
               <span className="text-[10px] font-bold uppercase tracking-widest text-cyan-400 bg-cyan-950/80 px-2.5 py-0.5 rounded border border-cyan-800/60 inline-block">
-                Padrão em Buscas Comerciais Conversacionais
+                Padrão em Buscas Comerciais Conversacionais e Locais
               </span>
               <h3 className="text-xl sm:text-2xl font-bold font-display text-white">
                 Seu cliente já não pesquisa apenas palavras. Ele pergunta.
@@ -638,7 +698,7 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 text-xs pt-2">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-3 text-xs pt-2">
               <div className="p-3.5 rounded-xl bg-slate-900/80 border border-slate-800 space-y-1">
                 <span className="text-cyan-400 font-bold block">Comfort Divisórias</span>
                 <p className="text-slate-300 font-mono text-[11px]">“qual empresa divisorias eucatex em curitiba”</p>
@@ -657,6 +717,11 @@ export default function Home() {
               <div className="p-3.5 rounded-xl bg-slate-900/80 border border-slate-800 space-y-1">
                 <span className="text-cyan-400 font-bold block">Casas Pinheirão</span>
                 <p className="text-slate-300 font-mono text-[11px]">“quem vende casas pre fabricadas meu terreno...”</p>
+              </div>
+
+              <div className="p-3.5 rounded-xl bg-slate-900/80 border border-slate-800 space-y-1">
+                <span className="text-emerald-400 font-bold block">Motofrete (SP)</span>
+                <p className="text-slate-300 font-mono text-[11px]">“Motofrete centro São Paulo”</p>
               </div>
             </div>
 
