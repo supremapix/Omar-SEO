@@ -1288,6 +1288,194 @@ export default function Resultados() {
                 </div>
               </div>
             </div>
+
+            {/* Featured Case #13 Block - Pizzo (Balneário Camboriú / SC) */}
+            <div className="pt-6 border-t border-slate-800/80">
+              <div className="bg-[#0b0c10] border border-emerald-500/50 rounded-3xl p-6 sm:p-8 space-y-6 hover:border-emerald-500/80 transition-all shadow-[0_0_35px_rgba(16,185,129,0.15)]">
+                <div className="flex flex-wrap items-center justify-between gap-3 pb-4 border-b border-slate-800">
+                  <div className="flex items-center gap-3">
+                    <div className="p-3 rounded-2xl bg-emerald-950/80 text-emerald-400 border border-emerald-800/80">
+                      <Cpu size={24} />
+                    </div>
+                    <div>
+                      <span className="text-[10px] font-extrabold uppercase tracking-widest text-emerald-400 bg-emerald-950/90 px-2.5 py-0.5 rounded border border-emerald-800">
+                        Case #13 — Engenharia / Construção (Balneário Camboriú)
+                      </span>
+                      <h3 className="text-xl sm:text-2xl font-bold font-display text-white mt-1">
+                        Pizzo (Gerenciamento de Obras)
+                      </h3>
+                    </div>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <span className="px-3 py-1 rounded-full bg-cyan-950/90 text-cyan-400 border border-cyan-800/80 text-xs font-bold">
+                      SEO Orgânico + Google IA
+                    </span>
+                    <Link
+                      to="/resultados/pizzo-gerenciamento-obras-balneario-camboriu"
+                      className="px-4 py-2 rounded-full bg-emerald-950 hover:bg-emerald-900 text-emerald-400 border border-emerald-800 text-xs font-bold inline-flex items-center gap-2 transition-colors"
+                    >
+                      <span>Ver Evidência</span>
+                      <ArrowRight size={14} />
+                    </Link>
+                  </div>
+                </div>
+
+                <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-center">
+                  {/* Visual Evidence Image */}
+                  <div className="lg:col-span-6 bg-white p-2 rounded-2xl border border-slate-800 overflow-hidden group relative">
+                    <Link to="/resultados/pizzo-gerenciamento-obras-balneario-camboriu" className="block">
+                      <img
+                        src="/images/cases/case-pizzo-gerenciamento-obras-balneario-camboriu-google-ai.png"
+                        alt="Pizzo no Google e na Visão Geral por IA para gerenciamento de obras em Balneário Camboriú"
+                        width={1000}
+                        height={620}
+                        loading="lazy"
+                        className="w-full h-auto object-contain rounded-xl transition-transform duration-300 group-hover:scale-[1.02]"
+                      />
+                    </Link>
+                    <span className="text-[9px] text-emerald-600 block text-center font-bold mt-1">
+                      Comprovação Real — Google Orgânico + Visão Geral por IA (pizzoo.com.br)
+                    </span>
+                  </div>
+
+                  {/* Details */}
+                  <div className="lg:col-span-6 space-y-4">
+                    <div className="p-3.5 rounded-xl bg-[#0f1118] border border-slate-800 space-y-1">
+                      <span className="text-[10px] font-bold uppercase tracking-wider text-slate-400 block">
+                        Consultas Documentadas
+                      </span>
+                      <span className="text-xs font-bold text-cyan-400 font-mono block">
+                        1. "gerenciamento de obras em balneário camboriú"
+                      </span>
+                      <span className="text-xs font-bold text-yellow-300 font-mono block">
+                        2. "Quanto Custa Gerenciar Obra em Balneário Camboriú?"
+                      </span>
+                    </div>
+
+                    <div className="p-3.5 rounded-xl bg-[#0f1118] border border-slate-800 space-y-1">
+                      <span className="text-[10px] font-bold uppercase tracking-wider text-slate-400 block">
+                        Superfícies de Descoberta Identificadas
+                      </span>
+                      <span className="text-xs font-bold text-emerald-400 block">
+                        1. Google Search Orgânico
+                      </span>
+                      <span className="text-xs font-bold text-cyan-400 block">
+                        2. Visão Geral Criada por IA do Google
+                      </span>
+                    </div>
+
+                    <div className="p-3.5 rounded-xl bg-[#0f1118] border border-slate-800 space-y-1">
+                      <span className="text-[10px] font-bold uppercase tracking-wider text-slate-400 block">
+                        Destaque Estratégico
+                      </span>
+                      <span className="text-xs font-bold text-white">
+                        Presença documentada no resultado orgânico e entre as fontes citadas na IA para busca comercial de alto padrão.
+                      </span>
+                    </div>
+
+                    <div className="pt-2">
+                      <Link
+                        to="/resultados/pizzo-gerenciamento-obras-balneario-camboriu"
+                        className="text-emerald-400 hover:text-emerald-300 font-bold inline-flex items-center gap-1.5 text-xs"
+                      >
+                        <span>Acessar documentação completa do Case #13 (Pizzo)</span>
+                        <ArrowRight size={14} />
+                      </Link>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Case #14 Block - PVS Decore (São José dos Pinhais / PR) */}
+            <div className="p-6 sm:p-8 rounded-3xl bg-slate-950/90 border border-emerald-500/60 shadow-[0_0_35px_rgba(16,185,129,0.15)] space-y-6 relative overflow-hidden">
+              <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4 border-b border-slate-800 pb-5">
+                <div className="space-y-1">
+                  <div className="flex flex-wrap items-center gap-2">
+                    <span className="text-[10px] font-extrabold uppercase tracking-widest text-emerald-400 bg-emerald-950/90 px-2.5 py-0.5 rounded border border-emerald-800">
+                      Case #14 — Pisos & Revestimentos (São José dos Pinhais)
+                    </span>
+                    <span className="text-[10px] font-bold uppercase tracking-widest text-cyan-400 bg-cyan-950/80 px-2.5 py-0.5 rounded border border-cyan-800/60">
+                      GOOGLE IA • GEO • SEO LOCAL
+                    </span>
+                  </div>
+                  <h3 className="text-xl sm:text-2xl font-bold font-display text-white mt-1">
+                    PVS Decore na Visão Geral criada por IA do Google
+                  </h3>
+                  <p className="text-xs sm:text-sm text-slate-300">
+                    A PVS Decore é apresentada na experiência de IA do Google para uma pergunta conversacional comercial sobre quem instala pisos vinílicos em São José dos Pinhais.
+                  </p>
+                </div>
+                <div className="flex items-center gap-2">
+                  <Link
+                    to="/resultados/pvs-decore-pisos-vinilicos-sao-jose-dos-pinhais"
+                    className="px-4 py-2 rounded-full bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold text-xs inline-flex items-center gap-2 transition-colors shadow-[0_0_20px_rgba(16,185,129,0.3)]"
+                  >
+                    <span>Ver Evidência</span>
+                    <ArrowRight size={14} />
+                  </Link>
+                </div>
+              </div>
+
+              <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-center">
+                {/* Visual Evidence Image */}
+                <div className="lg:col-span-6 bg-white p-2 rounded-2xl border border-slate-800 overflow-hidden group relative">
+                  <Link to="/resultados/pvs-decore-pisos-vinilicos-sao-jose-dos-pinhais" className="block">
+                    <img
+                      src="/images/cases/case-pvs-decore-google-ia-pisos-vinilicos-sao-jose-dos-pinhais.png"
+                      alt="PVS Decore apresentada pela IA do Google para quem instala pisos vinílicos em São José dos Pinhais"
+                      width={1000}
+                      height={640}
+                      loading="lazy"
+                      className="w-full h-auto object-contain rounded-xl transition-transform duration-300 group-hover:scale-[1.02]"
+                    />
+                  </Link>
+                  <span className="text-[9px] text-emerald-600 block text-center font-bold mt-1">
+                    Captura Real da SERP — PVS Decore na Visão Geral criada por IA
+                  </span>
+                </div>
+
+                {/* Details */}
+                <div className="lg:col-span-6 space-y-4">
+                  <div className="p-3.5 rounded-xl bg-[#0f1118] border border-slate-800 space-y-1">
+                    <span className="text-[10px] font-bold uppercase tracking-wider text-slate-400 block">
+                      Consulta Original Registrada
+                    </span>
+                    <span className="text-xs font-bold text-yellow-300 font-mono block">
+                      “quem instala Pisos vinilicos São José dos Pinhais?”
+                    </span>
+                  </div>
+
+                  <div className="p-3.5 rounded-xl bg-[#0f1118] border border-slate-800 space-y-1">
+                    <span className="text-[10px] font-bold uppercase tracking-wider text-slate-400 block">
+                      Intenção Semântica & Cidade
+                    </span>
+                    <span className="text-xs font-bold text-emerald-400 block">
+                      Descoberta de fornecedor de instalação / São José dos Pinhais, PR
+                    </span>
+                  </div>
+
+                  <div className="p-3.5 rounded-xl bg-[#0f1118] border border-slate-800 space-y-1">
+                    <span className="text-[10px] font-bold uppercase tracking-wider text-slate-400 block">
+                      Resultado Factual
+                    </span>
+                    <span className="text-xs font-bold text-white">
+                      PVS Decore apresentada entre as empresas recomendadas pela Visão Geral criada por IA do Google.
+                    </span>
+                  </div>
+
+                  <div className="pt-2">
+                    <Link
+                      to="/resultados/pvs-decore-pisos-vinilicos-sao-jose-dos-pinhais"
+                      className="text-emerald-400 hover:text-emerald-300 font-bold inline-flex items-center gap-1.5 text-xs"
+                    >
+                      <span>Acessar documentação completa do Case #14 (PVS Decore)</span>
+                      <ArrowRight size={14} />
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
 
           {/* Seção Cluster: Quando a pesquisa vira uma pergunta */}
@@ -1295,28 +1483,44 @@ export default function Resultados() {
             <div className="space-y-1">
               <div className="inline-flex items-center gap-2 text-[11px] font-bold uppercase tracking-widest text-cyan-400 bg-cyan-950/80 px-2.5 py-0.5 rounded-full border border-cyan-800/60">
                 <Sparkles size={12} />
-                <span>Quando a Pesquisa Vira uma Pergunta</span>
+                <span>Empresas Encontradas nas Buscas com IA</span>
               </div>
               <h2 className="text-xl sm:text-2xl font-bold font-display text-white">
-                Cases documentados de empresas encontradas quando consumidores descrevem o que precisam
+                Evidências reais de clientes apresentados em experiências de busca com Inteligência Artificial
               </h2>
               <p className="text-xs sm:text-sm text-slate-300">
                 Evidências reais de empresas parceiras que aparecem no Google quando clientes pesquisam utilizando perguntas conversacionais completas:
               </p>
             </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 text-xs">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-3 text-xs">
+              <Link
+                to="/resultados/pvs-decore-pisos-vinilicos-sao-jose-dos-pinhais"
+                className="p-3.5 rounded-2xl bg-slate-900/90 border border-emerald-500/50 hover:border-emerald-400 transition-all space-y-2 group block"
+              >
+                <span className="text-[10px] font-bold uppercase tracking-wider text-emerald-400 block">
+                  PVS Decore (SJP)
+                </span>
+                <p className="font-mono text-white text-[11px] font-bold group-hover:text-emerald-300 transition-colors">
+                  "quem instala Pisos vinilicos São José dos Pinhais?"
+                </p>
+                <span className="text-emerald-400 font-bold inline-flex items-center gap-1 text-[10px] pt-1">
+                  <span>Ver Case #14</span>
+                  <ChevronRight size={12} />
+                </span>
+              </Link>
+
               <Link
                 to="/resultados/comfort-divisorias-google-ia-curitiba"
-                className="p-4 rounded-2xl bg-slate-900/80 border border-slate-800 hover:border-cyan-500/50 transition-all space-y-2 group block"
+                className="p-3.5 rounded-2xl bg-slate-900/80 border border-slate-800 hover:border-cyan-500/50 transition-all space-y-2 group block"
               >
                 <span className="text-[10px] font-bold uppercase tracking-wider text-cyan-400 block">
                   Comfort Divisórias
                 </span>
-                <p className="font-mono text-white text-xs font-bold group-hover:text-cyan-300 transition-colors">
+                <p className="font-mono text-white text-[11px] font-bold group-hover:text-cyan-300 transition-colors">
                   "qual empresa divisorias eucatex em curitiba"
                 </p>
-                <span className="text-cyan-400 font-bold inline-flex items-center gap-1 text-[11px] pt-1">
+                <span className="text-cyan-400 font-bold inline-flex items-center gap-1 text-[10px] pt-1">
                   <span>Ver Case #05</span>
                   <ChevronRight size={12} />
                 </span>
@@ -1324,15 +1528,15 @@ export default function Resultados() {
 
               <Link
                 to="/resultados/ky-drywall-google-ia-curitiba"
-                className="p-4 rounded-2xl bg-slate-900/80 border border-slate-800 hover:border-cyan-500/50 transition-all space-y-2 group block"
+                className="p-3.5 rounded-2xl bg-slate-900/80 border border-slate-800 hover:border-cyan-500/50 transition-all space-y-2 group block"
               >
                 <span className="text-[10px] font-bold uppercase tracking-wider text-cyan-400 block">
                   KY Drywall
                 </span>
-                <p className="font-mono text-white text-xs font-bold group-hover:text-cyan-300 transition-colors">
+                <p className="font-mono text-white text-[11px] font-bold group-hover:text-cyan-300 transition-colors">
                   "qual empresa drywall em curitiba"
                 </p>
-                <span className="text-cyan-400 font-bold inline-flex items-center gap-1 text-[11px] pt-1">
+                <span className="text-cyan-400 font-bold inline-flex items-center gap-1 text-[10px] pt-1">
                   <span>Ver Case #06</span>
                   <ChevronRight size={12} />
                 </span>
@@ -1340,15 +1544,15 @@ export default function Resultados() {
 
               <Link
                 to="/resultados/omega-revestimentos-acm-seo-geo-curitiba"
-                className="p-4 rounded-2xl bg-slate-900/80 border border-slate-800 hover:border-cyan-500/50 transition-all space-y-2 group block"
+                className="p-3.5 rounded-2xl bg-slate-900/80 border border-slate-800 hover:border-cyan-500/50 transition-all space-y-2 group block"
               >
                 <span className="text-[10px] font-bold uppercase tracking-wider text-cyan-400 block">
                   Ômega Revestimentos
                 </span>
-                <p className="font-mono text-white text-xs font-bold group-hover:text-cyan-300 transition-colors">
+                <p className="font-mono text-white text-[11px] font-bold group-hover:text-cyan-300 transition-colors">
                   "qual empresa instala acm em curitiba"
                 </p>
-                <span className="text-cyan-400 font-bold inline-flex items-center gap-1 text-[11px] pt-1">
+                <span className="text-cyan-400 font-bold inline-flex items-center gap-1 text-[10px] pt-1">
                   <span>Ver Case #08</span>
                   <ChevronRight size={12} />
                 </span>
@@ -1356,16 +1560,32 @@ export default function Resultados() {
 
               <Link
                 to="/resultados/casas-pinheirao-google-ia-seo"
-                className="p-4 rounded-2xl bg-slate-900/80 border border-slate-800 hover:border-cyan-500/50 transition-all space-y-2 group block"
+                className="p-3.5 rounded-2xl bg-slate-900/80 border border-slate-800 hover:border-cyan-500/50 transition-all space-y-2 group block"
               >
                 <span className="text-[10px] font-bold uppercase tracking-wider text-cyan-400 block">
                   Casas Pinheirão
                 </span>
-                <p className="font-mono text-white text-xs font-bold group-hover:text-cyan-300 transition-colors">
+                <p className="font-mono text-white text-[11px] font-bold group-hover:text-cyan-300 transition-colors">
                   "quem vende casas pre fabricadas meu terreno..."
                 </p>
-                <span className="text-cyan-400 font-bold inline-flex items-center gap-1 text-[11px] pt-1">
+                <span className="text-cyan-400 font-bold inline-flex items-center gap-1 text-[10px] pt-1">
                   <span>Ver Case #09</span>
+                  <ChevronRight size={12} />
+                </span>
+              </Link>
+
+              <Link
+                to="/resultados/pizzo-gerenciamento-obras-balneario-camboriu"
+                className="p-3.5 rounded-2xl bg-slate-900/80 border border-slate-800 hover:border-emerald-500/50 transition-all space-y-2 group block"
+              >
+                <span className="text-[10px] font-bold uppercase tracking-wider text-emerald-400 block">
+                  Pizzo Engenharia
+                </span>
+                <p className="font-mono text-white text-[11px] font-bold group-hover:text-emerald-300 transition-colors">
+                  "gerenciamento de obras em balneário camboriú"
+                </p>
+                <span className="text-emerald-400 font-bold inline-flex items-center gap-1 text-[10px] pt-1">
+                  <span>Ver Case #13</span>
                   <ChevronRight size={12} />
                 </span>
               </Link>

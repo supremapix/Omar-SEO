@@ -297,6 +297,22 @@ export const MAIN_ROUTES: RouteConfig[] = [
     type: 'main',
   },
   {
+    path: '/resultados/pizzo-gerenciamento-obras-balneario-camboriu',
+    title: 'Case Pizzo: SEO e Google IA em Balneário Camboriú | Omar SEO',
+    description: 'Presença documentada da Pizzo (pizzoo.com.br) no resultado orgânico do Google e entre as fontes citadas na Visão Geral criada por IA para a consulta gerenciamento de obras em Balneário Camboriú.',
+    priority: 0.85,
+    changefreq: 'monthly',
+    type: 'main',
+  },
+  {
+    path: '/resultados/pvs-decore-pisos-vinilicos-sao-jose-dos-pinhais',
+    title: 'Case PVS Decore: Pisos Vinílicos na IA do Google | Omar SEO',
+    description: 'Case documentado GEO + SEO Local: PVS Decore apresentada na Visão Geral criada por IA do Google para a consulta sobre instalação de pisos vinílicos em São José dos Pinhais/PR.',
+    priority: 0.85,
+    changefreq: 'monthly',
+    type: 'main',
+  },
+  {
     path: '/omar-skafi',
     title: 'Sobre Omar Skafi - Especialista em SEO e GEO | Omar SEO',
     description: 'Conheça Omar Skafi, especialista com sólida trajetória em SEO técnico, SEO local, Google Maps e GEO em Curitiba/PR.',

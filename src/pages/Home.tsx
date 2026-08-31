@@ -712,6 +712,66 @@ export default function Home() {
                 </Link>
               </div>
             </div>
+
+            {/* Case 13 - Pizzo (Balneário Camboriú / SC) */}
+            <div className="bg-slate-950 p-5 rounded-2xl border border-yellow-500/50 hover:border-yellow-400 transition-all space-y-3 flex flex-col justify-between group shadow-[0_0_20px_rgba(234,179,8,0.15)]">
+              <div className="space-y-2">
+                <div className="flex items-center justify-between">
+                  <span className="text-[10px] font-extrabold uppercase tracking-wider text-yellow-400 bg-yellow-950/80 px-2 py-0.5 rounded border border-yellow-800/60 inline-block">
+                    Case #13 — SEO Orgânico + Google IA
+                  </span>
+                  <span className="text-[10px] font-bold uppercase tracking-wider text-amber-400">
+                    Balneário Camboriú / SC
+                  </span>
+                </div>
+                <h4 className="text-base font-bold text-white group-hover:text-yellow-300 transition-colors">
+                  Pizzo (Gerenciamento de Obras)
+                </h4>
+                <p className="text-xs text-slate-300 leading-relaxed font-mono">
+                  “gerenciamento de obras em balneário camboriú” — dupla presença no orgânico e na Visão Geral por IA.
+                </p>
+              </div>
+
+              <div className="pt-2 border-t border-slate-800/80">
+                <Link
+                  to="/resultados/pizzo-gerenciamento-obras-balneario-camboriu"
+                  className="text-xs font-bold text-yellow-400 hover:text-yellow-300 inline-flex items-center gap-1 group-hover:translate-x-1 transition-transform"
+                >
+                  <span>Ver Case Pizzo</span>
+                  <ChevronRight size={14} />
+                </Link>
+              </div>
+            </div>
+
+            {/* Case 14 - PVS Decore (São José dos Pinhais / PR) */}
+            <div className="bg-slate-950 p-5 rounded-2xl border border-emerald-500/50 hover:border-emerald-400 transition-all space-y-3 flex flex-col justify-between group shadow-[0_0_20px_rgba(16,185,129,0.15)]">
+              <div className="space-y-2">
+                <div className="flex items-center justify-between">
+                  <span className="text-[10px] font-extrabold uppercase tracking-wider text-emerald-400 bg-emerald-950/80 px-2 py-0.5 rounded border border-emerald-800/60 inline-block">
+                    Case #14 — Google IA + GEO + SEO Local
+                  </span>
+                  <span className="text-[10px] font-bold uppercase tracking-wider text-emerald-400">
+                    São José dos Pinhais / PR
+                  </span>
+                </div>
+                <h4 className="text-base font-bold text-white group-hover:text-emerald-300 transition-colors">
+                  PVS Decore (Pisos Vinílicos)
+                </h4>
+                <p className="text-xs text-slate-300 leading-relaxed font-mono">
+                  “quem instala Pisos vinilicos São José dos Pinhais?” — apresentada na Visão Geral criada por IA do Google.
+                </p>
+              </div>
+
+              <div className="pt-2 border-t border-slate-800/80">
+                <Link
+                  to="/resultados/pvs-decore-pisos-vinilicos-sao-jose-dos-pinhais"
+                  className="text-xs font-bold text-emerald-400 hover:text-emerald-300 inline-flex items-center gap-1 group-hover:translate-x-1 transition-transform"
+                >
+                  <span>Ver Case PVS Decore</span>
+                  <ChevronRight size={14} />
+                </Link>
+              </div>
+            </div>
           </div>
 
           {/* Consolidated Section: Seu cliente já não pesquisa apenas palavras. Ele pergunta. */}
@@ -728,7 +788,12 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-3 text-xs pt-2">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-3 text-xs pt-2">
+              <div className="p-3.5 rounded-xl bg-slate-900/80 border border-slate-800 space-y-1">
+                <span className="text-yellow-400 font-bold block">Pizzo (Balneário Camboriú)</span>
+                <p className="text-slate-300 font-mono text-[11px]">“gerenciamento de obras em balneário camboriú”</p>
+              </div>
+
               <div className="p-3.5 rounded-xl bg-slate-900/80 border border-slate-800 space-y-1">
                 <span className="text-cyan-400 font-bold block">Comfort Divisórias</span>
                 <p className="text-slate-300 font-mono text-[11px]">“qual empresa divisorias eucatex em curitiba”</p>

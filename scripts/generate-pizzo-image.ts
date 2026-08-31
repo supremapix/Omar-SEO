@@ -1,0 +1,261 @@
+import fs from 'fs';
+import path from 'path';
+import sharp from 'sharp';
+
+const outputDir = path.join(process.cwd(), 'public', 'images', 'cases');
+if (!fs.existsSync(outputDir)) {
+  fs.mkdirSync(outputDir, { recursive: true });
+}
+
+const svgContent = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 620" width="1000" height="620" style="background:#ffffff;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;">
+  <defs>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="1" stdDeviation="3" flood-color="#000" flood-opacity="0.12"/>
+    </filter>
+    <filter id="cardShadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="1" stdDeviation="2" flood-color="#000" flood-opacity="0.08"/>
+    </filter>
+    <marker id="redArrow" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#c0392b" />
+    </marker>
+  </defs>
+
+  <!-- Google Header -->
+  <g transform="translate(30, 20)">
+    <!-- Google Logo -->
+    <g transform="translate(0, 4)">
+      <path d="M22.5 10.8c0-.8-.1-1.5-.2-2.2H11.5v4.2h6.2c-.3 1.4-1.1 2.6-2.3 3.4v2.8h3.7c2.2-2 3.4-5 3.4-8.2z" fill="#4285F4"/>
+      <path d="M11.5 22c3.1 0 5.7-1 7.6-2.8l-3.7-2.8c-1 1-2.4 1.5-3.9 1.5-3 0-5.5-2-6.4-4.8H1.2v3c1.9 3.8 5.8 6.1 10.3 6.1z" fill="#34A853"/>
+      <path d="M5.1 13.1c-.2-.7-.3-1.4-.3-2.1s.1-1.4.3-2.1V5.9H1.2C.4 7.5 0 9.2 0 11s.4 3.5 1.2 5.1l3.9-3z" fill="#FBBC05"/>
+      <path d="M11.5 4.4c1.7 0 3.2.6 4.4 1.7l3.3-3.3C17.2 1 14.6 0 11.5 0 7 0 3.1 2.3 1.2 6.1l3.9 3c.9-2.8 3.4-4.7 6.4-4.7z" fill="#EA4335"/>
+    </g>
+
+    <!-- Search Input Box -->
+    <rect x="95" y="-12" width="670" height="46" rx="23" fill="#ffffff" stroke="#dfe1e5" stroke-width="1" filter="url(#shadow)"/>
+    <text x="120" y="17" font-size="16" fill="#202124">gerenciamento de obras em balneário camboriú</text>
+
+    <!-- Search Box Right Controls -->
+    <g transform="translate(650, 0)">
+      <!-- Close X -->
+      <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z" fill="#70757a" transform="translate(-40, -3) scale(0.8)"/>
+      <line x1="-12" y1="-2" x2="-12" y2="22" stroke="#dadce0" stroke-width="1"/>
+      
+      <!-- Keyboard icon -->
+      <rect x="-3" y="1" width="18" height="14" rx="2" fill="none" stroke="#70757a" stroke-width="1.5"/>
+      
+      <!-- Mic icon -->
+      <path d="M12 14c1.66 0 3-1.34 3-3V5c0-1.66-1.34-3-3-3S9 3.34 9 5v6c0 1.66 1.34 3 3 3z" fill="#4285F4" transform="translate(20, -2) scale(0.8)"/>
+      <path d="M17 11c0 2.76-2.24 5-5 5s-5-2.24-5-5H5c0 3.53 2.61 6.43 6 6.92V21h2v-3.08c3.39-.49 6-3.39 6-6.92h-2z" fill="#34A853" transform="translate(20, -2) scale(0.8)"/>
+
+      <!-- Camera Lens icon -->
+      <circle cx="58" cy="9" r="5" fill="none" stroke="#FBBC05" stroke-width="2"/>
+      
+      <!-- Search Glass icon -->
+      <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z" fill="#4285F4" transform="translate(80, -4) scale(0.9)"/>
+    </g>
+  </g>
+
+  <!-- Divider Line -->
+  <line x1="125" y1="80" x2="970" y2="80" stroke="#f1f3f4" stroke-width="1"/>
+
+  <!-- AI OVERVIEW SECTION -->
+  <g transform="translate(30, 100)">
+    <!-- AI Overview Sparkle Icon + Title -->
+    <path d="M10 2L13 7L18 10L13 13L10 18L7 13L2 10L7 7Z" fill="#1a73e8"/>
+    <text x="24" y="14" font-size="15" fill="#1a73e8" font-weight="600">Visão geral criada por IA</text>
+    
+    <!-- Audio Icon -->
+    <circle cx="210" cy="10" r="10" fill="#e8f0fe"/>
+    <path d="M207 7.5v5l3.5-2.5z" fill="#1a73e8"/>
+
+    <!-- Left Content Box of AI Overview -->
+    <g transform="translate(0, 32)">
+      <!-- AI Answer Main Paragraph -->
+      <text x="0" y="0" font-size="13.5" fill="#202124" line-height="1.5">
+        <tspan x="0" dy="0">O gerenciamento de obras em Balneário Camboriú </tspan>
+        <tspan fill="#1a73e8" fill-opacity="0.9" font-weight="500">envolve o controle rigoroso de custos,</tspan>
+      </text>
+      <text x="0" y="22" font-size="13.5" fill="#202124">
+        <tspan fill="#1a73e8" fill-opacity="0.9" font-weight="500">prazos e qualidade em um mercado com o metro quadrado mais alto do</tspan>
+      </text>
+      <text x="0" y="44" font-size="13.5" fill="#202124">
+        <tspan fill="#1a73e8" fill-opacity="0.9" font-weight="500">país</tspan> . 
+        <tspan font-size="11" fill="#70757a" border="1"> [Aval Gestão +1]</tspan>
+      </text>
+
+      <!-- Subtitle: O que inclui o serviço -->
+      <text x="0" y="85" font-size="17" fill="#202124" font-weight="500">O que inclui o serviço</text>
+
+      <!-- Bullet points -->
+      <g transform="translate(0, 108)">
+        <!-- Bullet 1 -->
+        <circle cx="4" cy="4" r="2.5" fill="#202124"/>
+        <text x="14" y="8" font-size="13.5" fill="#202124">
+          <tspan font-weight="700">Planejamento físico-financeiro:</tspan> Criação de cronogramas detalhados para evitar
+        </text>
+        <text x="14" y="26" font-size="13.5" fill="#202124">atrasos e estouros no orçamento.</text>
+
+        <!-- Bullet 2 -->
+        <circle cx="4" cy="52" r="2.5" fill="#202124"/>
+        <text x="14" y="56" font-size="13.5" fill="#202124">
+          <tspan font-weight="700">Fiscalização técnica:</tspan> Acompanhamento com ART/CREA-SC e conformidade com
+        </text>
+        <text x="14" y="74" font-size="13.5" fill="#202124">normas da ABNT.</text>
+      </g>
+
+      <!-- Mostrar mais button -->
+      <g transform="translate(100, 225)">
+        <rect x="0" y="0" width="370" height="34" rx="17" fill="#ffffff" stroke="#dadce0" stroke-width="1"/>
+        <text x="185" y="22" font-size="13" fill="#3c4043" font-weight="500" text-anchor="middle">Mostrar mais  ∨</text>
+      </g>
+    </g>
+
+    <!-- Right Side Cards inside AI Overview -->
+    <g transform="translate(630, 0)">
+      <!-- AI CARD 1: www.pizzoo.com.br -->
+      <g transform="translate(0, 0)">
+        <rect x="0" y="0" width="320" height="115" rx="16" fill="#ffffff" stroke="#e8eaed" stroke-width="1" filter="url(#cardShadow)"/>
+        
+        <!-- Favicon -->
+        <circle cx="22" cy="22" r="10" fill="#f1f3f4"/>
+        <text x="22" y="26" font-size="11" fill="#70757a" text-anchor="middle" font-weight="bold">S</text>
+        
+        <text x="40" y="24" font-size="12" fill="#3c4043" font-weight="400">www.pizzoo.com.br</text>
+        
+        <!-- 3 dots -->
+        <circle cx="302" cy="20" r="1.5" fill="#70757a"/>
+        <circle cx="302" cy="24" r="1.5" fill="#70757a"/>
+        <circle cx="302" cy="28" r="1.5" fill="#70757a"/>
+
+        <!-- Title -->
+        <text x="16" y="50" font-size="13" fill="#1a0dab" font-weight="500">
+          <tspan x="16" dy="0">Gerenciamento de Obras em Balneário</tspan>
+          <tspan x="16" dy="16">Camboriú | Pizzo</tspan>
+        </text>
+
+        <!-- Snippet text -->
+        <text x="16" y="86" font-size="11" fill="#4d5156">
+          <tspan x="16" dy="0">Deixe seus dados e escolha o serviço que</tspan>
+          <tspan x="16" dy="14">você precisa. Nossa equipe montará uma...</tspan>
+        </text>
+
+        <!-- Thumbnail Image Box (Dark Pizzo image mockup) -->
+        <g transform="translate(242, 42)">
+          <rect x="0" y="0" width="62" height="62" rx="8" fill="#121212"/>
+          <!-- Gold text logo placeholder -->
+          <text x="31" y="28" font-size="8" fill="#d4af37" font-weight="bold" text-anchor="middle">PIZZO</text>
+          <text x="31" y="38" font-size="5" fill="#999999" text-anchor="middle">Ao seu lado nos</text>
+          <text x="31" y="44" font-size="5" fill="#999999" text-anchor="middle">momentos...</text>
+        </g>
+      </g>
+
+      <!-- AI CARD 2: Imoveline Arquitetos -->
+      <g transform="translate(0, 128)">
+        <rect x="0" y="0" width="320" height="110" rx="16" fill="#ffffff" stroke="#e8eaed" stroke-width="1" filter="url(#cardShadow)"/>
+        
+        <!-- Favicon -->
+        <circle cx="22" cy="22" r="10" fill="#f1f3f4"/>
+        <text x="22" y="26" font-size="9" fill="#70757a" text-anchor="middle" font-weight="bold">MOVE</text>
+        
+        <text x="40" y="24" font-size="12" fill="#3c4043">Imoveline Arquitetos</text>
+        
+        <!-- 3 dots -->
+        <circle cx="302" cy="20" r="1.5" fill="#70757a"/>
+        <circle cx="302" cy="24" r="1.5" fill="#70757a"/>
+        <circle cx="302" cy="28" r="1.5" fill="#70757a"/>
+
+        <!-- Title -->
+        <text x="16" y="50" font-size="13" fill="#1a0dab" font-weight="500">
+          <tspan x="16" dy="0">Serviço de Gerenciamento de Obras</tspan>
+          <tspan x="16" dy="16">em Balneário Camboriú</tspan>
+        </text>
+
+        <!-- Snippet text -->
+        <text x="16" y="86" font-size="11" fill="#4d5156">
+          <tspan x="16" dy="0">O Gerenciamento de Obras é mais um dos</tspan>
+          <tspan x="16" dy="14">Serviços Prestados com Excelência pela...</tspan>
+        </text>
+
+        <!-- Thumbnail Image Box -->
+        <g transform="translate(242, 42)">
+          <rect x="0" y="0" width="62" height="58" rx="8" fill="#f8f9fa" stroke="#e8eaed" stroke-width="1"/>
+          <text x="31" y="26" font-size="8" fill="#202124" font-weight="bold" text-anchor="middle">MOVE</text>
+          <text x="31" y="36" font-size="8" fill="#202124" font-weight="bold" text-anchor="middle">LINE</text>
+        </g>
+      </g>
+    </g>
+  </g>
+
+  <!-- ORGANIC SEARCH RESULT SECTION (Below AI Overview) -->
+  <g transform="translate(30, 475)">
+    <!-- Favicon -->
+    <circle cx="12" cy="12" r="10" fill="#e8f0fe"/>
+    <circle cx="12" cy="12" r="7" fill="none" stroke="#1a73e8" stroke-width="1.2"/>
+    <path d="M 5 12 L 19 12 M 12 5 A 8 8 0 0 1 12 19 A 8 8 0 0 1 12 5" fill="none" stroke="#1a73e8" stroke-width="1"/>
+
+    <!-- URL -->
+    <text x="30" y="10" font-size="14" fill="#202124" font-weight="400">pizzoo.com.br</text>
+    <text x="30" y="24" font-size="12" fill="#4d5156">https://www.pizzoo.com.br</text>
+
+    <!-- 3 dots menu -->
+    <g transform="translate(560, 10)" fill="#70757a">
+      <circle cx="2" cy="2" r="1.5"/>
+      <circle cx="2" cy="7" r="1.5"/>
+      <circle cx="2" cy="12" r="1.5"/>
+    </g>
+
+    <!-- Title Link -->
+    <text x="0" y="52" font-size="20" fill="#1b0dab" font-weight="400">Gerenciamento de Obras em Balneário Camboriú | Pizzo</text>
+
+    <!-- Snippet Text -->
+    <text x="0" y="74" font-size="13.5" fill="#4d5156">
+      A Pizzo Gerenciamento de Obras é referência em engenharia civil, reformas de alto luxo, planejamento
+    </text>
+    <text x="0" y="92" font-size="13.5" fill="#4d5156">
+      físico-financeiro e fiscalização com ART/CREA-SC em ...
+    </text>
+  </g>
+
+  <!-- RIGHT SIDE MAP / KNOWLEDGE PANEL MOCK -->
+  <g transform="translate(660, 465)">
+    <rect x="0" y="0" width="300" height="135" rx="12" fill="#f8f9fa" stroke="#e8eaed" stroke-width="1"/>
+    
+    <!-- Left photo mock: Building with NC3E -->
+    <rect x="5" y="5" width="140" height="100" rx="8" fill="#d0d4d9"/>
+    <text x="75" y="60" font-size="14" fill="#555555" font-weight="bold" text-anchor="middle">NC3E</text>
+
+    <!-- Right map mock -->
+    <rect x="150" y="5" width="145" height="100" rx="8" fill="#e5e3df"/>
+    <line x1="150" y1="50" x2="295" y2="50" stroke="#ffffff" stroke-width="4"/>
+    <line x1="210" y1="5" x2="210" y2="105" stroke="#ffffff" stroke-width="4"/>
+    <text x="160" y="30" font-size="8" fill="#666666">Rua Imbuia</text>
+    <text x="160" y="75" font-size="8" fill="#666666">Cerejeira</text>
+
+    <!-- Red map pin -->
+    <path d="M 240 40 C 235 40 230 45 230 50 C 230 60 240 70 240 70 C 240 70 250 60 250 50 C 250 45 245 40 240 40 Z" fill="#ea4335"/>
+    <circle cx="240" cy="48" r="3" fill="#ffffff"/>
+
+    <!-- Ver fotos button -->
+    <rect x="5" y="108" width="290" height="22" rx="4" fill="#ffffff" stroke="#dadce0" stroke-width="1"/>
+    <text x="150" y="123" font-size="11" fill="#3c4043" font-weight="500" text-anchor="middle">Ver fotos</text>
+  </g>
+
+  <!-- RED ANNOTATION ARROWS (Exact matching user screenshot) -->
+  <!-- Arrow 1: Top Search area pointing down to AI Overview Card 1 (www.pizzoo.com.br) -->
+  <path d="M 430 40 L 640 120" stroke="#c0392b" stroke-width="5" fill="none" stroke-linecap="round" marker-end="url(#redArrow)"/>
+
+  <!-- Arrow 2: AI Overview Card 1 pointing down to Organic Search Result (pizzoo.com.br) -->
+  <path d="M 640 160 L 400 480" stroke="#c0392b" stroke-width="5" fill="none" stroke-linecap="round" marker-end="url(#redArrow)"/>
+
+</svg>`;
+
+const svgPath = path.join(outputDir, 'case-pizzo-gerenciamento-obras-balneario-camboriu-google-ai.svg');
+fs.writeFileSync(svgPath, svgContent);
+console.log('Saved SVG:', svgPath);
+
+const pngPath = path.join(outputDir, 'case-pizzo-gerenciamento-obras-balneario-camboriu-google-ai.png');
+sharp(Buffer.from(svgContent))
+  .png()
+  .toFile(pngPath)
+  .then(() => console.log('Saved PNG:', pngPath))
+  .catch((err) => console.error('Error generating PNG:', err));
