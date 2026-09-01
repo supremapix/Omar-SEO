@@ -321,6 +321,14 @@ export const MAIN_ROUTES: RouteConfig[] = [
     type: 'main',
   },
   {
+    path: '/resultados/a-baratona-cacambas-google-ia-curitiba',
+    title: 'Case A Baratona: Caçambas no Google IA em Curitiba | Omar SEO',
+    description: 'Case real da A Baratona Caçambas com presença documentada na Visão geral criada por IA do Google para uma busca comercial por aluguel de caçambas baratas.',
+    priority: 0.85,
+    changefreq: 'monthly',
+    type: 'main',
+  },
+  {
     path: '/omar-skafi',
     title: 'Sobre Omar Skafi - Especialista em SEO e GEO | Omar SEO',
     description: 'Conheça Omar Skafi, especialista com sólida trajetória em SEO técnico, SEO local, Google Maps e GEO em Curitiba/PR.',

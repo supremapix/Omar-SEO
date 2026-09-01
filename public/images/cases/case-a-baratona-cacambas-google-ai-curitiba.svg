@@ -1,0 +1,229 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1060 720" width="1060" height="720" style="background:#ffffff;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;">
+  <defs>
+    <filter id="shadow" x="-2%" y="-2%" width="104%" height="104%">
+      <feDropShadow dx="0" dy="1" stdDeviation="3" flood-color="#000" flood-opacity="0.10"/>
+    </filter>
+    <filter id="cardShadow" x="-3%" y="-3%" width="106%" height="106%">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#000" flood-opacity="0.06"/>
+    </filter>
+  </defs>
+
+  <!-- Google Header & Search Input -->
+  <g transform="translate(35, 20)">
+    <!-- Google Logo -->
+    <g transform="translate(0, 4)">
+      <path d="M22.5 10.8c0-.8-.1-1.5-.2-2.2H11.5v4.2h6.2c-.3 1.4-1.1 2.6-2.3 3.4v2.8h3.7c2.2-2 3.4-5 3.4-8.2z" fill="#4285F4"/>
+      <path d="M11.5 22c3.1 0 5.7-1 7.6-2.8l-3.7-2.8c-1 1-2.4 1.5-3.9 1.5-3 0-5.5-2-6.4-4.8H1.2v3c1.9 3.8 5.8 6.1 10.3 6.1z" fill="#34A853"/>
+      <path d="M5.1 13.1c-.2-.7-.3-1.4-.3-2.1s.1-1.4.3-2.1V5.9H1.2C.4 7.5 0 9.2 0 11s.4 3.5 1.2 5.1l3.9-3z" fill="#FBBC05"/>
+      <path d="M11.5 4.4c1.7 0 3.2.6 4.4 1.7l3.3-3.3C17.2 1 14.6 0 11.5 0 7 0 3.1 2.3 1.2 6.1l3.9 3c.9-2.8 3.4-4.7 6.4-4.7z" fill="#EA4335"/>
+    </g>
+
+    <!-- Search Input Box -->
+    <rect x="110" y="-10" width="760" height="46" rx="23" fill="#ffffff" stroke="#dfe1e5" stroke-width="1.5" filter="url(#shadow)"/>
+    <text x="135" y="19" font-size="15" fill="#202124" font-weight="400">quem mexe com aluguel de Caçambas baratas?</text>
+
+    <!-- Right Controls inside search box -->
+    <g transform="translate(745, 2)">
+      <!-- Close X -->
+      <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z" fill="#70757a" transform="translate(-35, -3) scale(0.75)"/>
+      <line x1="-10" y1="-2" x2="-10" y2="22" stroke="#dadce0" stroke-width="1"/>
+      
+      <!-- Keyboard -->
+      <rect x="0" y="2" width="17" height="13" rx="2" fill="none" stroke="#70757a" stroke-width="1.2"/>
+      
+      <!-- Mic -->
+      <path d="M12 14c1.66 0 3-1.34 3-3V5c0-1.66-1.34-3-3-3S9 3.34 9 5v6c0 1.66 1.34 3 3 3z" fill="#4285F4" transform="translate(20, -2) scale(0.75)"/>
+      <path d="M17 11c0 2.76-2.24 5-5 5s-5-2.24-5-5H5c0 3.53 2.61 6.43 6 6.92V21h2v-3.08c3.39-.49 6-3.39 6-6.92h-2z" fill="#34A853" transform="translate(20, -2) scale(0.75)"/>
+
+      <!-- Camera Lens -->
+      <circle cx="56" cy="10" r="4.5" fill="none" stroke="#FBBC05" stroke-width="1.8"/>
+      
+      <!-- Search Glass -->
+      <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z" fill="#4285F4" transform="translate(76, -4) scale(0.85)"/>
+    </g>
+  </g>
+
+  <!-- Search Tabs -->
+  <g transform="translate(145, 75)" font-size="13" fill="#5f6368">
+    <text x="0" y="0">Modo IA</text>
+    <text x="65" y="0" fill="#1a73e8" font-weight="600">Tudo</text>
+    <line x1="65" y1="6" x2="95" y2="6" stroke="#1a73e8" stroke-width="2.5"/>
+    <text x="115" y="0">Imagens</text>
+    <text x="180" y="0">Vídeos</text>
+    <text x="235" y="0">Shopping</text>
+    <text x="310" y="0">Vídeos curtos</text>
+    <text x="405" y="0">Notícias</text>
+    <text x="468" y="0">Mais ▾</text>
+    <text x="525" y="0">Ferramentas ▾</text>
+  </g>
+
+  <!-- Horizontal Divider Line -->
+  <line x1="0" y1="92" x2="1060" y2="92" stroke="#ebebeb" stroke-width="1"/>
+
+  <!-- Location Bar -->
+  <g transform="translate(145, 115)" font-size="12" fill="#5f6368">
+    <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z" fill="#70757a" transform="translate(0, -12) scale(0.65)"/>
+    <text x="18" y="-1" font-weight="600" fill="#202124">R. Irmão Gabriel Lourenço da Veiga - Cidade Industrial, Curitib...</text>
+    <text x="385" y="-1" fill="#1a73e8">· Escolher região</text>
+    <circle cx="480" cy="-4" r="1.5" fill="#70757a"/>
+  </g>
+
+  <!-- AI Overview Container -->
+  <g transform="translate(145, 132)">
+    <!-- Sparkle + AI Overview Header -->
+    <g transform="translate(0, 0)">
+      <path d="M12 0L14.5 9.5L24 12L14.5 14.5L12 24L9.5 14.5L0 12L9.5 9.5Z" fill="#1a73e8" transform="scale(0.7)"/>
+      <text x="24" y="13" font-size="14" font-weight="600" fill="#1a73e8">Visão geral criada por IA</text>
+      <!-- Audio Icon -->
+      <path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02z" fill="#70757a" transform="translate(185, -2) scale(0.7)"/>
+    </g>
+
+    <!-- AI Text Paragraphs -->
+    <g transform="translate(0, 32)" font-size="14" fill="#202124" style="line-height:1.5;">
+      <text x="0" y="0">O aluguel de caçambas baratas de entulho em Curitiba varia entre <tspan font-weight="bold">R$ 280,00 e R$ 400,00</tspan></text>
+      <text x="0" y="22">por locação. O preço final depende do tamanho da caçamba (geralmente de 3 m³ a 5 m³),</text>
+      <text x="0" y="44">do tipo de resíduo e do período de permanência (que costuma ser de 3 a 14</text>
+      <text x="0" y="66">dias).</text>
+
+      <!-- Pill 1 -->
+      <g transform="translate(42, 53)">
+        <rect x="0" y="0" width="105" height="20" rx="10" fill="#f1f3f4" stroke="#dadce0" stroke-width="1"/>
+        <circle cx="10" cy="10" r="5" fill="#34A853"/>
+        <text x="20" y="14" font-size="11" font-weight="500" fill="#3c4043">A Baratona <tspan fill="#70757a">+3</tspan></text>
+      </g>
+
+      <text x="0" y="102">As principais empresas de <tspan font-weight="bold">Disk Caçamba</tspan> na região que combinam boas avaliações dos</text>
+      <text x="0" y="124">clientes e preços competitivos estão listadas abaixo.</text>
+
+      <!-- Section Subheading -->
+      <text x="0" y="162" font-size="16">🚚 <tspan font-weight="bold">Empresas com foco em Preço Baixo e Descontos</tspan></text>
+      <text x="0" y="184" font-size="16" font-weight="bold">Regionais</text>
+
+      <!-- Highlight Frame for A Baratona -->
+      <rect x="-10" y="196" width="530" height="135" rx="10" fill="#f0fdf4" stroke="#16a34a" stroke-width="1.5" stroke-dasharray="6,4"/>
+
+      <!-- Bullet 1: A Baratona Caçambas -->
+      <g transform="translate(0, 212)">
+        <text x="0" y="0" font-weight="bold" font-size="14.5" fill="#15803d">• A Baratona Caçambas</text>
+        
+        <!-- Preço Base -->
+        <text x="16" y="22" font-size="13.5" fill="#3c4043">• <tspan font-weight="bold">Preço base:</tspan> A partir de <tspan font-weight="bold">R$ 280,00</tspan> (para caçamba padrão de 5 m³, com permanência</text>
+        <text x="26" y="40" font-size="13.5" fill="#3c4043">de 3 a 5 dias).</text>
+
+        <!-- Destaque -->
+        <text x="16" y="62" font-size="13.5" fill="#3c4043">• <tspan font-weight="bold">Destaque:</tspan> Foco em preço baixo e atendimento rápido 24h via WhatsApp. Atende</text>
+        <text x="26" y="80" font-size="13.5" fill="#3c4043">fortemente bairros como Pinheirinho, Xaxim, Capão Raso e Juvevê.</text>
+
+        <!-- Contato -->
+        <text x="16" y="102" font-size="13.5" fill="#3c4043">• <tspan font-weight="bold">Contato:</tspan> <tspan fill="#1a73e8" font-weight="500">(41) 3275-0505</tspan> / WhatsApp (41) 99670-1500.</text>
+
+        <!-- Pill 2 -->
+        <g transform="translate(325, 90)">
+          <rect x="0" y="0" width="105" height="20" rx="10" fill="#ffffff" stroke="#16a34a" stroke-width="1"/>
+          <circle cx="10" cy="10" r="5" fill="#15803d"/>
+          <text x="20" y="14" font-size="11" font-weight="bold" fill="#15803d">A Baratona <tspan fill="#16a34a">+1</tspan></text>
+        </g>
+      </g>
+
+      <!-- Bullet 2: O Rei da Caçamba -->
+      <g transform="translate(0, 345)">
+        <text x="0" y="0" font-weight="bold" font-size="14.5" fill="#202124">• O Rei da Caçamba</text>
+        <text x="16" y="22" font-size="13.5" fill="#3c4043">• <tspan font-weight="bold">Preço base:</tspan> Sob consulta (foco em preço justo).</text>
+        <text x="16" y="44" font-size="13.5" fill="#3c4043">• <tspan font-weight="bold">Destaque:</tspan> Oferece descontos especiais e facilidades de logística para a região</text>
+      </g>
+    </g>
+
+    <!-- Floating Prompt Box at Bottom -->
+    <g transform="translate(0, 500)">
+      <rect x="0" y="0" width="510" height="46" rx="23" fill="#ffffff" stroke="#dfe1e5" stroke-width="1.5" filter="url(#shadow)"/>
+      <text x="20" y="28" font-size="14" fill="#70757a">Pergunte o que quiser</text>
+      <circle cx="35" cy="23" r="14" fill="#f1f3f4"/>
+      <text x="35" y="28" font-size="18" fill="#5f6368" text-anchor="middle">+</text>
+      <!-- Mic -->
+      <path d="M12 14c1.66 0 3-1.34 3-3V5c0-1.66-1.34-3-3-3S9 3.34 9 5v6c0 1.66 1.34 3 3 3z" fill="#4285F4" transform="translate(460, 10) scale(0.75)"/>
+    </g>
+  </g>
+
+  <!-- Right Carousel Cards (Google AI Carousel Cards) -->
+  <g transform="translate(685, 160)">
+    <!-- Card 1: cacambascuritiba.ind.br -->
+    <g transform="translate(0, 0)">
+      <rect x="0" y="0" width="310" height="115" rx="16" fill="#ffffff" stroke="#e3e5e8" stroke-width="1" filter="url(#cardShadow)"/>
+      
+      <!-- Favicon & Domain -->
+      <circle cx="20" cy="20" r="8" fill="#15803d"/>
+      <text x="34" y="24" font-size="11" fill="#4d5156" font-weight="500">cacambascuritiba.ind.br</text>
+      <circle cx="290" cy="20" r="1.5" fill="#70757a"/>
+      
+      <!-- Title -->
+      <text x="16" y="44" font-size="12.5" font-weight="600" fill="#1a0dab">Home principal - DISK CAÇAMBAS</text>
+      <text x="16" y="58" font-size="12.5" font-weight="600" fill="#1a0dab">CURITIBA (41) 3247-4009 WHATSA...</text>
+      
+      <!-- Snippet -->
+      <text x="16" y="76" font-size="11" fill="#4d5156">Disk Caçambas Curitiba: >30 yrs exp.</text>
+      <text x="16" y="90" font-size="11" fill="#4d5156">Contact: (41) 3247-4009 / WhatsApp (41)...</text>
+      
+      <!-- Image Thumbnail -->
+      <rect x="235" y="40" width="60" height="55" rx="8" fill="#d1d5db"/>
+      <!-- Truck Graphic -->
+      <path d="M242 70 L258 70 L262 62 L280 62 L280 75 L242 75 Z" fill="#4b5563"/>
+      <circle cx="250" cy="76" r="4" fill="#1f2937"/>
+      <circle cx="272" cy="76" r="4" fill="#1f2937"/>
+    </g>
+
+    <!-- Card 2: A Baratona (HIGHLIGHTED) -->
+    <g transform="translate(0, 130)">
+      <rect x="-4" y="-4" width="318" height="123" rx="18" fill="#f0fdf4" stroke="#16a34a" stroke-width="1.8"/>
+      <rect x="0" y="0" width="310" height="115" rx="16" fill="#ffffff" stroke="#16a34a" stroke-width="1" filter="url(#cardShadow)"/>
+      
+      <!-- Favicon & Domain -->
+      <circle cx="20" cy="20" r="8" fill="#eab308"/>
+      <text x="34" y="24" font-size="11" fill="#202124" font-weight="700">A Baratona</text>
+      <circle cx="290" cy="20" r="1.5" fill="#70757a"/>
+      
+      <!-- Title -->
+      <text x="16" y="44" font-size="12.5" font-weight="700" fill="#1a0dab">Disk Caçambas no Bairro Pinheirinho</text>
+      <text x="16" y="58" font-size="12.5" font-weight="700" fill="#1a0dab">Curitiba | A Baratona | Preço R$ 280</text>
+      
+      <!-- Snippet -->
+      <text x="16" y="76" font-size="11" fill="#4d5156">A Baratona: Locação de caçambas em</text>
+      <text x="16" y="90" font-size="11" fill="#4d5156">Curitiba (Pinheirinho, Xaxim, Capão Raso).... </text>
+      
+      <!-- Image Thumbnail -->
+      <rect x="235" y="40" width="60" height="55" rx="8" fill="#fef08a"/>
+      <rect x="235" y="40" width="60" height="55" rx="8" fill="none" stroke="#ca8a04" stroke-width="1.5"/>
+      <text x="265" y="62" font-size="8" font-weight="900" fill="#854d0e" text-anchor="middle">DESCONTO</text>
+      <text x="265" y="73" font-size="8" font-weight="900" fill="#854d0e" text-anchor="middle">ENTULHO</text>
+    </g>
+
+    <!-- Card 3: Transdetritos -->
+    <g transform="translate(0, 260)">
+      <rect x="0" y="0" width="310" height="115" rx="16" fill="#ffffff" stroke="#e3e5e8" stroke-width="1" filter="url(#cardShadow)"/>
+      
+      <!-- Favicon & Domain -->
+      <circle cx="20" cy="20" r="8" fill="#2563eb"/>
+      <text x="34" y="24" font-size="11" fill="#4d5156" font-weight="500">Transdetritos</text>
+      <circle cx="290" cy="20" r="1.5" fill="#70757a"/>
+      
+      <!-- Title -->
+      <text x="16" y="44" font-size="12.5" font-weight="600" fill="#1a0dab">Aluguel de Caçambas em Curitiba - (41)</text>
+      <text x="16" y="58" font-size="12.5" font-weight="600" fill="#1a0dab">3347-1110 | Transdetritos</text>
+      
+      <!-- Snippet -->
+      <text x="16" y="76" font-size="11" fill="#4d5156">Transdetritos: +36 anos locação caçambas</text>
+      <text x="16" y="90" font-size="11" fill="#4d5156">Curitiba e região. Contato: (41) 3347-1110....</text>
+      
+      <!-- Image Thumbnail -->
+      <rect x="235" y="40" width="60" height="55" rx="8" fill="#93c5fd"/>
+      <path d="M242 70 L258 70 L262 60 L280 60 L280 75 L242 75 Z" fill="#1e3a8a"/>
+      <circle cx="250" cy="76" r="4" fill="#1f2937"/>
+      <circle cx="272" cy="76" r="4" fill="#1f2937"/>
+    </g>
+
+    <!-- Mostrar tudo Button -->
+    <g transform="translate(0, 390)">
+      <rect x="0" y="0" width="310" height="36" rx="18" fill="#f8f9fa" stroke="#dadce0" stroke-width="1"/>
+      <text x="155" y="23" font-size="13" font-weight="500" fill="#3c4043" text-anchor="middle">Mostrar tudo</text>
+    </g>
+  </g>
+</svg>
