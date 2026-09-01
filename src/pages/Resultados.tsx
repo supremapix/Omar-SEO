@@ -1657,6 +1657,107 @@ export default function Resultados() {
                 </div>
               </div>
             </div>
+
+            {/* Case #17: Telhados Barreirinha - Ecossistema Multimarca */}
+            <div className="p-6 sm:p-8 rounded-3xl bg-slate-900/90 border border-purple-500/40 shadow-[0_0_35px_rgba(168,85,247,0.15)] space-y-6">
+              <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-slate-800 pb-4">
+                <div>
+                  <div className="flex flex-wrap items-center gap-2">
+                    <span className="text-[10px] font-mono font-bold uppercase tracking-wider text-purple-400 bg-purple-950/80 px-2.5 py-1 rounded-full border border-purple-800/60 inline-flex items-center gap-1">
+                      <Sparkles size={11} />
+                      <span>CASE REAL #17</span>
+                    </span>
+                    <span className="text-[10px] font-mono font-bold uppercase tracking-wider text-emerald-400 bg-emerald-950/80 px-2.5 py-1 rounded-full border border-emerald-800/60">
+                      <span>SEO + GEO + INTELIGÊNCIA ARTIFICIAL</span>
+                    </span>
+                  </div>
+                  <h3 className="text-xl sm:text-2xl font-bold font-display text-white mt-2">
+                    UMA BUSCA, MÚLTIPLOS CLIENTES
+                  </h3>
+                  <p className="text-xs sm:text-sm text-slate-300 mt-1">
+                    Múltiplas empresas atendidas pelo Omar SEO documentadas dentro da mesma intenção comercial para conserto de telhados no bairro Barreirinha, em Curitiba.
+                  </p>
+                </div>
+                <div className="flex items-center gap-2 self-start sm:self-auto">
+                  <Link
+                    to="/resultados/clientes-omar-seo-telhados-barreirinha-google-ia"
+                    className="px-5 py-2.5 rounded-full bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold text-xs inline-flex items-center gap-2 transition-colors shadow-[0_0_20px_rgba(16,185,129,0.3)]"
+                  >
+                    <span>Ver Case</span>
+                    <ArrowRight size={14} />
+                  </Link>
+                </div>
+              </div>
+
+              <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-center">
+                {/* Visual Evidence Image */}
+                <div className="lg:col-span-6 bg-white p-2 rounded-2xl border border-slate-800 overflow-hidden group relative">
+                  <Link to="/resultados/clientes-omar-seo-telhados-barreirinha-google-ia" className="block">
+                    <picture>
+                      <source srcset="/images/cases/case-clientes-omar-seo-telhados-barreirinha-google-ia.svg" type="image/svg+xml" />
+                      <img
+                        src="/images/cases/case-clientes-omar-seo-telhados-barreirinha-google-ia.png"
+                        alt="Clientes Omar SEO no Google e na Visão geral criada por IA para conserto de telhados no Barreirinha Curitiba"
+                        width={1000}
+                        height={840}
+                        loading="lazy"
+                        className="w-full h-auto object-contain rounded-xl transition-transform duration-300 group-hover:scale-[1.02]"
+                      />
+                    </picture>
+                  </Link>
+                  <span className="text-[9px] text-purple-600 block text-center font-bold mt-1">
+                    Captura Real da SERP — Orgânico + Visão Geral Criada por IA no Google
+                  </span>
+                </div>
+
+                {/* Details */}
+                <div className="lg:col-span-6 space-y-3.5">
+                  <div className="p-3.5 rounded-xl bg-[#0f1118] border border-slate-800 space-y-1">
+                    <span className="text-[10px] font-bold uppercase tracking-wider text-slate-400 block">
+                      Consulta Original Documentada
+                    </span>
+                    <span className="text-xs font-bold text-yellow-300 font-mono block">
+                      “Conserto de Telhados no Bairro Barreirinha”
+                    </span>
+                  </div>
+
+                  <div className="p-3.5 rounded-xl bg-[#0f1118] border border-slate-800 space-y-1">
+                    <span className="text-[10px] font-bold uppercase tracking-wider text-slate-400 block">
+                      Localização &amp; Badges
+                    </span>
+                    <div className="flex flex-wrap items-center gap-1.5 pt-0.5">
+                      <span className="text-xs font-bold text-emerald-400">BARREIRINHA — CURITIBA / PR</span>
+                      <div className="flex flex-wrap gap-1">
+                        {['SEO', 'GEO', 'AIO', 'GOOGLE IA', 'SEO LOCAL'].map((badge) => (
+                          <span key={badge} className="px-2 py-0.5 rounded bg-slate-900 border border-slate-800 text-[9px] font-mono text-slate-300">
+                            {badge}
+                          </span>
+                        ))}
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="p-3.5 rounded-xl bg-[#0f1118] border border-slate-800 space-y-1">
+                    <span className="text-[10px] font-bold uppercase tracking-wider text-slate-400 block">
+                      Destaque Factual do Case
+                    </span>
+                    <span className="text-xs font-bold text-white leading-relaxed block">
+                      “Múltiplas empresas atendidas pelo Omar SEO documentadas dentro da mesma intenção comercial.”
+                    </span>
+                  </div>
+
+                  <div className="pt-2">
+                    <Link
+                      to="/resultados/clientes-omar-seo-telhados-barreirinha-google-ia"
+                      className="text-emerald-400 hover:text-emerald-300 font-bold inline-flex items-center gap-1.5 text-xs"
+                    >
+                      <span>Acessar documentação completa do Case #17</span>
+                      <ArrowRight size={14} />
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
 
           {/* Seção Cluster: Quando a pesquisa vira uma pergunta */}
@@ -1675,6 +1776,22 @@ export default function Resultados() {
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3 text-xs">
+              <Link
+                to="/resultados/clientes-omar-seo-telhados-barreirinha-google-ia"
+                className="p-3.5 rounded-2xl bg-slate-900/90 border border-purple-500/60 hover:border-purple-400 transition-all space-y-2 group block"
+              >
+                <span className="text-[10px] font-bold uppercase tracking-wider text-purple-300 block">
+                  Clientes Omar SEO (Telhados)
+                </span>
+                <p className="font-mono text-white text-[11px] font-bold group-hover:text-purple-300 transition-colors">
+                  "Conserto de Telhados no Bairro Barreirinha"
+                </p>
+                <span className="text-purple-400 font-bold inline-flex items-center gap-1 text-[10px] pt-1">
+                  <span>Ver Case #17</span>
+                  <ChevronRight size={12} />
+                </span>
+              </Link>
+
               <Link
                 to="/resultados/a-baratona-cacambas-google-ia-curitiba"
                 className="p-3.5 rounded-2xl bg-slate-900/90 border border-purple-500/60 hover:border-purple-400 transition-all space-y-2 group block"

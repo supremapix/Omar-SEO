@@ -833,6 +833,37 @@ export default function Home() {
                 </Link>
               </div>
             </div>
+
+            {/* Case 17 - Clientes Omar SEO (Telhados Barreirinha - Curitiba / PR) */}
+            <div className="bg-slate-950 p-5 rounded-2xl border border-purple-500/50 hover:border-purple-400 transition-all space-y-3 flex flex-col justify-between group shadow-[0_0_20px_rgba(168,85,247,0.15)]">
+              <div className="space-y-2">
+                <div className="flex items-center justify-between">
+                  <span className="text-[10px] font-extrabold uppercase tracking-wider text-purple-300 bg-purple-950/80 px-2 py-0.5 rounded border border-purple-800/60 inline-flex items-center gap-1">
+                    <Sparkles size={10} />
+                    <span>Case #17 — Multimarca Google IA</span>
+                  </span>
+                  <span className="text-[10px] font-bold uppercase tracking-wider text-purple-300">
+                    Curitiba / PR
+                  </span>
+                </div>
+                <h4 className="text-base font-bold text-white group-hover:text-purple-300 transition-colors">
+                  Clientes Omar SEO (Telhados)
+                </h4>
+                <p className="text-xs text-slate-300 leading-relaxed font-mono">
+                  “Conserto de Telhados no Bairro Barreirinha” — múltiplas empresas clientes na busca orgânica e no Google IA.
+                </p>
+              </div>
+
+              <div className="pt-2 border-t border-slate-800/80">
+                <Link
+                  to="/resultados/clientes-omar-seo-telhados-barreirinha-google-ia"
+                  className="text-xs font-bold text-purple-400 hover:text-purple-300 inline-flex items-center gap-1 group-hover:translate-x-1 transition-transform"
+                >
+                  <span>Ver Case #17</span>
+                  <ChevronRight size={14} />
+                </Link>
+              </div>
+            </div>
           </div>
 
           {/* Consolidated Section: Seu cliente já não pesquisa apenas palavras. Ele pergunta. */}

@@ -329,6 +329,14 @@ export const MAIN_ROUTES: RouteConfig[] = [
     type: 'main',
   },
   {
+    path: '/resultados/clientes-omar-seo-telhados-barreirinha-google-ia',
+    title: 'Clientes Omar SEO no Google e IA para Telhados em Curitiba | Case #17 Omar SEO',
+    description: 'Case documentado do Omar SEO mostrando múltiplos clientes relacionados à mesma intenção de busca por conserto de telhados no Barreirinha, em Curitiba, incluindo presença orgânica e na experiência de IA do Google.',
+    priority: 0.85,
+    changefreq: 'monthly',
+    type: 'main',
+  },
+  {
     path: '/omar-skafi',
     title: 'Sobre Omar Skafi - Especialista em SEO e GEO | Omar SEO',
     description: 'Conheça Omar Skafi, especialista com sólida trajetória em SEO técnico, SEO local, Google Maps e GEO em Curitiba/PR.',
