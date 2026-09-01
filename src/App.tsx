@@ -32,6 +32,7 @@ const CaseRvmPersianasFlorianopolisSeo = lazy(() => import('./pages/CaseRvmPersi
 const CaseConsultoraLooviSeo = lazy(() => import('./pages/CaseConsultoraLooviSeo'));
 const CasePizzoGerenciamentoObrasSeo = lazy(() => import('./pages/CasePizzoGerenciamentoObrasSeo'));
 const CasePvsDecoreAiSeo = lazy(() => import('./pages/CasePvsDecoreAiSeo'));
+const CaseAlumimecEstruturasMetalicasSeo = lazy(() => import('./pages/CaseAlumimecEstruturasMetalicasSeo'));
 const SobreOmar = lazy(() => import('./pages/SobreOmar'));
 const Sobre = lazy(() => import('./pages/Sobre'));
 const Metodo = lazy(() => import('./pages/Metodo'));
@@ -115,6 +116,7 @@ function AnimatedRoutes() {
           <Route path="/resultados/consultora-loovi-google-seo" element={<CaseConsultoraLooviSeo />} />
           <Route path="/resultados/pizzo-gerenciamento-obras-balneario-camboriu" element={<CasePizzoGerenciamentoObrasSeo />} />
           <Route path="/resultados/pvs-decore-pisos-vinilicos-sao-jose-dos-pinhais" element={<CasePvsDecoreAiSeo />} />
+          <Route path="/resultados/alumimec-estruturas-metalicas-sao-jose-dos-pinhais" element={<CaseAlumimecEstruturasMetalicasSeo />} />
           <Route path="/omar-skafi" element={<SobreOmar />} />
           <Route path="/auditoria-seo" element={<AuditoriaSeo />} />
           <Route path="/contato" element={<Contato />} />

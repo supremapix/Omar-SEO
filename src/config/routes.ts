@@ -313,6 +313,14 @@ export const MAIN_ROUTES: RouteConfig[] = [
     type: 'main',
   },
   {
+    path: '/resultados/alumimec-estruturas-metalicas-sao-jose-dos-pinhais',
+    title: 'Case Alumimec: SEO e Google Maps em São José dos Pinhais | Omar SEO',
+    description: 'Case real da Alumimec com presença documentada no Google orgânico e na busca local para intenção relacionada a estruturas para galpões em São José dos Pinhais.',
+    priority: 0.85,
+    changefreq: 'monthly',
+    type: 'main',
+  },
+  {
     path: '/omar-skafi',
     title: 'Sobre Omar Skafi - Especialista em SEO e GEO | Omar SEO',
     description: 'Conheça Omar Skafi, especialista com sólida trajetória em SEO técnico, SEO local, Google Maps e GEO em Curitiba/PR.',

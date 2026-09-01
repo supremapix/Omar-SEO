@@ -1476,6 +1476,96 @@ export default function Resultados() {
                 </div>
               </div>
             </div>
+
+            {/* Case #15 Block - Alumimec (São José dos Pinhais / PR) */}
+            <div className="p-6 sm:p-8 rounded-3xl bg-slate-950/90 border border-emerald-500/60 shadow-[0_0_35px_rgba(16,185,129,0.15)] space-y-6 relative overflow-hidden">
+              <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4 border-b border-slate-800 pb-5">
+                <div className="space-y-1">
+                  <div className="flex flex-wrap items-center gap-2">
+                    <span className="text-[10px] font-extrabold uppercase tracking-widest text-emerald-400 bg-emerald-950/90 px-2.5 py-0.5 rounded border border-emerald-800">
+                      Case #15 — Indústria / Estruturas Metálicas (São José dos Pinhais)
+                    </span>
+                    <span className="text-[10px] font-bold uppercase tracking-widest text-sky-400 bg-sky-950/80 px-2.5 py-0.5 rounded border border-sky-800/60">
+                      SEO ORGÂNICO • SEO LOCAL • GOOGLE MAPS
+                    </span>
+                  </div>
+                  <h3 className="text-xl sm:text-2xl font-bold font-display text-white mt-1">
+                    Alumimec no Google Orgânico e no Google Maps em São José dos Pinhais
+                  </h3>
+                  <p className="text-xs sm:text-sm text-slate-300">
+                    Presença documentada no resultado orgânico e na busca local do Google para uma intenção comercial relacionada a estruturas para galpões.
+                  </p>
+                </div>
+                <div className="flex items-center gap-2">
+                  <Link
+                    to="/resultados/alumimec-estruturas-metalicas-sao-jose-dos-pinhais"
+                    className="px-4 py-2 rounded-full bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold text-xs inline-flex items-center gap-2 transition-colors shadow-[0_0_20px_rgba(16,185,129,0.3)]"
+                  >
+                    <span>Ver Evidência</span>
+                    <ArrowRight size={14} />
+                  </Link>
+                </div>
+              </div>
+
+              <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-center">
+                {/* Visual Evidence Image */}
+                <div className="lg:col-span-6 bg-white p-2 rounded-2xl border border-slate-800 overflow-hidden group relative">
+                  <Link to="/resultados/alumimec-estruturas-metalicas-sao-jose-dos-pinhais" className="block">
+                    <img
+                      src="/images/cases/case-alumimec-estruturas-metalicas-sao-jose-dos-pinhais-google.png"
+                      alt="Alumimec no Google para estruturas de galpões em São José dos Pinhais"
+                      width={1000}
+                      height={640}
+                      loading="lazy"
+                      className="w-full h-auto object-contain rounded-xl transition-transform duration-300 group-hover:scale-[1.02]"
+                    />
+                  </Link>
+                  <span className="text-[9px] text-emerald-600 block text-center font-bold mt-1">
+                    Captura Real da SERP — Alumimec no Google Search e Seção Locais
+                  </span>
+                </div>
+
+                {/* Details */}
+                <div className="lg:col-span-6 space-y-4">
+                  <div className="p-3.5 rounded-xl bg-[#0f1118] border border-slate-800 space-y-1">
+                    <span className="text-[10px] font-bold uppercase tracking-wider text-slate-400 block">
+                      Consulta Original Registrada
+                    </span>
+                    <span className="text-xs font-bold text-yellow-300 font-mono block">
+                      “quem faz estrutura para galpoes em sao jose dos pinhais?”
+                    </span>
+                  </div>
+
+                  <div className="p-3.5 rounded-xl bg-[#0f1118] border border-slate-800 space-y-1">
+                    <span className="text-[10px] font-bold uppercase tracking-wider text-slate-400 block">
+                      Intenção Semântica & Cidade
+                    </span>
+                    <span className="text-xs font-bold text-emerald-400 block">
+                      Contratação de fornecedor industrial / São José dos Pinhais, PR
+                    </span>
+                  </div>
+
+                  <div className="p-3.5 rounded-xl bg-[#0f1118] border border-slate-800 space-y-1">
+                    <span className="text-[10px] font-bold uppercase tracking-wider text-slate-400 block">
+                      Resultado Factual Documentado
+                    </span>
+                    <span className="text-xs font-bold text-white">
+                      Presença simultânea no resultado orgânico (#1) e na seção local do Google (“Locais” / Maps).
+                    </span>
+                  </div>
+
+                  <div className="pt-2">
+                    <Link
+                      to="/resultados/alumimec-estruturas-metalicas-sao-jose-dos-pinhais"
+                      className="text-emerald-400 hover:text-emerald-300 font-bold inline-flex items-center gap-1.5 text-xs"
+                    >
+                      <span>Acessar documentação completa do Case #15 (Alumimec)</span>
+                      <ArrowRight size={14} />
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
 
           {/* Seção Cluster: Quando a pesquisa vira uma pergunta */}
