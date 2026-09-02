@@ -864,6 +864,37 @@ export default function Home() {
                 </Link>
               </div>
             </div>
+
+            {/* Case 18 - Lavanderia Inovata (Osasco / SP) */}
+            <div className="bg-slate-950 p-5 rounded-2xl border border-emerald-500/50 hover:border-emerald-400 transition-all space-y-3 flex flex-col justify-between group shadow-[0_0_20px_rgba(16,185,129,0.15)]">
+              <div className="space-y-2">
+                <div className="flex items-center justify-between">
+                  <span className="text-[10px] font-extrabold uppercase tracking-wider text-emerald-300 bg-emerald-950/80 px-2 py-0.5 rounded border border-emerald-800/60 inline-flex items-center gap-1">
+                    <Sparkles size={10} />
+                    <span>Case #18 — 1º Orgânico + Mapa</span>
+                  </span>
+                  <span className="text-[10px] font-bold uppercase tracking-wider text-emerald-300">
+                    Osasco / SP
+                  </span>
+                </div>
+                <h4 className="text-base font-bold text-white group-hover:text-emerald-300 transition-colors">
+                  Lavanderia Inovata
+                </h4>
+                <p className="text-xs text-slate-300 leading-relaxed font-mono">
+                  “lavanderia em osasco” — 1º resultado orgânico visível e 1ª empresa no bloco local do Google.
+                </p>
+              </div>
+
+              <div className="pt-2 border-t border-slate-800/80">
+                <Link
+                  to="/resultados/lavanderia-inovata-seo-google-maps-osasco"
+                  className="text-xs font-bold text-emerald-400 hover:text-emerald-300 inline-flex items-center gap-1 group-hover:translate-x-1 transition-transform"
+                >
+                  <span>Ver Case #18</span>
+                  <ChevronRight size={14} />
+                </Link>
+              </div>
+            </div>
           </div>
 
           {/* Consolidated Section: Seu cliente já não pesquisa apenas palavras. Ele pergunta. */}

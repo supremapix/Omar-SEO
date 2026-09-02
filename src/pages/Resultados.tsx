@@ -1758,6 +1758,107 @@ export default function Resultados() {
                 </div>
               </div>
             </div>
+
+            {/* Case #18: Lavanderia Inovata - Osasco / SP */}
+            <div className="p-6 sm:p-8 rounded-3xl bg-slate-900/90 border border-emerald-500/40 shadow-[0_0_35px_rgba(16,185,129,0.15)] space-y-6">
+              <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-slate-800 pb-4">
+                <div>
+                  <div className="flex flex-wrap items-center gap-2">
+                    <span className="text-[10px] font-mono font-bold uppercase tracking-wider text-emerald-400 bg-emerald-950/80 px-2.5 py-1 rounded-full border border-emerald-800/60 inline-flex items-center gap-1">
+                      <Sparkles size={11} />
+                      <span>CASE REAL #18</span>
+                    </span>
+                    <span className="text-[10px] font-mono font-bold uppercase tracking-wider text-blue-400 bg-blue-950/80 px-2.5 py-1 rounded-full border border-blue-800/60">
+                      <span>SERVIÇOS LOCAIS</span>
+                    </span>
+                  </div>
+                  <h3 className="text-xl sm:text-2xl font-bold font-display text-white mt-2">
+                    LAVANDERIA INOVATA — 1º ORGÂNICO E 1ª NO MAPA
+                  </h3>
+                  <p className="text-xs sm:text-sm text-slate-300 mt-1">
+                    Dupla presença documentada para a mesma intenção local: primeiro resultado orgânico visível e primeira empresa apresentada no bloco local.
+                  </p>
+                </div>
+                <div className="flex items-center gap-2 self-start sm:self-auto">
+                  <Link
+                    to="/resultados/lavanderia-inovata-seo-google-maps-osasco"
+                    className="px-5 py-2.5 rounded-full bg-emerald-500 hover:bg-emerald-400 text-slate-950 font-bold text-xs inline-flex items-center gap-2 transition-colors shadow-[0_0_20px_rgba(16,185,129,0.3)]"
+                  >
+                    <span>Ver Evidência</span>
+                    <ArrowRight size={14} />
+                  </Link>
+                </div>
+              </div>
+
+              <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-center">
+                {/* Visual Evidence Image */}
+                <div className="lg:col-span-6 bg-white p-2 rounded-2xl border border-slate-800 overflow-hidden group relative">
+                  <Link to="/resultados/lavanderia-inovata-seo-google-maps-osasco" className="block">
+                    <picture>
+                      <source srcset="/images/cases/case-lavanderia-inovata-google-osasco.svg" type="image/svg+xml" />
+                      <img
+                        src="/images/cases/case-lavanderia-inovata-google-osasco.png"
+                        alt="Lavanderia Inovata em primeiro no Google orgânico e no mapa para lavanderia em Osasco"
+                        width={1060}
+                        height={840}
+                        loading="lazy"
+                        className="w-full h-auto object-contain rounded-xl transition-transform duration-300 group-hover:scale-[1.02]"
+                      />
+                    </picture>
+                  </Link>
+                  <span className="text-[9px] text-slate-600 block text-center font-bold mt-1 font-mono">
+                    Captura Real da SERP — 1º Orgânico Visível + 1ª no Bloco Local (Osasco / SP)
+                  </span>
+                </div>
+
+                {/* Details */}
+                <div className="lg:col-span-6 space-y-3.5">
+                  <div className="p-3.5 rounded-xl bg-[#0f1118] border border-slate-800 space-y-1">
+                    <span className="text-[10px] font-bold uppercase tracking-wider text-slate-400 block">
+                      Consulta Original Documentada
+                    </span>
+                    <span className="text-xs font-bold text-yellow-300 font-mono block">
+                      “lavanderia em osasco”
+                    </span>
+                  </div>
+
+                  <div className="p-3.5 rounded-xl bg-[#0f1118] border border-slate-800 space-y-1">
+                    <span className="text-[10px] font-bold uppercase tracking-wider text-slate-400 block">
+                      Localização &amp; Badges
+                    </span>
+                    <div className="flex flex-wrap items-center gap-1.5 pt-0.5">
+                      <span className="text-xs font-bold text-emerald-400">OSASCO / SP</span>
+                      <div className="flex flex-wrap gap-1">
+                        {['1º ORGÂNICO', '1ª NO MAPA', 'SEO LOCAL', 'GEO'].map((badge) => (
+                          <span key={badge} className="px-2 py-0.5 rounded bg-slate-900 border border-slate-800 text-[9px] font-mono text-slate-300">
+                            {badge}
+                          </span>
+                        ))}
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="p-3.5 rounded-xl bg-[#0f1118] border border-slate-800 space-y-1">
+                    <span className="text-[10px] font-bold uppercase tracking-wider text-slate-400 block">
+                      Destaque Factual do Case
+                    </span>
+                    <span className="text-xs font-bold text-white leading-relaxed block">
+                      “Dupla presença documentada para a mesma intenção local: primeiro resultado orgânico visível e primeira empresa apresentada no bloco local.”
+                    </span>
+                  </div>
+
+                  <div className="pt-2">
+                    <Link
+                      to="/resultados/lavanderia-inovata-seo-google-maps-osasco"
+                      className="text-emerald-400 hover:text-emerald-300 font-bold inline-flex items-center gap-1.5 text-xs"
+                    >
+                      <span>Acessar documentação completa do Case #18</span>
+                      <ArrowRight size={14} />
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
 
           {/* Seção Cluster: Quando a pesquisa vira uma pergunta */}
@@ -1776,6 +1877,22 @@ export default function Resultados() {
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3 text-xs">
+              <Link
+                to="/resultados/lavanderia-inovata-seo-google-maps-osasco"
+                className="p-3.5 rounded-2xl bg-slate-900/90 border border-emerald-500/60 hover:border-emerald-400 transition-all space-y-2 group block"
+              >
+                <span className="text-[10px] font-bold uppercase tracking-wider text-emerald-400 block">
+                  Lavanderia Inovata (Osasco)
+                </span>
+                <p className="font-mono text-white text-[11px] font-bold group-hover:text-emerald-300 transition-colors">
+                  "lavanderia em osasco"
+                </p>
+                <span className="text-emerald-400 font-bold inline-flex items-center gap-1 text-[10px] pt-1">
+                  <span>Ver Case #18</span>
+                  <ChevronRight size={12} />
+                </span>
+              </Link>
+
               <Link
                 to="/resultados/clientes-omar-seo-telhados-barreirinha-google-ia"
                 className="p-3.5 rounded-2xl bg-slate-900/90 border border-purple-500/60 hover:border-purple-400 transition-all space-y-2 group block"

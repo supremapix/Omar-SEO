@@ -337,6 +337,14 @@ export const MAIN_ROUTES: RouteConfig[] = [
     type: 'main',
   },
   {
+    path: '/resultados/lavanderia-inovata-seo-google-maps-osasco',
+    title: 'Case Lavanderia Inovata: Google e Maps em Osasco | Omar SEO',
+    description: 'Case real da Lavanderia Inovata em Osasco: captura documenta a empresa no primeiro resultado orgânico visível e como primeira empresa exibida no bloco local do Google para “lavanderia em osasco”.',
+    priority: 0.85,
+    changefreq: 'monthly',
+    type: 'main',
+  },
+  {
     path: '/omar-skafi',
     title: 'Sobre Omar Skafi - Especialista em SEO e GEO | Omar SEO',
     description: 'Conheça Omar Skafi, especialista com sólida trajetória em SEO técnico, SEO local, Google Maps e GEO em Curitiba/PR.',
