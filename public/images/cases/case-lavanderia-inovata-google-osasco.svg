@@ -20,7 +20,7 @@
 
     <!-- Search Input Box -->
     <rect x="110" y="-10" width="760" height="46" rx="23" fill="#ffffff" stroke="#dfe1e5" stroke-width="1.5" filter="url(#shadow)"/>
-    <text x="135" y="19" font-size="15" fill="#202124" font-weight="400">lavanderia em osasco</text>
+    <text x="135" y="19" font-size="15" fill="#202124" font-weight="500">lavanderia profissional osasco</text>
 
     <!-- Right Controls inside search box -->
     <g transform="translate(745, 2)">
@@ -32,7 +32,7 @@
       <!-- Mic -->
       <path d="M12 14c1.66 0 3-1.34 3-3V5c0-1.66-1.34-3-3-3S9 3.34 9 5v6c0 1.66 1.34 3 3 3z" fill="#4285F4" transform="translate(20, -2) scale(0.75)"/>
       <path d="M17 11c0 2.76-2.24 5-5 5s-5-2.24-5-5H5c0 3.53 2.61 6.43 6 6.92V21h2v-3.08c3.39-.49 6-3.39 6-6.92h-2z" fill="#34A853" transform="translate(20, -2) scale(0.75)"/>
-      <!-- Camera Lens -->
+      <!-- Lens -->
       <circle cx="56" cy="10" r="4.5" fill="none" stroke="#FBBC05" stroke-width="1.8"/>
       <!-- Search Glass -->
       <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z" fill="#4285F4" transform="translate(76, -4) scale(0.85)"/>
@@ -45,31 +45,105 @@
     <text x="65" y="0" fill="#1a73e8" font-weight="600">Tudo</text>
     <line x1="65" y1="6" x2="95" y2="6" stroke="#1a73e8" stroke-width="2.5"/>
     <text x="115" y="0">Imagens</text>
-    <text x="180" y="0">Maps</text>
-    <text x="235" y="0">Shopping</text>
-    <text x="310" y="0">Vídeos</text>
-    <text x="375" y="0">Notícias</text>
-    <text x="438" y="0">Mais ▾</text>
-    <text x="495" y="0">Ferramentas ▾</text>
+    <text x="180" y="0">Shopping</text>
+    <text x="250" y="0">Maps</text>
+    <text x="300" y="0">Vídeos</text>
+    <text x="360" y="0">Notícias</text>
+    <text x="425" y="0">Mais ▾</text>
+    <text x="480" y="0">Ferramentas ▾</text>
   </g>
 
   <!-- Divider Line -->
   <line x1="0" y1="92" x2="1060" y2="92" stroke="#ebebeb" stroke-width="1"/>
 
-  <!-- Filter Pills -->
-  <g transform="translate(145, 112)">
-    <rect x="0" y="0" width="112" height="28" rx="14" fill="#f8f9fa" stroke="#dadce0" stroke-width="1"/>
-    <text x="12" y="18" font-size="12" fill="#3c4043">Estimativas on-line</text>
+  <!-- ==================== LEFT COLUMN: AI OVERVIEW + ORGANICS ==================== -->
 
-    <rect x="120" y="0" width="96" height="28" rx="14" fill="#f8f9fa" stroke="#dadce0" stroke-width="1"/>
-    <text x="132" y="18" font-size="12" fill="#3c4043">Abertos agora</text>
+  <!-- VISÃO GERAL CRIADA POR IA (AI OVERVIEW) -->
+  <g transform="translate(145, 115)">
+    <!-- Container Box -->
+    <rect x="0" y="0" width="480" height="270" rx="16" fill="#f8fafd" stroke="#e1e7f5" stroke-width="1.2"/>
 
-    <rect x="224" y="0" width="98" height="28" rx="14" fill="#f8f9fa" stroke="#dadce0" stroke-width="1"/>
-    <text x="236" y="18" font-size="12" fill="#3c4043">Bem avaliados</text>
+    <!-- AI Sparkle Header -->
+    <g transform="translate(16, 20)">
+      <!-- Sparkle Icon -->
+      <path d="M10 0L12.5 7.5L20 10L12.5 12.5L10 20L7.5 12.5L0 10L7.5 7.5Z" fill="url(#aiGradient)"/>
+      <defs>
+        <linearGradient id="aiGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stop-color="#1a73e8"/>
+          <stop offset="100%" stop-color="#a855f7"/>
+        </linearGradient>
+      </defs>
+      <text x="26" y="14" font-size="13" fill="#1a73e8" font-weight="700">Visão geral criada por IA</text>
+      <!-- Audio Icon -->
+      <path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02z" fill="#1a73e8" transform="translate(180, -2) scale(0.65)"/>
+    </g>
+
+    <!-- AI Overview Text Content -->
+    <g transform="translate(16, 52)">
+      <text x="0" y="0" font-size="12" fill="#202124" width="280">
+        <tspan x="0" dy="0">As melhores opções de <tspan font-weight="bold">lavanderias profissionais em</tspan></tspan>
+        <tspan x="0" dy="16"><tspan font-weight="bold">Osasco (SP)</tspan> <tspan fill="#1a73e8">oferecem serviços de lavagem a seco,</tspan></tspan>
+        <tspan x="0" dy="16"><tspan fill="#1a73e8">passadoria, higienização de edredons, tapetes e tênis,</tspan></tspan>
+        <tspan x="0" dy="16"><tspan fill="#1a73e8">além de atendimento com sistema leva e traz (delivery).</tspan></tspan>
+      </text>
+
+      <text x="0" y="85" font-size="13" fill="#202124" font-weight="700">Principais Lavanderias Profissionais em Osasco</text>
+
+      <text x="0" y="110" font-size="12" fill="#202124" font-weight="600">Lojas Físicas e Redes com Delivery</text>
+
+      <!-- Bullet item -->
+      <circle cx="6" cy="128" r="2.5" fill="#202124"/>
+      <text x="14" y="132" font-size="12" fill="#202124" font-weight="700">Lavanderia Moderna (Unidade Osasco)</text>
+      <text x="24" y="148" font-size="11" fill="#70757a">Endereço: <tspan fill="#1a73e8">Av. dos Autonomistas, 55 — Vila Yara...</tspan></text>
+    </g>
+
+    <!-- AI Overview - Citation Card (Right side of AI box) -->
+    <g transform="translate(310, 20)">
+      <!-- Top Card: LAVANDERIA INOVATA (CITED #1 BY AI) -->
+      <rect x="0" y="0" width="155" height="110" rx="12" fill="#ffffff" stroke="#dadce0" stroke-width="1.2" filter="url(#cardShadow)"/>
+
+      <!-- Favicon & Brand -->
+      <circle cx="14" cy="14" r="7" fill="#1a73e8"/>
+      <text x="14" y="17" font-size="8" fill="#ffffff" text-anchor="middle" font-weight="bold">L</text>
+      <text x="26" y="17" font-size="10" fill="#202124" font-weight="600">Lavanderia Inovata</text>
+      <text x="142" y="17" font-size="10" fill="#70757a">⋮</text>
+
+      <!-- Citation Title -->
+      <text x="10" y="36" font-size="11" fill="#1a0dab" font-weight="600">
+        <tspan x="10" dy="0">Lavanderia em Osasco |</tspan>
+        <tspan x="10" dy="13">Lavagem de Edredons...</tspan>
+      </text>
+
+      <!-- Citation Snippet -->
+      <text x="10" y="68" font-size="9.5" fill="#5f6368">
+        <tspan x="10" dy="0">Lavan. Cuidamos das suas</tspan>
+        <tspan x="10" dy="11">roupas com a qualidade...</tspan>
+      </text>
+
+      <!-- Thumbnail image of washing machines -->
+      <rect x="110" y="40" width="38" height="38" rx="6" fill="#0f172a"/>
+      <circle cx="129" cy="59" r="12" fill="none" stroke="#38bdf8" stroke-width="2"/>
+      <circle cx="129" cy="59" r="7" fill="#0284c7"/>
+
+      <!-- Second Card Preview Below -->
+      <g transform="translate(0, 118)">
+        <rect x="0" y="0" width="155" height="58" rx="10" fill="#ffffff" stroke="#e8eaed" stroke-width="1"/>
+        <circle cx="12" cy="12" r="6" fill="#34a853"/>
+        <text x="24" y="15" font-size="9" fill="#3c4043">www.lavanderiamoderna...</text>
+        <text x="10" y="32" font-size="10" fill="#1a0dab" font-weight="500">Lavanderia em Osasco — Av...</text>
+        <text x="10" y="46" font-size="8.5" fill="#70757a">Lavanderia em Osasco — Av...</text>
+      </g>
+    </g>
+
+    <!-- Bottom Button "Mostrar mais" inside AI Box -->
+    <g transform="translate(150, 238)">
+      <rect x="0" y="0" width="180" height="24" rx="12" fill="#ffffff" stroke="#dadce0" stroke-width="1"/>
+      <text x="90" y="16" font-size="11" fill="#3c4043" text-anchor="middle" font-weight="500">Mostrar mais ▾</text>
+    </g>
   </g>
 
-  <!-- ==================== RESULTADO 1: ORGANICO #1 ==================== -->
-  <g transform="translate(145, 160)">
+  <!-- ORGANIC RESULT #1: LAVANDERIA INOVATA -->
+  <g transform="translate(145, 405)">
     <!-- Favicon & Website URL -->
     <circle cx="12" cy="12" r="10" fill="#1a73e8"/>
     <text x="12" y="16" font-size="11" fill="#ffffff" text-anchor="middle" font-weight="bold">L</text>
@@ -81,13 +155,13 @@
     <text x="0" y="48" font-size="19" fill="#1a0dab" font-weight="400" cursor="pointer">Lavanderia em Osasco | Lavagem de Edredons e ...</text>
 
     <!-- Snippet Text -->
-    <text x="0" y="70" font-size="13" fill="#4d5156" width="400">
-      <tspan x="0" dy="0">Buscando <tspan font-weight="bold">lavanderia</tspan> osasco perto de mim? <tspan font-weight="bold">A Inovata oferece lavanderia</tspan></tspan>
+    <text x="0" y="70" font-size="13" fill="#4d5156">
+      <tspan x="0" dy="0">Buscando lavanderia osasco perto de mim? <tspan font-weight="bold">A Inovata oferece lavanderia</tspan></tspan>
       <tspan x="0" dy="18"><tspan font-weight="bold">profissional, passadoria, lavagem de tênis e delivery</tspan>. Solicite seu orçamento!</tspan>
     </text>
 
     <!-- Thumbnail Image Box (Right side of organic result) -->
-    <g transform="translate(420, -5)">
+    <g transform="translate(400, -5)">
       <rect x="0" y="0" width="76" height="76" rx="10" fill="#1e293b" stroke="#e2e8f0" stroke-width="1"/>
       <!-- Storefront drawing -->
       <rect x="6" y="8" width="64" height="60" rx="4" fill="#334155"/>
@@ -102,219 +176,160 @@
     </g>
   </g>
 
-  <!-- ==================== SEÇÃO: EMPRESAS (GOOGLE MAPS PACK) ==================== -->
-  <g transform="translate(145, 290)">
-    <!-- Section Title -->
-    <text x="0" y="0" font-size="22" fill="#202124" font-weight="500">Empresas</text>
+  <!-- ORGANIC RESULT #2: INSTAGRAM -->
+  <g transform="translate(145, 510)">
+    <rect x="2" y="2" width="20" height="20" rx="6" fill="#e1306c"/>
+    <circle cx="12" cy="12" r="5" fill="none" stroke="#ffffff" stroke-width="1.8"/>
+    <circle cx="16.5" cy="7.5" r="1" fill="#ffffff"/>
+    <text x="30" y="10" font-size="12" fill="#202124" font-weight="500">Instagram · washtecosasco</text>
+    <text x="30" y="24" font-size="11" fill="#70757a">Mais de 1,9 mil seguidores · ⋮</text>
 
-    <!-- LOCAL LISTINGS (LEFT COLUMN) -->
-    <g transform="translate(0, 18)">
+    <text x="0" y="48" font-size="18" fill="#1a0dab" font-weight="400">Tingimento de Roupas (@washtecosasco) - Instagram</text>
+    <text x="0" y="68" font-size="12.5" fill="#4d5156">
+      <tspan x="0" dy="0">| Washtec | Lavanderia e Tingimento | Rápido e <tspan font-weight="bold">profissional</tspan> | <tspan font-weight="bold">Osasco</tspan>, R. Salém</tspan>
+      <tspan x="0" dy="17">Brechara, 412 | (11) 93943-7834 @washtecoficial.</tspan>
+    </text>
 
-      <!-- CARD 1: LAVANDERIA INOVATA (1ª EMPRESA VISÍVEL) -->
-      <g transform="translate(0, 0)">
-        <text x="0" y="16" font-size="15" fill="#1a0dab" font-weight="500">Lavanderia Inovata – Lavanderia Profis...</text>
-        
-        <!-- Rating Stars -->
-        <text x="0" y="34" font-size="12" fill="#202124">5,0</text>
-        <g transform="translate(22, 24)">
-          <path d="M6 0l1.8 3.6L12 4.2l-3 2.9.7 4.1L6 9.3l-3.7 1.9.7-4.1-3-2.9 4.2-.6z" fill="#fbbc04"/>
-          <path d="M6 0l1.8 3.6L12 4.2l-3 2.9.7 4.1L6 9.3l-3.7 1.9.7-4.1-3-2.9 4.2-.6z" fill="#fbbc04" transform="translate(12, 0)"/>
-          <path d="M6 0l1.8 3.6L12 4.2l-3 2.9.7 4.1L6 9.3l-3.7 1.9.7-4.1-3-2.9 4.2-.6z" fill="#fbbc04" transform="translate(24, 0)"/>
-          <path d="M6 0l1.8 3.6L12 4.2l-3 2.9.7 4.1L6 9.3l-3.7 1.9.7-4.1-3-2.9 4.2-.6z" fill="#fbbc04" transform="translate(36, 0)"/>
-          <path d="M6 0l1.8 3.6L12 4.2l-3 2.9.7 4.1L6 9.3l-3.7 1.9.7-4.1-3-2.9 4.2-.6z" fill="#fbbc04" transform="translate(48, 0)"/>
-        </g>
-        <text x="86" y="34" font-size="12" fill="#70757a">(45) · Serviço de lavanderia</text>
+    <rect x="400" y="0" width="76" height="70" rx="8" fill="#a855f7"/>
+    <text x="438" y="40" font-size="9" fill="#ffffff" font-weight="bold" text-anchor="middle">TINGI-MENTO</text>
+  </g>
 
-        <!-- Subtext -->
-        <text x="0" y="50" font-size="12" fill="#70757a">Mais de 15 anos no mercado · Osasco - SP</text>
-        <text x="0" y="66" font-size="12">
-          <tspan fill="#188038" font-weight="500">Aberto</tspan>
-          <tspan fill="#70757a"> · Fecha 18:30 · (11) 92169-1307</tspan>
-        </text>
+  <!-- ORGANIC RESULT #3: BONASECCO -->
+  <g transform="translate(145, 615)">
+    <circle cx="12" cy="12" r="10" fill="#ef4444"/>
+    <text x="12" y="16" font-size="10" fill="#ffffff" text-anchor="middle" font-weight="bold">B</text>
+    <text x="30" y="10" font-size="12" fill="#202124" font-weight="500">Lavanderia Bonasecco</text>
+    <text x="30" y="24" font-size="11" fill="#4d5156">https://bonasecco.com.br › bonasecco-osasco</text>
+    <text x="260" y="24" font-size="11" fill="#70757a">⋮</text>
 
-        <!-- Review Quote -->
-        <circle cx="6" cy="80" r="6" fill="#1a73e8"/>
-        <path d="M4 81c0-1.5 1-2.5 2-2.5s2 1 2 2.5" stroke="#fff" stroke-width="1" fill="none"/>
-        <text x="18" y="84" font-size="12" fill="#4d5156">"<tspan font-weight="bold">Ótima lavanderia</tspan>, bom preço e os donos são muito atenciosos."</text>
+    <text x="0" y="48" font-size="18" fill="#1a0dab" font-weight="400">Lavanderia Osasco - SP</text>
+  </g>
 
-        <!-- Action Buttons (Site / Rotas) -->
-        <g transform="translate(285, 10)">
-          <!-- Site Button -->
-          <circle cx="16" cy="16" r="16" fill="#e8f0fe"/>
-          <circle cx="16" cy="16" r="7" fill="none" stroke="#1a73e8" stroke-width="1.5"/>
-          <line x1="9" y1="16" x2="23" y2="16" stroke="#1a73e8" stroke-width="1.2"/>
-          <text x="16" y="42" font-size="11" fill="#1a73e8" text-anchor="middle" font-weight="500">Site</text>
 
-          <!-- Rotas Button -->
-          <g transform="translate(50, 0)">
-            <circle cx="16" cy="16" r="16" fill="#e8f0fe"/>
-            <path d="M12 20V12h5l-2.5-2.5L16 8l5 5-5 5-1.5-1.5L17 14h-3v6z" fill="#1a73e8"/>
-            <text x="16" y="42" font-size="11" fill="#1a73e8" text-anchor="middle" font-weight="500">Rotas</text>
-          </g>
-        </g>
-      </g>
+  <!-- ==================== RIGHT COLUMN: GOOGLE LOCAL PANEL ==================== -->
+  <g transform="translate(650, 115)">
+    <!-- Main Panel Frame -->
+    <rect x="0" y="0" width="375" height="570" rx="16" fill="#ffffff" stroke="#dadce0" stroke-width="1.2" filter="url(#cardShadow)"/>
 
-      <line x1="0" y1="102" x2="390" y2="102" stroke="#f1f3f4" stroke-width="1"/>
+    <!-- Map & Storefront Photo Header -->
+    <g transform="translate(12, 12)">
+      <!-- Main Photo (Storefront) -->
+      <rect x="0" y="0" width="220" height="150" rx="10" fill="#1e293b"/>
+      <!-- Storefront drawing -->
+      <rect x="15" y="20" width="190" height="120" rx="4" fill="#334155"/>
+      <rect x="25" y="30" width="170" height="35" rx="3" fill="#0284c7"/>
+      <text x="110" y="52" font-size="12" fill="#ffffff" font-weight="extrabold" text-anchor="middle" letter-spacing="1">LAVANDERIA INOVATA</text>
+      <!-- Doors & Van -->
+      <rect x="35" y="75" width="50" height="75" fill="#64748b"/>
+      <rect x="95" y="75" width="80" height="55" fill="#0f172a"/>
+      <rect x="110" y="90" width="50" height="30" rx="4" fill="#ffffff"/>
+      <text x="135" y="108" font-size="6" fill="#0f172a" font-weight="bold" text-anchor="middle">INOVATA</text>
 
-      <!-- CARD 2: LAVOTAI -->
-      <g transform="translate(0, 114)">
-        <text x="0" y="16" font-size="15" fill="#1a0dab" font-weight="500">Lavotai - Lavanderia Express no Metalú...</text>
-        <text x="0" y="34" font-size="12" fill="#202124">4,9</text>
-        <g transform="translate(22, 24)">
-          <path d="M6 0l1.8 3.6L12 4.2l-3 2.9.7 4.1L6 9.3l-3.7 1.9.7-4.1-3-2.9 4.2-.6z" fill="#fbbc04"/>
-          <path d="M6 0l1.8 3.6L12 4.2l-3 2.9.7 4.1L6 9.3l-3.7 1.9.7-4.1-3-2.9 4.2-.6z" fill="#fbbc04" transform="translate(12, 0)"/>
-          <path d="M6 0l1.8 3.6L12 4.2l-3 2.9.7 4.1L6 9.3l-3.7 1.9.7-4.1-3-2.9 4.2-.6z" fill="#fbbc04" transform="translate(24, 0)"/>
-          <path d="M6 0l1.8 3.6L12 4.2l-3 2.9.7 4.1L6 9.3l-3.7 1.9.7-4.1-3-2.9 4.2-.6z" fill="#fbbc04" transform="translate(36, 0)"/>
-          <path d="M6 0l1.8 3.6L12 4.2l-3 2.9.7 4.1L6 9.3l-3.7 1.9.7-4.1-3-2.9 4.2-.6z" fill="#fbbc04" transform="translate(48, 0)"/>
-        </g>
-        <text x="86" y="34" font-size="12" fill="#70757a">(36) · Lavanderia automática</text>
+      <!-- "Ver fotos" Overlay Badge -->
+      <rect x="135" y="115" width="75" height="24" rx="4" fill="rgba(0,0,0,0.65)"/>
+      <text x="172" y="131" font-size="10" fill="#ffffff" font-weight="600" text-anchor="middle">Ver fotos</text>
 
-        <text x="0" y="50" font-size="12" fill="#70757a">Osasco - SP</text>
-        <text x="0" y="66" font-size="12" fill="#188038" font-weight="500">Aberto 24 horas</text>
+      <!-- Map Thumbnail Photo -->
+      <g transform="translate(228, 0)">
+        <rect x="0" y="0" width="123" height="150" rx="10" fill="#e2e8f0"/>
+        <!-- Map Grid Lines -->
+        <path d="M0 40h123M0 90h123M40 0v150M85 0v150" stroke="#cbd5e1" stroke-width="1.5"/>
+        <path d="M10 20Q50 70 110 130" stroke="#10b981" stroke-width="4" fill="none"/>
+        <!-- Red Map Pin -->
+        <path d="M70 45 C70 35 85 35 85 45 C85 55 77.5 65 77.5 70 C77.5 65 70 55 70 45 Z" fill="#ea4335"/>
+        <circle cx="77.5" cy="44" r="3" fill="#ffffff"/>
 
-        <circle cx="6" cy="80" r="6" fill="#1a73e8"/>
-        <text x="18" y="84" font-size="12" fill="#4d5156">"Melhor <tspan font-weight="bold">lavanderia</tspan> m de região, roupas sempre limpas e cheirosas."</text>
-
-        <g transform="translate(285, 10)">
-          <circle cx="16" cy="16" r="16" fill="#e8f0fe"/>
-          <circle cx="16" cy="16" r="7" fill="none" stroke="#1a73e8" stroke-width="1.5"/>
-          <line x1="9" y1="16" x2="23" y2="16" stroke="#1a73e8" stroke-width="1.2"/>
-          <text x="16" y="42" font-size="11" fill="#1a73e8" text-anchor="middle" font-weight="500">Site</text>
-
-          <g transform="translate(50, 0)">
-            <circle cx="16" cy="16" r="16" fill="#e8f0fe"/>
-            <path d="M12 20V12h5l-2.5-2.5L16 8l5 5-5 5-1.5-1.5L17 14h-3v6z" fill="#1a73e8"/>
-            <text x="16" y="42" font-size="11" fill="#1a73e8" text-anchor="middle" font-weight="500">Rotas</text>
-          </g>
-        </g>
-      </g>
-
-      <line x1="0" y1="216" x2="390" y2="216" stroke="#f1f3f4" stroke-width="1"/>
-
-      <!-- CARD 3: LAVÓ -->
-      <g transform="translate(0, 228)">
-        <text x="0" y="16" font-size="15" fill="#1a0dab" font-weight="500">Lavanderia Lavó Osasco Bandeiras</text>
-        <text x="0" y="34" font-size="12" fill="#202124">4,8</text>
-        <g transform="translate(22, 24)">
-          <path d="M6 0l1.8 3.6L12 4.2l-3 2.9.7 4.1L6 9.3l-3.7 1.9.7-4.1-3-2.9 4.2-.6z" fill="#fbbc04"/>
-          <path d="M6 0l1.8 3.6L12 4.2l-3 2.9.7 4.1L6 9.3l-3.7 1.9.7-4.1-3-2.9 4.2-.6z" fill="#fbbc04" transform="translate(12, 0)"/>
-          <path d="M6 0l1.8 3.6L12 4.2l-3 2.9.7 4.1L6 9.3l-3.7 1.9.7-4.1-3-2.9 4.2-.6z" fill="#fbbc04" transform="translate(24, 0)"/>
-          <path d="M6 0l1.8 3.6L12 4.2l-3 2.9.7 4.1L6 9.3l-3.7 1.9.7-4.1-3-2.9 4.2-.6z" fill="#fbbc04" transform="translate(36, 0)"/>
-          <path d="M6 0l1.8 3.6L12 4.2l-3 2.9.7 4.1L6 9.3l-3.7 1.9.7-4.1-3-2.9 4.2-.6z" fill="#fbbc04" transform="translate(48, 0)"/>
-        </g>
-        <text x="94" y="34" font-size="12" fill="#70757a">(100) · Lavanderia</text>
-
-        <text x="0" y="50" font-size="12" fill="#70757a">Osasco - SP</text>
-        <text x="0" y="66" font-size="12">
-          <tspan fill="#188038" font-weight="500">Aberto</tspan>
-          <tspan fill="#70757a"> · Fecha 23:00 · (11) 98617-4413</tspan>
-        </text>
-
-        <circle cx="6" cy="80" r="6" fill="#1a73e8"/>
-        <text x="18" y="84" font-size="12" fill="#4d5156">"Lugar limpo higiênico tranquilo e o amaciante muito bom cheiro delicioso"</text>
-
-        <g transform="translate(285, 10)">
-          <circle cx="16" cy="16" r="16" fill="#e8f0fe"/>
-          <circle cx="16" cy="16" r="7" fill="none" stroke="#1a73e8" stroke-width="1.5"/>
-          <line x1="9" y1="16" x2="23" y2="16" stroke="#1a73e8" stroke-width="1.2"/>
-          <text x="16" y="42" font-size="11" fill="#1a73e8" text-anchor="middle" font-weight="500">Site</text>
-
-          <g transform="translate(50, 0)">
-            <circle cx="16" cy="16" r="16" fill="#e8f0fe"/>
-            <path d="M12 20V12h5l-2.5-2.5L16 8l5 5-5 5-1.5-1.5L17 14h-3v6z" fill="#1a73e8"/>
-            <text x="16" y="42" font-size="11" fill="#1a73e8" text-anchor="middle" font-weight="500">Rotas</text>
-          </g>
-        </g>
-      </g>
-
-      <!-- Mais Empresas Button -->
-      <g transform="translate(60, 335)">
-        <rect x="0" y="0" width="270" height="36" rx="18" fill="#f1f3f4"/>
-        <text x="135" y="22" font-size="13" fill="#202124" text-anchor="middle" font-weight="500">Mais empresas  →</text>
+        <!-- "Ver por fora" Badge -->
+        <rect x="25" y="115" width="90" height="24" rx="4" fill="rgba(0,0,0,0.65)"/>
+        <text x="70" y="131" font-size="10" fill="#ffffff" font-weight="600" text-anchor="middle">Ver por fora</text>
       </g>
     </g>
 
-    <!-- GOOGLE MAPS GRAPHIC (RIGHT COLUMN) -->
-    <g transform="translate(410, 18)">
-      <!-- Map Frame -->
-      <rect x="0" y="0" width="450" height="380" rx="16" fill="#e5e3df" stroke="#dadce0" stroke-width="1" filter="url(#cardShadow)"/>
+    <!-- Business Title in Panel -->
+    <g transform="translate(20, 185)">
+      <text x="0" y="0" font-size="18" fill="#202124" font-weight="700">
+        <tspan x="0" dy="0">Lavanderia Inovata – Lavanderia</tspan>
+        <tspan x="0" dy="22">Profissional e Passadoria Osasco</tspan>
+      </text>
 
-      <!-- Map Base & Roads -->
-      <path d="M0,80 Q100,60 200,90 T450,70" stroke="#ffffff" stroke-width="18" fill="none"/>
-      <path d="M0,80 Q100,60 200,90 T450,70" stroke="#fbd5a0" stroke-width="12" fill="none"/>
-
-      <path d="M120,0 Q140,150 220,250 T300,380" stroke="#ffffff" stroke-width="22" fill="none"/>
-      <path d="M120,0 Q140,150 220,250 T300,380" stroke="#a5c9eb" stroke-width="14" fill="none"/>
-
-      <path d="M0,220 Q200,180 450,230" stroke="#ffffff" stroke-width="12" fill="none"/>
-      <path d="M0,220 Q200,180 450,230" stroke="#ffeb3b" stroke-width="8" fill="none"/>
-
-      <!-- Map Labels -->
-      <text x="230" y="30" font-size="11" fill="#5f6368" font-weight="bold">ROCHDALE</text>
-      <text x="180" y="80" font-size="10" fill="#70757a">BRATNINGA</text>
-      <text x="160" y="110" font-size="10" fill="#70757a">QUITAÚNA</text>
-      <text x="10" y="150" font-size="13" fill="#3c4043" font-weight="bold">Carapicuíba</text>
-      <text x="10" y="190" font-size="9" fill="#70757a">PARQUE DAS GRAÇAS</text>
-      <text x="320" y="180" font-size="11" fill="#5f6368" font-weight="bold">VILA YARA</text>
-      <text x="350" y="240" font-size="11" fill="#5f6368" font-weight="bold">RIO PEQUENO</text>
-      <text x="210" y="290" font-size="10" fill="#70757a">PARQUE JANDAIA</text>
-      <text x="10" y="370" font-size="11" fill="#5f6368" font-weight="bold">GRANJA VIANA</text>
-
-      <!-- MAP PINS -->
-      <!-- PIN 1: LAVANDERIA INOVATA (Highlighted Top Center) -->
-      <g transform="translate(180, 110)">
-        <rect x="0" y="0" width="130" height="24" rx="4" fill="#ffffff" stroke="#ea4335" stroke-width="1.5" filter="url(#shadow)"/>
-        <circle cx="12" cy="12" r="5" fill="#ea4335"/>
-        <text x="22" y="15" font-size="9" fill="#202124" font-weight="bold">Lavanderia Inovata</text>
-        <text x="22" y="22" font-size="7" fill="#5f6368">- Lavanderia...</text>
-      </g>
-
-      <!-- PIN 2: Laundromat -->
-      <g transform="translate(300, 130)">
-        <rect x="0" y="0" width="105" height="26" rx="4" fill="#ffffff" stroke="#dadce0" stroke-width="1"/>
-        <circle cx="10" cy="13" r="4" fill="#ea4335"/>
-        <text x="18" y="12" font-size="8" fill="#202124" font-weight="bold">Laundromat</text>
-        <text x="18" y="20" font-size="7" fill="#5f6368">Lavanderia Self...</text>
-      </g>
-
-      <!-- PIN 3: Lavanderia Lavó -->
-      <g transform="translate(135, 230)">
-        <circle cx="12" cy="12" r="10" fill="#ea4335"/>
-        <circle cx="12" cy="12" r="4" fill="#ffffff"/>
-        <text x="26" y="14" font-size="9" fill="#202124" font-weight="bold">Lavanderia Lavó</text>
-        <text x="26" y="22" font-size="8" fill="#5f6368">Osasco Bandeiras</text>
-      </g>
-
-      <!-- PIN 4: Lavotai -->
-      <g transform="translate(200, 260)">
-        <circle cx="12" cy="12" r="10" fill="#ea4335"/>
-        <circle cx="12" cy="12" r="4" fill="#ffffff"/>
-        <text x="26" y="14" font-size="9" fill="#202124" font-weight="bold">Lavotai - Lavanderia</text>
-        <text x="26" y="22" font-size="8" fill="#5f6368">Express no...</text>
-      </g>
-
-      <!-- Map Button Top Right -->
-      <g transform="translate(340, 10)">
-        <rect x="0" y="0" width="100" height="28" rx="14" fill="#3c4043" opacity="0.9"/>
-        <circle cx="14" cy="14" r="5" fill="#ea4335"/>
-        <text x="26" y="18" font-size="11" fill="#ffffff" font-weight="500">Abrir no Maps</text>
-      </g>
-
-      <!-- Map Controls Bottom Right -->
-      <g transform="translate(415, 270)">
-        <circle cx="12" cy="12" r="12" fill="#ffffff" filter="url(#shadow)"/>
-        <circle cx="12" cy="12" r="4" fill="#5f6368"/>
-
-        <g transform="translate(0, 32)">
-          <rect x="0" y="0" width="24" height="48" rx="4" fill="#ffffff" filter="url(#shadow)"/>
-          <text x="12" y="17" font-size="16" fill="#5f6368" text-anchor="middle" font-weight="bold">+</text>
-          <line x1="4" y1="24" x2="20" y2="24" stroke="#dadce0" stroke-width="1"/>
-          <text x="12" y="40" font-size="18" fill="#5f6368" text-anchor="middle" font-weight="bold">-</text>
+      <!-- Rating Row -->
+      <g transform="translate(0, 36)">
+        <text x="0" y="12" font-size="13" fill="#202124" font-weight="700">5,0</text>
+        <!-- 5 Gold Stars -->
+        <g fill="#fbbc04" transform="translate(26, 1)">
+          <path d="M6 0l1.8 3.7L12 4.3l-3 2.9.7 4.1L6 9.4l-3.7 1.9.7-4.1-3-2.9 4.2-.6z"/>
+          <path d="M6 0l1.8 3.7L12 4.3l-3 2.9.7 4.1L6 9.4l-3.7 1.9.7-4.1-3-2.9 4.2-.6z" transform="translate(14,0)"/>
+          <path d="M6 0l1.8 3.7L12 4.3l-3 2.9.7 4.1L6 9.4l-3.7 1.9.7-4.1-3-2.9 4.2-.6z" transform="translate(28,0)"/>
+          <path d="M6 0l1.8 3.7L12 4.3l-3 2.9.7 4.1L6 9.4l-3.7 1.9.7-4.1-3-2.9 4.2-.6z" transform="translate(42,0)"/>
+          <path d="M6 0l1.8 3.7L12 4.3l-3 2.9.7 4.1L6 9.4l-3.7 1.9.7-4.1-3-2.9 4.2-.6z" transform="translate(56,0)"/>
         </g>
+        <text x="102" y="12" font-size="13" fill="#1a73e8">45 avaliações no Google</text>
       </g>
 
-      <!-- Map Copyright Footer -->
-      <text x="320" y="372" font-size="9" fill="#70757a">Dados do mapa ©2025 Google  Termos</text>
+      <!-- Category / Subtitle -->
+      <text x="0" y="68" font-size="12" fill="#4d5156">Serviço de lavanderia na Microrregião de Osasco, São Paulo</text>
+
+      <!-- Action Buttons Row -->
+      <g transform="translate(0, 88)">
+        <!-- Site Button -->
+        <rect x="0" y="0" width="75" height="36" rx="18" fill="#f8f9fa" stroke="#dadce0" stroke-width="1"/>
+        <circle cx="18" cy="18" r="8" fill="none" stroke="#1a73e8" stroke-width="1.5"/>
+        <path d="M10 18h16M18 10a12 12 0 010 16M18 10a12 12 0 000 16" stroke="#1a73e8" stroke-width="1" fill="none"/>
+        <text x="44" y="22" font-size="12" fill="#1a73e8" font-weight="600">Site</text>
+
+        <!-- Rotas Button -->
+        <rect x="83" y="0" width="82" height="36" rx="18" fill="#f8f9fa" stroke="#dadce0" stroke-width="1"/>
+        <path d="M102 12l8 12-4-2-4 2z" fill="#1a73e8"/>
+        <text x="122" y="22" font-size="12" fill="#1a73e8" font-weight="600">Rotas</text>
+
+        <!-- Avaliar Button -->
+        <rect x="173" y="0" width="82" height="36" rx="18" fill="#f8f9fa" stroke="#dadce0" stroke-width="1"/>
+        <path d="M188 14h12v10h-12z" fill="none" stroke="#1a73e8" stroke-width="1.2"/>
+        <text x="206" y="22" font-size="12" fill="#1a73e8" font-weight="600">Avaliar</text>
+
+        <!-- Salvar Button -->
+        <rect x="263" y="0" width="72" height="36" rx="18" fill="#f8f9fa" stroke="#dadce0" stroke-width="1"/>
+        <path d="M277 12v12l4-3 4 3V12z" fill="none" stroke="#1a73e8" stroke-width="1.2"/>
+        <text x="292" y="22" font-size="12" fill="#1a73e8" font-weight="600">Salvar</text>
+      </g>
     </g>
+
+    <!-- Address & Business Details in Panel -->
+    <g transform="translate(20, 345)" font-size="12" fill="#3c4043">
+      <line x1="0" y1="0" x2="335" y2="0" stroke="#f1f3f4" stroke-width="1"/>
+
+      <g transform="translate(0, 18)">
+        <text x="0" y="0" font-weight="700" fill="#202124">Destaques da Empresa:</text>
+        <text x="0" y="18" fill="#5f6368">• Citada na Visão geral criada por IA (AI Overview)</text>
+        <text x="0" y="34" fill="#5f6368">• 1º Resultado Orgânico em "lavanderia profissional osasco"</text>
+        <text x="0" y="50" fill="#5f6368">• Painel Local no Google com Nota 5,0 (45 avaliações)</text>
+      </g>
+
+      <line x1="0" y1="80" x2="335" y2="80" stroke="#f1f3f4" stroke-width="1"/>
+
+      <g transform="translate(0, 98)">
+        <text x="0" y="0" font-weight="700" fill="#202124">Serviços Oferecidos:</text>
+        <text x="0" y="18" fill="#5f6368">Passadoria, Lavagem de Edredons, Tênis, Delivery</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- ==================== HIGHLIGHT OVERLAY BADGES ==================== -->
+  <!-- AI Overview Badge -->
+  <g transform="translate(480, 105)">
+    <rect x="0" y="0" width="180" height="26" rx="13" fill="#1e1b4b" stroke="#818cf8" stroke-width="1.5"/>
+    <text x="90" y="17" font-size="11" fill="#c7d2fe" font-weight="700" text-anchor="middle">★ CITADA NA IA DO GOOGLE</text>
+  </g>
+
+  <!-- Organic #1 Badge -->
+  <g transform="translate(30, 410)">
+    <rect x="0" y="0" width="105" height="26" rx="13" fill="#064e3b" stroke="#34d399" stroke-width="1.5"/>
+    <text x="52.5" y="17" font-size="11" fill="#a7f3d0" font-weight="700" text-anchor="middle">1º ORGÂNICO</text>
+  </g>
+
+  <!-- Knowledge Panel Badge -->
+  <g transform="translate(740, 95)">
+    <rect x="0" y="0" width="190" height="26" rx="13" fill="#311b92" stroke="#b388ff" stroke-width="1.5"/>
+    <text x="95" y="17" font-size="11" fill="#e7d6ff" font-weight="700" text-anchor="middle">PAINEL LOCAL (5,0 ★)</text>
   </g>
 </svg>

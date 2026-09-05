@@ -1694,7 +1694,7 @@ export default function Resultados() {
                 <div className="lg:col-span-6 bg-white p-2 rounded-2xl border border-slate-800 overflow-hidden group relative">
                   <Link to="/resultados/clientes-omar-seo-telhados-barreirinha-google-ia" className="block">
                     <picture>
-                      <source srcset="/images/cases/case-clientes-omar-seo-telhados-barreirinha-google-ia.svg" type="image/svg+xml" />
+                      <source srcSet="/images/cases/case-clientes-omar-seo-telhados-barreirinha-google-ia.svg" type="image/svg+xml" />
                       <img
                         src="/images/cases/case-clientes-omar-seo-telhados-barreirinha-google-ia.png"
                         alt="Clientes Omar SEO no Google e na Visão geral criada por IA para conserto de telhados no Barreirinha Curitiba"
@@ -1768,15 +1768,19 @@ export default function Resultados() {
                       <Sparkles size={11} />
                       <span>CASE REAL #18</span>
                     </span>
+                    <span className="text-[10px] font-mono font-bold uppercase tracking-wider text-purple-300 bg-purple-950/80 px-2.5 py-1 rounded-full border border-purple-800/60 flex items-center gap-1">
+                      <Sparkles size={10} />
+                      <span>IA DO GOOGLE (AI OVERVIEW)</span>
+                    </span>
                     <span className="text-[10px] font-mono font-bold uppercase tracking-wider text-blue-400 bg-blue-950/80 px-2.5 py-1 rounded-full border border-blue-800/60">
                       <span>SERVIÇOS LOCAIS</span>
                     </span>
                   </div>
                   <h3 className="text-xl sm:text-2xl font-bold font-display text-white mt-2">
-                    LAVANDERIA INOVATA — 1º ORGÂNICO E 1ª NO MAPA
+                    LAVANDERIA INOVATA — IA DO GOOGLE, 1º ORGÂNICO E PAINEL LOCAL
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-300 mt-1">
-                    Dupla presença documentada para a mesma intenção local: primeiro resultado orgânico visível e primeira empresa apresentada no bloco local.
+                    Tríplice presença documentada: citada na Visão Geral criada por IA (AI Overview), 1º resultado orgânico e Painel Local com nota 5,0 em Osasco/SP.
                   </p>
                 </div>
                 <div className="flex items-center gap-2 self-start sm:self-auto">
@@ -1795,10 +1799,10 @@ export default function Resultados() {
                 <div className="lg:col-span-6 bg-white p-2 rounded-2xl border border-slate-800 overflow-hidden group relative">
                   <Link to="/resultados/lavanderia-inovata-seo-google-maps-osasco" className="block">
                     <picture>
-                      <source srcset="/images/cases/case-lavanderia-inovata-google-osasco.svg" type="image/svg+xml" />
+                      <source srcSet="/images/cases/case-lavanderia-inovata-google-osasco.svg" type="image/svg+xml" />
                       <img
                         src="/images/cases/case-lavanderia-inovata-google-osasco.png"
-                        alt="Lavanderia Inovata em primeiro no Google orgânico e no mapa para lavanderia em Osasco"
+                        alt="Lavanderia Inovata citada na IA do Google, 1º orgânico e Painel Local para lavanderia profissional em Osasco"
                         width={1060}
                         height={840}
                         loading="lazy"
@@ -1807,7 +1811,7 @@ export default function Resultados() {
                     </picture>
                   </Link>
                   <span className="text-[9px] text-slate-600 block text-center font-bold mt-1 font-mono">
-                    Captura Real da SERP — 1º Orgânico Visível + 1ª no Bloco Local (Osasco / SP)
+                    Captura Real da SERP — IA do Google (AI Overview) + 1º Orgânico Visível + Painel Local 5,0 ★ (Osasco / SP)
                   </span>
                 </div>
 
@@ -1818,7 +1822,7 @@ export default function Resultados() {
                       Consulta Original Documentada
                     </span>
                     <span className="text-xs font-bold text-yellow-300 font-mono block">
-                      “lavanderia em osasco”
+                      “lavanderia profissional osasco”
                     </span>
                   </div>
 
@@ -1829,7 +1833,7 @@ export default function Resultados() {
                     <div className="flex flex-wrap items-center gap-1.5 pt-0.5">
                       <span className="text-xs font-bold text-emerald-400">OSASCO / SP</span>
                       <div className="flex flex-wrap gap-1">
-                        {['1º ORGÂNICO', '1ª NO MAPA', 'SEO LOCAL', 'GEO'].map((badge) => (
+                        {['IA DO GOOGLE', '1º ORGÂNICO', 'PAINEL LOCAL (5,0 ★)', 'SEO LOCAL', 'GEO'].map((badge) => (
                           <span key={badge} className="px-2 py-0.5 rounded bg-slate-900 border border-slate-800 text-[9px] font-mono text-slate-300">
                             {badge}
                           </span>
@@ -1843,7 +1847,7 @@ export default function Resultados() {
                       Destaque Factual do Case
                     </span>
                     <span className="text-xs font-bold text-white leading-relaxed block">
-                      “Dupla presença documentada para a mesma intenção local: primeiro resultado orgânico visível e primeira empresa apresentada no bloco local.”
+                      “Tríplice presença documentada: recomendada no card de fontes da Visão Geral de IA do Google, primeiro resultado orgânico com site oficial e destaque no Painel Local.”
                     </span>
                   </div>
 

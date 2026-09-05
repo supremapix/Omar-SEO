@@ -871,7 +871,7 @@ export default function Home() {
                 <div className="flex items-center justify-between">
                   <span className="text-[10px] font-extrabold uppercase tracking-wider text-emerald-300 bg-emerald-950/80 px-2 py-0.5 rounded border border-emerald-800/60 inline-flex items-center gap-1">
                     <Sparkles size={10} />
-                    <span>Case #18 — 1º Orgânico + Mapa</span>
+                    <span>Case #18 — Google IA + 1º Orgânico</span>
                   </span>
                   <span className="text-[10px] font-bold uppercase tracking-wider text-emerald-300">
                     Osasco / SP
@@ -881,7 +881,7 @@ export default function Home() {
                   Lavanderia Inovata
                 </h4>
                 <p className="text-xs text-slate-300 leading-relaxed font-mono">
-                  “lavanderia em osasco” — 1º resultado orgânico visível e 1ª empresa no bloco local do Google.
+                  “lavanderia profissional osasco” — citada na IA do Google (AI Overview), 1º orgânico e Painel Local.
                 </p>
               </div>
 

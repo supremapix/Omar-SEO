@@ -181,7 +181,7 @@ export default function CaseClientesTelhadosBarreirinhaAiSeo() {
             {/* Image Preview Container */}
             <div className="relative group cursor-pointer overflow-hidden rounded-2xl border border-slate-700/80 bg-white p-2 shadow-inner" onClick={() => setIsLightboxOpen(true)}>
               <picture>
-                <source srcset="/images/cases/case-clientes-omar-seo-telhados-barreirinha-google-ia.svg" type="image/svg+xml" />
+                <source srcSet="/images/cases/case-clientes-omar-seo-telhados-barreirinha-google-ia.svg" type="image/svg+xml" />
                 <img
                   src="/images/cases/case-clientes-omar-seo-telhados-barreirinha-google-ia.png"
                   alt="Clientes Omar SEO no Google e na Visão geral criada por IA para conserto de telhados no Barreirinha Curitiba"
@@ -224,7 +224,7 @@ export default function CaseClientesTelhadosBarreirinhaAiSeo() {
                 </div>
                 <div className="bg-white p-2 rounded-2xl">
                   <picture>
-                    <source srcset="/images/cases/case-clientes-omar-seo-telhados-barreirinha-google-ia.svg" type="image/svg+xml" />
+                    <source srcSet="/images/cases/case-clientes-omar-seo-telhados-barreirinha-google-ia.svg" type="image/svg+xml" />
                     <img
                       src="/images/cases/case-clientes-omar-seo-telhados-barreirinha-google-ia.png"
                       alt="Clientes Omar SEO no Google e na Visão geral criada por IA para conserto de telhados no Barreirinha Curitiba"
