@@ -3,20 +3,20 @@ import path from 'path';
 import { getAllRoutes } from '../src/config/routes';
 import { getAllLocationSlugs } from '../src/data/locations';
 
-const DOMAIN = 'https://omarseo.digital';
+const DOMAIN = 'https://www.omarseo.digital';
 
 function generateSitemap() {
   const locationSlugs = getAllLocationSlugs();
   const routes = getAllRoutes(locationSlugs);
 
-  const today = new Date().toISOString().split('T')[0];
+  const lastModDate = '2026-09-05';
 
   const xmlEntries = routes
     .map((r) => {
-      const url = r.path === '/' ? DOMAIN : `${DOMAIN}${r.path}`;
+      const url = r.path === '/' ? `${DOMAIN}/` : `${DOMAIN}${r.path}`;
       return `  <url>
     <loc>${url}</loc>
-    <lastmod>${today}</lastmod>
+    <lastmod>${lastModDate}</lastmod>
     <changefreq>${r.changefreq}</changefreq>
     <priority>${r.priority.toFixed(1)}</priority>
   </url>`;

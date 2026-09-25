@@ -114,7 +114,7 @@ export const MAIN_ROUTES: RouteConfig[] = [
   },
   {
     path: '/seo-geo-aio',
-    title: 'SEO + GEO + AIO: Como Ganhar Market Share com Previsibilidade | Suprema',
+    title: 'SEO + GEO + AIO: Como Ganhar Market Share com Previsibilidade | Omar SEO',
     description: 'Descubra em 30 segundos como a combinação de busca tradicional, modelos generativos e otimização semântica expande o market share com previsibilidade.',
     priority: 0.9,
     changefreq: 'weekly',

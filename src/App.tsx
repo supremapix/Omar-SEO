@@ -184,7 +184,7 @@ function CatchAllRouteHandler() {
   if (cleanSlug.startsWith('seo-')) {
     const locSlug = cleanSlug.replace(/^seo-/, '');
     const allSlugs = getAllLocationSlugs();
-    if (allSlugs.includes(locSlug) || locSlug.length > 2) {
+    if (allSlugs.includes(locSlug)) {
       return <LocationPage />;
     }
   }

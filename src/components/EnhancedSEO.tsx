@@ -24,7 +24,7 @@ export interface EnhancedSEOProps {
   schema?: Record<string, unknown>[];
 }
 
-const DOMAIN = 'https://omarseo.digital';
+const DOMAIN = 'https://www.omarseo.digital';
 
 export function EnhancedSEO({
   title,
