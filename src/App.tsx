@@ -36,6 +36,7 @@ const CaseAlumimecEstruturasMetalicasSeo = lazy(() => import('./pages/CaseAlumim
 const CaseABaratonaCacambasAiSeo = lazy(() => import('./pages/CaseABaratonaCacambasAiSeo'));
 const CaseClientesTelhadosBarreirinhaAiSeo = lazy(() => import('./pages/CaseClientesTelhadosBarreirinhaAiSeo'));
 const CaseLavanderiaInovataSeoOsasco = lazy(() => import('./pages/CaseLavanderiaInovataSeoOsasco'));
+const CaseInstalacaoFrigorificaNavegantes = lazy(() => import('./pages/CaseInstalacaoFrigorificaNavegantes'));
 const SobreOmar = lazy(() => import('./pages/SobreOmar'));
 const Sobre = lazy(() => import('./pages/Sobre'));
 const Metodo = lazy(() => import('./pages/Metodo'));
@@ -123,6 +124,8 @@ function AnimatedRoutes() {
           <Route path="/resultados/a-baratona-cacambas-google-ia-curitiba" element={<CaseABaratonaCacambasAiSeo />} />
           <Route path="/resultados/clientes-omar-seo-telhados-barreirinha-google-ia" element={<CaseClientesTelhadosBarreirinhaAiSeo />} />
           <Route path="/resultados/lavanderia-inovata-seo-google-maps-osasco" element={<CaseLavanderiaInovataSeoOsasco />} />
+          <Route path="/resultados/seo-instalacao-frigorifica-navegantes" element={<CaseInstalacaoFrigorificaNavegantes />} />
+          <Route path="/portfolio/seo-instalacao-frigorifica-navegantes" element={<CaseInstalacaoFrigorificaNavegantes />} />
           <Route path="/omar-skafi" element={<SobreOmar />} />
           <Route path="/auditoria-seo" element={<AuditoriaSeo />} />
           <Route path="/contato" element={<Contato />} />

@@ -345,6 +345,14 @@ export const MAIN_ROUTES: RouteConfig[] = [
     type: 'main',
   },
   {
+    path: '/resultados/seo-instalacao-frigorifica-navegantes',
+    title: 'SEO para Instalação Frigorífica em Navegantes | Case OmarSEO',
+    description: 'Case de SEO, GEO e AIO para instalação frigorífica em Navegantes SC, com presença orgânica e citação na Visão Geral criada por IA do Google.',
+    priority: 0.85,
+    changefreq: 'monthly',
+    type: 'main',
+  },
+  {
     path: '/omar-skafi',
     title: 'Sobre Omar Skafi - Especialista em SEO e GEO | Omar SEO',
     description: 'Conheça Omar Skafi, especialista com sólida trajetória em SEO técnico, SEO local, Google Maps e GEO em Curitiba/PR.',

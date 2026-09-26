@@ -45,6 +45,7 @@ import CaseAlumimecEstruturasMetalicasSeo from '../src/pages/CaseAlumimecEstrutu
 import CaseABaratonaCacambasAiSeo from '../src/pages/CaseABaratonaCacambasAiSeo';
 import CaseClientesTelhadosBarreirinhaAiSeo from '../src/pages/CaseClientesTelhadosBarreirinhaAiSeo';
 import CaseLavanderiaInovataSeoOsasco from '../src/pages/CaseLavanderiaInovataSeoOsasco';
+import CaseInstalacaoFrigorificaNavegantes from '../src/pages/CaseInstalacaoFrigorificaNavegantes';
 import SobreOmar from '../src/pages/SobreOmar';
 import AuditoriaSeo from '../src/pages/AuditoriaSeo';
 import Contato from '../src/pages/Contato';
@@ -95,6 +96,7 @@ function getPageComponent(rawPath: string, locationSlugs: string[]): React.React
   if (rawPath === '/resultados/a-baratona-cacambas-google-ia-curitiba') return <CaseABaratonaCacambasAiSeo />;
   if (rawPath === '/resultados/clientes-omar-seo-telhados-barreirinha-google-ia') return <CaseClientesTelhadosBarreirinhaAiSeo />;
   if (rawPath === '/resultados/lavanderia-inovata-seo-google-maps-osasco') return <CaseLavanderiaInovataSeoOsasco />;
+  if (rawPath === '/resultados/seo-instalacao-frigorifica-navegantes' || rawPath === '/portfolio/seo-instalacao-frigorifica-navegantes') return <CaseInstalacaoFrigorificaNavegantes />;
   if (rawPath === '/omar-skafi') return <SobreOmar />;
   if (rawPath === '/auditoria-seo') return <AuditoriaSeo />;
   if (rawPath === '/contato') return <Contato />;

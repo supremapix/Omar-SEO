@@ -38,6 +38,11 @@ app.get('/seo-geo-aio.html', (req, res) => {
   return res.redirect(301, '/seo-geo-aio');
 });
 
+// Redirect /portfolio/seo-instalacao-frigorifica-navegantes to /resultados/seo-instalacao-frigorifica-navegantes
+app.get('/portfolio/seo-instalacao-frigorifica-navegantes', (req, res) => {
+  return res.redirect(301, '/resultados/seo-instalacao-frigorifica-navegantes');
+});
+
 // Serve static assets from public/ and dist/
 app.use(express.static(path.resolve(__dirname, 'public')));
 if (hasDist) {
