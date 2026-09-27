@@ -37,6 +37,7 @@ const CaseABaratonaCacambasAiSeo = lazy(() => import('./pages/CaseABaratonaCacam
 const CaseClientesTelhadosBarreirinhaAiSeo = lazy(() => import('./pages/CaseClientesTelhadosBarreirinhaAiSeo'));
 const CaseLavanderiaInovataSeoOsasco = lazy(() => import('./pages/CaseLavanderiaInovataSeoOsasco'));
 const CaseInstalacaoFrigorificaNavegantes = lazy(() => import('./pages/CaseInstalacaoFrigorificaNavegantes'));
+const CasePersianasLagoaConceicaoSeo = lazy(() => import('./pages/CasePersianasLagoaConceicaoSeo'));
 const SobreOmar = lazy(() => import('./pages/SobreOmar'));
 const Sobre = lazy(() => import('./pages/Sobre'));
 const Metodo = lazy(() => import('./pages/Metodo'));
@@ -126,6 +127,8 @@ function AnimatedRoutes() {
           <Route path="/resultados/lavanderia-inovata-seo-google-maps-osasco" element={<CaseLavanderiaInovataSeoOsasco />} />
           <Route path="/resultados/seo-instalacao-frigorifica-navegantes" element={<CaseInstalacaoFrigorificaNavegantes />} />
           <Route path="/portfolio/seo-instalacao-frigorifica-navegantes" element={<CaseInstalacaoFrigorificaNavegantes />} />
+          <Route path="/resultados/seo-aio-persianas-lagoa-da-conceicao-florianopolis" element={<CasePersianasLagoaConceicaoSeo />} />
+          <Route path="/portfolio/seo-aio-persianas-lagoa-da-conceicao-florianopolis" element={<CasePersianasLagoaConceicaoSeo />} />
           <Route path="/omar-skafi" element={<SobreOmar />} />
           <Route path="/auditoria-seo" element={<AuditoriaSeo />} />
           <Route path="/contato" element={<Contato />} />

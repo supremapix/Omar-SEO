@@ -1964,6 +1964,107 @@ export default function Resultados() {
                 </div>
               </div>
             </div>
+
+            {/* Case #20 — Persianas Sob Medida em Lagoa da Conceição (SC) */}
+            <div className="p-6 sm:p-8 rounded-3xl bg-slate-900/90 border border-blue-500/50 shadow-[0_0_50px_rgba(59,130,246,0.15)] space-y-6 relative overflow-hidden">
+              <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-slate-800 pb-4">
+                <div>
+                  <div className="flex items-center gap-2 mb-1">
+                    <span className="px-2.5 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider bg-blue-500/20 text-blue-400 border border-blue-500/30 font-mono">
+                      CASE #20 • NOVO RESULTADO DOCUMENTADO
+                    </span>
+                    <span className="px-2.5 py-0.5 rounded-full text-[10px] font-bold uppercase tracking-wider bg-cyan-500/20 text-cyan-300 border border-cyan-500/30 font-mono flex items-center gap-1">
+                      <Sparkles size={11} />
+                      SEO + GEO + AIO
+                    </span>
+                  </div>
+                  <h3 className="text-xl sm:text-2xl font-black text-white font-display">
+                    PERSIANAS SOB MEDIDA NA LAGOA DA CONCEIÇÃO (SC) — IA DO GOOGLE
+                  </h3>
+                  <p className="text-xs sm:text-sm text-slate-300 mt-1">
+                    Projeto de persianas sob medida conquistando citação e destaque direto na Visão Geral criada por IA do Google para busca comercial local em Florianópolis.
+                  </p>
+                </div>
+                <div className="flex items-center gap-2 self-start sm:self-auto">
+                  <Link
+                    to="/resultados/seo-aio-persianas-lagoa-da-conceicao-florianopolis"
+                    className="px-5 py-2.5 rounded-full bg-blue-500 hover:bg-blue-400 text-white font-bold text-xs inline-flex items-center gap-2 transition-colors shadow-[0_0_20px_rgba(59,130,246,0.4)]"
+                  >
+                    <span>Ver Evidência</span>
+                    <ArrowRight size={14} />
+                  </Link>
+                </div>
+              </div>
+
+              <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-center">
+                {/* Visual Evidence Image */}
+                <div className="lg:col-span-6 bg-white p-2 rounded-2xl border border-slate-800 overflow-hidden group relative">
+                  <Link to="/resultados/seo-aio-persianas-lagoa-da-conceicao-florianopolis" className="block">
+                    <picture>
+                      <source srcSet="/images/portfolio/google-ai-overview-persianas-sob-medida-lagoa-da-conceicao.webp" type="image/webp" />
+                      <img
+                        src="/images/portfolio/google-ai-overview-persianas-sob-medida-lagoa-da-conceicao.png"
+                        alt="Google exibindo resultado relacionado a persianas sob medida na Lagoa da Conceição Florianópolis na Visão Geral criada por IA"
+                        width={1200}
+                        height={840}
+                        loading="lazy"
+                        className="w-full h-auto object-contain rounded-xl transition-transform duration-300 group-hover:scale-[1.02]"
+                      />
+                    </picture>
+                  </Link>
+                  <span className="text-[9px] text-slate-600 block text-center font-bold mt-1 font-mono">
+                    Captura Real da SERP — Citação na Visão Geral criada por IA (Lagoa da Conceição / Florianópolis SC)
+                  </span>
+                </div>
+
+                {/* Details */}
+                <div className="lg:col-span-6 space-y-3.5">
+                  <div className="p-3.5 rounded-xl bg-[#0f1118] border border-slate-800 space-y-1">
+                    <span className="text-[10px] font-bold uppercase tracking-wider text-slate-400 block">
+                      Consulta Original Documentada
+                    </span>
+                    <span className="text-xs font-bold text-blue-300 font-mono block">
+                      “Persianas sob medida em Lagoa da Conceição, Florianópolis”
+                    </span>
+                  </div>
+
+                  <div className="p-3.5 rounded-xl bg-[#0f1118] border border-slate-800 space-y-1">
+                    <span className="text-[10px] font-bold uppercase tracking-wider text-slate-400 block">
+                      Localização &amp; Badges
+                    </span>
+                    <div className="flex flex-wrap items-center gap-1.5 pt-0.5">
+                      <span className="text-xs font-bold text-blue-400">FLORIANÓPOLIS / SC</span>
+                      <div className="flex flex-wrap gap-1">
+                        {['IA DO GOOGLE', 'LAGOA DA CONCEIÇÃO', 'PERSIANAS SOB MEDIDA', 'SEO LOCAL', 'GEO + AIO'].map((badge) => (
+                          <span key={badge} className="px-2 py-0.5 rounded bg-slate-900 border border-slate-800 text-[9px] font-mono text-slate-300">
+                            {badge}
+                          </span>
+                        ))}
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="p-3.5 rounded-xl bg-[#0f1118] border border-slate-800 space-y-1">
+                    <span className="text-[10px] font-bold uppercase tracking-wider text-slate-400 block">
+                      Destaque Factual do Case
+                    </span>
+                    <span className="text-xs font-bold text-white leading-relaxed block">
+                      “O projeto passou a ser recomendado diretamente na Visão Geral criada por IA do Google para a busca 'Persianas sob medida em Lagoa da Conceição, Florianópolis', destacando modelos rolô, tela solar e atendimento no local.”
+                    </span>
+                  </div>
+
+                  <div className="pt-2">
+                    <Link
+                      to="/resultados/seo-aio-persianas-lagoa-da-conceicao-florianopolis"
+                      className="text-blue-400 hover:text-blue-300 font-bold inline-flex items-center gap-1.5 text-xs"
+                    >
+                      <span>Acessar documentação completa do Case #20</span>
+                      <ArrowRight size={14} />
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
 
           {/* Seção Cluster: Quando a pesquisa vira uma pergunta */}
@@ -1982,6 +2083,22 @@ export default function Resultados() {
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3 text-xs">
+              <Link
+                to="/resultados/seo-aio-persianas-lagoa-da-conceicao-florianopolis"
+                className="p-3.5 rounded-2xl bg-slate-900/90 border border-blue-500/60 hover:border-blue-400 transition-all space-y-2 group block"
+              >
+                <span className="text-[10px] font-bold uppercase tracking-wider text-blue-400 block">
+                  Persianas Sob Medida (Lagoa da Conceição SC)
+                </span>
+                <p className="font-mono text-white text-[11px] font-bold group-hover:text-blue-300 transition-colors">
+                  "Persianas sob medida em Lagoa da Conceição, Florianópolis"
+                </p>
+                <span className="text-blue-400 font-bold inline-flex items-center gap-1 text-[10px] pt-1">
+                  <span>Ver Case #20</span>
+                  <ChevronRight size={12} />
+                </span>
+              </Link>
+
               <Link
                 to="/resultados/seo-instalacao-frigorifica-navegantes"
                 className="p-3.5 rounded-2xl bg-slate-900/90 border border-blue-500/60 hover:border-blue-400 transition-all space-y-2 group block"

@@ -43,6 +43,11 @@ app.get('/portfolio/seo-instalacao-frigorifica-navegantes', (req, res) => {
   return res.redirect(301, '/resultados/seo-instalacao-frigorifica-navegantes');
 });
 
+// Redirect /portfolio/seo-aio-persianas-lagoa-da-conceicao-florianopolis to /resultados/seo-aio-persianas-lagoa-da-conceicao-florianopolis
+app.get('/portfolio/seo-aio-persianas-lagoa-da-conceicao-florianopolis', (req, res) => {
+  return res.redirect(301, '/resultados/seo-aio-persianas-lagoa-da-conceicao-florianopolis');
+});
+
 // Serve static assets from public/ and dist/
 app.use(express.static(path.resolve(__dirname, 'public')));
 if (hasDist) {

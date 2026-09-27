@@ -1,0 +1,221 @@
+import fs from 'fs';
+import path from 'path';
+import sharp from 'sharp';
+
+const portfolioDir = path.join(process.cwd(), 'public', 'images', 'portfolio');
+const casesDir = path.join(process.cwd(), 'public', 'images', 'cases');
+
+if (!fs.existsSync(portfolioDir)) {
+  fs.mkdirSync(portfolioDir, { recursive: true });
+}
+if (!fs.existsSync(casesDir)) {
+  fs.mkdirSync(casesDir, { recursive: true });
+}
+
+// Google AI Overview SVG (Persianas sob medida em Lagoa da Conceição, Florianópolis - RVM Persianas)
+const aiOverviewSvg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 840" width="1200" height="840" style="background:#ffffff;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;">
+  <defs>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="1" stdDeviation="3" flood-color="#000" flood-opacity="0.08"/>
+    </filter>
+    <filter id="cardShadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#000" flood-opacity="0.06"/>
+    </filter>
+  </defs>
+
+  <!-- Google Header & Search Bar -->
+  <g transform="translate(40, 24)">
+    <!-- Google Logo -->
+    <path d="M22.5 10.8c0-.8-.1-1.5-.2-2.2H11.5v4.2h6.2c-.3 1.4-1.1 2.6-2.3 3.4v2.8h3.7c2.2-2 3.4-5 3.4-8.2z" fill="#4285F4"/>
+    <path d="M11.5 22c3.1 0 5.7-1 7.6-2.8l-3.7-2.8c-1 1-2.4 1.5-3.9 1.5-3 0-5.5-2-6.4-4.8H1.2v3c1.9 3.8 5.8 6.1 10.3 6.1z" fill="#34A853"/>
+    <path d="M5.1 13.1c-.2-.7-.3-1.4-.3-2.1s.1-1.4.3-2.1V5.9H1.2C.4 7.5 0 9.2 0 11s.4 3.5 1.2 5.1l3.9-3z" fill="#FBBC05"/>
+    <path d="M11.5 4.4c1.7 0 3.2.6 4.4 1.7l3.3-3.3C17.2 1 14.6 0 11.5 0 7 0 3.1 2.3 1.2 6.1l3.9 3c.9-2.8 3.4-4.7 6.4-4.7z" fill="#EA4335"/>
+
+    <!-- Search Input Box -->
+    <rect x="110" y="-10" width="820" height="46" rx="23" fill="#ffffff" stroke="#dfe1e5" stroke-width="1.5" filter="url(#shadow)"/>
+    <text x="135" y="19" font-size="14.5" fill="#202124" font-weight="400">Persianas sob medida em Lagoa da Conceição, Florianópolis</text>
+
+    <!-- Right Controls inside search box -->
+    <g transform="translate(805, 2)">
+      <!-- Close X -->
+      <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z" fill="#70757a" transform="translate(-35, -3) scale(0.75)"/>
+      <line x1="-10" y1="-2" x2="-10" y2="22" stroke="#dadce0" stroke-width="1"/>
+      <!-- Keyboard -->
+      <rect x="0" y="2" width="17" height="13" rx="2" fill="none" stroke="#70757a" stroke-width="1.2"/>
+      <!-- Mic -->
+      <path d="M12 14c1.66 0 3-1.34 3-3V5c0-1.66-1.34-3-3-3S9 3.34 9 5v6c0 1.66 1.34 3 3 3z" fill="#4285F4" transform="translate(20, -2) scale(0.75)"/>
+      <path d="M17 11c0 2.76-2.24 5-5 5s-5-2.24-5-5H5c0 3.53 2.61 6.43 6 6.92V21h2v-3.08c3.39-.49 6-3.39 6-6.92h-2z" fill="#34A853" transform="translate(20, -2) scale(0.75)"/>
+      <!-- Camera Lens -->
+      <circle cx="56" cy="10" r="4.5" fill="none" stroke="#FBBC05" stroke-width="1.8"/>
+      <!-- Search Glass -->
+      <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z" fill="#4285F4" transform="translate(76, -4) scale(0.85)"/>
+    </g>
+  </g>
+
+  <!-- Search Tabs -->
+  <g transform="translate(150, 84)" font-size="13" fill="#5f6368" font-weight="500">
+    <text x="0" y="0">Modo IA</text>
+    <text x="65" y="0" fill="#1a73e8" font-weight="700">Tudo</text>
+    <line x1="65" y1="8" x2="95" y2="8" stroke="#1a73e8" stroke-width="2.5"/>
+    <text x="120" y="0">Shopping</text>
+    <text x="195" y="0">Imagens</text>
+    <text x="265" y="0">Vídeos</text>
+    <text x="325" y="0">Notícias</text>
+    <text x="390" y="0">Mapas</text>
+    <text x="450" y="0">Mais ▾</text>
+    <text x="510" y="0">Ferramentas ▾</text>
+  </g>
+  <line x1="0" y1="98" x2="1200" y2="98" stroke="#ebebeb" stroke-width="1"/>
+
+  <!-- Geolocation indicator -->
+  <g transform="translate(150, 130)" font-size="13">
+    <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" fill="#5f6368" transform="scale(0.7) translate(-5,-13)"/>
+    <text x="18" y="0" font-weight="700" fill="#202124">Lagoa da Conceição, Florianópolis - SC</text>
+    <text x="290" y="0" fill="#1a0dab">· Escolher região</text>
+  </g>
+
+  <!-- ==================== GOOGLE AI OVERVIEW CONTAINER ==================== -->
+  <g transform="translate(150, 158)">
+    <!-- Container Card -->
+    <rect x="-15" y="-12" width="940" height="645" rx="16" fill="#f8fafd" stroke="#e0e8f5" stroke-width="1"/>
+
+    <!-- AI Header Sparkles -->
+    <g transform="translate(10, 14)">
+      <path d="M8 2l1.8 4.2L14 8l-4.2 1.8L8 14l-1.8-4.2L2 8l4.2-1.8z" fill="#4285F4"/>
+      <path d="M14 12l.9 2.1L17 15l-2.1.9L14 18l-.9-2.1L11 15l2.1-.9z" fill="#A142F4"/>
+      <text x="26" y="10" font-size="15" font-weight="600" fill="#1f1f1f">Visão geral criada por IA</text>
+      <!-- Audio Icon -->
+      <path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02z" fill="#5f6368" transform="translate(205, -3) scale(0.75)"/>
+      <text x="228" y="9" font-size="12" fill="#5f6368">Ouvir</text>
+      <!-- 3 dots -->
+      <circle cx="895" cy="7" r="2" fill="#70757a"/>
+      <circle cx="895" cy="13" r="2" fill="#70757a"/>
+      <circle cx="895" cy="19" r="2" fill="#70757a"/>
+    </g>
+
+    <!-- Main Content Area -->
+    <g transform="translate(10, 52)">
+      <!-- AI Intro Paragraph -->
+      <text x="0" y="16" font-size="14.5" fill="#1f1f1f" line-height="1.5">
+        Para persianas sob medida na <tspan font-weight="700">Lagoa da Conceição</tspan>, em <tspan font-weight="700">Florianópolis</tspan>, algumas empresas oferecem
+      </text>
+      <text x="0" y="38" font-size="14.5" fill="#1f1f1f">
+        atendimento especializado no local com fabricação própria e instalação:
+      </text>
+
+      <!-- Highlighted Business Card: RVM PERSIANAS -->
+      <g transform="translate(0, 58)">
+        <rect x="0" y="0" width="580" height="235" rx="12" fill="#ffffff" stroke="#c2e7ff" stroke-width="1.5" filter="url(#cardShadow)"/>
+        
+        <!-- Badge -->
+        <rect x="16" y="14" width="135" height="22" rx="4" fill="#e8f0fe"/>
+        <text x="24" y="29" font-size="11" font-weight="700" fill="#1967d2">DESTAQUE LOCAL IA</text>
+
+        <!-- Business Title -->
+        <text x="16" y="60" font-size="18" font-weight="700" fill="#1a0dab">RVM Persianas</text>
+        <text x="145" y="59" font-size="13" fill="#5f6368">· rvmpersianas.com.br</text>
+
+        <!-- Services & Models -->
+        <text x="16" y="88" font-size="13.5" fill="#3c4043" font-weight="600">Modelos sob medida:</text>
+        <text x="160" y="88" font-size="13.5" fill="#1f1f1f">Rolô, Blackout, Tela Solar (Screen),</text>
+        <text x="16" y="108" font-size="13.5" fill="#1f1f1f">Persianas Horizontais (madeira e alumínio), Verticais e Cortinas.</text>
+
+        <!-- Geo Coverage -->
+        <g transform="translate(16, 126)">
+          <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" fill="#188038" transform="scale(0.65) translate(-4,-12)"/>
+          <text x="18" y="0" font-size="13" fill="#188038" font-weight="600">Atendimento presencial na Lagoa da Conceição e Leste da Ilha</text>
+        </g>
+
+        <!-- Benefits line -->
+        <text x="16" y="152" font-size="13" fill="#4d5156">• Orçamento gratuito sem compromisso</text>
+        <text x="16" y="172" font-size="13" fill="#4d5156">• Medição técnica precisa e instalação sob medida</text>
+        <text x="16" y="192" font-size="13" fill="#4d5156">• Fabricação própria com garantia e assistência técnica</text>
+
+        <!-- Link button -->
+        <g transform="translate(16, 206)">
+          <text x="0" y="16" font-size="13" font-weight="600" fill="#1a73e8">Acessar rvmpersianas.com.br →</text>
+        </g>
+      </g>
+
+      <!-- Right Source Citation Cards -->
+      <g transform="translate(605, 58)">
+        <text x="0" y="-8" font-size="12" font-weight="600" fill="#5f6368" text-transform="uppercase">Fontes Citadas pela IA</text>
+
+        <!-- Citation Card 1 - RVM Persianas -->
+        <rect x="0" y="0" width="295" height="110" rx="10" fill="#ffffff" stroke="#dadce0" stroke-width="1" filter="url(#shadow)"/>
+        <circle cx="24" cy="24" r="10" fill="#f1f3f4"/>
+        <text x="20" y="28" font-size="10" font-weight="700" fill="#1a73e8">RVM</text>
+        <text x="42" y="22" font-size="12" font-weight="600" fill="#202124">rvmpersianas.com.br</text>
+        <text x="42" y="34" font-size="11" fill="#5f6368">https://rvmpersianas.com.br</text>
+        <text x="16" y="62" font-size="12.5" font-weight="600" fill="#1a0dab">Persianas Sob Medida em Florianópolis e Lagoa</text>
+        <text x="16" y="80" font-size="11" fill="#4d5156">Fabricação própria de persianas sob medida com atendimento...</text>
+
+        <!-- Citation Card 2 - Regional Coverage -->
+        <g transform="translate(0, 125)">
+          <rect x="0" y="0" width="295" height="110" rx="10" fill="#ffffff" stroke="#dadce0" stroke-width="1" filter="url(#shadow)"/>
+          <circle cx="24" cy="24" r="10" fill="#f1f3f4"/>
+          <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z" fill="#ea4335" transform="translate(17, 16) scale(0.6)"/>
+          <text x="42" y="22" font-size="12" font-weight="600" fill="#202124">rvmpersianas.com.br › bairro</text>
+          <text x="42" y="34" font-size="11" fill="#5f6368">Lagoa da Conceição / Barra da Lagoa</text>
+          <text x="16" y="62" font-size="12.5" font-weight="600" fill="#1a0dab">Persianas na Lagoa da Conceição SC</text>
+          <text x="16" y="80" font-size="11" fill="#4d5156">Modelos rolô tela solar, blackout e manutenção em Florianópolis...</text>
+        </g>
+      </g>
+
+      <!-- Key Insights Summary under cards -->
+      <g transform="translate(0, 310)">
+        <text x="0" y="16" font-size="14" font-weight="700" fill="#202124">Pontos destacados na resposta da inteligência artificial:</text>
+        
+        <g transform="translate(0, 34)" font-size="13" fill="#3c4043">
+          <circle cx="6" cy="-4" r="3" fill="#1a73e8"/>
+          <text x="16" y="0"><tspan font-weight="600" fill="#1f1f1f">Variedade de produtos:</tspan> Telas solares para controle de luminosidade e calor (comuns em áreas litorâneas), rolôs e blecautes para quartos.</text>
+
+          <circle cx="6" cy="22" r="3" fill="#1a73e8"/>
+          <text x="16" y="26"><tspan font-weight="600" fill="#1f1f1f">Atendimento geolocalizado:</tspan> Deslocamento técnico para medição gratuita em residências e comércios na Lagoa da Conceição.</text>
+
+          <circle cx="6" cy="48" r="3" fill="#1a73e8"/>
+          <text x="16" y="52"><tspan font-weight="600" fill="#1f1f1f">Facilidades comerciais:</tspan> Fabricação sob medida com entrega e instalação inclusas.</text>
+        </g>
+      </g>
+
+      <!-- Footer Disclaimer within AI Overview -->
+      <g transform="translate(0, 480)">
+        <line x1="0" y1="0" x2="900" y2="0" stroke="#dadce0" stroke-width="1"/>
+        <text x="0" y="20" font-size="11" fill="#70757a">As Visões gerais criadas por IA usam IA generativa e buscam informações relevantes na Web. Os resultados podem variar.</text>
+      </g>
+    </g>
+  </g>
+</svg>`;
+
+async function run() {
+  console.log('Generating images for Persianas sob medida Lagoa da Conceição...');
+
+  const aiSvgPath = path.join(portfolioDir, 'google-ai-overview-persianas-sob-medida-lagoa-da-conceicao.svg');
+  fs.writeFileSync(aiSvgPath, aiOverviewSvg, 'utf-8');
+  fs.writeFileSync(path.join(casesDir, 'google-ai-overview-persianas-sob-medida-lagoa-da-conceicao.svg'), aiOverviewSvg, 'utf-8');
+
+  const aiPngPortfolio = path.join(portfolioDir, 'google-ai-overview-persianas-sob-medida-lagoa-da-conceicao.png');
+  const aiWebpPortfolio = path.join(portfolioDir, 'google-ai-overview-persianas-sob-medida-lagoa-da-conceicao.webp');
+  const aiPngCases = path.join(casesDir, 'google-ai-overview-persianas-sob-medida-lagoa-da-conceicao.png');
+  const aiWebpCases = path.join(casesDir, 'google-ai-overview-persianas-sob-medida-lagoa-da-conceicao.webp');
+
+  const svgBuffer = Buffer.from(aiOverviewSvg);
+
+  await sharp(svgBuffer)
+    .png({ quality: 100 })
+    .toFile(aiPngPortfolio);
+
+  await sharp(svgBuffer)
+    .webp({ quality: 95 })
+    .toFile(aiWebpPortfolio);
+
+  fs.copyFileSync(aiPngPortfolio, aiPngCases);
+  fs.copyFileSync(aiWebpPortfolio, aiWebpCases);
+
+  console.log('Images generated successfully in both portfolio and cases directories.');
+}
+
+run().catch((err) => {
+  console.error('Error generating images:', err);
+  process.exit(1);
+});

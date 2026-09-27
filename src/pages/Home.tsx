@@ -926,6 +926,37 @@ export default function Home() {
                 </Link>
               </div>
             </div>
+
+            {/* Card Case #20: Persianas Sob Medida na Lagoa da Conceição Florianópolis */}
+            <div className="bg-slate-950 rounded-2xl p-5 border border-blue-500/40 hover:border-blue-400 transition-all flex flex-col justify-between group space-y-4">
+              <div className="space-y-2">
+                <div className="flex items-center justify-between">
+                  <span className="text-[10px] font-extrabold uppercase tracking-wider text-blue-300 bg-blue-950/80 px-2 py-0.5 rounded border border-blue-800/60 inline-flex items-center gap-1">
+                    <Sparkles size={10} />
+                    <span>Case #20 — Google IA (AIO)</span>
+                  </span>
+                  <span className="text-[10px] font-bold uppercase tracking-wider text-blue-300">
+                    Florianópolis / SC
+                  </span>
+                </div>
+                <h4 className="text-base font-bold text-white group-hover:text-blue-300 transition-colors">
+                  Persianas Sob Medida (Lagoa)
+                </h4>
+                <p className="text-xs text-slate-300 leading-relaxed font-mono">
+                  “Persianas sob medida em Lagoa da Conceição, Florianópolis” — citado e recomendado na Visão Geral criada por IA do Google.
+                </p>
+              </div>
+
+              <div className="pt-2 border-t border-slate-800/80">
+                <Link
+                  to="/resultados/seo-aio-persianas-lagoa-da-conceicao-florianopolis"
+                  className="text-xs font-bold text-blue-400 hover:text-blue-300 inline-flex items-center gap-1 group-hover:translate-x-1 transition-transform"
+                >
+                  <span>Ver Case #20</span>
+                  <ChevronRight size={14} />
+                </Link>
+              </div>
+            </div>
           </div>
 
           {/* Consolidated Section: Seu cliente já não pesquisa apenas palavras. Ele pergunta. */}

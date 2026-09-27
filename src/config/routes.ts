@@ -353,6 +353,14 @@ export const MAIN_ROUTES: RouteConfig[] = [
     type: 'main',
   },
   {
+    path: '/resultados/seo-aio-persianas-lagoa-da-conceicao-florianopolis',
+    title: 'SEO para Persianas Sob Medida em Lagoa da Conceição Florianópolis | Case OmarSEO',
+    description: 'Case de SEO, GEO e AIO para persianas sob medida em Lagoa da Conceição e Florianópolis SC, com presença orgânica e citação na Visão Geral criada por IA do Google.',
+    priority: 0.85,
+    changefreq: 'monthly',
+    type: 'main',
+  },
+  {
     path: '/omar-skafi',
     title: 'Sobre Omar Skafi - Especialista em SEO e GEO | Omar SEO',
     description: 'Conheça Omar Skafi, especialista com sólida trajetória em SEO técnico, SEO local, Google Maps e GEO em Curitiba/PR.',

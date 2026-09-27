@@ -61,6 +61,15 @@ export default function CaseRvmPersianasFlorianopolisSeo() {
         width: 1000,
         height: 450,
       },
+      {
+        '@type': 'ImageObject',
+        '@id': 'https://www.omarseo.digital/images/portfolio/google-ai-overview-persianas-sob-medida-lagoa-da-conceicao.png#evidence3',
+        url: 'https://www.omarseo.digital/images/portfolio/google-ai-overview-persianas-sob-medida-lagoa-da-conceicao.png',
+        contentUrl: 'https://www.omarseo.digital/images/portfolio/google-ai-overview-persianas-sob-medida-lagoa-da-conceicao.png',
+        caption: 'Citação da RVM Persianas na Visão Geral criada por IA do Google para persianas sob medida em Lagoa da Conceição Florianópolis',
+        width: 1200,
+        height: 840,
+      },
     ],
   };
 
@@ -257,6 +266,61 @@ export default function CaseRvmPersianasFlorianopolisSeo() {
               <span className="font-mono text-slate-200">RVM Persianas | Persianas Sob Medida em Florianópolis e ...</span>
             </div>
           </div>
+        </div>
+
+        {/* EVIDÊNCIA #3: Google AI Overview na Lagoa da Conceição */}
+        <div className="bg-slate-950 rounded-3xl p-5 sm:p-7 border-2 border-blue-500/60 shadow-[0_0_40px_rgba(59,130,246,0.2)] space-y-4">
+          <div className="flex flex-wrap items-center justify-between gap-3 pb-2 border-b border-slate-800">
+            <div className="space-y-1">
+              <span className="text-[10px] font-extrabold uppercase tracking-widest text-blue-400 bg-blue-950/80 px-2.5 py-0.5 rounded border border-blue-800 flex items-center gap-1 w-fit">
+                <Sparkles size={11} />
+                <span>EVIDÊNCIA #3 — VISÃO GERAL CRIADA POR IA DO GOOGLE (GEO + AIO)</span>
+              </span>
+              <h3 className="text-lg font-bold text-white font-mono">
+                Pesquisa: “Persianas sob medida em Lagoa da Conceição, Florianópolis”
+              </h3>
+            </div>
+            <Link
+              to="/resultados/seo-aio-persianas-lagoa-da-conceicao-florianopolis"
+              className="text-xs font-bold text-blue-400 hover:text-blue-300 bg-blue-950/90 px-3 py-1 rounded-full border border-blue-800/80 flex items-center gap-1.5 transition-colors"
+            >
+              <span>Ver Case Dedicado de AIO →</span>
+            </Link>
+          </div>
+
+          <div className="relative group overflow-hidden rounded-2xl border border-slate-800 bg-white p-2">
+            <picture>
+              <source
+                srcSet="/images/portfolio/google-ai-overview-persianas-sob-medida-lagoa-da-conceicao.webp"
+                type="image/webp"
+              />
+              <img
+                src="/images/portfolio/google-ai-overview-persianas-sob-medida-lagoa-da-conceicao.png"
+                alt="Google exibindo citação da RVM Persianas na Visão Geral criada por IA na Lagoa da Conceição em Florianópolis"
+                className="w-full h-auto object-contain cursor-pointer group-hover:scale-[1.01] transition-transform duration-300 rounded-xl"
+                onClick={() =>
+                  setActiveLightboxImage(
+                    '/images/portfolio/google-ai-overview-persianas-sob-medida-lagoa-da-conceicao.png'
+                  )
+                }
+              />
+            </picture>
+            <button
+              onClick={() =>
+                setActiveLightboxImage(
+                  '/images/portfolio/google-ai-overview-persianas-sob-medida-lagoa-da-conceicao.png'
+                )
+              }
+              className="absolute bottom-4 right-4 bg-slate-950/90 hover:bg-blue-950 text-blue-400 border border-blue-800/80 px-3.5 py-2 rounded-xl text-xs font-bold flex items-center gap-1.5 opacity-90 group-hover:opacity-100 transition-opacity shadow-lg"
+            >
+              <Maximize2 size={14} />
+              <span>Ampliar Imagem de Comprovação da IA</span>
+            </button>
+          </div>
+
+          <p className="text-xs text-slate-300 italic text-center sm:text-left leading-relaxed">
+            Comprovação de IA generativa: A <strong>RVM Persianas</strong> é recomendada e citada diretamente na <strong>Visão Geral criada por IA do Google</strong> para pesquisas comerciais em Lagoa da Conceição, destacando fabricação sob medida, atendimento no local e modelos como rolô, tela solar e blackout.
+          </p>
         </div>
       </section>
 

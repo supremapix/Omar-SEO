@@ -46,6 +46,7 @@ import CaseABaratonaCacambasAiSeo from '../src/pages/CaseABaratonaCacambasAiSeo'
 import CaseClientesTelhadosBarreirinhaAiSeo from '../src/pages/CaseClientesTelhadosBarreirinhaAiSeo';
 import CaseLavanderiaInovataSeoOsasco from '../src/pages/CaseLavanderiaInovataSeoOsasco';
 import CaseInstalacaoFrigorificaNavegantes from '../src/pages/CaseInstalacaoFrigorificaNavegantes';
+import CasePersianasLagoaConceicaoSeo from '../src/pages/CasePersianasLagoaConceicaoSeo';
 import SobreOmar from '../src/pages/SobreOmar';
 import AuditoriaSeo from '../src/pages/AuditoriaSeo';
 import Contato from '../src/pages/Contato';
@@ -97,6 +98,7 @@ function getPageComponent(rawPath: string, locationSlugs: string[]): React.React
   if (rawPath === '/resultados/clientes-omar-seo-telhados-barreirinha-google-ia') return <CaseClientesTelhadosBarreirinhaAiSeo />;
   if (rawPath === '/resultados/lavanderia-inovata-seo-google-maps-osasco') return <CaseLavanderiaInovataSeoOsasco />;
   if (rawPath === '/resultados/seo-instalacao-frigorifica-navegantes' || rawPath === '/portfolio/seo-instalacao-frigorifica-navegantes') return <CaseInstalacaoFrigorificaNavegantes />;
+  if (rawPath === '/resultados/seo-aio-persianas-lagoa-da-conceicao-florianopolis' || rawPath === '/portfolio/seo-aio-persianas-lagoa-da-conceicao-florianopolis') return <CasePersianasLagoaConceicaoSeo />;
   if (rawPath === '/omar-skafi') return <SobreOmar />;
   if (rawPath === '/auditoria-seo') return <AuditoriaSeo />;
   if (rawPath === '/contato') return <Contato />;
