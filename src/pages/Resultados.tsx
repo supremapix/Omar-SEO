@@ -757,13 +757,13 @@ export default function Resultados() {
                 <div className="space-y-1">
                   <div className="inline-flex items-center gap-2 text-[11px] font-extrabold uppercase tracking-widest text-cyan-400 bg-cyan-950/90 px-3 py-1 rounded-full border border-cyan-500/40">
                     <Sparkles size={13} fill="currentColor" />
-                    <span>Case Documentado #06 — KY Drywall | GEO / AIO</span>
+                    <span>Case Documentado #06 — KY Drywall | GEO / AIO / ORGÂNICO</span>
                   </div>
                   <h3 className="text-xl sm:text-3xl font-bold font-display text-white pt-1">
-                    KY Drywall &amp; Steel Frame citada pela IA do Google
+                    KY Drywall &amp; Steel Frame citada pela IA do Google e Orgânico
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-300">
-                    Empresa citada nominalmente na Visão geral criada por IA do Google para a consulta comercial de descoberta sobre empresas de drywall em Curitiba.
+                    Empresa citada em primeiro lugar na Visão geral criada por IA do Google para "Estruturas em Steel Frame curitiba" e "qual empresa drywall em curitiba", com classificação orgânica simultânea.
                   </p>
                 </div>
 
@@ -771,7 +771,7 @@ export default function Resultados() {
                   to="/resultados/ky-drywall-google-ia-curitiba"
                   className="px-5 py-2.5 rounded-full bg-gradient-to-r from-cyan-500 to-emerald-500 hover:from-cyan-400 hover:to-emerald-400 text-slate-950 font-bold text-xs inline-flex items-center gap-2 shrink-0 transition-all shadow-[0_0_20px_rgba(34,211,238,0.3)]"
                 >
-                  <span>Ver Evidência</span>
+                  <span>Ver Evidências</span>
                   <ArrowRight size={14} />
                 </Link>
               </div>
@@ -780,43 +780,57 @@ export default function Resultados() {
                 {/* Screenshot Thumbnail */}
                 <div className="lg:col-span-6 bg-white p-2 rounded-2xl border border-slate-800 overflow-hidden group relative">
                   <Link to="/resultados/ky-drywall-google-ia-curitiba" className="block">
-                    <img
-                      src="/images/cases/case-ky-drywall-google-ai-curitiba.png"
-                      alt="KY Drywall citada na Visão geral criada por IA do Google para qual empresa drywall em Curitiba"
-                      width={1180}
-                      height={680}
-                      loading="lazy"
-                      className="w-full h-auto object-contain rounded-xl transition-transform duration-300 group-hover:scale-[1.02]"
-                    />
+                    <picture>
+                      <source
+                        srcSet="/images/cases/case-ky-drywall-estruturas-steel-frame-curitiba-google-ai.webp"
+                        type="image/webp"
+                      />
+                      <img
+                        src="/images/cases/case-ky-drywall-estruturas-steel-frame-curitiba-google-ai.png"
+                        alt="KY Drywall citada em primeiro destaque na Visão geral criada por IA do Google para Estruturas em Steel Frame curitiba"
+                        width={1200}
+                        height={780}
+                        loading="lazy"
+                        className="w-full h-auto object-contain rounded-xl transition-transform duration-300 group-hover:scale-[1.02]"
+                      />
+                    </picture>
                   </Link>
+                  <span className="text-[9px] text-slate-600 block text-center font-bold mt-1 font-mono">
+                    Captura Real da SERP — 1º Destaque na IA do Google para "Estruturas em Steel Frame curitiba"
+                  </span>
                 </div>
 
                 {/* Quick Metrics & Details */}
                 <div className="lg:col-span-6 space-y-3 text-xs">
                   <div className="p-3.5 rounded-xl bg-[#0f1118] border border-slate-800 space-y-1">
                     <span className="text-[10px] font-bold uppercase tracking-wider text-slate-400 block">
-                      Consulta Registrada
+                      Consultas Registradas e Comprovadas
                     </span>
-                    <span className="text-sm font-bold text-yellow-300 font-mono">
-                      qual empresa drywall em curitiba
+                    <div className="space-y-0.5">
+                      <span className="text-xs font-bold text-yellow-300 font-mono block">
+                        • “Estruturas em Steel Frame curitiba”
+                      </span>
+                      <span className="text-xs font-bold text-cyan-300 font-mono block">
+                        • “qual empresa drywall em curitiba”
+                      </span>
+                    </div>
+                  </div>
+
+                  <div className="p-3.5 rounded-xl bg-[#0f1118] border border-slate-800 space-y-1">
+                    <span className="text-[10px] font-bold uppercase tracking-wider text-slate-400 block">
+                      Localização &amp; Diferenciais Reconhecidos
+                    </span>
+                    <span className="text-xs font-bold text-slate-200 block">
+                      Curitiba/PR (Cajuru/BR-277) — Distribuidora Oficial Barbieri Z180 (+25 anos)
                     </span>
                   </div>
 
                   <div className="p-3.5 rounded-xl bg-[#0f1118] border border-slate-800 space-y-1">
                     <span className="text-[10px] font-bold uppercase tracking-wider text-slate-400 block">
-                      Localização &amp; Plataforma
+                      Superfícies Documentadas
                     </span>
-                    <span className="text-sm font-bold text-slate-200">
-                      Curitiba, PR (Google)
-                    </span>
-                  </div>
-
-                  <div className="p-3.5 rounded-xl bg-[#0f1118] border border-slate-800 space-y-1">
-                    <span className="text-[10px] font-bold uppercase tracking-wider text-slate-400 block">
-                      Superfície Documentada
-                    </span>
-                    <span className="text-sm font-bold text-cyan-400">
-                      Visão geral criada por IA (Google AI Overview)
+                    <span className="text-xs font-bold text-cyan-400">
+                      Visão geral criada por IA (AI Overview) + Google Orgânico
                     </span>
                   </div>
 
@@ -2216,10 +2230,10 @@ export default function Resultados() {
                 className="p-3.5 rounded-2xl bg-slate-900/80 border border-slate-800 hover:border-cyan-500/50 transition-all space-y-2 group block"
               >
                 <span className="text-[10px] font-bold uppercase tracking-wider text-cyan-400 block">
-                  KY Drywall
+                  KY Drywall &amp; Steel Frame
                 </span>
                 <p className="font-mono text-white text-[11px] font-bold group-hover:text-cyan-300 transition-colors">
-                  "qual empresa drywall em curitiba"
+                  "Estruturas em Steel Frame curitiba"
                 </p>
                 <span className="text-cyan-400 font-bold inline-flex items-center gap-1 text-[10px] pt-1">
                   <span>Ver Case #06</span>

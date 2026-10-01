@@ -512,13 +512,13 @@ export default function Home() {
             <div className="p-5 rounded-2xl bg-slate-950/90 border border-cyan-500/60 hover:border-cyan-300 transition-colors space-y-3 flex flex-col justify-between group shadow-[0_0_15px_rgba(34,211,238,0.15)] sm:col-span-2 lg:col-span-1">
               <div className="space-y-2">
                 <span className="text-[10px] font-extrabold uppercase tracking-wider text-cyan-400 bg-cyan-950/80 px-2.5 py-0.5 rounded border border-cyan-800/60 inline-block">
-                  GEO / AIO Busca Generativa
+                  GEO / AIO + Orgânico
                 </span>
                 <h4 className="text-base font-bold text-white group-hover:text-cyan-300 transition-colors">
-                  KY Drywall na IA do Google
+                  KY Drywall &amp; Steel Frame na IA
                 </h4>
                 <p className="text-xs text-slate-300 leading-relaxed font-mono">
-                  “qual empresa drywall em curitiba” — citada na resposta generativa.
+                  “Estruturas em Steel Frame curitiba” — 1º destaque na IA e classificada organicamente.
                 </p>
               </div>
 
@@ -985,8 +985,8 @@ export default function Home() {
               </div>
 
               <div className="p-3.5 rounded-xl bg-slate-900/80 border border-slate-800 space-y-1">
-                <span className="text-cyan-400 font-bold block">KY Drywall</span>
-                <p className="text-slate-300 font-mono text-[11px]">“qual empresa drywall em curitiba”</p>
+                <span className="text-cyan-400 font-bold block">KY Drywall &amp; Steel Frame</span>
+                <p className="text-slate-300 font-mono text-[11px]">“Estruturas em Steel Frame curitiba”</p>
               </div>
 
               <div className="p-3.5 rounded-xl bg-slate-900/80 border border-slate-800 space-y-1">
