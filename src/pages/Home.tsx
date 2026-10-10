@@ -8,6 +8,7 @@ import { SectionDivider } from '../components/SectionDivider';
 import { InternalLinkCluster } from '../components/InternalLinkCluster';
 import ConstellationGrid from '../components/ui/constellation-grid';
 import { BackgroundVideo } from '../components/BackgroundVideo';
+import { blogPosts } from '../data/blogPosts';
 import {
   Search,
   MapPin,
@@ -25,6 +26,7 @@ import {
   MessageCircle,
   Sparkles,
   Bot,
+  BookOpen,
 } from 'lucide-react';
 
 export default function Home() {
@@ -1041,6 +1043,70 @@ export default function Home() {
       </section>
 
       <SectionDivider color="amber" />
+
+      {/* LATEST BLOG POSTS SECTION */}
+      <section className="py-20 bg-[#07090f] border-t border-slate-800/80">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+          <div className="flex flex-col md:flex-row items-start md:items-end justify-between gap-4">
+            <div className="space-y-2">
+              <div className="inline-flex items-center gap-1.5 text-xs font-bold text-cyan-400 uppercase tracking-widest bg-cyan-950/60 px-3 py-1 rounded border border-cyan-800/60">
+                <BookOpen size={14} />
+                <span>Conteúdo & Insights</span>
+              </div>
+              <h2 className="text-3xl font-black font-display text-white">
+                Últimos Artigos do Blog
+              </h2>
+              <p className="text-xs sm:text-sm text-slate-300">
+                Guias práticos e análises técnicas sobre SEO, GEO e AIO.
+              </p>
+            </div>
+
+            <Link
+              to="/blog"
+              className="px-5 py-2.5 rounded-full bg-slate-900 hover:bg-slate-800 text-cyan-400 border border-cyan-500/40 text-xs font-bold inline-flex items-center gap-1.5 transition-colors"
+            >
+              <span>Ver todos os artigos</span>
+              <ChevronRight size={14} />
+            </Link>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {blogPosts.slice(0, 3).map((post) => (
+              <article
+                key={post.slug}
+                className="p-6 rounded-3xl bg-[#0f1118] border border-slate-800 hover:border-cyan-500/50 transition-all flex flex-col justify-between group shadow-lg"
+              >
+                <div className="space-y-3">
+                  <div className="flex items-center justify-between">
+                    <span className="px-2.5 py-0.5 rounded-full bg-cyan-950/80 border border-cyan-800/60 text-cyan-300 text-[10px] font-bold uppercase tracking-wider">
+                      {post.category}
+                    </span>
+                    <span className="text-slate-400 text-xs font-mono">{post.readTime} min</span>
+                  </div>
+                  <h3 className="text-lg font-bold font-display text-white group-hover:text-cyan-300 transition-colors leading-snug">
+                    <Link to={`/blog/${post.slug}`}>{post.title}</Link>
+                  </h3>
+                  <p className="text-xs text-slate-300 line-clamp-3">
+                    {post.description}
+                  </p>
+                </div>
+                <div className="pt-4 mt-4 border-t border-slate-800/80 flex items-center justify-between text-xs">
+                  <span className="text-slate-400 font-mono text-[11px]">{post.datePublished}</span>
+                  <Link
+                    to={`/blog/${post.slug}`}
+                    className="text-cyan-400 font-bold inline-flex items-center gap-1 group-hover:translate-x-1 transition-transform"
+                  >
+                    <span>Ler artigo</span>
+                    <ChevronRight size={14} />
+                  </Link>
+                </div>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <SectionDivider color="purple" />
 
       {/* FAQ SECTION */}
       <section className="py-20 bg-[#0c0e14] border-t border-slate-800/80">

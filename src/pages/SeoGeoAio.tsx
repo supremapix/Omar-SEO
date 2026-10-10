@@ -248,7 +248,9 @@ export default function SeoGeoAio() {
             {/* Video Left */}
             <div className="relative aspect-video rounded-xl bg-slate-950 overflow-hidden shadow-sm">
               <video
-                ref={(el) => (videoRefs.current['video-01'] = el)}
+                ref={(el) => {
+                  videoRefs.current['video-01'] = el;
+                }}
                 src="https://img.supremasite.com.br/o-problema-a-busca-mudou.mp4"
                 muted={mutedStates['video-01']}
                 playsInline
@@ -303,7 +305,9 @@ export default function SeoGeoAio() {
             {/* Video Right (order 1 on lg, 1 on mobile) */}
             <div className="relative aspect-video rounded-xl bg-slate-950 overflow-hidden shadow-sm order-1 lg:order-2">
               <video
-                ref={(el) => (videoRefs.current['video-02'] = el)}
+                ref={(el) => {
+                  videoRefs.current['video-02'] = el;
+                }}
                 src="https://img.supremasite.com.br/seo-a-base.mp4"
                 muted={mutedStates['video-02']}
                 playsInline
@@ -332,7 +336,9 @@ export default function SeoGeoAio() {
             {/* Video Left */}
             <div className="relative aspect-video rounded-xl bg-slate-950 overflow-hidden shadow-sm">
               <video
-                ref={(el) => (videoRefs.current['video-03'] = el)}
+                ref={(el) => {
+                  videoRefs.current['video-03'] = el;
+                }}
                 src="https://img.supremasite.com.br/geo%2Baio-a-nova-fronteira.mp4"
                 muted={mutedStates['video-03']}
                 playsInline
@@ -387,7 +393,9 @@ export default function SeoGeoAio() {
             {/* Video Right */}
             <div className="relative aspect-video rounded-xl bg-slate-950 overflow-hidden shadow-sm order-1 lg:order-2">
               <video
-                ref={(el) => (videoRefs.current['video-04'] = el)}
+                ref={(el) => {
+                  videoRefs.current['video-04'] = el;
+                }}
                 src="https://img.supremasite.com.br/resultado-market-share.mp4"
                 muted={mutedStates['video-04']}
                 playsInline

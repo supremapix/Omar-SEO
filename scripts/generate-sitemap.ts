@@ -9,7 +9,7 @@ function generateSitemap() {
   const locationSlugs = getAllLocationSlugs();
   const routes = getAllRoutes(locationSlugs);
 
-  const lastModDate = '2026-09-05';
+  const lastModDate = '2026-10-10';
 
   const xmlEntries = routes
     .map((r) => {

@@ -105,6 +105,14 @@ export function Header() {
             <span>Método</span>
           </Link>
 
+          <Link
+            to="/blog"
+            className="text-sm font-semibold text-slate-300 hover:text-white transition-colors flex items-center gap-1.5"
+          >
+            <BookOpen size={15} className="text-yellow-400" />
+            <span>Blog</span>
+          </Link>
+
           {/* Link para SEO + GEO + AIO Explanatory Videos */}
           <Link
             to="/seo-geo-aio"

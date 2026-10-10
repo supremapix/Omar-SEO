@@ -1,3 +1,5 @@
+import { blogPosts } from '../data/blogPosts';
+
 export interface RouteConfig {
   path: string;
   title: string;
@@ -6,6 +8,15 @@ export interface RouteConfig {
   changefreq: 'always' | 'hourly' | 'daily' | 'weekly' | 'monthly' | 'yearly' | 'never';
   type: 'main' | 'commercial' | 'location' | 'state';
 }
+
+const dynamicBlogRoutes: RouteConfig[] = blogPosts.map((post) => ({
+  path: `/blog/${post.slug}`,
+  title: `${post.title} | Omar SEO`,
+  description: post.description,
+  priority: 0.85,
+  changefreq: 'weekly',
+  type: 'main',
+}));
 
 export const MAIN_ROUTES: RouteConfig[] = [
   {
@@ -107,7 +118,7 @@ export const MAIN_ROUTES: RouteConfig[] = [
   {
     path: '/blog',
     title: 'Blog de SEO, GEO e Visibilidade Digital em Curitiba | Omar SEO',
-    description: 'Artigos e tutoriais avançados sobre SEO técnico, SEO local, Google Maps, Core Web Vitals e inteligência artificial.',
+    description: 'Artigos, tutoriais e análises avançadas sobre indexação, Core Web Vitals, Schema.org, SEO local e inteligência artificial escritas por Omar Skafi.',
     priority: 0.85,
     changefreq: 'weekly',
     type: 'main',
@@ -120,6 +131,7 @@ export const MAIN_ROUTES: RouteConfig[] = [
     changefreq: 'weekly',
     type: 'main',
   },
+  ...dynamicBlogRoutes,
   {
     path: '/blog/por-que-site-nao-aparece-no-google',
     title: 'Por Que Meu Site Não Aparece no Google? Rastreamento e Indexação | Omar SEO',
