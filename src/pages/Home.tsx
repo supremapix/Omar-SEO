@@ -440,10 +440,10 @@ export default function Home() {
                   GEO / Google AI Overview
                 </span>
                 <h4 className="text-base font-bold text-white group-hover:text-cyan-300 transition-colors">
-                  Carplus na IA do Google
+                  Carplus Pneus na IA
                 </h4>
-                <p className="text-xs text-slate-300 leading-relaxed">
-                  Apresentada na Visão geral criada por IA do Google em pesquisa sobre pneus e oficinas.
+                <p className="text-xs text-slate-300 leading-relaxed font-mono">
+                  “pneus para carros eletricos em curitiba” — citada na IA do Google.
                 </p>
               </div>
 
@@ -977,6 +977,11 @@ export default function Home() {
               <div className="p-3.5 rounded-xl bg-slate-900/80 border border-slate-800 space-y-1">
                 <span className="text-yellow-400 font-bold block">Pizzo (Balneário Camboriú)</span>
                 <p className="text-slate-300 font-mono text-[11px]">“gerenciamento de obras em balneário camboriú”</p>
+              </div>
+
+              <div className="p-3.5 rounded-xl bg-slate-900/80 border border-slate-800 space-y-1">
+                <span className="text-cyan-400 font-bold block">Carplus Pneus</span>
+                <p className="text-slate-300 font-mono text-[11px]">“pneus para carros eletricos em curitiba”</p>
               </div>
 
               <div className="p-3.5 rounded-xl bg-slate-900/80 border border-slate-800 space-y-1">

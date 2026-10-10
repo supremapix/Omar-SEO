@@ -404,7 +404,7 @@ export default function Resultados() {
                     Carplus apresentada pela IA do Google em Curitiba
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-300">
-                    Resposta sintetizada pelo Google AI Overview destacando a Carplus Centro Automotivo em consulta comercial sobre pneus e oficinas.
+                    Resposta sintetizada pelo Google AI Overview destacando a Carplus Pneus (Portão) em consulta comercial sobre pneus para carros elétricos em Curitiba.
                   </p>
                 </div>
 
@@ -423,9 +423,9 @@ export default function Resultados() {
                   <Link to="/resultados/carplus-google-ai-overview-pneus-curitiba" className="block">
                     <img
                       src="/images/cases/case-carplus-google-ai-overview-pneus-curitiba.png"
-                      alt="Carplus apresentada na Visão geral criada por IA do Google"
-                      width={1180}
-                      height={620}
+                      alt="Carplus apresentada na Visão geral criada por IA do Google para pneus de carros elétricos em Curitiba"
+                      width={1200}
+                      height={780}
                       loading="lazy"
                       className="w-full h-auto object-contain rounded-xl transition-transform duration-300 group-hover:scale-[1.02]"
                     />
@@ -439,16 +439,16 @@ export default function Resultados() {
                       Consulta Registrada
                     </span>
                     <span className="text-sm font-bold text-yellow-300 font-mono">
-                      Oficinas dos Pneus Curitiba
+                      pneus para carros eletricos em curitiba
                     </span>
                   </div>
 
                   <div className="p-3.5 rounded-xl bg-[#0f1118] border border-slate-800 space-y-1">
                     <span className="text-[10px] font-bold uppercase tracking-wider text-slate-400 block">
-                      Localização
+                      Localização &amp; Especialidade
                     </span>
                     <span className="text-sm font-bold text-slate-200">
-                      Curitiba, PR
+                      Curitiba (Portão: Av. Pres. Arthur Bernardes, 1323) — BYD, GWM e Volvo
                     </span>
                   </div>
 

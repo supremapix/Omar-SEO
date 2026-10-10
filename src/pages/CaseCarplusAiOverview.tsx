@@ -160,16 +160,16 @@ export default function CaseCarplusAiOverview() {
               Consulta Documentada
             </span>
             <span className="text-base font-bold text-yellow-300 font-mono">
-              Oficinas dos Pneus Curitiba
+              pneus para carros eletricos em curitiba
             </span>
           </div>
 
           <div className="p-5 rounded-2xl bg-[#0f1118] border border-slate-800 space-y-1">
             <span className="text-[10px] font-bold uppercase tracking-wider text-slate-400 block">
-              Localização
+              Localização &amp; Endereço
             </span>
             <span className="text-base font-bold text-white">
-              Curitiba, PR
+              Portão (Av. Pres. Arthur Bernardes, 1323)
             </span>
           </div>
 
@@ -306,7 +306,7 @@ export default function CaseCarplusAiOverview() {
           Este case difere de um resultado orgânico tradicional em listas de links azuis. A captura demonstra que a entidade <strong className="text-white font-semibold">Carplus Centro Automotivo</strong> foi recuperada e apresentada diretamente dentro de uma resposta gerada pela experiência de IA do Google (AI Overview / Visão geral criada por IA).
         </p>
         <p className="text-sm leading-relaxed text-slate-300">
-          Na consulta comercial e geográfica registrada (<code className="text-yellow-300 font-mono text-xs">“Oficinas dos Pneus Curitiba”</code>), a IA do Google sintetizou informações do segmento de lojas de pneus e centros automotivos, destacando o estabelecimento localizado no bairro Portão (Av. Presid. Arthur da Silva Bernardes, 1323) e seus principais serviços.
+          Na consulta comercial e geográfica registrada (<code className="text-yellow-300 font-mono text-xs">“pneus para carros eletricos em curitiba”</code>), a IA do Google sintetizou informações detalhadas, destacando a <strong className="text-white">Carplus Portão</strong> (Av. Pres. Arthur Bernardes, 1323) como especialista em atender carros elétricos e híbridos (como BYD, GWM e Volvo), além de parcerias com marcas líderes como Pirelli e Continental.
         </p>
       </section>
 
