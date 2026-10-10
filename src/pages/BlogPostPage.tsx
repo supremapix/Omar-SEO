@@ -293,7 +293,7 @@ export default function BlogPostPage({ slug: propSlug }: BlogPostPageProps) {
       {/* Author Box */}
       <div className="p-6 sm:p-8 rounded-3xl bg-slate-950 border border-slate-800 flex flex-col sm:flex-row items-center gap-6">
         <img
-          src="https://img.supremasite.com.br/omar-skafi.webp"
+          src="https://bio.supremamidia.com.br/imagens/gestor-de-trafego-organico-em-curitiba.png"
           alt="Omar Skafi"
           className="w-20 h-20 rounded-2xl object-cover border-2 border-cyan-500 shadow-[0_0_15px_rgba(34,211,238,0.3)] shrink-0"
         />
