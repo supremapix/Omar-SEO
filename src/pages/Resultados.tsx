@@ -476,6 +476,93 @@ export default function Resultados() {
           </div>
         </div>
 
+        {/* SECTION 2.5: Tripla Presença (SEO + GEO + AIO) — Case #04 Sangel */}
+        <div className="space-y-6 pt-4">
+          <div className="border-b border-slate-800 pb-3 flex items-center justify-between">
+            <h2 className="text-xl sm:text-2xl font-bold font-display text-white flex items-center gap-2">
+              <Cpu className="text-cyan-400" size={22} />
+              <span>TRIPLA PRESENÇA (SEO + GEO + AIO) — Case #04 Sangel</span>
+            </h2>
+            <span className="text-xs text-slate-400 font-mono hidden sm:inline">AI Overview + Maps + Organic</span>
+          </div>
+
+          <div className="grid grid-cols-1 gap-8">
+            <div className="p-6 sm:p-8 rounded-3xl bg-slate-950/90 border border-cyan-500/60 shadow-[0_0_35px_rgba(34,211,238,0.15)] space-y-6 relative overflow-hidden">
+              <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4 border-b border-slate-800 pb-5">
+                <div className="space-y-1">
+                  <div className="inline-flex items-center gap-2 text-[11px] font-extrabold uppercase tracking-widest text-cyan-400 bg-cyan-950/90 px-3 py-1 rounded-full border border-cyan-500/40">
+                    <Cpu size={13} />
+                    <span>Case Documentado #04 — Sangel Purificadores | Tripla Presença</span>
+                  </div>
+                  <h3 className="text-xl sm:text-3xl font-bold font-display text-white pt-1">
+                    Sangel — “Purificadores e Bebedouros”
+                  </h3>
+                  <p className="text-xs sm:text-sm text-slate-300">
+                    Domínio absoluto em Curitiba: Recomendação direta da IA, Top 3 no Google Maps e 1ª página orgânica.
+                  </p>
+                </div>
+
+                <Link
+                  to="/resultados/sangel-purificadores-bebedouros-curitiba"
+                  className="px-5 py-2.5 rounded-full bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-slate-950 font-bold text-xs inline-flex items-center gap-2 shrink-0 transition-all shadow-[0_0_20px_rgba(34,211,238,0.3)]"
+                >
+                  <span>Ver Evidência</span>
+                  <ArrowRight size={14} />
+                </Link>
+              </div>
+
+              <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-center">
+                <div className="lg:col-span-6 space-y-3 text-xs">
+                  <div className="p-3.5 rounded-xl bg-[#0f1118] border border-slate-800 space-y-1">
+                    <span className="text-[10px] font-bold uppercase tracking-wider text-slate-400 block">
+                      Consulta Registrada
+                    </span>
+                    <span className="text-sm font-bold text-yellow-300 font-mono">
+                      purificadores e bebedouros curitiba
+                    </span>
+                  </div>
+
+                  <div className="p-3.5 rounded-xl bg-[#0f1118] border border-slate-800 space-y-1">
+                    <span className="text-[10px] font-bold uppercase tracking-wider text-slate-400 block">
+                      Presença na Superfície
+                    </span>
+                    <span className="text-sm font-bold text-cyan-400 flex items-center gap-2">
+                      <Check size={14} /> SEO + <Check size={14} /> GEO + <Check size={14} /> AIO
+                    </span>
+                  </div>
+
+                  <div className="p-3.5 rounded-xl bg-[#0f1118] border border-slate-800 space-y-1">
+                    <span className="text-[10px] font-bold uppercase tracking-wider text-slate-400 block">
+                      Destaque na IA
+                    </span>
+                    <span className="text-sm font-bold text-emerald-400">
+                      Recomendada como Autoridade em Europa e Soft
+                    </span>
+                  </div>
+
+                  <div className="pt-2">
+                    <Link
+                      to="/resultados/sangel-purificadores-bebedouros-curitiba"
+                      className="text-cyan-400 hover:text-cyan-300 font-bold inline-flex items-center gap-1.5 text-xs"
+                    >
+                      <span>Acessar documentação da Tripla Presença</span>
+                      <ArrowRight size={14} />
+                    </Link>
+                  </div>
+                </div>
+                
+                <div className="lg:col-span-6 bg-white p-2 rounded-2xl border border-slate-800 overflow-hidden group relative">
+                   <Link to="/resultados/sangel-purificadores-bebedouros-curitiba" className="block">
+                    <div className="aspect-video bg-slate-100 flex items-center justify-center text-slate-400 text-xs text-center p-4">
+                       [Capture: Sangel em AI Overview + Local Pack]
+                    </div>
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
         {/* SUB-SECTION 3: SEO LOCAL / GOOGLE MAPS — Bloco de Empresas */}
         <div className="space-y-6 pt-4">
           <div className="border-b border-slate-800 pb-3 flex items-center justify-between">

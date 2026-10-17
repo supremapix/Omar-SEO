@@ -21,6 +21,7 @@ const Resultados = lazy(() => import('./pages/Resultados'));
 const CaseAdvogadosPlanosSaude = lazy(() => import('./pages/CaseAdvogadosPlanosSaude'));
 const CaseShopcellCelulares = lazy(() => import('./pages/CaseShopcellCelulares'));
 const CaseCarplusAiOverview = lazy(() => import('./pages/CaseCarplusAiOverview'));
+const CaseSangelPurificadores = lazy(() => import('./pages/CaseSangelPurificadores'));
 const CaseEcoservyCortePoda = lazy(() => import('./pages/CaseEcoservyCortePoda'));
 const CaseComfortDivisorasAiOverview = lazy(() => import('./pages/CaseComfortDivisorasAiOverview'));
 const CaseKyDrywallAiOverview = lazy(() => import('./pages/CaseKyDrywallAiOverview'));
@@ -110,6 +111,7 @@ function AnimatedRoutes() {
           <Route path="/resultados/seo-advogados-planos-de-saude" element={<CaseAdvogadosPlanosSaude />} />
           <Route path="/resultados/seo-celulares-curitiba-shopcell" element={<CaseShopcellCelulares />} />
           <Route path="/resultados/carplus-google-ai-overview-pneus-curitiba" element={<CaseCarplusAiOverview />} />
+          <Route path="/resultados/sangel-purificadores-bebedouros-curitiba" element={<CaseSangelPurificadores />} />
           <Route path="/resultados/seo-local-ecoservy-corte-e-poda-curitiba" element={<CaseEcoservyCortePoda />} />
           <Route path="/resultados/comfort-divisorias-google-ia-curitiba" element={<CaseComfortDivisorasAiOverview />} />
           <Route path="/resultados/ky-drywall-google-ia-curitiba" element={<CaseKyDrywallAiOverview />} />

@@ -460,7 +460,32 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Case 04 Compact Card - Ecoservy SEO Local */}
+            {/* Case 04 Compact Card - Sangel Purificadores */}
+            <div className="p-5 rounded-2xl bg-slate-950/90 border border-cyan-500/60 hover:border-cyan-300 transition-colors space-y-3 flex flex-col justify-between group shadow-[0_0_15px_rgba(34,211,238,0.15)]">
+              <div className="space-y-2">
+                <span className="text-[10px] font-extrabold uppercase tracking-wider text-cyan-400 bg-cyan-950/80 px-2.5 py-0.5 rounded border border-cyan-800/60 inline-block">
+                  Tripla Presença: SEO + GEO + AIO
+                </span>
+                <h4 className="text-base font-bold text-white group-hover:text-cyan-300 transition-colors">
+                  Sangel: Purificadores em Curitiba
+                </h4>
+                <p className="text-xs text-slate-300 leading-relaxed font-mono">
+                  “purificadores e bebedouros curitiba” — Domínio Total.
+                </p>
+              </div>
+
+              <div className="pt-2 border-t border-slate-800/80">
+                <Link
+                  to="/resultados/sangel-purificadores-bebedouros-curitiba"
+                  className="text-xs font-bold text-cyan-400 hover:text-cyan-300 inline-flex items-center gap-1 group-hover:translate-x-1 transition-transform"
+                >
+                  <span>Ver Tripla Presença</span>
+                  <ChevronRight size={14} />
+                </Link>
+              </div>
+            </div>
+
+            {/* Case 05 Compact Card - Ecoservy SEO Local */}
             <div className="p-5 rounded-2xl bg-slate-950/90 border border-emerald-500/60 hover:border-emerald-300 transition-colors space-y-3 flex flex-col justify-between group shadow-[0_0_15px_rgba(16,185,129,0.15)]">
               <div className="space-y-2">
                 <span className="text-[10px] font-extrabold uppercase tracking-wider text-emerald-400 bg-emerald-950/80 px-2.5 py-0.5 rounded border border-emerald-800/60 inline-block">
