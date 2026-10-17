@@ -439,13 +439,13 @@ export default function Home() {
             <div className="p-5 rounded-2xl bg-slate-950/90 border border-cyan-500/60 hover:border-cyan-300 transition-colors space-y-3 flex flex-col justify-between group shadow-[0_0_15px_rgba(34,211,238,0.15)]">
               <div className="space-y-2">
                 <span className="text-[10px] font-extrabold uppercase tracking-wider text-cyan-400 bg-cyan-950/80 px-2.5 py-0.5 rounded border border-cyan-800/60 inline-block">
-                  GEO / Google AI Overview
+                  Tripla Presença: SEO + GEO + AIO
                 </span>
                 <h4 className="text-base font-bold text-white group-hover:text-cyan-300 transition-colors">
-                  Carplus Pneus na IA
+                  Carplus: Pneus EV no Topo
                 </h4>
                 <p className="text-xs text-slate-300 leading-relaxed font-mono">
-                  “pneus para carros eletricos em curitiba” — citada na IA do Google.
+                  “pneus para carros eletricos curitiba” — IA, Maps e Orgânico.
                 </p>
               </div>
 
@@ -454,7 +454,7 @@ export default function Home() {
                   to="/resultados/carplus-google-ai-overview-pneus-curitiba"
                   className="text-xs font-bold text-cyan-400 hover:text-cyan-300 inline-flex items-center gap-1 group-hover:translate-x-1 transition-transform"
                 >
-                  <span>Ver Case Carplus</span>
+                  <span>Ver Tripla Presença</span>
                   <ChevronRight size={14} />
                 </Link>
               </div>

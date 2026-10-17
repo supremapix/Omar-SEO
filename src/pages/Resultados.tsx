@@ -397,14 +397,14 @@ export default function Resultados() {
               <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4 border-b border-slate-800 pb-5">
                 <div className="space-y-1">
                   <div className="inline-flex items-center gap-2 text-[11px] font-extrabold uppercase tracking-widest text-cyan-400 bg-cyan-950/90 px-3 py-1 rounded-full border border-cyan-500/40">
-                    <Cpu size={13} />
-                    <span>Case Documentado #03 — Carplus | Google AI Overview</span>
+                    <Sparkles size={13} fill="currentColor" />
+                    <span>Case Documentado #03 — Carplus | Tripla Presença</span>
                   </div>
                   <h3 className="text-xl sm:text-3xl font-bold font-display text-white pt-1">
-                    Carplus apresentada pela IA do Google em Curitiba
+                    Carplus: Domínio em SEO, GEO e AIO
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-300">
-                    Resposta sintetizada pelo Google AI Overview destacando a Carplus Pneus (Portão) em consulta comercial sobre pneus para carros elétricos em Curitiba.
+                    Visibilidade total para "pneus para carros elétricos em curitiba": presente simultaneamente no AI Overview, Google Maps e no topo do Orgânico.
                   </p>
                 </div>
 
@@ -412,7 +412,7 @@ export default function Resultados() {
                   to="/resultados/carplus-google-ai-overview-pneus-curitiba"
                   className="px-5 py-2.5 rounded-full bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-slate-950 font-bold text-xs inline-flex items-center gap-2 shrink-0 transition-all shadow-[0_0_20px_rgba(34,211,238,0.3)]"
                 >
-                  <span>Ver Evidência em IA</span>
+                  <span>Ver Tripla Presença</span>
                   <ArrowRight size={14} />
                 </Link>
               </div>
@@ -423,7 +423,7 @@ export default function Resultados() {
                   <Link to="/resultados/carplus-google-ai-overview-pneus-curitiba" className="block">
                     <img
                       src="/images/cases/case-carplus-google-ai-overview-pneus-curitiba.png"
-                      alt="Carplus apresentada na Visão geral criada por IA do Google para pneus de carros elétricos em Curitiba"
+                      alt="Carplus apresentada no Google para pneus de carros elétricos em Curitiba (Orgânico, Maps e IA)"
                       width={1200}
                       height={780}
                       loading="lazy"
@@ -436,7 +436,7 @@ export default function Resultados() {
                 <div className="lg:col-span-6 space-y-3 text-xs">
                   <div className="p-3.5 rounded-xl bg-[#0f1118] border border-slate-800 space-y-1">
                     <span className="text-[10px] font-bold uppercase tracking-wider text-slate-400 block">
-                      Consulta Registrada
+                      Consulta Estratégica
                     </span>
                     <span className="text-sm font-bold text-yellow-300 font-mono">
                       pneus para carros eletricos em curitiba
@@ -445,19 +445,19 @@ export default function Resultados() {
 
                   <div className="p-3.5 rounded-xl bg-[#0f1118] border border-slate-800 space-y-1">
                     <span className="text-[10px] font-bold uppercase tracking-wider text-slate-400 block">
-                      Localização &amp; Especialidade
+                      Superfícies Dominadas
                     </span>
-                    <span className="text-sm font-bold text-slate-200">
-                      Curitiba (Portão: Av. Pres. Arthur Bernardes, 1323) — BYD, GWM e Volvo
+                    <span className="text-sm font-bold text-cyan-400 flex items-center gap-2">
+                      <Check size={14} /> SEO + <Check size={14} /> GEO + <Check size={14} /> AIO
                     </span>
                   </div>
 
                   <div className="p-3.5 rounded-xl bg-[#0f1118] border border-slate-800 space-y-1">
                     <span className="text-[10px] font-bold uppercase tracking-wider text-slate-400 block">
-                      Superfície de Busca
+                      Status da Entidade
                     </span>
-                    <span className="text-sm font-bold text-cyan-400">
-                      Visão geral criada por IA (Google AI Overview)
+                    <span className="text-sm font-bold text-emerald-400">
+                      Reconhecida como Especialista em Pneus EV
                     </span>
                   </div>
 
@@ -466,7 +466,7 @@ export default function Resultados() {
                       to="/resultados/carplus-google-ai-overview-pneus-curitiba"
                       className="text-cyan-400 hover:text-cyan-300 font-bold inline-flex items-center gap-1.5 text-xs"
                     >
-                      <span>Acessar documentação completa do Case #03</span>
+                      <span>Acessar documentação da Tripla Presença</span>
                       <ArrowRight size={14} />
                     </Link>
                   </div>
