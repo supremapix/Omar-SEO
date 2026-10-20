@@ -495,7 +495,7 @@ export default function Resultados() {
                     <span>Case Documentado #04 — Sangel Purificadores | Tripla Presença</span>
                   </div>
                   <h3 className="text-xl sm:text-3xl font-bold font-display text-white pt-1">
-                    Sangel — “Purificadores e Bebedouros”
+                    Sangel — “Bebedouros no Centro”
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-300">
                     Domínio absoluto em Curitiba: Recomendação direta da IA, Top 3 no Google Maps e 1ª página orgânica.
@@ -518,7 +518,7 @@ export default function Resultados() {
                       Consulta Registrada
                     </span>
                     <span className="text-sm font-bold text-yellow-300 font-mono">
-                      purificadores e bebedouros curitiba
+                      bebedouros centro curitiba
                     </span>
                   </div>
 

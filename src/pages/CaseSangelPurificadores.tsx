@@ -181,21 +181,29 @@ export default function CaseSangelPurificadores() {
                       </div>
                       <h3 className="text-2xl font-bold text-white">Domínio em AI Overview (SGE)</h3>
                       <p className="text-slate-400 leading-relaxed">
-                        Para a busca <span className="text-white font-semibold">"Purificadores e bebedouros curitiba"</span>, o Google gera uma resposta generativa recomendando a Sangel como opção principal, detalhando o catálogo de marcas (Europa, Soft, Everest) e os serviços de instalação e manutenção.
+                        Para a busca <span className="text-white font-semibold">"bebedouros centro"</span>, o Google gera uma resposta generativa recomendando a Sangel como opção principal para compra, venda e manutenção no Centro de Curitiba.
                       </p>
                       
+                      <div className="bg-white p-2 rounded-2xl border border-slate-700 overflow-hidden mb-6">
+                        <img 
+                          src="/assets/aistudio/2026-10-20_20-38-46_d74b697a.png" 
+                          alt="Sangel no Google AI Overview para bebedouros centro Curitiba"
+                          className="w-full h-auto rounded-xl"
+                        />
+                      </div>
+
                       <div className="grid md:grid-cols-2 gap-6 pt-4">
                         <div className="bg-slate-950/80 rounded-2xl p-5 border border-cyan-500/20">
                           <h4 className="text-cyan-400 font-bold mb-3 flex items-center gap-2">
                             <Check className="w-4 h-4" /> Citação Direta
                           </h4>
-                          <p className="text-sm text-slate-500">O robô do Google extrai informações específicas de manutenção de purificadores do site da Sangel, exibindo-as como "conhecimento factual".</p>
+                          <p className="text-sm text-slate-500">O robô do Google extrai informações de horários, endereço e serviços (venda, locação e higienização) diretamente do site sangel.com.br.</p>
                         </div>
                         <div className="bg-slate-950/80 rounded-2xl p-5 border border-cyan-500/20">
                           <h4 className="text-cyan-400 font-bold mb-3 flex items-center gap-2">
-                            <Check className="w-4 h-4" /> Visibilidade de Marcas
+                            <Check className="w-4 h-4" /> Recomendação Geográfica
                           </h4>
-                          <p className="text-sm text-slate-500">A IA associa a Sangel a marcas premium, reforçando a autoridade da empresa como revendedora autorizada e assistência técnica.</p>
+                          <p className="text-sm text-slate-500">A IA destaca a atuação no "Centro de Curitiba", validando a relevância local da empresa para quem busca proximidade.</p>
                         </div>
                       </div>
                     </div>
@@ -210,21 +218,30 @@ export default function CaseSangelPurificadores() {
                     <div className="p-8 space-y-6">
                       <div className="flex items-center gap-4 text-emerald-400 mb-2">
                         <MapPin className="w-6 h-6 fill-emerald-400" />
-                        <span className="font-bold uppercase tracking-widest text-sm">Status: Local Pack Top 3</span>
+                        <span className="font-bold uppercase tracking-widest text-sm">Status: Local Pack #1</span>
                       </div>
                       <h3 className="text-2xl font-bold text-white">Liderança em SEO Local (GEO)</h3>
                       <p className="text-slate-400 leading-relaxed">
-                        A Sangel Purificadores aparece no <strong>Local Pack (Mapa)</strong> para buscas transacionais, capturando leads prontos para comprar ou agendar manutenção no momento exato da necessidade.
+                        A Sangel SHL ocupa o <strong>1º lugar no Google Maps</strong> para a intenção de busca no Centro, convertendo tráfego local qualificado.
                       </p>
+                      
+                      <div className="bg-white p-2 rounded-2xl border border-slate-700 overflow-hidden mb-6">
+                        <img 
+                          src="/assets/aistudio/2026-10-20_20-39-05_17ab71b3.png" 
+                          alt="Sangel no Top 1 do Google Maps para bebedouros centro Curitiba"
+                          className="w-full h-auto rounded-xl"
+                        />
+                      </div>
+
                       <ul className="space-y-3">
                         <li className="flex items-center gap-3 text-slate-300">
-                          <Check className="w-5 h-5 text-emerald-500" /> Presença constante no Top 3 do Mapa
+                          <Check className="w-5 h-5 text-emerald-500" /> Presença no Top 1 do Mapa (Local Pack)
                         </li>
                         <li className="flex items-center gap-3 text-slate-300">
-                          <Check className="w-5 h-5 text-emerald-500" /> Otimização de categorias para bebedouros e purificadores
+                          <Check className="w-5 h-5 text-emerald-500" /> Nota 4,9 com dezenas de avaliações reais
                         </li>
                         <li className="flex items-center gap-3 text-slate-300">
-                          <Check className="w-5 h-5 text-emerald-500" /> Alta taxa de conversão via botão de "Ligar" e "Rota"
+                          <Check className="w-5 h-5 text-emerald-500" /> Destaque de endereço e telefone direto no card local
                         </li>
                       </ul>
                     </div>
@@ -239,12 +256,13 @@ export default function CaseSangelPurificadores() {
                     <div className="p-8 space-y-6">
                       <div className="flex items-center gap-4 text-blue-400 mb-2">
                         <Search className="w-6 h-6" />
-                        <span className="font-bold uppercase tracking-widest text-sm">Status: 1ª Página Orgânica</span>
+                        <span className="font-bold uppercase tracking-widest text-sm">Status: Top 1 Orgânico</span>
                       </div>
-                      <h3 className="text-2xl font-bold text-white">SEO Tradicional de Alta Performance</h3>
+                      <h3 className="text-2xl font-bold text-white">Domínio SEO para Intenção Local</h3>
                       <p className="text-slate-400 leading-relaxed">
-                        Além do mapa e da IA, o site institucional ocupa posições de destaque para termos informativos e de comparação de modelos, blindando a primeira página do Google contra concorrentes.
+                        A página de guias específica para <span className="text-white">"bebedouros-curitiba"</span> alcança o primeiro resultado orgânico, blindando a marca contra concorrentes.
                       </p>
+
                       <div className="bg-slate-950 p-6 rounded-2xl border border-slate-800">
                         <div className="flex justify-between items-center mb-4">
                           <span className="text-xs font-bold uppercase text-slate-500">Keyword Principal</span>
@@ -252,16 +270,16 @@ export default function CaseSangelPurificadores() {
                         </div>
                         <div className="space-y-4">
                           <div className="flex justify-between items-center pb-2 border-b border-slate-800/50">
-                            <span className="text-slate-300 text-sm">Purificadores Curitiba</span>
-                            <span className="text-white font-bold bg-cyan-500/20 px-2 py-0.5 rounded text-xs">#1 - #3</span>
+                            <span className="text-slate-300 text-sm">bebedouros centro curitiba</span>
+                            <span className="text-white font-bold bg-cyan-500/20 px-2 py-0.5 rounded text-xs">#1</span>
                           </div>
                           <div className="flex justify-between items-center pb-2 border-b border-slate-800/50">
-                            <span className="text-slate-300 text-sm">Bebedouros de coluna em Curitiba</span>
-                            <span className="text-white font-bold bg-cyan-500/20 px-2 py-0.5 rounded text-xs">#2</span>
+                            <span className="text-slate-300 text-sm">purificadores centro curitiba</span>
+                            <span className="text-white font-bold bg-cyan-500/20 px-2 py-0.5 rounded text-xs">#1</span>
                           </div>
                           <div className="flex justify-between items-center">
-                            <span className="text-slate-300 text-sm">Manutenção de purificador Soft</span>
-                            <span className="text-white font-bold bg-cyan-500/20 px-2 py-0.5 rounded text-xs">#3</span>
+                            <span className="text-slate-300 text-sm">aluguel de bebedouros em curitiba</span>
+                            <span className="text-white font-bold bg-cyan-500/20 px-2 py-0.5 rounded text-xs">#1</span>
                           </div>
                         </div>
                       </div>

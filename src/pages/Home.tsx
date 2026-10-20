@@ -467,10 +467,10 @@ export default function Home() {
                   Tripla Presença: SEO + GEO + AIO
                 </span>
                 <h4 className="text-base font-bold text-white group-hover:text-cyan-300 transition-colors">
-                  Sangel: Purificadores em Curitiba
+                  Sangel: Bebedouros no Centro
                 </h4>
                 <p className="text-xs text-slate-300 leading-relaxed font-mono">
-                  “purificadores e bebedouros curitiba” — Domínio Total.
+                  “bebedouros centro curitiba” — Domínio Total.
                 </p>
               </div>
 
