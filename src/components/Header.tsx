@@ -66,6 +66,7 @@ export function Header() {
         <details
           ref={menu}
           className="mobile-menu"
+          onBlur={e => { if (!e.currentTarget.contains(e.relatedTarget as Node | null)) close(); }}
           onKeyDown={(e) => {
             if (e.key === "Escape") {
               e.preventDefault();
