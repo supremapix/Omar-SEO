@@ -145,9 +145,10 @@ export default function Resultados() {
 
   return (
     <div className="pt-28 pb-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto space-y-16">
+      <aside className="border border-slate-500 p-5 text-base leading-relaxed"><strong>Sobre este acervo:</strong> há ilustrações reconstruídas de resultados de busca. Elas não equivalem a capturas originais nem comprovam menções atuais, causalidade ou receita. Solicite documentação original e contexto antes de avaliar um resultado.</aside>
       <EnhancedSEO
         title="Cases e Resultados de SEO | Omar SEO — Experiência Prática"
-        description="Confira casos reais e factual de SEO técnico, SEO Local e GEO conduzidos por Omar SEO em segmentos competitivos em Curitiba e no Brasil."
+        description="Explore relatos e ilustrações do acervo Omar SEO, com contexto e limites de verificação."
         canonical="/resultados"
         breadcrumbs={[
           { name: 'Home', item: '/' },

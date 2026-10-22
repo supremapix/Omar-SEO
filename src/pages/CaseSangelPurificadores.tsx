@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Helmet } from 'react-helmet-async';
+import { EnhancedSEO } from '../components/EnhancedSEO';
 import { 
   ArrowLeft, 
   ExternalLink, 
@@ -24,7 +24,7 @@ export default function CaseSangelPurificadores() {
   const articleSchema = {
     '@context': 'https://schema.org',
     '@type': 'Article',
-    '@id': 'https://www.omarseo.digital/resultados/sangel-purificadores#article',
+    '@id': 'https://www.omarseo.digital/resultados/sangel-purificadores-bebedouros-curitiba#article',
     'headline': 'Case Sangel: Domínio Total (SEO + GEO + AIO) para Purificadores e Bebedouros em Curitiba',
     'description': 'Como a Sangel Purificadores alcançou a tripla presença no Google, sendo recomendada pela IA e liderando buscas orgânicas e locais.',
     'image': 'https://bio.supremamidia.com.br/imagens/gestor-de-trafego-organico-em-curitiba.png',
@@ -38,7 +38,7 @@ export default function CaseSangelPurificadores() {
       'name': 'Omar SEO',
       'logo': {
         '@type': 'ImageObject',
-        'url': 'https://www.omarseo.digital/logo.png'
+        'url': 'https://www.omarseo.digital/favicon.svg'
       }
     },
     'datePublished': '2024-10-17',
@@ -47,12 +47,8 @@ export default function CaseSangelPurificadores() {
 
   return (
     <div className="min-h-screen bg-slate-950 text-slate-200">
-      <Helmet>
-        <title>Case Sangel Purificadores: SEO, GEO e AIO em Curitiba | Omar SEO</title>
-        <meta name="description" content="Confira como a Sangel Purificadores domina as buscas por purificadores e bebedouros em Curitiba através da estratégia de Tripla Presença (SEO, Maps e AI Overview)." />
-        <link rel="canonical" href="https://www.omarseo.digital/resultados/sangel-purificadores" />
-        <script type="application/ld+json">{JSON.stringify(articleSchema)}</script>
-      </Helmet>
+      <EnhancedSEO title="Sangel Purificadores: registro do projeto | Omar SEO" description="Relato publicado no acervo Omar SEO sobre Sangel Purificadores e buscas em Curitiba. Consulte os limites de verificação do registro." canonical="/resultados/sangel-purificadores-bebedouros-curitiba" schema={[articleSchema]} />
+      <aside className="relative mx-auto max-w-7xl border border-slate-600 p-4 text-sm text-slate-200 leading-relaxed">Acervo do projeto: este relato pode incluir reconstruções gráficas de buscas. Ilustrações não comprovam menções atuais ou retorno financeiro. Solicite registros originais, consulta e data para avaliação.</aside>
 
       {/* Header/Hero */}
       <header className="relative pt-24 pb-16 overflow-hidden">
@@ -81,7 +77,7 @@ export default function CaseSangelPurificadores() {
                 Sangel: Domínio em <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">3 Superfícies</span> do Google
               </h1>
               <p className="text-xl text-slate-400 leading-relaxed">
-                Estratégia completa de SEO, GEO e AIO para a busca <strong className="text-cyan-300">"Purificadores e bebedouros curitiba"</strong>, garantindo recomendação da IA, presença no Maps e liderança orgânica.
+                Estratégia completa de SEO, GEO e AIO para a busca <strong className="text-cyan-300">"Purificadores e bebedouros curitiba"</strong>, com foco em conteúdo, presença local e compreensão dos serviços. Recomendações por IA e posições não são garantidas.
               </p>
             </div>
             
@@ -103,7 +99,7 @@ export default function CaseSangelPurificadores() {
         </div>
       </header>
 
-      <main className="max-w-7xl mx-auto px-4 pb-24">
+      <section className="max-w-7xl mx-auto px-4 pb-24">
         <div className="grid lg:grid-cols-12 gap-12">
           {/* Main Content Column */}
           <div className="lg:col-span-8 space-y-12">
@@ -367,7 +363,7 @@ export default function CaseSangelPurificadores() {
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
             <Link 
-              to="/diagnostico" 
+              to="/auditoria-seo"
               className="w-full sm:w-auto px-10 py-5 bg-white text-slate-950 font-bold rounded-2xl hover:bg-cyan-50 transition-all text-lg shadow-[0_10px_30px_rgba(255,255,255,0.1)]"
             >
               Começar Meu Plano SEO
@@ -380,7 +376,7 @@ export default function CaseSangelPurificadores() {
             </Link>
           </div>
         </section>
-      </main>
+      </section>
 
       {/* Footer is already part of Layout usually, but let's assume it's handled by App.tsx */}
     </div>

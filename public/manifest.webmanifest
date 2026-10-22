@@ -1,23 +1,22 @@
 {
-  "name": "Omar SEO | Especialista em Visibilidade Google",
+  "name": "Omar SEO",
   "short_name": "Omar SEO",
-  "description": "Consultoria e Engenharia de SEO, SEO Local, Google Maps e GEO em Curitiba.",
   "icons": [
     {
       "src": "/android-chrome-192x192.png",
       "sizes": "192x192",
       "type": "image/png",
-      "purpose": "any maskable"
+      "purpose": "any"
     },
     {
       "src": "/android-chrome-512x512.png",
       "sizes": "512x512",
       "type": "image/png",
-      "purpose": "any maskable"
+      "purpose": "any"
     }
   ],
-  "theme_color": "#0a0a0f",
-  "background_color": "#0a0a0f",
+  "theme_color": "#182b3b",
+  "background_color": "#f5f3ed",
   "display": "standalone",
   "start_url": "/"
 }

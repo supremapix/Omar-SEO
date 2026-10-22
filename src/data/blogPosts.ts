@@ -1,3 +1,4 @@
+import { legacyBlogPosts } from './legacyBlogPosts';
 export interface BlogFaq {
   question: string;
   answer: string;
@@ -18,6 +19,8 @@ export interface BlogPostMeta {
 }
 
 export const blogPosts: BlogPostMeta[] = [
+ ...legacyBlogPosts,
+ {slug:'seo-vs-sem-como-escolher',title:'SEO ou SEM: como escolher o trabalho para sua empresa',description:'Compare descoberta orgânica e anúncios de busca, responsabilidades, custos e critérios para contratar um especialista.',category:'Estratégia',readTime:5,keywords:['SEO versus SEM','especialista em SEM','SEO marketing'],tldr:'SEO melhora a descoberta orgânica. SEM pode incluir todo o marketing de busca, mas costuma ser usado para campanhas pagas. Defina o objetivo, as entregas e o orçamento antes de escolher.',datePublished:'2026-10-22',dateModified:'2026-10-22',author:'Omar Skafi',faq:[{question:'Pagar Google Ads melhora o ranking orgânico?',answer:'Anúncios e resultados orgânicos têm mecanismos distintos. Comprar mídia não compra posição orgânica.'},{question:'Quanto ganha um especialista em SEO?',answer:'Remuneração varia por senioridade, vínculo e região. Este guia trata da contratação de serviços; não apresenta estimativas salariais sem pesquisa específica.'}]},
   {
     slug: "por-que-contratar-especialista-seo-geo-aio",
     title: "Por que contratar um especialista em SEO, GEO e AIO em 2026?",
@@ -33,7 +36,7 @@ export const blogPosts: BlogPostMeta[] = [
       { question: "Qual a diferença entre um especialista em SEO e um especialista em GEO?", answer: "O especialista em SEO otimiza o site para aparecer nos resultados orgânicos do Google e do Bing. O especialista em GEO trabalha para que a marca seja citada nas respostas geradas por IAs como ChatGPT, Gemini, Perplexity e Copilot. Hoje os dois trabalhos se complementam e costumam ser feitos pelo mesmo profissional." },
       { question: "Vale a pena contratar SEO para pequena empresa?", answer: "Sim. Pequenas empresas locais costumam ter o melhor retorno, porque disputam buscas com intenção de compra na própria cidade, como “eletricista em Curitiba”, com concorrência menor que buscas nacionais." },
       { question: "Um especialista em SEO garante o primeiro lugar no Google?", answer: "Não. Nenhum profissional sério garante posição, porque o ranqueamento depende do algoritmo do Google. O que um especialista garante é a execução das boas práticas e a transparência nos resultados." },
-      { question: "SEO ainda funciona com a inteligência artificial?", answer: "Funciona e ficou mais importante. AI Overview, ChatGPT e Copilot usam páginas bem indexadas e confiáveis como fonte. Sem SEO, a IA não encontra a sua empresa para citar." }
+      { question: "SEO ainda funciona com a inteligência artificial?", answer: "Funciona e ficou mais importante. AI Overview, ChatGPT e Copilot usam páginas bem indexadas e confiáveis como fonte. Uma base acessível e útil apoia a descoberta, sem garantir citações." }
     ]
   },
   {

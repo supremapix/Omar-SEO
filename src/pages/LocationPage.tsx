@@ -27,7 +27,7 @@ export default function LocationPage() {
     provider: {
       '@type': 'ProfessionalService',
       name: 'Omar SEO',
-      url: 'https://omarseo.digital',
+      url: 'https://www.omarseo.digital',
     },
     areaServed: {
       '@type': 'AdministrativeArea',

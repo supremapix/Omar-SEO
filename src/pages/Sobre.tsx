@@ -19,7 +19,7 @@ import {
 } from 'lucide-react';
 
 export default function Sobre() {
-  const DOMAIN = 'https://omarseo.digital';
+  const DOMAIN = 'https://www.omarseo.digital';
 
   const personSchema = {
     '@context': 'https://schema.org',

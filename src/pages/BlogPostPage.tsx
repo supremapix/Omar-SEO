@@ -20,9 +20,10 @@ import {
 
 interface BlogPostPageProps {
   slug?: string;
+  content?: string;
 }
 
-export default function BlogPostPage({ slug: propSlug }: BlogPostPageProps) {
+export default function BlogPostPage({ slug: propSlug, content }: BlogPostPageProps) {
   const { slug: routeSlug } = useParams<{ slug: string }>();
   const activeSlug = propSlug || routeSlug;
 
@@ -33,29 +34,16 @@ export default function BlogPostPage({ slug: propSlug }: BlogPostPageProps) {
   }
 
   // Load markdown content supporting both Vite (import.meta.glob) and Node SSR (fs)
-  let rawMarkdown = '';
+  let rawMarkdown = content || '';
   try {
     // @ts-ignore
     const globFiles = import.meta.glob('../content/blog/*.md', { query: '?raw', import: 'default', eager: true });
     const key = `../content/blog/${post.slug}.md`;
-    if (globFiles[key]) {
+    if (!rawMarkdown && globFiles[key]) {
       rawMarkdown = globFiles[key] as string;
     }
   } catch (e) {
     // Not Vite environment
-  }
-
-  if (!rawMarkdown && typeof window === 'undefined') {
-    try {
-      const nodeFs = Function('return require')()('fs');
-      const nodePath = Function('return require')()('path');
-      const filePath = nodePath.resolve(process.cwd(), `src/content/blog/${post.slug}.md`);
-      if (nodeFs.existsSync(filePath)) {
-        rawMarkdown = nodeFs.readFileSync(filePath, 'utf-8');
-      }
-    } catch (err) {
-      // Fallback
-    }
   }
 
   if (!rawMarkdown) {

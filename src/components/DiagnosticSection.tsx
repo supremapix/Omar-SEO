@@ -8,12 +8,12 @@ export function DiagnosticSection() {
     { title: 'SEO Técnico', desc: 'Rastreabilidade, sitemaps e arquitetura limpa' },
     { title: 'SEO Semântico', desc: 'Entidades e vocabulário relevante para a intenção' },
     { title: 'SEO Local', desc: 'Geolocalização em bairros e cidades de Curitiba' },
-    { title: 'Google Maps', desc: 'Otimização do Perfil da Empresa e Top 3 do mapa' },
+    { title: 'Google Maps', desc: 'Informações consistentes no Perfil da Empresa' },
     { title: 'Schema / Dados Estruturados', desc: 'JSON-LD para marcas, serviços e FAQs' },
     { title: 'GEO / IA', desc: 'Estruturação para respostas no ChatGPT e Gemini' },
     { title: 'Conteúdo de Conversão', desc: 'Textos focados na tomada de decisão do cliente' },
     { title: 'Performance Web', desc: 'Carregamento ultrarrápido com Core Web Vitals' },
-    { title: 'Indexação Garantida', desc: 'URLs validadas sem erros no Google Search Console' },
+    { title: 'Verificação de Indexação', desc: 'URLs validadas sem erros no Google Search Console' },
     { title: 'Autoridade & E-E-A-T', desc: 'Construção de sinais de confiança para o algoritmo' },
   ];
 

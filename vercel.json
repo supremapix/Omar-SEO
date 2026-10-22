@@ -1,0 +1,46 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "omarseo.digital"
+        }
+      ],
+      "destination": "https://www.omarseo.digital/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/seo-geo-aio.html",
+      "destination": "/seo-geo-aio",
+      "permanent": true
+    },
+    {
+      "source": "/como-ganhar-mercado",
+      "destination": "/seo-geo-aio",
+      "permanent": true
+    },
+    {
+      "source": "/portfolio/seo-instalacao-frigorifica-navegantes",
+      "destination": "/resultados/seo-instalacao-frigorifica-navegantes",
+      "permanent": true
+    },
+    {
+      "source": "/portfolio/seo-aio-persianas-lagoa-da-conceicao-florianopolis",
+      "destination": "/resultados/seo-aio-persianas-lagoa-da-conceicao-florianopolis",
+      "permanent": true
+    },
+    {
+      "source": "/omar-skafi",
+      "destination": "/sobre",
+      "permanent": true
+    }
+  ],
+  "installCommand": "npm ci"
+}

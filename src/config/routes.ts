@@ -19,6 +19,8 @@ const dynamicBlogRoutes: RouteConfig[] = blogPosts.map((post) => ({
 }));
 
 export const MAIN_ROUTES: RouteConfig[] = [
+ {path:'/seo-local',title:'SEO local em Curitiba | Omar SEO',description:'Consultoria de SEO local e informações de atendimento para negócios em Curitiba.',priority:0.8,changefreq:'monthly',type:'main'},
+ {path:'/resultados/sangel-purificadores-bebedouros-curitiba', title:'Sangel Purificadores | Omar SEO',description:'Registro publicado do projeto Sangel Purificadores.',priority:0.7,changefreq:'monthly',type:'main'},
   {
     path: '/',
     title: 'Omar SEO | Especialista em SEO, Google, Maps e GEO para IA',
@@ -548,5 +550,5 @@ export function getAllRoutes(locationSlugs: string[]): RouteConfig[] {
     };
   });
 
-  return [...MAIN_ROUTES, ...COMMERCIAL_ROUTES, ...locationRoutes];
+  return [...new Map([...MAIN_ROUTES, ...COMMERCIAL_ROUTES, ...locationRoutes].filter(r => !r.path.startsWith('/portfolio/') && r.path !== '/como-ganhar-mercado' && r.path !== '/omar-skafi').map(r => [r.path, r])).values()];
 }

@@ -26,7 +26,7 @@ export function FloatingActions() {
   const currentUrl = typeof window !== 'undefined' ? window.location.href : 'https://omarseo.digital';
   const currentTitle = typeof document !== 'undefined' ? document.title : 'Omar SEO | Especialista em SEO em Curitiba';
 
-  const shareText = `Estou indicando o melhor Especialista em SEO de Curitiba — Omar SEO: ${currentTitle} (${currentUrl})`;
+  const shareText = `Conheça a consultoria de SEO de Curitiba — Omar SEO: ${currentTitle} (${currentUrl})`;
 
   const handleCopyLink = () => {
     navigator.clipboard.writeText(shareText);

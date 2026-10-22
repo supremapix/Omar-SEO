@@ -8,7 +8,7 @@ import { Cpu, CheckCircle2, ArrowRight, Zap, ShieldAlert, FileText, Sparkles } f
 export default function GeoIa() {
   const pillars = [
     'Marcação Semântica JSON-LD e Organização em Grafos de Conhecimento',
-    'Criação de Arquivos Standardized llms.txt para Crawlers de Inteligência Artificial',
+    'Revisão de acesso ao conteúdo e políticas de rastreamento para busca',
     'Construção de Entidades Digitais e Co-Ocorrência de Marca no Nicho',
     'Formatação de Conteúdo em Respostas Diretas e Tabelas para Consumo de LLMs',
     'Auditoria de Citação Semântica em Fontes Autorizadas',
@@ -76,7 +76,7 @@ export default function GeoIa() {
           </p>
 
           <p>
-            Implementamos arquivos <code className="text-yellow-400 font-mono">llms.txt</code>, organizamos schemas de entidades corporativas no padrão Schema.org e garantimos que informações cruciais (endereço, telefone, CNPJ, serviços prestados) fiquem livres de ambiguidades.
+            Organizamos informações visíveis e schemas de entidades corporativas no padrão Schema.org e garantimos que informações cruciais (endereço, telefone, CNPJ, serviços prestados) fiquem livres de ambiguidades.
           </p>
 
           <div className="pt-4 space-y-3">

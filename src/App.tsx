@@ -1,14 +1,14 @@
 import React, { Suspense, lazy, useEffect } from 'react';
 import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
 import { HelmetProvider } from 'react-helmet-async';
-import { AnimatePresence, motion } from 'motion/react';
+
 import { Header } from './components/Header';
 import { Footer } from './components/Footer';
 import { FloatingActions } from './components/FloatingActions';
 import { COMMERCIAL_INTENTS_DATA } from './data/commercialIntents';
 import { getAllLocationSlugs } from './data/locations';
 import { SERVICES_DATA } from './data/servicesData';
-import { BLOG_POSTS } from './data/blogData';
+import { blogPosts } from './data/blogPosts';
 
 // Lazy Loaded Main Pages
 const Home = lazy(() => import('./pages/Home'));
@@ -81,14 +81,8 @@ function AnimatedRoutes() {
   const location = useLocation();
 
   return (
-    <AnimatePresence mode="wait">
-      <motion.div
-        key={location.pathname}
-        initial={{ opacity: 0, y: 10 }}
-        animate={{ opacity: 1, y: 0 }}
-        exit={{ opacity: 0, y: -10 }}
-        transition={{ duration: 0.25, ease: 'easeOut' }}
-      >
+    <>
+      <div>
         <Routes location={location}>
           {/* Main Routes */}
           <Route path="/" element={<Home />} />
@@ -156,8 +150,8 @@ function AnimatedRoutes() {
           {/* Catch-All Route with fallback verification */}
           <Route path="*" element={<CatchAllRouteHandler />} />
         </Routes>
-      </motion.div>
-    </AnimatePresence>
+      </div>
+    </>
   );
 }
 
@@ -178,7 +172,7 @@ function CatchAllRouteHandler() {
   // Check /blog/:slug
   if (cleanSlug.startsWith('blog/')) {
     const blogSlug = cleanSlug.replace(/^blog\//, '');
-    if (BLOG_POSTS.some((p) => p.slug === blogSlug)) {
+    if (blogPosts.some((p) => p.slug === blogSlug)) {
       return <BlogPostPage slug={blogSlug} />;
     }
   }
@@ -208,14 +202,14 @@ export default function App() {
         <div className="min-h-screen flex flex-col bg-[#0a0a0f] text-slate-100 selection:bg-blue-600 selection:text-white">
           <Header />
 
-          <main className="flex-grow">
+          <main id="main-content" tabIndex={-1} className="flex-grow">
             <Suspense fallback={<PageLoader />}>
               <AnimatedRoutes />
             </Suspense>
           </main>
 
           <Footer />
-          <FloatingActions />
+
         </div>
       </BrowserRouter>
     </HelmetProvider>

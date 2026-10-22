@@ -72,6 +72,7 @@ export default function CaseEcoservyCortePoda() {
         ]}
         schema={[articleSchema]}
       />
+      <aside className="relative mx-auto max-w-7xl border border-slate-600 p-4 text-sm text-slate-200 leading-relaxed">Acervo do projeto: este relato pode incluir reconstruções gráficas de buscas. Ilustrações não comprovam menções atuais ou retorno financeiro. Solicite registros originais, consulta e data para avaliação.</aside>
 
       {/* Back Link */}
       <div>

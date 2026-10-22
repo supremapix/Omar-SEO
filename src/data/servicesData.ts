@@ -38,137 +38,93 @@ export interface ServiceData {
 
 export const SERVICES_DATA: Record<string, ServiceData> = {
   'consultoria-seo': {
-    slug: 'consultoria-seo',
-    name: 'Consultoria SEO',
-    heroBadge: 'Consultoria Estratégica em Curitiba',
-    heroTitle: 'Consultoria SEO em Curitiba: Estratégia de Alto Impacto para Vendas e Market Share',
-    heroSubtitle:
-      'Desenvolvemos planos estratégicos sob medida para empresas que buscam tráfego orgânico qualificado, atração contínua de clientes e consolidação de liderança nos motores de busca.',
-    targetKeyword: 'consultoria seo curitiba',
-    metaTitle: 'Consultoria SEO em Curitiba | Estratégia de Visibilidade e Vendas',
-    metaDescription:
-      'Consultoria SEO estratégica em Curitiba conduzida por Omar Skafi. Aumente o tráfego orgânico qualificado, conquiste clientes e ganhe market share no Google.',
-    schemaType: 'ConsultingService',
-    sections: [
-      {
-        title: 'Planejamento Estratégico Macro e Arquitetura de Visibilidade',
-        subsections: [
-          {
-            subtitle: 'Mapeamento de Oportunidades de Alto VGV e Market Share',
-            text: 'A nossa consultoria SEO em Curitiba não se limita a otimizar termos isolados. Realizamos uma imersão profunda no ecossistema do seu negócio para identificar gargalos de mercado, padrões de busca do seu cliente ideal e termos de alta intenção comercial. Mapeamos as lacunas deixadas pelos seus concorrentes diretos para criar uma arquitetura de conteúdo capaz de capturar demanda qualificada nos momentos decisivos da jornada de compra.',
-          },
-          {
-            subtitle: 'Alinhamento com Objetivos de Negócio e ROI Orgânico',
-            text: 'Convertemos objetivos de marketing em métricas concretas de vendas e faturamento. Cada recomendação técnica e estratégica é priorizada com base no retorno sobre o investimento (ROI). Não buscamos apenas visitas para o site; estruturamos uma estratégia focada em gerar oportunidades reais de negócio, contatos via WhatsApp, chamadas telefônicas e solicitações de orçamento para a sua equipe comercial.',
-          },
-        ],
-      },
-      {
-        title: 'Integração com Equipes Internas e Governança SEO',
-        subsections: [
-          {
-            subtitle: 'Capacitação de Times de Tecnologia, Conteúdo e Design',
-            text: 'Trabalhamos em sintonia fina com os seus desenvolvedores, redatores e designers. Oferecemos orientações diretas, especificações técnicas detalhadas e treinamento contínuo para garantir que todas as novas atualizações do seu site já nasçam preparadas para os algoritmos do Google, evitando retrabalhos e gargalos de implementação.',
-          },
-          {
-            subtitle: 'Sprints de Implementação Acionáveis e Gestão de Tarefas',
-            text: 'Organizamos a consultoria em ciclos curtos de execução (sprints). Cada entrega conta com documentação técnica clara, priorização por impacto e acompanhamento direto de Omar Skafi. Isso garante que as recomendações saiam do papel rapidamente e comecem a gerar resultados nos primeiros meses de acompanhamento.',
-          },
-        ],
-      },
-      {
-        title: 'Análise de Concorrência e Inteligência de Mercado',
-        subsections: [
-          {
-            subtitle: 'Desconstrução do Perfil Semântico e de Autoridade dos Líderes',
-            text: 'Auditamos os sites que atualmente ocupam as primeiras posições do Google no seu segmento em Curitiba e no Brasil. Analisamos a estrutura de links internos, a densidade semântica dos conteúdos, a velocidade de carregamento e o perfil de backlinks para construir uma estratégia superior e sustentável a longo prazo.',
-          },
-          {
-            subtitle: 'Identificação de Gaps de Conteúdo e Nichos Não Explorados',
-            text: 'Encontramos lacunas de intenção de busca que a sua concorrência ignorou. Ao responder com precisão às dúvidas específicas dos consumidores locais e nacionais, sua empresa ganha relevância imediata e estabelece autoridade incontestável no setor.',
-          },
-        ],
-      },
-      {
-        title: 'Decisão Orientada por Dados e Atribuição Multicanal',
-        subsections: [
-          {
-            subtitle: 'Métricas de Negócio em Vez de Métricas de Vaidade',
-            text: 'Monitoramos dados que realmente importam: custo de aquisição de clientes (CAC) orgânico, taxa de conversão por página de entrada e volume de leads gerados. Descartamos relatórios confusos com centenas de páginas e focamos em dashboards claros e acionáveis.',
-          },
-          {
-            subtitle: 'Acompanhamento Mensal com Omar Skafi',
-            text: 'Todos os meses realizamos reuniões estratégicas para revisar o progresso, analisar o comportamento dos algoritmos e redefinir prioridades de acordo com a movimentação do mercado e as metas da sua empresa.',
-          },
-        ],
-      },
-    ],
-    processSteps: [
-      {
-        number: '01',
-        title: 'Onboarding & Alinhamento',
-        description: 'Imersão no modelo de negócio, definição de metas de receita e acesso aos canais de análise (GA4, Google Search Console).',
-      },
-      {
-        number: '02',
-        title: 'Diagnóstico & Plano Diretor',
-        description: 'Auditoria técnica completa e criação do roadmap estratégico priorizado para os próximos 6 a 12 meses.',
-      },
-      {
-        number: '03',
-        title: 'Execução & Co-pilotagem',
-        description: 'Acompanhamento técnico diário com os times internos, otimização de código, criação de conteúdo e backlinks.',
-      },
-      {
-        number: '04',
-        title: 'Mensuração & Replanejamento',
-        description: 'Análise contínua das conversões, refinamento das palavras-chave e expansão da cobertura de mercado.',
-      },
-    ],
-    faqs: [
-      {
-        question: 'Qual é a diferença entre uma consultoria SEO e uma agência tradicional?',
-        answer: 'A consultoria SEO do Omar SEO oferece atendimento direto e personalizado com o especialista responsável, sem intermediários ou atendentes juniores. Focamos em engenharia técnica de código, alinhamento direto com seus objetivos de receita e transferência de conhecimento para sua equipe.',
-      },
-      {
-        question: 'Em quanto tempo é possível ver resultados na consultoria SEO?',
-        answer: 'Ajustes técnicos críticos de indexação e velocidade podem gerar melhorias perceptíveis entre 30 e 60 dias. Resultados expressivos de ganho de posições e aumento orgânico consistente de receita costumam consolidar-se entre 3 e 6 meses de trabalho contínuo.',
-      },
-      {
-        question: 'Minha empresa precisa ter uma equipe técnica para contratar a consultoria?',
-        answer: 'Não necessariamente. Caso sua empresa não possua desenvolvedores internos, oferecemos a opção de implementação direta dos ajustes de código e arquitetura pelo próprio Omar Skafi.',
-      },
-      {
-        question: 'Como é feito o acompanhamento das métricas de progresso?',
-        answer: 'Disponibilizamos um painel em tempo real e realizamos reuniões mensais de alinhamento com foco em reuniões de vendas geradas, chamadas telefônicas, mensagens de WhatsApp e aumento no tráfego orgânico qualificado.',
-      },
-      {
-        question: 'A consultoria atende apenas empresas de Curitiba?',
-        answer: 'Nossa sede física está localizada em Curitiba/PR no bairro Batel, onde realizamos atendimentos presenciais e remotos. Atendemos empresas do Paraná, Santa Catarina, Rio Grande do Sul e todo o Brasil.',
-      },
-    ],
-    comparativeTable: {
-      headers: ['Aspecto Estratégico', 'Consultoria Genérica', 'Consultoria Omar SEO'],
-      rows: [
+  "slug": "consultoria-seo",
+  "name": "Consultoria SEO",
+  "heroBadge": "Omar Skafi · Curitiba e atendimento remoto",
+  "heroTitle": "Consultoria SEO: diagnóstico, prioridades e acompanhamento",
+  "heroSubtitle": "Entenda os obstáculos do seu site e organize o trabalho técnico e editorial com um plano adequado ao seu negócio.",
+  "targetKeyword": "consultoria seo",
+  "metaTitle": "Consultoria SEO com Omar Skafi | Curitiba e remoto",
+  "metaDescription": "Consultoria SEO para organizar diagnóstico, conteúdo, correções técnicas e acompanhamento. Conheça o escopo, as entregas e como iniciar uma conversa.",
+  "schemaType": "Service",
+  "sections": [
+    {
+      "title": "O que faz um especialista em SEO",
+      "subsections": [
         {
-          feature: 'Atendimento',
-          traditional: 'Atendentes comerciais e estagiários',
-          omarSeo: 'Direto com Omar Skafi (Especialista com +12 anos)',
+          "subtitle": "Conecta o site às necessidades de quem pesquisa",
+          "text": "O trabalho investiga rastreamento, indexação, arquitetura, experiência e conteúdo. A análise considera seus serviços, público e regiões atendidas para propor melhorias que façam sentido para o negócio."
         },
         {
-          feature: 'Foco da Estratégia',
-          traditional: 'Métricas de vaidade (apenas impressões e cliques)',
-          omarSeo: 'Geração de leads, contatos no WhatsApp e receita real',
-        },
-        {
-          feature: 'Engenharia de Código',
-          traditional: 'Apenas plugins básicos em WordPress',
-          omarSeo: 'Auditoria e refatoração de código React, Vite, Schema e Core Web Vitals',
-        },
-      ],
+          "subtitle": "Transforma o diagnóstico em prioridades",
+          "text": "Nem todo problema exige a mesma urgência. As recomendações são organizadas por impacto esperado, esforço e dependências. A execução e os acessos necessários são definidos no escopo, junto aos responsáveis pelo site."
+        }
+      ]
     },
-  },
-
+    {
+      "title": "O que discutir na proposta",
+      "subsections": [
+        {
+          "subtitle": "Entregas e responsabilidades",
+          "text": "Confirme quais páginas serão analisadas, como as recomendações serão documentadas, quem fará as implementações e como as mudanças serão verificadas. Conteúdo, desenvolvimento e mídia paga devem ter escopos claros."
+        },
+        {
+          "subtitle": "Dados e acompanhamento",
+          "text": "Impressões, cliques, consultas e contatos ajudam a avaliar evolução quando os dados estão disponíveis. A interpretação precisa considerar sazonalidade, concorrência e outras ações de marketing. Visita não é sinônimo de venda."
+        }
+      ]
+    },
+    {
+      "title": "SEO local e busca com inteligência artificial",
+      "subsections": [
+        {
+          "subtitle": "Uma empresa fácil de compreender",
+          "text": "Dados consistentes de contato e atendimento, serviços bem descritos e conteúdo verificável sustentam a presença digital. Para a busca com IA, a prioridade é uma base técnica e editorial útil, sem promessas de recomendação."
+        },
+        {
+          "subtitle": "Limites transparentes",
+          "text": "Nenhum trabalho controla o ranking, o prazo de indexação ou as fontes escolhidas por um assistente. Não há garantia de primeiro lugar ou de citação por IA. A proposta deve explicar o processo e as entregas, sem fabricar certeza sobre o resultado."
+        }
+      ]
+    }
+  ],
+  "processSteps": [
+    {
+      "number": "01",
+      "title": "Conversa inicial",
+      "description": "Site, serviços, objetivos, região e dificuldades atuais."
+    },
+    {
+      "number": "02",
+      "title": "Diagnóstico e plano",
+      "description": "Obstáculos, prioridades, dependências e escopo acordado."
+    },
+    {
+      "number": "03",
+      "title": "Implementação e verificação",
+      "description": "Execução conforme responsabilidades definidas e conferência das alterações."
+    },
+    {
+      "number": "04",
+      "title": "Leitura dos dados",
+      "description": "Acompanhamento dos sinais disponíveis e revisão de prioridades."
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Quanto custa uma consultoria SEO?",
+      "answer": "O preço depende do escopo, porte do site, demandas de conteúdo e desenvolvimento e forma de acompanhamento. A proposta deve discriminar entregas e responsabilidades."
+    },
+    {
+      "question": "A consultoria garante primeiro lugar ou indicação por IA?",
+      "answer": "Não. Essas decisões pertencem aos mecanismos. A consultoria trabalha melhorias técnicas e editoriais e acompanha resultados observáveis."
+    },
+    {
+      "question": "O que enviar na primeira conversa?",
+      "answer": "O endereço do site, serviços principais, regiões atendidas e o problema que deseja resolver. Relatórios existentes podem ajudar quando disponíveis."
+    }
+  ]
+},
   'auditoria-seo': {
     slug: 'auditoria-seo',
     name: 'Auditoria SEO Técnica',
@@ -191,7 +147,7 @@ export const SERVICES_DATA: Record<string, ServiceData> = {
           },
           {
             subtitle: 'Análise de Logs do Servidor e Comportamento dos Googlebots',
-            text: 'Analisamos como os robôs de busca navegam pelo seu site. Garantimos que suas páginas mais lucrativas recebam a frequência de rastreamento adequada e que recursos irrelevantes sejam bloqueados corretamente via robots.txt.',
+            text: 'Analisamos como os robôs de busca navegam pelo seu site. Buscamos facilitar a descoberta das páginas prioritárias, sem controlar a frequência de rastreamento e que recursos irrelevantes sejam bloqueados corretamente via robots.txt.',
           },
         ],
       },
@@ -323,7 +279,7 @@ export const SERVICES_DATA: Record<string, ServiceData> = {
           },
           {
             subtitle: 'Otimização de Interatividade (INP) e Estabilidade Visual (CLS)',
-            text: 'Trabalhamos na otimização do evento Interaction to Next Paint (INP) para garantir que cada clique e interação do usuário tenha resposta instantânea. Reservamos dimensões estáticas para todos os elementos dinâmicos, zerando o deslocamento inesperado de layout (Cumulative Layout Shift - CLS).',
+            text: 'Trabalhamos na otimização do evento Interaction to Next Paint (INP) para garantir que cada clique e interação do usuário tenha resposta instantânea. Reservamos dimensões estáticas para todos os elementos dinâmicos, reduzindo o deslocamento inesperado de layout (Cumulative Layout Shift - CLS).',
           },
         ],
       },
@@ -336,7 +292,7 @@ export const SERVICES_DATA: Record<string, ServiceData> = {
           },
           {
             subtitle: 'Resolução de Gargalos em Frameworks Modernos',
-            text: 'Configuramos adequadamente manipuladores de rotas, metadados dinâmicos por página e gerenciamento avançado de estado para garantir que cada página seja descoberta e ranqueada de forma independente pelos bots.',
+            text: 'Configuramos adequadamente manipuladores de rotas, metadados dinâmicos por página e gerenciamento avançado de estado para permitir que cada página tenha conteúdo e metadados próprios, sem garantir indexação ou posição.',
           },
         ],
       },
@@ -1005,7 +961,7 @@ export const SERVICES_DATA: Record<string, ServiceData> = {
         subsections: [
           {
             subtitle: 'Configuração dos Arquivos Robots.txt e Cabeçalhos HTTP',
-            text: 'Garantimos que os robôs coletores das principais plataformas de IA (como GPTBot, OAI-SearchBot, ClaudeBot e PerplexityBot) tenham acesso livre e prioritário para ler o conteúdo do seu site.',
+            text: 'Verificamos regras de rastreamento conforme a função de cada robô e a política da empresa. Acesso para busca e treinamento são decisões distintas; nenhum ajuste garante prioridade, coleta ou citação.',
           },
           {
             subtitle: 'Criação dos Arquivos llms.txt e llms-full.txt na Raiz do Domínio',

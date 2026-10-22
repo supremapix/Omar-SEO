@@ -1,141 +1,72 @@
-import fs from 'fs';
-import path from 'path';
-import sharp from 'sharp';
-
-// High resolution master SVG for Omar SEO (512x512)
-const svgContent = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
-  <defs>
-    <!-- Background Gradient -->
-    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0b0f19"/>
-      <stop offset="100%" stop-color="#030407"/>
-    </linearGradient>
-
-    <!-- Outer Glow Ring Gradient -->
-    <linearGradient id="ringGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#3b82f6"/>
-      <stop offset="50%" stop-color="#22d3ee"/>
-      <stop offset="100%" stop-color="#10b981"/>
-    </linearGradient>
-
-    <!-- Spark Gold Gradient -->
-    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#fef08a"/>
-      <stop offset="50%" stop-color="#facc15"/>
-      <stop offset="100%" stop-color="#d97706"/>
-    </linearGradient>
-
-    <!-- Subtle Drop Shadows -->
-    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="12" result="blur" />
-      <feComposite in="SourceGraphic" in2="blur" operator="over" />
-    </filter>
-  </defs>
-
-  <!-- Squircle Base for Apple / Android / Google Favicon standard -->
-  <rect x="16" y="16" width="480" height="480" rx="108" fill="url(#bgGrad)" stroke="#1e293b" stroke-width="8"/>
-
-  <!-- Glowing Accent Ring (Stylized 'O' + Search Lens) -->
-  <circle cx="236" cy="256" r="130" fill="none" stroke="url(#ringGrad)" stroke-width="38" stroke-linecap="round" filter="url(#glow)"/>
-
-  <!-- Search Handle / Growth Vector Beam -->
-  <path d="M328 348 L410 430" fill="none" stroke="url(#ringGrad)" stroke-width="38" stroke-linecap="round"/>
-
-  <!-- High Velocity SEO Growth Arrow (Up-Right Spark) -->
-  <path d="M220 310 L310 220 M250 220 L310 220 L310 280" fill="none" stroke="url(#goldGrad)" stroke-width="32" stroke-linecap="round" stroke-linejoin="round"/>
-
-  <!-- Central AI Spark Node -->
-  <circle cx="310" cy="220" r="16" fill="#facc15"/>
-</svg>`;
-
-async function generateFavicons() {
-  const publicDir = path.join(process.cwd(), 'public');
-  if (!fs.existsSync(publicDir)) {
-    fs.mkdirSync(publicDir, { recursive: true });
-  }
-
-  // Write master SVG
-  const svgPath = path.join(publicDir, 'favicon.svg');
-  fs.writeFileSync(svgPath, svgContent, 'utf-8');
-  console.log('Created favicon.svg');
-
-  const svgBuffer = Buffer.from(svgContent);
-
-  // Generate PNG sizes
-  const sizes = [
-    { name: 'favicon-16x16.png', size: 16 },
-    { name: 'favicon-32x32.png', size: 32 },
-    { name: 'favicon-48x48.png', size: 48 }, // Google Search Favicon Official Standard
-    { name: 'apple-touch-icon.png', size: 180 }, // Apple iOS
-    { name: 'android-chrome-192x192.png', size: 192 }, // Android/PWA
-    { name: 'android-chrome-512x512.png', size: 512 }, // Android/PWA
-    { name: 'mstile-150x150.png', size: 150 }, // Microsoft Windows
-  ];
-
-  for (const { name, size } of sizes) {
-    const outputPath = path.join(publicDir, name);
-    await sharp(svgBuffer)
-      .resize(size, size)
-      .png({ compressionLevel: 9 })
-      .toFile(outputPath);
-    console.log(`Generated ${name} (${size}x${size})`);
-  }
-
-  // Generate ICO file combining 16, 32, and 48
-  // For favicon.ico, 48x48 PNG can be saved or converted to multi-icon ico format
-  const icoPath = path.join(publicDir, 'favicon.ico');
-  await sharp(svgBuffer)
-    .resize(48, 48)
-    .toFormat('png')
-    .toFile(icoPath);
-  console.log('Generated favicon.ico (48x48 compatible)');
-
-  // Generate site.webmanifest and manifest.webmanifest according to RealFaviconGenerator
-  const manifestContent = {
-    name: "Omar SEO | Especialista em Visibilidade Google",
-    short_name: "Omar SEO",
-    description: "Consultoria e Engenharia de SEO, SEO Local, Google Maps e GEO em Curitiba.",
-    icons: [
-      {
-        src: "/android-chrome-192x192.png",
-        sizes: "192x192",
-        type: "image/png",
-        purpose: "any maskable"
-      },
-      {
-        src: "/android-chrome-512x512.png",
-        sizes: "512x512",
-        type: "image/png",
-        purpose: "any maskable"
-      }
-    ],
-    theme_color: "#0a0a0f",
-    background_color: "#0a0a0f",
-    display: "standalone",
-    start_url: "/"
-  };
-
-  const manifestStr = JSON.stringify(manifestContent, null, 2);
-  fs.writeFileSync(path.join(publicDir, 'site.webmanifest'), manifestStr, 'utf-8');
-  fs.writeFileSync(path.join(publicDir, 'manifest.webmanifest'), manifestStr, 'utf-8');
-  console.log('Generated site.webmanifest and manifest.webmanifest');
-
-  // Generate browserconfig.xml for Microsoft tiles
-  const browserConfigXml = `<?xml version="1.0" encoding="utf-8"?>
-<browserconfig>
-    <msapplication>
-        <tile>
-            <square150x150logo src="/mstile-150x150.png"/>
-            <TileColor>#0a0a0f</TileColor>
-        </tile>
-    </msapplication>
-</browserconfig>`;
-
-  fs.writeFileSync(path.join(publicDir, 'browserconfig.xml'), browserConfigXml, 'utf-8');
-  console.log('Generated browserconfig.xml');
-}
-
-generateFavicons().catch((err) => {
-  console.error('Error generating favicons:', err);
-  process.exit(1);
+import fs from "node:fs";
+import path from "node:path";
+import sharp from "sharp";
+const publicDir = path.resolve("public");
+// Preserve the site's existing symbol verbatim. Do not invent a new monogram.
+const svg = fs.readFileSync(path.join(publicDir, "brand/symbol.svg"));
+fs.writeFileSync(path.join(publicDir, "favicon.svg"), svg);
+const sizes: [string, number][] = [
+  ["favicon-16x16.png", 16],
+  ["favicon-32x32.png", 32],
+  ["favicon-48x48.png", 48],
+  ["apple-touch-icon.png", 180],
+  ["android-chrome-192x192.png", 192],
+  ["android-chrome-512x512.png", 512],
+  ["mstile-150x150.png", 150],
+];
+for (const [name, size] of sizes)
+  await sharp(svg).resize(size, size).png().toFile(path.join(publicDir, name));
+// ICO directory with three independent PNG images (16, 32 and 48 pixels).
+const frames = await Promise.all(
+  [16, 32, 48].map((size) => sharp(svg).resize(size, size).png().toBuffer()),
+);
+const header = Buffer.alloc(6 + 16 * 3);
+header.writeUInt16LE(1, 2);
+header.writeUInt16LE(3, 4);
+let offset = header.length;
+frames.forEach((frame, i) => {
+  const at = 6 + i * 16;
+  header[at] = [16, 32, 48][i];
+  header[at + 1] = header[at];
+  header.writeUInt16LE(1, at + 4);
+  header.writeUInt16LE(32, at + 6);
+  header.writeUInt32LE(frame.length, at + 8);
+  header.writeUInt32LE(offset, at + 12);
+  offset += frame.length;
 });
+fs.writeFileSync(
+  path.join(publicDir, "favicon.ico"),
+  Buffer.concat([header, ...frames]),
+);
+const manifest = {
+  name: "Omar SEO",
+  short_name: "Omar SEO",
+  icons: [192, 512].map((size) => ({
+    src: `/android-chrome-${size}x${size}.png`,
+    sizes: `${size}x${size}`,
+    type: "image/png",
+    purpose: "any",
+  })),
+  theme_color: "#182b3b",
+  background_color: "#f5f3ed",
+  display: "standalone",
+  start_url: "/",
+};
+for (const name of ["site.webmanifest", "manifest.webmanifest"])
+  fs.writeFileSync(
+    path.join(publicDir, name),
+    JSON.stringify(manifest, null, 2),
+  );
+fs.writeFileSync(
+  path.join(publicDir, "browserconfig.xml"),
+  '<?xml version="1.0" encoding="UTF-8"?><browserconfig><msapplication><tile><square150x150logo src="/mstile-150x150.png"/><TileColor>#182b3b</TileColor></tile></msapplication></browserconfig>',
+);
+// Code-native editorial composition uses the existing symbol and wordmark.
+const symbol = svg.toString("base64");
+const og = `<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630"><rect width="1200" height="630" fill="#f5f3ed"/><rect x="900" width="300" height="630" fill="#182b3b"/><image href="data:image/svg+xml;base64,${symbol}" x="967" y="200" width="166" height="166"/><path d="M60 140H840M60 540H840" stroke="#a8b3bc"/><g font-family="Arial, sans-serif" fill="#182b3b"><text x="60" y="95" font-size="44" font-weight="900">OMAR <tspan fill="#2459c7">SEO</tspan></text><text x="60" y="208" font-size="15" letter-spacing="3">CONSULTORIA EM SEO E DESCOBERTA POR IA</text><text x="56" y="299" font-size="64" font-weight="600">Clareza para quem</text><text x="56" y="374" font-size="64" font-weight="600">procura.</text><text x="60" y="458" font-family="Georgia, serif" font-style="italic" fill="#1748b4" font-size="48">Estrutura para ser encontrado.</text><text x="60" y="585" font-size="20">Omar Skafi · Curitiba e atendimento remoto</text></g><text x="1050" y="570" text-anchor="middle" fill="#e4ebf1" font-family="Arial" font-size="17">omarseo.digital</text></svg>`;
+await sharp(Buffer.from(og))
+  .jpeg({ quality: 90, mozjpeg: true })
+  .toFile(path.join(publicDir, "og-default.jpg"));
+console.log(
+  "Brand assets generated: ICO 16/32/48, PNGs, SVG, manifests, OG 1200x630.",
+);

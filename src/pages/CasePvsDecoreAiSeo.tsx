@@ -91,6 +91,7 @@ export default function CasePvsDecoreAiSeo() {
         canonical="https://www.omarseo.digital/resultados/pvs-decore-pisos-vinilicos-sao-jose-dos-pinhais"
         schema={[articleSchema, breadcrumbSchema]}
       />
+      <aside className="relative mx-auto max-w-7xl border border-slate-600 p-4 text-sm text-slate-200 leading-relaxed">Acervo do projeto: este relato pode incluir reconstruções gráficas de buscas. Ilustrações não comprovam menções atuais ou retorno financeiro. Solicite registros originais, consulta e data para avaliação.</aside>
 
       {/* Grid de Fundo */}
       <div className="absolute inset-0 pointer-events-none opacity-25">
@@ -383,7 +384,7 @@ export default function CasePvsDecoreAiSeo() {
                 Presença documentada no Google AI Overview para pesquisas de alta intenção comercial no setor automotivo e manutenção de veículos.
               </p>
               <Link
-                to="/resultados/carplus-pneus-curitiba-google-ai-overview"
+                to="/resultados/carplus-google-ai-overview-pneus-curitiba"
                 className="text-xs font-bold text-cyan-400 hover:text-cyan-300 inline-flex items-center gap-1 pt-1"
               >
                 <span>Ver Case Carplus</span>

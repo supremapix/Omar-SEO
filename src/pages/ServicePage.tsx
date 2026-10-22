@@ -31,7 +31,7 @@ export default function ServicePage({ slug: propSlug }: ServicePageProps) {
     return <NotFoundView />;
   }
 
-  const DOMAIN = 'https://omarseo.digital';
+  const DOMAIN = 'https://www.omarseo.digital';
   const canonicalPath = `/servicos/${service.slug}`;
 
   // Build JSON-LD Service schema
@@ -204,83 +204,7 @@ export default function ServicePage({ slug: propSlug }: ServicePageProps) {
         })}
       </div>
 
-      {/* Comparative Table (if present) */}
-      {service.comparativeTable && (
-        <section className="bg-[#0f1118] border border-slate-800 rounded-3xl p-6 sm:p-8 space-y-6">
-          <div className="space-y-2 text-center max-w-2xl mx-auto">
-            <h2 className="text-xl sm:text-2xl font-bold font-display text-white">
-              Diferenciais de Desempenho
-            </h2>
-            <p className="text-xs sm:text-sm text-slate-400">
-              Veja por que nossa abordagem em {service.name} se destaca do mercado tradicional.
-            </p>
-          </div>
-
-          <div className="overflow-x-auto">
-            <table className="w-full text-left text-xs sm:text-sm border-collapse">
-              <thead>
-                <tr className="border-b border-slate-800 bg-slate-900/80 text-slate-300">
-                  <th className="p-3 sm:p-4 font-bold text-white">Ponto de Otimização</th>
-                  <th className="p-3 sm:p-4 font-bold text-slate-400">
-                    {service.comparativeTable.headers[1]}
-                  </th>
-                  <th className="p-3 sm:p-4 font-bold text-cyan-400">
-                    {service.comparativeTable.headers[2]}
-                  </th>
-                </tr>
-              </thead>
-              <tbody className="divide-y divide-slate-800/80 text-slate-300">
-                {service.comparativeTable.rows.map((row, idx) => (
-                  <tr key={idx} className="hover:bg-slate-900/40 transition-colors">
-                    <td className="p-3 sm:p-4 font-bold text-white flex items-center gap-2">
-                      <CheckCircle2 size={16} className="text-blue-400 shrink-0" />
-                      <span>{row.feature}</span>
-                    </td>
-                    <td className="p-3 sm:p-4 text-slate-400">{row.traditional}</td>
-                    <td className="p-3 sm:p-4 font-semibold text-cyan-300 bg-cyan-950/20">
-                      {row.omarSeo}
-                    </td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-        </section>
-      )}
-
-      {/* Process / How it Works Section */}
-      <section id="processo" className="scroll-mt-28 space-y-8">
-        <div className="text-center max-w-2xl mx-auto space-y-3">
-          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-yellow-950/80 border border-yellow-500/40 text-yellow-300 text-xs font-bold uppercase tracking-widest">
-            <ShieldCheck size={14} />
-            <span>Metodologia Comprovada</span>
-          </div>
-          <h2 className="text-2xl sm:text-3xl font-bold font-display text-white">
-            Como Funciona o Processo de {service.name}
-          </h2>
-          <p className="text-xs sm:text-sm text-slate-300">
-            Etapas estruturadas do início ao topo das pesquisas no Google e mecanismos de IA.
-          </p>
-        </div>
-
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-          {service.processSteps.map((step) => (
-            <div
-              key={step.number}
-              className="bg-[#0f1118] border border-slate-800 rounded-2xl p-6 space-y-3 relative hover:border-yellow-500/40 transition-all group"
-            >
-              <div className="text-3xl font-black font-display text-yellow-400/30 group-hover:text-yellow-400 transition-colors">
-                {step.number}
-              </div>
-              <h3 className="text-base font-bold text-white">{step.title}</h3>
-              <p className="text-slate-400 text-xs sm:text-sm leading-relaxed">
-                {step.description}
-              </p>
-            </div>
-          ))}
-        </div>
-      </section>
-
+      <section className="border-t border-slate-700 pt-6"><h2 className="text-xl font-bold">Para decidir com mais contexto</h2><Link className="inline-flex items-center min-h-12 underline" to="/seo-geo-aio">O que faz um especialista em SEO e quais são os limites da busca com IA →</Link></section>
       {/* FAQ Section (HTML details/summary - NO FAQPage JSON-LD) */}
       <section id="faq" className="scroll-mt-28 space-y-6">
         <div className="text-center max-w-2xl mx-auto space-y-2">

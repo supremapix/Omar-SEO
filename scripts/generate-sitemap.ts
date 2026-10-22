@@ -9,14 +9,12 @@ function generateSitemap() {
   const locationSlugs = getAllLocationSlugs();
   const routes = getAllRoutes(locationSlugs);
 
-  const lastModDate = '2026-10-10';
 
   const xmlEntries = routes
     .map((r) => {
       const url = r.path === '/' ? `${DOMAIN}/` : `${DOMAIN}${r.path}`;
       return `  <url>
     <loc>${url}</loc>
-    <lastmod>${lastModDate}</lastmod>
     <changefreq>${r.changefreq}</changefreq>
     <priority>${r.priority.toFixed(1)}</priority>
   </url>`;

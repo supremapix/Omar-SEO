@@ -9,10 +9,11 @@
     "favicons": "tsx scripts/generate-favicons.ts",
     "sitemap": "tsx scripts/generate-sitemap.ts",
     "prerender": "tsx scripts/prerender.tsx",
-    "build": "tsx scripts/generate-favicons.ts && tsx scripts/generate-sitemap.ts && vite build && tsx scripts/prerender.tsx",
+    "build": "tsc --noEmit && tsx scripts/generate-favicons.ts && tsx scripts/generate-sitemap.ts && vite build && tsx scripts/prerender.tsx",
     "preview": "vite preview",
     "clean": "rm -rf dist server.js",
-    "lint": "tsc --noEmit"
+    "lint": "tsc --noEmit",
+    "verify:site": "node scripts/verify.mjs"
   },
   "dependencies": {
     "@google/genai": "^2.4.0",
@@ -31,10 +32,13 @@
     "vite": "^6.2.3"
   },
   "devDependencies": {
+    "@axe-core/playwright": "^4.14.0",
+    "@playwright/test": "^1.64.1",
     "@types/express": "^4.17.21",
     "@types/node": "^22.14.0",
     "autoprefixer": "^10.4.21",
     "esbuild": "^0.25.0",
+    "prettier": "^3.9.10",
     "sharp": "^0.35.3",
     "tailwindcss": "^4.1.14",
     "tsx": "^4.21.0",

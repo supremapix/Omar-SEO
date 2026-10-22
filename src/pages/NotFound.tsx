@@ -17,6 +17,7 @@ export function NotFoundView() {
         title="Página Não Encontrada (404) | Omar SEO"
         description="A página que você procura não foi encontrada. Volte para a página inicial da Omar SEO."
         canonical="/404"
+        noindex
       />
 
       <div className="p-4 rounded-full bg-blue-950/50 border border-blue-800 text-blue-400 inline-block">

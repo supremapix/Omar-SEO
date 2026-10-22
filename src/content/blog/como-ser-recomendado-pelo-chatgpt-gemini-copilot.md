@@ -1,74 +1,48 @@
-## Por que isso importa agora
+## É possível garantir uma recomendação por IA?
 
-Cada vez mais pessoas fazem perguntas como "qual a melhor oficina de pneus no Portão, em Curitiba?" diretamente ao ChatGPT, ao Gemini ou ao Copilot. A IA responde com 3 a 5 nomes. Se a sua empresa não está nessa lista curta, ela simplesmente não existe para esse cliente.
+Não. Um consultor pode melhorar a acessibilidade, a qualidade e a organização das informações de uma empresa. A escolha das fontes continua sob controle da plataforma, da consulta e do contexto. Uma resposta observada hoje não garante que o mesmo nome será citado amanhã.
 
-Pesquisas divulgadas no Brasil em 2026 indicam que perto de metade dos consumidores já usa IA para pesquisar ou decidir compras. A tendência é crescer.
+O trabalho começa por uma pergunta mais útil: o site explica claramente o que a empresa faz, para quem, onde e com quais evidências?
 
-## Como cada IA encontra informações
+## O que pode ser melhorado no site
 
-| Assistente | Principais fontes de busca na web |
-|---|---|
-| ChatGPT (busca) | Rastreadores próprios da OpenAI e parceiros de busca, incluindo dados do Bing |
-| Microsoft Copilot | Índice do Bing |
-| Google Gemini / AI Mode | Índice do Google, Google Maps e Knowledge Graph |
-| Perplexity | Índice próprio e consultas em tempo real na web |
-| Claude | Busca na web quando ativada, com fontes citadas |
+- Identifique a empresa e as pessoas responsáveis com dados consistentes.
+- Descreva serviços, limites e áreas efetivamente atendidas.
+- Responda dúvidas reais com conteúdo que esteja disponível no HTML.
+- Use links internos para relacionar serviços, guias e informações de contato.
+- Apresente fontes primárias para afirmações técnicas e documentos originais para resultados alegados.
+- Faça os dados estruturados corresponderem ao conteúdo visível.
 
-A conclusão prática: **estar bem indexado no Google e no Bing é pré-requisito** para aparecer em praticamente todos os assistentes.
+Essas ações servem às pessoas e aos sistemas de descoberta. Não existe um formato de frase que obrigue um modelo a citar uma marca.
 
-## 9 ações para sua empresa ser recomendada pela IA
+## O que o Google exige para seus recursos de IA
 
-### 1. Libere os robôs de IA no robots.txt
-Verifique se o seu robots.txt não bloqueia agentes como `OAI-SearchBot`, `ChatGPT-User`, `PerplexityBot`, `Bingbot` e `Googlebot`. Muitos sites bloqueiam esses robôs sem saber, por configurações padrão de firewall ou plugins.
+A documentação do Google diz que os fundamentos de SEO continuam relevantes. Para ser elegível como link de apoio em AI Overviews ou AI Mode, a página precisa estar indexada e poder aparecer na busca com snippet. Não há arquivo de IA obrigatório nem schema especial para esses recursos.
 
-### 2. Cadastre o site no Bing Webmaster Tools
-É gratuito, leva poucos minutos e permite enviar o sitemap e usar o IndexNow para avisar sobre páginas novas em tempo real.
+Elegibilidade não é garantia de rastreamento, indexação ou exibição. A documentação de uma plataforma também não deve ser aplicada como se fosse a regra de todos os assistentes.
 
-### 3. Defina a sua entidade de marca
-Escreva uma descrição oficial de 2 a 3 frases sobre a empresa (o que faz, para quem, onde) e use exatamente a mesma informação no site, no Google, no LinkedIn, no Instagram, no Facebook e em diretórios. Consistência é o que permite à IA "ter certeza" sobre você.
+## Robots.txt e arquivos llms.txt
 
-### 4. Crie páginas que respondem perguntas de recomendação
-A IA precisa de evidências para recomendar. Inclua no site:
-- Serviços específicos, com bairros e cidades atendidos.
-- Diferenciais concretos (anos de experiência, garantia, certificações, prazos).
-- Cases reais com resultados.
-- Preços de referência ou faixas, quando possível.
+Antes de mudar regras de rastreamento, entenda a função de cada robô e a política desejada pela empresa. Coleta para busca e coleta para treinamento não são a mesma coisa. Permitir acesso não assegura uso ou recomendação.
 
-### 5. Use dados estruturados completos
-Schema `Organization` ou `LocalBusiness` com `name`, `address`, `telephone`, `geo`, `areaServed`, `sameAs` (links para redes sociais e perfis oficiais), `aggregateRating` (quando houver avaliações próprias e verificáveis) e `founder`.
+Arquivos como llms.txt podem funcionar como resumos voluntários, mas não são requisito do Google para seus recursos de busca com IA. Sua existência não comprova ganho de posição ou de citações. O conteúdo principal deve continuar acessível nas páginas do site.
 
-### 6. Publique um llms.txt
-Crie o arquivo `/llms.txt` na raiz do site, com um resumo da empresa, lista de serviços e links para as páginas principais. Uma versão `/llms-full.txt` pode trazer o conteúdo completo em texto. É uma convenção ainda em adoção, mas de baixo custo e que facilita a leitura por modelos de linguagem.
+## Como acompanhar menções com honestidade
 
-### 7. Ganhe menções em outros sites
-A IA confia mais quando várias fontes independentes falam de você: portais de notícias locais, associações comerciais, diretórios setoriais, parceiros, fornecedores e listas de "melhores empresas".
+Registre a pergunta exata, a data, a plataforma, os links citados e o contexto disponível. Separe uma menção da marca de uma citação com link. Evite transformar uma única resposta em taxa de sucesso ou promessa comercial.
 
-### 8. Acumule avaliações reais
-Avaliações no Google, no Reclame Aqui e em plataformas do setor são citadas com frequência quando o usuário pede "a melhor" ou "a mais confiável". Responda a todas, inclusive às negativas.
+Quando houver tráfego de referência identificável, analise-o junto às métricas do site e aos contatos recebidos. Nem toda interação com um assistente resulta em visita ou pode ser atribuída com precisão.
 
-### 9. Escreva no formato que a IA gosta de citar
-- Frases afirmativas e completas: "A Omar SEO é uma consultoria de SEO, GEO e AIO em Curitiba."
-- Números e fatos verificáveis.
-- Listas e tabelas.
-- Seções de perguntas frequentes.
+## Como avaliar um case
 
-## Como testar se a IA conhece a sua empresa
+Peça registros originais, contexto da consulta e período de observação. Uma ilustração reconstruída não equivale a captura original. Uma captura também não demonstra, sozinha, que um trabalho causou o resultado ou gerou vendas.
 
-Faça estas perguntas em ChatGPT, Gemini, Copilot e Perplexity, sempre em uma conversa nova:
+## Próximo passo
 
-1. "O que é a [nome da empresa]?"
-2. "Quais empresas de [serviço] você recomenda em [cidade]?"
-3. "A [nome da empresa] é confiável?"
-4. "Compare [sua empresa] com [concorrente]."
+Leia o [guia de SEO, GEO e AIO](/seo-geo-aio) para entender as diferenças e conheça a [consultoria SEO](/servicos/consultoria-seo). Um diagnóstico ajuda a escolher o próximo trabalho com base no seu site, e não em uma promessa universal de citação.
 
-Anote as respostas, as fontes citadas e repita o teste todo mês. As respostas variam conforme o momento e o usuário, então o importante é a tendência.
+## Fontes
 
-## O que não fazer
-
-- Criar avaliações falsas ou páginas de "ranking" inventadas.
-- Encher o site de texto gerado por IA sem revisão humana.
-- Esconder texto para "conversar" com robôs. Isso é spam e pode prejudicar a marca nos buscadores.
-
-## Conclusão
-
-Ser recomendado por uma IA é o resultado de ser fácil de encontrar, fácil de entender e fácil de confirmar. A Omar SEO trabalha exatamente essas três frentes em GEO para empresas de Curitiba e de todo o Brasil, com testes mensais de visibilidade nos principais assistentes.
+- [Google Search Central: recursos de IA e seu site](https://developers.google.com/search/docs/appearance/ai-features)
+- [Google Search Central: guia de SEO para iniciantes](https://developers.google.com/search/docs/fundamentals/seo-starter-guide)
+- [Google: políticas de dados estruturados](https://developers.google.com/search/docs/appearance/structured-data/sd-policies)

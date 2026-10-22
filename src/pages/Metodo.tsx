@@ -198,7 +198,7 @@ export default function Metodo() {
             </h3>
 
             <p className="text-slate-300 text-xs sm:text-sm leading-relaxed">
-              Preparação de dados e arquivos de síntese (llms.txt) para leitura por robôs de Inteligência Artificial (ChatGPT, Gemini, Perplexity, Claude). Garantimos que sua empresa seja citada e recomendada nas respostas geradas por IA.
+              Preparação de dados e arquivos de síntese (llms.txt) para leitura por robôs de Inteligência Artificial (ChatGPT, Gemini, Perplexity, Claude). A escolha de fontes é independente de cada plataforma; citações e recomendações não são garantidas.
             </p>
 
             <ul className="space-y-2 pt-2 text-xs text-slate-400">

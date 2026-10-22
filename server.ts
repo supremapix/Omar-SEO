@@ -1,103 +1,57 @@
-import express from 'express';
-import fs from 'fs';
-import path from 'path';
-import { fileURLToPath } from 'url';
-
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
-
+import express from "express";
+import fs from "node:fs";
+import path from "node:path";
+import { fileURLToPath } from "node:url";
+const root = path.dirname(fileURLToPath(import.meta.url));
+const dist = path.join(root, "dist");
 const app = express();
-const PORT = process.env.PORT ? parseInt(process.env.PORT, 10) : 3000;
-const distDir = path.resolve(__dirname, 'dist');
-const hasDist = fs.existsSync(distDir);
-
-// Canonical Host Redirection (301)
+const port = Number(process.env.PORT || 3000);
 app.use((req, res, next) => {
-  const host = req.headers.host || '';
-  if (host === 'omarseo.digital') {
-    return res.redirect(301, `https://www.omarseo.digital${req.url}`);
-  }
+  if (req.hostname === "omarseo.digital")
+    return res.redirect(301, "https://www.omarseo.digital" + req.originalUrl);
   next();
 });
-
-// Explicit sitemap.xml with XML Content-Type header
-app.get('/sitemap.xml', (req, res) => {
-  const sitemapDist = path.resolve(distDir, 'sitemap.xml');
-  const sitemapPublic = path.resolve(__dirname, 'public', 'sitemap.xml');
-  const target = fs.existsSync(sitemapDist) ? sitemapDist : sitemapPublic;
-
-  if (fs.existsSync(target)) {
-    res.setHeader('Content-Type', 'application/xml; charset=utf-8');
-    return res.sendFile(target);
-  }
-  return res.status(404).send('Sitemap not found');
-});
-
-// Redirect /seo-geo-aio.html to /seo-geo-aio
-app.get('/seo-geo-aio.html', (req, res) => {
-  return res.redirect(301, '/seo-geo-aio');
-});
-
-// Redirect /portfolio/seo-instalacao-frigorifica-navegantes to /resultados/seo-instalacao-frigorifica-navegantes
-app.get('/portfolio/seo-instalacao-frigorifica-navegantes', (req, res) => {
-  return res.redirect(301, '/resultados/seo-instalacao-frigorifica-navegantes');
-});
-
-// Redirect /portfolio/seo-aio-persianas-lagoa-da-conceicao-florianopolis to /resultados/seo-aio-persianas-lagoa-da-conceicao-florianopolis
-app.get('/portfolio/seo-aio-persianas-lagoa-da-conceicao-florianopolis', (req, res) => {
-  return res.redirect(301, '/resultados/seo-aio-persianas-lagoa-da-conceicao-florianopolis');
-});
-
-// Serve static assets from public/ and dist/
-app.use(express.static(path.resolve(__dirname, 'public')));
-if (hasDist) {
-  app.use(express.static(distDir, { index: false }));
-}
-
-// Serve pre-rendered HTML files when available in dist/
+const redirects: Record<string, string> = {
+  "/seo-geo-aio.html": "/seo-geo-aio",
+  "/como-ganhar-mercado": "/seo-geo-aio",
+  "/omar-skafi": "/sobre",
+  "/portfolio/seo-instalacao-frigorifica-navegantes":
+    "/resultados/seo-instalacao-frigorifica-navegantes",
+  "/portfolio/seo-aio-persianas-lagoa-da-conceicao-florianopolis":
+    "/resultados/seo-aio-persianas-lagoa-da-conceicao-florianopolis",
+};
 app.use((req, res, next) => {
-  if (!hasDist) return next();
-
-  const rawPath = req.originalUrl.split('?')[0];
-  const cleanPath = rawPath === '/' ? '' : rawPath.replace(/^\//, '').replace(/\/$/, '');
-
-  const targetHtmlPath = cleanPath === ''
-    ? path.resolve(distDir, 'index.html')
-    : path.resolve(distDir, cleanPath, 'index.html');
-
-  if (fs.existsSync(targetHtmlPath)) {
-    return res.status(200).set({ 'Content-Type': 'text/html; charset=utf-8' }).sendFile(targetHtmlPath);
-  }
-
-  // If path is not a valid static file and hasDist is true, serve 404
-  const notFoundPath = path.resolve(distDir, '404.html');
-  if (fs.existsSync(notFoundPath)) {
-    return res.status(404).set({ 'Content-Type': 'text/html; charset=utf-8' }).sendFile(notFoundPath);
-  }
-
-  return res.status(404).send('404 - Page Not Found');
+  const target = redirects[req.path];
+  if (target) return res.redirect(301, target);
+  if (req.path.length > 1 && req.path.endsWith("/"))
+    return res.redirect(
+      301,
+      req.path.replace(/\/$/, "") + req.originalUrl.slice(req.path.length),
+    );
+  next();
 });
-
-// Vite Dev Server fallback if dist/ is not built
-const { createServer: createViteServer } = await import('vite');
-const vite = await createViteServer({
-  server: { middlewareMode: true, port: PORT, host: '0.0.0.0' },
-  appType: 'custom',
-});
-app.use(vite.middlewares);
-
-app.use('*', async (req, res, next) => {
-  const url = req.originalUrl;
-  try {
-    let template = fs.readFileSync(path.resolve(__dirname, 'index.html'), 'utf-8');
-    template = await vite.transformIndexHtml(url, template);
-    res.status(200).set({ 'Content-Type': 'text/html; charset=utf-8' }).end(template);
-  } catch (e) {
-    vite.ssrFixStacktrace(e as Error);
-    next(e);
-  }
-});
-
-app.listen(PORT, '0.0.0.0', () => {
-  console.log(`[Server] Running on http://0.0.0.0:${PORT}`);
-});
+if (fs.existsSync(path.join(dist, "index.html"))) {
+  app.use(express.static(dist, { index: false, redirect: false }));
+  app.use((req, res) => {
+    let pathname: string;
+    try {
+      pathname = decodeURIComponent(req.path);
+    } catch {
+      return res.status(400).send("Invalid path");
+    }
+    const target = path.resolve(dist, "." + pathname, "index.html");
+    if (target.startsWith(dist + path.sep) && fs.existsSync(target))
+      return res.sendFile(target);
+    res.status(404).sendFile(path.join(dist, "404.html"));
+  });
+} else {
+  const { createServer } = await import("vite");
+  const vite = await createServer({
+    server: { middlewareMode: true },
+    appType: "spa",
+  });
+  app.use(vite.middlewares);
+}
+app.listen(port, "127.0.0.1", () =>
+  console.log("Omar SEO on http://127.0.0.1:" + port),
+);

@@ -17,18 +17,18 @@ export const COMMERCIAL_INTENTS_DATA: Record<string, CommercialIntentData> = {
     metaTitle: 'Especialista em SEO em Curitiba | Omar SEO',
     metaDescription: 'Omar Skafi é Especialista em SEO em Curitiba. Otimização técnica, Google Maps e GEO para posicionar sua empresa nos primeiros resultados do Google.',
     contentParagraphs: [
-      'Contratar um Especialista em SEO em Curitiba é a decisão estratégica mais rentável para empresas que desejam parar de depender exclusivamente de anúncios pagos e construir um ativo digital próprio e duradouro.',
+      'Contratar um Especialista em SEO em Curitiba é uma decisão que deve considerar objetivos, orçamento e diagnóstico para empresas que desejam parar de depender exclusivamente de anúncios pagos e construir um ativo digital próprio e duradouro.',
       'Diferente de agências tradicionais que aplicam receitas genéricas, a atuação do especialista Omar Skafi é fundamentada na engenharia de dados e na compreensão profunda de como os algoritmos do Google e das Inteligências Artificiais leem, classificam e recomendam negócios em Curitiba e região.',
       'Nossa metodologia integra auditoria de SEO técnico, arquitetura da informação, estruturação com Schema.org, otimização no Perfil de Empresa do Google (Google Maps) e estratégias de GEO (Generative Engine Optimization) para respostas em ChatGPT, Gemini e Perplexity.'
     ],
     keyBenefits: [
       { title: 'Análise de Intenção de Busca', desc: 'Mapeamos exatamente quais termos seus potenciais clientes pesquisam em Curitiba antes de fechar negócio.' },
       { title: 'SEO On-Page e Semântica Avançada', desc: 'Otimização de títulos, metatags, cabeçalhos e vocabulário controlado para o algoritmo entender seu nicho.' },
-      { title: 'Aceleração de Google Maps', desc: 'Apareça nas 3 primeiras posições do mapa local quando o cliente pesquisar serviços perto dele.' },
+      { title: 'Aceleração de Google Maps', desc: 'Informações precisas sobre serviços e atendimento para apoiar a presença em buscas locais.' },
       { title: 'Preparo para LLMs e IAs', desc: 'Sua empresa estruturada para ser recomendada por assistentes virtuais de inteligência artificial.' }
     ],
     faqs: [
-      { question: 'O que faz um Especialista em SEO em Curitiba?', answer: 'Um especialista analisa o código, o conteúdo e a autoridade da sua marca na web para garantir que o Google e as IAs recomendem sua empresa quando clientes buscarem pelos seus produtos e serviços.' },
+      { question: 'O que faz um Especialista em SEO em Curitiba?', answer: 'Um especialista analisa o código, o conteúdo e a autoridade da sua marca na web para facilitar a compreensão e a descoberta de seus serviços, sem garantir recomendações.' },
       { question: 'Qual a diferença entre gestor de tráfego e especialista em SEO?', answer: 'O gestor de tráfego compra anúncios pagos (Google Ads e Meta Ads) que param de gerar cliques quando a verba acaba. O especialista em SEO constrói um posicionamento orgânico duradouro e sustentável.' },
       { question: 'Quanto custa a consultoria de um especialista em SEO em Curitiba?', answer: 'O investimento varia conforme o porte do site, a complexidade do segmento e a abrangência geográfica do projeto. Entre em contato para um diagnóstico personalizado.' }
     ]
