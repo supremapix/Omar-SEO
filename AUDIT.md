@@ -66,3 +66,10 @@ A opção cleanUrls da Vercel priorizava public/seo-geo-aio.html (legado) sobre 
 - Relatórios locais ficam em ../qa/v2. A inspeção automatizada e amostral não equivale a certificação de acessibilidade nem comprova Core Web Vitals de campo.
 
 O novo padrão visual cobre todo o inventário. A pendência editorial mencionada no primeiro lote refere-se à checagem independente de alegações históricas e peculiaridades locais, não a páginas ainda com o tema antigo. Não há dados privados de Search Console/Analytics disponíveis para comprovar posicionamento ou citações por IA.
+
+## Desenhos animados explicativos
+A primeira versão do ServiceFlow tinha etapas selecionáveis e uma linha de progresso. Ela foi substituída por ilustrações SVG com animações CSS e sequência JavaScript: rastreamento/HTML/indexação, pesquisa/intenção, conteúdo/fontes/leitura, perfil/site/contato local, fontes/contexto/seleção independente por IA, medição/revisão e navegação/contato. Sem vídeo, canvas pesado ou biblioteca adicional.
+
+ExplainerAnimation está na home (#como-funciona), no ServiceFlow compartilhado por 10 templates, no guia SEO/GEO/AIO e no template de artigos. O assunto inicial acompanha o contexto e sete assuntos podem ser explorados. Movimento só roda quando o desenho está visível; pausa, seleção manual, prefers-reduced-motion e transcrição estática estão implementados. Não há métricas ou resultados fictícios.
+
+Teste específico: `node scripts/verify-animation.mjs`, com AUDIT_URL opcional. Verifica avanço automático, pausa real, sete desenhos, quatro etapas, três larguras, reduced motion em quatro páginas e conteúdo sem JS. Relatórios em ../qa/animation.

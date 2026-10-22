@@ -1,3 +1,4 @@
+import { ExplainerAnimation } from '../components/ExplainerAnimation';
 import React from "react";
 import { Link } from "react-router-dom";
 import { EnhancedSEO } from "../components/EnhancedSEO";
@@ -163,6 +164,7 @@ export default function SeoGeoAio() {
             Comece pelo diagnóstico →
           </Link>
         </div>
+        <ExplainerAnimation initialTopic="ai" />
         <h2>Fontes e leitura complementar</h2>
         <ul className="guide-list">
           <li>

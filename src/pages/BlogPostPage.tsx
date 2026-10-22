@@ -1,3 +1,4 @@
+import { ExplainerAnimation } from '../components/ExplainerAnimation';
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 import ReactMarkdown from 'react-markdown';
@@ -325,6 +326,7 @@ export default function BlogPostPage({ slug: propSlug, content }: BlogPostPagePr
         </a>
       </div>
 
+      <ExplainerAnimation initialTopic={/inteligencia|artificial|(^|-)ia(-|$)|geo|aio|chatgpt/.test(post.slug) ? 'ai' : /local|maps/.test(post.slug) ? 'local' : /tecnico|index|nao-aparece/.test(post.slug) ? 'technical' : 'research'} />
       {/* Leia também (Related Posts) */}
       {relatedPosts.length > 0 && (
         <section className="space-y-6 pt-6 border-t border-slate-800">

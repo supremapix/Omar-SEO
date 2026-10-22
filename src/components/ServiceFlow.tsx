@@ -1,3 +1,4 @@
+import { ExplainerAnimation, type DiagramTopic } from './ExplainerAnimation';
 import React, { useState } from "react";
 import { useLocation } from "react-router-dom";
 const journeys = {
@@ -133,20 +134,7 @@ export function ServiceFlow() {
         Selecione uma etapa para acompanhar o caminho. As explicações permanecem
         disponíveis abaixo.
       </p>
-      <div className="flow-drawing" aria-hidden="true">
-        <div className="flow-track">
-          <span style={{ width: `${(active / 3) * 100}%` }} />
-        </div>
-        {flow.symbols.map((label, i) => (
-          <div
-            key={label}
-            className={i === active ? "flow-node current" : "flow-node"}
-          >
-            <span>0{i + 1}</span>
-            <strong>{label}</strong>
-          </div>
-        ))}
-      </div>
+      <ExplainerAnimation initialTopic={(/geo|aio|chatgpt|gemini/.test(pathname) ? 'ai' : key === 'strategy' ? 'research' : key) as DiagramTopic} />
       <ol className="flow-steps">
         {flow.steps.map(([title, description], i) => (
           <li key={title} className={i === active ? "selected" : ""}>

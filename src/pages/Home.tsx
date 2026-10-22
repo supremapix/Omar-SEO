@@ -1,3 +1,4 @@
+import { ExplainerAnimation } from '../components/ExplainerAnimation';
 import React from "react";
 import { Link } from "react-router-dom";
 import { EnhancedSEO } from "../components/EnhancedSEO";
@@ -135,6 +136,7 @@ export default function Home() {
           ))}
         </div>
       </section>
+      <section className="wrap editorial-section" id="como-funciona"><ExplainerAnimation /></section>
       <section className="method-band">
         <div className="wrap method-grid">
           <div>
