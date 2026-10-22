@@ -46,3 +46,6 @@ Os cases existentes são registros publicados pelo site; capturas não comprovam
 - Revisão individual das páginas locais preexistentes (não foram multiplicadas), demais conteúdos legados e validação independente dos relatos de cases.
 - Parte das imagens de cases é reconstrução SVG. Avisos foram adicionados ao acervo e aos cases; não se afirma comprovação de resultado atual.
 - Sem acesso a dados privados Search Console/Analytics, não se comprova indexação, posição, geração de receita ou citações por LLMs.
+
+## Ajuste identificado em produção
+A opção cleanUrls da Vercel priorizava public/seo-geo-aio.html (legado) sobre seo-geo-aio/index.html. Removido o HTML legado e mantido redirect explícito da URL .html. Acrescentada verificação de colisão ao teste para evitar recorrência.

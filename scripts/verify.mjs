@@ -22,6 +22,7 @@ const aliases = new Set([
   "/portfolio/seo-aio-persianas-lagoa-da-conceicao-florianopolis",
 ]);
 for (const file of files) {
+  if (path.dirname(file) !== root && fs.existsSync(path.dirname(file) + ".html")) errors.push("cleanUrls collision: " + file);
   const html = fs.readFileSync(file, "utf8");
   const route =
     "/" + path.relative(root, path.dirname(file)).split(path.sep).join("/");
