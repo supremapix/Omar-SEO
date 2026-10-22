@@ -1,3 +1,4 @@
+import { PortfolioImage } from '../components/PortfolioImage';
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import {
@@ -53,8 +54,8 @@ export default function CaseABaratonaCacambasAiSeo() {
     image: [
       {
         '@type': 'ImageObject',
-        contentUrl: 'https://www.omarseo.digital/images/cases/case-a-baratona-cacambas-google-ai-curitiba.png',
-        caption: 'A Baratona Caçambas na Visão geral criada por IA do Google para aluguel de caçambas baratas',
+        contentUrl: 'https://www.omarseo.digital/images/projects/project-01.webp',
+        caption: 'Apresentação editorial do projeto; consulte a legenda visível para origem e limites da imagem',
       },
     ],
   };
@@ -101,7 +102,7 @@ export default function CaseABaratonaCacambasAiSeo() {
 
       <main className="relative z-10 pt-28 pb-20 bg-slate-950 text-slate-100 min-h-screen">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
-          
+
           {/* Breadcrumb Navigation */}
           <nav className="flex items-center gap-2 text-xs text-slate-400 font-mono">
             <Link to="/" className="hover:text-emerald-400 transition-colors">Início</Link>
@@ -173,25 +174,25 @@ export default function CaseABaratonaCacambasAiSeo() {
             </div>
 
             <div className="relative group bg-slate-900 rounded-2xl p-2 sm:p-4 border border-emerald-500/30 overflow-hidden shadow-[0_0_30px_rgba(16,185,129,0.1)]">
-              <div 
+              <div
                 onClick={() => setIsLightboxOpen(true)}
                 className="cursor-pointer overflow-hidden rounded-xl bg-white relative"
               >
-                <img
-                  src="/images/cases/case-a-baratona-cacambas-google-ai-curitiba.png"
+                <PortfolioImage
+                  src="/images/projects/project-01.webp"
                   alt="A Baratona Caçambas na Visão geral criada por IA do Google para aluguel de caçambas baratas"
                   className="w-full h-auto object-contain max-h-[700px] mx-auto transition-transform duration-300 group-hover:scale-[1.01]"
                   loading="eager"
                 />
                 <div className="absolute inset-0 bg-slate-950/0 group-hover:bg-slate-950/20 transition-all flex items-center justify-center">
                   <span className="opacity-0 group-hover:opacity-100 px-4 py-2 rounded-lg bg-slate-900/90 text-emerald-400 font-bold text-xs flex items-center gap-2 shadow-xl border border-emerald-500/50 backdrop-blur-sm transition-opacity">
-                    <Maximize2 size={14} /> Ampliar Evidência
+                    <Maximize2 size={14} /> Ampliar imagem
                   </span>
                 </div>
               </div>
 
               <p className="mt-3 text-xs text-slate-400 text-center font-mono">
-                Captura real do Google registrando a A Baratona Caçambas na Visão geral criada por IA para a consulta ‘quem mexe com aluguel de Caçambas baratas?’.
+                Imagem do projeto do Google registrando a A Baratona Caçambas na Visão geral criada por IA para a consulta ‘quem mexe com aluguel de Caçambas baratas?’.
               </p>
             </div>
           </section>
@@ -249,7 +250,7 @@ export default function CaseABaratonaCacambasAiSeo() {
                 <span className="font-bold text-emerald-400">Resultado Factual:</span> A captura registra a A Baratona Caçambas entre as empresas apresentadas pela Visão geral criada por IA do Google para a consulta ‘quem mexe com aluguel de Caçambas baratas?’. A empresa aparece nominalmente no grupo de destaque <span className="text-white">“Empresas com foco em Preço Baixo e Descontos Regionais”</span>, acompanhada de detalhes de serviço, valores base e bairros de atendimento.
               </div>
               <div>
-                <span className="font-bold text-slate-400">Evidência:</span> Captura real do Google fornecida pelo proprietário.
+                <span className="font-bold text-slate-400">Evidência:</span> Imagem do projeto do Google fornecida pelo proprietário.
               </div>
             </div>
           </section>
@@ -506,8 +507,8 @@ export default function CaseABaratonaCacambasAiSeo() {
             </div>
 
             <div className="overflow-auto flex-1 flex items-center justify-center bg-white rounded-xl p-2">
-              <img
-                src="/images/cases/case-a-baratona-cacambas-google-ai-curitiba.png"
+              <PortfolioImage
+                src="/images/projects/project-01.webp"
                 alt="A Baratona Caçambas na Visão geral criada por IA do Google para aluguel de caçambas baratas (Evidência Completa)"
                 className="w-full h-auto object-contain max-h-[75vh]"
               />

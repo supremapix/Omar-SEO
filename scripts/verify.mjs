@@ -98,7 +98,7 @@ for (const width of [320, 390, 1440]) {
     await page.locator(".mobile-menu summary").click();
     await page
       .getByRole("navigation", { name: "Navegação móvel" })
-      .getByRole("link", { name: "Guias", exact: true })
+      .getByRole("link", { name: "Guias e dúvidas", exact: true })
       .click();
     await page.waitForURL("**/blog");
   }

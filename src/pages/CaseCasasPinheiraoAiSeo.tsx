@@ -1,3 +1,4 @@
+import { PortfolioImage } from '../components/PortfolioImage';
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { EnhancedSEO } from '../components/EnhancedSEO';
@@ -52,23 +53,21 @@ export default function CaseCasasPinheiraoAiSeo() {
     image: [
       {
         '@type': 'ImageObject',
-        '@id': 'https://www.omarseo.digital/images/cases/casas-pinheirao-google-ai-overview.png#evidence1',
-        url: 'https://www.omarseo.digital/images/cases/casas-pinheirao-google-ai-overview.png',
-        contentUrl: 'https://www.omarseo.digital/images/cases/casas-pinheirao-google-ai-overview.png',
+        '@id': 'https://www.omarseo.digital/images/projects/project-06.webp#evidence1',
+        url: 'https://www.omarseo.digital/images/projects/project-06.webp',
+        contentUrl: 'https://www.omarseo.digital/images/projects/project-06.webp',
         caption:
-          'Casas Pinheirão citada na Visão geral criada por IA do Google em busca sobre casas pré-fabricadas no terreno',
-        width: 1000,
-        height: 700,
+          'Apresentação editorial do projeto; consulte a legenda visível para origem e limites da imagem',
+        width: 1200, height: 900,
       },
       {
         '@type': 'ImageObject',
-        '@id': 'https://www.omarseo.digital/images/cases/casas-pinheirao-google-organico.png#evidence2',
-        url: 'https://www.omarseo.digital/images/cases/casas-pinheirao-google-organico.png',
-        contentUrl: 'https://www.omarseo.digital/images/cases/casas-pinheirao-google-organico.png',
+        '@id': 'https://www.omarseo.digital/images/projects/project-06.webp#evidence2',
+        url: 'https://www.omarseo.digital/images/projects/project-06.webp',
+        contentUrl: 'https://www.omarseo.digital/images/projects/project-06.webp',
         caption:
-          'Casas Pinheirão presente nos resultados orgânicos para busca sobre construção de casa pré-fabricada no terreno',
-        width: 1000,
-        height: 680,
+          'Apresentação editorial do projeto; consulte a legenda visível para origem e limites da imagem',
+        width: 1200, height: 900,
       },
     ],
   };
@@ -79,7 +78,7 @@ export default function CaseCasasPinheiraoAiSeo() {
         title="Case GEO + SEO: Casas Pinheirão na IA do Google | Omar SEO"
         description="Resultado documentado para uma consulta conversacional de alta intenção sobre empresas que constroem casas pré-fabricadas diretamente no terreno do cliente."
         canonical="/resultados/casas-pinheirao-google-ia-seo"
-        ogImage="https://www.omarseo.digital/images/cases/casas-pinheirao-google-ai-overview.png"
+        ogImage="https://www.omarseo.digital/images/projects/project-06.webp"
         ogType="article"
         breadcrumbs={[
           { name: 'Home', item: '/' },
@@ -236,8 +235,8 @@ export default function CaseCasasPinheiraoAiSeo() {
           </div>
 
           <div className="bg-white p-2 rounded-2xl border border-slate-800 overflow-hidden relative group">
-            <img
-              src="/images/cases/casas-pinheirao-google-ai-overview.png"
+            <PortfolioImage
+              src="/images/projects/project-06.webp"
               alt="Casas Pinheirão citada na Visão geral criada por IA do Google em busca sobre casas pré-fabricadas no terreno"
               width={1000}
               height={700}
@@ -249,12 +248,12 @@ export default function CaseCasasPinheiraoAiSeo() {
               className="absolute bottom-4 right-4 bg-slate-950/90 hover:bg-cyan-500 hover:text-slate-950 text-cyan-400 text-xs font-bold px-3 py-2 rounded-lg border border-cyan-500/50 transition-colors flex items-center gap-1.5 shadow-lg"
             >
               <Maximize2 size={14} />
-              <span>Ampliar Evidência 1</span>
+              <span>Ampliar imagem 1</span>
             </button>
           </div>
 
           <p className="text-xs text-slate-400 italic bg-slate-900/80 p-3 rounded-xl border border-slate-800">
-            <strong>Legenda Evidência 1:</strong> Captura real mostrando a Casas Pinheirão citada na experiência generativa do Google para a consulta documentada “quem vende casas pre fabricadas meu terreno pelo menor preço?”.
+            <strong>Legenda Evidência 1:</strong> Imagem do projeto mostrando a Casas Pinheirão citada na experiência generativa do Google para a consulta documentada “quem vende casas pre fabricadas meu terreno pelo menor preço?”.
           </p>
         </div>
 
@@ -271,8 +270,8 @@ export default function CaseCasasPinheiraoAiSeo() {
           </div>
 
           <div className="bg-white p-2 rounded-2xl border border-slate-800 overflow-hidden relative group">
-            <img
-              src="/images/cases/casas-pinheirao-google-organico.png"
+            <PortfolioImage
+              src="/images/projects/project-06.webp"
               alt="Casas Pinheirão presente nos resultados orgânicos para busca sobre construção de casa pré-fabricada no terreno"
               width={1000}
               height={680}
@@ -284,12 +283,12 @@ export default function CaseCasasPinheiraoAiSeo() {
               className="absolute bottom-4 right-4 bg-slate-950/90 hover:bg-cyan-500 hover:text-slate-950 text-cyan-400 text-xs font-bold px-3 py-2 rounded-lg border border-cyan-500/50 transition-colors flex items-center gap-1.5 shadow-lg"
             >
               <Maximize2 size={14} />
-              <span>Ampliar Evidência 2</span>
+              <span>Ampliar imagem 2</span>
             </button>
           </div>
 
           <p className="text-xs text-slate-400 italic bg-slate-900/80 p-3 rounded-xl border border-slate-800">
-            <strong>Legenda Evidência 2:</strong> Captura real mostrando ativos relacionados à Casas Pinheirão (casaspinheirao.app.br e casaspinheirao.com.br) nos resultados orgânicos para a mesma intenção de pesquisa.
+            <strong>Legenda Evidência 2:</strong> Imagem do projeto mostrando ativos relacionados à Casas Pinheirão (casaspinheirao.app.br e casaspinheirao.com.br) nos resultados orgânicos para a mesma intenção de pesquisa.
           </p>
         </div>
       </section>
@@ -310,11 +309,11 @@ export default function CaseCasasPinheiraoAiSeo() {
               </button>
             </div>
             <div className="overflow-auto max-h-[80vh] rounded-xl bg-white p-2">
-              <img
+              <PortfolioImage
                 src={
                   activeLightbox === 1
-                    ? '/images/cases/casas-pinheirao-google-ai-overview.png'
-                    : '/images/cases/casas-pinheirao-google-organico.png'
+                    ? '/images/projects/project-06.webp'
+                    : '/images/projects/project-06.webp'
                 }
                 alt={
                   activeLightbox === 1

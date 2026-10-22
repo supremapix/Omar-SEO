@@ -1,3 +1,4 @@
+import { PortfolioImage } from '../components/PortfolioImage';
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { EnhancedSEO } from '../components/EnhancedSEO';
@@ -44,13 +45,12 @@ export default function CaseAlevinosCuritibaSeo() {
     },
     image: {
       '@type': 'ImageObject',
-      '@id': 'https://www.omarseo.digital/images/cases/case-alevinos-curitiba-google.png#primaryimage',
-      url: 'https://www.omarseo.digital/images/cases/case-alevinos-curitiba-google.png',
-      contentUrl: 'https://www.omarseo.digital/images/cases/case-alevinos-curitiba-google.png',
+      '@id': 'https://www.omarseo.digital/images/projects/project-03.webp#primaryimage',
+      url: 'https://www.omarseo.digital/images/projects/project-03.webp',
+      contentUrl: 'https://www.omarseo.digital/images/projects/project-03.webp',
       caption:
-        'Alevinos Curitiba no Google Maps e nos resultados orgânicos para a consulta alevinos',
-      width: 1000,
-      height: 800,
+        'Apresentação editorial do projeto; consulte a legenda visível para origem e limites da imagem',
+      width: 1200, height: 900,
     },
   };
 
@@ -60,7 +60,7 @@ export default function CaseAlevinosCuritibaSeo() {
         title="Case SEO: Alevinos Curitiba no Google (Local e Orgânico) | Omar SEO"
         description="Evidência real de presença simultânea no bloco local (Google Maps) e nos resultados orgânicos para uma pesquisa de alta amplitude no segmento de piscicultura em Curitiba e Paraná."
         canonical="/resultados/seo-local-e-organico-alevinos-curitiba"
-        ogImage="https://www.omarseo.digital/images/cases/case-alevinos-curitiba-google.png"
+        ogImage="https://www.omarseo.digital/images/projects/project-03.webp"
         ogType="article"
         breadcrumbs={[
           { name: 'Home', item: '/' },
@@ -253,7 +253,7 @@ export default function CaseAlevinosCuritibaSeo() {
             <span>Evidência registrada via captura real de pesquisa no Google.</span>
           </span>
           <span className="text-[10px] font-mono text-slate-500 uppercase shrink-0">
-            Origem: Captura Real Google
+            Origem: Imagem do projeto Google
           </span>
         </div>
       </div>
@@ -270,8 +270,8 @@ export default function CaseAlevinosCuritibaSeo() {
 
         <div className="p-3 bg-slate-950 rounded-3xl border border-emerald-500/40 shadow-[0_0_30px_rgba(16,185,129,0.12)] space-y-3">
           <div className="relative group bg-white p-2 sm:p-4 rounded-2xl overflow-hidden cursor-pointer" onClick={() => setIsLightboxOpen(true)}>
-            <img
-              src="/images/cases/case-alevinos-curitiba-google.png"
+            <PortfolioImage
+              src="/images/projects/project-03.webp"
               alt="Alevinos Curitiba no Google Maps e nos resultados orgânicos para a consulta alevinos"
               width={1000}
               height={800}
@@ -286,7 +286,7 @@ export default function CaseAlevinosCuritibaSeo() {
           </div>
 
           <p className="text-xs text-slate-400 italic px-2 text-center sm:text-left leading-relaxed">
-            Captura real do Google mostrando a Alevinos Curitiba presente no bloco local (Google Maps) e no resultado orgânico para a pesquisa “alevinos”. Resultados de busca podem variar conforme localização, contexto e atualizações dos algoritmos do Google.
+            Imagem do projeto do Google mostrando a Alevinos Curitiba presente no bloco local (Google Maps) e no resultado orgânico para a pesquisa “alevinos”. Resultados de busca podem variar conforme localização, contexto e atualizações dos algoritmos do Google.
           </p>
         </div>
       </div>
@@ -300,7 +300,7 @@ export default function CaseAlevinosCuritibaSeo() {
           <div className="relative max-w-5xl w-full bg-slate-900 rounded-2xl border border-emerald-500/50 p-2 sm:p-4 space-y-3 shadow-2xl" onClick={(e) => e.stopPropagation()}>
             <div className="flex items-center justify-between pb-2 border-b border-slate-800 px-2">
               <span className="text-xs font-bold text-emerald-400 font-mono">
-                Captura Real — Alevinos Curitiba no Google (Local + Orgânico)
+                Imagem do projeto — Alevinos Curitiba no Google (Local + Orgânico)
               </span>
               <button
                 onClick={() => setIsLightboxOpen(false)}
@@ -310,8 +310,8 @@ export default function CaseAlevinosCuritibaSeo() {
                 <X size={18} />
               </button>
             </div>
-            <img
-              src="/images/cases/case-alevinos-curitiba-google.png"
+            <PortfolioImage
+              src="/images/projects/project-03.webp"
               alt="Alevinos Curitiba no Google Maps e nos resultados orgânicos para a consulta alevinos"
               className="w-full h-auto max-h-[85vh] object-contain rounded-lg"
             />

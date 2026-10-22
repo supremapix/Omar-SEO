@@ -1,3 +1,4 @@
+import { PortfolioImage } from '../components/PortfolioImage';
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import {
@@ -54,8 +55,8 @@ export default function CaseLavanderiaInovataSeoOsasco() {
     image: [
       {
         '@type': 'ImageObject',
-        contentUrl: 'https://www.omarseo.digital/images/cases/case-lavanderia-inovata-google-osasco.png',
-        caption: 'Lavanderia Inovata citada na IA do Google, no primeiro resultado orgânico e no Painel Local para lavanderia profissional em Osasco',
+        contentUrl: 'https://www.omarseo.digital/images/projects/project-13.webp',
+        caption: 'Apresentação editorial do projeto; consulte a legenda visível para origem e limites da imagem',
       },
     ],
   };
@@ -102,7 +103,7 @@ export default function CaseLavanderiaInovataSeoOsasco() {
 
       <main className="relative z-10 pt-28 pb-20 bg-slate-950 text-slate-100 min-h-screen">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
-          
+
           {/* Breadcrumb Navigation */}
           <nav className="flex items-center gap-2 text-xs text-slate-400 font-mono">
             <Link to="/" className="hover:text-emerald-400 transition-colors">Início</Link>
@@ -227,26 +228,26 @@ export default function CaseLavanderiaInovataSeoOsasco() {
                 onClick={() => setIsLightboxOpen(true)}
                 className="relative rounded-2xl overflow-hidden bg-white cursor-pointer group border border-slate-800"
               >
-                <picture>
-                  <source srcSet="/images/cases/case-lavanderia-inovata-google-osasco.svg" type="image/svg+xml" />
-                  <img
-                    src="/images/cases/case-lavanderia-inovata-google-osasco.png"
+                <>
+
+                  <PortfolioImage
+                    src="/images/projects/project-13.webp"
                     alt="Lavanderia Inovata citada na IA do Google, no primeiro resultado orgânico e no mapa para lavanderia profissional em Osasco"
                     width={1060}
                     height={840}
                     loading="eager"
                     className="w-full h-auto object-contain transition-transform duration-300 group-hover:scale-[1.01]"
                   />
-                </picture>
+                </>
 
                 <div className="absolute inset-0 bg-slate-950/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center gap-2 text-white font-bold text-sm">
                   <Maximize2 size={20} />
-                  <span>Ampliar Evidência em Alta Resolução</span>
+                  <span>Ampliar imagem em Alta Resolução</span>
                 </div>
               </div>
 
               <p className="text-xs text-center text-slate-400 font-mono">
-                Captura real da pesquisa ‘lavanderia profissional osasco’, registrando a Lavanderia Inovata na Visão Geral criada por IA (AI Overview), no primeiro resultado orgânico visível e no Painel Local com nota 5,0.
+                Imagem do projeto da pesquisa ‘lavanderia profissional osasco’, registrando a Lavanderia Inovata na Visão Geral criada por IA (AI Overview), no primeiro resultado orgânico visível e no Painel Local com nota 5,0.
               </p>
             </div>
           </section>
@@ -424,18 +425,18 @@ export default function CaseLavanderiaInovataSeoOsasco() {
             </button>
 
             <div className="overflow-auto max-h-[80vh] rounded-2xl border border-slate-800 bg-white p-2">
-              <picture>
-                <source srcSet="/images/cases/case-lavanderia-inovata-google-osasco.svg" type="image/svg+xml" />
-                <img
-                  src="/images/cases/case-lavanderia-inovata-google-osasco.png"
+              <>
+
+                <PortfolioImage
+                  src="/images/projects/project-13.webp"
                   alt="Lavanderia Inovata citada na IA do Google, no primeiro resultado orgânico e no mapa para lavanderia profissional em Osasco"
                   className="w-full h-auto object-contain rounded-xl"
                 />
-              </picture>
+              </>
             </div>
 
             <p className="text-xs font-mono text-slate-300 text-center">
-              Captura real da pesquisa ‘lavanderia profissional osasco’, registrando a Lavanderia Inovata na Visão Geral criada por IA (AI Overview), no primeiro resultado orgânico visível e no Painel Local do Google.
+              Imagem do projeto da pesquisa ‘lavanderia profissional osasco’, registrando a Lavanderia Inovata na Visão Geral criada por IA (AI Overview), no primeiro resultado orgânico visível e no Painel Local do Google.
             </p>
           </div>
         </div>

@@ -1,3 +1,4 @@
+import { PortfolioImage } from '../components/PortfolioImage';
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { EnhancedSEO } from '../components/EnhancedSEO';
@@ -48,33 +49,30 @@ export default function CaseKyDrywallAiOverview() {
     image: [
       {
         '@type': 'ImageObject',
-        '@id': 'https://www.omarseo.digital/images/cases/case-ky-drywall-estruturas-steel-frame-curitiba-google-ai.png#primaryimage',
-        url: 'https://www.omarseo.digital/images/cases/case-ky-drywall-estruturas-steel-frame-curitiba-google-ai.png',
-        contentUrl: 'https://www.omarseo.digital/images/cases/case-ky-drywall-estruturas-steel-frame-curitiba-google-ai.png',
+        '@id': 'https://www.omarseo.digital/images/projects/project-12.webp#primaryimage',
+        url: 'https://www.omarseo.digital/images/projects/project-12.webp',
+        contentUrl: 'https://www.omarseo.digital/images/projects/project-12.webp',
         caption:
-          'KY Drywall citada em primeiro destaque na Visão geral criada por IA do Google para Estruturas em Steel Frame curitiba',
-        width: 1200,
-        height: 780,
+          'Apresentação editorial do projeto; consulte a legenda visível para origem e limites da imagem',
+        width: 1200, height: 900,
       },
       {
         '@type': 'ImageObject',
-        '@id': 'https://www.omarseo.digital/images/cases/case-ky-drywall-estruturas-steel-frame-curitiba-organico.png#evidence2',
-        url: 'https://www.omarseo.digital/images/cases/case-ky-drywall-estruturas-steel-frame-curitiba-organico.png',
-        contentUrl: 'https://www.omarseo.digital/images/cases/case-ky-drywall-estruturas-steel-frame-curitiba-organico.png',
+        '@id': 'https://www.omarseo.digital/images/projects/project-12.webp#evidence2',
+        url: 'https://www.omarseo.digital/images/projects/project-12.webp',
+        contentUrl: 'https://www.omarseo.digital/images/projects/project-12.webp',
         caption:
-          'KY Drywall no resultado orgânico e Visão Geral de IA do Google para Estruturas em Steel Frame Em curitiba',
-        width: 1200,
-        height: 680,
+          'Apresentação editorial do projeto; consulte a legenda visível para origem e limites da imagem',
+        width: 1200, height: 900,
       },
       {
         '@type': 'ImageObject',
-        '@id': 'https://www.omarseo.digital/images/cases/case-ky-drywall-google-ai-curitiba.png#evidence3',
-        url: 'https://www.omarseo.digital/images/cases/case-ky-drywall-google-ai-curitiba.png',
-        contentUrl: 'https://www.omarseo.digital/images/cases/case-ky-drywall-google-ai-curitiba.png',
+        '@id': 'https://www.omarseo.digital/images/projects/project-12.webp#evidence3',
+        url: 'https://www.omarseo.digital/images/projects/project-12.webp',
+        contentUrl: 'https://www.omarseo.digital/images/projects/project-12.webp',
         caption:
-          'KY Drywall citada na Visão geral criada por IA do Google para qual empresa drywall em Curitiba',
-        width: 1180,
-        height: 680,
+          'Apresentação editorial do projeto; consulte a legenda visível para origem e limites da imagem',
+        width: 1200, height: 900,
       },
     ],
   };
@@ -85,7 +83,7 @@ export default function CaseKyDrywallAiOverview() {
         title="Case GEO & AIO: KY Drywall e Steel Frame na IA do Google em Curitiba | Omar SEO"
         description="Evidências reais da KY Drywall & Steel Frame citada na Visão Geral criada por IA do Google e resultado orgânico para 'Estruturas em Steel Frame curitiba'."
         canonical="/resultados/ky-drywall-google-ia-curitiba"
-        ogImage="https://www.omarseo.digital/images/cases/case-ky-drywall-estruturas-steel-frame-curitiba-google-ai.png"
+        ogImage="https://www.omarseo.digital/images/projects/project-12.webp"
         ogType="article"
         breadcrumbs={[
           { name: 'Home', item: '/' },
@@ -322,22 +320,19 @@ export default function CaseKyDrywallAiOverview() {
           <div
             className="relative group bg-white p-2 rounded-2xl overflow-hidden cursor-pointer"
             onClick={() =>
-              setActiveLightboxImage('/images/cases/case-ky-drywall-estruturas-steel-frame-curitiba-google-ai.png')
+              setActiveLightboxImage('/images/projects/project-12.webp')
             }
           >
-            <picture>
-              <source
-                srcSet="/images/cases/case-ky-drywall-estruturas-steel-frame-curitiba-google-ai.webp"
-                type="image/webp"
-              />
-              <img
-                src="/images/cases/case-ky-drywall-estruturas-steel-frame-curitiba-google-ai.png"
+            <>
+
+              <PortfolioImage
+                src="/images/projects/project-12.webp"
                 alt="KY Drywall citada em primeiro destaque na Visão geral criada por IA do Google para Estruturas em Steel Frame curitiba"
                 width={1200}
                 height={780}
                 className="w-full h-auto object-contain rounded-xl transition-transform duration-300 group-hover:scale-[1.01]"
               />
-            </picture>
+            </>
             <div className="absolute inset-0 bg-slate-950/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center pointer-events-none">
               <span className="px-4 py-2 rounded-full bg-slate-900/90 text-cyan-400 text-xs font-bold flex items-center gap-2 border border-cyan-500/50 shadow-xl">
                 <Maximize2 size={14} />
@@ -376,22 +371,19 @@ export default function CaseKyDrywallAiOverview() {
           <div
             className="relative group bg-white p-2 rounded-2xl overflow-hidden cursor-pointer"
             onClick={() =>
-              setActiveLightboxImage('/images/cases/case-ky-drywall-estruturas-steel-frame-curitiba-organico.png')
+              setActiveLightboxImage('/images/projects/project-12.webp')
             }
           >
-            <picture>
-              <source
-                srcSet="/images/cases/case-ky-drywall-estruturas-steel-frame-curitiba-organico.webp"
-                type="image/webp"
-              />
-              <img
-                src="/images/cases/case-ky-drywall-estruturas-steel-frame-curitiba-organico.png"
+            <>
+
+              <PortfolioImage
+                src="/images/projects/project-12.webp"
                 alt="KY Drywall no resultado orgânico e Visão Geral de IA do Google para Estruturas em Steel Frame Em curitiba"
                 width={1200}
                 height={680}
                 className="w-full h-auto object-contain rounded-xl transition-transform duration-300 group-hover:scale-[1.01]"
               />
-            </picture>
+            </>
             <div className="absolute inset-0 bg-slate-950/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center pointer-events-none">
               <span className="px-4 py-2 rounded-full bg-slate-900/90 text-emerald-400 text-xs font-bold flex items-center gap-2 border border-emerald-500/50 shadow-xl">
                 <Maximize2 size={14} />
@@ -426,11 +418,11 @@ export default function CaseKyDrywallAiOverview() {
           <div
             className="relative group bg-white p-2 rounded-2xl overflow-hidden cursor-pointer"
             onClick={() =>
-              setActiveLightboxImage('/images/cases/case-ky-drywall-google-ai-curitiba.png')
+              setActiveLightboxImage('/images/projects/project-12.webp')
             }
           >
-            <img
-              src="/images/cases/case-ky-drywall-google-ai-curitiba.png"
+            <PortfolioImage
+              src="/images/projects/project-12.webp"
               alt="KY Drywall citada na Visão geral criada por IA do Google para qual empresa drywall em Curitiba"
               width={1180}
               height={680}
@@ -462,7 +454,7 @@ export default function CaseKyDrywallAiOverview() {
           >
             <div className="flex items-center justify-between pb-2 border-b border-slate-800 px-2">
               <span className="text-xs font-bold text-cyan-400 font-mono">
-                Captura Real em Alta Resolução — KY Drywall &amp; Steel Frame no Google
+                Imagem do projeto em Alta Resolução — KY Drywall &amp; Steel Frame no Google
               </span>
               <button
                 onClick={() => setActiveLightboxImage(null)}
@@ -472,7 +464,7 @@ export default function CaseKyDrywallAiOverview() {
                 <X size={18} />
               </button>
             </div>
-            <img
+            <PortfolioImage
               src={activeLightboxImage}
               alt="Comprovação real da KY Drywall no Google"
               className="w-full h-auto max-h-[85vh] object-contain rounded-lg bg-white"

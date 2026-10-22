@@ -1,13 +1,14 @@
+import { PortfolioImage } from '../components/PortfolioImage';
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { 
-  CheckCircle2, 
-  Sparkles, 
-  Search, 
-  MapPin, 
-  ArrowRight, 
-  Maximize2, 
-  X, 
+import {
+  CheckCircle2,
+  Sparkles,
+  Search,
+  MapPin,
+  ArrowRight,
+  Maximize2,
+  X,
   ExternalLink,
   ShieldCheck,
   Cpu,
@@ -48,12 +49,11 @@ export default function CasePvsDecoreAiSeo() {
     image: [
       {
         '@type': 'ImageObject',
-        '@id': 'https://www.omarseo.digital/images/cases/case-pvs-decore-google-ia-pisos-vinilicos-sao-jose-dos-pinhais.png#evidence1',
-        url: 'https://www.omarseo.digital/images/cases/case-pvs-decore-google-ia-pisos-vinilicos-sao-jose-dos-pinhais.png',
-        contentUrl: 'https://www.omarseo.digital/images/cases/case-pvs-decore-google-ia-pisos-vinilicos-sao-jose-dos-pinhais.png',
-        caption: 'Captura real da Visão Geral criada por IA do Google para uma consulta sobre instalação de pisos vinílicos em São José dos Pinhais, registrando a PVS Decore entre as empresas apresentadas.',
-        width: 1000,
-        height: 640,
+        '@id': 'https://www.omarseo.digital/images/projects/project-18.webp#evidence1',
+        url: 'https://www.omarseo.digital/images/projects/project-18.webp',
+        contentUrl: 'https://www.omarseo.digital/images/projects/project-18.webp',
+        caption: 'Apresentação editorial do projeto; consulte a legenda visível para origem e limites da imagem',
+        width: 1200, height: 900,
       },
     ],
   };
@@ -99,7 +99,7 @@ export default function CasePvsDecoreAiSeo() {
       </div>
 
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-16 space-y-12 relative z-10">
-        
+
         {/* NAVEGAÇÃO BREADCRUMB */}
         <nav className="flex items-center gap-2 text-xs text-slate-400 font-mono">
           <Link to="/" className="hover:text-cyan-400 transition-colors">Início</Link>
@@ -186,10 +186,10 @@ export default function CasePvsDecoreAiSeo() {
               </span>
             </div>
             <h2 className="text-2xl font-bold font-display text-white">
-              Captura Real do Google (Visão Geral Criada por IA)
+              Imagem do projeto do Google (Visão Geral Criada por IA)
             </h2>
             <p className="text-sm text-slate-300 leading-relaxed">
-              Captura real fornecida pelo proprietário registrando a PVS Decore entre as empresas especializadas apresentadas na Visão Geral criada por IA do Google para uma consulta conversacional local.
+              Imagem do projeto fornecida pelo proprietário registrando a PVS Decore entre as empresas especializadas apresentadas na Visão Geral criada por IA do Google para uma consulta conversacional local.
             </p>
           </div>
 
@@ -210,8 +210,8 @@ export default function CasePvsDecoreAiSeo() {
             </div>
 
             <div className="relative group overflow-hidden rounded-2xl border border-slate-800 bg-white p-2">
-              <img
-                src="/images/cases/case-pvs-decore-google-ia-pisos-vinilicos-sao-jose-dos-pinhais.png"
+              <PortfolioImage
+                src="/images/projects/project-18.webp"
                 alt="PVS Decore apresentada pela IA do Google para quem instala pisos vinílicos em São José dos Pinhais"
                 className="w-full h-auto object-contain cursor-pointer group-hover:scale-[1.01] transition-transform duration-300 rounded-xl"
                 onClick={() => setIsLightboxOpen(true)}
@@ -226,7 +226,7 @@ export default function CasePvsDecoreAiSeo() {
             </div>
 
             <p className="text-xs text-slate-300 italic text-center sm:text-left leading-relaxed">
-              Captura real da Visão Geral criada por IA do Google para uma consulta sobre instalação de pisos vinílicos em São José dos Pinhais, registrando a PVS Decore entre as empresas apresentadas.
+              Imagem do projeto da Visão Geral criada por IA do Google para uma consulta sobre instalação de pisos vinílicos em São José dos Pinhais, registrando a PVS Decore entre as empresas apresentadas.
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs pt-2">
@@ -310,7 +310,7 @@ export default function CasePvsDecoreAiSeo() {
             <p className="text-sm text-slate-300 leading-relaxed">
               Nos mecanismos de busca modernos equipados com IA, os usuários não procuram apenas por nomes de produtos. Eles formulam necessidades completas no formato de perguntas:
             </p>
-            
+
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 font-mono text-xs">
               <div className="p-3 bg-slate-900/90 rounded-xl border border-slate-800 text-cyan-300">
                 "Quem instala...?"
@@ -427,14 +427,14 @@ export default function CasePvsDecoreAiSeo() {
               <X size={18} />
               <span>Fechar</span>
             </button>
-            <img
-              src="/images/cases/case-pvs-decore-google-ia-pisos-vinilicos-sao-jose-dos-pinhais.png"
+            <PortfolioImage
+              src="/images/projects/project-18.webp"
               alt="Captura de tela real do Google AI Overview para PVS Decore"
               className="max-w-full max-h-[85vh] object-contain rounded-2xl border border-slate-800 shadow-2xl"
               onClick={(e) => e.stopPropagation()}
             />
             <p className="text-xs text-slate-300 mt-3 text-center font-mono">
-              Captura real fornecida pelo proprietário — PVS Decore na Visão Geral criada por IA do Google para "quem instala Pisos vinilicos São José dos Pinhais?"
+              Imagem do projeto fornecida pelo proprietário — PVS Decore na Visão Geral criada por IA do Google para "quem instala Pisos vinilicos São José dos Pinhais?"
             </p>
           </div>
         </div>

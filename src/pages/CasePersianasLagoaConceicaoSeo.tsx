@@ -1,3 +1,4 @@
+import { PortfolioImage } from '../components/PortfolioImage';
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import {
@@ -61,14 +62,14 @@ export default function CasePersianasLagoaConceicaoSeo() {
       {
         '@type': 'ImageObject',
         contentUrl:
-          'https://www.omarseo.digital/images/portfolio/google-ai-overview-persianas-sob-medida-lagoa-da-conceicao.png',
+          'https://www.omarseo.digital/images/projects/project-16.webp',
         caption:
-          'Google exibindo resultado e citação para persianas sob medida na Lagoa da Conceição Florianópolis na Visão Geral criada por IA',
+          'Apresentação editorial do projeto; consulte a legenda visível para origem e limites da imagem',
       },
       {
         '@type': 'ImageObject',
-        contentUrl: 'https://www.omarseo.digital/images/cases/case-rvm-persianas-lagoa-sc-google.png',
-        caption: 'Resultado orgânico no Google para persianas na lagoa sc (RVM Persianas)',
+        contentUrl: 'https://www.omarseo.digital/images/projects/project-16.webp',
+        caption: 'Apresentação editorial do projeto; consulte a legenda visível para origem e limites da imagem',
       },
     ],
   };
@@ -245,18 +246,15 @@ export default function CasePersianasLagoaConceicaoSeo() {
                 <div
                   onClick={() =>
                     setActiveModalImage(
-                      '/images/portfolio/google-ai-overview-persianas-sob-medida-lagoa-da-conceicao.png'
+                      '/images/projects/project-16.webp'
                     )
                   }
                   className="group relative rounded-2xl overflow-hidden border border-blue-500/30 bg-white shadow-xl cursor-pointer hover:border-blue-400 transition-all transform hover:-translate-y-0.5"
                 >
-                  <picture>
-                    <source
-                      srcSet="/images/portfolio/google-ai-overview-persianas-sob-medida-lagoa-da-conceicao.webp"
-                      type="image/webp"
-                    />
-                    <img
-                      src="/images/portfolio/google-ai-overview-persianas-sob-medida-lagoa-da-conceicao.png"
+                  <>
+
+                    <PortfolioImage
+                      src="/images/projects/project-16.webp"
                       alt="Google exibindo resultado relacionado a persianas sob medida em Lagoa da Conceição na Visão Geral criada por IA"
                       width={1200}
                       height={840}
@@ -264,7 +262,7 @@ export default function CasePersianasLagoaConceicaoSeo() {
                       decoding="async"
                       className="w-full h-auto object-contain block select-none"
                     />
-                  </picture>
+                  </>
 
                   <div className="absolute inset-0 bg-slate-950/0 group-hover:bg-slate-950/20 transition-all flex items-center justify-center">
                     <span className="opacity-0 group-hover:opacity-100 transition-opacity px-4 py-2 rounded-lg bg-slate-900/90 text-white text-xs font-bold flex items-center gap-2 border border-slate-700 shadow-lg">
@@ -283,11 +281,11 @@ export default function CasePersianasLagoaConceicaoSeo() {
               {/* PRINT 2: Resultado Orgânico Regional (lg:col-span-5) */}
               <figure className="lg:col-span-5 space-y-3">
                 <div
-                  onClick={() => setActiveModalImage('/images/cases/case-rvm-persianas-lagoa-sc-google.png')}
+                  onClick={() => setActiveModalImage('/images/projects/project-16.webp')}
                   className="group relative rounded-2xl overflow-hidden border border-emerald-500/30 bg-white shadow-xl cursor-pointer hover:border-emerald-400 transition-all transform hover:-translate-y-0.5"
                 >
-                  <img
-                    src="/images/cases/case-rvm-persianas-lagoa-sc-google.png"
+                  <PortfolioImage
+                    src="/images/projects/project-16.webp"
                     alt="Resultado orgânico no Google para persianas na lagoa sc (RVM Persianas)"
                     width={1000}
                     height={700}
@@ -433,7 +431,7 @@ export default function CasePersianasLagoaConceicaoSeo() {
               <X size={20} />
               <span>Fechar [ESC]</span>
             </button>
-            <img
+            <PortfolioImage
               src={activeModalImage}
               alt="Ampliação da prova visual no Google"
               className="max-h-[85vh] w-auto max-w-full object-contain rounded-xl border border-slate-700 shadow-2xl bg-white"

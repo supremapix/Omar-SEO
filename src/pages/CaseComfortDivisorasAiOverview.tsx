@@ -1,3 +1,4 @@
+import { PortfolioImage } from '../components/PortfolioImage';
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { EnhancedSEO } from '../components/EnhancedSEO';
@@ -43,13 +44,12 @@ export default function CaseComfortDivisorasAiOverview() {
     },
     image: {
       '@type': 'ImageObject',
-      '@id': 'https://www.omarseo.digital/images/cases/case-comfort-divisorias-eucatex-google-ai.png#primaryimage',
-      url: 'https://www.omarseo.digital/images/cases/case-comfort-divisorias-eucatex-google-ai.png',
-      contentUrl: 'https://www.omarseo.digital/images/cases/case-comfort-divisorias-eucatex-google-ai.png',
+      '@id': 'https://www.omarseo.digital/images/projects/project-08.webp#primaryimage',
+      url: 'https://www.omarseo.digital/images/projects/project-08.webp',
+      contentUrl: 'https://www.omarseo.digital/images/projects/project-08.webp',
       caption:
-        'Comfort Divisórias apresentada pela IA do Google para busca sobre empresa de divisórias Eucatex em Curitiba',
-      width: 1180,
-      height: 660,
+        'Apresentação editorial do projeto; consulte a legenda visível para origem e limites da imagem',
+      width: 1200, height: 900,
     },
   };
 
@@ -59,7 +59,7 @@ export default function CaseComfortDivisorasAiOverview() {
         title="Case GEO: Comfort Divisórias na IA do Google | Omar SEO"
         description="Resultado documentado mostrando a Comfort Divisórias presente tanto na experiência generativa quanto nos resultados orgânicos do Google para uma pesquisa comercial sobre divisórias Eucatex em Curitiba."
         canonical="/resultados/comfort-divisorias-google-ia-curitiba"
-        ogImage="https://www.omarseo.digital/images/cases/case-comfort-divisorias-eucatex-google-ai.png"
+        ogImage="https://www.omarseo.digital/images/projects/project-08.webp"
         ogType="article"
         breadcrumbs={[
           { name: 'Home', item: '/' },
@@ -240,15 +240,15 @@ export default function CaseComfortDivisorasAiOverview() {
         <div className="flex items-center justify-between">
           <h2 className="text-xl sm:text-2xl font-bold font-display text-white flex items-center gap-2">
             <Search size={20} className="text-cyan-400" />
-            <span>Evidência Factual: Captura Real do Google</span>
+            <span>Evidência Factual: Imagem do projeto do Google</span>
           </h2>
-          <span className="text-xs text-slate-400 font-mono hidden sm:inline">Captura Real Fornecida pelo Proprietário</span>
+          <span className="text-xs text-slate-400 font-mono hidden sm:inline">Imagem do projeto Fornecida pelo Proprietário</span>
         </div>
 
         <div className="bg-slate-950 p-3 sm:p-5 rounded-3xl border border-slate-800 space-y-3 relative group">
           <div className="overflow-hidden rounded-2xl bg-white border border-slate-700 relative">
-            <img
-              src="/images/cases/case-comfort-divisorias-eucatex-google-ai.png"
+            <PortfolioImage
+              src="/images/projects/project-08.webp"
               alt="Comfort Divisórias apresentada pela IA do Google para busca sobre empresa de divisórias Eucatex em Curitiba"
               width={1180}
               height={660}
@@ -263,12 +263,12 @@ export default function CaseComfortDivisorasAiOverview() {
               aria-label="Ampliar imagem da captura"
             >
               <Maximize2 size={14} />
-              <span className="hidden sm:inline">Ampliar Evidência</span>
+              <span className="hidden sm:inline">Ampliar imagem</span>
             </button>
           </div>
 
           <p className="text-xs text-slate-300 leading-relaxed italic bg-slate-900/60 p-3.5 rounded-xl border border-slate-800">
-            Captura real do Google mostrando a Comfort Divisórias na Visão geral criada por IA e em resultado orgânico para a consulta documentada sobre empresas de divisórias Eucatex em Curitiba. Resultados podem variar ao longo do tempo.
+            Imagem do projeto do Google mostrando a Comfort Divisórias na Visão geral criada por IA e em resultado orgânico para a consulta documentada sobre empresas de divisórias Eucatex em Curitiba. Resultados podem variar ao longo do tempo.
           </p>
         </div>
       </section>
@@ -285,8 +285,8 @@ export default function CaseComfortDivisorasAiOverview() {
               <X size={20} />
             </button>
             <div className="max-h-[85vh] overflow-auto">
-              <img
-                src="/images/cases/case-comfort-divisorias-eucatex-google-ai.png"
+              <PortfolioImage
+                src="/images/projects/project-08.webp"
                 alt="Comfort Divisórias apresentada pela IA do Google para busca sobre empresa de divisórias Eucatex em Curitiba"
                 className="w-full h-auto object-contain rounded-xl"
               />

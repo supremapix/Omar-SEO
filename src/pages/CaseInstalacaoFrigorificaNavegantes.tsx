@@ -1,3 +1,4 @@
+import { PortfolioImage } from '../components/PortfolioImage';
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import {
@@ -59,13 +60,13 @@ export default function CaseInstalacaoFrigorificaNavegantes() {
     image: [
       {
         '@type': 'ImageObject',
-        contentUrl: 'https://www.omarseo.digital/images/portfolio/google-ai-overview-instalacao-frigorifica-navegantes.png',
-        caption: 'Google exibindo resultado relacionado a instalação frigorífica em Navegantes na Visão Geral criada por IA',
+        contentUrl: 'https://www.omarseo.digital/images/projects/project-11.webp',
+        caption: 'Apresentação editorial do projeto; consulte a legenda visível para origem e limites da imagem',
       },
       {
         '@type': 'ImageObject',
-        contentUrl: 'https://www.omarseo.digital/images/portfolio/google-organico-instalacao-frigorifica-navegantes.png',
-        caption: 'Resultado orgânico no Google para instalação frigorífica em Navegantes SC',
+        contentUrl: 'https://www.omarseo.digital/images/projects/project-11.webp',
+        caption: 'Apresentação editorial do projeto; consulte a legenda visível para origem e limites da imagem',
       },
     ],
   };
@@ -112,7 +113,7 @@ export default function CaseInstalacaoFrigorificaNavegantes() {
 
       <main className="relative z-10 pt-28 pb-20 bg-slate-950 text-slate-100 min-h-screen">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
-          
+
           {/* Breadcrumb Navigation */}
           <nav className="flex items-center gap-2 text-xs text-slate-400 font-mono" aria-label="Breadcrumb">
             <Link to="/" className="hover:text-blue-400 transition-colors">Início</Link>
@@ -224,17 +225,17 @@ export default function CaseInstalacaoFrigorificaNavegantes() {
 
             {/* Grid Editorial: Print 1 (AI Overview) maior e Print 2 (Orgânico) complementar */}
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
-              
+
               {/* PRINT 1: Visão Geral Criada por IA (lg:col-span-7) */}
               <figure className="lg:col-span-7 space-y-3">
-                <div 
-                  onClick={() => setActiveModalImage('/images/portfolio/google-ai-overview-instalacao-frigorifica-navegantes.png')}
+                <div
+                  onClick={() => setActiveModalImage('/images/projects/project-11.webp')}
                   className="group relative rounded-2xl overflow-hidden border border-blue-500/30 bg-white shadow-xl cursor-pointer hover:border-blue-400 transition-all transform hover:-translate-y-0.5"
                 >
-                  <picture>
-                    <source srcSet="/images/portfolio/google-ai-overview-instalacao-frigorifica-navegantes.webp" type="image/webp" />
-                    <img
-                      src="/images/portfolio/google-ai-overview-instalacao-frigorifica-navegantes.png"
+                  <>
+
+                    <PortfolioImage
+                      src="/images/projects/project-11.webp"
                       alt="Google exibindo resultado relacionado a instalação frigorífica em Navegantes na Visão Geral criada por IA"
                       width={1200}
                       height={820}
@@ -242,7 +243,7 @@ export default function CaseInstalacaoFrigorificaNavegantes() {
                       decoding="async"
                       className="w-full h-auto object-contain block select-none"
                     />
-                  </picture>
+                  </>
 
                   <div className="absolute inset-0 bg-slate-950/0 group-hover:bg-slate-950/20 transition-all flex items-center justify-center">
                     <span className="opacity-0 group-hover:opacity-100 transition-opacity px-4 py-2 rounded-lg bg-slate-900/90 text-white text-xs font-bold flex items-center gap-2 border border-slate-700 shadow-lg">
@@ -259,14 +260,14 @@ export default function CaseInstalacaoFrigorificaNavegantes() {
 
               {/* PRINT 2: Resultado Orgânico (lg:col-span-5) */}
               <figure className="lg:col-span-5 space-y-3">
-                <div 
-                  onClick={() => setActiveModalImage('/images/portfolio/google-organico-instalacao-frigorifica-navegantes.png')}
+                <div
+                  onClick={() => setActiveModalImage('/images/projects/project-11.webp')}
                   className="group relative rounded-2xl overflow-hidden border border-emerald-500/30 bg-white shadow-xl cursor-pointer hover:border-emerald-400 transition-all transform hover:-translate-y-0.5"
                 >
-                  <picture>
-                    <source srcSet="/images/portfolio/google-organico-instalacao-frigorifica-navegantes.webp" type="image/webp" />
-                    <img
-                      src="/images/portfolio/google-organico-instalacao-frigorifica-navegantes.png"
+                  <>
+
+                    <PortfolioImage
+                      src="/images/projects/project-11.webp"
                       alt="Resultado orgânico no Google para instalação frigorífica em Navegantes SC"
                       width={1200}
                       height={480}
@@ -274,7 +275,7 @@ export default function CaseInstalacaoFrigorificaNavegantes() {
                       decoding="async"
                       className="w-full h-auto object-contain block select-none"
                     />
-                  </picture>
+                  </>
 
                   <div className="absolute inset-0 bg-slate-950/0 group-hover:bg-slate-950/20 transition-all flex items-center justify-center">
                     <span className="opacity-0 group-hover:opacity-100 transition-opacity px-4 py-2 rounded-lg bg-slate-900/90 text-white text-xs font-bold flex items-center gap-2 border border-slate-700 shadow-lg">
@@ -296,7 +297,7 @@ export default function CaseInstalacaoFrigorificaNavegantes() {
           {/* TEXTO DO CASE: DESAFIO, ESTRATÉGIA E RESULTADO                  */}
           {/* ============================================================== */}
           <section className="grid grid-cols-1 lg:grid-cols-3 gap-8 pt-6">
-            
+
             {/* O Desafio */}
             <article className="p-6 sm:p-8 rounded-2xl bg-slate-900/50 border border-slate-800 space-y-4">
               <div className="w-10 h-10 rounded-xl bg-amber-500/10 text-amber-400 flex items-center justify-center font-bold">
@@ -397,7 +398,7 @@ export default function CaseInstalacaoFrigorificaNavegantes() {
 
       {/* Lightbox / Modal */}
       {activeModalImage && (
-        <div 
+        <div
           onClick={() => setActiveModalImage(null)}
           className="fixed inset-0 z-50 bg-black/90 backdrop-blur-md flex items-center justify-center p-4 sm:p-8"
         >
@@ -410,7 +411,7 @@ export default function CaseInstalacaoFrigorificaNavegantes() {
               <X size={20} />
               <span>Fechar [ESC]</span>
             </button>
-            <img
+            <PortfolioImage
               src={activeModalImage}
               alt="Ampliação da prova visual no Google"
               className="max-h-[85vh] w-auto max-w-full object-contain rounded-xl border border-slate-700 shadow-2xl bg-white"

@@ -1,3 +1,4 @@
+import { PortfolioImage } from '../components/PortfolioImage';
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import {
@@ -53,8 +54,8 @@ export default function CaseClientesTelhadosBarreirinhaAiSeo() {
     image: [
       {
         '@type': 'ImageObject',
-        contentUrl: 'https://www.omarseo.digital/images/cases/case-clientes-omar-seo-telhados-barreirinha-google-ia.png',
-        caption: 'Clientes Omar SEO no Google e na Visão geral criada por IA para conserto de telhados no Barreirinha Curitiba',
+        contentUrl: 'https://www.omarseo.digital/images/projects/project-07.webp',
+        caption: 'Apresentação editorial do projeto; consulte a legenda visível para origem e limites da imagem',
       },
     ],
   };
@@ -101,7 +102,7 @@ export default function CaseClientesTelhadosBarreirinhaAiSeo() {
 
       <main className="relative z-10 pt-28 pb-20 bg-slate-950 text-slate-100 min-h-screen">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
-          
+
           {/* Breadcrumb Navigation */}
           <nav className="flex items-center gap-2 text-xs text-slate-400 font-mono">
             <Link to="/" className="hover:text-emerald-400 transition-colors">Início</Link>
@@ -167,7 +168,7 @@ export default function CaseClientesTelhadosBarreirinhaAiSeo() {
                   EVIDÊNCIA DOCUMENTAL EM SERP
                 </span>
                 <h2 className="text-xl font-bold text-white mt-1">
-                  Captura Real do Google Search &amp; Google AI Overview
+                  Imagem do projeto do Google Search &amp; Google AI Overview
                 </h2>
               </div>
               <button
@@ -181,16 +182,16 @@ export default function CaseClientesTelhadosBarreirinhaAiSeo() {
 
             {/* Image Preview Container */}
             <div className="relative group cursor-pointer overflow-hidden rounded-2xl border border-slate-700/80 bg-white p-2 shadow-inner" onClick={() => setIsLightboxOpen(true)}>
-              <picture>
-                <source srcSet="/images/cases/case-clientes-omar-seo-telhados-barreirinha-google-ia.svg" type="image/svg+xml" />
-                <img
-                  src="/images/cases/case-clientes-omar-seo-telhados-barreirinha-google-ia.png"
+              <>
+
+                <PortfolioImage
+                  src="/images/projects/project-07.webp"
                   alt="Clientes Omar SEO no Google e na Visão geral criada por IA para conserto de telhados no Barreirinha Curitiba"
                   width={1000}
                   height={840}
                   className="w-full h-auto object-contain rounded-xl transition-transform duration-300 group-hover:scale-[1.01]"
                 />
-              </picture>
+              </>
               <div className="absolute inset-0 bg-slate-950/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
                 <span className="bg-slate-950/90 text-white text-xs font-bold px-4 py-2 rounded-full border border-slate-700 shadow-xl inline-flex items-center gap-2">
                   <Maximize2 size={14} />
@@ -200,7 +201,7 @@ export default function CaseClientesTelhadosBarreirinhaAiSeo() {
             </div>
 
             <p className="text-xs text-slate-400 text-center italic">
-              Captura real da pesquisa ‘Conserto de Telhados no Bairro Barreirinha’, registrando resultado orgânico e empresas apresentadas pela Visão geral criada por IA do Google.
+              Imagem do projeto da pesquisa ‘Conserto de Telhados no Bairro Barreirinha’, registrando resultado orgânico e empresas apresentadas pela Visão geral criada por IA do Google.
             </p>
           </section>
 
@@ -224,14 +225,14 @@ export default function CaseClientesTelhadosBarreirinhaAiSeo() {
                   </button>
                 </div>
                 <div className="bg-white p-2 rounded-2xl">
-                  <picture>
-                    <source srcSet="/images/cases/case-clientes-omar-seo-telhados-barreirinha-google-ia.svg" type="image/svg+xml" />
-                    <img
-                      src="/images/cases/case-clientes-omar-seo-telhados-barreirinha-google-ia.png"
+                  <>
+
+                    <PortfolioImage
+                      src="/images/projects/project-07.webp"
                       alt="Clientes Omar SEO no Google e na Visão geral criada por IA para conserto de telhados no Barreirinha Curitiba"
                       className="w-full h-auto object-contain rounded-xl"
                     />
-                  </picture>
+                  </>
                 </div>
               </div>
             </div>

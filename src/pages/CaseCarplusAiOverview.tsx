@@ -1,3 +1,4 @@
+import { PortfolioImage } from '../components/PortfolioImage';
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { EnhancedSEO } from '../components/EnhancedSEO';
@@ -43,13 +44,12 @@ export default function CaseCarplusAiOverview() {
     },
     image: {
       '@type': 'ImageObject',
-      '@id': 'https://www.omarseo.digital/images/cases/case-carplus-google-ai-overview-pneus-curitiba.png#primaryimage',
-      url: 'https://www.omarseo.digital/images/cases/case-carplus-google-ai-overview-pneus-curitiba.png',
-      contentUrl: 'https://www.omarseo.digital/images/cases/case-carplus-google-ai-overview-pneus-curitiba.png',
+      '@id': 'https://www.omarseo.digital/images/projects/project-05.webp#primaryimage',
+      url: 'https://www.omarseo.digital/images/projects/project-05.webp',
+      contentUrl: 'https://www.omarseo.digital/images/projects/project-05.webp',
       caption:
-        'Reconstrução visual do relato Carplus sobre buscas de pneus em Curitiba',
-      width: 1180,
-      height: 620,
+        'Apresentação editorial do projeto; consulte a legenda visível para origem e limites da imagem',
+      width: 1200, height: 900,
     },
   };
 
@@ -59,7 +59,7 @@ export default function CaseCarplusAiOverview() {
         title="Carplus: relato de SEO local em Curitiba | Omar SEO"
         description="Relato do acervo Carplus sobre conteúdo, busca local e respostas de IA. As reconstruções visuais não comprovam posições ou menções atuais."
         canonical="/resultados/carplus-google-ai-overview-pneus-curitiba"
-        ogImage="https://www.omarseo.digital/images/cases/case-carplus-google-ai-overview-pneus-curitiba.png"
+        ogImage="https://www.omarseo.digital/images/projects/project-05.webp"
         ogType="article"
         breadcrumbs={[
           { name: 'Home', item: '/' },
@@ -163,14 +163,14 @@ export default function CaseCarplusAiOverview() {
         </div>
       </section>
 
-      {/* Captura de Evidência Factual com Abas */}
+      {/* Imagem do projeto Factual com Abas */}
       <section className="space-y-6">
         <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
           <h2 className="text-xl sm:text-2xl font-bold font-display text-white flex items-center gap-2">
             <FileCheck size={20} className="text-emerald-400" />
             <span>Ilustração do relato publicado</span>
           </h2>
-          
+
           <div className="flex p-1 bg-slate-950 border border-slate-800 rounded-xl">
             <button
               onClick={() => setActiveTab('aio')}
@@ -195,8 +195,8 @@ export default function CaseCarplusAiOverview() {
 
         <div className="p-4 sm:p-6 rounded-3xl bg-slate-950 border border-slate-800 space-y-4">
           <div className="relative rounded-2xl overflow-hidden border border-slate-800 bg-white group cursor-zoom-in" onClick={() => setIsLightboxOpen(true)}>
-            <img
-              src="/images/cases/case-carplus-google-ai-overview-pneus-curitiba.png"
+            <PortfolioImage
+              src="/images/projects/project-05.webp"
               alt={`Carplus em ${activeTab.toUpperCase()} para pneus de carros elétricos`}
               className="w-full h-auto object-contain max-h-[550px]"
             />
@@ -207,7 +207,7 @@ export default function CaseCarplusAiOverview() {
               </div>
             </div>
           </div>
-          
+
           <div className="flex flex-col sm:flex-row items-center justify-between gap-4 p-4 rounded-2xl bg-slate-900/50 border border-slate-800">
             <div className="flex items-center gap-3">
               <div className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
@@ -244,8 +244,8 @@ export default function CaseCarplusAiOverview() {
               </button>
             </div>
             <div className="bg-white rounded-xl p-2 border border-slate-700 overflow-auto max-h-[80vh] flex justify-center">
-              <img
-                src="/images/cases/case-carplus-google-ai-overview-pneus-curitiba.png"
+              <PortfolioImage
+                src="/images/projects/project-05.webp"
                 alt="Documentação Carplus"
                 className="w-full h-auto object-contain"
               />
@@ -257,7 +257,7 @@ export default function CaseCarplusAiOverview() {
       {/* Detalhes Técnicos do Projeto */}
       <section className="p-8 rounded-3xl bg-slate-900/40 border border-slate-800 space-y-6">
         <h2 className="text-xl font-bold font-display text-white">Engenharia Semântica Aplicada</h2>
-        
+
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           <div className="p-4 rounded-2xl bg-slate-950 border border-slate-800 space-y-2">
             <h4 className="text-xs font-bold text-cyan-400 uppercase tracking-widest">Desafio Comercial</h4>

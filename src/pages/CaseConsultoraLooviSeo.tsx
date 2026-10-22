@@ -1,3 +1,4 @@
+import { PortfolioImage } from '../components/PortfolioImage';
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { EnhancedSEO } from '../components/EnhancedSEO';
@@ -45,12 +46,11 @@ export default function CaseConsultoraLooviSeo() {
     image: [
       {
         '@type': 'ImageObject',
-        '@id': 'https://www.omarseo.digital/images/cases/case-consultora-loovi-google-organico.png#evidence1',
-        url: 'https://www.omarseo.digital/images/cases/case-consultora-loovi-google-organico.png',
-        contentUrl: 'https://www.omarseo.digital/images/cases/case-consultora-loovi-google-organico.png',
-        caption: 'Captura real do Google registrando consultoraloovi.com.br para a consulta consultora loovi, com resultado associado à Consultora Barbara Duraes em Curitiba.',
-        width: 1000,
-        height: 580,
+        '@id': 'https://www.omarseo.digital/images/projects/project-09.webp#evidence1',
+        url: 'https://www.omarseo.digital/images/projects/project-09.webp',
+        contentUrl: 'https://www.omarseo.digital/images/projects/project-09.webp',
+        caption: 'Apresentação editorial do projeto; consulte a legenda visível para origem e limites da imagem',
+        width: 1200, height: 900,
       },
     ],
   };
@@ -61,7 +61,7 @@ export default function CaseConsultoraLooviSeo() {
         title="Case SEO: Consultora Loovi no Google | Omar SEO"
         description="Evidência real de presença orgânica para uma consulta diretamente relacionada à atividade profissional e à marca pesquisada (consultoraloovi.com.br)."
         canonical="/resultados/consultora-loovi-google-seo"
-        ogImage="https://www.omarseo.digital/images/cases/case-consultora-loovi-google-organico.png"
+        ogImage="https://www.omarseo.digital/images/projects/project-09.webp"
         ogType="article"
         breadcrumbs={[
           { name: 'Home', item: '/' },
@@ -170,14 +170,14 @@ export default function CaseConsultoraLooviSeo() {
           </div>
 
           <div className="relative group overflow-hidden rounded-2xl border border-slate-800 bg-white p-2">
-            <img
-              src="/images/cases/case-consultora-loovi-google-organico.png"
+            <PortfolioImage
+              src="/images/projects/project-09.webp"
               alt="Consultora Loovi presente no Google para a pesquisa consultora loovi"
               className="w-full h-auto object-contain cursor-pointer group-hover:scale-[1.01] transition-transform duration-300 rounded-xl"
-              onClick={() => setActiveLightboxImage('/images/cases/case-consultora-loovi-google-organico.png')}
+              onClick={() => setActiveLightboxImage('/images/projects/project-09.webp')}
             />
             <button
-              onClick={() => setActiveLightboxImage('/images/cases/case-consultora-loovi-google-organico.png')}
+              onClick={() => setActiveLightboxImage('/images/projects/project-09.webp')}
               className="absolute bottom-4 right-4 bg-slate-950/90 hover:bg-emerald-950 text-emerald-400 border border-emerald-800/80 px-3.5 py-2 rounded-xl text-xs font-bold flex items-center gap-1.5 opacity-90 group-hover:opacity-100 transition-opacity shadow-lg"
             >
               <Maximize2 size={14} />
@@ -186,7 +186,7 @@ export default function CaseConsultoraLooviSeo() {
           </div>
 
           <p className="text-xs text-slate-300 italic text-center sm:text-left leading-relaxed">
-            Captura real do Google registrando consultoraloovi.com.br para a consulta ‘consultora loovi’, com resultado associado à Consultora Barbara Duraes em Curitiba.
+            Imagem do projeto do Google registrando consultoraloovi.com.br para a consulta ‘consultora loovi’, com resultado associado à Consultora Barbara Duraes em Curitiba.
           </p>
 
           <div className="p-4 rounded-xl bg-slate-900/90 border border-slate-800 space-y-2 text-xs">
@@ -229,7 +229,7 @@ export default function CaseConsultoraLooviSeo() {
           <UserCheck size={22} className="text-cyan-400" />
           <span>Quando o consumidor procura pelo profissional associado à marca</span>
         </h2>
-        
+
         <p className="text-xs sm:text-sm text-slate-300 leading-relaxed">
           A consulta pesquisada é <strong>“consultora loovi”</strong>. Esta busca combina dois núcleos conceituais distintos:
         </p>
@@ -327,7 +327,7 @@ export default function CaseConsultoraLooviSeo() {
                 <X size={20} />
               </button>
             </div>
-            <img
+            <PortfolioImage
               src={activeLightboxImage}
               alt="Consultora Loovi presente no Google para a pesquisa consultora loovi"
               className="w-full h-auto rounded-xl border border-slate-800 max-h-[85vh] object-contain mx-auto bg-white p-2"

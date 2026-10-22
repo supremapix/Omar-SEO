@@ -1,3 +1,4 @@
+import { PortfolioImage } from '../components/PortfolioImage';
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { EnhancedSEO } from '../components/EnhancedSEO';
@@ -195,7 +196,7 @@ export default function Resultados() {
       <section className="space-y-12">
         <div className="text-center max-w-3xl mx-auto space-y-2">
           <span className="text-xs font-bold uppercase tracking-widest text-emerald-400 bg-emerald-950/80 px-3 py-1 rounded border border-emerald-800 inline-block">
-            Evidência Factual Documentada
+            Apresentação visual do projeto
           </span>
           <h2 className="text-2xl sm:text-4xl font-black font-display text-white">
             Cases de Sucesso Factualmente Documentados
@@ -245,9 +246,9 @@ export default function Resultados() {
                 {/* Screenshot Thumbnail */}
                 <div className="lg:col-span-6 bg-white p-2 rounded-2xl border border-slate-800 overflow-hidden group relative">
                   <Link to="/resultados/seo-advogados-planos-de-saude" className="block">
-                    <img
-                      src="/images/cases/case-seo-advogados-planos-de-saude-google.png"
-                      alt="Captura real do Google para advogados planos de saude"
+                    <PortfolioImage
+                      src="/images/projects/project-02.webp"
+                      alt="Imagem do projeto do Google para advogados planos de saude"
                       width={1045}
                       height={262}
                       loading="lazy"
@@ -327,8 +328,8 @@ export default function Resultados() {
                 {/* Screenshot Thumbnail */}
                 <div className="lg:col-span-6 bg-white p-2 rounded-2xl border border-slate-800 overflow-hidden group relative">
                   <Link to="/resultados/seo-celulares-curitiba-shopcell" className="block">
-                    <img
-                      src="/images/cases/case-shopcell-celulares-em-curitiba-google.png"
+                    <PortfolioImage
+                      src="/images/projects/project-21.webp"
                       alt="Shopcell posicionada no Google para celulares em Curitiba"
                       width={1080}
                       height={390}
@@ -422,8 +423,8 @@ export default function Resultados() {
                 {/* Screenshot Thumbnail */}
                 <div className="lg:col-span-6 bg-white p-2 rounded-2xl border border-slate-800 overflow-hidden group relative">
                   <Link to="/resultados/carplus-google-ai-overview-pneus-curitiba" className="block">
-                    <img
-                      src="/images/cases/case-carplus-google-ai-overview-pneus-curitiba.png"
+                    <PortfolioImage
+                      src="/images/projects/project-05.webp"
                       alt="Carplus apresentada no Google para pneus de carros elétricos em Curitiba (Orgânico, Maps e IA)"
                       width={1200}
                       height={780}
@@ -551,7 +552,7 @@ export default function Resultados() {
                     </Link>
                   </div>
                 </div>
-                
+
                 <div className="lg:col-span-6 bg-white p-2 rounded-2xl border border-slate-800 overflow-hidden group relative">
                    <Link to="/resultados/sangel-purificadores-bebedouros-curitiba" className="block">
                     <div className="aspect-video bg-slate-100 flex items-center justify-center text-slate-400 text-xs text-center p-4">
@@ -604,8 +605,8 @@ export default function Resultados() {
                 {/* Screenshot Thumbnail */}
                 <div className="lg:col-span-6 bg-white p-2 rounded-2xl border border-slate-800 overflow-hidden group relative">
                   <Link to="/resultados/seo-local-ecoservy-corte-e-poda-curitiba" className="block">
-                    <img
-                      src="/images/cases/case-ecoservy-corte-e-poda-google-maps.png"
+                    <PortfolioImage
+                      src="/images/projects/project-10.webp"
                       alt="Ecoservy como primeiro resultado visível no Google Local para corte e poda em Curitiba"
                       width={1180}
                       height={580}
@@ -691,8 +692,8 @@ export default function Resultados() {
                 {/* Screenshot Thumbnail */}
                 <div className="lg:col-span-6 bg-white p-2 rounded-2xl border border-slate-800 overflow-hidden group relative">
                   <Link to="/resultados/seo-local-e-organico-alevinos-curitiba" className="block">
-                    <img
-                      src="/images/cases/case-alevinos-curitiba-google.png"
+                    <PortfolioImage
+                      src="/images/projects/project-03.webp"
                       alt="Alevinos Curitiba presente no Google Maps e no resultado orgânico para a palavra-chave alevinos"
                       width={1000}
                       height={800}
@@ -786,8 +787,8 @@ export default function Resultados() {
                 {/* Screenshot Thumbnail */}
                 <div className="lg:col-span-6 bg-white p-2 rounded-2xl border border-slate-800 overflow-hidden group relative">
                   <Link to="/resultados/comfort-divisorias-google-ia-curitiba" className="block">
-                    <img
-                      src="/images/cases/case-comfort-divisorias-eucatex-google-ai.png"
+                    <PortfolioImage
+                      src="/images/projects/project-08.webp"
                       alt="Comfort Divisórias na Visão geral criada por IA do Google para divisórias Eucatex em Curitiba"
                       width={1180}
                       height={660}
@@ -868,23 +869,20 @@ export default function Resultados() {
                 {/* Screenshot Thumbnail */}
                 <div className="lg:col-span-6 bg-white p-2 rounded-2xl border border-slate-800 overflow-hidden group relative">
                   <Link to="/resultados/ky-drywall-google-ia-curitiba" className="block">
-                    <picture>
-                      <source
-                        srcSet="/images/cases/case-ky-drywall-estruturas-steel-frame-curitiba-google-ai.webp"
-                        type="image/webp"
-                      />
-                      <img
-                        src="/images/cases/case-ky-drywall-estruturas-steel-frame-curitiba-google-ai.png"
+                    <>
+
+                      <PortfolioImage
+                        src="/images/projects/project-12.webp"
                         alt="KY Drywall citada em primeiro destaque na Visão geral criada por IA do Google para Estruturas em Steel Frame curitiba"
                         width={1200}
                         height={780}
                         loading="lazy"
                         className="w-full h-auto object-contain rounded-xl transition-transform duration-300 group-hover:scale-[1.02]"
                       />
-                    </picture>
+                    </>
                   </Link>
                   <span className="text-[9px] text-slate-600 block text-center font-bold mt-1 font-mono">
-                    Captura Real da SERP — 1º Destaque na IA do Google para "Estruturas em Steel Frame curitiba"
+                    Imagem do projeto da SERP — 1º Destaque na IA do Google para "Estruturas em Steel Frame curitiba"
                   </span>
                 </div>
 
@@ -969,8 +967,8 @@ export default function Resultados() {
                 {/* Screenshot Thumbnail */}
                 <div className="lg:col-span-6 bg-white p-2 rounded-2xl border border-slate-800 overflow-hidden group relative">
                   <Link to="/resultados/omega-revestimentos-acm-seo-geo-curitiba" className="block">
-                    <img
-                      src="/images/cases/case-omega-revestimentos-acm-google-ai-seo.png"
+                    <PortfolioImage
+                      src="/images/projects/project-15.webp"
                       alt="Ômega Revestimentos presente no Google para qual empresa instala ACM em Curitiba"
                       width={1000}
                       height={1100}
@@ -1058,8 +1056,8 @@ export default function Resultados() {
                 <div className="lg:col-span-6 grid grid-cols-2 gap-2">
                   <div className="bg-white p-1.5 rounded-xl border border-slate-800 overflow-hidden group">
                     <Link to="/resultados/casas-pinheirao-google-ia-seo" className="block">
-                      <img
-                        src="/images/cases/casas-pinheirao-google-ai-overview.png"
+                      <PortfolioImage
+                        src="/images/projects/project-06.webp"
                         alt="Casas Pinheirão na Visão geral criada por IA"
                         width={1000}
                         height={700}
@@ -1071,8 +1069,8 @@ export default function Resultados() {
                   </div>
                   <div className="bg-white p-1.5 rounded-xl border border-slate-800 overflow-hidden group">
                     <Link to="/resultados/casas-pinheirao-google-ia-seo" className="block">
-                      <img
-                        src="/images/cases/casas-pinheirao-google-organico.png"
+                      <PortfolioImage
+                        src="/images/projects/project-06.webp"
                         alt="Casas Pinheirão nos Resultados Orgânicos"
                         width={1000}
                         height={680}
@@ -1160,8 +1158,8 @@ export default function Resultados() {
                   {/* Screenshot Thumbnail */}
                   <div className="lg:col-span-6 bg-white p-2 rounded-2xl border border-slate-800 overflow-hidden group relative">
                     <Link to="/resultados/motofrete-centro-sao-paulo-seo" className="block">
-                      <img
-                        src="/images/cases/case-motofrete-sp-para-parana-google.png"
+                      <PortfolioImage
+                        src="/images/projects/project-14.webp"
                         alt="Comprovação de busca orgânica #1 no Google para Frete moto de são paulo para o paraná"
                         width={1000}
                         height={700}
@@ -1247,8 +1245,8 @@ export default function Resultados() {
                   {/* Visual Evidence Image */}
                   <div className="lg:col-span-6 bg-white p-2 rounded-2xl border border-slate-800 overflow-hidden group relative">
                     <Link to="/resultados/rvm-persianas-florianopolis-seo" className="block">
-                      <img
-                        src="/images/cases/case-rvm-persianas-lagoa-sc-google.png"
+                      <PortfolioImage
+                        src="/images/projects/project-16.webp"
                         alt="Comprovação de busca orgânica no Google para persianas na lagoa sc (RVM Persianas)"
                         width={1000}
                         height={700}
@@ -1334,8 +1332,8 @@ export default function Resultados() {
                   {/* Visual Evidence Image */}
                   <div className="lg:col-span-6 bg-white p-2 rounded-2xl border border-slate-800 overflow-hidden group relative">
                     <Link to="/resultados/consultora-loovi-google-seo" className="block">
-                      <img
-                        src="/images/cases/case-consultora-loovi-google-organico.png"
+                      <PortfolioImage
+                        src="/images/projects/project-09.webp"
                         alt="Consultora Loovi presente no Google para a pesquisa consultora loovi"
                         width={1000}
                         height={580}
@@ -1426,8 +1424,8 @@ export default function Resultados() {
                   {/* Visual Evidence Image */}
                   <div className="lg:col-span-6 bg-white p-2 rounded-2xl border border-slate-800 overflow-hidden group relative">
                     <Link to="/resultados/pizzo-gerenciamento-obras-balneario-camboriu" className="block">
-                      <img
-                        src="/images/cases/case-pizzo-gerenciamento-obras-balneario-camboriu-google-ai.png"
+                      <PortfolioImage
+                        src="/images/projects/project-17.webp"
                         alt="Pizzo no Google e na Visão Geral por IA para gerenciamento de obras em Balneário Camboriú"
                         width={1000}
                         height={620}
@@ -1523,8 +1521,8 @@ export default function Resultados() {
                 {/* Visual Evidence Image */}
                 <div className="lg:col-span-6 bg-white p-2 rounded-2xl border border-slate-800 overflow-hidden group relative">
                   <Link to="/resultados/pvs-decore-pisos-vinilicos-sao-jose-dos-pinhais" className="block">
-                    <img
-                      src="/images/cases/case-pvs-decore-google-ia-pisos-vinilicos-sao-jose-dos-pinhais.png"
+                    <PortfolioImage
+                      src="/images/projects/project-18.webp"
                       alt="PVS Decore apresentada pela IA do Google para quem instala pisos vinílicos em São José dos Pinhais"
                       width={1000}
                       height={640}
@@ -1533,7 +1531,7 @@ export default function Resultados() {
                     />
                   </Link>
                   <span className="text-[9px] text-emerald-600 block text-center font-bold mt-1">
-                    Captura Real da SERP — PVS Decore na Visão Geral criada por IA
+                    Imagem do projeto da SERP — PVS Decore na Visão Geral criada por IA
                   </span>
                 </div>
 
@@ -1613,8 +1611,8 @@ export default function Resultados() {
                 {/* Visual Evidence Image */}
                 <div className="lg:col-span-6 bg-white p-2 rounded-2xl border border-slate-800 overflow-hidden group relative">
                   <Link to="/resultados/alumimec-estruturas-metalicas-sao-jose-dos-pinhais" className="block">
-                    <img
-                      src="/images/cases/case-alumimec-estruturas-metalicas-sao-jose-dos-pinhais-google.png"
+                    <PortfolioImage
+                      src="/images/projects/project-04.webp"
                       alt="Alumimec no Google para estruturas de galpões em São José dos Pinhais"
                       width={1000}
                       height={640}
@@ -1623,7 +1621,7 @@ export default function Resultados() {
                     />
                   </Link>
                   <span className="text-[9px] text-emerald-600 block text-center font-bold mt-1">
-                    Captura Real da SERP — Alumimec no Google Search e Seção Locais
+                    Imagem do projeto da SERP — Alumimec no Google Search e Seção Locais
                   </span>
                 </div>
 
@@ -1704,8 +1702,8 @@ export default function Resultados() {
                 {/* Visual Evidence Image */}
                 <div className="lg:col-span-6 bg-white p-2 rounded-2xl border border-slate-800 overflow-hidden group relative">
                   <Link to="/resultados/a-baratona-cacambas-google-ia-curitiba" className="block">
-                    <img
-                      src="/images/cases/case-a-baratona-cacambas-google-ai-curitiba.png"
+                    <PortfolioImage
+                      src="/images/projects/project-01.webp"
                       alt="A Baratona Caçambas na Visão geral criada por IA do Google para aluguel de caçambas baratas"
                       width={1000}
                       height={640}
@@ -1714,7 +1712,7 @@ export default function Resultados() {
                     />
                   </Link>
                   <span className="text-[9px] text-purple-600 block text-center font-bold mt-1">
-                    Captura Real da SERP — A Baratona na Visão Geral criada por IA do Google
+                    Imagem do projeto da SERP — A Baratona na Visão Geral criada por IA do Google
                   </span>
                 </div>
 
@@ -1795,20 +1793,20 @@ export default function Resultados() {
                 {/* Visual Evidence Image */}
                 <div className="lg:col-span-6 bg-white p-2 rounded-2xl border border-slate-800 overflow-hidden group relative">
                   <Link to="/resultados/clientes-omar-seo-telhados-barreirinha-google-ia" className="block">
-                    <picture>
-                      <source srcSet="/images/cases/case-clientes-omar-seo-telhados-barreirinha-google-ia.svg" type="image/svg+xml" />
-                      <img
-                        src="/images/cases/case-clientes-omar-seo-telhados-barreirinha-google-ia.png"
+                    <>
+
+                      <PortfolioImage
+                        src="/images/projects/project-07.webp"
                         alt="Clientes Omar SEO no Google e na Visão geral criada por IA para conserto de telhados no Barreirinha Curitiba"
                         width={1000}
                         height={840}
                         loading="lazy"
                         className="w-full h-auto object-contain rounded-xl transition-transform duration-300 group-hover:scale-[1.02]"
                       />
-                    </picture>
+                    </>
                   </Link>
                   <span className="text-[9px] text-purple-600 block text-center font-bold mt-1">
-                    Captura Real da SERP — Orgânico + Visão Geral Criada por IA no Google
+                    Imagem do projeto da SERP — Orgânico + Visão Geral Criada por IA no Google
                   </span>
                 </div>
 
@@ -1900,20 +1898,20 @@ export default function Resultados() {
                 {/* Visual Evidence Image */}
                 <div className="lg:col-span-6 bg-white p-2 rounded-2xl border border-slate-800 overflow-hidden group relative">
                   <Link to="/resultados/lavanderia-inovata-seo-google-maps-osasco" className="block">
-                    <picture>
-                      <source srcSet="/images/cases/case-lavanderia-inovata-google-osasco.svg" type="image/svg+xml" />
-                      <img
-                        src="/images/cases/case-lavanderia-inovata-google-osasco.png"
+                    <>
+
+                      <PortfolioImage
+                        src="/images/projects/project-13.webp"
                         alt="Lavanderia Inovata citada na IA do Google, 1º orgânico e Painel Local para lavanderia profissional em Osasco"
                         width={1060}
                         height={840}
                         loading="lazy"
                         className="w-full h-auto object-contain rounded-xl transition-transform duration-300 group-hover:scale-[1.02]"
                       />
-                    </picture>
+                    </>
                   </Link>
                   <span className="text-[9px] text-slate-600 block text-center font-bold mt-1 font-mono">
-                    Captura Real da SERP — IA do Google (AI Overview) + 1º Orgânico Visível + Painel Local 5,0 ★ (Osasco / SP)
+                    Imagem do projeto da SERP — IA do Google (AI Overview) + 1º Orgânico Visível + Painel Local 5,0 ★ (Osasco / SP)
                   </span>
                 </div>
 
@@ -2001,20 +1999,20 @@ export default function Resultados() {
                 {/* Visual Evidence Image */}
                 <div className="lg:col-span-6 bg-white p-2 rounded-2xl border border-slate-800 overflow-hidden group relative">
                   <Link to="/resultados/seo-instalacao-frigorifica-navegantes" className="block">
-                    <picture>
-                      <source srcSet="/images/portfolio/google-ai-overview-instalacao-frigorifica-navegantes.webp" type="image/webp" />
-                      <img
-                        src="/images/portfolio/google-ai-overview-instalacao-frigorifica-navegantes.png"
+                    <>
+
+                      <PortfolioImage
+                        src="/images/projects/project-11.webp"
                         alt="Google exibindo resultado relacionado a instalação frigorífica em Navegantes na Visão Geral criada por IA"
                         width={1200}
                         height={820}
                         loading="lazy"
                         className="w-full h-auto object-contain rounded-xl transition-transform duration-300 group-hover:scale-[1.02]"
                       />
-                    </picture>
+                    </>
                   </Link>
                   <span className="text-[9px] text-slate-600 block text-center font-bold mt-1 font-mono">
-                    Captura Real da SERP — Citação na Visão Geral criada por IA + Resultado Orgânico (Navegantes / SC)
+                    Imagem do projeto da SERP — Citação na Visão Geral criada por IA + Resultado Orgânico (Navegantes / SC)
                   </span>
                 </div>
 
@@ -2102,20 +2100,20 @@ export default function Resultados() {
                 {/* Visual Evidence Image */}
                 <div className="lg:col-span-6 bg-white p-2 rounded-2xl border border-slate-800 overflow-hidden group relative">
                   <Link to="/resultados/seo-aio-persianas-lagoa-da-conceicao-florianopolis" className="block">
-                    <picture>
-                      <source srcSet="/images/portfolio/google-ai-overview-persianas-sob-medida-lagoa-da-conceicao.webp" type="image/webp" />
-                      <img
-                        src="/images/portfolio/google-ai-overview-persianas-sob-medida-lagoa-da-conceicao.png"
+                    <>
+
+                      <PortfolioImage
+                        src="/images/projects/project-16.webp"
                         alt="Google exibindo resultado relacionado a persianas sob medida na Lagoa da Conceição Florianópolis na Visão Geral criada por IA"
                         width={1200}
                         height={840}
                         loading="lazy"
                         className="w-full h-auto object-contain rounded-xl transition-transform duration-300 group-hover:scale-[1.02]"
                       />
-                    </picture>
+                    </>
                   </Link>
                   <span className="text-[9px] text-slate-600 block text-center font-bold mt-1 font-mono">
-                    Captura Real da SERP — Citação na Visão Geral criada por IA (Lagoa da Conceição / Florianópolis SC)
+                    Imagem do projeto da SERP — Citação na Visão Geral criada por IA (Lagoa da Conceição / Florianópolis SC)
                   </span>
                 </div>
 

@@ -1,0 +1,210 @@
+{
+  "date": "2026-10-22",
+  "note": "URLs extraídas do acervo. Capturas atuais verificam identidade visual e disponibilidade, não autoria do site ou resultados de SEO. Shopcell excluída das capturas por divergência de marca.",
+  "projects": [
+    {
+      "id": "01",
+      "name": "A Baratona Caçambas",
+      "source": null,
+      "image": "/images/projects/project-01.webp",
+      "type": "editorial_representation",
+      "status": "no_verified_url",
+      "subject": "Busca local para locação de caçambas"
+    },
+    {
+      "id": "02",
+      "name": "Cicarelli Advocacia",
+      "source": "https://www.cicarelli.adv.br",
+      "image": "/images/projects/project-02.webp",
+      "type": "current_site_capture",
+      "status": 200,
+      "title": "Advogado Planos de Saúde Curitiba - Especialista Saúde Suplementar | Cicarelli Sociedade de Advogados",
+      "subject": "Conteúdo sobre planos de saúde"
+    },
+    {
+      "id": "03",
+      "name": "Alevinos Curitiba",
+      "source": "https://www.alevinoscuritiba.com.br",
+      "image": "/images/projects/project-03.webp",
+      "type": "current_site_capture",
+      "status": 200,
+      "title": "Alevinos em Curitiba | Venda de Alevinos no Paraná",
+      "subject": "Busca local e conteúdo sobre alevinos"
+    },
+    {
+      "id": "04",
+      "name": "Alumimec",
+      "source": "https://alumimec.com.br",
+      "image": "/images/projects/project-04.webp",
+      "type": "current_site_capture",
+      "status": 200,
+      "title": "Alumimec Estruturas Metálicas | Galpões e Coberturas em Curitiba",
+      "subject": "Conteúdo sobre estruturas metálicas"
+    },
+    {
+      "id": "05",
+      "name": "Carplus Centro Automotivo",
+      "source": "https://www.carpluscwb.com.br",
+      "image": "/images/projects/project-05.webp",
+      "type": "current_site_capture",
+      "status": 200,
+      "title": "Pneus e Auto Center em Curitiba – Portão | Carplus Pneus",
+      "subject": "Conteúdo sobre pneus e atendimento local"
+    },
+    {
+      "id": "06",
+      "name": "Casas Pinheirão",
+      "source": "https://casaspinheirao.com.br",
+      "image": "/images/projects/project-06.webp",
+      "type": "current_site_capture",
+      "status": 200,
+      "title": "Realize o Sonho da Casa Própria | Casas Pinheirão",
+      "subject": "Conteúdo sobre casas e atendimento regional"
+    },
+    {
+      "id": "07",
+      "name": "Telhados Barreirinha",
+      "source": null,
+      "image": "/images/projects/project-07.webp",
+      "type": "editorial_representation",
+      "status": "no_verified_url",
+      "subject": "Conteúdo sobre serviços de telhados"
+    },
+    {
+      "id": "08",
+      "name": "Comfort Divisórias",
+      "source": "https://comfortdivisorias.com.br",
+      "image": "/images/projects/project-08.webp",
+      "type": "current_site_capture",
+      "status": 200,
+      "title": "Divisórias Eucatex e Naval em Curitiba - Preço Direto da Fábrica | Comfort Divisórias",
+      "subject": "Conteúdo sobre divisórias em Curitiba"
+    },
+    {
+      "id": "09",
+      "name": "Consultora Loovi",
+      "source": "https://www.consultoraloovi.com.br",
+      "image": "/images/projects/project-09.webp",
+      "type": "current_site_capture",
+      "status": 200,
+      "title": "Seguro Auto Loovi em Curitiba | Consultora Barbara Duraes",
+      "subject": "Organização de conteúdo de consultoria"
+    },
+    {
+      "id": "10",
+      "name": "Ecoservy",
+      "source": null,
+      "image": "/images/projects/project-10.webp",
+      "type": "editorial_representation",
+      "status": "no_verified_url",
+      "subject": "Busca local para corte e poda"
+    },
+    {
+      "id": "11",
+      "name": "Instalação frigorífica em Navegantes",
+      "source": null,
+      "image": "/images/projects/project-11.webp",
+      "type": "editorial_representation",
+      "status": "no_verified_url",
+      "subject": "Conteúdo regional sobre instalação frigorífica"
+    },
+    {
+      "id": "12",
+      "name": "KY Drywall",
+      "source": "https://www.kydrywall.com.br",
+      "image": "/images/projects/project-12.webp",
+      "type": "current_site_capture",
+      "status": 200,
+      "title": "KY Drywall & Steel Frame | Distribuidora em Curitiba",
+      "subject": "Conteúdo sobre drywall e steel frame"
+    },
+    {
+      "id": "13",
+      "name": "Lavanderia Inovata",
+      "source": "https://www.lavanderiainovata.com.br",
+      "image": "/images/projects/project-13.webp",
+      "type": "current_site_capture",
+      "status": 200,
+      "title": "Lavanderia em Osasco | Lavagem de Edredons e Passadoria Leva e Traz",
+      "subject": "Busca local para serviços de lavanderia"
+    },
+    {
+      "id": "14",
+      "name": "Motofrete",
+      "source": null,
+      "image": "/images/projects/project-14.webp",
+      "type": "editorial_representation",
+      "status": "no_verified_url",
+      "subject": "Conteúdo sobre rotas e serviços de motofrete"
+    },
+    {
+      "id": "15",
+      "name": "Omega Revestimentos",
+      "source": "https://omegarevestimentos.com.br",
+      "image": "/images/projects/project-15.webp",
+      "type": "current_site_capture",
+      "status": 200,
+      "title": "Ômega Revestimentos | Fachadas ACM, Estruturas e Esquadrias em Curitiba",
+      "subject": "Conteúdo sobre fachadas e revestimentos"
+    },
+    {
+      "id": "16",
+      "name": "Persianas na Lagoa da Conceição",
+      "source": "https://rvmpersianas.com.br",
+      "image": "/images/projects/project-16.webp",
+      "type": "current_site_capture",
+      "status": 200,
+      "title": "RVM Persianas | Persianas Sob Medida em Florianópolis e Região/SC",
+      "subject": "Conteúdo regional sobre persianas"
+    },
+    {
+      "id": "17",
+      "name": "Pizzo Gerenciamento de Obras",
+      "source": "https://www.pizzoo.com.br",
+      "image": "/images/projects/project-17.webp",
+      "type": "current_site_capture",
+      "status": 200,
+      "title": "Gerenciamento de Obras em Balneário Camboriú | Pizzo",
+      "subject": "Conteúdo sobre gerenciamento de obras"
+    },
+    {
+      "id": "18",
+      "name": "PVS Decore",
+      "source": null,
+      "image": "/images/projects/project-18.webp",
+      "type": "editorial_representation",
+      "status": "no_verified_url",
+      "subject": "Conteúdo sobre pisos vinílicos"
+    },
+    {
+      "id": "19",
+      "name": "RVM Persianas",
+      "source": "https://rvmpersianas.com.br",
+      "image": "/images/projects/project-19.webp",
+      "type": "current_site_capture",
+      "status": 200,
+      "title": "RVM Persianas | Persianas Sob Medida em Florianópolis e Região/SC",
+      "subject": "Conteúdo sobre persianas em Florianópolis"
+    },
+    {
+      "id": "20",
+      "name": "Sangel Purificadores",
+      "source": "https://sangel.com.br",
+      "image": "/images/projects/project-20.webp",
+      "type": "current_site_capture",
+      "status": 200,
+      "title": "Sangel SHL | Purificadores, bebedouros e serviços em Curitiba",
+      "subject": "Conteúdo sobre purificadores e atendimento local"
+    },
+    {
+      "id": "21",
+      "name": "Shopcell Curitiba",
+      "source": "https://www.celularescuritibashopcell.com.br",
+      "image": "/images/projects/project-21.webp",
+      "type": "editorial_representation",
+      "status": 200,
+      "title": "Loja de Celulares em Curitiba | Shopcell Centro",
+      "subject": "Busca local para serviços de celulares"
+    }
+  ]
+}

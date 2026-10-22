@@ -1,0 +1,293 @@
+[
+  {
+    "id": "01",
+    "file": "CaseABaratonaCacambasAiSeo",
+    "name": "A Baratona Caçambas",
+    "url": null,
+    "subject": "Busca local para locação de caçambas",
+    "images": [
+      "/images/cases/case-a-baratona-cacambas-google-ai-curitiba.png"
+    ],
+    "captured": false,
+    "image": "/images/projects/project-01.webp",
+    "sourceNote": "Representação editorial do relato publicado. Não é captura de site nem resultado de busca."
+  },
+  {
+    "id": "02",
+    "file": "CaseAdvogadosPlanosSaude",
+    "name": "Cicarelli Advocacia",
+    "url": "https://www.cicarelli.adv.br",
+    "subject": "Conteúdo sobre planos de saúde",
+    "images": [
+      "/images/cases/case-seo-advogados-planos-de-saude-google.png"
+    ],
+    "captured": true,
+    "image": "/images/projects/project-02.webp",
+    "sourceNote": "Captura do site em 22/10/2026. Não comprova posição em buscas ou resultado do trabalho."
+  },
+  {
+    "id": "03",
+    "file": "CaseAlevinosCuritibaSeo",
+    "name": "Alevinos Curitiba",
+    "url": "https://www.alevinoscuritiba.com.br",
+    "subject": "Busca local e conteúdo sobre alevinos",
+    "images": [
+      "/images/cases/case-alevinos-curitiba-google.png"
+    ],
+    "captured": true,
+    "image": "/images/projects/project-03.webp",
+    "sourceNote": "Captura do site em 22/10/2026. Não comprova posição em buscas ou resultado do trabalho."
+  },
+  {
+    "id": "04",
+    "file": "CaseAlumimecEstruturasMetalicasSeo",
+    "name": "Alumimec",
+    "url": "https://alumimec.com.br",
+    "subject": "Conteúdo sobre estruturas metálicas",
+    "images": [
+      "/images/cases/case-alumimec-estruturas-metalicas-sao-jose-dos-pinhais-google.png"
+    ],
+    "captured": true,
+    "image": "/images/projects/project-04.webp",
+    "sourceNote": "Captura do site em 22/10/2026. Não comprova posição em buscas ou resultado do trabalho."
+  },
+  {
+    "id": "05",
+    "file": "CaseCarplusAiOverview",
+    "name": "Carplus Centro Automotivo",
+    "url": "https://www.carpluscwb.com.br",
+    "subject": "Conteúdo sobre pneus e atendimento local",
+    "images": [
+      "/images/cases/case-carplus-google-ai-overview-pneus-curitiba.png"
+    ],
+    "captured": true,
+    "image": "/images/projects/project-05.webp",
+    "sourceNote": "Captura do site em 22/10/2026. Não comprova posição em buscas ou resultado do trabalho."
+  },
+  {
+    "id": "06",
+    "file": "CaseCasasPinheiraoAiSeo",
+    "name": "Casas Pinheirão",
+    "url": "https://casaspinheirao.com.br",
+    "subject": "Conteúdo sobre casas e atendimento regional",
+    "images": [
+      "/images/cases/casas-pinheirao-google-ai-overview.png",
+      "/images/cases/casas-pinheirao-google-organico.png"
+    ],
+    "captured": true,
+    "image": "/images/projects/project-06.webp",
+    "sourceNote": "Captura do site em 22/10/2026. Não comprova posição em buscas ou resultado do trabalho."
+  },
+  {
+    "id": "07",
+    "file": "CaseClientesTelhadosBarreirinhaAiSeo",
+    "name": "Telhados Barreirinha",
+    "url": null,
+    "subject": "Conteúdo sobre serviços de telhados",
+    "images": [
+      "/images/cases/case-clientes-omar-seo-telhados-barreirinha-google-ia.png",
+      "/images/cases/case-clientes-omar-seo-telhados-barreirinha-google-ia.svg"
+    ],
+    "captured": false,
+    "image": "/images/projects/project-07.webp",
+    "sourceNote": "Representação editorial do relato publicado. Não é captura de site nem resultado de busca."
+  },
+  {
+    "id": "08",
+    "file": "CaseComfortDivisorasAiOverview",
+    "name": "Comfort Divisórias",
+    "url": "https://comfortdivisorias.com.br",
+    "subject": "Conteúdo sobre divisórias em Curitiba",
+    "images": [
+      "/images/cases/case-comfort-divisorias-eucatex-google-ai.png"
+    ],
+    "captured": true,
+    "image": "/images/projects/project-08.webp",
+    "sourceNote": "Captura do site em 22/10/2026. Não comprova posição em buscas ou resultado do trabalho."
+  },
+  {
+    "id": "09",
+    "file": "CaseConsultoraLooviSeo",
+    "name": "Consultora Loovi",
+    "url": "https://www.consultoraloovi.com.br",
+    "subject": "Organização de conteúdo de consultoria",
+    "images": [
+      "/images/cases/case-consultora-loovi-google-organico.png"
+    ],
+    "captured": true,
+    "image": "/images/projects/project-09.webp",
+    "sourceNote": "Captura do site em 22/10/2026. Não comprova posição em buscas ou resultado do trabalho."
+  },
+  {
+    "id": "10",
+    "file": "CaseEcoservyCortePoda",
+    "name": "Ecoservy",
+    "url": null,
+    "subject": "Busca local para corte e poda",
+    "images": [
+      "/images/cases/case-ecoservy-corte-e-poda-google-maps.png"
+    ],
+    "captured": false,
+    "image": "/images/projects/project-10.webp",
+    "sourceNote": "Representação editorial do relato publicado. Não é captura de site nem resultado de busca."
+  },
+  {
+    "id": "11",
+    "file": "CaseInstalacaoFrigorificaNavegantes",
+    "name": "Instalação frigorífica em Navegantes",
+    "url": null,
+    "subject": "Conteúdo regional sobre instalação frigorífica",
+    "images": [
+      "/images/portfolio/google-ai-overview-instalacao-frigorifica-navegantes.png",
+      "/images/portfolio/google-organico-instalacao-frigorifica-navegantes.png",
+      "/images/portfolio/google-ai-overview-instalacao-frigorifica-navegantes.webp",
+      "/images/portfolio/google-organico-instalacao-frigorifica-navegantes.webp"
+    ],
+    "captured": false,
+    "image": "/images/projects/project-11.webp",
+    "sourceNote": "Representação editorial do relato publicado. Não é captura de site nem resultado de busca."
+  },
+  {
+    "id": "12",
+    "file": "CaseKyDrywallAiOverview",
+    "name": "KY Drywall",
+    "url": "https://www.kydrywall.com.br",
+    "subject": "Conteúdo sobre drywall e steel frame",
+    "images": [
+      "/images/cases/case-ky-drywall-estruturas-steel-frame-curitiba-google-ai.png",
+      "/images/cases/case-ky-drywall-estruturas-steel-frame-curitiba-organico.png",
+      "/images/cases/case-ky-drywall-google-ai-curitiba.png",
+      "/images/cases/case-ky-drywall-estruturas-steel-frame-curitiba-google-ai.webp",
+      "/images/cases/case-ky-drywall-estruturas-steel-frame-curitiba-organico.webp"
+    ],
+    "captured": true,
+    "image": "/images/projects/project-12.webp",
+    "sourceNote": "Captura do site em 22/10/2026. Não comprova posição em buscas ou resultado do trabalho."
+  },
+  {
+    "id": "13",
+    "file": "CaseLavanderiaInovataSeoOsasco",
+    "name": "Lavanderia Inovata",
+    "url": "https://www.lavanderiainovata.com.br",
+    "subject": "Busca local para serviços de lavanderia",
+    "images": [
+      "/images/cases/case-lavanderia-inovata-google-osasco.png",
+      "/images/cases/case-lavanderia-inovata-google-osasco.svg"
+    ],
+    "captured": true,
+    "image": "/images/projects/project-13.webp",
+    "sourceNote": "Captura do site em 22/10/2026. Não comprova posição em buscas ou resultado do trabalho."
+  },
+  {
+    "id": "14",
+    "file": "CaseMotofreteCentroSaoPauloSeo",
+    "name": "Motofrete",
+    "url": null,
+    "subject": "Conteúdo sobre rotas e serviços de motofrete",
+    "images": [
+      "/images/cases/case-motofrete-sp-para-parana-google.png",
+      "/images/cases/case-motofrete-centro-sao-paulo-google.png"
+    ],
+    "captured": false,
+    "image": "/images/projects/project-14.webp",
+    "sourceNote": "Representação editorial do relato publicado. Não é captura de site nem resultado de busca."
+  },
+  {
+    "id": "15",
+    "file": "CaseOmegaRevestimentosSeoGeo",
+    "name": "Omega Revestimentos",
+    "url": "https://omegarevestimentos.com.br",
+    "subject": "Conteúdo sobre fachadas e revestimentos",
+    "images": [
+      "/images/cases/case-omega-revestimentos-acm-google-ai-seo.png"
+    ],
+    "captured": true,
+    "image": "/images/projects/project-15.webp",
+    "sourceNote": "Captura do site em 22/10/2026. Não comprova posição em buscas ou resultado do trabalho."
+  },
+  {
+    "id": "16",
+    "file": "CasePersianasLagoaConceicaoSeo",
+    "name": "Persianas na Lagoa da Conceição",
+    "url": "https://rvmpersianas.com.br",
+    "subject": "Conteúdo regional sobre persianas",
+    "images": [
+      "/images/portfolio/google-ai-overview-persianas-sob-medida-lagoa-da-conceicao.png",
+      "/images/cases/case-rvm-persianas-lagoa-sc-google.png",
+      "/images/portfolio/google-ai-overview-persianas-sob-medida-lagoa-da-conceicao.webp"
+    ],
+    "captured": true,
+    "image": "/images/projects/project-16.webp",
+    "sourceNote": "Captura do site em 22/10/2026. Não comprova posição em buscas ou resultado do trabalho."
+  },
+  {
+    "id": "17",
+    "file": "CasePizzoGerenciamentoObrasSeo",
+    "name": "Pizzo Gerenciamento de Obras",
+    "url": "https://www.pizzoo.com.br",
+    "subject": "Conteúdo sobre gerenciamento de obras",
+    "images": [
+      "/images/cases/case-pizzo-gerenciamento-obras-balneario-camboriu-google-ai.png",
+      "/images/cases/case-pizzo-quanto-custa-gerenciar-obra-balneario-camboriu-google-ai.png"
+    ],
+    "captured": true,
+    "image": "/images/projects/project-17.webp",
+    "sourceNote": "Captura do site em 22/10/2026. Não comprova posição em buscas ou resultado do trabalho."
+  },
+  {
+    "id": "18",
+    "file": "CasePvsDecoreAiSeo",
+    "name": "PVS Decore",
+    "url": null,
+    "subject": "Conteúdo sobre pisos vinílicos",
+    "images": [
+      "/images/cases/case-pvs-decore-google-ia-pisos-vinilicos-sao-jose-dos-pinhais.png"
+    ],
+    "captured": false,
+    "image": "/images/projects/project-18.webp",
+    "sourceNote": "Representação editorial do relato publicado. Não é captura de site nem resultado de busca."
+  },
+  {
+    "id": "19",
+    "file": "CaseRvmPersianasFlorianopolisSeo",
+    "name": "RVM Persianas",
+    "url": "https://rvmpersianas.com.br",
+    "subject": "Conteúdo sobre persianas em Florianópolis",
+    "images": [
+      "/images/cases/case-rvm-persianas-lagoa-sc-google.png",
+      "/images/cases/case-rvm-persianas-florianopolis-google.png",
+      "/images/portfolio/google-ai-overview-persianas-sob-medida-lagoa-da-conceicao.png",
+      "/images/portfolio/google-ai-overview-persianas-sob-medida-lagoa-da-conceicao.webp"
+    ],
+    "captured": true,
+    "image": "/images/projects/project-19.webp",
+    "sourceNote": "Captura do site em 22/10/2026. Não comprova posição em buscas ou resultado do trabalho."
+  },
+  {
+    "id": "20",
+    "file": "CaseSangelPurificadores",
+    "name": "Sangel Purificadores",
+    "url": "https://sangel.com.br",
+    "subject": "Conteúdo sobre purificadores e atendimento local",
+    "images": [
+      "/assets/aistudio/2026-10-20_20-38-46_d74b697a.png",
+      "/assets/aistudio/2026-10-20_20-39-05_17ab71b3.png"
+    ],
+    "captured": true,
+    "image": "/images/projects/project-20.webp",
+    "sourceNote": "Captura do site em 22/10/2026. Não comprova posição em buscas ou resultado do trabalho."
+  },
+  {
+    "id": "21",
+    "file": "CaseShopcellCelulares",
+    "name": "Shopcell Curitiba",
+    "url": "https://www.celularescuritibashopcell.com.br",
+    "subject": "Busca local para serviços de celulares",
+    "images": [
+      "/images/cases/case-shopcell-celulares-em-curitiba-google.png"
+    ],
+    "captured": false,
+    "image": "/images/projects/project-21.webp",
+    "sourceNote": "Representação editorial do acervo Shopcell. O domínio antigo exibe outra marca; não foi usado como captura deste projeto."
+  }
+]

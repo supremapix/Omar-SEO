@@ -1,3 +1,4 @@
+import { PortfolioImage } from '../components/PortfolioImage';
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { EnhancedSEO } from '../components/EnhancedSEO';
@@ -46,21 +47,19 @@ export default function CaseMotofreteCentroSaoPauloSeo() {
     image: [
       {
         '@type': 'ImageObject',
-        '@id': 'https://www.omarseo.digital/images/cases/case-motofrete-sp-para-parana-google.png#evidence1',
-        url: 'https://www.omarseo.digital/images/cases/case-motofrete-sp-para-parana-google.png',
-        contentUrl: 'https://www.omarseo.digital/images/cases/case-motofrete-sp-para-parana-google.png',
-        caption: 'Resultado #1 no Google para a busca Frete moto de são paulo para o paraná',
-        width: 1000,
-        height: 700,
+        '@id': 'https://www.omarseo.digital/images/projects/project-14.webp#evidence1',
+        url: 'https://www.omarseo.digital/images/projects/project-14.webp',
+        contentUrl: 'https://www.omarseo.digital/images/projects/project-14.webp',
+        caption: 'Apresentação editorial do projeto; consulte a legenda visível para origem e limites da imagem',
+        width: 1200, height: 900,
       },
       {
         '@type': 'ImageObject',
-        '@id': 'https://www.omarseo.digital/images/cases/case-motofrete-centro-sao-paulo-google.png#evidence2',
-        url: 'https://www.omarseo.digital/images/cases/case-motofrete-centro-sao-paulo-google.png',
-        contentUrl: 'https://www.omarseo.digital/images/cases/case-motofrete-centro-sao-paulo-google.png',
-        caption: 'Resultado orgânico do Motofrete para busca Motofrete Centro São Paulo no Google',
-        width: 1000,
-        height: 380,
+        '@id': 'https://www.omarseo.digital/images/projects/project-14.webp#evidence2',
+        url: 'https://www.omarseo.digital/images/projects/project-14.webp',
+        contentUrl: 'https://www.omarseo.digital/images/projects/project-14.webp',
+        caption: 'Apresentação editorial do projeto; consulte a legenda visível para origem e limites da imagem',
+        width: 1200, height: 900,
       },
     ],
   };
@@ -71,7 +70,7 @@ export default function CaseMotofreteCentroSaoPauloSeo() {
         title="Case SEO: Motofrete no Centro de São Paulo | Omar SEO"
         description="Resultado orgânico documentado para uma pesquisa local diretamente relacionada ao serviço de motofrete/motoboy no Centro de São Paulo."
         canonical="/resultados/motofrete-centro-sao-paulo-seo"
-        ogImage="https://www.omarseo.digital/images/cases/case-motofrete-centro-sao-paulo-google.png"
+        ogImage="https://www.omarseo.digital/images/projects/project-14.webp"
         ogType="article"
         breadcrumbs={[
           { name: 'Home', item: '/' },
@@ -180,14 +179,14 @@ export default function CaseMotofreteCentroSaoPauloSeo() {
           </div>
 
           <div className="relative group overflow-hidden rounded-2xl border border-slate-800 bg-white p-2">
-            <img
-              src="/images/cases/case-motofrete-sp-para-parana-google.png"
+            <PortfolioImage
+              src="/images/projects/project-14.webp"
               alt="Comprovação de busca orgânica #1 no Google para Frete moto de são paulo para o paraná (MotoFrete Curitiba)"
               className="w-full h-auto object-contain cursor-pointer group-hover:scale-[1.01] transition-transform duration-300 rounded-xl"
-              onClick={() => setActiveLightboxImage('/images/cases/case-motofrete-sp-para-parana-google.png')}
+              onClick={() => setActiveLightboxImage('/images/projects/project-14.webp')}
             />
             <button
-              onClick={() => setActiveLightboxImage('/images/cases/case-motofrete-sp-para-parana-google.png')}
+              onClick={() => setActiveLightboxImage('/images/projects/project-14.webp')}
               className="absolute bottom-4 right-4 bg-slate-950/90 hover:bg-emerald-950 text-emerald-400 border border-emerald-800/80 px-3.5 py-2 rounded-xl text-xs font-bold flex items-center gap-1.5 opacity-90 group-hover:opacity-100 transition-opacity shadow-lg"
             >
               <Maximize2 size={14} />
@@ -231,14 +230,14 @@ export default function CaseMotofreteCentroSaoPauloSeo() {
           </div>
 
           <div className="relative group overflow-hidden rounded-2xl border border-slate-800 bg-slate-900">
-            <img
-              src="/images/cases/case-motofrete-centro-sao-paulo-google.png"
+            <PortfolioImage
+              src="/images/projects/project-14.webp"
               alt="Resultado orgânico do Motofrete para busca Motofrete Centro São Paulo no Google"
               className="w-full h-auto object-cover cursor-pointer group-hover:scale-[1.01] transition-transform duration-300"
-              onClick={() => setActiveLightboxImage('/images/cases/case-motofrete-centro-sao-paulo-google.png')}
+              onClick={() => setActiveLightboxImage('/images/projects/project-14.webp')}
             />
             <button
-              onClick={() => setActiveLightboxImage('/images/cases/case-motofrete-centro-sao-paulo-google.png')}
+              onClick={() => setActiveLightboxImage('/images/projects/project-14.webp')}
               className="absolute bottom-3 right-3 bg-slate-950/90 hover:bg-cyan-950 text-cyan-400 border border-cyan-800/80 px-3 py-1.5 rounded-lg text-xs font-bold flex items-center gap-1.5 opacity-90 group-hover:opacity-100 transition-opacity"
             >
               <Maximize2 size={14} />
@@ -281,7 +280,7 @@ export default function CaseMotofreteCentroSaoPauloSeo() {
                 <X size={20} />
               </button>
             </div>
-            <img
+            <PortfolioImage
               src={activeLightboxImage}
               alt="Comprovação de busca orgânica no Google"
               className="w-full h-auto rounded-xl border border-slate-800 max-h-[85vh] object-contain mx-auto bg-white p-2"

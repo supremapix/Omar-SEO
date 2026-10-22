@@ -1,12 +1,13 @@
+import { PortfolioImage } from '../components/PortfolioImage';
 import React, { useState } from 'react';
 import { EnhancedSEO } from '../components/EnhancedSEO';
-import { 
-  ArrowLeft, 
-  ExternalLink, 
-  CheckCircle2, 
-  Target, 
-  Search, 
-  Cpu, 
+import {
+  ArrowLeft,
+  ExternalLink,
+  CheckCircle2,
+  Target,
+  Search,
+  Cpu,
   MapPin,
   ShieldCheck,
   TrendingUp,
@@ -53,10 +54,10 @@ export default function CaseSangelPurificadores() {
       {/* Header/Hero */}
       <header className="relative pt-24 pb-16 overflow-hidden">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_-20%,rgba(34,211,238,0.15),transparent_70%)]" />
-        
+
         <div className="max-w-7xl mx-auto px-4 relative">
-          <Link 
-            to="/resultados" 
+          <Link
+            to="/resultados"
             className="inline-flex items-center text-cyan-400 hover:text-cyan-300 transition-colors mb-8 group"
           >
             <ArrowLeft className="w-4 h-4 mr-2 group-hover:-translate-x-1 transition-transform" />
@@ -80,7 +81,7 @@ export default function CaseSangelPurificadores() {
                 Estratégia completa de SEO, GEO e AIO para a busca <strong className="text-cyan-300">"Purificadores e bebedouros curitiba"</strong>, com foco em conteúdo, presença local e compreensão dos serviços. Recomendações por IA e posições não são garantidas.
               </p>
             </div>
-            
+
             <div className="flex flex-wrap gap-4 pb-2">
               <div className="bg-slate-900/80 border border-slate-800 p-4 rounded-2xl flex-1 min-w-[140px]">
                 <div className="text-cyan-400 font-bold text-2xl mb-1">AIO</div>
@@ -103,7 +104,7 @@ export default function CaseSangelPurificadores() {
         <div className="grid lg:grid-cols-12 gap-12">
           {/* Main Content Column */}
           <div className="lg:col-span-8 space-y-12">
-            
+
             {/* Strategy Section */}
             <section className="bg-slate-900/50 border border-slate-800/50 rounded-3xl p-8">
               <h2 className="text-2xl font-bold text-white mb-6 flex items-center gap-3">
@@ -143,21 +144,21 @@ export default function CaseSangelPurificadores() {
                 <h2 className="text-2xl font-bold text-white flex items-center gap-3">
                   <ShieldCheck className="w-6 h-6 text-cyan-400" /> Evidências de Domínio
                 </h2>
-                
+
                 <div className="inline-flex p-1 bg-slate-900 rounded-xl border border-slate-800">
-                  <button 
+                  <button
                     onClick={() => setActiveTab('aio')}
                     className={`px-4 py-2 rounded-lg text-sm font-bold transition-all flex items-center gap-2 ${activeTab === 'aio' ? 'bg-cyan-500 text-white shadow-lg' : 'text-slate-400 hover:text-white'}`}
                   >
                     <Cpu className="w-4 h-4" /> AI Overview
                   </button>
-                  <button 
+                  <button
                     onClick={() => setActiveTab('maps')}
                     className={`px-4 py-2 rounded-lg text-sm font-bold transition-all flex items-center gap-2 ${activeTab === 'maps' ? 'bg-cyan-500 text-white shadow-lg' : 'text-slate-400 hover:text-white'}`}
                   >
                     <MapPin className="w-4 h-4" /> Google Maps
                   </button>
-                  <button 
+                  <button
                     onClick={() => setActiveTab('org')}
                     className={`px-4 py-2 rounded-lg text-sm font-bold transition-all flex items-center gap-2 ${activeTab === 'org' ? 'bg-cyan-500 text-white shadow-lg' : 'text-slate-400 hover:text-white'}`}
                   >
@@ -179,10 +180,10 @@ export default function CaseSangelPurificadores() {
                       <p className="text-slate-400 leading-relaxed">
                         Para a busca <span className="text-white font-semibold">"bebedouros centro"</span>, o Google gera uma resposta generativa recomendando a Sangel como opção principal para compra, venda e manutenção no Centro de Curitiba.
                       </p>
-                      
+
                       <div className="bg-white p-2 rounded-2xl border border-slate-700 overflow-hidden mb-6">
-                        <img 
-                          src="/assets/aistudio/2026-10-20_20-38-46_d74b697a.png" 
+                        <PortfolioImage
+                          src="/images/projects/project-20.webp"
                           alt="Sangel no Google AI Overview para bebedouros centro Curitiba"
                           className="w-full h-auto rounded-xl"
                         />
@@ -220,10 +221,10 @@ export default function CaseSangelPurificadores() {
                       <p className="text-slate-400 leading-relaxed">
                         A Sangel SHL ocupa o <strong>1º lugar no Google Maps</strong> para a intenção de busca no Centro, convertendo tráfego local qualificado.
                       </p>
-                      
+
                       <div className="bg-white p-2 rounded-2xl border border-slate-700 overflow-hidden mb-6">
-                        <img 
-                          src="/assets/aistudio/2026-10-20_20-39-05_17ab71b3.png" 
+                        <PortfolioImage
+                          src="/images/projects/project-20.webp"
                           alt="Sangel no Top 1 do Google Maps para bebedouros centro Curitiba"
                           className="w-full h-auto rounded-xl"
                         />
@@ -290,7 +291,7 @@ export default function CaseSangelPurificadores() {
           <div className="lg:col-span-4 space-y-8">
             <div className="bg-slate-900 border border-slate-800 rounded-3xl p-8 sticky top-24">
               <h3 className="text-xl font-bold text-white mb-6">Resumo do Case</h3>
-              
+
               <div className="space-y-6">
                 <div>
                   <div className="text-xs text-slate-500 uppercase font-bold tracking-widest mb-1">Cliente</div>
@@ -323,8 +324,8 @@ export default function CaseSangelPurificadores() {
                   </div>
                 </div>
 
-                <a 
-                  href="https://wa.me/5541999999999" 
+                <a
+                  href="https://wa.me/5541999999999"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-full py-4 bg-cyan-600 hover:bg-cyan-500 text-white font-bold rounded-xl transition-all flex items-center justify-center gap-2 group"
@@ -362,14 +363,14 @@ export default function CaseSangelPurificadores() {
             O futuro da busca não é apenas links. É ser a entidade recomendada pelos novos assistentes de IA e dominar o cenário local.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
-            <Link 
+            <Link
               to="/auditoria-seo"
               className="w-full sm:w-auto px-10 py-5 bg-white text-slate-950 font-bold rounded-2xl hover:bg-cyan-50 transition-all text-lg shadow-[0_10px_30px_rgba(255,255,255,0.1)]"
             >
               Começar Meu Plano SEO
             </Link>
-            <Link 
-              to="/blog" 
+            <Link
+              to="/blog"
               className="w-full sm:w-auto px-10 py-5 bg-slate-900 text-white font-bold rounded-2xl hover:bg-slate-800 transition-all text-lg border border-slate-700"
             >
               Ver Outros Cases

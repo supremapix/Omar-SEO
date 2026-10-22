@@ -1,3 +1,4 @@
+import { PortfolioImage } from '../components/PortfolioImage';
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { EnhancedSEO } from '../components/EnhancedSEO';
@@ -45,30 +46,27 @@ export default function CaseRvmPersianasFlorianopolisSeo() {
     image: [
       {
         '@type': 'ImageObject',
-        '@id': 'https://www.omarseo.digital/images/cases/case-rvm-persianas-lagoa-sc-google.png#evidence1',
-        url: 'https://www.omarseo.digital/images/cases/case-rvm-persianas-lagoa-sc-google.png',
-        contentUrl: 'https://www.omarseo.digital/images/cases/case-rvm-persianas-lagoa-sc-google.png',
-        caption: 'Resultado orgânico e pacote local no Google para a busca persianas na lagoa sc (RVM Persianas)',
-        width: 1000,
-        height: 700,
+        '@id': 'https://www.omarseo.digital/images/projects/project-19.webp#evidence1',
+        url: 'https://www.omarseo.digital/images/projects/project-19.webp',
+        contentUrl: 'https://www.omarseo.digital/images/projects/project-19.webp',
+        caption: 'Apresentação editorial do projeto; consulte a legenda visível para origem e limites da imagem',
+        width: 1200, height: 900,
       },
       {
         '@type': 'ImageObject',
-        '@id': 'https://www.omarseo.digital/images/cases/case-rvm-persianas-florianopolis-google.png#evidence2',
-        url: 'https://www.omarseo.digital/images/cases/case-rvm-persianas-florianopolis-google.png',
-        contentUrl: 'https://www.omarseo.digital/images/cases/case-rvm-persianas-florianopolis-google.png',
-        caption: 'Resultado orgânico do Google para persianas em florianópolis (RVM Persianas)',
-        width: 1000,
-        height: 450,
+        '@id': 'https://www.omarseo.digital/images/projects/project-19.webp#evidence2',
+        url: 'https://www.omarseo.digital/images/projects/project-19.webp',
+        contentUrl: 'https://www.omarseo.digital/images/projects/project-19.webp',
+        caption: 'Apresentação editorial do projeto; consulte a legenda visível para origem e limites da imagem',
+        width: 1200, height: 900,
       },
       {
         '@type': 'ImageObject',
-        '@id': 'https://www.omarseo.digital/images/portfolio/google-ai-overview-persianas-sob-medida-lagoa-da-conceicao.png#evidence3',
-        url: 'https://www.omarseo.digital/images/portfolio/google-ai-overview-persianas-sob-medida-lagoa-da-conceicao.png',
-        contentUrl: 'https://www.omarseo.digital/images/portfolio/google-ai-overview-persianas-sob-medida-lagoa-da-conceicao.png',
-        caption: 'Citação da RVM Persianas na Visão Geral criada por IA do Google para persianas sob medida em Lagoa da Conceição Florianópolis',
-        width: 1200,
-        height: 840,
+        '@id': 'https://www.omarseo.digital/images/projects/project-19.webp#evidence3',
+        url: 'https://www.omarseo.digital/images/projects/project-19.webp',
+        contentUrl: 'https://www.omarseo.digital/images/projects/project-19.webp',
+        caption: 'Apresentação editorial do projeto; consulte a legenda visível para origem e limites da imagem',
+        width: 1200, height: 900,
       },
     ],
   };
@@ -79,7 +77,7 @@ export default function CaseRvmPersianasFlorianopolisSeo() {
         title="Case SEO: RVM Persianas em Florianópolis e Lagoa da Conceição (SC) | Omar SEO"
         description="Presença orgânica e local documentada no Google para RVM Persianas em Florianópolis e Barra da Lagoa / Lagoa da Conceição (SC)."
         canonical="/resultados/rvm-persianas-florianopolis-seo"
-        ogImage="https://www.omarseo.digital/images/cases/case-rvm-persianas-lagoa-sc-google.png"
+        ogImage="https://www.omarseo.digital/images/projects/project-19.webp"
         ogType="article"
         breadcrumbs={[
           { name: 'Home', item: '/' },
@@ -187,14 +185,14 @@ export default function CaseRvmPersianasFlorianopolisSeo() {
           </div>
 
           <div className="relative group overflow-hidden rounded-2xl border border-slate-800 bg-white p-2">
-            <img
-              src="/images/cases/case-rvm-persianas-lagoa-sc-google.png"
+            <PortfolioImage
+              src="/images/projects/project-19.webp"
               alt="Comprovação real do Google para persianas na lagoa sc (RVM Persianas)"
               className="w-full h-auto object-contain cursor-pointer group-hover:scale-[1.01] transition-transform duration-300 rounded-xl"
-              onClick={() => setActiveLightboxImage('/images/cases/case-rvm-persianas-lagoa-sc-google.png')}
+              onClick={() => setActiveLightboxImage('/images/projects/project-19.webp')}
             />
             <button
-              onClick={() => setActiveLightboxImage('/images/cases/case-rvm-persianas-lagoa-sc-google.png')}
+              onClick={() => setActiveLightboxImage('/images/projects/project-19.webp')}
               className="absolute bottom-4 right-4 bg-slate-950/90 hover:bg-emerald-950 text-emerald-400 border border-emerald-800/80 px-3.5 py-2 rounded-xl text-xs font-bold flex items-center gap-1.5 opacity-90 group-hover:opacity-100 transition-opacity shadow-lg"
             >
               <Maximize2 size={14} />
@@ -238,14 +236,14 @@ export default function CaseRvmPersianasFlorianopolisSeo() {
           </div>
 
           <div className="relative group overflow-hidden rounded-2xl border border-slate-800 bg-white p-2">
-            <img
-              src="/images/cases/case-rvm-persianas-florianopolis-google.png"
+            <PortfolioImage
+              src="/images/projects/project-19.webp"
               alt="Resultado orgânico no Google para persianas em florianopolis (RVM Persianas)"
               className="w-full h-auto object-contain cursor-pointer group-hover:scale-[1.01] transition-transform duration-300 rounded-xl"
-              onClick={() => setActiveLightboxImage('/images/cases/case-rvm-persianas-florianopolis-google.png')}
+              onClick={() => setActiveLightboxImage('/images/projects/project-19.webp')}
             />
             <button
-              onClick={() => setActiveLightboxImage('/images/cases/case-rvm-persianas-florianopolis-google.png')}
+              onClick={() => setActiveLightboxImage('/images/projects/project-19.webp')}
               className="absolute bottom-4 right-4 bg-slate-950/90 hover:bg-cyan-950 text-cyan-400 border border-cyan-800/80 px-3.5 py-2 rounded-xl text-xs font-bold flex items-center gap-1.5 opacity-90 group-hover:opacity-100 transition-opacity shadow-lg"
             >
               <Maximize2 size={14} />
@@ -290,26 +288,23 @@ export default function CaseRvmPersianasFlorianopolisSeo() {
           </div>
 
           <div className="relative group overflow-hidden rounded-2xl border border-slate-800 bg-white p-2">
-            <picture>
-              <source
-                srcSet="/images/portfolio/google-ai-overview-persianas-sob-medida-lagoa-da-conceicao.webp"
-                type="image/webp"
-              />
-              <img
-                src="/images/portfolio/google-ai-overview-persianas-sob-medida-lagoa-da-conceicao.png"
+            <>
+
+              <PortfolioImage
+                src="/images/projects/project-19.webp"
                 alt="Google exibindo citação da RVM Persianas na Visão Geral criada por IA na Lagoa da Conceição em Florianópolis"
                 className="w-full h-auto object-contain cursor-pointer group-hover:scale-[1.01] transition-transform duration-300 rounded-xl"
                 onClick={() =>
                   setActiveLightboxImage(
-                    '/images/portfolio/google-ai-overview-persianas-sob-medida-lagoa-da-conceicao.png'
+                    '/images/projects/project-19.webp'
                   )
                 }
               />
-            </picture>
+            </>
             <button
               onClick={() =>
                 setActiveLightboxImage(
-                  '/images/portfolio/google-ai-overview-persianas-sob-medida-lagoa-da-conceicao.png'
+                  '/images/projects/project-19.webp'
                 )
               }
               className="absolute bottom-4 right-4 bg-slate-950/90 hover:bg-blue-950 text-blue-400 border border-blue-800/80 px-3.5 py-2 rounded-xl text-xs font-bold flex items-center gap-1.5 opacity-90 group-hover:opacity-100 transition-opacity shadow-lg"
@@ -343,7 +338,7 @@ export default function CaseRvmPersianasFlorianopolisSeo() {
                 <X size={20} />
               </button>
             </div>
-            <img
+            <PortfolioImage
               src={activeLightboxImage}
               alt="Comprovação de busca orgânica no Google"
               className="w-full h-auto rounded-xl border border-slate-800 max-h-[85vh] object-contain mx-auto bg-white p-2"

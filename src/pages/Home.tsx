@@ -1,3 +1,4 @@
+import { PortfolioImage } from '../components/PortfolioImage';
 import { ExplainerAnimation } from '../components/ExplainerAnimation';
 import React from "react";
 import { Link } from "react-router-dom";
@@ -73,7 +74,7 @@ export default function Home() {
             <span>01 / 03</span>
           </div>
           <div className="portrait-frame">
-            <img
+            <PortfolioImage
               src="/brand/omar-skafi.png"
               width="500"
               height="500"
@@ -204,8 +205,8 @@ export default function Home() {
           to="/resultados/carplus-google-ai-overview-pneus-curitiba"
         >
           <div className="evidence-image">
-            <img
-              src="/images/cases/case-carplus-google-ai-overview-pneus-curitiba.png"
+            <PortfolioImage
+              src="/images/projects/project-05.webp"
               width="900"
               height="600"
               loading="lazy"

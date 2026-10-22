@@ -1,3 +1,4 @@
+import { PortfolioImage } from '../components/PortfolioImage';
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { EnhancedSEO } from '../components/EnhancedSEO';
@@ -44,13 +45,12 @@ export default function CaseEcoservyCortePoda() {
     },
     image: {
       '@type': 'ImageObject',
-      '@id': 'https://www.omarseo.digital/images/cases/case-ecoservy-corte-e-poda-google-maps.png#primaryimage',
-      url: 'https://www.omarseo.digital/images/cases/case-ecoservy-corte-e-poda-google-maps.png',
-      contentUrl: 'https://www.omarseo.digital/images/cases/case-ecoservy-corte-e-poda-google-maps.png',
+      '@id': 'https://www.omarseo.digital/images/projects/project-10.webp#primaryimage',
+      url: 'https://www.omarseo.digital/images/projects/project-10.webp',
+      contentUrl: 'https://www.omarseo.digital/images/projects/project-10.webp',
       caption:
-        'Ecoservy como primeiro resultado visível no Google Local para corte e poda em Curitiba',
-      width: 1180,
-      height: 580,
+        'Apresentação editorial do projeto; consulte a legenda visível para origem e limites da imagem',
+      width: 1200, height: 900,
     },
   };
 
@@ -60,7 +60,7 @@ export default function CaseEcoservyCortePoda() {
         title="Case SEO Local: Corte e Poda no Google Maps | Omar SEO"
         description="Resultado documentado do SEO Local da Ecoservy em Curitiba. Primeiro resultado empresarial visível no bloco local do Google para a busca 'corte e poda'."
         canonical="/resultados/seo-local-ecoservy-corte-e-poda-curitiba"
-        ogImage="https://www.omarseo.digital/images/cases/case-ecoservy-corte-e-poda-google-maps.png"
+        ogImage="https://www.omarseo.digital/images/projects/project-10.webp"
         ogType="article"
         breadcrumbs={[
           { name: 'Home', item: '/' },
@@ -193,7 +193,7 @@ export default function CaseEcoservyCortePoda() {
               Avaliação & Evidência
             </span>
             <p className="text-sm font-bold text-white leading-snug">
-              5,0 ⭐ (7 avaliações) | Captura real do Google fornecida pelo proprietário.
+              5,0 ⭐ (7 avaliações) | Imagem do projeto do Google fornecida pelo proprietário.
             </p>
           </div>
         </div>
@@ -204,15 +204,15 @@ export default function CaseEcoservyCortePoda() {
         <div className="flex items-center justify-between">
           <h2 className="text-xl sm:text-2xl font-bold font-display text-white flex items-center gap-2">
             <Search size={20} className="text-cyan-400" />
-            <span>Evidência Factual: Captura Real do Google</span>
+            <span>Evidência Factual: Imagem do projeto do Google</span>
           </h2>
           <span className="text-xs text-slate-400 font-mono hidden sm:inline">Sem Simulação ou Mockup</span>
         </div>
 
         <div className="bg-slate-950 p-3 sm:p-5 rounded-3xl border border-slate-800 space-y-3 relative group">
           <div className="overflow-hidden rounded-2xl bg-white border border-slate-700 relative">
-            <img
-              src="/images/cases/case-ecoservy-corte-e-poda-google-maps.png"
+            <PortfolioImage
+              src="/images/projects/project-10.webp"
               alt="Ecoservy como primeiro resultado visível no Google Local para corte e poda em Curitiba"
               width={1180}
               height={580}
@@ -227,12 +227,12 @@ export default function CaseEcoservyCortePoda() {
               aria-label="Ampliar imagem da captura"
             >
               <Maximize2 size={14} />
-              <span className="hidden sm:inline">Ampliar Evidência</span>
+              <span className="hidden sm:inline">Ampliar imagem</span>
             </button>
           </div>
 
           <p className="text-xs text-slate-300 leading-relaxed italic bg-slate-900/60 p-3.5 rounded-xl border border-slate-800">
-            Captura real da pesquisa “corte e poda” mostrando a Corte e Poda Ecoservy | Jardinagem como primeiro resultado empresarial visível no bloco local apresentado pelo Google. Resultados locais podem variar conforme localização, data, dispositivo e personalização.
+            Imagem do projeto da pesquisa “corte e poda” mostrando a Corte e Poda Ecoservy | Jardinagem como primeiro resultado empresarial visível no bloco local apresentado pelo Google. Resultados locais podem variar conforme localização, data, dispositivo e personalização.
           </p>
         </div>
       </section>
@@ -249,8 +249,8 @@ export default function CaseEcoservyCortePoda() {
               <X size={20} />
             </button>
             <div className="max-h-[85vh] overflow-auto">
-              <img
-                src="/images/cases/case-ecoservy-corte-e-poda-google-maps.png"
+              <PortfolioImage
+                src="/images/projects/project-10.webp"
                 alt="Ecoservy como primeiro resultado visível no Google Local para corte e poda em Curitiba"
                 className="w-full h-auto object-contain rounded-xl"
               />

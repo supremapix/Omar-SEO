@@ -11,6 +11,17 @@ export function FloatingActions() {
     title: "Omar SEO",
     image: "https://www.omarseo.digital/og-default.jpg",
   });
+  const [footerVisible, setFooterVisible] = useState(false);
+  useEffect(() => {
+    const footer = document.querySelector(".editorial-footer");
+    if (!footer) return;
+    const observer = new IntersectionObserver(
+      ([entry]) => setFooterVisible(entry.isIntersecting),
+      { rootMargin: "0px 0px 80px 0px" },
+    );
+    observer.observe(footer);
+    return () => observer.disconnect();
+  }, []);
   const [feedback, setFeedback] = useState("");
   useEffect(() => {
     dialog.current?.close();
@@ -80,7 +91,12 @@ export function FloatingActions() {
   ];
   return (
     <>
-      <div className="floating-dock" aria-label="Ações rápidas">
+      <div
+        className={
+          footerVisible ? "floating-dock dock-at-footer" : "floating-dock"
+        }
+        aria-label="Ações rápidas"
+      >
         <button ref={opener} onClick={open} aria-haspopup="dialog">
           <Share2 size={19} aria-hidden="true" />
           Compartilhar

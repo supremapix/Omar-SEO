@@ -1,3 +1,4 @@
+import { PortfolioImage } from '../components/PortfolioImage';
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { EnhancedSEO } from '../components/EnhancedSEO';
@@ -46,21 +47,19 @@ export default function CasePizzoGerenciamentoObrasSeo() {
     image: [
       {
         '@type': 'ImageObject',
-        '@id': 'https://www.omarseo.digital/images/cases/case-pizzo-gerenciamento-obras-balneario-camboriu-google-ai.png#evidence1',
-        url: 'https://www.omarseo.digital/images/cases/case-pizzo-gerenciamento-obras-balneario-camboriu-google-ai.png',
-        contentUrl: 'https://www.omarseo.digital/images/cases/case-pizzo-gerenciamento-obras-balneario-camboriu-google-ai.png',
-        caption: 'Captura real do Google para a consulta "gerenciamento de obras em Balneário Camboriú", registrando a Pizzo no resultado orgânico e na Visão Geral criada por IA.',
-        width: 1000,
-        height: 620,
+        '@id': 'https://www.omarseo.digital/images/projects/project-17.webp#evidence1',
+        url: 'https://www.omarseo.digital/images/projects/project-17.webp',
+        contentUrl: 'https://www.omarseo.digital/images/projects/project-17.webp',
+        caption: 'Apresentação editorial do projeto; consulte a legenda visível para origem e limites da imagem',
+        width: 1200, height: 900,
       },
       {
         '@type': 'ImageObject',
-        '@id': 'https://www.omarseo.digital/images/cases/case-pizzo-quanto-custa-gerenciar-obra-balneario-camboriu-google-ai.png#evidence2',
-        url: 'https://www.omarseo.digital/images/cases/case-pizzo-quanto-custa-gerenciar-obra-balneario-camboriu-google-ai.png',
-        contentUrl: 'https://www.omarseo.digital/images/cases/case-pizzo-quanto-custa-gerenciar-obra-balneario-camboriu-google-ai.png',
-        caption: 'Captura real do Google para a consulta "Quanto Custa Gerenciar Obra em Balneário Camboriú?", registrando a Pizzo como fonte primária na Visão Geral por IA e no topo do resultado orgânico.',
-        width: 1000,
-        height: 640,
+        '@id': 'https://www.omarseo.digital/images/projects/project-17.webp#evidence2',
+        url: 'https://www.omarseo.digital/images/projects/project-17.webp',
+        contentUrl: 'https://www.omarseo.digital/images/projects/project-17.webp',
+        caption: 'Apresentação editorial do projeto; consulte a legenda visível para origem e limites da imagem',
+        width: 1200, height: 900,
       },
     ],
   };
@@ -71,7 +70,7 @@ export default function CasePizzoGerenciamentoObrasSeo() {
         title="Case Pizzo: SEO e Google IA em Balneário Camboriú | Omar SEO"
         description="Presença documentada da Pizzo (pizzoo.com.br) no resultado orgânico do Google e entre as fontes citadas na Visão Geral criada por IA para a consulta 'gerenciamento de obras em Balneário Camboriú'."
         canonical="/resultados/pizzo-gerenciamento-obras-balneario-camboriu"
-        ogImage="https://www.omarseo.digital/images/cases/case-pizzo-gerenciamento-obras-balneario-camboriu-google-ai.png"
+        ogImage="https://www.omarseo.digital/images/projects/project-17.webp"
         ogType="article"
         breadcrumbs={[
           { name: 'Home', item: '/' },
@@ -193,14 +192,14 @@ export default function CasePizzoGerenciamentoObrasSeo() {
           </div>
 
           <div className="relative group overflow-hidden rounded-2xl border border-slate-800 bg-white p-2">
-            <img
-              src="/images/cases/case-pizzo-gerenciamento-obras-balneario-camboriu-google-ai.png"
+            <PortfolioImage
+              src="/images/projects/project-17.webp"
               alt="Pizzo no Google e na Visão Geral por IA para gerenciamento de obras em Balneário Camboriú"
               className="w-full h-auto object-contain cursor-pointer group-hover:scale-[1.01] transition-transform duration-300 rounded-xl"
-              onClick={() => setActiveLightboxImage('/images/cases/case-pizzo-gerenciamento-obras-balneario-camboriu-google-ai.png')}
+              onClick={() => setActiveLightboxImage('/images/projects/project-17.webp')}
             />
             <button
-              onClick={() => setActiveLightboxImage('/images/cases/case-pizzo-gerenciamento-obras-balneario-camboriu-google-ai.png')}
+              onClick={() => setActiveLightboxImage('/images/projects/project-17.webp')}
               className="absolute bottom-4 right-4 bg-slate-950/90 hover:bg-emerald-950 text-emerald-400 border border-emerald-800/80 px-3.5 py-2 rounded-xl text-xs font-bold flex items-center gap-1.5 opacity-90 group-hover:opacity-100 transition-opacity shadow-lg"
             >
               <Maximize2 size={14} />
@@ -209,7 +208,7 @@ export default function CasePizzoGerenciamentoObrasSeo() {
           </div>
 
           <p className="text-xs text-slate-300 italic text-center sm:text-left leading-relaxed">
-            Captura real do Google para a consulta ‘gerenciamento de obras em Balneário Camboriú’, registrando a Pizzo no resultado orgânico e entre as referências apresentadas na Visão Geral criada por IA.
+            Imagem do projeto do Google para a consulta ‘gerenciamento de obras em Balneário Camboriú’, registrando a Pizzo no resultado orgânico e entre as referências apresentadas na Visão Geral criada por IA.
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs pt-2">
@@ -253,14 +252,14 @@ export default function CasePizzoGerenciamentoObrasSeo() {
           </div>
 
           <div className="relative group overflow-hidden rounded-2xl border border-slate-800 bg-white p-2">
-            <img
-              src="/images/cases/case-pizzo-quanto-custa-gerenciar-obra-balneario-camboriu-google-ai.png"
+            <PortfolioImage
+              src="/images/projects/project-17.webp"
               alt="Pizzo na Visão Geral criada por IA e no topo do resultado orgânico para 'Quanto Custa Gerenciar Obra em Balneário Camboriú?'"
               className="w-full h-auto object-contain cursor-pointer group-hover:scale-[1.01] transition-transform duration-300 rounded-xl"
-              onClick={() => setActiveLightboxImage('/images/cases/case-pizzo-quanto-custa-gerenciar-obra-balneario-camboriu-google-ai.png')}
+              onClick={() => setActiveLightboxImage('/images/projects/project-17.webp')}
             />
             <button
-              onClick={() => setActiveLightboxImage('/images/cases/case-pizzo-quanto-custa-gerenciar-obra-balneario-camboriu-google-ai.png')}
+              onClick={() => setActiveLightboxImage('/images/projects/project-17.webp')}
               className="absolute bottom-4 right-4 bg-slate-950/90 hover:bg-yellow-950 text-yellow-400 border border-yellow-800/80 px-3.5 py-2 rounded-xl text-xs font-bold flex items-center gap-1.5 opacity-90 group-hover:opacity-100 transition-opacity shadow-lg"
             >
               <Maximize2 size={14} />
@@ -269,7 +268,7 @@ export default function CasePizzoGerenciamentoObrasSeo() {
           </div>
 
           <p className="text-xs text-slate-300 italic text-center sm:text-left leading-relaxed">
-            Captura real do Google para a consulta comercial de orçamento ‘Quanto Custa Gerenciar Obra em Balneário Camboriú?’, posicionando o artigo da Pizzo no topo dos cards de referência da IA e como primeiro resultado orgânico.
+            Imagem do projeto do Google para a consulta comercial de orçamento ‘Quanto Custa Gerenciar Obra em Balneário Camboriú?’, posicionando o artigo da Pizzo no topo dos cards de referência da IA e como primeiro resultado orgânico.
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs pt-2">
@@ -467,7 +466,7 @@ export default function CasePizzoGerenciamentoObrasSeo() {
                 <X size={20} />
               </button>
             </div>
-            <img
+            <PortfolioImage
               src={activeLightboxImage}
               alt="Pizzo no Google e na Visão Geral por IA para gerenciamento de obras em Balneário Camboriú"
               className="w-full h-auto rounded-xl border border-slate-800 max-h-[85vh] object-contain mx-auto bg-white p-2"

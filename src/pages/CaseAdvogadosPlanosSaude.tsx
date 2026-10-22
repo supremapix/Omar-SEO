@@ -1,3 +1,4 @@
+import { PortfolioImage } from '../components/PortfolioImage';
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { EnhancedSEO } from '../components/EnhancedSEO';
@@ -42,13 +43,12 @@ export default function CaseAdvogadosPlanosSaude() {
     },
     image: {
       '@type': 'ImageObject',
-      '@id': 'https://www.omarseo.digital/images/cases/case-seo-advogados-planos-de-saude-google.png#primaryimage',
-      url: 'https://www.omarseo.digital/images/cases/case-seo-advogados-planos-de-saude-google.png',
-      contentUrl: 'https://www.omarseo.digital/images/cases/case-seo-advogados-planos-de-saude-google.png',
+      '@id': 'https://www.omarseo.digital/images/projects/project-02.webp#primaryimage',
+      url: 'https://www.omarseo.digital/images/projects/project-02.webp',
+      contentUrl: 'https://www.omarseo.digital/images/projects/project-02.webp',
       caption:
-        'Captura real de resultado orgânico observado no Google para a busca advogados planos de saúde',
-      width: 1045,
-      height: 262,
+        'Apresentação editorial do projeto; consulte a legenda visível para origem e limites da imagem',
+      width: 1200, height: 900,
     },
   };
 
@@ -58,7 +58,7 @@ export default function CaseAdvogadosPlanosSaude() {
         title="Case SEO para Advogados de Planos de Saúde | Omar SEO"
         description="Case documentado de presença orgânica na primeira página do Google em consulta competitiva relacionada a advogados de planos de saúde em Curitiba."
         canonical="/resultados/seo-advogados-planos-de-saude"
-        ogImage="https://www.omarseo.digital/images/cases/case-seo-advogados-planos-de-saude-google.png"
+        ogImage="https://www.omarseo.digital/images/projects/project-02.webp"
         ogType="article"
         breadcrumbs={[
           { name: 'Home', item: '/' },
@@ -201,7 +201,7 @@ export default function CaseAdvogadosPlanosSaude() {
         </div>
       </section>
 
-      {/* Seção Inserir a Captura Real */}
+      {/* Seção Inserir a Imagem do projeto */}
       <section className="space-y-4">
         <div className="flex items-center justify-between">
           <h2 className="text-xl sm:text-2xl font-bold font-display text-white flex items-center gap-2">
@@ -220,8 +220,8 @@ export default function CaseAdvogadosPlanosSaude() {
             onClick={() => setIsLightboxOpen(true)}
             className="cursor-zoom-in relative rounded-2xl overflow-hidden border border-slate-800 bg-white group"
           >
-            <img
-              src="/images/cases/case-seo-advogados-planos-de-saude-google.png"
+            <PortfolioImage
+              src="/images/projects/project-02.webp"
               alt="Resultado orgânico na primeira página do Google para advogados planos de saúde"
               width={1045}
               height={262}
@@ -237,7 +237,7 @@ export default function CaseAdvogadosPlanosSaude() {
           </div>
 
           <figcaption className="text-xs text-slate-400 leading-relaxed italic text-center px-2">
-            Captura real de resultado orgânico observado no Google para a busca “advogados planos de saúde”. A posição pode variar conforme data, localização, dispositivo e personalização dos resultados.
+            Imagem do projeto de resultado orgânico observado no Google para a busca “advogados planos de saúde”. A posição pode variar conforme data, localização, dispositivo e personalização dos resultados.
           </figcaption>
         </div>
       </section>
@@ -267,8 +267,8 @@ export default function CaseAdvogadosPlanosSaude() {
             </div>
 
             <div className="bg-white rounded-xl p-2 overflow-auto max-h-[80vh]">
-              <img
-                src="/images/cases/case-seo-advogados-planos-de-saude-google.png"
+              <PortfolioImage
+                src="/images/projects/project-02.webp"
                 alt="Resultado orgânico na primeira página do Google para advogados planos de saúde"
                 className="w-full h-auto min-w-[600px]"
               />
@@ -369,7 +369,7 @@ export default function CaseAdvogadosPlanosSaude() {
               Tipo de Evidência
             </span>
             <span className="text-cyan-300 font-bold text-sm">
-              Captura real da SERP
+              Imagem do projeto da SERP
             </span>
           </div>
         </div>

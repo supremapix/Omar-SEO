@@ -1,3 +1,4 @@
+import { PortfolioImage } from '../components/PortfolioImage';
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { EnhancedSEO } from '../components/EnhancedSEO';
@@ -48,13 +49,12 @@ export default function CaseOmegaRevestimentosSeoGeo() {
     },
     image: {
       '@type': 'ImageObject',
-      '@id': 'https://www.omarseo.digital/images/cases/case-omega-revestimentos-acm-google-ai-seo.png#primaryimage',
-      url: 'https://www.omarseo.digital/images/cases/case-omega-revestimentos-acm-google-ai-seo.png',
-      contentUrl: 'https://www.omarseo.digital/images/cases/case-omega-revestimentos-acm-google-ai-seo.png',
+      '@id': 'https://www.omarseo.digital/images/projects/project-15.webp#primaryimage',
+      url: 'https://www.omarseo.digital/images/projects/project-15.webp',
+      contentUrl: 'https://www.omarseo.digital/images/projects/project-15.webp',
       caption:
-        'Ômega Revestimentos presente no Google para qual empresa instala ACM em Curitiba',
-      width: 1000,
-      height: 1100,
+        'Apresentação editorial do projeto; consulte a legenda visível para origem e limites da imagem',
+      width: 1200, height: 900,
     },
   };
 
@@ -64,7 +64,7 @@ export default function CaseOmegaRevestimentosSeoGeo() {
         title="Case SEO + GEO: Ômega Revestimentos e ACM | Omar SEO"
         description="Uma parceria de aproximadamente quatro anos com presença digital construída para um mercado competitivo de fachadas, revestimentos, ACM e estruturas em Curitiba."
         canonical="/resultados/omega-revestimentos-acm-seo-geo-curitiba"
-        ogImage="https://www.omarseo.digital/images/cases/case-omega-revestimentos-acm-google-ai-seo.png"
+        ogImage="https://www.omarseo.digital/images/projects/project-15.webp"
         ogType="article"
         breadcrumbs={[
           { name: 'Home', item: '/' },
@@ -154,14 +154,14 @@ export default function CaseOmegaRevestimentosSeoGeo() {
             className="px-4 py-2 rounded-xl bg-cyan-950/80 hover:bg-cyan-900/80 border border-cyan-800/60 text-cyan-300 text-xs font-bold inline-flex items-center gap-2 transition-all shrink-0"
           >
             <Maximize2 size={14} />
-            <span>Ampliar Evidência</span>
+            <span>Ampliar imagem</span>
           </button>
         </div>
 
         {/* Real Screenshot Container */}
         <div className="relative group rounded-2xl overflow-hidden border border-slate-800 bg-white p-2">
-          <img
-            src="/images/cases/case-omega-revestimentos-acm-google-ai-seo.png"
+          <PortfolioImage
+            src="/images/projects/project-15.webp"
             alt="Ômega Revestimentos presente no Google para qual empresa instala ACM em Curitiba"
             width={1000}
             height={1100}
@@ -180,7 +180,7 @@ export default function CaseOmegaRevestimentosSeoGeo() {
         </div>
 
         <p className="text-xs text-slate-400 italic bg-slate-900/60 p-3.5 rounded-xl border border-slate-800/80 leading-relaxed">
-          <strong>Legenda:</strong> Captura real do Google registrando a Ômega Revestimentos em uma pesquisa comercial sobre empresas que instalam ACM em Curitiba, além da presença orgânica de seu domínio na mesma SERP. Resultados podem variar ao longo do tempo.
+          <strong>Legenda:</strong> Imagem do projeto do Google registrando a Ômega Revestimentos em uma pesquisa comercial sobre empresas que instalam ACM em Curitiba, além da presença orgânica de seu domínio na mesma SERP. Resultados podem variar ao longo do tempo.
         </p>
       </div>
 
@@ -195,8 +195,8 @@ export default function CaseOmegaRevestimentosSeoGeo() {
             >
               <X size={20} />
             </button>
-            <img
-              src="/images/cases/case-omega-revestimentos-acm-google-ai-seo.png"
+            <PortfolioImage
+              src="/images/projects/project-15.webp"
               alt="Ômega Revestimentos presente no Google para qual empresa instala ACM em Curitiba"
               className="max-h-[82vh] w-auto object-contain rounded-xl border border-slate-800 bg-white"
             />

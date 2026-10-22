@@ -1,3 +1,4 @@
+import { PortfolioImage } from '../components/PortfolioImage';
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { EnhancedSEO } from '../components/EnhancedSEO';
@@ -41,13 +42,12 @@ export default function CaseShopcellCelulares() {
     },
     image: {
       '@type': 'ImageObject',
-      '@id': 'https://www.omarseo.digital/images/cases/case-shopcell-celulares-em-curitiba-google.png#primaryimage',
-      url: 'https://www.omarseo.digital/images/cases/case-shopcell-celulares-em-curitiba-google.png',
-      contentUrl: 'https://www.omarseo.digital/images/cases/case-shopcell-celulares-em-curitiba-google.png',
+      '@id': 'https://www.omarseo.digital/images/projects/project-21.webp#primaryimage',
+      url: 'https://www.omarseo.digital/images/projects/project-21.webp',
+      contentUrl: 'https://www.omarseo.digital/images/projects/project-21.webp',
       caption:
-        'Shopcell posicionada no Google para celulares em Curitiba',
-      width: 1080,
-      height: 390,
+        'Apresentação editorial do projeto; consulte a legenda visível para origem e limites da imagem',
+      width: 1200, height: 900,
     },
   };
 
@@ -57,7 +57,7 @@ export default function CaseShopcellCelulares() {
         title="Case SEO: Celulares em Curitiba | Shopcell + Omar SEO"
         description="Resultado orgânico documentado em uma busca comercial altamente competitiva do varejo de celulares em Curitiba."
         canonical="/resultados/seo-celulares-curitiba-shopcell"
-        ogImage="https://www.omarseo.digital/images/cases/case-shopcell-celulares-em-curitiba-google.png"
+        ogImage="https://www.omarseo.digital/images/projects/project-21.webp"
         ogType="article"
         breadcrumbs={[
           { name: 'Home', item: '/' },
@@ -202,7 +202,7 @@ export default function CaseShopcellCelulares() {
         </div>
       </section>
 
-      {/* Captura de Evidência Factual */}
+      {/* Imagem do projeto Factual */}
       <section className="space-y-4">
         <div className="flex items-center justify-between">
           <h2 className="text-xl sm:text-2xl font-bold font-display text-white flex items-center gap-2">
@@ -221,8 +221,8 @@ export default function CaseShopcellCelulares() {
             onClick={() => setIsLightboxOpen(true)}
             className="cursor-zoom-in relative rounded-2xl overflow-hidden border border-slate-800 bg-white group"
           >
-            <img
-              src="/images/cases/case-shopcell-celulares-em-curitiba-google.png"
+            <PortfolioImage
+              src="/images/projects/project-21.webp"
               alt="Shopcell posicionada no Google para celulares em Curitiba"
               width={1080}
               height={390}
@@ -238,7 +238,7 @@ export default function CaseShopcellCelulares() {
           </div>
 
           <figcaption className="text-xs text-slate-400 leading-relaxed italic text-center px-2">
-            Captura real do Google registrando a Shopcell para a pesquisa “celulares em Curitiba”. Resultados podem variar conforme data, localização, dispositivo e personalização.
+            Imagem do projeto do Google registrando a Shopcell para a pesquisa “celulares em Curitiba”. Resultados podem variar conforme data, localização, dispositivo e personalização.
           </figcaption>
         </div>
       </section>
@@ -268,8 +268,8 @@ export default function CaseShopcellCelulares() {
             </div>
 
             <div className="bg-white rounded-xl p-2 border border-slate-700 overflow-auto max-h-[75vh] flex justify-center">
-              <img
-                src="/images/cases/case-shopcell-celulares-em-curitiba-google.png"
+              <PortfolioImage
+                src="/images/projects/project-21.webp"
                 alt="Shopcell posicionada no Google para celulares em Curitiba"
                 className="w-full h-auto object-contain"
               />

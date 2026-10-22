@@ -1,3 +1,4 @@
+import { PortfolioImage } from '../components/PortfolioImage';
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import {
@@ -52,8 +53,8 @@ export default function CaseAlumimecEstruturasMetalicasSeo() {
     image: [
       {
         '@type': 'ImageObject',
-        contentUrl: 'https://www.omarseo.digital/images/cases/case-alumimec-estruturas-metalicas-sao-jose-dos-pinhais-google.png',
-        caption: 'Alumimec no Google para estruturas de galpões em São José dos Pinhais',
+        contentUrl: 'https://www.omarseo.digital/images/projects/project-04.webp',
+        caption: 'Apresentação editorial do projeto; consulte a legenda visível para origem e limites da imagem',
       },
     ],
   };
@@ -100,7 +101,7 @@ export default function CaseAlumimecEstruturasMetalicasSeo() {
 
       <main className="relative z-10 pt-28 pb-20 bg-slate-950 text-slate-100 min-h-screen">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
-          
+
           {/* Breadcrumb Navigation */}
           <nav className="flex items-center gap-2 text-xs text-slate-400 font-mono">
             <Link to="/" className="hover:text-emerald-400 transition-colors">Início</Link>
@@ -166,25 +167,25 @@ export default function CaseAlumimecEstruturasMetalicasSeo() {
             </div>
 
             <div className="relative group bg-slate-900 rounded-2xl p-2 sm:p-4 border border-emerald-500/30 overflow-hidden shadow-[0_0_30px_rgba(16,185,129,0.1)]">
-              <div 
+              <div
                 onClick={() => setIsLightboxOpen(true)}
                 className="cursor-pointer overflow-hidden rounded-xl bg-white relative"
               >
-                <img
-                  src="/images/cases/case-alumimec-estruturas-metalicas-sao-jose-dos-pinhais-google.png"
+                <PortfolioImage
+                  src="/images/projects/project-04.webp"
                   alt="Alumimec no Google para estruturas de galpões em São José dos Pinhais"
                   className="w-full h-auto object-contain max-h-[700px] mx-auto transition-transform duration-300 group-hover:scale-[1.01]"
                   loading="eager"
                 />
                 <div className="absolute inset-0 bg-slate-950/0 group-hover:bg-slate-950/20 transition-all flex items-center justify-center">
                   <span className="opacity-0 group-hover:opacity-100 px-4 py-2 rounded-lg bg-slate-900/90 text-emerald-400 font-bold text-xs flex items-center gap-2 shadow-xl border border-emerald-500/50 backdrop-blur-sm transition-opacity">
-                    <Maximize2 size={14} /> Ampliar Evidência
+                    <Maximize2 size={14} /> Ampliar imagem
                   </span>
                 </div>
               </div>
 
               <p className="mt-3 text-xs text-slate-400 text-center font-mono">
-                Captura real do Google para a consulta ‘quem faz estrutura para galpoes em sao jose dos pinhais?’, registrando a Alumimec no resultado orgânico e na seção local apresentada pelo Google.
+                Imagem do projeto do Google para a consulta ‘quem faz estrutura para galpoes em sao jose dos pinhais?’, registrando a Alumimec no resultado orgânico e na seção local apresentada pelo Google.
               </p>
             </div>
           </section>
@@ -424,8 +425,8 @@ export default function CaseAlumimecEstruturasMetalicasSeo() {
             </div>
 
             <div className="overflow-auto flex-1 flex items-center justify-center bg-white rounded-xl p-2">
-              <img
-                src="/images/cases/case-alumimec-estruturas-metalicas-sao-jose-dos-pinhais-google.png"
+              <PortfolioImage
+                src="/images/projects/project-04.webp"
                 alt="Alumimec no Google para estruturas de galpões em São José dos Pinhais (Evidência Completa)"
                 className="w-full h-auto object-contain max-h-[75vh]"
               />
