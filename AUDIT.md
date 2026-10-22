@@ -49,3 +49,20 @@ Os cases existentes são registros publicados pelo site; capturas não comprovam
 
 ## Ajuste identificado em produção
 A opção cleanUrls da Vercel priorizava public/seo-geo-aio.html (legado) sobre seo-geo-aio/index.html. Removido o HTML legado e mantido redirect explícito da URL .html. Acrescentada verificação de colisão ao teste para evitar recorrência.
+
+## Segundo lote: padrão visual em todas as páginas
+- Inventário detalhado em ROUTE_INVENTORY.md: 168 rotas canônicas, mais a página 404. PageFrame aplica o sistema editorial compartilhado no cliente e no pré-render: cores, tipografia, hierarquia, cartões, formulários, cabeçalho, rodapé e links.
+- Templates de serviços (8), intenções comerciais (16) e regiões (93) reorganizados por contexto do leitor, escopo, processo, perguntas e próximo passo. Conteúdo útil e URLs preservados. Não foram criadas novas páginas regionais; elas explicam que não representam escritórios adicionais.
+- ServiceFlow em 10 templates: ServicePage, CommercialIntentPage, LocationPage, SeoCompleto, SeoLocal, GoogleMaps, GeoIa, SeoTecnico, AuditoriaSeo e Metodo. Cinco contextos (estratégia, técnico, local, conteúdo e conversão), quatro etapas, seleção/avanço manual, explicações no HTML, teclado e reduced motion. Sem reprodução automática ou números ilustrativos de resultado.
+- FloatingActions único e global: WhatsApp publicado do Omar, seis destinos de compartilhamento e copiar link. Canonical/título/OG da página atual; imagem absoluta para Pinterest; diálogo nativo com Escape e retorno de foco; cópia só anuncia sucesso após confirmação, com seleção manual em caso de falha.
+- Foram corrigidos contraste de etiquetas, quebra de conteúdo em telas estreitas e associação explícita dos campos aos rótulos. A animação genérica antiga deixou de ser renderizada em Método.
+- Carplus: título, resumo e identificação de imagens ajustados para relato/ilustração do acervo, sem apresentar reconstrução como prova atual de ranking.
+
+## Verificações do segundo lote
+- Build e TypeScript passaram: 168 rotas + 404.
+- verify-design.mjs verifica todas as rotas sem JS: HTTP, sistema visual, ausência dos antigos painéis escuros, overflow e ações globais; também executa axe em 23 páginas representativas a 390 px.
+- verify-matrix.mjs: 28 cenários (14 páginas a 320/1440 px), sem overflow ou imagens quebradas.
+- verify-interactions.mjs: 320/390/1440 px, avanço do fluxo, seis links codificados corretamente, Pinterest absoluto, cópia bem-sucedida e fallback de falha, Escape/foco e WhatsApp correto. Nenhuma publicação, mensagem ou formulário real enviado. Nenhuma violação axe encontrada no diálogo.
+- Relatórios locais ficam em ../qa/v2. A inspeção automatizada e amostral não equivale a certificação de acessibilidade nem comprova Core Web Vitals de campo.
+
+O novo padrão visual cobre todo o inventário. A pendência editorial mencionada no primeiro lote refere-se à checagem independente de alegações históricas e peculiaridades locais, não a páginas ainda com o tema antigo. Não há dados privados de Search Console/Analytics disponíveis para comprovar posicionamento ou citações por IA.

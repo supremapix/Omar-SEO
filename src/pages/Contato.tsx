@@ -141,11 +141,11 @@ export default function Contato() {
           <form onSubmit={handleSubmit} className="space-y-4">
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div>
-                <label className="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-1 flex items-center gap-1">
+                <label htmlFor="contato-1" className="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-1 flex items-center gap-1">
                   <User size={13} className="text-blue-400" />
                   <span>Seu Nome *</span>
                 </label>
-                <input
+                <input id="contato-1"
                   type="text"
                   required
                   placeholder="Seu nome completo"
@@ -156,11 +156,11 @@ export default function Contato() {
               </div>
 
               <div>
-                <label className="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-1 flex items-center gap-1">
+                <label htmlFor="contato-2" className="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-1 flex items-center gap-1">
                   <Building2 size={13} className="text-blue-400" />
                   <span>Sua Empresa</span>
                 </label>
-                <input
+                <input id="contato-2"
                   type="text"
                   placeholder="Nome da sua empresa"
                   value={form.empresa}
@@ -172,11 +172,11 @@ export default function Contato() {
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div>
-                <label className="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-1 flex items-center gap-1">
+                <label htmlFor="contato-3" className="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-1 flex items-center gap-1">
                   <Mail size={13} className="text-blue-400" />
                   <span>E-mail *</span>
                 </label>
-                <input
+                <input id="contato-3"
                   type="email"
                   required
                   placeholder="seuemail@empresa.com.br"
@@ -187,11 +187,11 @@ export default function Contato() {
               </div>
 
               <div>
-                <label className="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-1 flex items-center gap-1">
+                <label htmlFor="contato-4" className="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-1 flex items-center gap-1">
                   <Phone size={13} className="text-emerald-400" />
                   <span>Telefone / WhatsApp *</span>
                 </label>
-                <input
+                <input id="contato-4"
                   type="tel"
                   required
                   placeholder="(41) 99999-9999"
@@ -203,11 +203,11 @@ export default function Contato() {
             </div>
 
             <div>
-              <label className="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-1 flex items-center gap-1">
+              <label htmlFor="contato-5" className="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-1 flex items-center gap-1">
                 <Globe size={13} className="text-cyan-400" />
                 <span>Endereço do Seu Site (URL)</span>
               </label>
-              <input
+              <input id="contato-5"
                 type="url"
                 placeholder="https://suaempresa.com.br"
                 value={form.site}
@@ -217,10 +217,10 @@ export default function Contato() {
             </div>
 
             <div>
-              <label className="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-1">
+              <label htmlFor="contato-6" className="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-1">
                 Sua Mensagem ou Dúvida *
               </label>
-              <textarea
+              <textarea id="contato-6"
                 rows={4}
                 required
                 placeholder="Descreva seu projeto, dúvidas ou objetivos de SEO/GEO..."

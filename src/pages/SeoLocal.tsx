@@ -1,3 +1,5 @@
+import { ServiceFlow } from '../components/ServiceFlow';
+import { PlainTerms } from '../components/PageFrame';
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { EnhancedSEO } from '../components/EnhancedSEO';
@@ -45,6 +47,8 @@ export default function SeoLocal() {
         </div>
       </div>
 
+      <PlainTerms/>
+      <ServiceFlow/>
       {/* Content Grid */}
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
         <div className="lg:col-span-7 space-y-6 text-slate-300 text-sm sm:text-base leading-relaxed">
@@ -78,7 +82,7 @@ export default function SeoLocal() {
           </div>
 
           <h3 className="text-xl font-bold font-display text-white">
-            Domine Seu Bairro no Google
+            Explique seu atendimento local
           </h3>
 
           <p className="text-xs sm:text-sm text-slate-400 leading-relaxed">

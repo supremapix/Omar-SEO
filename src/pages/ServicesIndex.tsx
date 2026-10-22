@@ -82,7 +82,7 @@ export default function ServicesIndex() {
               Como Ganhar Mercado: SEO + GEO + AIO
             </h2>
             <p className="text-slate-300 text-xs sm:text-sm max-w-2xl leading-relaxed">
-              Entenda como unificamos o SEO tradicional, a otimização generativa para ChatGPT/Gemini e a arquitetura semântica para expandir seu market share com previsibilidade.
+              Entenda como unificamos o SEO tradicional, a otimização generativa para ChatGPT/Gemini e a arquitetura semântica para expandir seu presença no mercado com previsibilidade.
             </p>
           </div>
 

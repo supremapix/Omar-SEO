@@ -1,3 +1,5 @@
+import { ServiceFlow } from '../components/ServiceFlow';
+import { PlainTerms } from '../components/PageFrame';
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { EnhancedSEO } from '../components/EnhancedSEO';
@@ -10,10 +12,10 @@ import { Search, CheckCircle2, ArrowRight, Zap, Target, Layers } from 'lucide-re
 export default function SeoCompleto() {
   const features = [
     'Pesquisa Semântica de Palavras-Chave de Alta Intenção',
-    'Otimização On-Page Completa (H1, H2, Title, Meta Tags)',
-    'Arquitetura da Informação e Links Internos (Silo Structure)',
-    'Injeção de Schema.org JSON-LD para Serviços e Produtos',
-    'Ajustes de UX/UI para Aumento da Taxa de Conversão (CRO)',
+    'Títulos, descrições e conteúdo das páginas',
+    'Organização de páginas e links internos',
+    'Dados estruturados Schema.org para Serviços e Produtos',
+    'Melhorias na navegação e no caminho até o contato',
     'Acompanhamento de Posições no Google Search Console',
   ];
 
@@ -51,19 +53,21 @@ export default function SeoCompleto() {
         <div className="relative z-10 text-center max-w-3xl mx-auto space-y-4">
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-950/80 border border-blue-800 text-blue-300 font-bold text-xs uppercase tracking-wider">
             <Search size={14} />
-            <span>Estratégia Holística de Ranqueamento</span>
+            <span>SEO: técnica, conteúdo e experiência</span>
           </div>
 
           <h1 className="text-3xl sm:text-5xl font-black font-display text-white tracking-tight">
-            SEO Completo para Sua Empresa Dominar as Pesquisas no Google
+            SEO para organizar seu site e melhorar sua presença nas buscas
           </h1>
 
           <p className="text-slate-300 text-sm sm:text-base leading-relaxed">
-            Transformamos o seu site em uma estrutura altamente legível e relevante para os motores de busca, garantindo que potenciais clientes te encontrem no momento exato em que pesquisarem pelos seus produtos e serviços.
+            Transformamos o seu site em uma estrutura altamente legível e relevante para os motores de busca, para facilitar a descoberta dos seus produtos e serviços, sem garantir posições.
           </p>
         </div>
       </div>
 
+      <PlainTerms/>
+      <ServiceFlow/>
       {/* Main Content Grid */}
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
         <div className="lg:col-span-7 space-y-6 text-slate-300 text-sm sm:text-base leading-relaxed">

@@ -1,202 +1,123 @@
-import React from 'react';
-import { useLocation, Link } from 'react-router-dom';
-import { EnhancedSEO } from '../components/EnhancedSEO';
-import { getLocationData } from '../data/locations';
-import { MapPin, Building2, Search, ArrowRight, Zap, CheckCircle2, HelpCircle } from 'lucide-react';
-import { NotFoundView } from './NotFound';
-import { SectionDivider } from '../components/SectionDivider';
-import { InternalLinkCluster } from '../components/InternalLinkCluster';
-import ConstellationGrid from '../components/ui/constellation-grid';
-import { BackgroundVideo } from '../components/BackgroundVideo';
-
+import React from "react";
+import { Link, useLocation } from "react-router-dom";
+import { EnhancedSEO } from "../components/EnhancedSEO";
+import { ServiceFlow } from "../components/ServiceFlow";
+import { PlainTerms } from "../components/PageFrame";
+import { getLocationData } from "../data/locations";
 export default function LocationPage() {
-  const location = useLocation();
-  const rawSlug = location.pathname.replace(/^\//, ''); // e.g. "seo-batel"
-
-  if (!rawSlug.startsWith('seo-')) {
-    return <NotFoundView />;
-  }
-
-  const locData = getLocationData(rawSlug);
-
-  const serviceSchema = {
-    '@context': 'https://schema.org',
-    '@type': 'Service',
-    name: `SEO e Visibilidade Digital em ${locData.name}`,
-    description: locData.shortDesc,
-    provider: {
-      '@type': 'ProfessionalService',
-      name: 'Omar SEO',
-      url: 'https://www.omarseo.digital',
-    },
-    areaServed: {
-      '@type': 'AdministrativeArea',
-      name: `${locData.name}, ${locData.regionName}`,
-    },
-  };
-
-  const faqSchema = {
-    '@context': 'https://schema.org',
-    '@type': 'FAQPage',
-    mainEntity: locData.faqs.map((f) => ({
-      '@type': 'Question',
-      name: f.question,
-      acceptedAnswer: {
-        '@type': 'Answer',
-        text: f.answer,
-      },
-    })),
-  };
-
+  const { pathname } = useLocation();
+  const data = getLocationData(pathname.slice(1));
   return (
-    <div className="pt-28 pb-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto space-y-16">
+    <article className="reader-page wrap">
       <EnhancedSEO
-        title={`SEO em ${locData.name} | Especialista em Google Maps e Busca - Omar SEO`}
-        description={`Estratégia de SEO local, Google Maps e visibilidade digital para empresas em ${locData.name}. Destaque sua marca na região com Omar SEO.`}
-        canonical={`/${rawSlug}`}
-        geo={{ placeName: locData.name, lat: locData.lat, lng: locData.lng }}
+        title={`SEO em ${data.name} | Consultoria Omar SEO`}
+        description={data.shortDesc}
+        canonical={pathname}
         breadcrumbs={[
-          { name: 'Home', item: '/' },
-          { name: 'SEO Local', item: '/seo-local' },
-          { name: locData.name, item: `/${rawSlug}` },
+          { name: "Início", item: "/" },
+          { name: "SEO local", item: "/seo-local" },
+          { name: data.name, item: pathname },
         ]}
-        schema={[serviceSchema, faqSchema]}
+        schema={[
+          {
+            "@context": "https://schema.org",
+            "@type": "Service",
+            name: `Consultoria de SEO em ${data.name}`,
+            provider: { "@id": "https://www.omarseo.digital/#localbusiness" },
+            areaServed: { "@type": "AdministrativeArea", name: data.name },
+          },
+        ]}
       />
-
-      {/* Hero */}
-      <div className="relative p-8 sm:p-12 rounded-3xl bg-slate-950/80 border border-emerald-500/30 shadow-[0_0_40px_rgba(16,185,129,0.15)] overflow-hidden">
-        <BackgroundVideo
-          src="https://img.supremasite.com.br/seo-omar.mp4"
-          opacity={0.40}
-          overlayClassName="bg-gradient-to-b from-[#0a0a0f]/70 via-[#0a0a0f]/50 to-[#0a0a0f]/80"
-        />
-        <ConstellationGrid className="absolute inset-0 z-0 opacity-40 pointer-events-none" />
-        <div className="relative z-10 text-center max-w-3xl mx-auto space-y-4">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-950/80 border border-emerald-800 text-emerald-300 font-bold text-xs uppercase tracking-wider">
-            <MapPin size={14} />
-            <span>{locData.regionName}</span>
-          </div>
-
-          <h1 className="text-3xl sm:text-5xl font-black font-display text-white tracking-tight">
-            SEO e Posicionamento no Google em {locData.name}
-          </h1>
-
-          <p className="text-slate-300 text-sm sm:text-base leading-relaxed">
-            {locData.shortDesc}
-          </p>
-        </div>
-      </div>
-
-      {/* Content Grid */}
-      <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
-        <div className="lg:col-span-7 space-y-6 text-slate-300 text-sm sm:text-base leading-relaxed">
-          <h2 className="text-2xl font-bold font-display text-white">
-            Estratégia de SEO Geolocalizada para {locData.name}
-          </h2>
-
-          <p>{locData.fullDesc}</p>
-
-          <div className="p-6 rounded-2xl bg-slate-900/80 border border-slate-800 space-y-2">
-            <h3 className="text-sm font-bold text-white uppercase tracking-wider flex items-center gap-2">
-              <Building2 className="text-emerald-400" size={16} />
-              <span>Perfil Comercial Característico em {locData.name}</span>
-            </h3>
-            <p className="text-xs text-slate-300 leading-relaxed">{locData.commercialProfile}</p>
-          </div>
-
-          <div className="space-y-3 pt-2">
-            <h3 className="text-base font-bold font-display text-white flex items-center gap-2">
-              <Search className="text-blue-400" size={18} />
-              <span>Exemplos de Buscas Locais no Google em {locData.name}:</span>
-            </h3>
-
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
-              {locData.typicalSearches.map((s) => (
-                <div key={s} className="p-3 rounded-xl bg-slate-950 border border-slate-800 text-xs font-mono text-slate-300 flex items-center gap-2">
-                  <span className="text-emerald-400">✓</span>
-                  <span>"{s}"</span>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-
-        {/* Sidebar Call to Action */}
-        <div className="lg:col-span-5 bg-[#0f1118] border border-slate-800 rounded-3xl p-6 sm:p-8 shadow-2xl space-y-6">
-          <div className="p-3 rounded-2xl bg-emerald-950/60 border border-emerald-800/60 text-emerald-400 inline-block">
-            <Zap size={24} />
-          </div>
-
-          <h3 className="text-xl font-bold font-display text-white">
-            Apareça no Google em {locData.name}
-          </h3>
-
-          <p className="text-xs sm:text-sm text-slate-400 leading-relaxed">
-            Agende uma análise geográfica gratuita da sua marca em <strong className="text-white">{locData.name}</strong> e entorno.
-          </p>
-
-          <a
-            href="https://wa.me/5541992721004"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="btn-emerald-wa btn-shimmer w-full py-3.5 px-4"
-          >
-            <span>Falar no WhatsApp</span>
-            <ArrowRight size={15} />
-          </a>
-        </div>
-      </div>
-
-      {/* Cluster Interlinking Nearby Locations */}
-      {locData.nearbySlugs && locData.nearbySlugs.length > 0 && (
-        <div className="pt-8 border-t border-slate-800/80 space-y-4">
-          <h2 className="text-xl font-bold font-display text-white">
-            Regiões e Bairros Vizinhos de {locData.name}:
-          </h2>
-
-          <div className="flex flex-wrap gap-2 text-xs">
-            {locData.nearbySlugs.map((slug) => {
-              const formattedName = slug
-                .split('-')
-                .map((w) => w.charAt(0).toUpperCase() + w.slice(1))
-                .join(' ');
-
-              return (
-                <Link
-                  key={slug}
-                  to={`/seo-${slug}`}
-                  className="px-3 py-2 rounded-xl bg-slate-950 border border-slate-800 hover:border-emerald-500 hover:text-emerald-400 transition-all font-semibold"
-                >
-                  SEO em {formattedName}
-                </Link>
-              );
-            })}
-          </div>
-        </div>
-      )}
-
-      <SectionDivider color="emerald" />
-
-      {/* Internal SEO Link Cluster */}
-      <InternalLinkCluster category="all" title={`Rede de SEO e Soluções para ${locData.name}`} />
-
-      <SectionDivider color="cyan" />
-
-      {/* Local FAQs */}
-      {locData.faqs && locData.faqs.length > 0 && (
-        <div className="pt-8 border-t border-slate-800/80 max-w-4xl mx-auto space-y-4">
-          <h2 className="text-2xl font-bold font-display text-white text-center mb-6 flex items-center justify-center gap-2">
-            <HelpCircle className="text-emerald-400" />
-            <span>Perguntas Frequentes — SEO em {locData.name}</span>
-          </h2>
-          {locData.faqs.map((faq, idx) => (
-            <div key={idx} className="p-6 rounded-2xl bg-slate-950 border border-slate-800">
-              <h3 className="text-base font-bold text-white font-display mb-2">{faq.question}</h3>
-              <p className="text-xs sm:text-sm text-slate-300">{faq.answer}</p>
-            </div>
+      <header className="reader-header">
+        <p className="eyebrow">ATENDIMENTO REGIONAL / {data.regionName}</p>
+        <h1>
+          SEO em {data.name}
+          <br />
+          <em>com informações claras para seus clientes.</em>
+        </h1>
+        <p className="reader-lead">{data.shortDesc}</p>
+        <a className="solid-link" href="https://wa.me/5541992721004">
+          Conversar sobre meu negócio ↗
+        </a>
+      </header>
+      <section className="reader-fit">
+        <h2>Para negócios que atendem esta região</h2>
+        <p>
+          SEO local ajuda a organizar informações de serviços, contato e
+          atendimento. Esta página descreve um contexto de atuação; não
+          representa um escritório ou endereço adicional da Omar SEO.
+        </p>
+        <p>
+          Antes de propor mudanças, precisamos entender onde sua empresa
+          realmente atende e quais serviços oferece.
+        </p>
+      </section>
+      <PlainTerms />
+      <ServiceFlow />
+      <section className="reader-copy">
+        <p className="eyebrow">CONTEXTO REGIONAL</p>
+        <h2>O que observar em {data.name}</h2>
+        <p>{data.fullDesc}</p>
+        <h3>Contexto comercial apresentado</h3>
+        <p>{data.commercialProfile}</p>
+      </section>
+      <section>
+        <h2>Exemplos de perguntas e buscas</h2>
+        <p>
+          Os exemplos abaixo ajudam a discutir intenção de busca. Não
+          representam volume de pesquisas, posição atual ou demanda comprovada.
+        </p>
+        <ul className="reader-searches">
+          {data.typicalSearches.map((q) => (
+            <li key={q}>{q}</li>
           ))}
-        </div>
+        </ul>
+      </section>
+      <section className="reader-limits">
+        <h2>O que pode ser trabalhado</h2>
+        <p>
+          Consistência dos dados de atendimento, páginas de serviços, navegação,
+          clareza do conteúdo e Perfil da Empresa no Google, conforme a
+          elegibilidade do negócio. A posição no mapa e as recomendações de IA
+          não são garantidas.
+        </p>
+        <Link className="text-link" to="/servicos/seo-local">
+          Entenda o serviço de SEO local →
+        </Link>
+      </section>
+      <section className="reader-faq">
+        <h2>Dúvidas sobre SEO em {data.name}</h2>
+        {data.faqs.map((f) => (
+          <details key={f.question}>
+            <summary>{f.question}</summary>
+            <p>{f.answer}</p>
+          </details>
+        ))}
+      </section>
+      {data.nearbySlugs.length > 0 && (
+        <nav className="reader-related" aria-label="Outras regiões">
+          <h2>Outras regiões no site</h2>
+          {data.nearbySlugs.map((slug) => (
+            <Link key={slug} to={"/seo-" + slug}>
+              {getLocationData("seo-" + slug).name} →
+            </Link>
+          ))}
+        </nav>
       )}
-    </div>
+      <section className="reader-next">
+        <p className="eyebrow">PRÓXIMO PASSO</p>
+        <h2>Conte onde sua empresa atende.</h2>
+        <p>
+          Envie o site e descreva seus serviços. O diagnóstico deve partir da
+          operação real, sem criar áreas de atendimento fictícias.
+        </p>
+        <Link className="solid-link" to="/contato">
+          Falar com Omar ↗
+        </Link>
+        <Link className="text-link" to="/auditoria-seo">
+          Conhecer a auditoria SEO →
+        </Link>
+      </section>
+    </article>
   );
 }

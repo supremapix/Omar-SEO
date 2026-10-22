@@ -71,7 +71,7 @@ export default function Sobre() {
         <div className="relative z-10 text-center max-w-3xl mx-auto space-y-4">
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-950/90 border border-cyan-500/40 text-cyan-300 text-xs font-bold uppercase tracking-widest shadow-[0_0_15px_rgba(34,211,238,0.25)]">
             <User size={14} className="text-cyan-400" />
-            <span>Engenharia de Visibilidade Digital</span>
+            <span>Estratégia de presença digital</span>
           </div>
 
           <h1 className="text-3xl sm:text-5xl font-black font-display text-white tracking-tight">

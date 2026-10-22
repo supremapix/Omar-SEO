@@ -9,6 +9,8 @@ import { getAllRoutes } from "../src/config/routes";
 import { getAllLocationSlugs, getLocationData } from "../src/data/locations";
 import { COMMERCIAL_INTENTS_DATA } from "../src/data/commercialIntents";
 
+import { PageFrame } from '../src/components/PageFrame';
+import { FloatingActions } from '../src/components/FloatingActions';
 import { Header } from "../src/components/Header";
 import { Footer } from "../src/components/Footer";
 
@@ -189,9 +191,9 @@ async function prerender() {
           <div className="min-h-screen flex flex-col bg-[#0a0a0f] text-slate-100">
             <Header />
             <main id="main-content" tabIndex={-1} className="flex-grow">
-              {component}
+              <PageFrame>{component}</PageFrame>
             </main>
-            <Footer />
+            <Footer /><FloatingActions />
           </div>
         </MemoryRouter>
       </HelmetProvider>,

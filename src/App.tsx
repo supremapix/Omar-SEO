@@ -2,6 +2,7 @@ import React, { Suspense, lazy, useEffect } from 'react';
 import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
 import { HelmetProvider } from 'react-helmet-async';
 
+import { PageFrame } from './components/PageFrame';
 import { Header } from './components/Header';
 import { Footer } from './components/Footer';
 import { FloatingActions } from './components/FloatingActions';
@@ -81,9 +82,7 @@ function AnimatedRoutes() {
   const location = useLocation();
 
   return (
-    <>
-      <div>
-        <Routes location={location}>
+    <Routes location={location}>
           {/* Main Routes */}
           <Route path="/" element={<Home />} />
           <Route path="/servicos" element={<ServicesIndex />} />
@@ -149,9 +148,7 @@ function AnimatedRoutes() {
 
           {/* Catch-All Route with fallback verification */}
           <Route path="*" element={<CatchAllRouteHandler />} />
-        </Routes>
-      </div>
-    </>
+    </Routes>
   );
 }
 
@@ -204,11 +201,12 @@ export default function App() {
 
           <main id="main-content" tabIndex={-1} className="flex-grow">
             <Suspense fallback={<PageLoader />}>
-              <AnimatedRoutes />
+              <PageFrame><AnimatedRoutes /></PageFrame>
             </Suspense>
           </main>
 
           <Footer />
+          <FloatingActions />
 
         </div>
       </BrowserRouter>

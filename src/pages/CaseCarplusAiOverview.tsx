@@ -29,9 +29,9 @@ export default function CaseCarplusAiOverview() {
     '@context': 'https://schema.org',
     '@type': 'Article',
     '@id': 'https://www.omarseo.digital/resultados/carplus-google-ai-overview-pneus-curitiba#article',
-    headline: 'Case SEO + GEO + AIO: Carplus no Topo do Google em Curitiba (Tripla Presença)',
+    headline: 'Carplus: relato de SEO local e conteúdo em Curitiba',
     description:
-      'Resultado documentado mostrando a Carplus Centro Automotivo com domínio total para "pneus para carros elétricos em curitiba": presente na Visão Geral por IA (AIO), no Topo do Google Maps e nos primeiros resultados orgânicos (SEO).',
+      'Relato do acervo Carplus sobre conteúdo, busca local e respostas de IA. As reconstruções visuais não comprovam posições ou menções atuais.',
     url: 'https://www.omarseo.digital/resultados/carplus-google-ai-overview-pneus-curitiba',
     mainEntityOfPage: 'https://www.omarseo.digital/resultados/carplus-google-ai-overview-pneus-curitiba',
     inLanguage: 'pt-BR',
@@ -47,7 +47,7 @@ export default function CaseCarplusAiOverview() {
       url: 'https://www.omarseo.digital/images/cases/case-carplus-google-ai-overview-pneus-curitiba.png',
       contentUrl: 'https://www.omarseo.digital/images/cases/case-carplus-google-ai-overview-pneus-curitiba.png',
       caption:
-        'Carplus Centro Automotivo dominando as três superfícies do Google para busca de pneus de carros elétricos em Curitiba',
+        'Reconstrução visual do relato Carplus sobre buscas de pneus em Curitiba',
       width: 1180,
       height: 620,
     },
@@ -56,8 +56,8 @@ export default function CaseCarplusAiOverview() {
   return (
     <div className="pt-28 pb-16 px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto space-y-12 text-slate-200">
       <EnhancedSEO
-        title="Case SEO + GEO + AIO: Carplus no Topo do Google | Omar SEO"
-        description="Resultado documentado mostrando a Carplus Centro Automotivo com domínio total para 'pneus para carros elétricos em curitiba': presente na Visão Geral por IA, no Topo do Google Maps e no orgânico."
+        title="Carplus: relato de SEO local em Curitiba | Omar SEO"
+        description="Relato do acervo Carplus sobre conteúdo, busca local e respostas de IA. As reconstruções visuais não comprovam posições ou menções atuais."
         canonical="/resultados/carplus-google-ai-overview-pneus-curitiba"
         ogImage="https://www.omarseo.digital/images/cases/case-carplus-google-ai-overview-pneus-curitiba.png"
         ogType="article"
@@ -97,7 +97,7 @@ export default function CaseCarplusAiOverview() {
           <div className="flex flex-wrap items-center justify-center sm:justify-start gap-2">
             <div className="inline-flex items-center gap-2 text-[10px] font-extrabold uppercase tracking-widest text-cyan-400 bg-cyan-950/90 px-3 py-1 rounded-full border border-cyan-500/40">
               <Sparkles size={14} />
-              <span>TRIPLA PRESENÇA DOCUMENTADA</span>
+              <span>RELATO DO ACERVO</span>
             </div>
             <div className="inline-flex items-center gap-1.5 text-[10px] font-bold uppercase tracking-widest text-yellow-400 bg-yellow-950/80 px-3 py-1 rounded-full border border-yellow-800/60">
               <Cpu size={13} />
@@ -106,11 +106,11 @@ export default function CaseCarplusAiOverview() {
           </div>
 
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-black font-display text-white tracking-tight leading-tight">
-            Carplus no Topo do Google: Domínio em 3 Superfícies
+            Carplus: SEO local e conteúdo sobre pneus em Curitiba
           </h1>
 
           <p className="text-sm sm:text-lg text-slate-300 max-w-3xl leading-relaxed mx-auto sm:mx-0">
-            A Carplus Centro Automotivo alcançou a visibilidade máxima para a consulta <strong className="text-white italic">“pneus para carros elétricos em curitiba”</strong>, aparecendo simultaneamente no Google AI Overview, no Bloco Local (Maps) e nos primeiros resultados orgânicos.
+            O relato publicado sobre a Carplus Centro Automotivo aborda a consulta <strong className="text-white italic">“pneus para carros elétricos em curitiba”</strong>, e apresenta reconstruções de buscas orgânicas, do bloco local e de respostas de IA. Essas ilustrações não substituem capturas originais com data e contexto.
           </p>
 
           <div className="pt-2 flex flex-wrap items-center justify-center sm:justify-start gap-4 text-xs text-slate-400 border-t border-slate-800/80">
@@ -168,7 +168,7 @@ export default function CaseCarplusAiOverview() {
         <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
           <h2 className="text-xl sm:text-2xl font-bold font-display text-white flex items-center gap-2">
             <FileCheck size={20} className="text-emerald-400" />
-            <span>Evidência Factual Documentada</span>
+            <span>Ilustração do relato publicado</span>
           </h2>
           
           <div className="flex p-1 bg-slate-950 border border-slate-800 rounded-xl">
@@ -203,7 +203,7 @@ export default function CaseCarplusAiOverview() {
             <div className="absolute inset-0 bg-slate-950/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
               <div className="px-4 py-2 rounded-full bg-slate-950/80 text-white text-xs font-bold border border-slate-700 flex items-center gap-2">
                 <Maximize2 size={14} className="text-cyan-400" />
-                <span>Ampliar Evidência Digital</span>
+                <span>Ampliar ilustração</span>
               </div>
             </div>
           </div>
@@ -214,7 +214,7 @@ export default function CaseCarplusAiOverview() {
               <span className="text-xs text-slate-300 font-medium">
                 {activeTab === 'aio' && "Sintetizado como autoridade para BYD, GWM e Volvo pela IA."}
                 {activeTab === 'maps' && "Top ranking local com citação de relevância do site."}
-                {activeTab === 'org' && "Domínio das primeiras posições com títulos otimizados."}
+                {activeTab === 'org' && "Exemplo de apresentação de títulos em uma busca orgânica."}
               </span>
             </div>
             <div className="text-[10px] text-slate-500 font-mono uppercase tracking-widest">
@@ -237,7 +237,7 @@ export default function CaseCarplusAiOverview() {
             <div className="flex items-center justify-between border-b border-slate-800 pb-3">
               <span className="text-xs font-bold text-cyan-400 uppercase tracking-widest flex items-center gap-2">
                 <Sparkles size={14} />
-                <span>Evidência Factual de Ranking ({activeTab.toUpperCase()})</span>
+                <span>Ilustração do acervo ({activeTab.toUpperCase()})</span>
               </span>
               <button onClick={() => setIsLightboxOpen(false)} className="p-2 rounded-full bg-slate-800 hover:bg-slate-700 text-white transition-colors">
                 <X size={20} />

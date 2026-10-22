@@ -1,9 +1,11 @@
+import { ServiceFlow } from '../components/ServiceFlow';
+import { PlainTerms } from '../components/PageFrame';
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { EnhancedSEO } from '../components/EnhancedSEO';
 import ConstellationGrid from '../components/ui/constellation-grid';
 import { BackgroundVideo } from '../components/BackgroundVideo';
-import { SeoGeoAioExplainer } from '../components/SeoGeoAioExplainer';
+
 import {
   Code2,
   Cpu,
@@ -67,18 +69,18 @@ export default function Metodo() {
             Como os Pilares Operam em Sinergia
           </h2>
           <p className="text-xs sm:text-sm text-slate-400">
-            Acompanhe na animação abaixo como a convergência de SEO, GEO e AIO multiplica o alcance e o market share orgânico.
+            Acompanhe na animação abaixo como a convergência de SEO, GEO e AIO multiplica o alcance e o presença no mercado orgânico.
           </p>
         </div>
 
         <div className="max-w-5xl mx-auto space-y-4">
-          <SeoGeoAioExplainer />
+          <ServiceFlow />
           <div className="text-center pt-2">
             <Link
               to="/seo-geo-aio"
               className="inline-flex items-center gap-2 text-xs font-bold text-cyan-300 hover:text-white px-4 py-2 rounded-full bg-blue-950/80 border border-cyan-500/40 hover:bg-blue-900 transition-all shadow-[0_0_15px_rgba(34,211,238,0.2)]"
             >
-              <span>Assistir apresentação imersiva com 4 vídeos narrados</span>
+              <span>Ler o guia de SEO e busca com IA</span>
               <ArrowRight size={14} />
             </Link>
           </div>
@@ -281,6 +283,8 @@ export default function Metodo() {
           </Link>
         </div>
       </section>
+      <PlainTerms/>
+
     </div>
   );
 }

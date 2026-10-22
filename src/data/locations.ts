@@ -240,7 +240,7 @@ export function getLocationData(slug: string): LocationData {
       regionName: 'Região Sul do Brasil',
       lat: stateHub.lat,
       lng: stateHub.lng,
-      shortDesc: `Atendimento de SEO, GEO e Engenharia de Visibilidade Digital para empresas no estado de ${stateHub.name}.`,
+      shortDesc: `Atendimento de SEO, GEO e Estratégia de presença digital para empresas no estado de ${stateHub.name}.`,
       fullDesc: `Atendemos presencialmente e remotamente empresas do estado de ${stateHub.name} que necessitam de estratégias avançadas de SEO técnico, expansão orgânica nacional e preparação de ativos digitais para motores de inteligência artificial.`,
       commercialProfile: 'Empresas B2B, indústrias, redes de franquia, clínicas especializadas e e-commerces regionais.',
       typicalSearches: [`agência de SEO em ${stateHub.name}`, `consultor de SEO ${stateHub.name}`, `SEO para e-commerce ${stateHub.name}`],

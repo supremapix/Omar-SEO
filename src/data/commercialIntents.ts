@@ -13,7 +13,7 @@ export const COMMERCIAL_INTENTS_DATA: Record<string, CommercialIntentData> = {
   'especialista-seo-curitiba': {
     slug: 'especialista-seo-curitiba',
     h1: 'Especialista em SEO em Curitiba',
-    subtitle: 'Engenharia de Visibilidade Orgânica, SEO Técnico, Google Maps e Estruturação de Dados para Empresas.',
+    subtitle: 'Estratégia de presença Orgânica, SEO Técnico, Google Maps e Estruturação de Dados para Empresas.',
     metaTitle: 'Especialista em SEO em Curitiba | Omar SEO',
     metaDescription: 'Omar Skafi é Especialista em SEO em Curitiba. Otimização técnica, Google Maps e GEO para posicionar sua empresa nos primeiros resultados do Google.',
     contentParagraphs: [
@@ -137,7 +137,7 @@ export const COMMERCIAL_INTENTS_DATA: Record<string, CommercialIntentData> = {
   'consultoria-seo': {
     slug: 'consultoria-seo',
     h1: 'Consultoria de SEO Profissional',
-    subtitle: 'Engenharia de Visibilidade Digital e Estratégia de Crescimento Orgânico para sua Empresa.',
+    subtitle: 'Estratégia de presença digital e Estratégia de Crescimento Orgânico para sua Empresa.',
     metaTitle: 'Consultoria de SEO Profissional e Diagnóstico | Omar SEO',
     metaDescription: 'Consultoria de SEO com Omar Skafi. Estratégia completa de visibilidade, arquitetura de site e ranqueamento orgânico no Google.',
     contentParagraphs: [
@@ -198,7 +198,7 @@ export const COMMERCIAL_INTENTS_DATA: Record<string, CommercialIntentData> = {
   'especialista-seo-brasil': {
     slug: 'especialista-seo-brasil',
     h1: 'Especialista em SEO e GEO no Brasil',
-    subtitle: 'Omar Skafi: Referência em Engenharia de Visibilidade Orgânica, Dados Estruturados e Otimização para Inteligência Artificial.',
+    subtitle: 'Omar Skafi: Referência em Estratégia de presença Orgânica, Dados Estruturados e Otimização para Inteligência Artificial.',
     metaTitle: 'Especialista em SEO e GEO no Brasil | Omar Skafi',
     metaDescription: 'Especialista em SEO e GEO com atuação nacional. Omar Skafi desenvolve estratégias avançadas de SEO técnico, Schema.org e posicionamento no Google e IAs.',
     contentParagraphs: [
@@ -239,7 +239,7 @@ export const COMMERCIAL_INTENTS_DATA: Record<string, CommercialIntentData> = {
   'seo-vs-geo': {
     slug: 'seo-vs-geo',
     h1: 'SEO x GEO: Qual a Diferença e Como Combinar as Estratégias?',
-    subtitle: 'Compreenda a Evolução entre Search Engine Optimization e Generative Engine Optimization para Maximizar seu Market Share.',
+    subtitle: 'Compreenda a Evolução entre Search Engine Optimization e Generative Engine Optimization para Maximizar seu presença no mercado.',
     metaTitle: 'SEO vs GEO: Qual a Diferença e Como Integrar? | Omar SEO',
     metaDescription: 'Entenda a diferença técnica entre SEO (Search Engine Optimization) e GEO (Generative Engine Optimization) e como combinar ambas as estratégias.',
     contentParagraphs: [

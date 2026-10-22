@@ -1,3 +1,5 @@
+import { ServiceFlow } from '../components/ServiceFlow';
+import { PlainTerms } from '../components/PageFrame';
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { EnhancedSEO } from '../components/EnhancedSEO';
@@ -46,11 +48,13 @@ export default function GoogleMaps() {
           </h1>
 
           <p className="text-slate-300 text-sm sm:text-base leading-relaxed">
-            Apareça no cobiçado Top 3 do Google Maps quando clientes locais buscarem pelo seu serviço no smartphone ou computador.
+            Organize as informações do negócio para quem procura serviços na sua região. A posição no mapa depende de diferentes fatores e não é garantida.
           </p>
         </div>
       </div>
 
+      <PlainTerms/>
+      <ServiceFlow/>
       {/* Grid */}
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
         <div className="lg:col-span-7 space-y-6 text-slate-300 text-sm sm:text-base leading-relaxed">

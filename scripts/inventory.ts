@@ -1,0 +1,5 @@
+import fs from 'node:fs';
+import {getAllRoutes} from '../src/config/routes';import {getAllLocationSlugs} from '../src/data/locations';import {COMMERCIAL_INTENTS_DATA} from '../src/data/commercialIntents';
+const routes=getAllRoutes(getAllLocationSlugs());const groups:Record<string,string[]>={};
+for(const r of routes){const k=r.path==='/'?'Home':r.path.startsWith('/servicos/')?'Serviços':r.path.startsWith('/blog/')?'Artigos':r.path.startsWith('/resultados/')?'Cases':r.type==='location'||r.type==='state'?'Regiões':COMMERCIAL_INTENTS_DATA[r.path.slice(1)]?'Temas comerciais':'Páginas institucionais e guias';(groups[k]??=[]).push(r.path)}
+fs.writeFileSync('ROUTE_INVENTORY.md','# Cobertura do padrão editorial\n\n'+routes.length+' rotas públicas; além delas, template 404. Todas usam PageFrame editorial-v2 no cliente e no pré-render.\n\n'+Object.entries(groups).map(([k,v])=>'## '+k+' ('+v.length+')\n\n'+v.map(p=>'- '+p).join('\n')).join('\n\n')+'\n');console.log(Object.fromEntries(Object.entries(groups).map(([k,v])=>[k,v.length])));

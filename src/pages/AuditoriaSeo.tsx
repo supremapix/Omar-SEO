@@ -1,3 +1,5 @@
+import { ServiceFlow } from '../components/ServiceFlow';
+import { PlainTerms } from '../components/PageFrame';
 import React, { useState } from 'react';
 import { EnhancedSEO } from '../components/EnhancedSEO';
 import ConstellationGrid from '../components/ui/constellation-grid';
@@ -82,10 +84,10 @@ export default function AuditoriaSeo() {
           <form onSubmit={handleSubmit} className="space-y-4">
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div>
-                <label className="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-1">
+                <label htmlFor="auditoriaseo-1" className="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-1">
                   Seu Nome *
                 </label>
-                <input
+                <input id="auditoriaseo-1"
                   type="text"
                   required
                   placeholder="Ex: Carlos Silva"
@@ -96,10 +98,10 @@ export default function AuditoriaSeo() {
               </div>
 
               <div>
-                <label className="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-1">
+                <label htmlFor="auditoriaseo-2" className="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-1">
                   Nome da Sua Empresa *
                 </label>
-                <input
+                <input id="auditoriaseo-2"
                   type="text"
                   required
                   placeholder="Ex: Clínica Odontológica Batel"
@@ -112,10 +114,10 @@ export default function AuditoriaSeo() {
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div>
-                <label className="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-1">
+                <label htmlFor="auditoriaseo-3" className="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-1">
                   Endereço do Site (URL) *
                 </label>
-                <input
+                <input id="auditoriaseo-3"
                   type="text"
                   required
                   placeholder="Ex: www.minhaempresa.com.br"
@@ -126,10 +128,10 @@ export default function AuditoriaSeo() {
               </div>
 
               <div>
-                <label className="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-1">
+                <label htmlFor="auditoriaseo-4" className="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-1">
                   WhatsApp para Contato *
                 </label>
-                <input
+                <input id="auditoriaseo-4"
                   type="tel"
                   required
                   placeholder="(41) 99999-9999"
@@ -142,10 +144,10 @@ export default function AuditoriaSeo() {
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div>
-                <label className="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-1">
+                <label htmlFor="auditoriaseo-5" className="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-1">
                   Cidade
                 </label>
-                <input
+                <input id="auditoriaseo-5"
                   type="text"
                   value={formData.cidade}
                   onChange={(e) => setFormData({ ...formData, cidade: e.target.value })}
@@ -154,10 +156,10 @@ export default function AuditoriaSeo() {
               </div>
 
               <div>
-                <label className="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-1">
+                <label htmlFor="auditoriaseo-6" className="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-1">
                   Bairro de Atendimento Principal
                 </label>
-                <input
+                <input id="auditoriaseo-6"
                   type="text"
                   placeholder="Ex: Batel, Água Verde, CIC, Centro"
                   value={formData.bairro}
@@ -168,10 +170,10 @@ export default function AuditoriaSeo() {
             </div>
 
             <div>
-              <label className="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-1">
+              <label htmlFor="auditoriaseo-7" className="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-1">
                 Qual o Principal Problema Atual do Seu Site?
               </label>
-              <textarea
+              <textarea id="auditoriaseo-7"
                 rows={3}
                 placeholder="Ex: Meu site é novo e não aparece no Google; Não recebo ligações do Google Maps..."
                 value={formData.mensagem}
@@ -223,6 +225,8 @@ export default function AuditoriaSeo() {
           </div>
         </div>
       </div>
+      <PlainTerms/>
+      <ServiceFlow/>
     </div>
   );
 }
