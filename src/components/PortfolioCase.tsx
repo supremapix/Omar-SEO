@@ -9,7 +9,7 @@ export function PortfolioCase({ id }: { id: string }) {
   const p = projects.find((p) => p.id === id)!;
   const available = p.evidence.length > 0;
   const description = available
-    ? `${p.name}: capturas da consulta ${p.query}, com identificação de resultados locais, link orgânico e Visão Geral por IA. Consulte o contexto e os limites.`
+    ? `${p.name}: registro da consulta ${p.query}. ${p.evidence.map(e=>e.kind).join('; ')}. Consulte o contexto e os limites.`
     : `${p.name}: tema de SEO e conteúdo no portfólio Omar SEO. A captura original de busca está pendente; não há comprovação de posição ou citação por IA nesta página.`;
   return (
     <article
@@ -76,9 +76,8 @@ export function PortfolioCase({ id }: { id: string }) {
           <>
             <p>
               Os arquivos abaixo foram preservados como recebidos no acervo, sem
-              redesenhar os resultados. A data da captura não está confirmada. A
-              consulta é “bebedouros centro”; a primeira imagem mostra uma
-              localização de pesquisa em Curitiba.
+              redesenhar os resultados. A data da captura não está confirmada.
+              A consulta visível é “{p.query}”.
             </p>
             {p.evidence.map((e, i) => (
               <figure className="search-evidence" key={e.src}>
@@ -151,7 +150,7 @@ export function PortfolioCase({ id }: { id: string }) {
         </dl>
         <p>
           {available
-            ? "Neste caso, as capturas mostram uma menção na Visão Geral por IA, uma lista local e um link orgânico, cada um com seu contexto."
+            ? p.evidenceSummary
             : "Neste caso, os temas de SEO, GEO e AIO não são apresentados como resultados já comprovados."}
         </p>
         <p>

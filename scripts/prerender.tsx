@@ -1,3 +1,4 @@
+import CaseCarplusAutos from '../src/pages/CaseCarplusAutos';
 import CaseVilaDItalia from '../src/pages/CaseVilaDItalia';
 import fs from "fs";
 import path from "path";
@@ -67,6 +68,7 @@ function getPageComponent(
   const cleanPath = rawPath === "/" ? "" : rawPath.replace(/^\//, "");
 
   if (rawPath === "/resultados/pousada-vila-ditalia-penha-sc") return <CaseVilaDItalia />;
+  if (rawPath === "/resultados/carplus-autos-seminovos-portao") return <CaseCarplusAutos />;
   if (rawPath === "/") return <Home />;
   if (rawPath === "/servicos") return <ServicesIndex />;
   if (cleanPath.startsWith("servicos/")) {

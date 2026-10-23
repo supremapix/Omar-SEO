@@ -16,7 +16,8 @@
     "intent": "Encontrar um prestador de locação de caçambas na região.",
     "evidence": [],
     "evidenceStatus": "pending",
-    "pendingReason": "Os arquivos antigos são reconstruções gráficas de resultados. Falta uma captura original verificável da busca."
+    "pendingReason": "Os arquivos antigos são reconstruções gráficas de resultados. Falta uma captura original verificável da busca.",
+    "evidenceSummary": ""
   },
   {
     "id": "02",
@@ -35,7 +36,8 @@
     "intent": "Encontrar orientação jurídica relacionada a planos de saúde.",
     "evidence": [],
     "evidenceStatus": "pending",
-    "pendingReason": "Os arquivos antigos são reconstruções gráficas de resultados. Falta uma captura original verificável da busca."
+    "pendingReason": "Os arquivos antigos são reconstruções gráficas de resultados. Falta uma captura original verificável da busca.",
+    "evidenceSummary": ""
   },
   {
     "id": "03",
@@ -54,7 +56,8 @@
     "intent": "Pesquisar fornecedores e informações sobre alevinos.",
     "evidence": [],
     "evidenceStatus": "pending",
-    "pendingReason": "Os arquivos antigos são reconstruções gráficas de resultados. Falta uma captura original verificável da busca."
+    "pendingReason": "Os arquivos antigos são reconstruções gráficas de resultados. Falta uma captura original verificável da busca.",
+    "evidenceSummary": ""
   },
   {
     "id": "04",
@@ -73,7 +76,8 @@
     "intent": "Encontrar empresas de estruturas metálicas em São José dos Pinhais.",
     "evidence": [],
     "evidenceStatus": "pending",
-    "pendingReason": "Os arquivos antigos são reconstruções gráficas de resultados. Falta uma captura original verificável da busca."
+    "pendingReason": "Os arquivos antigos são reconstruções gráficas de resultados. Falta uma captura original verificável da busca.",
+    "evidenceSummary": ""
   },
   {
     "id": "05",
@@ -92,7 +96,8 @@
     "intent": "Pesquisar pneus para carros elétricos e atendimento em Curitiba.",
     "evidence": [],
     "evidenceStatus": "pending",
-    "pendingReason": "Os arquivos antigos são reconstruções gráficas de resultados. Falta uma captura original verificável da busca."
+    "pendingReason": "Os arquivos antigos são reconstruções gráficas de resultados. Falta uma captura original verificável da busca.",
+    "evidenceSummary": ""
   },
   {
     "id": "06",
@@ -112,7 +117,8 @@
     "intent": "Comparar opções de casas pré-fabricadas para construir em terreno próprio.",
     "evidence": [],
     "evidenceStatus": "pending",
-    "pendingReason": "Os arquivos antigos são reconstruções gráficas de resultados. Falta uma captura original verificável da busca."
+    "pendingReason": "Os arquivos antigos são reconstruções gráficas de resultados. Falta uma captura original verificável da busca.",
+    "evidenceSummary": ""
   },
   {
     "id": "07",
@@ -132,7 +138,8 @@
     "intent": "Encontrar atendimento para telhados no bairro Barreirinha.",
     "evidence": [],
     "evidenceStatus": "pending",
-    "pendingReason": "A imagem PNG antiga mostra outra empresa, A Baratona. O SVG de telhados é uma reconstrução. Falta a captura original deste projeto."
+    "pendingReason": "A imagem PNG antiga mostra outra empresa, A Baratona. O SVG de telhados é uma reconstrução. Falta a captura original deste projeto.",
+    "evidenceSummary": ""
   },
   {
     "id": "08",
@@ -151,7 +158,8 @@
     "intent": "Encontrar fornecedores de divisórias de Eucatex em Curitiba.",
     "evidence": [],
     "evidenceStatus": "pending",
-    "pendingReason": "Os arquivos antigos são reconstruções gráficas de resultados. Falta uma captura original verificável da busca."
+    "pendingReason": "Os arquivos antigos são reconstruções gráficas de resultados. Falta uma captura original verificável da busca.",
+    "evidenceSummary": ""
   },
   {
     "id": "09",
@@ -170,7 +178,8 @@
     "intent": "Localizar a consultoria pelo nome pesquisado.",
     "evidence": [],
     "evidenceStatus": "pending",
-    "pendingReason": "Os arquivos antigos são reconstruções gráficas de resultados. Falta uma captura original verificável da busca."
+    "pendingReason": "Os arquivos antigos são reconstruções gráficas de resultados. Falta uma captura original verificável da busca.",
+    "evidenceSummary": ""
   },
   {
     "id": "10",
@@ -189,7 +198,8 @@
     "intent": "Encontrar serviços de corte e poda próximos ao usuário.",
     "evidence": [],
     "evidenceStatus": "pending",
-    "pendingReason": "Os arquivos antigos são reconstruções gráficas de resultados. Falta uma captura original verificável da busca."
+    "pendingReason": "Os arquivos antigos são reconstruções gráficas de resultados. Falta uma captura original verificável da busca.",
+    "evidenceSummary": ""
   },
   {
     "id": "11",
@@ -211,7 +221,8 @@
     "intent": "Encontrar atendimento de instalação frigorífica em Navegantes.",
     "evidence": [],
     "evidenceStatus": "pending",
-    "pendingReason": "Os arquivos antigos são reconstruções gráficas de resultados. Falta uma captura original verificável da busca."
+    "pendingReason": "Os arquivos antigos são reconstruções gráficas de resultados. Falta uma captura original verificável da busca.",
+    "evidenceSummary": ""
   },
   {
     "id": "12",
@@ -234,7 +245,8 @@
     "intent": "Pesquisar empresas e informações sobre estruturas em steel frame em Curitiba.",
     "evidence": [],
     "evidenceStatus": "pending",
-    "pendingReason": "Os arquivos antigos são reconstruções gráficas de resultados. Falta uma captura original verificável da busca."
+    "pendingReason": "Os arquivos antigos são reconstruções gráficas de resultados. Falta uma captura original verificável da busca.",
+    "evidenceSummary": ""
   },
   {
     "id": "13",
@@ -254,7 +266,8 @@
     "intent": "Encontrar serviços profissionais de lavanderia em Osasco.",
     "evidence": [],
     "evidenceStatus": "pending",
-    "pendingReason": "Os arquivos antigos são reconstruções gráficas de resultados. Falta uma captura original verificável da busca."
+    "pendingReason": "Os arquivos antigos são reconstruções gráficas de resultados. Falta uma captura original verificável da busca.",
+    "evidenceSummary": ""
   },
   {
     "id": "14",
@@ -274,7 +287,8 @@
     "intent": "Pesquisar atendimento de motofrete e possibilidades de transporte entre localidades.",
     "evidence": [],
     "evidenceStatus": "pending",
-    "pendingReason": "Os arquivos antigos são reconstruções gráficas de resultados. Falta uma captura original verificável da busca."
+    "pendingReason": "Os arquivos antigos são reconstruções gráficas de resultados. Falta uma captura original verificável da busca.",
+    "evidenceSummary": ""
   },
   {
     "id": "15",
@@ -293,7 +307,8 @@
     "intent": "Encontrar empresas que trabalham com revestimentos de ACM em Curitiba.",
     "evidence": [],
     "evidenceStatus": "pending",
-    "pendingReason": "Os arquivos antigos são reconstruções gráficas de resultados. Falta uma captura original verificável da busca."
+    "pendingReason": "Os arquivos antigos são reconstruções gráficas de resultados. Falta uma captura original verificável da busca.",
+    "evidenceSummary": ""
   },
   {
     "id": "16",
@@ -314,7 +329,8 @@
     "intent": "Encontrar fornecedores de persianas sob medida na Lagoa da Conceição.",
     "evidence": [],
     "evidenceStatus": "pending",
-    "pendingReason": "Os arquivos antigos são reconstruções gráficas de resultados. Falta uma captura original verificável da busca."
+    "pendingReason": "Os arquivos antigos são reconstruções gráficas de resultados. Falta uma captura original verificável da busca.",
+    "evidenceSummary": ""
   },
   {
     "id": "17",
@@ -334,7 +350,8 @@
     "intent": "Pesquisar gerenciamento de obras e informações de custos em Balneário Camboriú.",
     "evidence": [],
     "evidenceStatus": "pending",
-    "pendingReason": "Os arquivos antigos são reconstruções gráficas de resultados. Falta uma captura original verificável da busca."
+    "pendingReason": "Os arquivos antigos são reconstruções gráficas de resultados. Falta uma captura original verificável da busca.",
+    "evidenceSummary": ""
   },
   {
     "id": "18",
@@ -353,7 +370,8 @@
     "intent": "Encontrar instaladores de pisos vinílicos em São José dos Pinhais.",
     "evidence": [],
     "evidenceStatus": "pending",
-    "pendingReason": "Os arquivos antigos são reconstruções gráficas de resultados. Falta uma captura original verificável da busca."
+    "pendingReason": "Os arquivos antigos são reconstruções gráficas de resultados. Falta uma captura original verificável da busca.",
+    "evidenceSummary": ""
   },
   {
     "id": "19",
@@ -375,7 +393,8 @@
     "intent": "Encontrar fornecedores de persianas em Florianópolis e na região da Lagoa.",
     "evidence": [],
     "evidenceStatus": "pending",
-    "pendingReason": "Os arquivos antigos são reconstruções gráficas de resultados. Falta uma captura original verificável da busca."
+    "pendingReason": "Os arquivos antigos são reconstruções gráficas de resultados. Falta uma captura original verificável da busca.",
+    "evidenceSummary": ""
   },
   {
     "id": "20",
@@ -416,7 +435,8 @@
       }
     ],
     "evidenceStatus": "available",
-    "pendingReason": ""
+    "pendingReason": "",
+    "evidenceSummary": "As capturas mostram uma menção na Visão Geral por IA, uma lista local e um link orgânico, cada um com seu contexto."
   },
   {
     "id": "21",
@@ -435,7 +455,8 @@
     "intent": "Encontrar lojas de celulares em Curitiba.",
     "evidence": [],
     "evidenceStatus": "pending",
-    "pendingReason": "Os arquivos antigos são reconstruções gráficas de resultados. Falta uma captura original verificável da busca."
+    "pendingReason": "Os arquivos antigos são reconstruções gráficas de resultados. Falta uma captura original verificável da busca.",
+    "evidenceSummary": ""
   },
   {
     "id": "22",
@@ -443,16 +464,61 @@
     "name": "Pousada Vila D’Itália",
     "url": "https://www.pousadaviladitalia.com.br/",
     "subject": "Pousada com piscina em Penha SC",
-    "images": [],
+    "images": [
+      "/images/evidence/pousada-busca.png"
+    ],
     "captured": true,
     "captureDate": "23/10/2026",
     "image": "/images/projects/project-22.webp",
     "sourceNote": "Captura do site em 23/10/2026. Não comprova posição em buscas, tráfego ou reservas.",
     "route": "/resultados/pousada-vila-ditalia-penha-sc",
-    "query": "pousada com piscina em Penha SC",
+    "query": "pousada com piscina na penha sc",
     "intent": "Escolher uma pousada em Penha, Santa Catarina, levando em conta a presença de piscina.",
-    "evidence": [],
-    "evidenceStatus": "pending",
-    "pendingReason": "A captura de busca enviada ainda aguarda acesso ao arquivo original para conferência."
+    "evidence": [
+      {
+        "src": "/images/evidence/pousada-busca.png",
+        "width": 1192,
+        "height": 632,
+        "kind": "Visão Geral por IA do Google",
+        "query": "pousada com piscina na penha sc",
+        "date": null,
+        "alt": "Busca por pousada com piscina na penha sc: Pousada Vila D’Itália aparece na Visão Geral por IA e no painel de fontes.",
+        "observation": "A captura mostra a Pousada Vila D’Itália na Visão Geral por IA do Google, com cartão da pousada e fonte associada. Não mostra uma lista independente de resultados orgânicos ou a interface do Google Maps."
+      }
+    ],
+    "evidenceStatus": "available",
+    "pendingReason": "",
+    "evidenceSummary": "A captura mostra a Pousada Vila D’Itália na Visão Geral por IA do Google, com cartão da pousada e fonte associada. Não mostra uma lista independente de resultados orgânicos ou a interface do Google Maps."
+  },
+  {
+    "id": "23",
+    "file": "CaseCarplusAutos",
+    "name": "Carplus Autos",
+    "url": "https://www.carplusautos.com.br/",
+    "subject": "Busca por revenda de seminovos no Portão",
+    "images": [
+      "/images/evidence/carplus-busca.png"
+    ],
+    "captured": false,
+    "image": "/images/evidence/carplus-busca.png",
+    "sourceNote": "Captura original fornecida pelo cliente; data não confirmada.",
+    "route": "/resultados/carplus-autos-seminovos-portao",
+    "query": "Revenda de Seminovos no Portão",
+    "intent": "Encontrar uma revenda de seminovos no bairro Portão. O link visível identifica carplusautos.com.br, empresa distinta do caso de pneus e centro automotivo.",
+    "evidence": [
+      {
+        "src": "/images/evidence/carplus-busca.png",
+        "width": 1282,
+        "height": 552,
+        "kind": "Link orgânico e cartão com informações locais",
+        "query": "Revenda de Seminovos no Portão",
+        "date": null,
+        "alt": "Busca por Revenda de Seminovos no Portão: link de carplusautos.com.br e cartão da Carplus Autos.",
+        "observation": "A captura mostra um link orgânico de carplusautos.com.br e um cartão com informações locais da Carplus Autos. O início do bloco superior está fora do enquadramento: não é possível confirmar sua identificação como resposta de IA. Não é uma captura da interface do Google Maps."
+      }
+    ],
+    "evidenceStatus": "available",
+    "pendingReason": "",
+    "evidenceSummary": "A captura mostra um link orgânico de carplusautos.com.br e um cartão com informações locais da Carplus Autos. O início do bloco superior está fora do enquadramento: não é possível confirmar sua identificação como resposta de IA. Não é uma captura da interface do Google Maps."
   }
 ]

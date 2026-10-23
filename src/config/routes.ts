@@ -19,6 +19,7 @@ const dynamicBlogRoutes: RouteConfig[] = blogPosts.map((post) => ({
 }));
 
 export const MAIN_ROUTES: RouteConfig[] = [
+{path:'/resultados/carplus-autos-seminovos-portao',title:'Carplus Autos: seminovos no Portão | Omar SEO',description:'Captura original da busca por Revenda de Seminovos no Portão.',priority:0.7,changefreq:'monthly',type:'main'},
  {path:'/resultados/pousada-vila-ditalia-penha-sc',title:'Pousada Vila D’Itália em Penha SC | Cliente Omar SEO',description:'Registro de cliente com foco em pousada com piscina em Penha SC.',priority:0.7,changefreq:'monthly',type:'main'},
  {path:'/seo-local',title:'SEO local em Curitiba | Omar SEO',description:'Consultoria de SEO local e informações de atendimento para negócios em Curitiba.',priority:0.8,changefreq:'monthly',type:'main'},
  {path:'/resultados/sangel-purificadores-bebedouros-curitiba', title:'Sangel Purificadores | Omar SEO',description:'Registro publicado do projeto Sangel Purificadores.',priority:0.7,changefreq:'monthly',type:'main'},

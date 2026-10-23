@@ -32,3 +32,12 @@ Foram inspecionados 48 arquivos PNG/WebP atuais, seus SVGs, scripts geradores e 
 O anexo da Pousada (Library libfile_0c6b394474e8819193673247f55cc0f5) não gerou arquivo final pelo fluxo oficial no Windows. O runtime não dispõe de os.setxattr, necessário ao helper. Não houve bypass nem simulação. Caminho local reservado: C:\Users\user\Documents\Codex\2026-10-22\task-4\search-reference\busca-pousada.png.
 
 As alegações anteriores de liderança, resultados financeiros, posição permanente e escopos não comprovados foram retiradas dos relatos e metadados. Preservados nomes, URLs, temas, contatos e sistema visual. SEO local não foi classificado como GEO: respostas generativas e resultados locais têm rótulos separados.
+
+## Atualização: originais locais recebidos
+
+Após confirmação do usuário, os arquivos Downloads/carplus-busca.png e Downloads/pousada-busca.png foram inspecionados e copiados integralmente, sem alteração de pixels. A pendência de transferência foi resolvida pela entrega local.
+
+- Pousada Vila D’Itália: consulta visível **pousada com piscina na penha sc**, Visão Geral por IA identificada explicitamente na captura. Não foi classificada como resultado orgânico independente ou Maps.
+- Carplus Autos: novo caso separado de Centro Automotivo/pneus, domínio carplusautos.com.br visível; consulta **Revenda de Seminovos no Portão**. Link orgânico e cartão com informações locais. Cabeçalho do bloco superior não aparece: classificação como IA não confirmada.
+- Data de captura não conhecida. Preços, notas, endereços e avaliações mostrados são parte do registro, não informações atuais confirmadas nem resultados permanentes.
+- Estado atual: 23 casos, 3 com capturas originais (4 imagens), 20 pendentes.

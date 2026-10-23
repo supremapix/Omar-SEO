@@ -1,8 +1,10 @@
 # Cobertura do padrão editorial
 
-169 rotas públicas; além delas, template 404. Todas usam PageFrame editorial-v2 no cliente e no pré-render.
+170 rotas públicas; além delas, template 404. Todas usam PageFrame editorial-v2 no cliente e no pré-render.
 
-## Cases (22)
+## Cases (23)
+
+- /resultados/carplus-autos-seminovos-portao
 
 - /resultados/pousada-vila-ditalia-penha-sc
 - /resultados/sangel-purificadores-bebedouros-curitiba

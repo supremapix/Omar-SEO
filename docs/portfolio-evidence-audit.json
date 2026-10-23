@@ -333,5 +333,51 @@
       "reason": "A captura de busca enviada ainda aguarda acesso ao arquivo original para conferência.",
       "evidence": []
     }
-  ]
+  ],
+  "latestUpdate": {
+    "date": "2026-10-23",
+    "cases": 23,
+    "withOriginalCaptures": 3,
+    "pending": 20,
+    "originalCaptures": 4,
+    "localOriginalsConfirmed": true,
+    "changes": [
+      {
+        "id": "22",
+        "name": "Pousada Vila D’Itália",
+        "route": "/resultados/pousada-vila-ditalia-penha-sc",
+        "query": "pousada com piscina na penha sc",
+        "evidence": [
+          {
+            "src": "/images/evidence/pousada-busca.png",
+            "width": 1192,
+            "height": 632,
+            "kind": "Visão Geral por IA do Google",
+            "query": "pousada com piscina na penha sc",
+            "date": null,
+            "alt": "Busca por pousada com piscina na penha sc: Pousada Vila D’Itália aparece na Visão Geral por IA e no painel de fontes.",
+            "observation": "A captura mostra a Pousada Vila D’Itália na Visão Geral por IA do Google, com cartão da pousada e fonte associada. Não mostra uma lista independente de resultados orgânicos ou a interface do Google Maps."
+          }
+        ]
+      },
+      {
+        "id": "23",
+        "name": "Carplus Autos",
+        "route": "/resultados/carplus-autos-seminovos-portao",
+        "query": "Revenda de Seminovos no Portão",
+        "evidence": [
+          {
+            "src": "/images/evidence/carplus-busca.png",
+            "width": 1282,
+            "height": 552,
+            "kind": "Link orgânico e cartão com informações locais",
+            "query": "Revenda de Seminovos no Portão",
+            "date": null,
+            "alt": "Busca por Revenda de Seminovos no Portão: link de carplusautos.com.br e cartão da Carplus Autos.",
+            "observation": "A captura mostra um link orgânico de carplusautos.com.br e um cartão com informações locais da Carplus Autos. O início do bloco superior está fora do enquadramento: não é possível confirmar sua identificação como resposta de IA. Não é uma captura da interface do Google Maps."
+          }
+        ]
+      }
+    ]
+  }
 }

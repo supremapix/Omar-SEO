@@ -96,3 +96,11 @@ A imagem originalmente anexada não foi usada: a materialização Library falhou
 - npm run build (TypeScript + 169 páginas + 404) aprovado; verify.mjs sem erros nas 169 páginas estáticas; 22 casos acessíveis sem JS, canonical único, schema válido, OG absoluto e imagens de busca com HTTP 200.
 - verify-evidence-portfolio: 40 verificações, 320/390/1440 px e fonte 200%, axe WCAG A/AA sem violações; verify-menu-keyboard: Escape/Fechar/Tab com retorno de foco; navegação/rodapé em seis cenários sem overflow ou violações.
 - Originais em public/images/cases, public/images/portfolio e public/assets/aistudio não foram alterados. Animações SVG, contato, OG da marca e favicons preservados.
+
+## Capturas originais Carplus Autos e Pousada — 23/10/2026
+- Arquivos locais confirmados pelo usuário em Downloads, pixels inspecionados, cópia integral com SHA-256 idêntico. Sem reconstrução ou recorte.
+- Pousada: consulta visível "pousada com piscina na penha sc", Visão Geral por IA explicitamente identificada. Caso existente atualizado.
+- Carplus Autos: nova rota /resultados/carplus-autos-seminovos-portao, separada de Carplus Centro Automotivo/pneus. Link orgânico e cartão local visíveis; rótulo do bloco superior ausente, classificação IA não confirmada.
+- Datas de captura não confirmadas. Não foram atribuídos ranking permanente, métricas, preços atuais ou avaliações atuais.
+- Build/TypeScript: 170 rotas + 404. Auditoria local: 47 verificações aprovadas, incluindo 23 casos sem JS, 320/390/1440 px, texto ampliado e axe sem violações.
+- Estado do acervo: 23 casos, 3 com evidência original (4 capturas), 20 ainda pendentes.

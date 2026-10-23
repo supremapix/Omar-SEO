@@ -28,9 +28,9 @@ export default function Resultados() {
       <section>
         <h2>Capturas disponíveis</h2>
         <p>
-          A Sangel possui duas capturas originais no acervo. Os outros 21
-          registros aguardam imagens de busca verificáveis. A data das capturas
-          da Sangel não está confirmada.
+          O acervo reúne {projects.reduce((sum,p)=>sum+p.evidence.length,0)} capturas originais de {projects.filter(p=>p.evidence.length).length} projetos.
+          Outros {projects.filter(p=>!p.evidence.length).length} registros aguardam imagens de busca verificáveis.
+          As datas das capturas não estão confirmadas.
         </p>
         {projects
           .filter((p) => p.evidence.length)
@@ -41,11 +41,10 @@ export default function Resultados() {
                 <h3>{p.name}</h3>
                 <p>Consulta: “{p.query}”.</p>
                 <p>
-                  Visão Geral por IA, resultados locais e link orgânico,
-                  apresentados com rótulos separados.
+                  {p.evidenceSummary}
                 </p>
                 <Link className="solid-link" to={p.route}>
-                  Ver as duas capturas e o contexto
+                  Ver {p.evidence.length===1?'a captura':'as capturas'} e o contexto
                 </Link>
               </div>
             </div>

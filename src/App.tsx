@@ -11,6 +11,7 @@ import { getAllLocationSlugs } from './data/locations';
 import { SERVICES_DATA } from './data/servicesData';
 import { blogPosts } from './data/blogPosts';
 
+const CaseCarplusAutos = lazy(() => import('./pages/CaseCarplusAutos'));
 const CaseVilaDItalia = lazy(() => import('./pages/CaseVilaDItalia'));
 // Lazy Loaded Main Pages
 const Home = lazy(() => import('./pages/Home'));
@@ -102,6 +103,7 @@ function AnimatedRoutes() {
           <Route path="/geo-ia" element={<GeoIa />} />
           <Route path="/seo-tecnico" element={<SeoTecnico />} />
           <Route path="/resultados/pousada-vila-ditalia-penha-sc" element={<CaseVilaDItalia />} />
+          <Route path="/resultados/carplus-autos-seminovos-portao" element={<CaseCarplusAutos />} />
           <Route path="/resultados" element={<Resultados />} />
           <Route path="/resultados/seo-advogados-planos-de-saude" element={<CaseAdvogadosPlanosSaude />} />
           <Route path="/resultados/seo-celulares-curitiba-shopcell" element={<CaseShopcellCelulares />} />
