@@ -10,7 +10,13 @@
     ],
     "captured": false,
     "image": "/images/projects/project-01.webp",
-    "sourceNote": "Representação editorial do relato publicado. Não é captura de site nem resultado de busca."
+    "sourceNote": "Representação editorial do relato publicado. Não é captura de site nem resultado de busca.",
+    "route": "/resultados/a-baratona-cacambas-google-ia-curitiba",
+    "query": "quem vem com aluguel de Caçambas baratas?",
+    "intent": "Encontrar um prestador de locação de caçambas na região.",
+    "evidence": [],
+    "evidenceStatus": "pending",
+    "pendingReason": "Os arquivos antigos são reconstruções gráficas de resultados. Falta uma captura original verificável da busca."
   },
   {
     "id": "02",
@@ -23,7 +29,13 @@
     ],
     "captured": true,
     "image": "/images/projects/project-02.webp",
-    "sourceNote": "Captura do site em 22/10/2026. Não comprova posição em buscas ou resultado do trabalho."
+    "sourceNote": "Captura do site em 22/10/2026. Não comprova posição em buscas ou resultado do trabalho.",
+    "route": "/resultados/seo-advogados-planos-de-saude",
+    "query": "advogados planos de saude",
+    "intent": "Encontrar orientação jurídica relacionada a planos de saúde.",
+    "evidence": [],
+    "evidenceStatus": "pending",
+    "pendingReason": "Os arquivos antigos são reconstruções gráficas de resultados. Falta uma captura original verificável da busca."
   },
   {
     "id": "03",
@@ -36,7 +48,13 @@
     ],
     "captured": true,
     "image": "/images/projects/project-03.webp",
-    "sourceNote": "Captura do site em 22/10/2026. Não comprova posição em buscas ou resultado do trabalho."
+    "sourceNote": "Captura do site em 22/10/2026. Não comprova posição em buscas ou resultado do trabalho.",
+    "route": "/resultados/seo-local-e-organico-alevinos-curitiba",
+    "query": "alevinos",
+    "intent": "Pesquisar fornecedores e informações sobre alevinos.",
+    "evidence": [],
+    "evidenceStatus": "pending",
+    "pendingReason": "Os arquivos antigos são reconstruções gráficas de resultados. Falta uma captura original verificável da busca."
   },
   {
     "id": "04",
@@ -49,7 +67,13 @@
     ],
     "captured": true,
     "image": "/images/projects/project-04.webp",
-    "sourceNote": "Captura do site em 22/10/2026. Não comprova posição em buscas ou resultado do trabalho."
+    "sourceNote": "Captura do site em 22/10/2026. Não comprova posição em buscas ou resultado do trabalho.",
+    "route": "/resultados/alumimec-estruturas-metalicas-sao-jose-dos-pinhais",
+    "query": "quem faz estrutura para galpoes em sao jose dos pinhais?",
+    "intent": "Encontrar empresas de estruturas metálicas em São José dos Pinhais.",
+    "evidence": [],
+    "evidenceStatus": "pending",
+    "pendingReason": "Os arquivos antigos são reconstruções gráficas de resultados. Falta uma captura original verificável da busca."
   },
   {
     "id": "05",
@@ -62,7 +86,13 @@
     ],
     "captured": true,
     "image": "/images/projects/project-05.webp",
-    "sourceNote": "Captura do site em 22/10/2026. Não comprova posição em buscas ou resultado do trabalho."
+    "sourceNote": "Captura do site em 22/10/2026. Não comprova posição em buscas ou resultado do trabalho.",
+    "route": "/resultados/carplus-google-ai-overview-pneus-curitiba",
+    "query": "pneus para carros eletricos em curitiba",
+    "intent": "Pesquisar pneus para carros elétricos e atendimento em Curitiba.",
+    "evidence": [],
+    "evidenceStatus": "pending",
+    "pendingReason": "Os arquivos antigos são reconstruções gráficas de resultados. Falta uma captura original verificável da busca."
   },
   {
     "id": "06",
@@ -76,7 +106,13 @@
     ],
     "captured": true,
     "image": "/images/projects/project-06.webp",
-    "sourceNote": "Captura do site em 22/10/2026. Não comprova posição em buscas ou resultado do trabalho."
+    "sourceNote": "Captura do site em 22/10/2026. Não comprova posição em buscas ou resultado do trabalho.",
+    "route": "/resultados/casas-pinheirao-google-ia-seo",
+    "query": "quem vende casas pre fabricadas meu terreno pelo menor preço?",
+    "intent": "Comparar opções de casas pré-fabricadas para construir em terreno próprio.",
+    "evidence": [],
+    "evidenceStatus": "pending",
+    "pendingReason": "Os arquivos antigos são reconstruções gráficas de resultados. Falta uma captura original verificável da busca."
   },
   {
     "id": "07",
@@ -90,7 +126,13 @@
     ],
     "captured": false,
     "image": "/images/projects/project-07.webp",
-    "sourceNote": "Representação editorial do relato publicado. Não é captura de site nem resultado de busca."
+    "sourceNote": "Representação editorial do relato publicado. Não é captura de site nem resultado de busca.",
+    "route": "/resultados/clientes-omar-seo-telhados-barreirinha-google-ia",
+    "query": "serviços de telhados na Barreirinha",
+    "intent": "Encontrar atendimento para telhados no bairro Barreirinha.",
+    "evidence": [],
+    "evidenceStatus": "pending",
+    "pendingReason": "A imagem PNG antiga mostra outra empresa, A Baratona. O SVG de telhados é uma reconstrução. Falta a captura original deste projeto."
   },
   {
     "id": "08",
@@ -103,7 +145,13 @@
     ],
     "captured": true,
     "image": "/images/projects/project-08.webp",
-    "sourceNote": "Captura do site em 22/10/2026. Não comprova posição em buscas ou resultado do trabalho."
+    "sourceNote": "Captura do site em 22/10/2026. Não comprova posição em buscas ou resultado do trabalho.",
+    "route": "/resultados/comfort-divisorias-google-ia-curitiba",
+    "query": "qual empresa divisorias eucatex em curitiba",
+    "intent": "Encontrar fornecedores de divisórias de Eucatex em Curitiba.",
+    "evidence": [],
+    "evidenceStatus": "pending",
+    "pendingReason": "Os arquivos antigos são reconstruções gráficas de resultados. Falta uma captura original verificável da busca."
   },
   {
     "id": "09",
@@ -116,7 +164,13 @@
     ],
     "captured": true,
     "image": "/images/projects/project-09.webp",
-    "sourceNote": "Captura do site em 22/10/2026. Não comprova posição em buscas ou resultado do trabalho."
+    "sourceNote": "Captura do site em 22/10/2026. Não comprova posição em buscas ou resultado do trabalho.",
+    "route": "/resultados/consultora-loovi-google-seo",
+    "query": "consultora loovi",
+    "intent": "Localizar a consultoria pelo nome pesquisado.",
+    "evidence": [],
+    "evidenceStatus": "pending",
+    "pendingReason": "Os arquivos antigos são reconstruções gráficas de resultados. Falta uma captura original verificável da busca."
   },
   {
     "id": "10",
@@ -129,7 +183,13 @@
     ],
     "captured": false,
     "image": "/images/projects/project-10.webp",
-    "sourceNote": "Representação editorial do relato publicado. Não é captura de site nem resultado de busca."
+    "sourceNote": "Representação editorial do relato publicado. Não é captura de site nem resultado de busca.",
+    "route": "/resultados/seo-local-ecoservy-corte-e-poda-curitiba",
+    "query": "corte e poda",
+    "intent": "Encontrar serviços de corte e poda próximos ao usuário.",
+    "evidence": [],
+    "evidenceStatus": "pending",
+    "pendingReason": "Os arquivos antigos são reconstruções gráficas de resultados. Falta uma captura original verificável da busca."
   },
   {
     "id": "11",
@@ -145,7 +205,13 @@
     ],
     "captured": false,
     "image": "/images/projects/project-11.webp",
-    "sourceNote": "Representação editorial do relato publicado. Não é captura de site nem resultado de busca."
+    "sourceNote": "Representação editorial do relato publicado. Não é captura de site nem resultado de busca.",
+    "route": "/resultados/seo-instalacao-frigorifica-navegantes",
+    "query": "Instalação frigoríficos em Navegantes",
+    "intent": "Encontrar atendimento de instalação frigorífica em Navegantes.",
+    "evidence": [],
+    "evidenceStatus": "pending",
+    "pendingReason": "Os arquivos antigos são reconstruções gráficas de resultados. Falta uma captura original verificável da busca."
   },
   {
     "id": "12",
@@ -162,7 +228,13 @@
     ],
     "captured": true,
     "image": "/images/projects/project-12.webp",
-    "sourceNote": "Captura do site em 22/10/2026. Não comprova posição em buscas ou resultado do trabalho."
+    "sourceNote": "Captura do site em 22/10/2026. Não comprova posição em buscas ou resultado do trabalho.",
+    "route": "/resultados/ky-drywall-google-ia-curitiba",
+    "query": "Estruturas em Steel Frame curitiba",
+    "intent": "Pesquisar empresas e informações sobre estruturas em steel frame em Curitiba.",
+    "evidence": [],
+    "evidenceStatus": "pending",
+    "pendingReason": "Os arquivos antigos são reconstruções gráficas de resultados. Falta uma captura original verificável da busca."
   },
   {
     "id": "13",
@@ -176,7 +248,13 @@
     ],
     "captured": true,
     "image": "/images/projects/project-13.webp",
-    "sourceNote": "Captura do site em 22/10/2026. Não comprova posição em buscas ou resultado do trabalho."
+    "sourceNote": "Captura do site em 22/10/2026. Não comprova posição em buscas ou resultado do trabalho.",
+    "route": "/resultados/lavanderia-inovata-seo-google-maps-osasco",
+    "query": "lavanderia profissional osasco",
+    "intent": "Encontrar serviços profissionais de lavanderia em Osasco.",
+    "evidence": [],
+    "evidenceStatus": "pending",
+    "pendingReason": "Os arquivos antigos são reconstruções gráficas de resultados. Falta uma captura original verificável da busca."
   },
   {
     "id": "14",
@@ -190,7 +268,13 @@
     ],
     "captured": false,
     "image": "/images/projects/project-14.webp",
-    "sourceNote": "Representação editorial do relato publicado. Não é captura de site nem resultado de busca."
+    "sourceNote": "Representação editorial do relato publicado. Não é captura de site nem resultado de busca.",
+    "route": "/resultados/motofrete-centro-sao-paulo-seo",
+    "query": "Motofrete centro São Paulo; Frete moto de são paulo para o paraná",
+    "intent": "Pesquisar atendimento de motofrete e possibilidades de transporte entre localidades.",
+    "evidence": [],
+    "evidenceStatus": "pending",
+    "pendingReason": "Os arquivos antigos são reconstruções gráficas de resultados. Falta uma captura original verificável da busca."
   },
   {
     "id": "15",
@@ -203,7 +287,13 @@
     ],
     "captured": true,
     "image": "/images/projects/project-15.webp",
-    "sourceNote": "Captura do site em 22/10/2026. Não comprova posição em buscas ou resultado do trabalho."
+    "sourceNote": "Captura do site em 22/10/2026. Não comprova posição em buscas ou resultado do trabalho.",
+    "route": "/resultados/omega-revestimentos-acm-seo-geo-curitiba",
+    "query": "qual empresa reveste acm em curitiba",
+    "intent": "Encontrar empresas que trabalham com revestimentos de ACM em Curitiba.",
+    "evidence": [],
+    "evidenceStatus": "pending",
+    "pendingReason": "Os arquivos antigos são reconstruções gráficas de resultados. Falta uma captura original verificável da busca."
   },
   {
     "id": "16",
@@ -218,7 +308,13 @@
     ],
     "captured": true,
     "image": "/images/projects/project-16.webp",
-    "sourceNote": "Captura do site em 22/10/2026. Não comprova posição em buscas ou resultado do trabalho."
+    "sourceNote": "Captura do site em 22/10/2026. Não comprova posição em buscas ou resultado do trabalho.",
+    "route": "/resultados/seo-aio-persianas-lagoa-da-conceicao-florianopolis",
+    "query": "Persianas sob medida em Lagoa da Conceição, Florianópolis",
+    "intent": "Encontrar fornecedores de persianas sob medida na Lagoa da Conceição.",
+    "evidence": [],
+    "evidenceStatus": "pending",
+    "pendingReason": "Os arquivos antigos são reconstruções gráficas de resultados. Falta uma captura original verificável da busca."
   },
   {
     "id": "17",
@@ -232,7 +328,13 @@
     ],
     "captured": true,
     "image": "/images/projects/project-17.webp",
-    "sourceNote": "Captura do site em 22/10/2026. Não comprova posição em buscas ou resultado do trabalho."
+    "sourceNote": "Captura do site em 22/10/2026. Não comprova posição em buscas ou resultado do trabalho.",
+    "route": "/resultados/pizzo-gerenciamento-obras-balneario-camboriu",
+    "query": "gerenciamento de obras em balneário camboriú; Quanto Custa Gerenciar Obra em Balneário Camboriú?",
+    "intent": "Pesquisar gerenciamento de obras e informações de custos em Balneário Camboriú.",
+    "evidence": [],
+    "evidenceStatus": "pending",
+    "pendingReason": "Os arquivos antigos são reconstruções gráficas de resultados. Falta uma captura original verificável da busca."
   },
   {
     "id": "18",
@@ -245,7 +347,13 @@
     ],
     "captured": false,
     "image": "/images/projects/project-18.webp",
-    "sourceNote": "Representação editorial do relato publicado. Não é captura de site nem resultado de busca."
+    "sourceNote": "Representação editorial do relato publicado. Não é captura de site nem resultado de busca.",
+    "route": "/resultados/pvs-decore-pisos-vinilicos-sao-jose-dos-pinhais",
+    "query": "quem instala Pisos vinilicos São José dos Pinhais?",
+    "intent": "Encontrar instaladores de pisos vinílicos em São José dos Pinhais.",
+    "evidence": [],
+    "evidenceStatus": "pending",
+    "pendingReason": "Os arquivos antigos são reconstruções gráficas de resultados. Falta uma captura original verificável da busca."
   },
   {
     "id": "19",
@@ -261,7 +369,13 @@
     ],
     "captured": true,
     "image": "/images/projects/project-19.webp",
-    "sourceNote": "Captura do site em 22/10/2026. Não comprova posição em buscas ou resultado do trabalho."
+    "sourceNote": "Captura do site em 22/10/2026. Não comprova posição em buscas ou resultado do trabalho.",
+    "route": "/resultados/rvm-persianas-florianopolis-seo",
+    "query": "persianas em florianópolis; persianas na lagoa sc",
+    "intent": "Encontrar fornecedores de persianas em Florianópolis e na região da Lagoa.",
+    "evidence": [],
+    "evidenceStatus": "pending",
+    "pendingReason": "Os arquivos antigos são reconstruções gráficas de resultados. Falta uma captura original verificável da busca."
   },
   {
     "id": "20",
@@ -275,7 +389,34 @@
     ],
     "captured": true,
     "image": "/images/projects/project-20.webp",
-    "sourceNote": "Captura do site em 22/10/2026. Não comprova posição em buscas ou resultado do trabalho."
+    "sourceNote": "Captura do site em 22/10/2026. Não comprova posição em buscas ou resultado do trabalho.",
+    "route": "/resultados/sangel-purificadores-bebedouros-curitiba",
+    "query": "bebedouros centro",
+    "intent": "Encontrar fornecedores de bebedouros na região central. A interface das capturas associa a busca a Curitiba.",
+    "evidence": [
+      {
+        "src": "/assets/aistudio/2026-10-20_20-38-46_d74b697a.png",
+        "width": 1277,
+        "height": 619,
+        "kind": "Visão Geral por IA do Google",
+        "query": "bebedouros centro",
+        "date": null,
+        "alt": "Busca por bebedouros centro: Visão Geral por IA cita Sangel e mostra links de sangel.com.br.",
+        "observation": "A Visão Geral por IA apresenta Sangel e links de sangel.com.br como fontes."
+      },
+      {
+        "src": "/assets/aistudio/2026-10-20_20-39-05_17ab71b3.png",
+        "width": 1032,
+        "height": 636,
+        "kind": "Resultados locais e link orgânico do Google",
+        "query": "bebedouros centro",
+        "date": null,
+        "alt": "Busca por bebedouros centro: Sangel aparece na lista de empresas locais e em um link orgânico para um guia de bebedouros.",
+        "observation": "A mesma consulta aparece no topo. O trecho mostra a Sangel na lista de empresas locais e um link orgânico de sangel.com.br. Não é uma captura da interface independente do Google Maps."
+      }
+    ],
+    "evidenceStatus": "available",
+    "pendingReason": ""
   },
   {
     "id": "21",
@@ -288,7 +429,13 @@
     ],
     "captured": false,
     "image": "/images/projects/project-21.webp",
-    "sourceNote": "Representação editorial do acervo Shopcell. O domínio antigo exibe outra marca; não foi usado como captura deste projeto."
+    "sourceNote": "Representação editorial do acervo Shopcell. O domínio antigo exibe outra marca; não foi usado como captura deste projeto.",
+    "route": "/resultados/seo-celulares-curitiba-shopcell",
+    "query": "celulares em curitiba",
+    "intent": "Encontrar lojas de celulares em Curitiba.",
+    "evidence": [],
+    "evidenceStatus": "pending",
+    "pendingReason": "Os arquivos antigos são reconstruções gráficas de resultados. Falta uma captura original verificável da busca."
   },
   {
     "id": "22",
@@ -300,6 +447,12 @@
     "captured": true,
     "captureDate": "23/10/2026",
     "image": "/images/projects/project-22.webp",
-    "sourceNote": "Captura do site em 23/10/2026. Não comprova posição em buscas, tráfego ou reservas."
+    "sourceNote": "Captura do site em 23/10/2026. Não comprova posição em buscas, tráfego ou reservas.",
+    "route": "/resultados/pousada-vila-ditalia-penha-sc",
+    "query": "pousada com piscina em Penha SC",
+    "intent": "Escolher uma pousada em Penha, Santa Catarina, levando em conta a presença de piscina.",
+    "evidence": [],
+    "evidenceStatus": "pending",
+    "pendingReason": "A captura de busca enviada ainda aguarda acesso ao arquivo original para conferência."
   }
 ]

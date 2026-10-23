@@ -7,27 +7,38 @@ export function PortfolioImage(
     typeof props.src === "string"
       ? props.src.replace("https://www.omarseo.digital", "").split("#")[0]
       : "";
-  const project = (projects as Array<(typeof projects)[number] & {captureDate?:string}>).find(
+  const project = projects.find(
     (p) => p.images.includes(raw) || p.image === raw,
   );
   if (!project) return <img {...props} />;
+  const evidence =
+    project.evidence.find((e) => e.src === raw) || project.evidence[0];
+  if (!evidence)
+    return (
+      <span className="portfolio-pending">
+        <strong>{project.name}</strong>
+        <span>Captura original de busca pendente</span>
+        <span>{project.pendingReason}</span>
+      </span>
+    );
   return (
     <span className="portfolio-visual">
       <img
-        src={project.image}
-        srcSet={`${project.image.replace(".webp", "-600.webp")} 600w, ${project.image} 1200w`}
-        sizes="(max-width:700px) 100vw, 900px"
-        width="1200"
-        height="900"
+        src={evidence.src}
+        width={evidence.width}
+        height={evidence.height}
         loading={props.loading || "lazy"}
         decoding="async"
-        alt={`${project.name}: ${project.captured ? "captura atual do site" : "representação editorial do projeto"}. ${project.subject}.`}
+        alt={evidence.alt}
       />
       <span className="portfolio-caption">
         <strong>{project.name}</strong>
-        <span>Tema do relato: {project.subject}.</span>
-        <span>{project.sourceNote}</span>
-        {project.captured && <span>Fonte: {project.url} — {project.captureDate || "22/10/2026"}.</span>}
+        <span>{evidence.kind}</span>
+        <span>Consulta visível: “{evidence.query}”.</span>
+        <span>
+          Captura do acervo. Data não confirmada; não representa a posição
+          atual.
+        </span>
       </span>
     </span>
   );

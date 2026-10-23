@@ -87,3 +87,12 @@ Teste específico: `node scripts/verify-animation.mjs`, com AUDIT_URL opcional. 
 Pousada Vila D’Itália, site https://www.pousadaviladitalia.com.br/, indicada pelo usuário com foco na consulta “pousada com piscina em Penha SC”. O site oficial confirma Penha/SC e informa piscinas externa e coberta. Captura atual inspecionada e incluída como peça 22, com variante 600 px, preservando a marca do site. Novo registro /resultados/pousada-vila-ditalia-penha-sc e link no índice. Total: 22 projetos, 169 rotas.
 
 A imagem originalmente anexada não foi usada: a materialização Library falhou por incompatibilidade de os.setxattr com Windows. O usuário identificou o cliente posteriormente. Não há afirmação de primeira página, ranking, tráfego, reservas ou conversões; o registro descreve foco de conteúdo, sem inventar entregas contratuais.
+
+## Correção global do portfólio de buscas — 23/10/2026
+- Inventário: docs/PORTFOLIO_EVIDENCE_AUDIT.md e docs/portfolio-evidence-audit.json, 22 casos e histórico anterior à renovação.
+- Restauradas duas capturas reais da Sangel, sem alterações nos pixels, com consulta visível e distinção entre Visão Geral por IA, lista local da Pesquisa e link orgânico. Data de captura não confirmada.
+- Outros 21 casos: sem imagem de comprovação, pendência explícita. Removidas telas de sites/composições editoriais da exibição e alegações não sustentadas dos textos e schemas. URLs e arquivos históricos preservados.
+- Home destaca a captura real. Conteúdo factual da pousada preservado; imagem de busca aguarda materialização local. Nenhum resultado de busca foi simulado.
+- npm run build (TypeScript + 169 páginas + 404) aprovado; verify.mjs sem erros nas 169 páginas estáticas; 22 casos acessíveis sem JS, canonical único, schema válido, OG absoluto e imagens de busca com HTTP 200.
+- verify-evidence-portfolio: 40 verificações, 320/390/1440 px e fonte 200%, axe WCAG A/AA sem violações; verify-menu-keyboard: Escape/Fechar/Tab com retorno de foco; navegação/rodapé em seis cenários sem overflow ou violações.
+- Originais em public/images/cases, public/images/portfolio e public/assets/aistudio não foram alterados. Animações SVG, contato, OG da marca e favicons preservados.

@@ -1,0 +1,337 @@
+{
+  "reviewDate": "2026-10-23",
+  "baseline": "05facf631f2f5c3cd6b106216aa0520a38acb811",
+  "historyBeforeRedesign": "bf0282e",
+  "counts": {
+    "cases": 22,
+    "withOriginalCaptures": 1,
+    "pending": 21,
+    "originalCapturesRestored": 2
+  },
+  "method": "Inspeção visual de 48 PNG/WebP; leitura de SVGs e scripts geradores; histórico Git das imagens. Todos os arquivos antigos preservados. Não foram criadas imagens de resultados.",
+  "cases": [
+    {
+      "id": "01",
+      "name": "A Baratona Caçambas",
+      "route": "/resultados/a-baratona-cacambas-google-ia-curitiba",
+      "before": "Composição editorial",
+      "after": "Sem imagem de comprovação; pendência explícita",
+      "query": "quem vem com aluguel de Caçambas baratas?",
+      "oldFiles": [
+        "/images/cases/case-a-baratona-cacambas-google-ai-curitiba.png"
+      ],
+      "reason": "Os arquivos antigos são reconstruções gráficas de resultados. Falta uma captura original verificável da busca.",
+      "evidence": []
+    },
+    {
+      "id": "02",
+      "name": "Cicarelli Advocacia",
+      "route": "/resultados/seo-advogados-planos-de-saude",
+      "before": "Captura do site",
+      "after": "Sem imagem de comprovação; pendência explícita",
+      "query": "advogados planos de saude",
+      "oldFiles": [
+        "/images/cases/case-seo-advogados-planos-de-saude-google.png"
+      ],
+      "reason": "Os arquivos antigos são reconstruções gráficas de resultados. Falta uma captura original verificável da busca.",
+      "evidence": []
+    },
+    {
+      "id": "03",
+      "name": "Alevinos Curitiba",
+      "route": "/resultados/seo-local-e-organico-alevinos-curitiba",
+      "before": "Captura do site",
+      "after": "Sem imagem de comprovação; pendência explícita",
+      "query": "alevinos",
+      "oldFiles": [
+        "/images/cases/case-alevinos-curitiba-google.png"
+      ],
+      "reason": "Os arquivos antigos são reconstruções gráficas de resultados. Falta uma captura original verificável da busca.",
+      "evidence": []
+    },
+    {
+      "id": "04",
+      "name": "Alumimec",
+      "route": "/resultados/alumimec-estruturas-metalicas-sao-jose-dos-pinhais",
+      "before": "Captura do site",
+      "after": "Sem imagem de comprovação; pendência explícita",
+      "query": "quem faz estrutura para galpoes em sao jose dos pinhais?",
+      "oldFiles": [
+        "/images/cases/case-alumimec-estruturas-metalicas-sao-jose-dos-pinhais-google.png"
+      ],
+      "reason": "Os arquivos antigos são reconstruções gráficas de resultados. Falta uma captura original verificável da busca.",
+      "evidence": []
+    },
+    {
+      "id": "05",
+      "name": "Carplus Centro Automotivo",
+      "route": "/resultados/carplus-google-ai-overview-pneus-curitiba",
+      "before": "Captura do site",
+      "after": "Sem imagem de comprovação; pendência explícita",
+      "query": "pneus para carros eletricos em curitiba",
+      "oldFiles": [
+        "/images/cases/case-carplus-google-ai-overview-pneus-curitiba.png"
+      ],
+      "reason": "Os arquivos antigos são reconstruções gráficas de resultados. Falta uma captura original verificável da busca.",
+      "evidence": []
+    },
+    {
+      "id": "06",
+      "name": "Casas Pinheirão",
+      "route": "/resultados/casas-pinheirao-google-ia-seo",
+      "before": "Captura do site",
+      "after": "Sem imagem de comprovação; pendência explícita",
+      "query": "quem vende casas pre fabricadas meu terreno pelo menor preço?",
+      "oldFiles": [
+        "/images/cases/casas-pinheirao-google-ai-overview.png",
+        "/images/cases/casas-pinheirao-google-organico.png"
+      ],
+      "reason": "Os arquivos antigos são reconstruções gráficas de resultados. Falta uma captura original verificável da busca.",
+      "evidence": []
+    },
+    {
+      "id": "07",
+      "name": "Telhados Barreirinha",
+      "route": "/resultados/clientes-omar-seo-telhados-barreirinha-google-ia",
+      "before": "Composição editorial",
+      "after": "Sem imagem de comprovação; pendência explícita",
+      "query": "serviços de telhados na Barreirinha",
+      "oldFiles": [
+        "/images/cases/case-clientes-omar-seo-telhados-barreirinha-google-ia.png",
+        "/images/cases/case-clientes-omar-seo-telhados-barreirinha-google-ia.svg"
+      ],
+      "reason": "A imagem PNG antiga mostra outra empresa, A Baratona. O SVG de telhados é uma reconstrução. Falta a captura original deste projeto.",
+      "evidence": []
+    },
+    {
+      "id": "08",
+      "name": "Comfort Divisórias",
+      "route": "/resultados/comfort-divisorias-google-ia-curitiba",
+      "before": "Captura do site",
+      "after": "Sem imagem de comprovação; pendência explícita",
+      "query": "qual empresa divisorias eucatex em curitiba",
+      "oldFiles": [
+        "/images/cases/case-comfort-divisorias-eucatex-google-ai.png"
+      ],
+      "reason": "Os arquivos antigos são reconstruções gráficas de resultados. Falta uma captura original verificável da busca.",
+      "evidence": []
+    },
+    {
+      "id": "09",
+      "name": "Consultora Loovi",
+      "route": "/resultados/consultora-loovi-google-seo",
+      "before": "Captura do site",
+      "after": "Sem imagem de comprovação; pendência explícita",
+      "query": "consultora loovi",
+      "oldFiles": [
+        "/images/cases/case-consultora-loovi-google-organico.png"
+      ],
+      "reason": "Os arquivos antigos são reconstruções gráficas de resultados. Falta uma captura original verificável da busca.",
+      "evidence": []
+    },
+    {
+      "id": "10",
+      "name": "Ecoservy",
+      "route": "/resultados/seo-local-ecoservy-corte-e-poda-curitiba",
+      "before": "Composição editorial",
+      "after": "Sem imagem de comprovação; pendência explícita",
+      "query": "corte e poda",
+      "oldFiles": [
+        "/images/cases/case-ecoservy-corte-e-poda-google-maps.png"
+      ],
+      "reason": "Os arquivos antigos são reconstruções gráficas de resultados. Falta uma captura original verificável da busca.",
+      "evidence": []
+    },
+    {
+      "id": "11",
+      "name": "Instalação frigorífica em Navegantes",
+      "route": "/resultados/seo-instalacao-frigorifica-navegantes",
+      "before": "Composição editorial",
+      "after": "Sem imagem de comprovação; pendência explícita",
+      "query": "Instalação frigoríficos em Navegantes",
+      "oldFiles": [
+        "/images/portfolio/google-ai-overview-instalacao-frigorifica-navegantes.png",
+        "/images/portfolio/google-organico-instalacao-frigorifica-navegantes.png",
+        "/images/portfolio/google-ai-overview-instalacao-frigorifica-navegantes.webp",
+        "/images/portfolio/google-organico-instalacao-frigorifica-navegantes.webp"
+      ],
+      "reason": "Os arquivos antigos são reconstruções gráficas de resultados. Falta uma captura original verificável da busca.",
+      "evidence": []
+    },
+    {
+      "id": "12",
+      "name": "KY Drywall",
+      "route": "/resultados/ky-drywall-google-ia-curitiba",
+      "before": "Captura do site",
+      "after": "Sem imagem de comprovação; pendência explícita",
+      "query": "Estruturas em Steel Frame curitiba",
+      "oldFiles": [
+        "/images/cases/case-ky-drywall-estruturas-steel-frame-curitiba-google-ai.png",
+        "/images/cases/case-ky-drywall-estruturas-steel-frame-curitiba-organico.png",
+        "/images/cases/case-ky-drywall-google-ai-curitiba.png",
+        "/images/cases/case-ky-drywall-estruturas-steel-frame-curitiba-google-ai.webp",
+        "/images/cases/case-ky-drywall-estruturas-steel-frame-curitiba-organico.webp"
+      ],
+      "reason": "Os arquivos antigos são reconstruções gráficas de resultados. Falta uma captura original verificável da busca.",
+      "evidence": []
+    },
+    {
+      "id": "13",
+      "name": "Lavanderia Inovata",
+      "route": "/resultados/lavanderia-inovata-seo-google-maps-osasco",
+      "before": "Captura do site",
+      "after": "Sem imagem de comprovação; pendência explícita",
+      "query": "lavanderia profissional osasco",
+      "oldFiles": [
+        "/images/cases/case-lavanderia-inovata-google-osasco.png",
+        "/images/cases/case-lavanderia-inovata-google-osasco.svg"
+      ],
+      "reason": "Os arquivos antigos são reconstruções gráficas de resultados. Falta uma captura original verificável da busca.",
+      "evidence": []
+    },
+    {
+      "id": "14",
+      "name": "Motofrete",
+      "route": "/resultados/motofrete-centro-sao-paulo-seo",
+      "before": "Composição editorial",
+      "after": "Sem imagem de comprovação; pendência explícita",
+      "query": "Motofrete centro São Paulo; Frete moto de são paulo para o paraná",
+      "oldFiles": [
+        "/images/cases/case-motofrete-sp-para-parana-google.png",
+        "/images/cases/case-motofrete-centro-sao-paulo-google.png"
+      ],
+      "reason": "Os arquivos antigos são reconstruções gráficas de resultados. Falta uma captura original verificável da busca.",
+      "evidence": []
+    },
+    {
+      "id": "15",
+      "name": "Omega Revestimentos",
+      "route": "/resultados/omega-revestimentos-acm-seo-geo-curitiba",
+      "before": "Captura do site",
+      "after": "Sem imagem de comprovação; pendência explícita",
+      "query": "qual empresa reveste acm em curitiba",
+      "oldFiles": [
+        "/images/cases/case-omega-revestimentos-acm-google-ai-seo.png"
+      ],
+      "reason": "Os arquivos antigos são reconstruções gráficas de resultados. Falta uma captura original verificável da busca.",
+      "evidence": []
+    },
+    {
+      "id": "16",
+      "name": "Persianas na Lagoa da Conceição",
+      "route": "/resultados/seo-aio-persianas-lagoa-da-conceicao-florianopolis",
+      "before": "Captura do site",
+      "after": "Sem imagem de comprovação; pendência explícita",
+      "query": "Persianas sob medida em Lagoa da Conceição, Florianópolis",
+      "oldFiles": [
+        "/images/portfolio/google-ai-overview-persianas-sob-medida-lagoa-da-conceicao.png",
+        "/images/cases/case-rvm-persianas-lagoa-sc-google.png",
+        "/images/portfolio/google-ai-overview-persianas-sob-medida-lagoa-da-conceicao.webp"
+      ],
+      "reason": "Os arquivos antigos são reconstruções gráficas de resultados. Falta uma captura original verificável da busca.",
+      "evidence": []
+    },
+    {
+      "id": "17",
+      "name": "Pizzo Gerenciamento de Obras",
+      "route": "/resultados/pizzo-gerenciamento-obras-balneario-camboriu",
+      "before": "Captura do site",
+      "after": "Sem imagem de comprovação; pendência explícita",
+      "query": "gerenciamento de obras em balneário camboriú; Quanto Custa Gerenciar Obra em Balneário Camboriú?",
+      "oldFiles": [
+        "/images/cases/case-pizzo-gerenciamento-obras-balneario-camboriu-google-ai.png",
+        "/images/cases/case-pizzo-quanto-custa-gerenciar-obra-balneario-camboriu-google-ai.png"
+      ],
+      "reason": "Os arquivos antigos são reconstruções gráficas de resultados. Falta uma captura original verificável da busca.",
+      "evidence": []
+    },
+    {
+      "id": "18",
+      "name": "PVS Decore",
+      "route": "/resultados/pvs-decore-pisos-vinilicos-sao-jose-dos-pinhais",
+      "before": "Composição editorial",
+      "after": "Sem imagem de comprovação; pendência explícita",
+      "query": "quem instala Pisos vinilicos São José dos Pinhais?",
+      "oldFiles": [
+        "/images/cases/case-pvs-decore-google-ia-pisos-vinilicos-sao-jose-dos-pinhais.png"
+      ],
+      "reason": "Os arquivos antigos são reconstruções gráficas de resultados. Falta uma captura original verificável da busca.",
+      "evidence": []
+    },
+    {
+      "id": "19",
+      "name": "RVM Persianas",
+      "route": "/resultados/rvm-persianas-florianopolis-seo",
+      "before": "Captura do site",
+      "after": "Sem imagem de comprovação; pendência explícita",
+      "query": "persianas em florianópolis; persianas na lagoa sc",
+      "oldFiles": [
+        "/images/cases/case-rvm-persianas-lagoa-sc-google.png",
+        "/images/cases/case-rvm-persianas-florianopolis-google.png",
+        "/images/portfolio/google-ai-overview-persianas-sob-medida-lagoa-da-conceicao.png",
+        "/images/portfolio/google-ai-overview-persianas-sob-medida-lagoa-da-conceicao.webp"
+      ],
+      "reason": "Os arquivos antigos são reconstruções gráficas de resultados. Falta uma captura original verificável da busca.",
+      "evidence": []
+    },
+    {
+      "id": "20",
+      "name": "Sangel Purificadores",
+      "route": "/resultados/sangel-purificadores-bebedouros-curitiba",
+      "before": "Captura do site",
+      "after": "Duas capturas originais do acervo, inspecionadas",
+      "query": "bebedouros centro",
+      "oldFiles": [
+        "/assets/aistudio/2026-10-20_20-38-46_d74b697a.png",
+        "/assets/aistudio/2026-10-20_20-39-05_17ab71b3.png"
+      ],
+      "reason": "Consulta visível; data de captura não confirmada. Arquivos adicionados em bf0282e; nome de arquivo não prova data.",
+      "evidence": [
+        {
+          "src": "/assets/aistudio/2026-10-20_20-38-46_d74b697a.png",
+          "width": 1277,
+          "height": 619,
+          "kind": "Visão Geral por IA do Google",
+          "query": "bebedouros centro",
+          "date": null,
+          "alt": "Busca por bebedouros centro: Visão Geral por IA cita Sangel e mostra links de sangel.com.br.",
+          "observation": "A Visão Geral por IA apresenta Sangel e links de sangel.com.br como fontes."
+        },
+        {
+          "src": "/assets/aistudio/2026-10-20_20-39-05_17ab71b3.png",
+          "width": 1032,
+          "height": 636,
+          "kind": "Resultados locais e link orgânico do Google",
+          "query": "bebedouros centro",
+          "date": null,
+          "alt": "Busca por bebedouros centro: Sangel aparece na lista de empresas locais e em um link orgânico para um guia de bebedouros.",
+          "observation": "A mesma consulta aparece no topo. O trecho mostra a Sangel na lista de empresas locais e um link orgânico de sangel.com.br. Não é uma captura da interface independente do Google Maps."
+        }
+      ]
+    },
+    {
+      "id": "21",
+      "name": "Shopcell Curitiba",
+      "route": "/resultados/seo-celulares-curitiba-shopcell",
+      "before": "Composição editorial",
+      "after": "Sem imagem de comprovação; pendência explícita",
+      "query": "celulares em curitiba",
+      "oldFiles": [
+        "/images/cases/case-shopcell-celulares-em-curitiba-google.png"
+      ],
+      "reason": "Os arquivos antigos são reconstruções gráficas de resultados. Falta uma captura original verificável da busca.",
+      "evidence": []
+    },
+    {
+      "id": "22",
+      "name": "Pousada Vila D’Itália",
+      "route": "/resultados/pousada-vila-ditalia-penha-sc",
+      "before": "Captura do site",
+      "after": "Sem imagem de comprovação; pendência explícita",
+      "query": "pousada com piscina em Penha SC",
+      "oldFiles": [],
+      "reason": "A captura de busca enviada ainda aguarda acesso ao arquivo original para conferência.",
+      "evidence": []
+    }
+  ]
+}

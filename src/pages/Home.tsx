@@ -187,12 +187,12 @@ export default function Home() {
             <em>Entenda o contexto.</em>
           </h2>
           <p>
-            O acervo reúne relatos e ilustrações publicados sobre projetos. Há
-            reconstruções gráficas de resultados de busca; elas não substituem
-            capturas originais verificáveis.
+            O portfólio apresenta capturas reais de buscas, com a consulta e o
+            contexto de cada registro. Projetos sem captura original ficam
+            identificados como pendentes de comprovação.
           </p>
           <p className="small-copy">
-            Uma ilustração não comprova uma menção real, receita ou posição.
+            Uma captura isolada não comprova receita ou posição permanente.
             Resultados de busca variam; um projeto não prevê o resultado de
             outro.
           </p>
@@ -202,19 +202,19 @@ export default function Home() {
         </div>
         <Link
           className="evidence-card"
-          to="/resultados/carplus-google-ai-overview-pneus-curitiba"
+          to="/resultados/sangel-purificadores-bebedouros-curitiba"
         >
           <div className="evidence-image">
             <PortfolioImage
-              src="/images/projects/project-05.webp"
+              src="/assets/aistudio/2026-10-20_20-38-46_d74b697a.png"
               width="900"
               height="600"
               loading="lazy"
-              alt="Ilustração de busca do acervo Carplus; não é comprovação independente de resultado"
+              alt="Consulta bebedouros centro: Sangel na Visão Geral por IA do Google"
             />
           </div>
           <div>
-            <span>ILUSTRAÇÃO DO ACERVO / CARPLUS</span>
+            <span>CAPTURA REAL DO ACERVO / SANGEL</span>
             <h3>Uma busca. O contexto de uma presença.</h3>
             <p>Consulte a documentação do case →</p>
           </div>
