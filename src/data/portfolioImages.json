@@ -289,5 +289,17 @@
     "captured": false,
     "image": "/images/projects/project-21.webp",
     "sourceNote": "Representação editorial do acervo Shopcell. O domínio antigo exibe outra marca; não foi usado como captura deste projeto."
+  },
+  {
+    "id": "22",
+    "file": "CaseVilaDItalia",
+    "name": "Pousada Vila D’Itália",
+    "url": "https://www.pousadaviladitalia.com.br/",
+    "subject": "Pousada com piscina em Penha SC",
+    "images": [],
+    "captured": true,
+    "captureDate": "23/10/2026",
+    "image": "/images/projects/project-22.webp",
+    "sourceNote": "Captura do site em 23/10/2026. Não comprova posição em buscas, tráfego ou reservas."
   }
 ]

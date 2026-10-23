@@ -1,3 +1,4 @@
+import CaseVilaDItalia from '../src/pages/CaseVilaDItalia';
 import fs from "fs";
 import path from "path";
 import React from "react";
@@ -65,6 +66,7 @@ function getPageComponent(
 ): React.ReactElement {
   const cleanPath = rawPath === "/" ? "" : rawPath.replace(/^\//, "");
 
+  if (rawPath === "/resultados/pousada-vila-ditalia-penha-sc") return <CaseVilaDItalia />;
   if (rawPath === "/") return <Home />;
   if (rawPath === "/servicos") return <ServicesIndex />;
   if (cleanPath.startsWith("servicos/")) {

@@ -1,25 +1,10 @@
 # Cobertura do padrão editorial
 
-168 rotas públicas; além delas, template 404. Todas usam PageFrame editorial-v2 no cliente e no pré-render.
+169 rotas públicas; além delas, template 404. Todas usam PageFrame editorial-v2 no cliente e no pré-render.
 
-## Páginas institucionais e guias (13)
+## Cases (22)
 
-- /seo-local
-- /servicos
-- /sobre
-- /metodo
-- /blog
-- /seo-geo-aio
-- /seo
-- /google-maps
-- /geo-ia
-- /seo-tecnico
-- /resultados
-- /auditoria-seo
-- /contato
-
-## Cases (21)
-
+- /resultados/pousada-vila-ditalia-penha-sc
 - /resultados/sangel-purificadores-bebedouros-curitiba
 - /resultados/seo-advogados-planos-de-saude
 - /resultados/seo-celulares-curitiba-shopcell
@@ -41,6 +26,22 @@
 - /resultados/lavanderia-inovata-seo-google-maps-osasco
 - /resultados/seo-instalacao-frigorifica-navegantes
 - /resultados/seo-aio-persianas-lagoa-da-conceicao-florianopolis
+
+## Páginas institucionais e guias (13)
+
+- /seo-local
+- /servicos
+- /sobre
+- /metodo
+- /blog
+- /seo-geo-aio
+- /seo
+- /google-maps
+- /geo-ia
+- /seo-tecnico
+- /resultados
+- /auditoria-seo
+- /contato
 
 ## Home (1)
 

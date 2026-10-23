@@ -82,3 +82,8 @@ Teste específico: `node scripts/verify-animation.mjs`, com AUDIT_URL opcional. 
 - O domínio histórico Shopcell apresenta Suncell atualmente. Por isso, não foi usado como captura do projeto Shopcell; essa limitação é informada na legenda. Seis outros projetos não tinham URL inequívoca verificável no acervo; não foram inferidos domínios.
 - Fontes registradas em docs/portfolio-sources.json. A captura não enviou mensagens, formulários ou publicações. scripts/capture-portfolio.mjs é uma ferramenta de coleta; revisar identidade visual de cada fonte antes de gerar novas peças com scripts/generate-portfolio.mjs. As capturas brutas desta execução estão em ../qa/portfolio-sources.
 - scripts/verify-portfolio.mjs cobre menu/rodapé em 320/390/1440 com texto normal e 200%, fechamento/foco, ausência de sobreposição das ações e todas as 21 páginas de projeto mais o índice. A revisão visual aguarda o carregamento das imagens lazy.
+
+## Cliente adicionado em 23/10/2026
+Pousada Vila D’Itália, site https://www.pousadaviladitalia.com.br/, indicada pelo usuário com foco na consulta “pousada com piscina em Penha SC”. O site oficial confirma Penha/SC e informa piscinas externa e coberta. Captura atual inspecionada e incluída como peça 22, com variante 600 px, preservando a marca do site. Novo registro /resultados/pousada-vila-ditalia-penha-sc e link no índice. Total: 22 projetos, 169 rotas.
+
+A imagem originalmente anexada não foi usada: a materialização Library falhou por incompatibilidade de os.setxattr com Windows. O usuário identificou o cliente posteriormente. Não há afirmação de primeira página, ranking, tráfego, reservas ou conversões; o registro descreve foco de conteúdo, sem inventar entregas contratuais.

@@ -205,6 +205,22 @@
       "status": 200,
       "title": "Loja de Celulares em Curitiba | Shopcell Centro",
       "subject": "Busca local para serviços de celulares"
+    },
+    {
+      "id": "22",
+      "name": "Pousada Vila D’Itália",
+      "source": "https://www.pousadaviladitalia.com.br/",
+      "image": "/images/projects/project-22.webp",
+      "type": "current_site_capture",
+      "status": 200,
+      "captureDate": "2026-10-23",
+      "subject": "Pousada com piscina em Penha SC",
+      "verifiedFacts": [
+        "Localização em Penha SC",
+        "Site informa piscinas externa e coberta"
+      ],
+      "limits": "Consulta indicada pelo cliente; nenhuma posição de busca, tráfego ou reserva verificada."
     }
-  ]
+  ],
+  "updated": "2026-10-23"
 }

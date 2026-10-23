@@ -11,6 +11,7 @@ import { getAllLocationSlugs } from './data/locations';
 import { SERVICES_DATA } from './data/servicesData';
 import { blogPosts } from './data/blogPosts';
 
+const CaseVilaDItalia = lazy(() => import('./pages/CaseVilaDItalia'));
 // Lazy Loaded Main Pages
 const Home = lazy(() => import('./pages/Home'));
 const SeoCompleto = lazy(() => import('./pages/SeoCompleto'));
@@ -100,6 +101,7 @@ function AnimatedRoutes() {
           <Route path="/google-maps" element={<GoogleMaps />} />
           <Route path="/geo-ia" element={<GeoIa />} />
           <Route path="/seo-tecnico" element={<SeoTecnico />} />
+          <Route path="/resultados/pousada-vila-ditalia-penha-sc" element={<CaseVilaDItalia />} />
           <Route path="/resultados" element={<Resultados />} />
           <Route path="/resultados/seo-advogados-planos-de-saude" element={<CaseAdvogadosPlanosSaude />} />
           <Route path="/resultados/seo-celulares-curitiba-shopcell" element={<CaseShopcellCelulares />} />

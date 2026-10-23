@@ -157,6 +157,7 @@ export default function Resultados() {
         ]}
       />
 
+
       {/* Header */}
       <div className="relative p-8 sm:p-12 lg:p-16 rounded-3xl bg-slate-950/80 border border-yellow-500/30 shadow-[0_0_40px_rgba(250,204,21,0.15)] overflow-hidden">
         <BackgroundVideo
@@ -192,6 +193,7 @@ export default function Resultados() {
         </p>
       </section>
 
+      <section className="reader-fit" aria-labelledby="vila-ditalia-client"><p className="eyebrow">CLIENTE / HOSPEDAGEM EM PENHA · SC</p><h2 id="vila-ditalia-client">Pousada Vila D’Itália</h2><p>Foco de SEO e conteúdo: <strong>pousada com piscina em Penha SC</strong>. O site oficial apresenta piscinas externa e coberta, acomodações e informações para planejar a estadia.</p><Link to="/resultados/pousada-vila-ditalia-penha-sc" className="block"><PortfolioImage src="/images/projects/project-22.webp"/></Link><Link className="solid-link" to="/resultados/pousada-vila-ditalia-penha-sc">Conhecer este projeto →</Link><p>Captura atual do site. Este registro não afirma posição no Google ou resultados de reservas.</p></section>
       {/* Documented Cases Section */}
       <section className="space-y-12">
         <div className="text-center max-w-3xl mx-auto space-y-2">
