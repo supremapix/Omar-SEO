@@ -40,6 +40,7 @@ export function Footer() {
           <Link to="/sobre">Sobre Omar Skafi</Link>
           <Link to="/blog">Guias e dúvidas</Link>
           <a href="https://profile.google/@canalsupremavideos">Canal Suprema Vídeos no Google</a>
+            <a href="https://bio.supremamidia.com.br/">Todos os links da Suprema</a>
         </nav>
         <section aria-labelledby="footer-address-title">
           <h2 id="footer-address-title">Endereço em Curitiba</h2>
