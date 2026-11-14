@@ -36,7 +36,7 @@ export default function Contato() {
     <div className="pt-24 pb-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto space-y-16">
       <EnhancedSEO
         title="Contato com Omar SEO | Atendimento Curitiba e RMC"
-        description="Entre em contato direto com Omar Skafi pelo WhatsApp (41) 99272-1004 ou (41) 98700-1004. Atendimento presencial no Batel, Curitiba e remoto para todo o Brasil."
+        description="Entre em contato direto com Omar Skafi pelo WhatsApp (41) 99272-1004 ou (41) 98700-1004. Atendimento no Rebouças, Curitiba, e remoto para todo o Brasil."
         canonical="/contato"
         breadcrumbs={breadcrumbs}
       />
