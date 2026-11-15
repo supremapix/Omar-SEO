@@ -138,6 +138,8 @@ export default function Contato() {
             Formulário de Solicitação Técnica
           </h2>
 
+          <p className="text-sm text-slate-300 leading-relaxed">Preencha os dados para preparar uma mensagem. O botão abre o WhatsApp; revise o texto e confirme o envio no aplicativo. O formulário não envia a solicitação automaticamente.</p>
+
           <form onSubmit={handleSubmit} className="space-y-4">
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               <div>
@@ -235,7 +237,7 @@ export default function Contato() {
               className="btn-emerald-wa btn-shimmer w-full py-3.5 px-4 text-xs sm:text-sm font-bold flex items-center justify-center gap-2"
             >
               <Send size={15} />
-              <span>Enviar via WhatsApp (41) 99272-1004</span>
+              <span>Preparar mensagem no WhatsApp</span>
             </button>
           </form>
         </div>
