@@ -1,5 +1,47 @@
 [
   {
+    "id": "24",
+    "file": "CaseProdentCicSeo",
+    "name": "PROdent Curitiba",
+    "url": "https://www.prodentcuritiba.com.br/",
+    "subject": "Odontopediatria na Cidade Industrial de Curitiba (CIC)",
+    "images": [
+      "/assets/aistudio/prodent-odontopediatria-cic-organico.png",
+      "/assets/aistudio/prodent-odontopediatria-cic-ai-overview.png"
+    ],
+    "captured": true,
+    "image": "/assets/aistudio/prodent-odontopediatria-cic-ai-overview.png",
+    "sourceNote": "Duas capturas da Pesquisa Google fornecidas por Omar Skafi, preservadas como recebidas.",
+    "route": "/resultados/odontopediatria-no-cic-prodent",
+    "query": "Odontopediatria no cic",
+    "intent": "Encontrar atendimento odontopediátrico no CIC. A captura da Visão Geral por IA identifica Cidade Industrial de Curitiba, Curitiba–PR.",
+    "evidence": [
+      {
+        "src": "/assets/aistudio/prodent-odontopediatria-cic-ai-overview.png",
+        "width": 1203,
+        "height": 633,
+        "kind": "Visão Geral por IA do Google (AI Overview)",
+        "query": "Odontopediatria no cic",
+        "date": null,
+        "alt": "Pesquisa por odontopediatria no CIC: a Visão Geral criada por IA cita a PROdent e o cartão de fontes exibe prodentcuritiba.com.br.",
+        "observation": "O resumo gerado pelo Google cita a PROdent como opção local; o cartão de fontes ao lado mostra um resultado da clínica. A captura não equivale a uma posição no Google Maps."
+      },
+      {
+        "src": "/assets/aistudio/prodent-odontopediatria-cic-organico.png",
+        "width": 977,
+        "height": 307,
+        "kind": "Primeiro resultado orgânico exibido no recorte",
+        "query": "Odontopediatria no cic",
+        "date": null,
+        "alt": "Pesquisa por odontopediatria no CIC: o site da PROdent é o primeiro link orgânico visível logo abaixo do bloco de lugares.",
+        "observation": "O site da PROdent aparece como o primeiro link orgânico visível logo abaixo de “Mais lugares”. O recorte não documenta posições em outros momentos, regiões ou dispositivos."
+      }
+    ],
+    "evidenceStatus": "available",
+    "pendingReason": "",
+    "evidenceSummary": "Na consulta “Odontopediatria no cic”, a PROdent aparece na Visão Geral por IA e como primeiro link orgânico visível após o bloco local, nas capturas apresentadas."
+  },
+  {
     "id": "01",
     "file": "CaseABaratonaCacambasAiSeo",
     "name": "A Baratona Caçambas",

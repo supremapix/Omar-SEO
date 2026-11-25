@@ -202,21 +202,21 @@ export default function Home() {
         </div>
         <Link
           className="evidence-card"
-          to="/resultados/sangel-purificadores-bebedouros-curitiba"
+          to="/resultados/odontopediatria-no-cic-prodent"
         >
           <div className="evidence-image">
             <PortfolioImage
-              src="/assets/aistudio/2026-10-20_20-38-46_d74b697a.png"
-              width="900"
-              height="600"
+              src="/assets/aistudio/prodent-odontopediatria-cic-ai-overview.png"
+              width="1203"
+              height="633"
               loading="lazy"
-              alt="Consulta bebedouros centro: Sangel na Visão Geral por IA do Google"
+              alt="Consulta odontopediatria no CIC: PROdent na Visão Geral por IA do Google"
             />
           </div>
           <div>
-            <span>CAPTURA REAL DO ACERVO / SANGEL</span>
-            <h3>Uma busca. O contexto de uma presença.</h3>
-            <p>Consulte a documentação do case →</p>
+            <span>CAPTURAS REAIS / PRODENT CURITIBA</span>
+            <h3>Odontopediatria no CIC: AI Overview e busca orgânica</h3>
+            <p>Veja os dois prints e o contexto →</p>
           </div>
         </Link>
       </section>
