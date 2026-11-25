@@ -41,6 +41,7 @@ const CaseABaratonaCacambasAiSeo = lazy(() => import('./pages/CaseABaratonaCacam
 const CaseClientesTelhadosBarreirinhaAiSeo = lazy(() => import('./pages/CaseClientesTelhadosBarreirinhaAiSeo'));
 const CaseLavanderiaInovataSeoOsasco = lazy(() => import('./pages/CaseLavanderiaInovataSeoOsasco'));
 const CaseInstalacaoFrigorificaNavegantes = lazy(() => import('./pages/CaseInstalacaoFrigorificaNavegantes'));
+const CaseProdentCicSeo = lazy(() => import('./pages/CaseProdentCicSeo'));
 const CasePersianasLagoaConceicaoSeo = lazy(() => import('./pages/CasePersianasLagoaConceicaoSeo'));
 const SobreOmar = lazy(() => import('./pages/SobreOmar'));
 const Sobre = lazy(() => import('./pages/Sobre'));
@@ -108,6 +109,7 @@ function AnimatedRoutes() {
           <Route path="/resultados/seo-advogados-planos-de-saude" element={<CaseAdvogadosPlanosSaude />} />
           <Route path="/resultados/seo-celulares-curitiba-shopcell" element={<CaseShopcellCelulares />} />
           <Route path="/resultados/carplus-google-ai-overview-pneus-curitiba" element={<CaseCarplusAiOverview />} />
+          <Route path="/resultados/odontopediatria-no-cic-prodent" element={<CaseProdentCicSeo />} />
           <Route path="/resultados/sangel-purificadores-bebedouros-curitiba" element={<CaseSangelPurificadores />} />
           <Route path="/resultados/seo-local-ecoservy-corte-e-poda-curitiba" element={<CaseEcoservyCortePoda />} />
           <Route path="/resultados/comfort-divisorias-google-ia-curitiba" element={<CaseComfortDivisorasAiOverview />} />
