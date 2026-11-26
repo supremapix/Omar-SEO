@@ -150,6 +150,27 @@ export default function SeoGeoAio() {
             Leia o guia de SEO versus SEM →
           </Link>
         </p>
+        <section id="monetizacao-bots-ia" className="reader-copy" aria-labelledby="monetizacao-bots-ia-titulo">
+          <p className="eyebrow">NOVO SERVIÇO / DIAGNÓSTICO DE BOTS E IA</p>
+          <h2 id="monetizacao-bots-ia-titulo">Como monetizar conteúdo acessado por bots e IA?</h2>
+          <p>Uma visita de bot não paga automaticamente. A receita direta depende de uma empresa aceitar uma licença para acessar conteúdo ou dados que você tem direitos para oferecer. Para sites comerciais, outra forma de retorno é transformar visitas humanas vindas de buscas e respostas de IA em contatos e vendas.</p>
+          <h3>O que o diagnóstico avalia</h3>
+          <ol className="guide-list">
+            <li><strong>Rastreamento:</strong> quando há logs disponíveis, separamos bots de busca, de treinamento e acessos não identificados, e observamos quais páginas procuram.</li>
+            <li><strong>Retorno comercial:</strong> analisamos referências de IA no analytics e separamos visitas de cliques no contato, pedidos recebidos e vendas, conforme os dados disponíveis.</li>
+            <li><strong>Potencial de licença:</strong> selecionamos conteúdo próprio, útil e atualizado, como pesquisas originais ou catálogos exclusivos, para avaliar um piloto sem expor dados de clientes nem fechar as páginas comerciais.</li>
+          </ol>
+          <h3>Preciso fechar meu site para cobrar por acesso?</h3>
+          <p>Não. O plano pode manter a busca pública aberta e separar o conteúdo com potencial de licença. O robô de busca do ChatGPT e o robô de treinamento da OpenAI têm controles independentes. O Pay Per Crawl da Cloudflare é um exemplo em beta fechado; ele depende de adesão e aceitação de preço, sem receita garantida.</p>
+          <ul className="guide-list">
+            <li><a href="https://developers.openai.com/api/docs/bots">OpenAI: robôs de busca e treinamento</a></li>
+            <li><a href="https://developers.cloudflare.com/ai-crawl-control/features/pay-per-crawl/what-is-pay-per-crawl/">Cloudflare: como funciona o Pay Per Crawl</a></li>
+          </ul>
+          <div className="editorial-actions">
+            <a className="solid-link" href="https://wa.me/5541992721004">Pedir diagnóstico no WhatsApp ↗</a>
+            <Link className="text-link" to="/contato">Outros canais de atendimento</Link>
+          </div>
+        </section>
         <h2>O que esta consultoria oferece?</h2>
         <p>
           A Omar SEO trabalha com diagnóstico, SEO técnico, conteúdo, presença

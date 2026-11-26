@@ -75,6 +75,13 @@ export default function CommercialIntentPage() {
           Conheça a consultoria de Omar Skafi →
         </Link>
       </section>
+      {["/especialista-seo-curitiba", "/consultor-seo-curitiba", "/seo-local-curitiba", "/seo-curitiba-e-regiao", "/consultoria-seo-brasil", "/especialista-seo-brasil"].includes(pathname.replace(/\/$/, "")) && (
+      <section className="reader-limits">
+        <h2>Diagnóstico de bots e IA para sites da região</h2>
+        <p>Se o seu site publica guias, pesquisas ou dados próprios, o diagnóstico separa rastreamento, visitas humanas e oportunidades de licenciamento. A visita de um robô não gera pagamento automático.</p>
+        <Link className="text-link" to="/seo-geo-aio#monetizacao-bots-ia">Entenda como avaliar a monetização de conteúdo ↗</Link>
+      </section>
+      )}
       <section id="duvidas" className="reader-faq">
         <h2>Perguntas frequentes</h2>
         {data.faqs.map((f) => (
