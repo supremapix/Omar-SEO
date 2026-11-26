@@ -236,6 +236,7 @@ export default function Home() {
           <Link className="text-link" to="/seo-geo-aio">
             Leia o guia de SEO e busca com IA →
           </Link>
+          <p><Link className="text-link" to="/seo-geo-aio#monetizacao-bots-ia">Novo: diagnóstico de bots, IA e licenciamento de conteúdo →</Link></p>
           <p><Link className="text-link" to="/resultados/madeireira-de-pinus-curitiba">Veja o resultado orgânico da Madeireira Bairro Novo →</Link></p>
         </div>
         <div className="home-questions">

@@ -85,6 +85,11 @@ export default function LocationPage() {
           Entenda o serviço de SEO local →
         </Link>
       </section>
+      <section className="reader-limits">
+        <h2>Diagnóstico de bots e IA para sites da região</h2>
+        <p>Se o seu site publica guias, pesquisas ou dados próprios, o diagnóstico separa rastreamento, visitas humanas e oportunidades de licenciamento. A visita de um robô não gera pagamento automático.</p>
+        <Link className="text-link" to="/seo-geo-aio#monetizacao-bots-ia">Entenda como avaliar a monetização de conteúdo ↗</Link>
+      </section>
       <section className="reader-faq">
         <h2>Dúvidas sobre SEO em {data.name}</h2>
         {data.faqs.map((f) => (
