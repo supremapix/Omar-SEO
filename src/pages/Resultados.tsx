@@ -25,6 +25,14 @@ export default function Resultados() {
           usadas como comprovação.
         </p>
       </header>
+      <section id="busca-organica" aria-labelledby="busca-organica-titulo">
+        <h2 id="busca-organica-titulo">Resultados na busca orgânica do Google</h2>
+        <p>Um resultado orgânico é um link não patrocinado exibido na pesquisa. Analise a consulta, a página que aparece e o contexto da captura, sem confundir o resultado com anúncio, Maps ou resposta de IA.</p>
+        <ul>
+          <li><Link className="text-link" to="/resultados/madeireira-de-pinus-curitiba">Madeireira Bairro Novo: madeira de pinus em Curitiba</Link></li>
+          <li><Link className="text-link" to="/resultados/odontopediatria-no-cic-prodent">PROdent: odontopediatria no CIC</Link></li>
+        </ul>
+      </section>
       <section>
         <h2>Capturas disponíveis</h2>
         <p>

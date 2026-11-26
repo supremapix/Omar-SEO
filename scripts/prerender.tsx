@@ -51,6 +51,7 @@ import CaseABaratonaCacambasAiSeo from "../src/pages/CaseABaratonaCacambasAiSeo"
 import CaseClientesTelhadosBarreirinhaAiSeo from "../src/pages/CaseClientesTelhadosBarreirinhaAiSeo";
 import CaseLavanderiaInovataSeoOsasco from "../src/pages/CaseLavanderiaInovataSeoOsasco";
 import CaseInstalacaoFrigorificaNavegantes from "../src/pages/CaseInstalacaoFrigorificaNavegantes";
+import CaseMadeireiraPinus from "../src/pages/CaseMadeireiraPinus";
 import CaseProdentCicSeo from "../src/pages/CaseProdentCicSeo";
 import CasePersianasLagoaConceicaoSeo from "../src/pages/CasePersianasLagoaConceicaoSeo";
 import SobreOmar from "../src/pages/SobreOmar";
@@ -100,6 +101,7 @@ function getPageComponent(
   if (rawPath === "/seo-tecnico") return <SeoTecnico />;
   if (rawPath === "/resultados/sangel-purificadores-bebedouros-curitiba")
     return <CaseSangelPurificadores />;
+  if (rawPath === "/resultados/madeireira-de-pinus-curitiba") return <CaseMadeireiraPinus />;
   if (rawPath === "/resultados/odontopediatria-no-cic-prodent") return <CaseProdentCicSeo />;
   if (rawPath === "/resultados") return <Resultados />;
   if (rawPath === "/resultados/seo-advogados-planos-de-saude")

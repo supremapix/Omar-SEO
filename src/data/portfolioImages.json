@@ -1,5 +1,36 @@
 [
   {
+    "id": "25",
+    "file": "CaseMadeireiraPinus",
+    "name": "Madeireira Bairro Novo",
+    "url": "https://www.madeireirabairronovo.com.br/",
+    "subject": "Visibilidade na pesquisa orgânica por madeira de pinus em Curitiba",
+    "images": [
+      "/assets/aistudio/madeireira-pinus-curitiba-organico.png"
+    ],
+    "captured": true,
+    "image": "/assets/aistudio/madeireira-pinus-curitiba-organico.png",
+    "sourceNote": "Captura original da Pesquisa Google fornecida por Omar Skafi, preservada como recebida. Localização do dispositivo e data da consulta não confirmadas na imagem.",
+    "route": "/resultados/madeireira-de-pinus-curitiba",
+    "query": "madeireira de pinus curitiba",
+    "intent": "Encontrar uma madeireira que comercialize pinus em Curitiba. A consulta combina o tipo de fornecedor, o material e a cidade.",
+    "evidence": [
+      {
+        "src": "/assets/aistudio/madeireira-pinus-curitiba-organico.png",
+        "width": 1097,
+        "height": 309,
+        "kind": "Resultado orgânico do Google visível no recorte",
+        "query": "madeireira de pinus curitiba",
+        "date": null,
+        "alt": "Pesquisa Google por madeireira de pinus curitiba com resultado orgânico Madeira de pinus em Curitiba | Madeireira Bairro Novo.",
+        "observation": "A captura mostra a home da Madeireira Bairro Novo como o primeiro link visível no recorte. O recorte não comprova posição geral, colocação no Maps, citação por IA nem posição atual."
+      }
+    ],
+    "evidenceStatus": "available",
+    "pendingReason": "",
+    "evidenceSummary": "Na consulta “madeireira de pinus curitiba”, a captura mostra a página inicial da Madeireira Bairro Novo entre os resultados orgânicos do Google."
+  },
+  {
     "id": "24",
     "file": "CaseProdentCicSeo",
     "name": "PROdent Curitiba",

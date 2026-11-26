@@ -19,6 +19,7 @@ const dynamicBlogRoutes: RouteConfig[] = blogPosts.map((post) => ({
 }));
 
 export const MAIN_ROUTES: RouteConfig[] = [
+  {path:'/resultados/madeireira-de-pinus-curitiba',title:'Madeireira de pinus em Curitiba: caso de SEO orgânico | Omar SEO',description:'Captura original da busca por madeireira de pinus em Curitiba: veja o resultado orgânico da Madeireira Bairro Novo e o que ele comprova.',priority:0.7,changefreq:'monthly',type:'main'},
   {path:'/resultados/odontopediatria-no-cic-prodent',title:'PROdent Curitiba: odontopediatria no CIC | Omar SEO',description:'Capturas reais da busca por odontopediatria no CIC: menção na Visão Geral por IA e primeiro resultado orgânico visível.',priority:0.7,changefreq:'monthly',type:'main'},
 {path:'/resultados/carplus-autos-seminovos-portao',title:'Carplus Autos: seminovos no Portão | Omar SEO',description:'Captura original da busca por Revenda de Seminovos no Portão.',priority:0.7,changefreq:'monthly',type:'main'},
  {path:'/resultados/pousada-vila-ditalia-penha-sc',title:'Pousada Vila D’Itália em Penha SC | Cliente Omar SEO',description:'Registro de cliente com foco em pousada com piscina em Penha SC.',priority:0.7,changefreq:'monthly',type:'main'},
